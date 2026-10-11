@@ -1,0 +1,267 @@
+{
+  "schema_version": 1,
+  "source": "TF3-Stadtentwicklungsexport, März 1910",
+  "periods": [
+    "1904-12",
+    "1905-12",
+    "1906-09",
+    "1907-12",
+    "1908-12",
+    "1909-12",
+    "1910-03"
+  ],
+  "cities": [
+    {
+      "id": "bourg-l-ecorce",
+      "name": "Bourg-l’Écorce",
+      "island": "Hauptinsel",
+      "role": "Wirtschafts- und Bevölkerungszentrum",
+      "history": [
+        {
+          "date": "1904-12",
+          "population": 673
+        },
+        {
+          "date": "1905-12",
+          "population": 1092
+        },
+        {
+          "date": "1906-09",
+          "population": 1363
+        },
+        {
+          "date": "1907-12",
+          "population": 1726
+        },
+        {
+          "date": "1908-12",
+          "population": 1973
+        },
+        {
+          "date": "1909-12",
+          "population": 2144
+        },
+        {
+          "date": "1910-03",
+          "population": 2175
+        }
+      ]
+    },
+    {
+      "id": "port-des-alizes",
+      "name": "Port des Alizés",
+      "island": "Hauptinsel",
+      "role": "Hafenstadt und Verkehrsknoten",
+      "history": [
+        {
+          "date": "1904-12",
+          "population": 728
+        },
+        {
+          "date": "1905-12",
+          "population": 868
+        },
+        {
+          "date": "1906-09",
+          "population": 992
+        },
+        {
+          "date": "1907-12",
+          "population": 1142
+        },
+        {
+          "date": "1908-12",
+          "population": 1281
+        },
+        {
+          "date": "1909-12",
+          "population": 1400
+        },
+        {
+          "date": "1910-03",
+          "population": 1422
+        }
+      ]
+    },
+    {
+      "id": "pointe-des-pecheurs",
+      "name": "Pointe des Pêcheurs",
+      "island": "Hauptinsel",
+      "role": "Fischerei und Konservenindustrie",
+      "history": [
+        {
+          "date": "1904-12",
+          "population": 261
+        },
+        {
+          "date": "1905-12",
+          "population": 466
+        },
+        {
+          "date": "1906-09",
+          "population": 557
+        },
+        {
+          "date": "1907-12",
+          "population": 724
+        },
+        {
+          "date": "1908-12",
+          "population": 857
+        },
+        {
+          "date": "1909-12",
+          "population": 964
+        },
+        {
+          "date": "1910-03",
+          "population": 991
+        }
+      ]
+    },
+    {
+      "id": "valmorin",
+      "name": "Valmorin",
+      "island": "Hauptinsel",
+      "role": "Güterumschlag und Inselhandel",
+      "history": [
+        {
+          "date": "1904-12",
+          "population": 228
+        },
+        {
+          "date": "1905-12",
+          "population": 228
+        },
+        {
+          "date": "1906-09",
+          "population": 296
+        },
+        {
+          "date": "1907-12",
+          "population": 461
+        },
+        {
+          "date": "1908-12",
+          "population": 616
+        },
+        {
+          "date": "1909-12",
+          "population": 694
+        },
+        {
+          "date": "1910-03",
+          "population": 705
+        }
+      ]
+    },
+    {
+      "id": "anse-doree",
+      "name": "Anse Dorée",
+      "island": "Hauptinsel",
+      "role": "Küstenstadt und Bahnendpunkt",
+      "history": [
+        {
+          "date": "1904-12",
+          "population": 366
+        },
+        {
+          "date": "1905-12",
+          "population": 415
+        },
+        {
+          "date": "1906-09",
+          "population": 446
+        },
+        {
+          "date": "1907-12",
+          "population": 571
+        },
+        {
+          "date": "1908-12",
+          "population": 677
+        },
+        {
+          "date": "1909-12",
+          "population": 769
+        },
+        {
+          "date": "1910-03",
+          "population": 782
+        }
+      ]
+    },
+    {
+      "id": "roche-noire",
+      "name": "Roche-Noire",
+      "island": "Nebeninsel",
+      "role": "Kohle und Güterhandel",
+      "history": [
+        {
+          "date": "1904-12",
+          "population": 355
+        },
+        {
+          "date": "1905-12",
+          "population": 355
+        },
+        {
+          "date": "1906-09",
+          "population": 355
+        },
+        {
+          "date": "1907-12",
+          "population": 356
+        },
+        {
+          "date": "1908-12",
+          "population": 362
+        },
+        {
+          "date": "1909-12",
+          "population": 365
+        },
+        {
+          "date": "1910-03",
+          "population": 366
+        }
+      ]
+    },
+    {
+      "id": "montfougere",
+      "name": "Montfougère",
+      "island": "Nebeninsel",
+      "role": "Holzwirtschaft und Küstenhandel",
+      "history": [
+        {
+          "date": "1904-12",
+          "population": 131
+        },
+        {
+          "date": "1905-12",
+          "population": 131
+        },
+        {
+          "date": "1906-09",
+          "population": 131
+        },
+        {
+          "date": "1907-12",
+          "population": 131
+        },
+        {
+          "date": "1908-12",
+          "population": 143
+        },
+        {
+          "date": "1909-12",
+          "population": 169
+        },
+        {
+          "date": "1910-03",
+          "population": 170
+        }
+      ]
+    }
+  ]
+}
