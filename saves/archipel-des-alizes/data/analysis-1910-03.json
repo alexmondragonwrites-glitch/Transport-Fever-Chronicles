@@ -1,0 +1,449 @@
+{
+  "schema_version": 1,
+  "save_id": "archipel-des-alizes",
+  "game_date": "1910-03-13",
+  "source_files": [
+    "world-cities.json",
+    "world-demand-1910-03.json",
+    "lines-1910-03.json",
+    "industries-1910-03.json"
+  ],
+  "kind": "Berechnete Momentaufnahme aus gespeicherten Exporten",
+  "disclaimer": "Kapazitätsgewichtete Gesamtauslastungen addieren unterschiedliche Personen- und Güterkapazitäten; kein Gewinn, Jahresdurchsatz oder Wohlfahrtsindikator.",
+  "cities": {
+    "all": 50,
+    "connected_or_documented": 7,
+    "without_documented_connection": 43,
+    "grew_since_1904": 7,
+    "world_population_1904": 11399,
+    "world_population_1910": 15268,
+    "world_growth_absolute": 3869,
+    "world_growth_percent": 33.9,
+    "main_island_population_1904": 2256,
+    "main_island_population_1910": 6075,
+    "top_growth_absolute": [
+      {
+        "city_id": "bourg-l-ecorce",
+        "growth": 1502,
+        "population": 2175
+      },
+      {
+        "city_id": "pointe-des-pecheurs",
+        "growth": 730,
+        "population": 991
+      },
+      {
+        "city_id": "port-des-alizes",
+        "growth": 694,
+        "population": 1422
+      },
+      {
+        "city_id": "valmorin",
+        "growth": 477,
+        "population": 705
+      },
+      {
+        "city_id": "anse-doree",
+        "growth": 416,
+        "population": 782
+      },
+      {
+        "city_id": "montfougere",
+        "growth": 39,
+        "population": 170
+      },
+      {
+        "city_id": "roche-noire",
+        "growth": 11,
+        "population": 366
+      }
+    ]
+  },
+  "transport": {
+    "lines": 80,
+    "vehicles": 448,
+    "occupied": 3464,
+    "capacity": 8093,
+    "utilization_percent": 42.8,
+    "fully_occupied_lines": 3,
+    "empty_with_vehicles": 10,
+    "without_vehicles": 1,
+    "modes": [
+      {
+        "mode": "Schiff (Güter/Misch)",
+        "lines": 18,
+        "vehicles": 153,
+        "occupied": 1098,
+        "capacity": 3120,
+        "zero_lines": 5,
+        "utilization_percent": 35.2
+      },
+      {
+        "mode": "Straße (Güter/Misch)",
+        "lines": 28,
+        "vehicles": 165,
+        "occupied": 745,
+        "capacity": 1642,
+        "zero_lines": 1,
+        "utilization_percent": 45.4
+      },
+      {
+        "mode": "Bus",
+        "lines": 18,
+        "vehicles": 78,
+        "occupied": 266,
+        "capacity": 468,
+        "zero_lines": 1,
+        "utilization_percent": 56.8
+      },
+      {
+        "mode": "Straßenbahn",
+        "lines": 4,
+        "vehicles": 25,
+        "occupied": 367,
+        "capacity": 627,
+        "zero_lines": 0,
+        "utilization_percent": 58.5
+      },
+      {
+        "mode": "Personenzug",
+        "lines": 1,
+        "vehicles": 10,
+        "occupied": 551,
+        "capacity": 960,
+        "zero_lines": 0,
+        "utilization_percent": 57.4
+      },
+      {
+        "mode": "Schiff (Passagiere)",
+        "lines": 3,
+        "vehicles": 7,
+        "occupied": 66,
+        "capacity": 140,
+        "zero_lines": 0,
+        "utilization_percent": 47.1
+      },
+      {
+        "mode": "Güterzug",
+        "lines": 8,
+        "vehicles": 10,
+        "occupied": 371,
+        "capacity": 1136,
+        "zero_lines": 3,
+        "utilization_percent": 32.7
+      }
+    ],
+    "largest_idle_fleet": [
+      {
+        "line_id": "line-062",
+        "name": "WC Chemikalien-Lam-PordesAli-IC-1",
+        "vehicles": 40,
+        "capacity": 800
+      },
+      {
+        "line_id": "line-067",
+        "name": "WC Passagiere,Chemikalien,Farbstoffe-Neu-LO-1",
+        "vehicles": 12,
+        "capacity": 240
+      },
+      {
+        "line_id": "line-080",
+        "name": "WC Chemikalien-LeRov-Ani-IC-1",
+        "vehicles": 11,
+        "capacity": 220
+      },
+      {
+        "line_id": "line-070",
+        "name": "RC Farbstoffe,Stoff,Passagiere,+1-Lam-LO-1",
+        "vehicles": 4,
+        "capacity": 40
+      },
+      {
+        "line_id": "line-078",
+        "name": "Bus Passagiere-Bou-LO-4",
+        "vehicles": 2,
+        "capacity": 12
+      },
+      {
+        "line_id": "line-012",
+        "name": "WC Passagiere,Werkzeuge,Fisch-PoidesPêc-LO-1",
+        "vehicles": 1,
+        "capacity": 20
+      },
+      {
+        "line_id": "line-039",
+        "name": "WC Passagiere,Fisch-Bou-LO-2",
+        "vehicles": 1,
+        "capacity": 20
+      },
+      {
+        "line_id": "line-066",
+        "name": "TC Blech-PordesAli-PoidesPêc-IC-1",
+        "vehicles": 1,
+        "capacity": 120
+      }
+    ]
+  },
+  "industry": {
+    "total": 103,
+    "active": 75,
+    "stopped": 28,
+    "types": [
+      {
+        "industry_type": "Ölplattform",
+        "total": 22,
+        "active": 22,
+        "stopped": 0
+      },
+      {
+        "industry_type": "Bauernhof",
+        "total": 15,
+        "active": 15,
+        "stopped": 0
+      },
+      {
+        "industry_type": "Fischzucht",
+        "total": 14,
+        "active": 14,
+        "stopped": 0
+      },
+      {
+        "industry_type": "Holzfällerlager",
+        "total": 8,
+        "active": 8,
+        "stopped": 0
+      },
+      {
+        "industry_type": "Ölraffinerie",
+        "total": 6,
+        "active": 0,
+        "stopped": 6
+      },
+      {
+        "industry_type": "Viehzuchtbetrieb",
+        "total": 6,
+        "active": 0,
+        "stopped": 6
+      },
+      {
+        "industry_type": "Sandbaggerschiff",
+        "total": 4,
+        "active": 4,
+        "stopped": 0
+      },
+      {
+        "industry_type": "Sugar Cane Farm",
+        "total": 4,
+        "active": 4,
+        "stopped": 0
+      },
+      {
+        "industry_type": "Sägewerk",
+        "total": 3,
+        "active": 0,
+        "stopped": 3
+      },
+      {
+        "industry_type": "Sugar Mill",
+        "total": 2,
+        "active": 0,
+        "stopped": 2
+      },
+      {
+        "industry_type": "Glashütte",
+        "total": 2,
+        "active": 0,
+        "stopped": 2
+      },
+      {
+        "industry_type": "Kohlebergwerk",
+        "total": 2,
+        "active": 2,
+        "stopped": 0
+      },
+      {
+        "industry_type": "Sonstige",
+        "total": 2,
+        "active": 1,
+        "stopped": 1
+      },
+      {
+        "industry_type": "Eisenerzbergwerk",
+        "total": 2,
+        "active": 2,
+        "stopped": 0
+      },
+      {
+        "industry_type": "Möbelfabrik",
+        "total": 1,
+        "active": 0,
+        "stopped": 1
+      },
+      {
+        "industry_type": "Konservenfabrik",
+        "total": 1,
+        "active": 1,
+        "stopped": 0
+      },
+      {
+        "industry_type": "Stahlwerk",
+        "total": 1,
+        "active": 0,
+        "stopped": 1
+      },
+      {
+        "industry_type": "Maschinenfabrik",
+        "total": 1,
+        "active": 0,
+        "stopped": 1
+      },
+      {
+        "industry_type": "Rum Distillery",
+        "total": 1,
+        "active": 0,
+        "stopped": 1
+      },
+      {
+        "industry_type": "Weberei",
+        "total": 1,
+        "active": 0,
+        "stopped": 1
+      },
+      {
+        "industry_type": "Werkzeugfabrik",
+        "total": 1,
+        "active": 0,
+        "stopped": 1
+      },
+      {
+        "industry_type": "Chemiefabrik",
+        "total": 1,
+        "active": 0,
+        "stopped": 1
+      },
+      {
+        "industry_type": "Steinbruch",
+        "total": 1,
+        "active": 1,
+        "stopped": 0
+      },
+      {
+        "industry_type": "Textilfabrik",
+        "total": 1,
+        "active": 0,
+        "stopped": 1
+      },
+      {
+        "industry_type": "Baumwollplantage",
+        "total": 1,
+        "active": 1,
+        "stopped": 0
+      }
+    ]
+  },
+  "supply": {
+    "demand_entries": 113,
+    "need": 11276,
+    "missing": 10139,
+    "supplied": 1137,
+    "coverage_percent": 10.1,
+    "by_good": [
+      {
+        "good": "Bretter",
+        "entries": 26,
+        "need": 2399,
+        "missing": 2141,
+        "supplied": 258,
+        "coverage_percent": 10.8
+      },
+      {
+        "good": "Treibstoff",
+        "entries": 24,
+        "need": 2161,
+        "missing": 1908,
+        "supplied": 253,
+        "coverage_percent": 11.7
+      },
+      {
+        "good": "Fisch",
+        "entries": 18,
+        "need": 1985,
+        "missing": 1799,
+        "supplied": 186,
+        "coverage_percent": 9.4
+      },
+      {
+        "good": "Fleisch",
+        "entries": 17,
+        "need": 1239,
+        "missing": 1217,
+        "supplied": 22,
+        "coverage_percent": 1.8
+      },
+      {
+        "good": "Gemüse",
+        "entries": 15,
+        "need": 1380,
+        "missing": 1077,
+        "supplied": 303,
+        "coverage_percent": 22
+      },
+      {
+        "good": "Sugar",
+        "entries": 2,
+        "need": 549,
+        "missing": 498,
+        "supplied": 51,
+        "coverage_percent": 9.3
+      },
+      {
+        "good": "Rum",
+        "entries": 2,
+        "need": 403,
+        "missing": 403,
+        "supplied": 0,
+        "coverage_percent": 0
+      },
+      {
+        "good": "Konserven",
+        "entries": 2,
+        "need": 369,
+        "missing": 305,
+        "supplied": 64,
+        "coverage_percent": 17.3
+      },
+      {
+        "good": "Möbel",
+        "entries": 1,
+        "need": 229,
+        "missing": 229,
+        "supplied": 0,
+        "coverage_percent": 0
+      },
+      {
+        "good": "Werkzeuge",
+        "entries": 2,
+        "need": 223,
+        "missing": 223,
+        "supplied": 0,
+        "coverage_percent": 0
+      },
+      {
+        "good": "Kleidung",
+        "entries": 2,
+        "need": 179,
+        "missing": 179,
+        "supplied": 0,
+        "coverage_percent": 0
+      },
+      {
+        "good": "Maschinen",
+        "entries": 2,
+        "need": 160,
+        "missing": 160,
+        "supplied": 0,
+        "coverage_percent": 0
+      }
+    ]
+  }
+}
