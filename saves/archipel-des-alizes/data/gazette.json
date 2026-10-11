@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "save_id": "archipel-des-alizes",
+  "editorial_policy": "Alle Artikel sind ausdrücklich erfundene Ingame-Zeitungsstücke, keine simulierten Ingame-Ereignisse oder belegte Presse.",
+  "articles": [
+    {
+      "id": "gazette-1910-01",
+      "date": "1910-03",
+      "type": "fiktion",
+      "rubric": "Wirtschaft & Verkehr",
+      "title": "Valmorin zwischen Hafenkränen und Schienen",
+      "teaser": "Das einstige Küstendorf rückt ins Zentrum eines wachsenden Verkehrsnetzes.",
+      "body": "Wer heute nach Valmorin kommt, sieht nicht mehr nur die beschauliche Küste. Der Güterumschlagbahnhof ordnet Holz, Bretter und weitere Waren für die Weiterreise. Schiffe von den Außeninseln und die Straßenfahrzeuge der Hauptinsel ergänzen einander. Unter den Kaufleuten wächst die Hoffnung, dass Valmorin zum Umschlagpunkt für das gesamte Archipel wird. Doch mit dem Handel kommen auch neue Fragen: Reichen die Straßen, wenn morgen doppelt so viel Ware den Hafen verlässt? Und bleibt das Dorf, das die Älteren kennen, noch lange dasselbe?",
+      "grounding": "Ausgangspunkt: dokumentierter Güterumschlagbahnhof bei Valmorin, Spielstand März 1910.",
+      "entities": [
+        "valmorin",
+        "montfougere",
+        "roche-noire"
+      ]
+    },
+    {
+      "id": "gazette-1910-02",
+      "date": "1910-03",
+      "type": "fiktion",
+      "rubric": "Gesellschaft",
+      "title": "Die Inselnfrage: Wann kommt die Bahn zu uns?",
+      "teaser": "Während die Hauptinsel wächst, entstehen an anderen Küsten neue Erwartungen.",
+      "body": "Die Schiffe bringen mehr als Waren. Sie bringen Geschichten von Straßenbahnen, Bahnhöfen und Städten, die Jahr für Jahr größer werden. In einem kleinen Hafen lauschen die Bewohner den Berichten der Reisenden. Für die Händler bedeuten die neuen Verkehrswege Chancen, für manchen Landbewohner vor allem Unruhe. Niemand weiß, ob der nächste Bahnhof je in seiner Gemeinde entstehen wird. Doch eine Frage wird schwerer zu überhören: Warum soll der Fortschritt immer nur an derselben Küste anlegen?",
+      "grounding": "Ausgangspunkt: belegter Wachstumsunterschied zwischen den fünf Hauptinselstädten und den meisten übrigen Städten.",
+      "entities": [
+        "bourg-l-ecorce",
+        "roche-noire",
+        "montfougere"
+      ]
+    },
+    {
+      "id": "gazette-1910-03",
+      "date": "1910-03",
+      "type": "fiktion",
+      "rubric": "Stadtleben",
+      "title": "Bourg-l’Écorce lernt das Großstadtleben",
+      "teaser": "Mit über 2.000 Einwohnern verwandelt sich die Stadt, nicht ohne Spannungen.",
+      "body": "Wo einst wenige Straßen zum Markt führten, sprechen Reisende heute von einem geschäftigen Stadtleben. Die Straßenbahn verbindet Wege, die früher zu Fuß oder mit Kutschen zurückgelegt wurden. In den Geschäften wächst der Wunsch nach neuen Waren, während die Lieferwagen nicht immer halten können, was der Bedarf verlangt. Die Bevölkerung bewundert den Fortschritt und spürt zugleich seine Kosten. Mehr Rauch am Horizont, neue Häuser, neue Gesichter: Die Stadt verändert sich schneller, als ihre Bewohner es in Worte fassen können.",
+      "grounding": "Ausgangspunkt: 2.175 Einwohner im März 1910 und niedrige Bedarfsdeckung bei mehreren Waren.",
+      "entities": [
+        "bourg-l-ecorce"
+      ]
+    }
+  ]
+}
