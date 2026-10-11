@@ -1,0 +1,810 @@
+{
+  "schema_version": 1,
+  "save_id": "archipel-des-alizes",
+  "game_date": "1910-03-13",
+  "observed_at": "2026-10-11",
+  "source": "Linien & Auslastung, vom Nutzer bereitgestellter Export",
+  "measurement": "Momentaufnahme der Belegung, keine Jahresfördermenge oder Gewinne",
+  "lines": [
+    {
+      "id": "line-001",
+      "name": "WC Passagiere,Holz,Bretter-Mon-Val-IC-1",
+      "mode": "Schiff (Güter/Misch)",
+      "stops": 2,
+      "vehicles": 3,
+      "occupied": 120,
+      "capacity": 120,
+      "utilization": 100
+    },
+    {
+      "id": "line-002",
+      "name": "RC Bretter-Roc-LO-1",
+      "mode": "Straße (Güter/Misch)",
+      "stops": 2,
+      "vehicles": 3,
+      "occupied": 20,
+      "capacity": 30,
+      "utilization": 66.7
+    },
+    {
+      "id": "line-003",
+      "name": "Bus Passagiere-Bou-LO-3",
+      "mode": "Bus",
+      "stops": 2,
+      "vehicles": 2,
+      "occupied": 6,
+      "capacity": 12,
+      "utilization": 50
+    },
+    {
+      "id": "line-004",
+      "name": "RC Passagiere,Bretter-Bou-LO-3",
+      "mode": "Straße (Güter/Misch)",
+      "stops": 2,
+      "vehicles": 3,
+      "occupied": 10,
+      "capacity": 30,
+      "utilization": 33.3
+    },
+    {
+      "id": "line-005",
+      "name": "Bus Passagiere-AnsDor-LO-4",
+      "mode": "Bus",
+      "stops": 4,
+      "vehicles": 5,
+      "occupied": 26,
+      "capacity": 30,
+      "utilization": 86.7
+    },
+    {
+      "id": "line-006",
+      "name": "Tram Passagiere-PoidesPêc-LO-1",
+      "mode": "Straßenbahn",
+      "stops": 4,
+      "vehicles": 4,
+      "occupied": 49,
+      "capacity": 96,
+      "utilization": 51
+    },
+    {
+      "id": "line-007",
+      "name": "Bus Passagiere-Bou-LO-2",
+      "mode": "Bus",
+      "stops": 2,
+      "vehicles": 2,
+      "occupied": 8,
+      "capacity": 12,
+      "utilization": 66.7
+    },
+    {
+      "id": "line-008",
+      "name": "RC Passagiere,Bretter-Bou-LO-2",
+      "mode": "Straße (Güter/Misch)",
+      "stops": 2,
+      "vehicles": 5,
+      "occupied": 26,
+      "capacity": 50,
+      "utilization": 52
+    },
+    {
+      "id": "line-009",
+      "name": "RC Passagiere,Bretter-Bou-LO-1",
+      "mode": "Straße (Güter/Misch)",
+      "stops": 2,
+      "vehicles": 2,
+      "occupied": 10,
+      "capacity": 20,
+      "utilization": 50
+    },
+    {
+      "id": "line-010",
+      "name": "RC Passagiere,Holz-Bou-LO-1",
+      "mode": "Straße (Güter/Misch)",
+      "stops": 2,
+      "vehicles": 6,
+      "occupied": 37,
+      "capacity": 60,
+      "utilization": 61.7
+    },
+    {
+      "id": "line-011",
+      "name": "Tram Passagiere-PoidesPêc-LO-2",
+      "mode": "Straßenbahn",
+      "stops": 5,
+      "vehicles": 5,
+      "occupied": 49,
+      "capacity": 120,
+      "utilization": 40.8
+    },
+    {
+      "id": "line-012",
+      "name": "WC Passagiere,Werkzeuge,Fisch-PoidesPêc-LO-1",
+      "mode": "Schiff (Güter/Misch)",
+      "stops": 2,
+      "vehicles": 1,
+      "occupied": 0,
+      "capacity": 20,
+      "utilization": 0
+    },
+    {
+      "id": "line-013",
+      "name": "RC Dünger,Passagiere,Sugar Cane-Mon-LO-1",
+      "mode": "Straße (Güter/Misch)",
+      "stops": 2,
+      "vehicles": 6,
+      "occupied": 24,
+      "capacity": 60,
+      "utilization": 40
+    },
+    {
+      "id": "line-014",
+      "name": "RC Fisch,Treibstoff-PoidesPêc-LO-1",
+      "mode": "Straße (Güter/Misch)",
+      "stops": 2,
+      "vehicles": 2,
+      "occupied": 10,
+      "capacity": 20,
+      "utilization": 50
+    },
+    {
+      "id": "line-015",
+      "name": "TP Passagiere-PordesAli-AnsDor-RE-1",
+      "mode": "Personenzug",
+      "stops": 8,
+      "vehicles": 10,
+      "occupied": 551,
+      "capacity": 960,
+      "utilization": 57.4
+    },
+    {
+      "id": "line-016",
+      "name": "WP Passagiere-PordesAli-LO-1",
+      "mode": "Schiff (Passagiere)",
+      "stops": 2,
+      "vehicles": 1,
+      "occupied": 3,
+      "capacity": 20,
+      "utilization": 15
+    },
+    {
+      "id": "line-017",
+      "name": "Tram Passagiere-Bou-LO-1",
+      "mode": "Straßenbahn",
+      "stops": 10,
+      "vehicles": 13,
+      "occupied": 193,
+      "capacity": 312,
+      "utilization": 61.9
+    },
+    {
+      "id": "line-018",
+      "name": "WC Passagiere,Rohöl,Treibstoff-PoidesPêc-PordesAli-IC-1",
+      "mode": "Schiff (Güter/Misch)",
+      "stops": 3,
+      "vehicles": 3,
+      "occupied": 58,
+      "capacity": 60,
+      "utilization": 96.7
+    },
+    {
+      "id": "line-019",
+      "name": "WC Passagiere,Werkzeuge,Fisch-PoidesPêc-LO-2",
+      "mode": "Schiff (Güter/Misch)",
+      "stops": 2,
+      "vehicles": 1,
+      "occupied": 3,
+      "capacity": 20,
+      "utilization": 15
+    },
+    {
+      "id": "line-020",
+      "name": "RC Sugar,Gemüse-PordesAli-LO-1",
+      "mode": "Straße (Güter/Misch)",
+      "stops": 2,
+      "vehicles": 2,
+      "occupied": 10,
+      "capacity": 20,
+      "utilization": 50
+    },
+    {
+      "id": "line-021",
+      "name": "WP Passagiere-PoidesPêc-LO-1",
+      "mode": "Schiff (Passagiere)",
+      "stops": 2,
+      "vehicles": 1,
+      "occupied": 2,
+      "capacity": 20,
+      "utilization": 10
+    },
+    {
+      "id": "line-022",
+      "name": "WP Passagiere-AnsDor-PordesAli-IC-1",
+      "mode": "Schiff (Passagiere)",
+      "stops": 2,
+      "vehicles": 5,
+      "occupied": 61,
+      "capacity": 100,
+      "utilization": 61
+    },
+    {
+      "id": "line-023",
+      "name": "RC Passagiere,Treibstoff-PordesAli-LO-1",
+      "mode": "Straße (Güter/Misch)",
+      "stops": 2,
+      "vehicles": 2,
+      "occupied": 5,
+      "capacity": 12,
+      "utilization": 41.7
+    },
+    {
+      "id": "line-024",
+      "name": "Bus Passagiere-Bou-LO-1",
+      "mode": "Bus",
+      "stops": 4,
+      "vehicles": 7,
+      "occupied": 21,
+      "capacity": 42,
+      "utilization": 50
+    },
+    {
+      "id": "line-025",
+      "name": "WC Passagiere,Fisch-Bou-LO-1",
+      "mode": "Schiff (Güter/Misch)",
+      "stops": 2,
+      "vehicles": 2,
+      "occupied": 8,
+      "capacity": 40,
+      "utilization": 20
+    },
+    {
+      "id": "line-026",
+      "name": "Bus Passagiere-AnsDor-LO-2",
+      "mode": "Bus",
+      "stops": 2,
+      "vehicles": 4,
+      "occupied": 12,
+      "capacity": 24,
+      "utilization": 50
+    },
+    {
+      "id": "line-027",
+      "name": "WC Dünger,Gemüse-PordesAli-AnsDor-IC-1",
+      "mode": "Schiff (Güter/Misch)",
+      "stops": 2,
+      "vehicles": 8,
+      "occupied": 63,
+      "capacity": 160,
+      "utilization": 39.4
+    },
+    {
+      "id": "line-028",
+      "name": "WC Passagiere,Gemüse-AnsDor-LO-1",
+      "mode": "Schiff (Güter/Misch)",
+      "stops": 2,
+      "vehicles": 7,
+      "occupied": 70,
+      "capacity": 140,
+      "utilization": 50
+    },
+    {
+      "id": "line-029",
+      "name": "Bus Passagiere-AnsDor-LO-1",
+      "mode": "Bus",
+      "stops": 2,
+      "vehicles": 3,
+      "occupied": 6,
+      "capacity": 18,
+      "utilization": 33.3
+    },
+    {
+      "id": "line-030",
+      "name": "RC Treibstoff-AnsDor-LO-1",
+      "mode": "Straße (Güter/Misch)",
+      "stops": 2,
+      "vehicles": 4,
+      "occupied": 6,
+      "capacity": 40,
+      "utilization": 15
+    },
+    {
+      "id": "line-031",
+      "name": "RC Bretter-Mon-LO-1",
+      "mode": "Straße (Güter/Misch)",
+      "stops": 2,
+      "vehicles": 2,
+      "occupied": 10,
+      "capacity": 20,
+      "utilization": 50
+    },
+    {
+      "id": "line-032",
+      "name": "RC Gemüse,Treibstoff,Kleidung-AnsDor-LO-1",
+      "mode": "Straße (Güter/Misch)",
+      "stops": 2,
+      "vehicles": 17,
+      "occupied": 57,
+      "capacity": 170,
+      "utilization": 33.5
+    },
+    {
+      "id": "line-033",
+      "name": "RC Treibstoff-PordesAli-LO-1",
+      "mode": "Straße (Güter/Misch)",
+      "stops": 2,
+      "vehicles": 8,
+      "occupied": 46,
+      "capacity": 80,
+      "utilization": 57.5
+    },
+    {
+      "id": "line-034",
+      "name": "WC Rohöl,Treibstoff-AnsDor-PordesAli-IC-1",
+      "mode": "Schiff (Güter/Misch)",
+      "stops": 3,
+      "vehicles": 9,
+      "occupied": 96,
+      "capacity": 180,
+      "utilization": 53.3
+    },
+    {
+      "id": "line-035",
+      "name": "Bus Passagiere-Val-LO-1",
+      "mode": "Bus",
+      "stops": 4,
+      "vehicles": 16,
+      "occupied": 89,
+      "capacity": 96,
+      "utilization": 92.7
+    },
+    {
+      "id": "line-036",
+      "name": "WC Rohöl,Passagiere,Dünger,+1-PordesAli-LO-1",
+      "mode": "Schiff (Güter/Misch)",
+      "stops": 3,
+      "vehicles": 11,
+      "occupied": 290,
+      "capacity": 440,
+      "utilization": 65.9
+    },
+    {
+      "id": "line-037",
+      "name": "RC Dünger,Gemüse-AnsDor-LO-1",
+      "mode": "Straße (Güter/Misch)",
+      "stops": 2,
+      "vehicles": 13,
+      "occupied": 66,
+      "capacity": 130,
+      "utilization": 50.8
+    },
+    {
+      "id": "line-038",
+      "name": "Bus Passagiere-AnsDor-LO-3",
+      "mode": "Bus",
+      "stops": 2,
+      "vehicles": 3,
+      "occupied": 11,
+      "capacity": 18,
+      "utilization": 61.1
+    },
+    {
+      "id": "line-039",
+      "name": "WC Passagiere,Fisch-Bou-LO-2",
+      "mode": "Schiff (Güter/Misch)",
+      "stops": 2,
+      "vehicles": 1,
+      "occupied": 0,
+      "capacity": 20,
+      "utilization": 0
+    },
+    {
+      "id": "line-040",
+      "name": "WC Passagiere,Bretter,Kohle-Val-Roc-IC-1",
+      "mode": "Schiff (Güter/Misch)",
+      "stops": 2,
+      "vehicles": 5,
+      "occupied": 170,
+      "capacity": 200,
+      "utilization": 85
+    },
+    {
+      "id": "line-041",
+      "name": "WC Sugar,Dünger-Cor-PordesAli-IC-1",
+      "mode": "Schiff (Güter/Misch)",
+      "stops": 2,
+      "vehicles": 20,
+      "occupied": 120,
+      "capacity": 200,
+      "utilization": 60
+    },
+    {
+      "id": "line-042",
+      "name": "RC Passagiere,Holz-Mon-Roc-IC-1",
+      "mode": "Straße (Güter/Misch)",
+      "stops": 2,
+      "vehicles": 5,
+      "occupied": 44,
+      "capacity": 50,
+      "utilization": 88
+    },
+    {
+      "id": "line-043",
+      "name": "WC Passagiere,Sugar Cane,Sugar-Cor-LO-1",
+      "mode": "Schiff (Güter/Misch)",
+      "stops": 2,
+      "vehicles": 4,
+      "occupied": 60,
+      "capacity": 80,
+      "utilization": 75
+    },
+    {
+      "id": "line-044",
+      "name": "TC Eisenerz,Kohle-AnsDor-PordesAli-IC-1",
+      "mode": "Güterzug",
+      "stops": 2,
+      "vehicles": 2,
+      "occupied": 116,
+      "capacity": 240,
+      "utilization": 48.3
+    },
+    {
+      "id": "line-045",
+      "name": "Bus Passagiere-PoidesPêc-LO-2",
+      "mode": "Bus",
+      "stops": 2,
+      "vehicles": 3,
+      "occupied": 4,
+      "capacity": 18,
+      "utilization": 22.2
+    },
+    {
+      "id": "line-046",
+      "name": "RC Bretter,Fisch,Holz,+1-Val-LO-1",
+      "mode": "Straße (Güter/Misch)",
+      "stops": 2,
+      "vehicles": 12,
+      "occupied": 40,
+      "capacity": 120,
+      "utilization": 33.3
+    },
+    {
+      "id": "line-047",
+      "name": "TC Holz,Bretter-Val-Bou-IC-1",
+      "mode": "Güterzug",
+      "stops": 2,
+      "vehicles": 2,
+      "occupied": 124,
+      "capacity": 208,
+      "utilization": 59.6
+    },
+    {
+      "id": "line-048",
+      "name": "RC Fleisch,Bretter-Val-LO-1",
+      "mode": "Straße (Güter/Misch)",
+      "stops": 2,
+      "vehicles": 4,
+      "occupied": 40,
+      "capacity": 40,
+      "utilization": 100
+    },
+    {
+      "id": "line-049",
+      "name": "RC Bretter-Val-LO-1",
+      "mode": "Straße (Güter/Misch)",
+      "stops": 2,
+      "vehicles": 3,
+      "occupied": 2,
+      "capacity": 30,
+      "utilization": 6.7
+    },
+    {
+      "id": "line-050",
+      "name": "RC Konserven-PoidesPêc-Bou-IC-1",
+      "mode": "Straße (Güter/Misch)",
+      "stops": 2,
+      "vehicles": 4,
+      "occupied": 29,
+      "capacity": 40,
+      "utilization": 72.5
+    },
+    {
+      "id": "line-051",
+      "name": "RC Fisch,Konserven-PoidesPêc-LO-1",
+      "mode": "Straße (Güter/Misch)",
+      "stops": 2,
+      "vehicles": 3,
+      "occupied": 15,
+      "capacity": 30,
+      "utilization": 50
+    },
+    {
+      "id": "line-052",
+      "name": "TC Getreide,Kohle-AnsDor-Val-IC-1",
+      "mode": "Güterzug",
+      "stops": 2,
+      "vehicles": 1,
+      "occupied": 21,
+      "capacity": 120,
+      "utilization": 17.5
+    },
+    {
+      "id": "line-053",
+      "name": "RC Passagiere,Getreide-AnsDor-LO-1",
+      "mode": "Straße (Güter/Misch)",
+      "stops": 2,
+      "vehicles": 17,
+      "occupied": 32,
+      "capacity": 170,
+      "utilization": 18.8
+    },
+    {
+      "id": "line-054",
+      "name": "RC Passagiere,Eisenerz-AnsDor-Bou-IC-1",
+      "mode": "Straße (Güter/Misch)",
+      "stops": 2,
+      "vehicles": 6,
+      "occupied": 30,
+      "capacity": 60,
+      "utilization": 50
+    },
+    {
+      "id": "line-055",
+      "name": "RC Sugar,Gemüse-PordesAli-LO-2",
+      "mode": "Straße (Güter/Misch)",
+      "stops": 2,
+      "vehicles": 8,
+      "occupied": 13,
+      "capacity": 80,
+      "utilization": 16.3
+    },
+    {
+      "id": "line-056",
+      "name": "RC Passagiere,Kohle-Roc-LO-1",
+      "mode": "Straße (Güter/Misch)",
+      "stops": 2,
+      "vehicles": 4,
+      "occupied": 20,
+      "capacity": 40,
+      "utilization": 50
+    },
+    {
+      "id": "line-057",
+      "name": "WC Passagiere,Werkzeuge,Fisch-Val-Mon-IC-1",
+      "mode": "Schiff (Güter/Misch)",
+      "stops": 2,
+      "vehicles": 3,
+      "occupied": 20,
+      "capacity": 60,
+      "utilization": 33.3
+    },
+    {
+      "id": "line-058",
+      "name": "RC Konserven-Bou-LO-1",
+      "mode": "Straße (Güter/Misch)",
+      "stops": 2,
+      "vehicles": 2,
+      "occupied": 7,
+      "capacity": 20,
+      "utilization": 35
+    },
+    {
+      "id": "line-059",
+      "name": "RC Fisch,Konserven-Bou-LO-1",
+      "mode": "Straße (Güter/Misch)",
+      "stops": 2,
+      "vehicles": 4,
+      "occupied": 21,
+      "capacity": 40,
+      "utilization": 52.5
+    },
+    {
+      "id": "line-060",
+      "name": "RC Getreide,Fleisch,Wolle-Val-LO-1",
+      "mode": "Straße (Güter/Misch)",
+      "stops": 2,
+      "vehicles": 14,
+      "occupied": 115,
+      "capacity": 140,
+      "utilization": 82.1
+    },
+    {
+      "id": "line-061",
+      "name": "TC Konserven,Fisch,Fleisch-PoidesPêc-Val-RE-1",
+      "mode": "Güterzug",
+      "stops": 3,
+      "vehicles": 1,
+      "occupied": 6,
+      "capacity": 104,
+      "utilization": 5.8
+    },
+    {
+      "id": "line-062",
+      "name": "WC Chemikalien-Lam-PordesAli-IC-1",
+      "mode": "Schiff (Güter/Misch)",
+      "stops": 2,
+      "vehicles": 40,
+      "occupied": 0,
+      "capacity": 800,
+      "utilization": 0
+    },
+    {
+      "id": "line-063",
+      "name": "Bus Passagiere-PordesAli-LO-6",
+      "mode": "Bus",
+      "stops": 2,
+      "vehicles": 2,
+      "occupied": 5,
+      "capacity": 12,
+      "utilization": 41.7
+    },
+    {
+      "id": "line-064",
+      "name": "Bus Passagiere-PordesAli-LO-7",
+      "mode": "Bus",
+      "stops": 3,
+      "vehicles": 3,
+      "occupied": 16,
+      "capacity": 18,
+      "utilization": 88.9
+    },
+    {
+      "id": "line-065",
+      "name": "Bus Passagiere-Val-LO-2",
+      "mode": "Bus",
+      "stops": 2,
+      "vehicles": 2,
+      "occupied": 3,
+      "capacity": 12,
+      "utilization": 25
+    },
+    {
+      "id": "line-066",
+      "name": "TC Blech-PordesAli-PoidesPêc-IC-1",
+      "mode": "Güterzug",
+      "stops": 2,
+      "vehicles": 1,
+      "occupied": 0,
+      "capacity": 120,
+      "utilization": 0
+    },
+    {
+      "id": "line-067",
+      "name": "WC Passagiere,Chemikalien,Farbstoffe-Neu-LO-1",
+      "mode": "Schiff (Güter/Misch)",
+      "stops": 2,
+      "vehicles": 12,
+      "occupied": 0,
+      "capacity": 240,
+      "utilization": 0
+    },
+    {
+      "id": "line-068",
+      "name": "TC Chemikalien,Farbstoffe-LeRov-Neu-IC-1",
+      "mode": "Güterzug",
+      "stops": 2,
+      "vehicles": 1,
+      "occupied": 0,
+      "capacity": 120,
+      "utilization": 0
+    },
+    {
+      "id": "line-069",
+      "name": "TC Chemikalien,Farbstoffe-Lam-Ani-IC-1",
+      "mode": "Güterzug",
+      "stops": 2,
+      "vehicles": 1,
+      "occupied": 0,
+      "capacity": 120,
+      "utilization": 0
+    },
+    {
+      "id": "line-070",
+      "name": "RC Farbstoffe,Stoff,Passagiere,+1-Lam-LO-1",
+      "mode": "Straße (Güter/Misch)",
+      "stops": 2,
+      "vehicles": 4,
+      "occupied": 0,
+      "capacity": 40,
+      "utilization": 0
+    },
+    {
+      "id": "line-071",
+      "name": "Bus Passagiere-PordesAli-LO-3",
+      "mode": "Bus",
+      "stops": 2,
+      "vehicles": 2,
+      "occupied": 2,
+      "capacity": 12,
+      "utilization": 16.7
+    },
+    {
+      "id": "line-072",
+      "name": "Bus Passagiere-PordesAli-LO-1",
+      "mode": "Bus",
+      "stops": 3,
+      "vehicles": 8,
+      "occupied": 24,
+      "capacity": 48,
+      "utilization": 50
+    },
+    {
+      "id": "line-073",
+      "name": "Bus Passagiere-PordesAli-LO-2",
+      "mode": "Bus",
+      "stops": 2,
+      "vehicles": 6,
+      "occupied": 12,
+      "capacity": 36,
+      "utilization": 33.3
+    },
+    {
+      "id": "line-074",
+      "name": "Bus Passagiere-PordesAli-LO-5",
+      "mode": "Bus",
+      "stops": 1,
+      "vehicles": 0,
+      "occupied": 0,
+      "capacity": 0,
+      "utilization": null
+    },
+    {
+      "id": "line-075",
+      "name": "Bus Passagiere-PordesAli-LO-4",
+      "mode": "Bus",
+      "stops": 2,
+      "vehicles": 8,
+      "occupied": 21,
+      "capacity": 48,
+      "utilization": 43.8
+    },
+    {
+      "id": "line-076",
+      "name": "Tram Passagiere-PordesAli-LO-1",
+      "mode": "Straßenbahn",
+      "stops": 6,
+      "vehicles": 3,
+      "occupied": 76,
+      "capacity": 99,
+      "utilization": 76.8
+    },
+    {
+      "id": "line-077",
+      "name": "WC Passagiere,Wolle,Kleidung-PoidesPêc-Lam-IC-1",
+      "mode": "Schiff (Güter/Misch)",
+      "stops": 2,
+      "vehicles": 12,
+      "occupied": 20,
+      "capacity": 120,
+      "utilization": 16.7
+    },
+    {
+      "id": "line-078",
+      "name": "Bus Passagiere-Bou-LO-4",
+      "mode": "Bus",
+      "stops": 2,
+      "vehicles": 2,
+      "occupied": 0,
+      "capacity": 12,
+      "utilization": 0
+    },
+    {
+      "id": "line-079",
+      "name": "TC Kleidung,Konserven,Wolle-PoidesPêc-Val-RE-1",
+      "mode": "Güterzug",
+      "stops": 3,
+      "vehicles": 1,
+      "occupied": 104,
+      "capacity": 104,
+      "utilization": 100
+    },
+    {
+      "id": "line-080",
+      "name": "WC Chemikalien-LeRov-Ani-IC-1",
+      "mode": "Schiff (Güter/Misch)",
+      "stops": 2,
+      "vehicles": 11,
+      "occupied": 0,
+      "capacity": 220,
+      "utilization": 0
+    }
+  ]
+}
