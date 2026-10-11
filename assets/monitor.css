@@ -8,6 +8,9 @@
 .monitor .small,.monitor .section-lede,.monitor .note{font-size:14px}
 .monitor .data-table td{vertical-align:top}
 .monitor .data-table td:first-child{min-width:180px}
+#monitor-city-table .table-scroller,#monitor-lines .table-scroller{max-height:430px;overscroll-behavior:contain}
+#monitor-industries .table-scroller{max-height:620px}
+.monitor .detail{scroll-margin-top:155px}
 .monitor .detail h3{font-size:28px;margin-top:0}
 .monitor .detail h4{font-size:18px;margin:28px 0 14px}
 .monitor-warning{border-left-color:var(--red)}
