@@ -1,0 +1,309 @@
+{
+  "schema_version": 1,
+  "save_id": "archipel-des-alizes",
+  "as_of": "1910-03-13",
+  "source_policy": "Nur aus bestätigten Spielfakten bzw. früheren Spielstandsbesprechungen; unklare Namen, geographische Positionen und Ausbauzustände ausdrücklich markieren.",
+  "company": {
+    "name": "Société des Routes et des Rails",
+    "type": "Verkehrsunternehmen",
+    "operating_region": "Archipel des Alizés",
+    "founded_in_game_year": null,
+    "motto": null,
+    "documented_since": "1904-12",
+    "description": "Unternehmensname des Spielstands; ein exaktes Gründungsdatum ist nicht dokumentiert."
+  },
+  "regions": [
+    {
+      "id": "hauptinsel",
+      "name": "Hauptinsel",
+      "cities": [
+        "port-des-alizes",
+        "pointe-des-pecheurs",
+        "bourg-l-ecorce",
+        "valmorin",
+        "anse-doree"
+      ],
+      "status": "erschlossen",
+      "economic_role": "Passagier-Hauptbahn, Hafenhandel, Stadtnetze, Güterverteilung",
+      "notes": "Fünf Städte auf einer durchgehenden Passagierbahn, dazu regionale Straßenbahnen und Busnetze."
+    },
+    {
+      "id": "ausseninsel-roche-noire",
+      "name": "Roche-Noire",
+      "cities": [
+        "roche-noire"
+      ],
+      "status": "erschlossen",
+      "economic_role": "Kohlewirtschaft, Bretterimporte und interinsularer Schiffsverkehr",
+      "notes": "Stadt war in älteren Exporten Pont-Saint-Martin; Umbenennung in 1907 dokumentiert, Zeitpunkt nicht exakt bekannt."
+    },
+    {
+      "id": "ausseninsel-montfougere",
+      "name": "Montfougère",
+      "cities": [
+        "montfougere"
+      ],
+      "status": "erschlossen",
+      "economic_role": "Forstwirtschaft, Holzexport und Schiffsverkehr",
+      "notes": "Stadt war in älteren Exporten Divatte-sur-Loire; Hafenname 'Port forestier de Montfougère' wurde vorgeschlagen, ist aber nicht als finaler Name bestätigt."
+    }
+  ],
+  "stations": [
+    {
+      "id": "st-porte-alizes",
+      "city_id": "port-des-alizes",
+      "name": "Gare de Port des Alizés",
+      "type": "Personenbahnhof",
+      "status": "dokumentiert"
+    },
+    {
+      "id": "st-pointe",
+      "city_id": "pointe-des-pecheurs",
+      "name": "Gare de la Pointe des Pêcheurs",
+      "type": "Personenbahnhof",
+      "status": "dokumentiert"
+    },
+    {
+      "id": "st-bourg",
+      "city_id": "bourg-l-ecorce",
+      "name": "Bourg-l’Écorce – Gare Centrale",
+      "type": "Personenbahnhof",
+      "status": "dokumentiert"
+    },
+    {
+      "id": "st-valmorin",
+      "city_id": "valmorin",
+      "name": "Valmorin – Gare des Collines",
+      "type": "Personenbahnhof",
+      "status": "dokumentiert"
+    },
+    {
+      "id": "st-anse",
+      "city_id": "anse-doree",
+      "name": "Anse Dorée – Les Jardins",
+      "type": "Personenbahnhof (Kopfbahnhof)",
+      "status": "dokumentiert"
+    },
+    {
+      "id": "st-valmorin-freight",
+      "city_id": "valmorin",
+      "name": null,
+      "working_title": "Valmorin – Gare de Triage des Collines",
+      "type": "Güterumschlagbahnhof",
+      "status": "gebaut",
+      "note": "Arbeitstitel aus früherer Besprechung, als finaler Ingame-Name nicht bestätigt.",
+      "interfaces": [
+        "Schiene",
+        "Straße",
+        "Hafen in Reichweite"
+      ],
+      "source": "Screenshots 11.10.2026"
+    },
+    {
+      "id": "st-valmorin-harbour",
+      "city_id": "valmorin",
+      "name": null,
+      "type": "Hafen",
+      "status": "gebaut",
+      "source": "Screenshots 11.10.2026"
+    }
+  ],
+  "routes": [
+    {
+      "id": "main-passenger-line",
+      "display_name": "Hauptinsel-Personenbahn",
+      "technical_name": "TP Passagiere-PordesAli-AnsDor-RE-1",
+      "mode": "Eisenbahn",
+      "status": "aktiv",
+      "ordered_station_ids": [
+        "st-porte-alizes",
+        "st-pointe",
+        "st-bourg",
+        "st-valmorin",
+        "st-anse"
+      ],
+      "note": "Reihenfolge aus Spielstandbesprechung; vollständige Fahrplanlinie enthält Hin- und Rückfahrt. 1910: 10 Züge, momentane Belegung 551/960. Ehemalige Zugfolge ca. 6:05 Minuten, alter Messstand."
+    },
+    {
+      "id": "mon-val-ship",
+      "display_name": "Holz- und Bretterverbindung Montfougère–Valmorin",
+      "technical_name": "WC Passagiere,Holz,Bretter-Mon-Val-IC-1",
+      "mode": "Schiff",
+      "status": "aktiv",
+      "endpoints": [
+        "montfougere",
+        "valmorin"
+      ],
+      "permitted_cargo": [
+        "Passagiere",
+        "Holz",
+        "Bretter"
+      ],
+      "observed_1910": {
+        "vehicles": 3,
+        "occupied": 120,
+        "capacity": 120
+      },
+      "note": "Güterarten aus Linienbezeichnung; tatsächliche Warenmengen je Art nicht gesichert."
+    },
+    {
+      "id": "val-roc-ship",
+      "display_name": "Inselverkehr Valmorin–Roche-Noire",
+      "technical_name": "WC Passagiere,Bretter,Kohle-Val-Roc-IC-1",
+      "mode": "Schiff",
+      "status": "aktiv",
+      "endpoints": [
+        "valmorin",
+        "roche-noire"
+      ],
+      "permitted_cargo": [
+        "Passagiere",
+        "Bretter",
+        "Kohle"
+      ],
+      "observed_1910": {
+        "vehicles": 5,
+        "occupied": 170,
+        "capacity": 200
+      }
+    },
+    {
+      "id": "mon-roc-road",
+      "display_name": "Inselübergreifende Waren-/Passagierlinie",
+      "technical_name": "RC Passagiere,Holz-Mon-Roc-IC-1",
+      "mode": "Straße (laut Kürzel RC)",
+      "status": "aktiv",
+      "endpoints": [
+        "montfougere",
+        "roche-noire"
+      ],
+      "permitted_cargo": [
+        "Passagiere",
+        "Holz"
+      ],
+      "observed_1910": {
+        "vehicles": 5,
+        "occupied": 44,
+        "capacity": 50
+      },
+      "note": "Transportweg aus Linienbezeichnung; tatsächlicher Streckenverlauf nicht verifiziert."
+    },
+    {
+      "id": "pointe-port-ship",
+      "display_name": "Pointe des Pêcheurs–Port des Alizés",
+      "technical_name": "WC Passagiere,Rohöl,Treibstoff-PoidesPêc-PordesAli-IC-1",
+      "mode": "Schiff",
+      "status": "aktiv",
+      "endpoints": [
+        "pointe-des-pecheurs",
+        "port-des-alizes"
+      ],
+      "permitted_cargo": [
+        "Passagiere",
+        "Rohöl",
+        "Treibstoff"
+      ],
+      "observed_1910": {
+        "vehicles": 3,
+        "occupied": 58,
+        "capacity": 60
+      }
+    },
+    {
+      "id": "anse-port-ship",
+      "display_name": "Anse Dorée–Port des Alizés",
+      "technical_name": "WC Rohöl,Treibstoff-AnsDor-PordesAli-IC-1",
+      "mode": "Schiff",
+      "status": "aktiv",
+      "endpoints": [
+        "anse-doree",
+        "port-des-alizes"
+      ],
+      "permitted_cargo": [
+        "Rohöl",
+        "Treibstoff"
+      ],
+      "observed_1910": {
+        "vehicles": 9,
+        "occupied": 96,
+        "capacity": 180
+      }
+    }
+  ],
+  "projects": [
+    {
+      "id": "prj-hub-valmorin",
+      "name": "Zentraler Güterumschlagplatz Valmorin",
+      "status": "gebaut",
+      "location_city_id": "valmorin",
+      "date_precision": "vor oder im Oktober 1910",
+      "actual_game_completion_date": null,
+      "notes": "Gezeigt in zwei Screenshots, Bahnhof und benachbarter Straßenumschlag. Die genaue Kapazität und Zahl der Ladegleise ist nicht dokumentiert."
+    },
+    {
+      "id": "prj-port-amphitheatre",
+      "name": "Amphitheater Port des Alizés",
+      "status": "gebaut",
+      "location_city_id": "port-des-alizes",
+      "game_year_approx": 1906,
+      "expected_effect": "25 % weniger Straßenfahrzeuglärm laut früherer Spielstandsbesprechung",
+      "source": "Frühere Spielstandsbesprechung"
+    },
+    {
+      "id": "prj-montfougere-port",
+      "name": "Forsthafen Montfougère",
+      "status": "Standort diskutiert",
+      "location_city_id": "montfougere",
+      "working_name": "Port forestier de Montfougère",
+      "notes": "Der Name wurde vorgeschlagen. Schiffsverbindungen zu Montfougère sind 1910 aktiv, der endgültige Hafenname wurde nicht bestätigt."
+    }
+  ],
+  "trade_roles": [
+    {
+      "region_id": "hauptinsel",
+      "goods": [
+        "Fisch",
+        "Konserven",
+        "Bretter",
+        "Gemüse",
+        "Zucker",
+        "Treibstoff"
+      ],
+      "role": "Stadtversorgung und Verteilung, keine vollständigen Warenflussmengen verfügbar"
+    },
+    {
+      "region_id": "ausseninsel-roche-noire",
+      "goods": [
+        "Kohle",
+        "Bretter",
+        "Holz"
+      ],
+      "role": "Kohleförderung und Außenhandel, Warenströme aus Linienkonfiguration"
+    },
+    {
+      "region_id": "ausseninsel-montfougere",
+      "goods": [
+        "Holz",
+        "Bretter"
+      ],
+      "role": "Forstwirtschaft und überregionale Ausfuhr, Warenströme aus Linienkonfiguration"
+    }
+  ],
+  "traffic_codes": {
+    "Bus": "Passagierbus",
+    "Tram": "Straßenbahn",
+    "TP": "Personenzug",
+    "TC": "Güterzug",
+    "WC": "Schiff mit Güter- und/oder Passagierkapazität",
+    "WP": "Passagierschiff",
+    "RC": "Straßenfahrzeuge für Güter und/oder Passagiere",
+    "confidence": "Interpretation der Liniensyntax des Exports, keine offizielle Mod-Spezifikation"
+  },
+  "open_questions": [
+    "Position und Hafenname von Montfougère nicht abschließend dokumentiert",
+    "Genaues Eröffnungsdatum des Valmorin-Güterbahnhofs fehlt",
+    "Alle Koordinaten der Bahnhöfe/Häfen fehlen",
+    "Schiffsfahrzeiten und Güterumschlag pro Warenart fehlen",
+    "Wirtschaftlichkeit je Linie und Industriegründe fehlen"
+  ]
+}
