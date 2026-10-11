@@ -14,6 +14,12 @@ Die Weltseite zeigt jetzt standardmäßig den Monitorstand bis **11. Juli 1910**
 
 Das bisherige redaktionelle Archiv mit Weltatlas und Geschichten bleibt über „Chronik & Weltatlas · März 1910“ erreichbar. [Import, Quellen und Messgrenzen](docs/MONITOR.md).
 
+### Neu: Dossier „Zehn Jahre Archipel“
+
+Eine Langform-Seite über die Jahre 1900 bis 1910: [saves/archipel-des-alizes/jahrzehnt.html](saves/archipel-des-alizes/jahrzehnt.html). Sie trennt belegte Messwerte, Rekonstruktion, Fiktion und redaktionelle Einordnung sichtbar voneinander und misst jede Veränderung am Ausgangspunkt 1900, nicht an heute.
+
+Die Kennzahlen im Dossier erzeugt `node scripts/build-decade.mjs` aus den Monitordaten. Die CI prüft mit `--check`, ob sie aktuell sind und ob jeder Platzhalter im Text auflösbar ist.
+
 ### Zum Archiv
 
 - **Repository:** https://github.com/alexmondragonwrites-glitch/Transport-Fever-Chronicles

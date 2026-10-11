@@ -15,7 +15,8 @@
     "atlas": "atlas.json",
     "historicProduction": "production-1908-03.json",
     "historicSupply": "city-supply-1906-10.json",
-    "analysis": "analysis-1910-03.json"
+    "analysis": "analysis-1910-03.json",
+    "decade": "decade-1900-1910.json"
   },
   "snapshots": [
     {
