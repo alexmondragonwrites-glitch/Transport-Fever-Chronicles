@@ -14,7 +14,8 @@
     "worldDemand": "world-demand-1910-03.json",
     "atlas": "atlas.json",
     "historicProduction": "production-1908-03.json",
-    "historicSupply": "city-supply-1906-10.json"
+    "historicSupply": "city-supply-1906-10.json",
+    "analysis": "analysis-1910-03.json"
   },
   "snapshots": [
     {
@@ -47,6 +48,16 @@
       "date": "1910-03-13",
       "type": "world_demand",
       "file": "world-demand-1910-03.json"
+    },
+    {
+      "date": "1908-03",
+      "type": "population_midyear",
+      "file": "population-1908-03.json"
+    },
+    {
+      "date": "1910-03-13",
+      "type": "derived_analysis",
+      "file": "analysis-1910-03.json"
     }
   ]
 }
