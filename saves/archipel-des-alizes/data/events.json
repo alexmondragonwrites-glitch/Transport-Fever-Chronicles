@@ -208,6 +208,67 @@
         "valmorin"
       ],
       "source": "Linien & Auslastung 1910-03"
+    },
+    {
+      "id": "ev-1900-no-network",
+      "date": "1900",
+      "precision": "year",
+      "kind": "rekonstruktion",
+      "category": "Verkehr",
+      "title": "Ein Archipel ohne öffentlichen Verkehr",
+      "description": "Bei Spielstart betreibt die Société des Routes et des Rails weder Linien noch Stationen oder Fahrzeuge. Die Orte bestehen bereits; ihre damalige Größe ist nicht überliefert.",
+      "entities": [
+        "archipel-des-alizes"
+      ],
+      "source": "Spielstart; Angabe des Spielers. Keine Messung vor Dezember 1904."
+    },
+    {
+      "id": "ev-1904-network",
+      "date": "1904-12",
+      "precision": "month",
+      "kind": "fakt",
+      "category": "Verkehr",
+      "title": "Erste Netzaufnahme: 41 Linien, 198 Fahrzeuge",
+      "description": "Am 30. Dezember 1904 erfasst der Monitor 41 Linien und 198 Fahrzeuge. Auf der Bahn zwischen Port des Alizés und Anse Dorée fährt ein einziger Personenzug; im Juli 1910 sind es zehn.",
+      "entities": [
+        "archipel-des-alizes",
+        "port-des-alizes",
+        "anse-doree"
+      ],
+      "source": "Monitorexport 11.10.2026, erster Aufzeichnungsstand"
+    },
+    {
+      "id": "ev-1910-mobility",
+      "date": "1910-07",
+      "precision": "month",
+      "kind": "fakt",
+      "category": "Alltag",
+      "title": "Ein großer Teil der Wege führt über das Netz",
+      "description": "Seit Anfang 1905 stieg der Anteil der Wege über das Liniennetz in Bourg-l’Écorce von 16 auf 45 %, in Anse Dorée von 27 auf 47 % und in Valmorin von 0 auf 64 %.",
+      "entities": [
+        "bourg-l-ecorce",
+        "anse-doree",
+        "valmorin"
+      ],
+      "source": "Monitorexport 11.10.2026, Feld line_usage_percent (Definition nicht validiert)"
+    },
+    {
+      "id": "ev-1910-two-worlds",
+      "date": "1910-07",
+      "precision": "month",
+      "kind": "fakt",
+      "category": "Städte",
+      "title": "Zwei Welten: Küste und Hinterland",
+      "description": "Die fünf Küstenstädte an der Hauptbahn zählen 6.225 Einwohner (Dezember 1904: 2.256). In 43 weiteren Orten leben 8.657 Menschen ohne Linienverkehr; keiner dieser Orte ist seit Dezember 1904 gewachsen.",
+      "entities": [
+        "archipel-des-alizes",
+        "bourg-l-ecorce",
+        "port-des-alizes",
+        "pointe-des-pecheurs",
+        "valmorin",
+        "anse-doree"
+      ],
+      "source": "Monitorexport 11.10.2026, Stadtstände 1904-12 bis 1910-07"
     }
   ]
 }

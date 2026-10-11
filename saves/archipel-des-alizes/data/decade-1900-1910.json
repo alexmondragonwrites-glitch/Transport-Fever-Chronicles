@@ -1,0 +1,684 @@
+{
+  "schema_version": 1,
+  "id": "dossier-1900-1910",
+  "save_id": "archipel-des-alizes",
+  "kicker": "Dossier 1900–1910",
+  "title": "Zehn Jahre Archipel",
+  "lede": "Wie sich das Leben auf den Inseln verändert hat: vom Fußweg zum Fahrplan, von der Dorfruhe zum Kreischen der Straßenbahn.",
+  "ledger": {
+    "then": {
+      "label": "1900",
+      "sub": "Spielstart",
+      "kind": "rekonstruktion"
+    },
+    "now": {
+      "label": "1910",
+      "sub": "Juli, letzter Messstand",
+      "kind": "fakt"
+    },
+    "rows": [
+      {
+        "label": "Linien",
+        "then": "0",
+        "now": "{{network.last.lines}}"
+      },
+      {
+        "label": "Fahrzeuge",
+        "then": "0",
+        "now": "{{network.last.vehicles}}"
+      },
+      {
+        "label": "Stationen und Haltestellen",
+        "then": "0",
+        "now": "{{network.last.stations}}"
+      },
+      {
+        "label": "Menschen an der Küste",
+        "then": "unbekannt",
+        "now": "{{kueste.last}}"
+      },
+      {
+        "label": "Wege über das Netz",
+        "then": "keine",
+        "now": "{{kueste.line_usage_min}}–{{kueste.line_usage_max}} %"
+      }
+    ]
+  },
+  "reading_note": {
+    "title": "Der Maßstab ist 1900, nicht heute",
+    "body": "Wer das Archipel mit einer Welt vergleicht, in der Waren über Nacht von überall ankommen, sieht nur Lücken. Dieses Dossier misst jede Veränderung am Ausgangspunkt: an einem Archipel ohne jeden öffentlichen Verkehr. Eine Versorgungsquote von 25 % heißt deshalb nicht Not. Sie heißt, dass ein Viertel der Waren ankommt, die vor dem Netz gar nicht erreichbar waren."
+  },
+  "towns": [
+    {
+      "key": "port",
+      "name": "Port des Alizés",
+      "group": "kueste",
+      "role": "Hafenstadt und Verkehrsknoten"
+    },
+    {
+      "key": "pointe",
+      "name": "Pointe des Pêcheurs",
+      "group": "kueste",
+      "role": "Fischerei und Konservenindustrie"
+    },
+    {
+      "key": "bourg",
+      "name": "Bourg-l’Écorce",
+      "group": "kueste",
+      "role": "Wirtschafts- und Bevölkerungszentrum"
+    },
+    {
+      "key": "valmorin",
+      "name": "Valmorin",
+      "group": "kueste",
+      "role": "Güterumschlag und Inselhandel"
+    },
+    {
+      "key": "anse",
+      "name": "Anse Dorée",
+      "group": "kueste",
+      "role": "Küstenstadt und Bahnendpunkt"
+    },
+    {
+      "key": "roche",
+      "name": "Roche-Noire",
+      "group": "inseln",
+      "role": "Kohle und Güterhandel"
+    },
+    {
+      "key": "mont",
+      "name": "Montfougère",
+      "group": "inseln",
+      "role": "Holzwirtschaft und Küstenhandel"
+    }
+  ],
+  "timeline": [
+    {
+      "key": "hauptbahn",
+      "line": "TP Passagiere-PordesAli-AnsDor-RE-1",
+      "title": "Die Hauptbahn",
+      "text": "Port des Alizés, Pointe des Pêcheurs, Bourg-l’Écorce, Valmorin, Anse Dorée: das Rückgrat der Küste."
+    },
+    {
+      "key": "tram_port",
+      "line": "Tram Passagiere-PordesAli-LO-1",
+      "title": "Die erste Straßenbahn",
+      "text": "In Port des Alizés beginnt der Stadtverkehr auf Schienen."
+    },
+    {
+      "key": "tram_bourg",
+      "line": "Tram Passagiere-Bou-LO-1",
+      "title": "Straßenbahn in Bourg-l’Écorce",
+      "text": "Heute die Straßenbahnlinie mit den meisten Wagen im Archipel."
+    },
+    {
+      "key": "bus_valmorin",
+      "line": "Bus Passagiere-Val-LO-1",
+      "title": "Der erste Bus in Valmorin",
+      "text": "Das Küstendorf bekommt seinen ersten eigenen Stadtverkehr."
+    },
+    {
+      "key": "tram_pointe",
+      "line": "Tram Passagiere-PoidesPêc-LO-1",
+      "title": "Straßenbahn in Pointe des Pêcheurs",
+      "text": "Das Fischerdorf bekommt Schienen."
+    },
+    {
+      "key": "ship_roche",
+      "line": "WC Passagiere,Bretter,Kohle-Val-Roc-IC-1",
+      "title": "Schiff nach Roche-Noire",
+      "text": "Kohle, Bretter und Reisende zwischen Valmorin und der Kohleinsel."
+    },
+    {
+      "key": "ship_mont",
+      "line": "WC Passagiere,Holz,Bretter-Mon-Val-IC-1",
+      "title": "Schiff nach Montfougère",
+      "text": "Holz von der Außeninsel nach Valmorin."
+    }
+  ],
+  "chapters": {
+    "start": {
+      "kind": "rekonstruktion",
+      "number": "I",
+      "eyebrow": "1900",
+      "title": "Ein Archipel ohne Fahrplan",
+      "paragraphs": [
+        "Als die Société des Routes et des Rails 1900 ihre Arbeit aufnahm, fuhr auf den Inseln nichts nach Fahrplan. Es gab keine Linie, keine Station und kein Fahrzeug der Gesellschaft.",
+        "Leer war das Archipel deshalb nicht. Die Orte bestanden bereits, und das Leben war auf Nähe gebaut: Was ein Dorf brauchte, kam aus dem Dorf selbst oder aus dem nächsten, das man zu Fuß erreichte. Wie groß die Städte damals waren, ist nicht überliefert."
+      ],
+      "source": "Grundlage: Spielstart 1900 ohne vorhandenes Netz (Angabe des Spielers). Bis Dezember 1904 liegen keine Messwerte vor.",
+      "gazette": "gazette-1900-01"
+    },
+    "first": {
+      "kind": "fakt",
+      "number": "II",
+      "eyebrow": "{{range.first_game_date}}",
+      "title": "Der erste Messpunkt",
+      "paragraphs": [
+        "Die Aufzeichnung beginnt am {{range.first_game_date}}. Zu diesem Zeitpunkt betreibt die Société bereits {{network.first.lines}} Linien mit {{network.first.vehicles}} Fahrzeugen. Was in den vier Jahren davor in welcher Reihenfolge entstand, ist nicht dokumentiert.",
+        "Wie jung das Netz noch ist, zeigt ein Detail: Auf der Bahn zwischen Port des Alizés und Anse Dorée fährt ein einziger Personenzug. In den fünf Küstenstädten leben zusammen {{kueste.first}} Menschen. In Valmorin, damals noch {{towns.valmorin.former_name}}, führt Anfang 1905 kein Weg über das Netz (Linienanteil {{towns.valmorin.line_usage_first}} %)."
+      ],
+      "tiles": [
+        {
+          "value": "{{network.first.lines}}",
+          "label": "Linien"
+        },
+        {
+          "value": "{{network.first.vehicles}}",
+          "label": "Fahrzeuge"
+        },
+        {
+          "value": "{{kueste.first}}",
+          "label": "Menschen an der Küste"
+        }
+      ],
+      "source": "Monitorexport vom 11.10.2026, erster Aufzeichnungsstand."
+    },
+    "network": {
+      "kind": "fakt",
+      "number": "III",
+      "eyebrow": "1904–1910",
+      "title": "Wie das Netz zu den Menschen kam",
+      "intro": "Wann Personenlinien zum ersten Mal in der Aufzeichnung erscheinen. Linien, die direkt nach der Aufzeichnungslücke auftauchen, können schon früher eröffnet worden sein."
+    },
+    "worlds": {
+      "kind": "fakt",
+      "number": "IV",
+      "eyebrow": "Juli 1910",
+      "title": "Zwei Welten",
+      "intro": "Zehn Jahre nach Spielstart hat sich das Archipel geteilt: in eine verbundene Küste und ein Hinterland, das noch lebt wie 1900.",
+      "coast": {
+        "label": "Die Küste",
+        "sub": "Fünf Städte an der Hauptbahn",
+        "rows": [
+          {
+            "value": "{{kueste.first}} → {{kueste.last}}",
+            "label": "Einwohner seit Dezember 1904 · ×{{kueste.factor}}"
+          },
+          {
+            "value": "{{kueste.line_usage_min}}–{{kueste.line_usage_max}} %",
+            "label": "der Wege führen über das Netz"
+          },
+          {
+            "value": "bis {{kueste.noise_max}} dB",
+            "label": "Lärm in den Straßen"
+          }
+        ]
+      },
+      "hinterland": {
+        "label": "Das Hinterland",
+        "sub": "{{hinterland.count}} Orte ohne Linienverkehr",
+        "rows": [
+          {
+            "value": "{{hinterland.residents_first}} → {{hinterland.residents_last}}",
+            "label": "Einwohner · {{hinterland.unchanged_count}} von {{hinterland.count}} Orten unverändert"
+          },
+          {
+            "value": "{{hinterland.line_usage_max_last}} %",
+            "label": "der Wege führen über das Netz"
+          },
+          {
+            "value": "{{hinterland.noise_avg_last}} dB",
+            "label": "Lärm im Mittel"
+          }
+        ]
+      },
+      "chart_title": "Einwohner nach Landesteil",
+      "islands": "Dazwischen liegen Roche-Noire und Montfougère. Ihre Kohle und ihr Holz gehen zur Hauptinsel, ihre Einwohnerzahl hat sich kaum bewegt ({{inseln.first}} → {{inseln.last}}), und auch dort führt kein Weg über das Netz.",
+      "window": "Das Hinterland ist ein Fenster in das Jahr 1900. So still, so unverbunden und so beständig dürfte damals das ganze Archipel gewesen sein."
+    },
+    "towns": {
+      "kind": "fakt",
+      "number": "V",
+      "eyebrow": "Ortsakten",
+      "title": "Was sich im Alltag verändert hat",
+      "intro": "Für jede erschlossene Stadt steht der erste Stand der Aufzeichnung ({{range.first_snapshot}}) neben dem letzten ({{range.last_snapshot}}). Einwohner ab Dezember 1904.",
+      "note": "Linienanteil, Lärm, Verschmutzung und Versorgung sind Exportwerte des Spiels, deren genaue Definition nicht validiert ist. Die Verschmutzung erscheint deshalb nur relativ, ohne Einheit."
+    },
+    "voices": {
+      "kind": "fiktion",
+      "number": "VI",
+      "eyebrow": "La Gazette des Alizés · Juli 1910",
+      "title": "Stimmen aus dem Archipel",
+      "intro": "Erfundene Zeitungsstücke. Sie erzählen, wie sich die belegten Veränderungen für die Menschen angefühlt haben könnten, aus der Sicht ihrer Zeit. Jeder Text nennt seinen Anknüpfungspunkt in den Daten.",
+      "articles": [
+        "gazette-1910-04",
+        "gazette-1910-05",
+        "gazette-1910-06",
+        "gazette-1910-07",
+        "gazette-1910-08"
+      ]
+    },
+    "balance": {
+      "kind": "einordnung",
+      "number": "VII",
+      "eyebrow": "Bilanz",
+      "title": "Vom Fußweg zum Fahrplan",
+      "paragraphs": [
+        "In zehn Jahren hat das Archipel den Schritt vom Fußweg zum Fahrplan gemacht, aber nur an einer Küste. Dort wohnen heute {{kueste.factor}}-mal so viele Menschen wie Ende 1904, und {{kueste.line_usage_min}} bis {{kueste.line_usage_max}} % aller Wege führen über Schienen, Straßen oder Wasser des Netzes.",
+        "Mit dem Netz kamen Lärm und Rauch, aber auch Erwartungen, die es 1900 nicht gab. Wer erlebt hat, dass Fisch, Gemüse und Bretter von weither ankommen, fragt bald auch nach Rum, Möbeln und Kleidung. Die offenen Wünsche der Städte sind deshalb weniger ein Zeichen von Not als ein Zeichen dafür, wie weit sich ihr Horizont geöffnet hat.",
+        "Für die meisten Orte des Archipels blieb der Fortschritt dagegen eine Nachricht, die mit den Schiffen kam. Ob das Netz in der nächsten Dekade über die Küste hinauswächst, ist die offene Frage des Jahres 1910."
+      ]
+    },
+    "sources": {
+      "title": "Quellen und Grenzen",
+      "items": [
+        "Messwerte: Monitorexport vom 11.10.2026, Spielzeit {{range.first_game_date}} bis {{range.last_game_date}}.",
+        "Nach Spielzeit-Rücksprüngen gilt der neu gespielte Verlauf. Verworfene Abschnitte fließen nicht ein.",
+        "Aufzeichnungslücke vom {{gaps.0.from}} bis {{gaps.0.to}}.",
+        "1900 bis Dezember 1904: keine Aufzeichnung. Der Ausgangszustand ohne Netz beruht auf dem Spielstart.",
+        "Einwohner sind belegter Wohnraum (housing_occupied), jeweils der letzte Stand eines Spielmonats.",
+        "Linienanteil (line_usage_percent), Lärm (noise_db), Verschmutzung (pollution_db) und Versorgung (supply_coverage_percent) sind Exportfelder mit nicht validierter Definition und werden nur im Vergleich gezeigt.",
+        "Alle Zeitungstexte sind erfunden und schaffen keine Ingame-Fakten.",
+        "Die Kennzahlen erzeugt scripts/build-decade.mjs aus den Monitordaten. Die automatische Prüfung kontrolliert bei jedem Push, ob sie aktuell sind."
+      ]
+    }
+  },
+  "facts": {
+    "generated_by": "scripts/build-decade.mjs",
+    "source": {
+      "monitor_index": "monitor-20261011/index.json",
+      "exported_at": "2026-10-11T18:00:52+02:00",
+      "source_sha256": "b2c76387f5569d83d7bc0ff90d7f7b9e7cd1bc315d6553dba6ab52d0b0dd92a1",
+      "rule": "Nach Rücksprüngen gilt der neu gespielte Verlauf. Einwohner = belegter Wohnraum, letzter Stand je Spielmonat."
+    },
+    "range": {
+      "first_game_date": "1904-12-30",
+      "last_game_date": "1910-07-11",
+      "first_month": "1904-12",
+      "last_month": "1910-07",
+      "first_snapshot": "1905-01-10",
+      "last_snapshot": "1910-07-11"
+    },
+    "gaps": [
+      {
+        "from": "1906-10-01",
+        "to": "1907-03-13"
+      }
+    ],
+    "network": {
+      "first": {
+        "date": "1904-12-30",
+        "lines": 41,
+        "vehicles": 198
+      },
+      "last": {
+        "date": "1910-07-11",
+        "lines": 82,
+        "vehicles": 474,
+        "stations": 146
+      }
+    },
+    "population": {
+      "periods": [
+        "1904-12",
+        "1905-03",
+        "1905-06",
+        "1905-09",
+        "1905-12",
+        "1906-03",
+        "1906-06",
+        "1906-09",
+        "1907-03",
+        "1907-06",
+        "1907-09",
+        "1907-12",
+        "1908-03",
+        "1908-06",
+        "1908-09",
+        "1908-12",
+        "1909-03",
+        "1909-06",
+        "1909-09",
+        "1909-12",
+        "1910-03",
+        "1910-06",
+        "1910-07"
+      ],
+      "groups": {
+        "kueste": [
+          2256,
+          2471,
+          2686,
+          2889,
+          3069,
+          3271,
+          3435,
+          3654,
+          3962,
+          4207,
+          4412,
+          4624,
+          4850,
+          5046,
+          5233,
+          5404,
+          5551,
+          5688,
+          5812,
+          5971,
+          6094,
+          6215,
+          6225
+        ],
+        "inseln": [
+          486,
+          486,
+          486,
+          486,
+          486,
+          486,
+          486,
+          486,
+          486,
+          486,
+          486,
+          487,
+          487,
+          494,
+          497,
+          505,
+          511,
+          517,
+          526,
+          534,
+          537,
+          543,
+          543
+        ],
+        "hinterland": [
+          8657,
+          8657,
+          8657,
+          8657,
+          8657,
+          8657,
+          8657,
+          8657,
+          8657,
+          8657,
+          8657,
+          8657,
+          8657,
+          8657,
+          8657,
+          8657,
+          8657,
+          8657,
+          8657,
+          8657,
+          8657,
+          8657,
+          8657
+        ],
+        "gesamt": [
+          11399,
+          11614,
+          11829,
+          12032,
+          12212,
+          12414,
+          12578,
+          12797,
+          13105,
+          13350,
+          13555,
+          13768,
+          13994,
+          14197,
+          14387,
+          14566,
+          14719,
+          14862,
+          14995,
+          15162,
+          15288,
+          15415,
+          15425
+        ]
+      }
+    },
+    "kueste": {
+      "first": 2256,
+      "last": 6225,
+      "change": 3969,
+      "factor": 2.8,
+      "line_usage_min": 45,
+      "line_usage_max": 65,
+      "noise_max": 75
+    },
+    "inseln": {
+      "first": 486,
+      "last": 543,
+      "change": 57,
+      "factor": 1.1
+    },
+    "gesamt": {
+      "first": 11399,
+      "last": 15425,
+      "change": 4026,
+      "factor": 1.4
+    },
+    "hinterland": {
+      "count": 43,
+      "residents_first": 8657,
+      "residents_last": 8657,
+      "unchanged_count": 43,
+      "line_usage_max_last": 0,
+      "noise_avg_last": 64
+    },
+    "pollution_scale_max": 20043,
+    "towns": {
+      "port": {
+        "name": "Port des Alizés",
+        "former_name": null,
+        "group": "kueste",
+        "residents_first": 728,
+        "residents_first_date": "1904-12",
+        "residents_last": 1468,
+        "residents_last_date": "1910-07",
+        "factor": 2,
+        "line_usage_first": 46,
+        "line_usage_last": 61,
+        "noise_first": 70,
+        "noise_last": 72,
+        "pollution_first": 16146,
+        "pollution_last": 16451,
+        "coverage_first": 31,
+        "coverage_last": 29,
+        "unsupplied_goods": [
+          "Rum",
+          "Werkzeuge"
+        ]
+      },
+      "pointe": {
+        "name": "Pointe des Pêcheurs",
+        "former_name": null,
+        "group": "kueste",
+        "residents_first": 261,
+        "residents_first_date": "1904-12",
+        "residents_last": 1006,
+        "residents_last_date": "1910-07",
+        "factor": 3.9,
+        "line_usage_first": 62,
+        "line_usage_last": 65,
+        "noise_first": 70,
+        "noise_last": 74,
+        "pollution_first": 9815,
+        "pollution_last": 18184,
+        "coverage_first": 48,
+        "coverage_last": 25,
+        "unsupplied_goods": [
+          "Werkzeuge"
+        ]
+      },
+      "bourg": {
+        "name": "Bourg-l’Écorce",
+        "former_name": null,
+        "group": "kueste",
+        "residents_first": 673,
+        "residents_first_date": "1904-12",
+        "residents_last": 2225,
+        "residents_last_date": "1910-07",
+        "factor": 3.3,
+        "line_usage_first": 16,
+        "line_usage_last": 45,
+        "noise_first": 67,
+        "noise_last": 75,
+        "pollution_first": 7022,
+        "pollution_last": 20043,
+        "coverage_first": 22,
+        "coverage_last": 16,
+        "unsupplied_goods": [
+          "Rum",
+          "Möbel"
+        ]
+      },
+      "valmorin": {
+        "name": "Valmorin",
+        "former_name": "Bry-sur-Marne",
+        "group": "kueste",
+        "residents_first": 228,
+        "residents_first_date": "1904-12",
+        "residents_last": 725,
+        "residents_last_date": "1910-07",
+        "factor": 3.2,
+        "line_usage_first": 0,
+        "line_usage_last": 64,
+        "noise_first": 63,
+        "noise_last": 72,
+        "pollution_first": 40,
+        "pollution_last": 17656,
+        "coverage_first": 0,
+        "coverage_last": 20,
+        "unsupplied_goods": [
+          "Kleidung",
+          "Maschinen"
+        ]
+      },
+      "anse": {
+        "name": "Anse Dorée",
+        "former_name": null,
+        "group": "kueste",
+        "residents_first": 366,
+        "residents_first_date": "1904-12",
+        "residents_last": 801,
+        "residents_last_date": "1910-07",
+        "factor": 2.2,
+        "line_usage_first": 27,
+        "line_usage_last": 47,
+        "noise_first": 69,
+        "noise_last": 72,
+        "pollution_first": 9388,
+        "pollution_last": 17833,
+        "coverage_first": 54,
+        "coverage_last": 28,
+        "unsupplied_goods": [
+          "Sugar",
+          "Kleidung",
+          "Maschinen"
+        ]
+      },
+      "roche": {
+        "name": "Roche-Noire",
+        "former_name": "Pont-Saint-Martin",
+        "group": "inseln",
+        "residents_first": 355,
+        "residents_first_date": "1904-12",
+        "residents_last": 368,
+        "residents_last_date": "1910-07",
+        "factor": 1,
+        "line_usage_first": 0,
+        "line_usage_last": 0,
+        "noise_first": 63,
+        "noise_last": 64,
+        "pollution_first": 171,
+        "pollution_last": 4771,
+        "coverage_first": 0,
+        "coverage_last": 17,
+        "unsupplied_goods": [
+          "Gemüse"
+        ]
+      },
+      "mont": {
+        "name": "Montfougère",
+        "former_name": "Divatte-sur-Loire",
+        "group": "inseln",
+        "residents_first": 131,
+        "residents_first_date": "1904-12",
+        "residents_last": 175,
+        "residents_last_date": "1910-07",
+        "factor": 1.3,
+        "line_usage_first": 0,
+        "line_usage_last": 0,
+        "noise_first": 64,
+        "noise_last": 63,
+        "pollution_first": 163,
+        "pollution_last": 4653,
+        "coverage_first": 0,
+        "coverage_last": 25,
+        "unsupplied_goods": [
+          "Fisch"
+        ]
+      }
+    },
+    "lines": {
+      "hauptbahn": {
+        "name": "TP Passagiere-PordesAli-AnsDor-RE-1",
+        "first_seen": "1904-12-30",
+        "existed_at_start": true,
+        "after_gap": false,
+        "vehicles_first": 1,
+        "vehicles_last": 10
+      },
+      "tram_port": {
+        "name": "Tram Passagiere-PordesAli-LO-1",
+        "first_seen": "1905-01-28",
+        "existed_at_start": false,
+        "after_gap": false,
+        "vehicles_first": 3,
+        "vehicles_last": 3
+      },
+      "tram_bourg": {
+        "name": "Tram Passagiere-Bou-LO-1",
+        "first_seen": "1905-06-10",
+        "existed_at_start": false,
+        "after_gap": false,
+        "vehicles_first": 0,
+        "vehicles_last": 13
+      },
+      "bus_valmorin": {
+        "name": "Bus Passagiere-Val-LO-1",
+        "first_seen": "1905-12-21",
+        "existed_at_start": false,
+        "after_gap": false,
+        "vehicles_first": 4,
+        "vehicles_last": 16
+      },
+      "tram_pointe": {
+        "name": "Tram Passagiere-PoidesPêc-LO-1",
+        "first_seen": "1907-03-13",
+        "existed_at_start": false,
+        "after_gap": true,
+        "vehicles_first": 4,
+        "vehicles_last": 4
+      },
+      "ship_roche": {
+        "name": "WC Passagiere,Bretter,Kohle-Val-Roc-IC-1",
+        "first_seen": "1907-05-29",
+        "existed_at_start": false,
+        "after_gap": false,
+        "vehicles_first": 1,
+        "vehicles_last": 5
+      },
+      "ship_mont": {
+        "name": "WC Passagiere,Holz,Bretter-Mon-Val-IC-1",
+        "first_seen": "1907-08-02",
+        "existed_at_start": false,
+        "after_gap": false,
+        "vehicles_first": 2,
+        "vehicles_last": 3
+      }
+    }
+  }
+}

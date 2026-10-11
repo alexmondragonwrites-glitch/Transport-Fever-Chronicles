@@ -45,6 +45,88 @@
       "entities": [
         "bourg-l-ecorce"
       ]
+    },
+    {
+      "id": "gazette-1900-01",
+      "date": "1900",
+      "type": "fiktion",
+      "rubric": "Gesellschaft",
+      "title": "Ein Archipel ohne Fahrplan",
+      "teaser": "Noch fährt hier nichts. Doch in den Häfen erzählt man sich von einer neuen Gesellschaft.",
+      "body": "Wer in diesen Tagen von Pointe des Pêcheurs nach Port des Alizés will, geht zu Fuß oder sucht sich einen Platz auf einem Ochsenkarren. Waren reisen so langsam wie die Menschen, die sie tragen. Was ein Dorf nicht selbst fängt, erntet oder schlägt, ist ein seltenes Gut, und niemand vermisst, was er nie gekannt hat. Nun ist von einer Société des Routes et des Rails die Rede, die Straßen, Schiffe und sogar eine Eisenbahn verspricht. Die Fischer lachen darüber, die Händler rechnen schon. Und die Alten fragen sich, wozu man schneller sein soll, wenn die Insel doch immer dieselbe war.",
+      "grounding": "Ausgangspunkt: Spielstart 1900 ohne Verkehrsnetz (Rekonstruktion). Für die Jahre bis Dezember 1904 liegen keine Messwerte vor.",
+      "entities": [
+        "archipel-des-alizes",
+        "pointe-des-pecheurs",
+        "port-des-alizes"
+      ]
+    },
+    {
+      "id": "gazette-1910-04",
+      "date": "1910-07",
+      "type": "fiktion",
+      "rubric": "Stadtleben",
+      "title": "Bourg-l’Écorce: Die Straßenbahn gibt den Takt vor",
+      "teaser": "Mehr als dreimal so viele Menschen wie 1905, und fast jeder zweite Weg führt über das Netz.",
+      "body": "Wer 1905 nach Bourg-l’Écorce zog, kannte noch die Stille zwischen den Sägewerken. Heute weckt ihn das Kreischen der Straßenbahn, und fast jeder zweite Weg in der Stadt führt über das Netz. Mehr als dreimal so viele Menschen wie damals bewegen sich durch die Gassen. In den Läden hört man Wünsche, die vor ein paar Jahren niemand ausgesprochen hätte: Rum von den Plantagen, Möbel aus der Werkstatt einer anderen Insel. „Früher hat man gekauft, was es gab“, sagt eine Händlerin. „Heute fragen die Leute nach dem, was es geben könnte.“",
+      "grounding": "Einwohner 673 → 2.225, Linienanteil 16 → 45 %, Bedarf an Rum und Möbeln ohne Versorgung (Monitorexport, Juli 1910).",
+      "entities": [
+        "bourg-l-ecorce"
+      ]
+    },
+    {
+      "id": "gazette-1910-05",
+      "date": "1910-07",
+      "type": "fiktion",
+      "rubric": "Hafen & Fischerei",
+      "title": "Pointe des Pêcheurs: Die Stadt der Fischer kauft Fisch",
+      "teaser": "Aus dem Fischerdorf ist eine Stadt geworden. Ausgerechnet der Fang reicht nicht mehr für alle.",
+      "body": "Vor fünf Jahren lebten hier ein paar hundert Menschen vom Meer. Heute sind es fast viermal so viele, und zwei von drei Wegen führen über Straßenbahn und Bus. Die Ironie bemerkt jeder am Hafen: In der Stadt der Fischer muss Fisch inzwischen herangebracht werden. Der eigene Fang geht in die Konservenfabrik und auf die Schiffe. Die alten Boote liegen noch an der Mole. Sie erinnern an eine Zeit, in der jede Familie wusste, was das Meer ihr am nächsten Morgen bringen würde.",
+      "grounding": "Einwohner 261 → 1.006, Linienanteil 62 → 65 %, Fischbedarf zu rund einem Drittel gedeckt (Monitorexport, Juli 1910).",
+      "entities": [
+        "pointe-des-pecheurs"
+      ]
+    },
+    {
+      "id": "gazette-1910-06",
+      "date": "1910-07",
+      "type": "fiktion",
+      "rubric": "Wirtschaft & Verkehr",
+      "title": "Valmorin wartet auf Kleidung",
+      "teaser": "Aus Bry-sur-Marne wurde ein Umschlagplatz. Jetzt richtet sich der Blick nach Lamballe-Armor.",
+      "body": "Den alten Namen Bry-sur-Marne trägt nur noch der Viehzuchtbetrieb vor der Stadt. Valmorin selbst ist ein Umschlagplatz geworden, an dem die Waren der Inseln umsortiert werden. Fast zwei Drittel aller Wege führen inzwischen über das Netz, Anfang 1905 war es kein einziger. Die Älteren haben den neuen Namen nie ganz angenommen. Die Jüngeren warten auf etwas anderes: Seit Monaten heißt es, bald komme Kleidung aus Lamballe-Armor. Valmorin und Anse Dorée sind die einzigen Städte des Archipels, die schon danach fragen.",
+      "grounding": "Umbenennung belegt bis Ende 1907; Linienanteil 0 → 64 %; Kleidungsbedarf nur in Valmorin und Anse Dorée (Monitorexport, Juli 1910).",
+      "entities": [
+        "valmorin",
+        "anse-doree"
+      ]
+    },
+    {
+      "id": "gazette-1910-07",
+      "date": "1910-07",
+      "type": "fiktion",
+      "rubric": "Inseln",
+      "title": "Roche-Noire: Rauch über der Kohleinsel",
+      "teaser": "Die Kohle fährt zur Hauptinsel. Das Leben auf der Insel bleibt, wie es war.",
+      "body": "Der Rauch über Roche-Noire ist dichter geworden, das Leben darunter kaum anders. Die Kohle verlässt die Insel in Richtung Valmorin, und das Schiff nähme auch Reisende mit. Doch kaum jemand hat einen Grund zu fahren: Auf der Insel leben fast genauso viele Menschen wie vor fünf Jahren. Man arbeitet für einen Wandel, den man bisher vor allem vom Ufer aus sieht.",
+      "grounding": "Einwohner 355 → 368, Linienanteil 0 %, Verschmutzungswert stark gestiegen (Monitorexport, Juli 1910).",
+      "entities": [
+        "roche-noire",
+        "valmorin"
+      ]
+    },
+    {
+      "id": "gazette-1910-08",
+      "date": "1910-07",
+      "type": "fiktion",
+      "rubric": "Land",
+      "title": "Wo der Fahrplan nicht ankommt",
+      "teaser": "In 43 Orten hat sich seit 1905 nichts verändert. Von Straßenbahnen erzählt man hier wie von einem fremden Land.",
+      "body": "In den Orten abseits der Küste scheint die Zeit stehen geblieben. Kein neues Haus, kein Fahrplan. Zum Markt geht man zu Fuß, so wie 1900 überall im Archipel. Von den Straßenbahnen in Bourg-l’Écorce erzählen Reisende wie von einem fremden Land. Manche hier sind froh darüber, denn sie kennen ihre Nachbarn noch alle beim Namen. Andere fragen sich, wie lange die Küste noch allein vorausfahren will.",
+      "grounding": "43 Orte mit 8.657 Einwohnern, unverändert seit Dezember 1904, Linienanteil 0 % (Monitorexport, Juli 1910).",
+      "entities": [
+        "archipel-des-alizes"
+      ]
     }
   ]
 }

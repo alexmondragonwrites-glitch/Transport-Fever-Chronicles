@@ -66,6 +66,15 @@ if(registry&&Array.isArray(registry.worlds)){
       for(const project of at.projects||[])if(project.location_city_id)check(allCityIds.has(project.location_city_id),"Unbekannter Bauprojekt-Ort: "+project.location_city_id);
     }
   }
+  // Dossier: Verweise auf Gazette-Artikel, Fiktionskennzeichen und Seite (Kennzahlen prüft build-decade.mjs --check)
+  if(m.latest.decade){
+    const dz=json(join(base,m.latest.decade)),gz=m.latest.gazette?json(join(base,m.latest.gazette)):null;
+    const articleIds=new Set((gz?.articles||[]).map(a=>a.id));
+    for(const id of [dz?.chapters?.start?.gazette,...(dz?.chapters?.voices?.articles||[])].filter(Boolean))check(articleIds.has(id),"Dossier verweist auf unbekannten Gazette-Artikel: "+id);
+    for(const a of gz?.articles||[])check(a.type==="fiktion","Gazette-Artikel ohne Fiktionskennzeichen: "+a.id);
+    check(Boolean(dz?.facts&&Object.keys(dz.facts).length),"Dossier ohne Faktenblock");
+    check(existsSync(join("saves",world.id,"jahrzehnt.html")),"Dossierseite fehlt: "+world.id);
+  }
   for(const snap of m.snapshots||[]){for(const kind of ["lines","industries","demand","worldCities","worldDemand"]){if(snap[kind])check(existsSync(join(base,snap[kind])),"Archiv-Snapshot fehlt: "+snap[kind]);}}
 
  }
