@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "save_id": "archipel-des-alizes",
+  "game_period": "1908-03",
+  "source": "TF3-Stadtentwicklung/März 1908, frühere Spielstandsbesprechung; keine exakte Tagesangabe",
+  "measurements": [
+    {
+      "city_id": "bourg-l-ecorce",
+      "population": 1795
+    },
+    {
+      "city_id": "port-des-alizes",
+      "population": 1171
+    },
+    {
+      "city_id": "pointe-des-pecheurs",
+      "population": 754
+    },
+    {
+      "city_id": "valmorin",
+      "population": 495
+    },
+    {
+      "city_id": "anse-doree",
+      "population": 593
+    },
+    {
+      "city_id": "roche-noire",
+      "population": 356
+    },
+    {
+      "city_id": "montfougere",
+      "population": 131
+    }
+  ],
+  "notes": "Zwischenstand März 1908, separat archiviert, weil die Siebenpunkt-Weltchronik September/Dezember-Werte verwendet."
+}
