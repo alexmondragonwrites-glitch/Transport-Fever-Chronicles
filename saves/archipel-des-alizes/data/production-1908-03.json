@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "save_id": "archipel-des-alizes",
+  "game_date": "1908-03-22",
+  "source": "TF3-Mod: Industrien · Produktion pro Spieljahr; zuvor besprochene Top-12-Liste vom 22.03.1908",
+  "units": "Spielinterne Produktionseinheiten pro Spieljahr (Exportbezeichnung)",
+  "scope": "Top 12 der damaligen Exportliste, nicht alle Industrien",
+  "industries": [
+    {
+      "name": "Domaine des Alizés",
+      "production_per_game_year": 1190,
+      "industry_type": "nicht aus dem Auszug eindeutig bestimmt"
+    },
+    {
+      "name": "Hombourg-Haut Ölraffinerie #1",
+      "production_per_game_year": 945,
+      "industry_type": "Ölraffinerie"
+    },
+    {
+      "name": "Port des Alizés Ölplattform",
+      "production_per_game_year": 324,
+      "industry_type": "Ölplattform"
+    },
+    {
+      "name": "Valenton Ölplattform",
+      "production_per_game_year": 297,
+      "industry_type": "Ölplattform"
+    },
+    {
+      "name": "Scierie de l’Écorce",
+      "production_per_game_year": 224,
+      "industry_type": "Sägewerk"
+    },
+    {
+      "name": "Port des Alizés Steinbruch",
+      "production_per_game_year": 208,
+      "industry_type": "Steinbruch"
+    },
+    {
+      "name": "Gleizé Bauernhof",
+      "production_per_game_year": 192,
+      "industry_type": "Bauernhof"
+    },
+    {
+      "name": "Valenton Fischzucht",
+      "production_per_game_year": 192,
+      "industry_type": "Fischzucht"
+    },
+    {
+      "name": "Aulnay-sous-Bois Holzfällerlager",
+      "production_per_game_year": 174,
+      "industry_type": "Holzfällerlager"
+    },
+    {
+      "name": "Montceau-les-Mines Sugar Cane Farm",
+      "production_per_game_year": 161,
+      "industry_type": "Zuckerrohrfarm"
+    },
+    {
+      "name": "Val de Briey Kohlebergwerk",
+      "production_per_game_year": 156,
+      "industry_type": "Kohlebergwerk"
+    },
+    {
+      "name": "Enghien-les-Bains Bauernhof",
+      "production_per_game_year": 140,
+      "industry_type": "Bauernhof"
+    }
+  ],
+  "notes": [
+    "Keine Aussagen über Liefereffizienz, Gewinn oder Rezeptverhältnisse allein aus der Produktionszahl ableiten.",
+    "Die Branchenzustände 1910 'aktiv/gestoppt' sind eine andere Messgröße.",
+    "Der Name eines Holzfällerlagers erlaubt allein keine sichere Zuordnung zum Forstgebiet Montfougère."
+  ]
+}
