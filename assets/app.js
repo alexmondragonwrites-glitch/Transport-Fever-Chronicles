@@ -26,6 +26,7 @@ function cityStart(c){return c.history[0].population;}
 function metrics(items){return '<div class="metrics">'+items.map(p=>'<div class="metric"><div class="num">'+E(p[0])+'</div><div class="lbl">'+E(p[1])+'</div></div>').join("")+'</div>';}
 function trendSVG(cities, selectedId) {
   const series = selectedId ? cities.filter(c=>c.id===selectedId) : cities.filter(c=>c.island==="Hauptinsel");
+  if(!series.length) return '<div class="empty">Für diese Welt liegen noch keine Bevölkerungsdaten vor.</div>';
   const palette=["#e8b966","#7fd6bb","#8abce2","#d59ad9","#eea38a","#89c4a6","#c3a2e7"];
   const w=850,h=310,L=58,R=20,T=24,B=45;
   const dates=cities[0].history.map(v=>v.date);
@@ -49,7 +50,7 @@ function renderSave(world, citiesData, lineData, industryData, demandData, event
   const ls=lineStats(lines), pop=cities.reduce((n,c)=>n+cityLatest(c),0),active=industries.filter(x=>x.status==="aktiv").length;
   const coverage=ratio(demands.reduce((s,d)=>s+d.supplied,0),demands.reduce((s,d)=>s+d.need,0));
   const headline=metrics([[MONEY(pop),"Einwohner · 7 Orte"],[MONEY(cities.length),"Erschlossene Orte"],[MONEY(lines.length),"Verkehrslinien"],[MONEY(ls.vehicles),"Fahrzeuge"],[MONEY(industries.length),"Industriebetriebe"]]);
-  const cityCards=cities.map(c=>'<button class="card city-button" type="button" data-city="'+E(c.id)+'"><span class="kicker">'+E(c.island)+'</span><strong>'+E(c.name)+'</strong><span class="small">'+E(c.role)+'</span><div class="city-number">'+MONEY(cityLatest(c))+' <small>Einwohner</small></div><span class="small">'+(cityLatest(c)-cityStart(c)>=0?"+":"")+MONEY(cityLatest(c)-cityStart(c))+' seit 1904</span></button>').join("");
+  const cityCards=cities.map(c=>'<button class="card city-button" type="button" data-city="'+E(c.id)+'"><span class="kicker">'+E(c.island)+'</span><strong>'+E(c.name)+'</strong><span class="small">'+E(c.role)+'</span><div class="city-number">'+MONEY(cityLatest(c))+' <small>Einwohner</small></div><span class="small">'+(cityLatest(c)-cityStart(c)>=0?"+":"")+MONEY(cityLatest(c)-cityStart(c))+' seit 1904</span></button>').join("") || '<div class="empty">Noch keine Städte importiert.</div>';
   const kinds=["Überblick","Städte","Verkehr","Industrie","Chronik"];
   const ids=["overview","cities","network","industry","chronicle"];
   APP.innerHTML=header(true)+'<main id="main"><section class="save-hero"><div class="shell"><div class="crumb"><a href="../../index.html">Alle Welten</a> / '+E(world.name)+'</div><div class="eyebrow" style="margin-top:30px">'+E(world.game)+' · Seit '+E(world.starting_year)+'</div><h1>'+E(world.name)+'</h1><div class="seal">'+E(world.company)+'</div><p>'+E(world.description)+'</p><div class="info-row"><span class="tag earth">Spielstand '+E(world.latest_game_date)+'</span><span class="tag">'+E(world.status)+'</span><span class="small">Messung: '+E(world.last_observed)+'</span></div>'+headline+'</div></section><nav class="tabs" aria-label="Weltbereiche"><div class="shell tab-inner" role="tablist">'+ids.map((id,i)=>'<button class="tab" type="button" role="tab" id="tab-'+id+'" aria-controls="view-'+id+'" aria-selected="'+(i===0)+'" data-tab="'+id+'">'+kinds[i]+'</button>').join("")+'</div></nav><div class="shell">'+
@@ -83,7 +84,8 @@ function renderSave(world, citiesData, lineData, industryData, demandData, event
     document.querySelector("#city-detail").innerHTML='<div class="detail-head"><div><div class="kicker">'+E(c.island)+' · Ortsakte</div><h3 class="subhead">'+E(c.name)+'</h3></div><span class="tag earth">'+ratio(supplied,need)+' % Warenbedarf gedeckt</span></div><p>'+E(c.role)+'. Bevölkerungsentwicklung von '+MONEY(cityStart(c))+' auf '+MONEY(cityLatest(c))+' Einwohner (erste Messung Dezember 1904, letzter Stand März 1910).</p>'+trendSVG(cities,id)+'<h4>Versorgung</h4><div class="table-scroller"><table class="data-table"><thead><tr><th>Ware</th><th class="right">Gedeckt</th><th class="right">Bedarf</th><th class="right">Fehlend</th></tr></thead><tbody>'+dRows+'</tbody></table></div>';
   };
   document.querySelectorAll("[data-city]").forEach(b=>b.addEventListener("click",()=>showCity(b.dataset.city)));
-  showCity(cities[0].id);
+  if(cities.length) showCity(cities[0].id);
+  else document.querySelector("#city-detail").innerHTML='<div class="empty">Noch keine Stadtprofile importiert.</div>';
   const modesFilter=document.querySelector("#line-mode"),lineSearch=document.querySelector("#line-search"),loads=document.querySelector("#line-load");
   function listLines(){
     const search=lineSearch.value.trim().toLocaleLowerCase("de"),mode=modesFilter.value,load=loads.value;
