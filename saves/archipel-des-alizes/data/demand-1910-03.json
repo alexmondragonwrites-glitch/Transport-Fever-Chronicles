@@ -1,0 +1,197 @@
+{
+  "schema_version": 1,
+  "game_date": "1910-03-13",
+  "source": "Lieferkettenexport 1910-03-13 (nur sieben erschlossene Orte)",
+  "description": "Fehlend/Bedarf zeigt nicht die Lagerbestände; Prozent = (Bedarf−fehlend)/Bedarf.",
+  "demands": [
+    {
+      "city_id": "montfougere",
+      "good": "Fisch",
+      "missing": 60,
+      "need": 60,
+      "supplied": 0
+    },
+    {
+      "city_id": "montfougere",
+      "good": "Bretter",
+      "missing": 72,
+      "need": 115,
+      "supplied": 43
+    },
+    {
+      "city_id": "anse-doree",
+      "good": "Sugar",
+      "missing": 248,
+      "need": 248,
+      "supplied": 0
+    },
+    {
+      "city_id": "anse-doree",
+      "good": "Gemüse",
+      "missing": 88,
+      "need": 248,
+      "supplied": 160
+    },
+    {
+      "city_id": "anse-doree",
+      "good": "Kleidung",
+      "missing": 124,
+      "need": 124,
+      "supplied": 0
+    },
+    {
+      "city_id": "anse-doree",
+      "good": "Maschinen",
+      "missing": 89,
+      "need": 89,
+      "supplied": 0
+    },
+    {
+      "city_id": "anse-doree",
+      "good": "Treibstoff",
+      "missing": 98,
+      "need": 179,
+      "supplied": 81
+    },
+    {
+      "city_id": "port-des-alizes",
+      "good": "Sugar",
+      "missing": 250,
+      "need": 301,
+      "supplied": 51
+    },
+    {
+      "city_id": "port-des-alizes",
+      "good": "Rum",
+      "missing": 150,
+      "need": 150,
+      "supplied": 0
+    },
+    {
+      "city_id": "port-des-alizes",
+      "good": "Gemüse",
+      "missing": 158,
+      "need": 301,
+      "supplied": 143
+    },
+    {
+      "city_id": "port-des-alizes",
+      "good": "Treibstoff",
+      "missing": 155,
+      "need": 271,
+      "supplied": 116
+    },
+    {
+      "city_id": "port-des-alizes",
+      "good": "Werkzeuge",
+      "missing": 135,
+      "need": 135,
+      "supplied": 0
+    },
+    {
+      "city_id": "valmorin",
+      "good": "Fleisch",
+      "missing": 89,
+      "need": 111,
+      "supplied": 22
+    },
+    {
+      "city_id": "valmorin",
+      "good": "Kleidung",
+      "missing": 55,
+      "need": 55,
+      "supplied": 0
+    },
+    {
+      "city_id": "valmorin",
+      "good": "Bretter",
+      "missing": 98,
+      "need": 142,
+      "supplied": 44
+    },
+    {
+      "city_id": "valmorin",
+      "good": "Maschinen",
+      "missing": 71,
+      "need": 71,
+      "supplied": 0
+    },
+    {
+      "city_id": "bourg-l-ecorce",
+      "good": "Fisch",
+      "missing": 408,
+      "need": 507,
+      "supplied": 99
+    },
+    {
+      "city_id": "bourg-l-ecorce",
+      "good": "Rum",
+      "missing": 253,
+      "need": 253,
+      "supplied": 0
+    },
+    {
+      "city_id": "bourg-l-ecorce",
+      "good": "Konserven",
+      "missing": 213,
+      "need": 253,
+      "supplied": 40
+    },
+    {
+      "city_id": "bourg-l-ecorce",
+      "good": "Bretter",
+      "missing": 333,
+      "need": 459,
+      "supplied": 126
+    },
+    {
+      "city_id": "bourg-l-ecorce",
+      "good": "Möbel",
+      "missing": 229,
+      "need": 229,
+      "supplied": 0
+    },
+    {
+      "city_id": "pointe-des-pecheurs",
+      "good": "Fisch",
+      "missing": 146,
+      "need": 233,
+      "supplied": 87
+    },
+    {
+      "city_id": "pointe-des-pecheurs",
+      "good": "Konserven",
+      "missing": 92,
+      "need": 116,
+      "supplied": 24
+    },
+    {
+      "city_id": "pointe-des-pecheurs",
+      "good": "Treibstoff",
+      "missing": 120,
+      "need": 176,
+      "supplied": 56
+    },
+    {
+      "city_id": "pointe-des-pecheurs",
+      "good": "Werkzeuge",
+      "missing": 88,
+      "need": 88,
+      "supplied": 0
+    },
+    {
+      "city_id": "roche-noire",
+      "good": "Gemüse",
+      "missing": 88,
+      "need": 88,
+      "supplied": 0
+    },
+    {
+      "city_id": "roche-noire",
+      "good": "Bretter",
+      "missing": 132,
+      "need": 177,
+      "supplied": 45
+    }
+  ]
+}
