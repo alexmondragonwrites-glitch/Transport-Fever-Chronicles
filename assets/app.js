@@ -122,9 +122,9 @@ async function start(){
     const [meta,cities,lines,industries,demands,events]=await Promise.all(keys.map(k=>fetchJSON(base+manifest.latest[k])));
     const gazette=manifest.latest.gazette ? await fetchJSON(base+manifest.latest.gazette) : {articles:[]};
     renderSave(meta,cities,lines,industries,demands,events,gazette);
-    const optional=["worldCities","worldDemand","atlas","historicProduction","historicSupply"];
+    const optional=["worldCities","worldDemand","atlas","historicProduction","historicSupply","analysis"];
     const extra=await Promise.all(optional.map(k=>manifest.latest[k]?fetchJSON(base+manifest.latest[k]):Promise.resolve(null)));
-    mountWorldAtlas(document.querySelector("#view-atlas"),{worldCities:extra[0],worldDemand:extra[1],atlas:extra[2],production:extra[3],historicSupply:extra[4]});
+    mountWorldAtlas(document.querySelector("#view-atlas"),{worldCities:extra[0],worldDemand:extra[1],atlas:extra[2],production:extra[3],historicSupply:extra[4],analysis:extra[5]});
   } catch(error) {
     APP.innerHTML=header(document.body.dataset.page!=="portal")+'<main id="main" class="shell"><div class="err"><h1>Das Archiv kann nicht geladen werden.</h1><p>'+E(error.message)+'</p><p>Bitte prüfen, ob die JSON-Dateien vorhanden sind. Lokal die Website über einen HTTP-Server starten, nicht als <code>file://</code>.</p></div></main>'+footer();
     console.error(error);
