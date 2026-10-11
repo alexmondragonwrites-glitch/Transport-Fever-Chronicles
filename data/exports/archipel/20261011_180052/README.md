@@ -24,6 +24,10 @@ Der Export ist eine Bestandsaufnahme: SQLite wurde konsistent nur lesend in den 
 Dies ist ein Export der Monitoraufzeichnungen, keine Spielstanddatei. Andere Welten, Messungen ohne passende Weltkennung, fremde Berichte, frühere Exporte, Quellcode und externe Steam-Dateien sind ausgeschlossen.
 
 
-## Download-Status
+## Download
 
-Die große Exportdatei ist noch nicht hochgeladen. JSON und ZIP liegen bisher lokal vor. Der Upload als Release-Anhang steht aus.
+[Alle 28 Datenpakete auf GitHub herunterladen](https://github.com/alexmondragonwrites-glitch/Transport-Fever-Chronicles/releases/tag/archipel-export-2026-10-11). Jedes ZIP enthält eigenständig lesbares JSON; das größte ZIP ist rund 10 MB groß. Datenbanktabellen und Sitzungen sind getrennt, große Sitzungen nummeriert.
+
+Für den vollständigen Export alle 28 ZIPs und PAKETE.json herunterladen. PAKETE.json enthält zusätzlich Metadaten, Chroniken und Prüfsummen. REKONSTRUIEREN.py kann daneben mit Python 3.11+ ausgeführt werden, um die ursprüngliche Gesamtdatei wiederherzustellen. Mehrere GB RAM und 1,51 GB freier Speicher erforderlich.
+
+Geprüft: Rekonstruktion byteidentisch zum Original (SHA256), alle 31 Release-Anhänge mit lokalen Größen und SHA256-Werten abgeglichen. Der ursprüngliche Gesamtexport bleibt lokal erhalten.
