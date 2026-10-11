@@ -9,7 +9,12 @@
     "industries": "industries-1910-03.json",
     "demand": "demand-1910-03.json",
     "events": "events.json",
-    "gazette": "gazette.json"
+    "gazette": "gazette.json",
+    "worldCities": "world-cities.json",
+    "worldDemand": "world-demand-1910-03.json",
+    "atlas": "atlas.json",
+    "historicProduction": "production-1908-03.json",
+    "historicSupply": "city-supply-1906-10.json"
   },
   "snapshots": [
     {
@@ -17,7 +22,31 @@
       "source": "Watcher-Tabellen und Stadt-/Lieferkettenexport",
       "lines": "lines-1910-03.json",
       "industries": "industries-1910-03.json",
-      "demand": "demand-1910-03.json"
+      "demand": "demand-1910-03.json",
+      "worldDemand": "world-demand-1910-03.json",
+      "worldCities": "world-cities.json"
+    }
+  ],
+  "historical_sources": [
+    {
+      "date": "1906-10-01",
+      "type": "city_supply",
+      "file": "city-supply-1906-10.json"
+    },
+    {
+      "date": "1908-03-22",
+      "type": "industry_production",
+      "file": "production-1908-03.json"
+    },
+    {
+      "date": "1910-03-13",
+      "type": "world_population",
+      "file": "world-cities.json"
+    },
+    {
+      "date": "1910-03-13",
+      "type": "world_demand",
+      "file": "world-demand-1910-03.json"
     }
   ]
 }
