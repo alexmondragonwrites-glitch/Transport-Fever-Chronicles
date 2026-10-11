@@ -59,5 +59,6 @@
       "type": "derived_analysis",
       "file": "analysis-1910-03.json"
     }
-  ]
+  ],
+  "monitor": "monitor-20261011/index.json"
 }

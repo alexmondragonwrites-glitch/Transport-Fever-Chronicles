@@ -1,0 +1,24 @@
+.monitor-toolbar{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-top:26px}
+.monitor-toolbar label{font-size:14px;color:var(--gold)}
+.monitor-toolbar .select{max-width:100%;min-width:0}
+.monitor-link{border:0;background:transparent;color:var(--mint);text-align:left;padding:4px 0;text-decoration:underline;text-underline-offset:4px;font-size:14px;line-height:1.5}
+.monitor-link:hover{color:var(--gold)}
+.monitor .data-table{font-size:14px}
+.monitor .data-table th{font-size:12px}
+.monitor .small,.monitor .section-lede,.monitor .note{font-size:14px}
+.monitor .data-table td{vertical-align:top}
+.monitor .data-table td:first-child{min-width:180px}
+.monitor .detail h3{font-size:28px;margin-top:0}
+.monitor .detail h4{font-size:18px;margin:28px 0 14px}
+.monitor-warning{border-left-color:var(--red)}
+.monitor-warning a{color:var(--mint)}
+.monitor-subhead{font-family:var(--serif);font-size:27px;font-weight:400;margin:36px 0 18px}
+.monitor-raw{margin:18px 0}
+.monitor-raw summary{cursor:pointer;color:var(--mint);font-size:14px;padding:8px 0}
+.monitor-raw pre{max-height:420px;overflow:auto;white-space:pre-wrap;overflow-wrap:anywhere;font-size:13px;background:var(--bg);padding:18px;border-radius:12px}
+.monitor .data-table .monitor-raw{min-width:130px;margin:0}
+.monitor .data-table .monitor-raw pre{max-width:420px}
+.monitor-hash{overflow-wrap:anywhere;color:var(--muted);font-size:13px}
+.monitor-chart svg{min-width:360px}
+.archive-banner{margin-top:18px}
+@media(max-width:650px){.monitor-toolbar{align-items:stretch;flex-direction:column}.monitor-toolbar select{width:100%;font-size:14px}.topbar-inner{flex-wrap:wrap;padding-top:10px;padding-bottom:10px}.toplinks{gap:10px}.monitor .metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.monitor .tabs{position:static}.monitor-chart{padding:8px}.monitor-chart svg{min-width:290px}.monitor .metric .num{font-size:26px}}

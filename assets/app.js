@@ -1,3 +1,4 @@
+import {mountMonitor} from "./monitor.js";
 import {mountWorldAtlas} from "./world-atlas.js";
 /* Transport Fever Chronicles: static, save-scoped, dependency-free browser UI */
 const ROOT = document.body.dataset.root || ".";
@@ -118,10 +119,19 @@ async function start(){
     if(document.body.dataset.page==="portal")return renderPortal(await fetchJSON("data/worlds.json"));
     const base="saves/"+document.body.dataset.save+"/data/";
     const manifest=await fetchJSON(base+"manifest.json");
+    if(manifest.monitor && new URLSearchParams(location.search).get("view")!=="archive"){
+      const index=await fetchJSON(base+manifest.monitor);
+      return mountMonitor(APP,index,fetchJSON,base,()=>{location.href=location.pathname+"?view=archive#chronicle";});
+    }
     const keys=["meta","cities","lines","industries","demand","events"];
     const [meta,cities,lines,industries,demands,events]=await Promise.all(keys.map(k=>fetchJSON(base+manifest.latest[k])));
     const gazette=manifest.latest.gazette ? await fetchJSON(base+manifest.latest.gazette) : {articles:[]};
     renderSave(meta,cities,lines,industries,demands,events,gazette);
+    if(manifest.monitor){
+      const banner=document.createElement("div");banner.className="note archive-banner";
+      banner.innerHTML='<strong>Historisches redaktionelles Archiv · März 1910.</strong> Diese Ansicht bleibt als früherer Stand erhalten. <a href="'+location.pathname+'#cities">Zum neueren Monitorstand und allen 50 Städten →</a>';
+      document.querySelector(".save-hero .shell").prepend(banner);
+    }
     const optional=["worldCities","worldDemand","atlas","historicProduction","historicSupply","analysis"];
     const extra=await Promise.all(optional.map(k=>manifest.latest[k]?fetchJSON(base+manifest.latest[k]):Promise.resolve(null)));
     mountWorldAtlas(document.querySelector("#view-atlas"),{worldCities:extra[0],worldDemand:extra[1],atlas:extra[2],production:extra[3],historicSupply:extra[4],analysis:extra[5]});

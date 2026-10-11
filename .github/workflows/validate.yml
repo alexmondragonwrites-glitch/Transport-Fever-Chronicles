@@ -14,10 +14,13 @@ jobs:
       - name: JavaScript prüfen
         run: |
           node --check assets/app.js
+          node --check assets/monitor.js
           node --check scripts/validate-data.mjs
           node --check scripts/import-watcher.mjs
       - name: Daten prüfen
-        run: node scripts/validate-data.mjs
+        run: |
+          node scripts/validate-data.mjs
+          node scripts/validate-monitor.mjs
       - name: Neue Welt und Watcher-Import testen
         run: |
           node scripts/new-save.mjs --id ci-test-world --name "Test-Welt" --year 1900

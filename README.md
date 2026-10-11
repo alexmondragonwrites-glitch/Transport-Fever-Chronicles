@@ -8,6 +8,12 @@ Ein tropisches französisch geprägtes Archipel. Die *Société des Routes et de
 
 **Datenstand:** Spieljahr **13. März 1910**, dokumentiert am **11. Oktober 2026**. Der erste Import umfasst sieben Stadtgeschichten ab 1904, **80 Linien**, **448 Fahrzeuge**, **103 Industriebetriebe** und **27 Warenbedarfsposten** für sieben Städte. Die Zahlen sind Messungen und keine Wirtschaftsprognosen.
 
+### Neu: vollständiger Monitorstand
+
+Die Weltseite zeigt jetzt standardmäßig den Monitorstand bis **11. Juli 1910**: **50 Städte, 82 Linien, 474 Fahrzeuge und 105 Industriebetriebe**. Stadtwerte besitzen einen eigenen Detailstand (8. Juli 1910). Elf Aufzeichnungsstände sind auswählbar; Stadt- und Linienverläufe bleiben nach Sitzungen getrennt. Bekannte Aufnahmefehler werden angezeigt.
+
+Das bisherige redaktionelle Archiv mit Weltatlas und Geschichten bleibt über „Chronik & Weltatlas · März 1910“ erreichbar. [Import, Quellen und Messgrenzen](docs/MONITOR.md).
+
 ### Zum Archiv
 
 - **Repository:** https://github.com/alexmondragonwrites-glitch/Transport-Fever-Chronicles
