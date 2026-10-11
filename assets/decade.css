@@ -217,3 +217,34 @@ body.dz{background:var(--bg)}
   .dz-sources ul{columns:1}
 }
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+
+/* Kolumne „Am Tresen“: eine ganze Zeitungsseite statt einzelner Ausschnitte */
+.dz-tavern{position:relative;background:var(--paper);color:var(--paper-ink);padding:24px 28px 10px;margin-top:10px;border-radius:2px;box-shadow:0 22px 50px #04090d60}
+.dz-tavern-head{text-align:center;padding-bottom:4px}
+.dz-tavern-head .dz-clip-mast{font-size:26px}
+.dz-tavern-col{font-family:var(--serif);font-style:italic;font-size:15px;color:var(--paper-muted);margin:8px 0 0;padding-bottom:10px;border-bottom:1px solid var(--paper-rule)}
+.dz-tavern .dz-stamp{top:18px;right:22px}
+.dz-tavern-grid{display:grid;grid-template-columns:1fr 1fr}
+.dz-tale{padding:22px 26px 20px 0;border-bottom:1px solid var(--paper-rule)}
+.dz-tale:nth-child(2n){padding:22px 0 20px 26px;border-left:1px solid var(--paper-rule)}
+.dz-tale--wide{grid-column:1/-1;padding:24px 0 22px;border-bottom:0}
+.dz-tale--wide:nth-child(2n){padding:24px 0 22px;border-left:0}
+.dz-tale--wide .dz-tale-text{columns:2;column-gap:44px}
+.dz-tale-text p{break-inside:avoid-column}
+.dz-tale:nth-last-child(2):not(.dz-tale--wide):nth-child(2n),.dz-tale:last-child{border-bottom:0}
+.dz-tale-venue{font-family:var(--serif);font-size:14px;font-style:italic;color:var(--paper-muted);margin:0 0 6px}
+.dz-tale-venue strong{font-style:normal;color:var(--paper-ink)}
+.dz-tale h3{font-family:var(--serif);font-weight:700;font-size:23px;line-height:1.2;margin:0 0 10px}
+.dz-tale p{font-family:var(--serif);font-size:16.5px;line-height:1.62;margin:0 0 12px;color:var(--paper-ink)}
+.dz-tale p.dz-drop::first-letter{float:left;font-size:3.3em;line-height:.82;padding:4px 7px 0 0;font-weight:700}
+.dz-tale .dz-clip-ground{font-family:var(--sans);font-size:12.5px;line-height:1.5;color:var(--paper-muted);border-top:1px solid var(--paper-rule);padding-top:10px;margin:14px 0 0}
+@media(max-width:820px){
+  .dz-tavern{padding:18px 16px 6px}
+  .dz-tavern-head .dz-clip-mast{font-size:21px;padding-right:0}
+  .dz-tavern .dz-stamp{position:static;display:inline-block;margin-top:10px;transform:rotate(-4deg)}
+  .dz-tavern-grid{grid-template-columns:1fr}
+  .dz-tale,.dz-tale:nth-child(2n),.dz-tale--wide,.dz-tale--wide:nth-child(2n){padding:20px 0 18px;border-left:0;border-bottom:1px solid var(--paper-rule)}
+  .dz-tale:last-child{border-bottom:0}
+  .dz-tale--wide .dz-tale-text{columns:1}
+  .dz-tale h3{font-size:21px}
+}
