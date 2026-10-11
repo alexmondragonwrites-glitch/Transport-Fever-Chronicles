@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "save_id": "archipel-des-alizes",
+  "game_date": "1906-10-01",
+  "source": "Früherer Stadtversorgungsexport vom 01.10.1906, Kennzahlen aus der Spielstandbesprechung",
+  "units": {
+    "noise": "API-dB (spielinterne Skala)",
+    "pollution": "API-dB (spielinterne Skala)",
+    "area": "km²",
+    "supply": "Gütereinheiten"
+  },
+  "cities": [
+    {
+      "id": "port-des-alizes",
+      "name": "Port des Alizés",
+      "noise_api_db": 71.2,
+      "pollution_api_db": 13665.1,
+      "area_km2": 27.56,
+      "overall_supply": {
+        "supplied": 287,
+        "need": 938
+      },
+      "line_use_percent": 56.5,
+      "goods": [
+        {
+          "sector": "Gewerbe",
+          "good": "Sugar",
+          "supplied": 46,
+          "need": 248,
+          "stock": 11,
+          "max_stock": 207
+        },
+        {
+          "sector": "Gewerbe",
+          "good": "Rum",
+          "supplied": 0,
+          "need": 124
+        },
+        {
+          "sector": "Gewerbe",
+          "good": "Gemüse",
+          "supplied": 141,
+          "need": 248,
+          "stock": 93
+        },
+        {
+          "sector": "Industrie",
+          "good": "Treibstoff",
+          "supplied": 100,
+          "need": 212,
+          "stock": 62
+        },
+        {
+          "sector": "Industrie",
+          "good": "Werkzeuge",
+          "supplied": 0,
+          "need": 106
+        }
+      ]
+    },
+    {
+      "id": "bourg-l-ecorce",
+      "name": "Bourg-l’Écorce",
+      "noise_api_db": 71.5,
+      "pollution_api_db": 11973,
+      "area_km2": 19.67,
+      "overall_supply": {
+        "supplied": 174,
+        "need": 780
+      },
+      "line_use_percent": 45.4,
+      "goods": [
+        {
+          "sector": "Gewerbe",
+          "good": "Fisch",
+          "supplied": 120,
+          "need": 339,
+          "stock": 77,
+          "max_stock": 283
+        },
+        {
+          "sector": "Gewerbe",
+          "good": "Konserven",
+          "supplied": 0,
+          "need": 169
+        },
+        {
+          "sector": "Industrie",
+          "good": "Bretter",
+          "supplied": 54,
+          "need": 272,
+          "stock": 22,
+          "max_stock": 227
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Bestand ist nicht gelieferte Menge; Lagerwerte und Bedarf nicht vermischen.",
+    "Spielinterne API-dB sind keine standardisierten physikalischen Umweltmessungen.",
+    "Nur diese zwei Städte wurden in der früheren Auswertung erfasst."
+  ]
+}
