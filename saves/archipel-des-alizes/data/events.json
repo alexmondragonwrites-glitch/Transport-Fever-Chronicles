@@ -35,6 +35,52 @@
       "source": "Stadtentwicklungsexport"
     },
     {
+      "id": "ev-1905-grow",
+      "date": "1905-12",
+      "precision": "month",
+      "kind": "fakt",
+      "category": "Stadtentwicklung",
+      "title": "Die Hauptinsel gewinnt mehr als 800 Einwohner",
+      "description": "Die fünf Hauptinselorte wachsen von insgesamt 2.256 (Dezember 1904) auf 3.069 Einwohner (Dezember 1905).",
+      "entities": [
+        "bourg-l-ecorce",
+        "port-des-alizes",
+        "pointe-des-pecheurs",
+        "valmorin",
+        "anse-doree"
+      ],
+      "source": "Stadtentwicklung 1904-12 und 1905-12"
+    },
+    {
+      "id": "ev-1906-supply",
+      "date": "1906-10",
+      "precision": "month",
+      "kind": "fakt",
+      "category": "Wirtschaft",
+      "title": "Früher Versorgungsstand der Hafen- und Holzstadt",
+      "description": "Port des Alizés deckt 287 von 938 Bedarfseinheiten, Bourg-l’Écorce 174 von 780. Die frühere Messung erlaubt spätere Versorgungsvergleiche.",
+      "entities": [
+        "port-des-alizes",
+        "bourg-l-ecorce"
+      ],
+      "source": "Stadtversorgungsexport 1906-10-01"
+    },
+    {
+      "id": "ev-1907-renames",
+      "date": "1907-12",
+      "precision": "month",
+      "kind": "fakt",
+      "category": "Ortsnamen",
+      "title": "Neue Namen für die Inselorte",
+      "description": "Im Stadtentwicklungsexport Ende 1907 erscheinen die heutigen Namen Valmorin, Roche-Noire und Montfougère statt Bry-sur-Marne, Pont-Saint-Martin und Divatte-sur-Loire. Der tatsächliche Umbenennungstag ist nicht belegt.",
+      "entities": [
+        "valmorin",
+        "roche-noire",
+        "montfougere"
+      ],
+      "source": "Stadtentwicklungsexport, Bezeichnungen in den Tabellenzeilen 1906-09 und 1907-12"
+    },
+    {
       "id": "ev-1908-islands",
       "date": "1908",
       "precision": "year",
@@ -50,17 +96,61 @@
       "source": "Frühere Spielstandsbesprechung"
     },
     {
-      "id": "ev-1910-hub",
+      "id": "ev-1908-production",
+      "date": "1908-03",
+      "precision": "month",
+      "kind": "fakt",
+      "category": "Industrie",
+      "title": "Domaine des Alizés führt die Produktionsliste an",
+      "description": "In der Top-12-Industrieauswertung stehen Domaine des Alizés mit 1.190 und Hombourg-Haut Ölraffinerie #1 mit 945 Produktionseinheiten pro Spieljahr an der Spitze.",
+      "entities": [
+        "archipel-des-alizes"
+      ],
+      "source": "Industrieproduktionsexport 1908-03-22"
+    },
+    {
+      "id": "ev-1908-people",
+      "date": "1908-12",
+      "precision": "month",
+      "kind": "fakt",
+      "category": "Stadtentwicklung",
+      "title": "Fünf Hauptinselorte zählen 5.404 Einwohner",
+      "description": "Bourg-l’Écorce erreicht 1.973, Port des Alizés 1.281, Pointe des Pêcheurs 857, Valmorin 616 und Anse Dorée 677 Einwohner.",
+      "entities": [
+        "bourg-l-ecorce",
+        "port-des-alizes",
+        "pointe-des-pecheurs",
+        "valmorin",
+        "anse-doree"
+      ],
+      "source": "Stadtentwicklungsexport 1908-12"
+    },
+    {
+      "id": "ev-1909-people",
+      "date": "1909-12",
+      "precision": "month",
+      "kind": "fakt",
+      "category": "Stadtentwicklung",
+      "title": "Bourg-l’Écorce überschreitet die Marke von 2.100",
+      "description": "Bourg-l’Écorce zählt 2.144 Einwohner; die fünf Hauptinselstädte zusammen 5.971. Die gesamte Karte umfasst 15.162 Menschen.",
+      "entities": [
+        "bourg-l-ecorce",
+        "archipel-des-alizes"
+      ],
+      "source": "Stadtentwicklungsexport 1909-12"
+    },
+    {
+      "id": "ev-1910-demand",
       "date": "1910-03",
       "precision": "month",
       "kind": "fakt",
-      "category": "Infrastruktur",
-      "title": "Valmorin als Umschlagknoten",
-      "description": "Der neue Güterumschlagbahnhof bei Valmorin ist dokumentiert. Das genaue Fertigstellungsdatum ist unbekannt.",
+      "category": "Versorgung",
+      "title": "Weltweit 11.276 Bedarfseinheiten erfasst",
+      "description": "Die gesamten 50 Städte benötigen laut Export 11.276 Einheiten; davon sind 1.137 gedeckt und 10.139 fehlen. Der Export registriert 113 Warenbedarfspositionen.",
       "entities": [
-        "valmorin"
+        "archipel-des-alizes"
       ],
-      "source": "Spielstand-Screenshots vom 11.10.2026"
+      "source": "Lieferkettenexport 1910-03-13"
     },
     {
       "id": "ev-1910-growth",
@@ -77,6 +167,47 @@
         "port-des-alizes"
       ],
       "source": "Stadtentwicklungsexport 1910-03"
+    },
+    {
+      "id": "ev-1910-hub",
+      "date": "1910-03",
+      "precision": "month",
+      "kind": "fakt",
+      "category": "Infrastruktur",
+      "title": "Valmorin als Umschlagknoten",
+      "description": "Der neue Güterumschlagbahnhof bei Valmorin ist dokumentiert. Das genaue Fertigstellungsdatum ist unbekannt.",
+      "entities": [
+        "valmorin"
+      ],
+      "source": "Spielstand-Screenshots vom 11.10.2026"
+    },
+    {
+      "id": "ev-1910-industries",
+      "date": "1910-03",
+      "precision": "month",
+      "kind": "fakt",
+      "category": "Industrie",
+      "title": "103 Betriebe im Industrieregister",
+      "description": "75 Betriebe stehen auf aktiv, 28 auf gestoppt. Die Scierie de l’Écorce und mehrere Raffinerien sind zum Messzeitpunkt gestoppt, ohne dass der genaue Grund nachgewiesen ist.",
+      "entities": [
+        "bourg-l-ecorce",
+        "archipel-des-alizes"
+      ],
+      "source": "Industrieexport 1910-03"
+    },
+    {
+      "id": "ev-1910-traffic",
+      "date": "1910-03",
+      "precision": "month",
+      "kind": "fakt",
+      "category": "Verkehr",
+      "title": "80 Linien mit 448 Fahrzeugen dokumentiert",
+      "description": "Die Flotte hat eine aktuelle Gesamtbelegung von 3.464 bei 8.093 Kapazitätseinheiten. Sie umfasst verschiedene Personen- und Güterarten, daher ist die Summenquote keine Jahresleistung.",
+      "entities": [
+        "archipel-des-alizes",
+        "valmorin"
+      ],
+      "source": "Linien & Auslastung 1910-03"
     }
   ]
 }
