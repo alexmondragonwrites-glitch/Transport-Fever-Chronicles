@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "save_id": "archipel-des-alizes",
+  "latest_game_date": "1910-03-13",
+  "latest": {
+    "meta": "meta.json",
+    "cities": "cities.json",
+    "lines": "lines-1910-03.json",
+    "industries": "industries-1910-03.json",
+    "demand": "demand-1910-03.json",
+    "events": "events.json"
+  },
+  "snapshots": [
+    {
+      "game_date": "1910-03-13",
+      "source": "Watcher-Tabellen und Stadt-/Lieferkettenexport",
+      "lines": "lines-1910-03.json",
+      "industries": "industries-1910-03.json",
+      "demand": "demand-1910-03.json"
+    }
+  ]
+}
