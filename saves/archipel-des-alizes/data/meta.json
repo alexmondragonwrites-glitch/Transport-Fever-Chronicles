@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "id": "archipel-des-alizes",
+  "name": "Archipel des Alizés",
+  "subtitle": "Eine tropische Inselwelt zwischen Dampf, Handel und Aufbruch",
+  "game": "Transport Fever 3",
+  "starting_year": 1900,
+  "latest_game_date": "1910-03-13",
+  "last_observed": "2026-10-11",
+  "company": "Société des Routes et des Rails",
+  "status": "Aktiver Spielstand",
+  "tone": "Französisch geprägte Tropenwelt",
+  "description": "Von fünf wachsenden Städten einer Hauptinsel bis zum Inselhandel mit Roche-Noire und Montfougère: das Wirtschafts- und Verkehrsarchiv eines tropischen Archipels.",
+  "city_ids": [
+    "bourg-l-ecorce",
+    "port-des-alizes",
+    "pointe-des-pecheurs",
+    "valmorin",
+    "anse-doree",
+    "roche-noire",
+    "montfougere"
+  ],
+  "disclaimer": "Spielbeobachtungen und Momentaufnahmen, keine Echtzeitdaten. Geschichten sind als Fiktion markiert."
+}
