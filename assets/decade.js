@@ -48,6 +48,24 @@ function chapter(id, c, T, inner) {
     '<h2 id="' + id + '-h"><span class="sr">Kapitel ' + E(c.number) + ': </span>' + T(c.title) + '</h2></header>' + inner + '</section>';
 }
 
+const bodyParagraphs = text => String(text || "").split(/\n\s*\n/).map(p => "<p>" + E(p) + "</p>").join("");
+
+// Initiale nur, wenn der Text mit einem Buchstaben beginnt (nicht mit einem Anführungszeichen)
+const taleParagraphs = text => String(text || "").split(/\n\s*\n/).map((p, i) =>
+  "<p" + (i === 0 && /^\p{L}/u.test(p) ? ' class="dz-drop"' : "") + ">" + E(p) + "</p>").join("");
+
+// Kolumne „Am Tresen“: eine Zeitungsseite mit mehreren Wirtshausgeschichten
+function tavernPage(c, articles) {
+  const tales = c.articles.map(id => articles[id]).filter(Boolean);
+  return '<div class="dz-tavern"><header class="dz-tavern-head"><p class="dz-clip-mast">La Gazette des Alizés</p>' +
+    '<p class="dz-tavern-col">' + E(c.column) + '</p><span class="dz-stamp">Fiktion</span></header><div class="dz-tavern-grid">' +
+    tales.map((a, i) => '<article class="dz-tale' + (tales.length % 2 && i === tales.length - 1 ? " dz-tale--wide" : "") + '">' +
+      '<p class="dz-tale-venue"><strong>' + E(a.venue?.name) + '</strong> ' + E(a.venue?.place) + '</p>' +
+      '<h3>' + E(a.title) + '</h3><div class="dz-tale-text">' + taleParagraphs(a.body) + '</div>' +
+      '<p class="dz-clip-ground"><strong>Anknüpfungspunkt in den Daten.</strong> ' + E(a.grounding) + '</p></article>').join("") +
+    '</div></div>';
+}
+
 function clipping(a, lead) {
   if (!a) return "";
   const date = /^\d{4}-\d{2}$/.test(a.date) ? fmt(a.date) : a.date;
@@ -55,7 +73,7 @@ function clipping(a, lead) {
     '<p class="dz-clip-mast">La Gazette des Alizés</p>' +
     '<p class="dz-clip-date">' + E(date) + ' · ' + E(a.rubric) + '</p>' +
     '<span class="dz-stamp">Fiktion</span>' +
-    '<h3>' + E(a.title) + '</h3><p class="dz-clip-teaser">' + E(a.teaser) + '</p><p>' + E(a.body) + '</p>' +
+    '<h3>' + E(a.title) + '</h3><p class="dz-clip-teaser">' + E(a.teaser) + '</p>' + bodyParagraphs(a.body) +
     '<p class="dz-clip-ground"><strong>Anknüpfungspunkt in den Daten.</strong> ' + E(a.grounding) + '</p></article>';
 }
 
@@ -223,12 +241,14 @@ function render(d, gazette) {
   const ch6 = chapter("kapitel-stimmen", C.voices, T, '<div class="dz-prose"><p>' + T(C.voices.intro) + '</p></div>' +
     '<div class="dz-clips">' + C.voices.articles.map(id => clipping(articles[id])).join("") + '</div>');
 
+  const tavern = C.tavern ? chapter("kapitel-am-tresen", C.tavern, T, '<div class="dz-prose"><p>' + T(C.tavern.intro) + '</p></div>' + tavernPage(C.tavern, articles)) : "";
+
   const ch7 = chapter("kapitel-bilanz", C.balance, T, '<div class="dz-prose dz-prose--large">' + paragraphs(C.balance.paragraphs, T) + '</div>');
 
   const sources = '<section class="dz-sources" aria-labelledby="dz-sources-h"><h2 id="dz-sources-h">' + T(C.sources.title) + '</h2><ul>' +
     C.sources.items.map(i => '<li>' + T(i) + '</li>').join("") + '</ul></section>';
 
-  APP.innerHTML = header() + '<main id="main">' + hero + '<div class="dz-shell">' + intro + ch1 + ch2 + ch3 + ch4 + ch5 + ch6 + ch7 + sources + '</div></main>' +
+  APP.innerHTML = header() + '<main id="main">' + hero + '<div class="dz-shell">' + intro + ch1 + ch2 + ch3 + ch4 + ch5 + ch6 + tavern + ch7 + sources + '</div></main>' +
     '<footer class="footer"><div class="shell footer-inner"><span>© Transport Fever Chronicles · Ein privates Spielstandsarchiv</span><span>Messwerte sind belegt, Geschichten sind gekennzeichnet</span></div></footer>';
 
   const holder = document.querySelector("#dz-pop-chart");

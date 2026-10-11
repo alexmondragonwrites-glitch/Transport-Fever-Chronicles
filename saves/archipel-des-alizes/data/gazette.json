@@ -127,6 +127,97 @@
       "entities": [
         "archipel-des-alizes"
       ]
+    },
+    {
+      "id": "gazette-1910-09",
+      "date": "1910-07",
+      "type": "fiktion",
+      "rubric": "Am Tresen",
+      "venue": {
+        "name": "Au Quai des Collines",
+        "place": "Valmorin"
+      },
+      "title": "Valmorin: Wetten auf die Kleidung",
+      "teaser": "Über dem Tresen hängt noch das alte Ortsschild, am Balken stehen die Wetten.",
+      "body": "Über dem Tresen des „Au Quai des Collines“ hängt noch das alte Schild mit dem Namen Bry-sur-Marne. Wirt Mathurin hat es nie abgenommen. „Der Name steht auf dem Schild, und das Schild hängt an der Wand“, sagt er, wenn jemand fragt, und mehr sagt er dazu nicht.\n\nAbends ist es voll wie nie. Die Leute vom Umschlagbahnhof kommen direkt von der Schicht, die Seeleute von den Inselschiffen mit Kohlenstaub im Bart. Früher, erzählt der alte Anselme, saßen hier vier Bauern und ein Hund. „Heute kommt einer aus Roche-Noire herein und einer aus Montfougère, und beide wissen besser über Valmorin Bescheid als ich.“\n\nAm Fenstertisch wird gewettet, wann die Kleidung aus Lamballe-Armor kommt. Lucie vom Bahnhof setzt auf Weihnachten, der Schmied auf nie. Mathurin schreibt die Wetten mit Kreide an den Deckenbalken, gleich neben die Abfahrtszeiten der Busse. Die hat er selbst notiert, weil der Aushang am Bahnhof jede Woche abgerissen wird.",
+      "grounding": "Umbenennung von Bry-sur-Marne belegt bis Ende 1907; Schiffe nach Roche-Noire (seit Mai 1907) und Montfougère (seit August 1907) laufen Valmorin an; Kleidungsbedarf ungedeckt; Busse seit Dezember 1905, heute 16 (Monitorexport, Juli 1910).",
+      "entities": [
+        "valmorin",
+        "roche-noire",
+        "montfougere"
+      ]
+    },
+    {
+      "id": "gazette-1910-10",
+      "date": "1910-07",
+      "type": "fiktion",
+      "rubric": "Am Tresen",
+      "venue": {
+        "name": "Chez Honorine",
+        "place": "Port des Alizés, am Hafen"
+      },
+      "title": "Port des Alizés: Zucker ja, Rum nein",
+      "teaser": "In der ältesten Hafenkneipe des Archipels kommt alles an, nur nicht das, wonach die Seeleute zuerst fragen.",
+      "body": "„Rum?“, fragt Honorine, und sie fragt es so, wie sie es jeden Abend fragt. Dann zeigt sie auf die Säcke, die vor der Tür auf den Weitertransport warten. „Zucker kann ich dir geben. Schiffsladungen voll.“ Es ist der älteste Witz am Hafen von Port des Alizés, und er wird nicht schlechter, weil er stimmt: Der Zucker kommt, der Rum nicht.\n\nDie Stammgäste nehmen es mit Würde. Port des Alizés war schon eine laute Hafenstadt, als man in Bourg-l’Écorce noch die Hühner auf der Straße zählte, so erzählen sie es jedenfalls. Hier fuhr die erste Straßenbahn des Archipels, hier beginnt die Küstenbahn. Dass Bourg-l’Écorce inzwischen größer ist, erwähnt an Honorines Tresen niemand.\n\nNeu sind nur die Gäste. Früher kamen Fischer und Matrosen. Heute kommen auch Leute mit Fahrkarten in der Westentasche, die auf den nächsten Zug warten und dabei erzählen, wie es in Valmorin oder Anse Dorée aussieht. Honorine hört zu, schenkt nach und sagt am Ende jedes Abends dasselbe: „Alles kommt hier an. Irgendwann auch der Rum.“",
+      "grounding": "Rumbedarf ungedeckt, Zucker zu 87 von 309 Einheiten gedeckt; erste Straßenbahn der Aufzeichnung im Januar 1905; Lärm schon 1905 bei 70 dB, Verschmutzung seither kaum verändert; Bourg-l’Écorce 2.225, Port des Alizés 1.468 Einwohner (Monitorexport, Juli 1910).",
+      "entities": [
+        "port-des-alizes",
+        "bourg-l-ecorce"
+      ]
+    },
+    {
+      "id": "gazette-1910-11",
+      "date": "1910-07",
+      "type": "fiktion",
+      "rubric": "Am Tresen",
+      "venue": {
+        "name": "Le Puits",
+        "place": "Roche-Noire"
+      },
+      "title": "Roche-Noire: Erst der Name, dann die Luft",
+      "teaser": "In der Kneipe der Kohleinsel wird leise geredet. Wer zu viel sagt, hustet.",
+      "body": "Im „Le Puits“ wird nicht laut geredet. Die Männer kommen mit schwarzen Händen von der Schicht, und wer zu viel sagt, hustet. Der Rauch über der Insel ist dichter geworden, seit die Kohle schiffsweise nach Valmorin geht. Die Insel selbst ist kaum gewachsen.\n\nUnten am Anleger liegt das Schiff, das auch Reisende mitnehmen würde. „Wohin denn?“, fragt die Wirtin Odile, wenn ein Fremder danach fragt. „Drüben arbeiten sie für die Bahn. Hier arbeiten wir für drüben.“ Bretter für die Stollen bringt das Schiff mit, frisches Gemüse nie.\n\nEinmal im Monat liest der alte Lehrer die Gazette vor. Wenn von den Straßenbahnen in Bourg-l’Écorce die Rede ist, wird es still. Und jedes Mal sagt einer vom hinteren Tisch: „Erst haben sie uns den Namen genommen, dann die Luft.“ Pont-Saint-Martin hieß der Ort, als die Alten jung waren. Gelacht wird trotzdem, jedes Mal.",
+      "grounding": "Umbenennung von Pont-Saint-Martin belegt bis Ende 1907; Einwohner 355 → 368; Linienanteil 0 %; Verschmutzungswert stark gestiegen; Gemüsebedarf ungedeckt, Bretter teilweise geliefert (Monitorexport, Juli 1910).",
+      "entities": [
+        "roche-noire",
+        "valmorin"
+      ]
+    },
+    {
+      "id": "gazette-1910-12",
+      "date": "1910-07",
+      "type": "fiktion",
+      "rubric": "Am Tresen",
+      "venue": {
+        "name": "Auberge du Phare",
+        "place": "Lamballe-Armor, im Hinterland"
+      },
+      "title": "Lamballe-Armor: Schiffe, die nicht für uns fahren",
+      "teaser": "Seit 1909 legen vierzig Schiffe an. Mitgefahren ist noch keiner aus dem Dorf.",
+      "body": "Lamballe-Armor zählt so viele Einwohner wie vor fünf Jahren, und in der „Auberge du Phare“ sitzen dieselben Gesichter wie immer. Neu ist nur, was man vom Fenster aus sieht. Seit dem Sommer 1909 legen am Hafen Schiffe an, die nicht für Lamballe-Armor fahren: Chemikalien aus Port des Alizés, Wolle aus Pointe des Pêcheurs. Am Ortsrand stehen eine Weberei und eine Textilfabrik, und bei ungünstigem Wind riecht das ganze Dorf danach.\n\n„Vierzig Schiffe“, sagt der Fischer Yann, „und noch keiner von uns ist mitgefahren.“ Seine Frau Maëlle widerspricht: Es heiße, die ersten Wollballen seien in der Weberei angekommen. Wenn die Fabrik läuft, brauche sie Hände. Ob die Hände aus dem Dorf kommen oder mit dem nächsten Schiff, darüber wird bis zur Sperrstunde gestritten.\n\nDass man in Valmorin schon Wetten darauf abschließt, wann die Kleidung aus Lamballe-Armor kommt, weiß hier niemand. In Lamballe-Armor lässt man seine Kleider noch beim Schneider nähen.",
+      "grounding": "Einwohner 234 → 234, Linienanteil 0 %, Verschmutzungswert stark gestiegen; Schiffslinien mit Wolle (seit Juni 1909) und Chemikalien (seit Juli 1909, heute 40 Schiffe); Weberei und Textilfabrik noch ohne Produktion, erste Wolllieferungen erfasst (Monitorexport, Juli 1910).",
+      "entities": [
+        "archipel-des-alizes"
+      ]
+    },
+    {
+      "id": "gazette-1910-13",
+      "date": "1910-07",
+      "type": "fiktion",
+      "rubric": "Am Tresen",
+      "venue": {
+        "name": "Café de la Gare",
+        "place": "Bourg-l’Écorce"
+      },
+      "title": "Das Textilabenteuer",
+      "teaser": "Ist die Textilkette der Société eine Geldverschwendung? Am Tisch der Schreiber wird es laut.",
+      "body": "Im „Café de la Gare“ in Bourg-l’Écorce sitzen nach Dienstschluss die Schreiber der Société. An diesem Abend hat Monsieur Delorme, Buchhalter seit dem ersten Betriebsjahr, die Zahlen des Textilabenteuers vor sich ausgebreitet. Er zögert lange, bevor er spricht. Dann spricht er umso länger.\n\n„Acht Linien. Zweiundachtzig Fahrzeuge. Vierzig Schiffe allein für Chemikalien. Und bis heute hat die Fabrik in Lamballe-Armor nicht ein einziges Hemd genäht.“ Er tippt auf die Spalte mit den roten Zahlen. „Das ist kein Abenteuer, meine Herren. Das ist Geldverschwendung mit Dampfkessel.“\n\nIn diesem Moment kommt der Telegrafist herein, noch in Uniform, und legt einen Zettel auf den Tisch: Die ersten Wollballen sind in der Weberei angekommen. Delorme liest ihn zweimal. „Ein paar Ballen Wolle machen noch keinen Mantel“, sagt er, aber leiser als vorher.\n\nDa stellt der alte Lokführer Ferrand sein Glas ab. Er fährt seit 1904 auf der Küstenbahn. „Als ich anfing, gab es auf dieser Strecke einen einzigen Zug. Einen. Und du hast damals gesagt, das rechnet sich nie.“ Heute fahren zehn. An der Küste wohnen fast dreimal so viele Menschen wie damals, und in Valmorin, wo früher niemand mit dem Netz fuhr, gehen inzwischen zwei von drei Wegen über Bahn und Bus. „Die Bahn hat diese Küste gemacht“, sagt Ferrand. „Heute bringt sie fast die Hälfte von dem ein, was alle Linien zusammen erwirtschaften. Gib dem Stoff ein paar Jahre.“\n\nDelorme rechnet. Er rechnet lange. Dann bestellt er eine Runde, aber nur eine. „Wir sprechen uns 1912“, sagt er. Ferrand nickt, und am Nebentisch schreibt jemand das Datum auf die Rückseite der Getränkekarte.",
+      "grounding": "Textilkette mit 8 Linien und 82 Fahrzeugen, davon 40 Chemikalienschiffe, Linienergebnis negativ; Weberei, Chemie- und Textilfabrik noch ohne Produktion, erste Wolllieferungen erfasst. Hauptbahn: 1 Zug (Dezember 1904) → 10 Züge, Küste 2.256 → 6.225 Einwohner, Valmorin Linienanteil 0 → 64 %, rund die Hälfte des Linienergebnisses aller Linien (Monitorexport, Juli 1910).",
+      "entities": [
+        "bourg-l-ecorce",
+        "valmorin",
+        "archipel-des-alizes"
+      ]
     }
   ]
 }
