@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "policy": "append-only; Korrekturen mit Quelle und Datum dokumentieren",
+  "events": [
+    {
+      "id": "ev-1900-start",
+      "date": "1900",
+      "precision": "year",
+      "kind": "fakt",
+      "category": "Gründung",
+      "title": "Der Beginn des Archipels",
+      "description": "Spielstart des Archipel-des-Alizés-Spielstands im Jahr 1900.",
+      "entities": [
+        "archipel-des-alizes"
+      ],
+      "source": "Spielstandbezeichnung"
+    },
+    {
+      "id": "ev-1904-cities",
+      "date": "1904-12",
+      "precision": "month",
+      "kind": "fakt",
+      "category": "Städte",
+      "title": "Die erste dokumentierte Bevölkerungsmessung",
+      "description": "Sieben später erschlossene Orte umfassen zusammen 2.742 Einwohner. Die Hauptinselstädte zählen 2.256.",
+      "entities": [
+        "bourg-l-ecorce",
+        "port-des-alizes",
+        "pointe-des-pecheurs",
+        "valmorin",
+        "anse-doree",
+        "roche-noire",
+        "montfougere"
+      ],
+      "source": "Stadtentwicklungsexport"
+    },
+    {
+      "id": "ev-1908-islands",
+      "date": "1908",
+      "precision": "year",
+      "kind": "rekonstruktion",
+      "category": "Inselhandel",
+      "title": "Die Außeninseln werden Teil des Handelsnetzes",
+      "description": "Roche-Noire erhält die Rolle einer Kohleinsel, Montfougère wird für Holzwirtschaft erschlossen. Das genaue Eröffnungsdatum ist nicht dokumentiert.",
+      "entities": [
+        "roche-noire",
+        "montfougere",
+        "valmorin"
+      ],
+      "source": "Frühere Spielstandsbesprechung"
+    },
+    {
+      "id": "ev-1910-hub",
+      "date": "1910-03",
+      "precision": "month",
+      "kind": "fakt",
+      "category": "Infrastruktur",
+      "title": "Valmorin als Umschlagknoten",
+      "description": "Der neue Güterumschlagbahnhof bei Valmorin ist dokumentiert. Das genaue Fertigstellungsdatum ist unbekannt.",
+      "entities": [
+        "valmorin"
+      ],
+      "source": "Spielstand-Screenshots vom 11.10.2026"
+    },
+    {
+      "id": "ev-1910-growth",
+      "date": "1910-03",
+      "precision": "month",
+      "kind": "fakt",
+      "category": "Städte",
+      "title": "Bourg-l’Écorce erreicht 2.175 Einwohner",
+      "description": "Valmorin zählt 705, Pointe des Pêcheurs 991 und Port des Alizés 1.422 Einwohner.",
+      "entities": [
+        "bourg-l-ecorce",
+        "valmorin",
+        "pointe-des-pecheurs",
+        "port-des-alizes"
+      ],
+      "source": "Stadtentwicklungsexport 1910-03"
+    }
+  ]
+}
