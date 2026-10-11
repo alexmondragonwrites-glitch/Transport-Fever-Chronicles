@@ -49,8 +49,15 @@ const outName=kind+"-"+date+".json",outFile=join(base,outName);
 if(existsSync(outFile))fail("Archivdatei existiert bereits: "+outName+" (historische Stände nicht überschreiben)");
 const output={schema_version:1,save_id:save,game_date:date,observed_at:new Date().toISOString(),source:"Watcher-TSV-Import aus "+input,measurement:kind==="lines"?"Momentaufnahme der Belegung":"Industrie-Aktivitätsstatus; keine Produktionsmenge",[kind]:data};
 writeFileSync(outFile,JSON.stringify(output,null,2)+"\n","utf8");
-manifest.latest[kind]=outName;
-manifest.latest_game_date=date;
+if(date>=manifest.latest_game_date)manifest.latest[kind]=outName;
+if(date>=manifest.latest_game_date){
+  manifest.latest_game_date=date;
+  const metaPath=join(base,manifest.latest.meta||"meta.json");
+  const meta=JSON.parse(readFileSync(metaPath,"utf8"));
+  meta.latest_game_date=date;
+  meta.last_observed=new Date().toISOString().slice(0,10);
+  writeFileSync(metaPath,JSON.stringify(meta,null,2)+"\n","utf8");
+}
 let snapshot=manifest.snapshots.find(s=>s.game_date===date);
 if(!snapshot){snapshot={game_date:date,source:"Watcher-TSV-Import"};manifest.snapshots.push(snapshot);}
 snapshot[kind]=outName;
