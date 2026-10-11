@@ -1,0 +1,47 @@
+{
+  "schema": "spielmonitor.world_export",
+  "version": 1,
+  "created_at": "2026-10-11T18:00:52+02:00",
+  "world": "Archipel des Alizés – 1900",
+  "world_id": "tf3-2026-10-9-1791530983-207911368-2",
+  "scope": "All original JSONL measurements with this exact world_id; matching persisted database rows; chronicle text only for sessions containing exclusively this world.",
+  "exclusions": [
+    "Other worlds",
+    "Measurements without world_id",
+    "Mixed/unassigned chronicles",
+    "Cross-world reports and prior exports",
+    "Code, ZIP backups and Steam files"
+  ],
+  "identity_note": "Database histories without world_id are selected by their persisted world name and labelled identity_basis=world. No retrospective identity is invented.",
+  "consistency": "Read-only SQLite backup in memory; session files read to inventoried byte lengths. Not an atomic snapshot across all storage locations.",
+  "duplicates": "Recorded session observations are retained without deduplication; database histories are independent representations.",
+  "measurement_count": 2864,
+  "session_count": 11,
+  "excluded_measurements": 5085,
+  "unreadable_lines": 0,
+  "chronicles": [
+    "sessions/20261010_054329_951401/chronik.md",
+    "sessions/20261010_054753_949419/chronik.md",
+    "sessions/20261010_055730_975491/chronik.md",
+    "sessions/20261010_060035_081554/chronik.md",
+    "sessions/20261010_083853_836863/chronik.md",
+    "sessions/20261010_134655_540912/chronik.md",
+    "sessions/20261010_135105_593405/chronik.md",
+    "sessions/20261010_144024_312885/chronik.md",
+    "sessions/20261011_083643_488539/chronik.md",
+    "sessions/20261011_132641_770265/chronik.md",
+    "sessions/20261011_135432_045539/chronik.md"
+  ],
+  "database_rows": {
+    "line_observations": 29829,
+    "markers": 0,
+    "observations": 3150,
+    "person_line_changes": 3,
+    "snapshots": 1,
+    "world_identity": 1,
+    "worlds": 1
+  },
+  "output_sha256": "b2c76387f5569d83d7bc0ff90d7f7b9e7cd1bc315d6553dba6ab52d0b0dd92a1",
+  "json_bytes": 1511162915,
+  "validated": true
+}
