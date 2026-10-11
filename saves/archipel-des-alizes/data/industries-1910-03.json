@@ -1,0 +1,731 @@
+{
+  "schema_version": 1,
+  "save_id": "archipel-des-alizes",
+  "game_date": "1910-03-13",
+  "observed_at": "2026-10-11",
+  "source": "Industrien, vom Nutzer bereitgestellter Export",
+  "note": "Feld 'Produktion' des Exports enthält Aktivitätsstatus statt Produktionsmenge.",
+  "industries": [
+    {
+      "id": "industry-001",
+      "name": "Neuilly-Plaisance Holzfällerlager #1",
+      "tier": 5,
+      "status": "aktiv",
+      "note": null
+    },
+    {
+      "id": "industry-002",
+      "name": "Nyons Bauernhof",
+      "tier": 11,
+      "status": "aktiv",
+      "note": null
+    },
+    {
+      "id": "industry-003",
+      "name": "Garches Sägewerk",
+      "tier": 1,
+      "status": "gestoppt",
+      "note": null
+    },
+    {
+      "id": "industry-004",
+      "name": "Cormontreuil Sandbaggerschiff",
+      "tier": 3,
+      "status": "aktiv",
+      "note": null
+    },
+    {
+      "id": "industry-005",
+      "name": "Reichshoffen Möbelfabrik",
+      "tier": 1,
+      "status": "gestoppt",
+      "note": null
+    },
+    {
+      "id": "industry-006",
+      "name": "Pointe des Pêcheurs Konservenfabrik",
+      "tier": 1,
+      "status": "aktiv",
+      "note": null
+    },
+    {
+      "id": "industry-007",
+      "name": "Port des Alizés Stahlwerk",
+      "tier": 1,
+      "status": "gestoppt",
+      "note": null
+    },
+    {
+      "id": "industry-008",
+      "name": "Cassis Fischzucht #1",
+      "tier": 6,
+      "status": "aktiv",
+      "note": null
+    },
+    {
+      "id": "industry-009",
+      "name": "Labenne Maschinenfabrik",
+      "tier": 1,
+      "status": "gestoppt",
+      "note": null
+    },
+    {
+      "id": "industry-010",
+      "name": "Lardy Rum Distillery",
+      "tier": 1,
+      "status": "gestoppt",
+      "note": null
+    },
+    {
+      "id": "industry-011",
+      "name": "Lardy Sugar Mill",
+      "tier": 1,
+      "status": "gestoppt",
+      "note": null
+    },
+    {
+      "id": "industry-012",
+      "name": "Romagnat Bauernhof",
+      "tier": 8,
+      "status": "aktiv",
+      "note": null
+    },
+    {
+      "id": "industry-013",
+      "name": "Beaucaire Bauernhof",
+      "tier": 8,
+      "status": "aktiv",
+      "note": null
+    },
+    {
+      "id": "industry-014",
+      "name": "Chamonix-Mont-Blanc Bauernhof",
+      "tier": 7,
+      "status": "aktiv",
+      "note": null
+    },
+    {
+      "id": "industry-015",
+      "name": "Péronne Bauernhof Nord",
+      "tier": 9,
+      "status": "aktiv",
+      "note": null
+    },
+    {
+      "id": "industry-016",
+      "name": "Lamballe-Armor Weberei",
+      "tier": 1,
+      "status": "gestoppt",
+      "note": null
+    },
+    {
+      "id": "industry-017",
+      "name": "Lardy Glashütte",
+      "tier": 1,
+      "status": "gestoppt",
+      "note": null
+    },
+    {
+      "id": "industry-018",
+      "name": "Cournon-d'Auvergne Holzfällerlager",
+      "tier": 5,
+      "status": "aktiv",
+      "note": null
+    },
+    {
+      "id": "industry-019",
+      "name": "Rambervillers Werkzeugfabrik",
+      "tier": 1,
+      "status": "gestoppt",
+      "note": null
+    },
+    {
+      "id": "industry-020",
+      "name": "Reichshoffen Sägewerk",
+      "tier": 1,
+      "status": "gestoppt",
+      "note": null
+    },
+    {
+      "id": "industry-021",
+      "name": "Le Malesherbois Sägewerk",
+      "tier": 1,
+      "status": "gestoppt",
+      "note": null
+    },
+    {
+      "id": "industry-022",
+      "name": "Meyzieu Bauernhof",
+      "tier": 7,
+      "status": "aktiv",
+      "note": null
+    },
+    {
+      "id": "industry-023",
+      "name": "Neuilly-Plaisance Chemiefabrik",
+      "tier": 1,
+      "status": "gestoppt",
+      "note": null
+    },
+    {
+      "id": "industry-024",
+      "name": "Sarrians Bauernhof",
+      "tier": 5,
+      "status": "aktiv",
+      "note": null
+    },
+    {
+      "id": "industry-025",
+      "name": "Montceau-les-Mines Sugar Cane Farm West",
+      "tier": 7,
+      "status": "aktiv",
+      "note": null
+    },
+    {
+      "id": "industry-026",
+      "name": "Port des Alizés Steinbruch",
+      "tier": 7,
+      "status": "aktiv",
+      "note": null
+    },
+    {
+      "id": "industry-027",
+      "name": "Cassis Bauernhof",
+      "tier": 7,
+      "status": "aktiv",
+      "note": null
+    },
+    {
+      "id": "industry-028",
+      "name": "Cormontreuil Sugar Mill",
+      "tier": 1,
+      "status": "gestoppt",
+      "note": "Wechsel wird geprüft"
+    },
+    {
+      "id": "industry-029",
+      "name": "Montceau-les-Mines Sugar Cane Farm",
+      "tier": 19,
+      "status": "aktiv",
+      "note": null
+    },
+    {
+      "id": "industry-030",
+      "name": "La Mulatière Bauernhof",
+      "tier": 5,
+      "status": "aktiv",
+      "note": null
+    },
+    {
+      "id": "industry-031",
+      "name": "Grenay Kohlebergwerk",
+      "tier": 4,
+      "status": "aktiv",
+      "note": null
+    },
+    {
+      "id": "industry-032",
+      "name": "Cestas Bauernhof",
+      "tier": 10,
+      "status": "aktiv",
+      "note": null
+    },
+    {
+      "id": "industry-033",
+      "name": "Le Malesherbois Bauernhof",
+      "tier": 8,
+      "status": "aktiv",
+      "note": null
+    },
+    {
+      "id": "industry-034",
+      "name": "Lamballe-Armor Textilfabrik",
+      "tier": 1,
+      "status": "gestoppt",
+      "note": null
+    },
+    {
+      "id": "industry-035",
+      "name": "Garches Bauernhof",
+      "tier": 6,
+      "status": "aktiv",
+      "note": null
+    },
+    {
+      "id": "industry-036",
+      "name": "Rambervillers Baumwollplantage",
+      "tier": 8,
+      "status": "aktiv",
+      "note": null
+    },
+    {
+      "id": "industry-037",
+      "name": "Scierie de l’Écorce",
+      "tier": 1,
+      "status": "gestoppt",
+      "note": "Wechsel wird geprüft"
+    },
+    {
+      "id": "industry-038",
+      "name": "Aulnay-sous-Bois Holzfällerlager",
+      "tier": 14,
+      "status": "aktiv",
+      "note": null
+    },
+    {
+      "id": "industry-039",
+      "name": "Cournon-d'Auvergne Holzfällerlager #1",
+      "tier": 6,
+      "status": "aktiv",
+      "note": null
+    },
+    {
+      "id": "industry-040",
+      "name": "Romagnat Ölplattform",
+      "tier": 2,
+      "status": "aktiv",
+      "note": null
+    },
+    {
+      "id": "industry-041",
+      "name": "La Mulatière Eisenerzbergwerk",
+      "tier": 5,
+      "status": "aktiv",
+      "note": null
+    },
+    {
+      "id": "industry-042",
+      "name": "Grenay Ölplattform Nord",
+      "tier": 3,
+      "status": "aktiv",
+      "note": null
+    },
+    {
+      "id": "industry-043",
+      "name": "Beuvrages Fischzucht",
+      "tier": 8,
+      "status": "aktiv",
+      "note": null
+    },
+    {
+      "id": "industry-044",
+      "name": "Le Rove Holzfällerlager",
+      "tier": 5,
+      "status": "aktiv",
+      "note": null
+    },
+    {
+      "id": "industry-045",
+      "name": "Hombourg-Haut Ölraffinerie",
+      "tier": 1,
+      "status": "gestoppt",
+      "note": null
+    },
+    {
+      "id": "industry-046",
+      "name": "Châteaubourg Viehzuchtbetrieb",
+      "tier": 5,
+      "status": "gestoppt",
+      "note": null
+    },
+    {
+      "id": "industry-047",
+      "name": "Gleizé Bauernhof",
+      "tier": 12,
+      "status": "aktiv",
+      "note": null
+    },
+    {
+      "id": "industry-048",
+      "name": "Domaine des Alizés",
+      "tier": 17,
+      "status": "aktiv",
+      "note": null
+    },
+    {
+      "id": "industry-049",
+      "name": "Gleizé Sugar Cane Farm",
+      "tier": 9,
+      "status": "aktiv",
+      "note": null
+    },
+    {
+      "id": "industry-050",
+      "name": "Grenay Ölraffinerie",
+      "tier": 1,
+      "status": "gestoppt",
+      "note": null
+    },
+    {
+      "id": "industry-051",
+      "name": "Fontenay-aux-Roses Holzfällerlager",
+      "tier": 11,
+      "status": "aktiv",
+      "note": null
+    },
+    {
+      "id": "industry-052",
+      "name": "Val de Briey Kohlebergwerk",
+      "tier": 8,
+      "status": "aktiv",
+      "note": null
+    },
+    {
+      "id": "industry-053",
+      "name": "Hombourg-Haut Ölraffinerie #1",
+      "tier": 1,
+      "status": "gestoppt",
+      "note": null
+    },
+    {
+      "id": "industry-054",
+      "name": "Neuilly-Plaisance Holzfällerlager",
+      "tier": 5,
+      "status": "aktiv",
+      "note": null
+    },
+    {
+      "id": "industry-055",
+      "name": "Combs-la-Ville Ölraffinerie",
+      "tier": 1,
+      "status": "gestoppt",
+      "note": null
+    },
+    {
+      "id": "industry-056",
+      "name": "Bourg-l’Écorce Eisenerzbergwerk",
+      "tier": 8,
+      "status": "aktiv",
+      "note": null
+    },
+    {
+      "id": "industry-057",
+      "name": "Lardy Ölplattform",
+      "tier": 3,
+      "status": "aktiv",
+      "note": null
+    },
+    {
+      "id": "industry-058",
+      "name": "Lardy Ölplattform Nord",
+      "tier": 5,
+      "status": "aktiv",
+      "note": null
+    },
+    {
+      "id": "industry-059",
+      "name": "Fontenay-aux-Roses Fischzucht",
+      "tier": 9,
+      "status": "aktiv",
+      "note": null
+    },
+    {
+      "id": "industry-060",
+      "name": "Auch Ölplattform Süd",
+      "tier": 3,
+      "status": "aktiv",
+      "note": null
+    },
+    {
+      "id": "industry-061",
+      "name": "Changé Fischzucht",
+      "tier": 2,
+      "status": "aktiv",
+      "note": null
+    },
+    {
+      "id": "industry-062",
+      "name": "Port des Alizés Ölplattform #1",
+      "tier": 3,
+      "status": "aktiv",
+      "note": null
+    },
+    {
+      "id": "industry-063",
+      "name": "Port des Alizés Ölplattform West",
+      "tier": 3,
+      "status": "aktiv",
+      "note": null
+    },
+    {
+      "id": "industry-064",
+      "name": "Valenton Fischzucht",
+      "tier": 12,
+      "status": "aktiv",
+      "note": null
+    },
+    {
+      "id": "industry-065",
+      "name": "Port des Alizés Ölplattform",
+      "tier": 6,
+      "status": "aktiv",
+      "note": null
+    },
+    {
+      "id": "industry-066",
+      "name": "Anse Dorée Ölplattform",
+      "tier": 3,
+      "status": "aktiv",
+      "note": null
+    },
+    {
+      "id": "industry-067",
+      "name": "Floirac Ölplattform",
+      "tier": 5,
+      "status": "aktiv",
+      "note": null
+    },
+    {
+      "id": "industry-068",
+      "name": "Meyzieu Ölplattform",
+      "tier": 2,
+      "status": "aktiv",
+      "note": null
+    },
+    {
+      "id": "industry-069",
+      "name": "Labenne Sandbaggerschiff",
+      "tier": 4,
+      "status": "aktiv",
+      "note": null
+    },
+    {
+      "id": "industry-070",
+      "name": "Cournon-d'Auvergne Ölraffinerie",
+      "tier": 1,
+      "status": "gestoppt",
+      "note": null
+    },
+    {
+      "id": "industry-071",
+      "name": "Val de Briey Fischzucht #1",
+      "tier": 4,
+      "status": "aktiv",
+      "note": null
+    },
+    {
+      "id": "industry-072",
+      "name": "Changé Ölplattform",
+      "tier": 4,
+      "status": "aktiv",
+      "note": null
+    },
+    {
+      "id": "industry-073",
+      "name": "Combs-la-Ville Fischzucht",
+      "tier": 7,
+      "status": "aktiv",
+      "note": null
+    },
+    {
+      "id": "industry-074",
+      "name": "Cassis Fischzucht",
+      "tier": 6,
+      "status": "aktiv",
+      "note": null
+    },
+    {
+      "id": "industry-075",
+      "name": "Aulnay-sous-Bois Fischzucht",
+      "tier": 12,
+      "status": "aktiv",
+      "note": null
+    },
+    {
+      "id": "industry-076",
+      "name": "Labenne Sugar Cane Farm",
+      "tier": 5,
+      "status": "aktiv",
+      "note": null
+    },
+    {
+      "id": "industry-077",
+      "name": "Lardy Ölplattform #1",
+      "tier": 5,
+      "status": "aktiv",
+      "note": null
+    },
+    {
+      "id": "industry-078",
+      "name": "Lardy Sandbaggerschiff",
+      "tier": 5,
+      "status": "aktiv",
+      "note": null
+    },
+    {
+      "id": "industry-079",
+      "name": "Neuilly-Plaisance Fischzucht",
+      "tier": 11,
+      "status": "aktiv",
+      "note": null
+    },
+    {
+      "id": "industry-080",
+      "name": "Pont-Saint-Martin Holzfällerlager",
+      "tier": 17,
+      "status": "aktiv",
+      "note": null
+    },
+    {
+      "id": "industry-081",
+      "name": "Combs-la-Ville Ölplattform #1",
+      "tier": 3,
+      "status": "aktiv",
+      "note": null
+    },
+    {
+      "id": "industry-082",
+      "name": "Reichshoffen Ölplattform",
+      "tier": 3,
+      "status": "aktiv",
+      "note": null
+    },
+    {
+      "id": "industry-083",
+      "name": "La Wantzenau Ölplattform",
+      "tier": 4,
+      "status": "aktiv",
+      "note": null
+    },
+    {
+      "id": "industry-084",
+      "name": "Chamonix-Mont-Blanc Ölplattform",
+      "tier": 4,
+      "status": "aktiv",
+      "note": null
+    },
+    {
+      "id": "industry-085",
+      "name": "Auch Ölplattform Ost",
+      "tier": 3,
+      "status": "aktiv",
+      "note": null
+    },
+    {
+      "id": "industry-086",
+      "name": "Valenton Ölplattform #1",
+      "tier": 3,
+      "status": "aktiv",
+      "note": null
+    },
+    {
+      "id": "industry-087",
+      "name": "Valenton Ölplattform",
+      "tier": 6,
+      "status": "aktiv",
+      "note": null
+    },
+    {
+      "id": "industry-088",
+      "name": "Divatte-sur-Loire Fischzucht",
+      "tier": 13,
+      "status": "aktiv",
+      "note": null
+    },
+    {
+      "id": "industry-089",
+      "name": "Beaucaire Fischzucht",
+      "tier": 7,
+      "status": "aktiv",
+      "note": null
+    },
+    {
+      "id": "industry-090",
+      "name": "Rambervillers Fischzucht",
+      "tier": 9,
+      "status": "aktiv",
+      "note": null
+    },
+    {
+      "id": "industry-091",
+      "name": "Neuilly-Plaisance Ölraffinerie",
+      "tier": 1,
+      "status": "gestoppt",
+      "note": null
+    },
+    {
+      "id": "industry-092",
+      "name": "Val de Briey Fischzucht",
+      "tier": 7,
+      "status": "aktiv",
+      "note": null
+    },
+    {
+      "id": "industry-093",
+      "name": "Grenay Ölplattform",
+      "tier": 2,
+      "status": "aktiv",
+      "note": null
+    },
+    {
+      "id": "industry-094",
+      "name": "Changé Ölplattform West",
+      "tier": 4,
+      "status": "aktiv",
+      "note": null
+    },
+    {
+      "id": "industry-095",
+      "name": "Lamballe-Armor Viehzuchtbetrieb",
+      "tier": 10,
+      "status": "gestoppt",
+      "note": null
+    },
+    {
+      "id": "industry-096",
+      "name": "Aniche Viehzuchtbetrieb",
+      "tier": 4,
+      "status": "gestoppt",
+      "note": null
+    },
+    {
+      "id": "industry-097",
+      "name": "Vichy Viehzuchtbetrieb",
+      "tier": 5,
+      "status": "gestoppt",
+      "note": null
+    },
+    {
+      "id": "industry-098",
+      "name": "Combs-la-Ville Viehzuchtbetrieb",
+      "tier": 6,
+      "status": "gestoppt",
+      "note": null
+    },
+    {
+      "id": "industry-099",
+      "name": "Labenne Sandbaggerschiff Ost",
+      "tier": 4,
+      "status": "aktiv",
+      "note": null
+    },
+    {
+      "id": "industry-100",
+      "name": "Bry-sur-Marne Viehzuchtbetrieb",
+      "tier": 14,
+      "status": "gestoppt",
+      "note": null
+    },
+    {
+      "id": "industry-101",
+      "name": "Vichy Bauernhof",
+      "tier": 6,
+      "status": "aktiv",
+      "note": null
+    },
+    {
+      "id": "industry-102",
+      "name": "Tournus Bauernhof",
+      "tier": 12,
+      "status": "aktiv",
+      "note": null
+    },
+    {
+      "id": "industry-103",
+      "name": "Sin-le-Noble Glashütte",
+      "tier": 1,
+      "status": "gestoppt",
+      "note": null
+    }
+  ]
+}
