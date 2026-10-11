@@ -8,7 +8,8 @@
     "lines": "lines-1910-03.json",
     "industries": "industries-1910-03.json",
     "demand": "demand-1910-03.json",
-    "events": "events.json"
+    "events": "events.json",
+    "gazette": "gazette.json"
   },
   "snapshots": [
     {
