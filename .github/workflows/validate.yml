@@ -18,3 +18,11 @@ jobs:
           node --check scripts/import-watcher.mjs
       - name: Daten prüfen
         run: node scripts/validate-data.mjs
+      - name: Neue Welt und Watcher-Import testen
+        run: |
+          node scripts/new-save.mjs --id ci-test-world --name "Test-Welt" --year 1900
+          printf 'Linie\tHaltestellen\tFahrzeuge\tBelegt\tKapazität\tAuslastung\nBus Passagiere-Test-LO-1\t2\t1\t3\t6\t50%%\n' > /tmp/test-lines.tsv
+          printf 'Industrie\tStufe\tProduktion\nTest Holzfällerlager\t3\taktiv\n' > /tmp/test-industry.tsv
+          node scripts/import-watcher.mjs --save ci-test-world --kind lines --date 1900-04-01 --input /tmp/test-lines.tsv
+          node scripts/import-watcher.mjs --save ci-test-world --kind industries --date 1900-04-01 --input /tmp/test-industry.tsv
+          node scripts/validate-data.mjs
