@@ -119,21 +119,30 @@ async function start(){
     if(document.body.dataset.page==="portal")return renderPortal(await fetchJSON("data/worlds.json"));
     const base="saves/"+document.body.dataset.save+"/data/";
     const manifest=await fetchJSON(base+"manifest.json");
-    if(manifest.monitor && new URLSearchParams(location.search).get("view")!=="archive"){
+    const view=new URLSearchParams(location.search).get("view");
+    if(manifest.latestReport && !view){
+      location.replace(manifest.latestReport+location.hash);
+      return;
+    }
+    if(manifest.monitor && view==="monitor"){
       const index=await fetchJSON(base+manifest.monitor);
       return mountMonitor(APP,index,fetchJSON,base,()=>{location.href=location.pathname+"?view=archive#chronicle";});
     }
+    // Preserve the original 1910 archive, even when the current report advances.
+    const historic=manifest.snapshots?.find(x=>x.game_date==="1910-03-13")||{};
+    const archiveFile=k=>historic[k]||manifest.latest[k];
     const keys=["meta","cities","lines","industries","demand","events"];
-    const [meta,cities,lines,industries,demands,events]=await Promise.all(keys.map(k=>fetchJSON(base+manifest.latest[k])));
+    const [meta,cities,lines,industries,demands,events]=await Promise.all(keys.map(k=>fetchJSON(base+archiveFile(k))));
     const gazette=manifest.latest.gazette ? await fetchJSON(base+manifest.latest.gazette) : {articles:[]};
-    renderSave(meta,cities,lines,industries,demands,events,gazette);
+    const archivedMeta={...meta,latest_game_date:"1910-03-13",description:"Historischer Archivstand März 1910. Neuere Linien, Finanzen und Bevölkerungsdaten findest du im Wirtschaftsbericht April 1911."};
+    renderSave(archivedMeta,cities,lines,industries,demands,events,gazette);
     if(manifest.monitor){
       const banner=document.createElement("div");banner.className="note archive-banner";
-      banner.innerHTML='<strong>Historisches redaktionelles Archiv · März 1910.</strong> Diese Ansicht bleibt als früherer Stand erhalten. <a href="'+location.pathname+'#cities">Zum neueren Monitorstand und allen 50 Städten →</a>';
+      banner.innerHTML='<strong>Historisches Archiv · März 1910.</strong> Diese Werte bleiben als früherer Stand erhalten. <a href="'+(manifest.latestReport||"index.html")+'">Zum aktuellen Wirtschaftsbericht April 1911 →</a> · <a href="'+location.pathname+'?view=monitor#cities">Zum Langzeitmonitor →</a>';
       document.querySelector(".save-hero .shell").prepend(banner);
     }
     const optional=["worldCities","worldDemand","atlas","historicProduction","historicSupply","analysis"];
-    const extra=await Promise.all(optional.map(k=>manifest.latest[k]?fetchJSON(base+manifest.latest[k]):Promise.resolve(null)));
+    const extra=await Promise.all(optional.map(k=>archiveFile(k)?fetchJSON(base+archiveFile(k)):Promise.resolve(null)));
     mountWorldAtlas(document.querySelector("#view-atlas"),{worldCities:extra[0],worldDemand:extra[1],atlas:extra[2],production:extra[3],historicSupply:extra[4],analysis:extra[5]});
   } catch(error) {
     APP.innerHTML=header(document.body.dataset.page!=="portal")+'<main id="main" class="shell"><div class="err"><h1>Das Archiv kann nicht geladen werden.</h1><p>'+E(error.message)+'</p><p>Bitte prüfen, ob die JSON-Dateien vorhanden sind. Lokal die Website über einen HTTP-Server starten, nicht als <code>file://</code>.</p></div></main>'+footer();
