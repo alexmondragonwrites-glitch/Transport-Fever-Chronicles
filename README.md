@@ -2,31 +2,38 @@
 
 **Ein lebendiger Atlas für mehrere Transport-Fever-3-Spielstände.** Nicht nur ein Dashboard, sondern ein historisches Archiv für Städte, Inseln, Eisenbahnen, Industrieketten und die Geschichten, die sich aus einer Spielwelt ergeben.
 
-## Erste Welt: Archipel des Alizés · 1900–1910
+## Erste Welt: Archipel des Alizés · 1900–1911
 
-Ein tropisches französisch geprägtes Archipel. Die *Société des Routes et des Rails* verbindet fünf schnell wachsende Hauptinselstädte mit den jungen Handelsinseln Roche-Noire und Montfougère.
+Ein tropisches französisch geprägtes Archipel. Die *Société des Routes et des Rails* verbindet fünf Hauptinselstädte mit den Außeninseln Roche-Noire und Montfougère.
 
-**Datenstand:** Spieljahr **13. März 1910**, dokumentiert am **11. Oktober 2026**. Der erste Import umfasst sieben Stadtgeschichten ab 1904, **80 Linien**, **448 Fahrzeuge**, **103 Industriebetriebe** und **27 Warenbedarfsposten** für sieben Städte. Die Zahlen sind Messungen und keine Wirtschaftsprognosen.
+### Aktuell: Wirtschaftsbericht April 1911
 
-### Neu: vollständiger Monitorstand
+**Spieldatum:** 13. April 1911. **Messung:** 11. Oktober 2026, 19:19:55 (MESZ). Der aktuelle Bericht enthält:
 
-Die Weltseite zeigt jetzt standardmäßig den Monitorstand bis **11. Juli 1910**: **50 Städte, 82 Linien, 474 Fahrzeuge und 105 Industriebetriebe**. Stadtwerte besitzen einen eigenen Detailstand (8. Juli 1910). Elf Aufzeichnungsstände sind auswählbar; Stadt- und Linienverläufe bleiben nach Sitzungen getrennt. Bekannte Aufnahmefehler werden angezeigt.
+- **50 Städte** mit Bevölkerungsentwicklung ab 1904 und **15.837 Einwohnern**
+- **85 Linien** mit **465 einzeln zugeordneten Fahrzeugen**; die Weltübersicht nennt **487** (22 Differenz, Ursache unbekannt)
+- **42,90 Mio.** addierte Linien-Betriebsbilanz des letzten Spieljahres (keine bestätigte Bilanz des Gesamtunternehmens)
+- **Alle 85 Linien mit Takt, aktuellen Wartezeiten, Warenalter und Zeiten seit Abholung**
+- **104 Industrieeinträge laut Weltübersicht**, davon **28 explizite Stillstandsbeobachtungen**; übrige aktuelle Zustände fehlen
+- **61.164.100** Kontostand in der Spielwährung
 
-Das bisherige redaktionelle Archiv mit Weltatlas und Geschichten bleibt über „Chronik & Weltatlas · März 1910“ erreichbar. [Import, Quellen und Messgrenzen](docs/MONITOR.md).
+**Direkt zum aktuellen Bericht:** [Wirtschaftsbericht April 1911](saves/archipel-des-alizes/1911.html)
 
-### Neu: Dossier „Zehn Jahre Archipel“
+Die Spielstand-Startseite führt nun zum neuesten Bericht. [Der Langzeitmonitor](saves/archipel-des-alizes/index.html?view=monitor#overview) zeigt frühere Messsitzungen bis Juli 1910, inklusive Rücksprünge und Aufzeichnungslücken. [Der archivierte Weltatlas](saves/archipel-des-alizes/index.html?view=archive#atlas) hält die redaktionelle Momentaufnahme vom März 1910 fest.
 
-Eine Langform-Seite über die Jahre 1900 bis 1910: [saves/archipel-des-alizes/jahrzehnt.html](saves/archipel-des-alizes/jahrzehnt.html). Sie trennt belegte Messwerte, Rekonstruktion, Fiktion und redaktionelle Einordnung sichtbar voneinander und misst jede Veränderung am Ausgangspunkt 1900, nicht an heute.
+### Historisches Dossier „Zehn Jahre Archipel“
 
-Die Kennzahlen im Dossier erzeugt `node scripts/build-decade.mjs` aus den Monitordaten. Die CI prüft mit `--check`, ob sie aktuell sind und ob jeder Platzhalter im Text auflösbar ist.
+Die illustrierte Langform-Seite über die Jahre 1900 bis 1910 bleibt unter [Sonderausgabe](saves/archipel-des-alizes/jahrzehnt.html) erhalten. Sie trennt belegte Messwerte, Rekonstruktion, Fiktion und redaktionelle Einordnung. Die vom Monitor abgeleiteten historischen Kennzahlen werden mit `node scripts/build-decade.mjs --check` geprüft.
 
 ### Zum Archiv
 
 - **Repository:** https://github.com/alexmondragonwrites-glitch/Transport-Fever-Chronicles
-- **Vorgesehene GitHub-Pages-URL:** https://alexmondragonwrites-glitch.github.io/Transport-Fever-Chronicles/
-- **Erste Welt:** https://alexmondragonwrites-glitch.github.io/Transport-Fever-Chronicles/saves/archipel-des-alizes/
+- **GitHub Pages:** https://alexmondragonwrites-glitch.github.io/Transport-Fever-Chronicles/
+- **Aktueller Bericht:** https://alexmondragonwrites-glitch.github.io/Transport-Fever-Chronicles/saves/archipel-des-alizes/1911.html
 
-Die Pages-Links funktionieren, sobald GitHub Pages für das Repository in **Settings → Pages → Deploy from a branch → main / (root)** aktiviert wurde.
+## Methodik
+
+Ein Bericht zu **1911** ist nicht dieselbe Datenbasis wie der ältere **1910er Monitor**: Die Bilanzsummen beziehen sich auf das letzte Spieljahr, Belegungen auf eine Momentaufnahme. Warenalter ist **keine abgeschlossene Transportzeit**. Die 28 gestoppten Industrien sind eine **unvollständige Auswahl**, keine Aussage über den Status aller 104 Betriebe. Datenunterschiede werden nicht durch Schätzung ausgeglichen.
 
 ## Funktionen
 
