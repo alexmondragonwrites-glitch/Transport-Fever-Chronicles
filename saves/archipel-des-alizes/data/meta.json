@@ -5,12 +5,12 @@
   "subtitle": "Eine tropische Inselwelt zwischen Dampf, Handel und Aufbruch",
   "game": "Transport Fever 3",
   "starting_year": 1900,
-  "latest_game_date": "1911-04-13",
-  "last_observed": "2026-10-11",
+  "latest_game_date": "1911-12-24",
+  "last_observed": "2026-10-12",
   "company": "Société des Routes et des Rails",
   "status": "Aktiver Spielstand",
   "tone": "Französisch geprägte Tropenwelt",
-  "description": "Die erste Dekade ist abgeschlossen. Stand April 1911: 50 Städte, eine Hauptbahn, 85 Linien sowie dokumentierte Betriebsbilanzen und Transportzeiten.",
+  "description": "Weihnachten 1911: 50 Städte, 16.245 Einwohner, 95 Linien, 582 zugeordnete Fahrzeuge sowie 108 Industrien mit Produktions-, Versand- und Zulieferungsdaten.",
   "city_ids": [
     "bourg-l-ecorce",
     "port-des-alizes",
@@ -27,5 +27,16 @@
     "reported_vehicles": 487,
     "reported_lines": 85
   },
-  "data_integrity_note": "Das Verkehrsregister weist nur 465 Linienfahrzeuge aus; die Weltübersicht meldet 487. Für 1911 liegen nur Stillstandsbeobachtungen zu Industrien vor, keine vollständige neue Industriestatusliste."
+  "data_integrity_note": "Das Verkehrsregister weist nur 465 Linienfahrzeuge aus; die Weltübersicht meldet 487. Für 1911 liegen nur Stillstandsbeobachtungen zu Industrien vor, keine vollständige neue Industriestatusliste.",
+  "operational_snapshot": {
+    "game_date": "1911-12-24",
+    "cities": 50,
+    "population": 16245,
+    "lines": 95,
+    "assigned_line_vehicles": 582,
+    "industry_count": 108,
+    "active_industries": 78,
+    "stopped_industries": 30
+  },
+  "financial_snapshot_historical_note": "Kontostand 61.164.100 und Jahresbilanzen gehören ausschließlich zum vorherigen Stand April 1911; aktueller Wert Dezember unbekannt."
 }
