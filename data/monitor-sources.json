@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "saves": {
+    "archipel-des-alizes": {
+      "world": {
+        "name": "Archipel des Alizés – 1900",
+        "world_id": "tf3-2026-10-9-1791530983-207911368-2"
+      },
+      "folder": "monitor",
+      "archive": {
+        "url": "https://github.com/alexmondragonwrites-glitch/Transport-Fever-Chronicles/releases/tag/archipel-export-2026-10-11",
+        "created_at": "2026-10-11T18:00:52+02:00",
+        "sha256": "b2c76387f5569d83d7bc0ff90d7f7b9e7cd1bc315d6553dba6ab52d0b0dd92a1",
+        "packages": 28,
+        "measurement_count": 2864
+      }
+    }
+  }
+}

@@ -60,5 +60,5 @@
       "file": "analysis-1910-03.json"
     }
   ],
-  "monitor": "monitor-20261011/index.json"
+  "monitor": "monitor/index.json"
 }

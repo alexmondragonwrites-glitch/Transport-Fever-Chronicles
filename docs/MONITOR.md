@@ -1,8 +1,24 @@
 # Monitoransicht – Archipel
 
-Die Standardansicht zeigt den Spielemonitor-Export vom 11.10.2026, 18:00:52 (Europe/Berlin). Das frühere redaktionelle Archiv mit Weltatlas, Geschichten und März-1910-Tabellen bleibt über `?view=archive` erreichbar. Diese Quellen werden nicht still vermischt.
+Die Standardansicht zeigt den aktuell hochgeladenen Spielemonitor-Stand. Das frühere redaktionelle Archiv mit Weltatlas, Geschichten und März-1910-Tabellen bleibt über `?view=archive` erreichbar. Diese Quellen werden nicht still vermischt.
 
-## Reproduzierbarer Import
+## Aktuellen Stand hochladen
+
+Im Spielmonitor-Ordner `WEBSITE_AKTUALISIEREN.bat` doppelklicken, oder:
+
+```text
+python scripts/publish-monitor.py            # zeigt Änderungen, fragt vor dem Upload
+python scripts/publish-monitor.py --no-push  # nur lokal erzeugen, nichts committen
+python scripts/publish-monitor.py --yes      # ohne Rückfrage (z. B. für geplante Aufgaben)
+```
+
+Das Script liest `../Spielmonitor/sessions/*/daten.jsonl` (anderer Ort: `--monitor PFAD`), nimmt nur Messungen der in `data/monitor-sources.json` eingetragenen `world_id` und erzeugt daraus `saves/archipel-des-alizes/data/monitor/`. Die Ausgabe enthält keine Uhrzeit des Exports, sondern nur Messwerte: Abgeschlossene Sitzungen bleiben byte-identisch und werden nie erneut hochgeladen. Ein Upload enthält deshalb normalerweise nur den Abschnitt der laufenden Sitzung und `index.json`. Ohne neue Messungen entsteht kein Commit.
+
+Ablauf: GitHub-Stand nachziehen (nur Fast-Forward), geänderte Dateien schreiben, `validate-monitor.mjs` und `validate-data.mjs` ausführen, Änderungen anzeigen, nach Bestätigung committen und pushen. Schlägt eine Prüfung fehl, wird nichts committet. Eine noch nicht vollständig geschriebene letzte Zeile der laufenden Sitzung bleibt für den nächsten Lauf stehen. Bereits gelesene, unveränderte Sitzungsdateien merkt sich `.publish-cache/` (nicht im Repository); Änderungen an `monitor_build.py` verwerfen diesen Cache automatisch.
+
+Neue Rohdaten bleiben lokal im Spielmonitor. Das Rohdaten-Archiv auf GitHub (Release) ist der vollständige Export vom 11.10.2026 und wird nicht automatisch erweitert.
+
+## Reproduzierbarer Import aus dem Release-Archiv
 
 ```text
 python scripts/import-monitor.py /absoluter/pfad/zum/Export/Pakete
@@ -11,7 +27,7 @@ node scripts/validate-monitor.mjs
 node scripts/validate-data.mjs
 ```
 
-Der Import prüft SHA256 und die Weltkennung jedes Sitzungspakets. Er schreibt `saves/archipel-des-alizes/data/monitor-20261011/`. Das kleine `index.json` nennt Quellen, Summen und Abschnittsdateien. Das Manifest referenziert es über `monitor`. Die Website lädt zunächst nur den neuesten Abschnitt; andere werden auf Auswahl geladen. Kein Abruf der 1,51-GB-Originaldatei im Browser.
+Der Import prüft SHA256 und die Weltkennung jedes Sitzungspakets und schreibt denselben Ordner `monitor/` mit dem Stand des Archivs. Beide Wege nutzen `scripts/monitor_build.py`; für dieselben Messungen entstehen identische Abschnittsdateien. Das kleine `index.json` nennt Quellen, Summen und Abschnittsdateien. Das Manifest referenziert es über `monitor`. Die Website lädt zunächst nur den neuesten Abschnitt; andere werden auf Auswahl geladen.
 
 ## Bedeutung und Grenzen
 
