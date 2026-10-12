@@ -6,20 +6,26 @@
 
 Ein tropisches französisch geprägtes Archipel. Die *Société des Routes et des Rails* verbindet fünf Hauptinselstädte mit den Außeninseln Roche-Noire und Montfougère.
 
-### Aktuell: Wirtschaftsbericht April 1911
+### Aktuell: Weihnachtsbericht vom 24. Dezember 1911
 
-**Spieldatum:** 13. April 1911. **Messung:** 11. Oktober 2026, 19:19:55 (MESZ). Der aktuelle Bericht enthält:
+**Quelle:** TF3-Mod, Messung 12. Oktober 2026 um 06:57:34 (MESZ). Der Weihnachtsbericht dokumentiert:
 
-- **50 Städte** mit Bevölkerungsentwicklung ab 1904 und **15.837 Einwohnern**
-- **85 Linien** mit **465 einzeln zugeordneten Fahrzeugen**; die Weltübersicht nennt **487** (22 Differenz, Ursache unbekannt)
-- **42,90 Mio.** addierte Linien-Betriebsbilanz des letzten Spieljahres (keine bestätigte Bilanz des Gesamtunternehmens)
-- **Alle 85 Linien mit Takt, aktuellen Wartezeiten, Warenalter und Zeiten seit Abholung**
-- **104 Industrieeinträge laut Weltübersicht**, davon **28 explizite Stillstandsbeobachtungen**; übrige aktuelle Zustände fehlen
-- **61.164.100** Kontostand in der Spielwährung
+- **50 Städte** und **16.245 Einwohner** (April 1911: 15.837; +408)
+- **95 Linien** mit **582 zugeordneten Fahrzeugen**, 5.919 belegten von 11.626 Kapazitätseinheiten (gemischte Messgröße)
+- **108 Industriebetriebe**: 78 aktiv, 30 im Export als gestoppt markiert
+- Erstmals **Produktion, Versand und Zulieferung pro Jahr für alle 108 Industrien** mit Input-/Output-Rezepten
+- **95 Linien** mit Takt, wartenden Fahrgästen, Wartezeit und Warenalter
+- Neue Industrien wie Péronne Fahrzeugfabrik sowie neue Bus- und Verkehrsangebote rund um Roche-Noire
 
-**Direkt zum aktuellen Bericht:** [Wirtschaftsbericht April 1911](saves/archipel-des-alizes/1911.html)
+**[Weihnachtsbericht 1911 mit interaktiven Filtern öffnen](saves/archipel-des-alizes/weihnachten-1911.html)**
 
-Die Spielstand-Startseite führt nun zum neuesten Bericht. [Der Langzeitmonitor](saves/archipel-des-alizes/index.html?view=monitor#overview) zeigt frühere Messsitzungen bis Juli 1910, inklusive Rücksprünge und Aufzeichnungslücken. [Der archivierte Weltatlas](saves/archipel-des-alizes/index.html?view=archive#atlas) hält die redaktionelle Momentaufnahme vom März 1910 fest.
+**Historische Stände bleiben getrennt:**
+
+- [Wirtschaftsbericht April 1911](saves/archipel-des-alizes/1911.html): 85 Linien, Jahresbilanzen und 61.164.100 Kontostand. **Die Finanzwerte sind nicht Dezemberwerte.**
+- [Langzeitmonitor mit Sitzungsverläufen](saves/archipel-des-alizes/index.html?view=monitor#overview) bis Juli 1910.
+- [Weltatlas und Archiv vom März 1910](saves/archipel-des-alizes/index.html?view=archive#atlas) mit älteren Bedarfs- und Industrie-Snapshots.
+
+Die Daten stehen datiert in `saves/archipel-des-alizes/data/`; die Zuordnung der Snapshot-Dateien erfolgt ausschließlich über `manifest.json`.
 
 ### Historisches Dossier „Zehn Jahre Archipel“
 
@@ -29,11 +35,15 @@ Die illustrierte Langform-Seite über die Jahre 1900 bis 1910 bleibt unter [Sond
 
 - **Repository:** https://github.com/alexmondragonwrites-glitch/Transport-Fever-Chronicles
 - **GitHub Pages:** https://alexmondragonwrites-glitch.github.io/Transport-Fever-Chronicles/
-- **Aktueller Bericht:** https://alexmondragonwrites-glitch.github.io/Transport-Fever-Chronicles/saves/archipel-des-alizes/1911.html
+- **Aktueller Bericht:** https://alexmondragonwrites-glitch.github.io/Transport-Fever-Chronicles/saves/archipel-des-alizes/weihnachten-1911.html
 
-## Methodik
+## Methodik und Datenqualität
 
-Ein Bericht zu **1911** ist nicht dieselbe Datenbasis wie der ältere **1910er Monitor**: Die Bilanzsummen beziehen sich auf das letzte Spieljahr, Belegungen auf eine Momentaufnahme. Warenalter ist **keine abgeschlossene Transportzeit**. Die 28 gestoppten Industrien sind eine **unvollständige Auswahl**, keine Aussage über den Status aller 104 Betriebe. Datenunterschiede werden nicht durch Schätzung ausgeglichen.
+Der Export vom **24. Dezember 1911** unterscheidet **Jahresproduktion**, **Jahresversand**, **Jahreszulieferung** und den aktuellen Status einer Industrie. Darum können Betriebe aktuell auf „gestoppt“ stehen, obwohl das laufende Spieljahr bereits positive Produktions- oder Versandmengen hatte. Ein positiver Produktionswert bei Versand 0 beweist nicht, dass alle Güter verderben oder ungenutzt bleiben.
+
+Warenalter ist **keine abgeschlossene Transportzeit**. Belegung ist eine Momentaufnahme, aus der sich weder ein gesicherter Dauerengpass noch die Jahresrentabilität einer Linie ableiten lässt. Summierte Belegungen mehrerer Verkehrsträger mischen Personen- und Frachteinheiten und sind nur als technische Gesamtgröße zu interpretieren. Die Jahres-Betriebsbilanzen stammen **ausschließlich aus dem April-1911-Export**. Der Dezemberstand enthält keine neue Kontostands- oder Jahresbilanzangabe.
+
+Die historische Unstimmigkeit aus April 1911 (487 Fahrzeuge in der Übersicht, aber 465 in den 85 Einzellinien) wird weiterhin als offener Prüfpunkt behandelt und nicht rückwirkend verändert.
 
 ## Funktionen
 
