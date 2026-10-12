@@ -250,6 +250,114 @@
       "refs": {"staedte": [174632, 174602, 174605, 174607, 174645], "linien": [322356], "personen": [], "betriebe": []}
     },
     {
+      "id": "1912-01-katalog",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1912-01",
+      "lead": true,
+      "rubrik": "Neue Fahrzeugmodelle",
+      "titel": "Der Motor kommt: Neue Wagen im Katalog der Société",
+      "teaser": "Zum Jahreswechsel 1912 liegen in der Direktion neue Kataloge auf dem Tisch. Zum ersten Mal steht ein Motorlastwagen darin.",
+      "body": [
+        "In der Direktion der Société des Routes et des Rails in Port des Alizés riecht es nach frischer Druckerschwärze. Der neue Fahrzeugkatalog ist da, und der Sekretär, der ihn aufschlägt, muss zweimal hinsehen. Zwischen Postkutsche, Pferdefuhrwerk, dem Dampfkraftwagen und der ehrwürdigen L’Obéissante stehen zwei Namen, die es bisher nicht gab: der Benz Dreitonner, als Kastenwagen und als Kipper.",
+        "Der Kastenwagen kostet 460.733 und im Jahr 63.991 im Unterhalt. Er fasst 12 Einheiten Stückgut und fährt 30 Kilometer in der Stunde. Ein Vierzylindermotor treibt ihn an, die Kraft geht über eine Kette auf die Hinterachse. 35 Kilowatt, sagt der Katalog. Die Pferde im Hof der Direktion sagen nichts.",
+        "Auch auf der Schiene gibt es Neues. Der Kesselwagen 1912 nimmt 10 Einheiten Flüssiggut auf, vom Treibstoff bis zum Rohöl, und rollt mit 80 Kilometern in der Stunde. Daneben bietet der Katalog den gedeckten Güterwagen von 1910 an: ein geschlossener Wagen für Stückgüter, die vor dem Wetter geschützt werden müssen.",
+        "Ob die Gesellschaft zugreift, verrät der Katalog nicht. Der Sekretär hat jedenfalls schon ein Eselsohr in die Seite mit dem Benz gemacht."
+      ],
+      "grounding": "Quelle: Fahrzeugkatalog im Spiel, Bildschirmfotos des Spielers vom 12.10.2026 (Spielstand Anfang 1912). Katalogwerte: Benz Dreitonner Kasten 1912–1960, Preis 460.733, 63.991/Jahr, 12 Einheiten Stückgut, 30 km/h, 35 kW, 5,0 kN, 1,5 t, 6,8 m, Vierzylindermotor mit Kettenantrieb (Katalogtext); Benz Dreitonner Kipper im selben Katalog; Kesselwagen 1912 (1912–1980), 10 Einheiten Flüssiggut, 80 km/h, 15 t, 8,8 m; Gedeckter Güterwagen 1910 (1910–1980), 10 Einheiten Stückgut, 80 km/h, 11 t, 9,7 m. Ob und wo die Société diese Modelle einsetzt, ist noch nicht gemessen; Fahrzeugmodelle erfasst der Monitor erst mit einer kommenden Mod-Revision. Erfunden: Direktion, Sekretär, Eselsohr.",
+      "refs": {
+        "staedte": [
+          174632
+        ],
+        "linien": [],
+        "personen": [],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1912-01-tresen-dach",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1912-01",
+      "rubrik": "Am Tresen",
+      "venue": {
+        "name": "Au Quai des Collines",
+        "place": "Valmorin"
+      },
+      "titel": "Valmorin: Ein Wagen mit Dach",
+      "teaser": "Mathurin hat den neuen Katalog gelesen und eine Theorie, warum die Kleidung nie ankommt.",
+      "body": [
+        "Irgendwer hat einen Fahrzeugkatalog der Société im „Au Quai des Collines“ liegen lassen, und Wirt Mathurin liest ihn seit drei Tagen hinter dem Tresen wie eine Bibel. Aufgeschlagen ist immer dieselbe Seite: der gedeckte Güterwagen.",
+        "„Hier steht es“, ruft er und tippt auf das Papier. „Für Stückgüter, die Schutz vor dem Wetter benötigen.“ Er schaut in die Runde. „Und was braucht Schutz vor dem Wetter? Kleidung! Die fahren unsere Hemden die ganze Zeit offen durch den Regen, und dann schämen sie sich, sie abzuliefern.“",
+        "Der alte Anselme hält dagegen, dass es auf den Inseln seit Monaten nicht geregnet habe. Lucie vom Bahnhof meint, der Zug nach Valmorin habe ohnehin nur einen einzigen Wagen, und der sei mit Wolle und Konserven voll. Am Deckenbalken steht trotzdem eine neue Wette: „Kleidung kommt, sobald der Wagen mit Dach kommt.“ Mathurin hat zwei Runden Ti-Punch darauf gesetzt."
+      ],
+      "grounding": "Quelle: Fahrzeugkatalog im Spiel, Bildschirmfotos des Spielers vom 12.10.2026 (Spielstand Anfang 1912). Katalogtext zum Gedeckten Güterwagen 1910: geschlossener Wagen für Stückgüter, die Schutz vor dem Wetter benötigen; 10 Einheiten Stückgut. Gemessen (Dezember 1911): Valmorin Kleidungsbedarf 68, gedeckt 0; Linie TC Kleidung,Konserven,Wolle-PoidesPêc-Val-RE-1 mit 1 Fahrzeug, Bordladung Wolle und Konserven. Ob und wo die Société diese Modelle einsetzt, ist noch nicht gemessen; Fahrzeugmodelle erfasst der Monitor erst mit einer kommenden Mod-Revision. Erfunden: Wirtshausszene, Personen, Theorie, Wetter und Wetten; ob Wetter im Spiel eine Rolle spielt, ist nicht belegt.",
+      "refs": {
+        "staedte": [
+          174607
+        ],
+        "linien": [
+          176305
+        ],
+        "personen": [],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1912-01-reclame-benz",
+      "typ": "anzeige",
+      "art": "fiktion",
+      "date": "1912-01",
+      "rubrik": "Réclame",
+      "titel": "Benz Dreitonner",
+      "anzeige": {
+        "kopf": "Benz Dreitonner",
+        "zeilen": [
+          "Der Motorlastwagen ist da!",
+          "Vierzylinder · Kettenantrieb · 35 kW",
+          "12 Einheiten Stückgut, 30 km/h",
+          "Als Kastenwagen und als Kipper"
+        ],
+        "fuss": "Neu im Katalog 1912 · Société des Routes et des Rails"
+      },
+      "grounding": "Quelle: Fahrzeugkatalog im Spiel, Bildschirmfotos des Spielers vom 12.10.2026 (Spielstand Anfang 1912). Katalogwerte Benz Dreitonner Kasten: ab 1912, 12 Einheiten Stückgut, 30 km/h, 35 kW, Vierzylindermotor mit Kettenantrieb; Kipper-Variante im Katalog. Ob und wo die Société diese Modelle einsetzt, ist noch nicht gemessen; Fahrzeugmodelle erfasst der Monitor erst mit einer kommenden Mod-Revision. Erfunden: Werbetext.",
+      "refs": {
+        "staedte": [],
+        "linien": [],
+        "personen": [],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1912-01-reclame-kesselwagen",
+      "typ": "anzeige",
+      "art": "fiktion",
+      "date": "1912-01",
+      "rubrik": "Réclame",
+      "titel": "Kesselwagen 1912",
+      "anzeige": {
+        "kopf": "Kesselwagen 1912",
+        "zeilen": [
+          "Flüssiges sicher auf der Schiene",
+          "10 Einheiten Treibstoff, Öl & Co.",
+          "80 km/h · 15 Tonnen",
+          "Für die Ölfelder vor Port des Alizés"
+        ],
+        "fuss": "Neu im Katalog 1912 · Société des Routes et des Rails"
+      },
+      "grounding": "Quelle: Fahrzeugkatalog im Spiel, Bildschirmfotos des Spielers vom 12.10.2026 (Spielstand Anfang 1912). Katalogwerte Kesselwagen 1912: 1912–1980, 10 Einheiten Flüssiggut, 80 km/h, 15 t. Gemessen (Dezember 1911): Port des Alizés Ölplattform #1 Stufe 6, Produktion 225/Jahr. Ob und wo die Société diese Modelle einsetzt, ist noch nicht gemessen; Fahrzeugmodelle erfasst der Monitor erst mit einer kommenden Mod-Revision. Erfunden: Werbetext; ein Einsatz an den Ölplattformen ist nicht belegt.",
+      "refs": {
+        "staedte": [
+          174632
+        ],
+        "linien": [],
+        "personen": [],
+        "betriebe": [
+          331425
+        ]
+      }
+    },
+    {
       "id": "fuhrpark-einordnung",
       "typ": "einordnung",
       "art": "einordnung",
