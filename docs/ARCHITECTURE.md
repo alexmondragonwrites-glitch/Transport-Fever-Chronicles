@@ -21,7 +21,9 @@ Das Projekt überträgt bewährte Grundsätze des Finn-Harps-FM-Wikis auf einen 
 ├── index.html                      # Weltportal
 ├── assets/
 │   ├── app.js                      # Gesamtes Frontend, Datenzugriff, Filter und Charts
-│   └── styles.css                  # Gemeinsames Design
+│   ├── styles.css                  # Gemeinsames Design (Farbvariablen, Komponenten)
+│   ├── affiche-alizes.svg, rivage.svg  # Reiseplakat und Küstenband
+│   └── fonts/                      # Playfair Display, Source Serif 4 (OFL, lokal)
 ├── data/
 │   └── worlds.json                 # Weltregister
 ├── saves/
@@ -77,3 +79,7 @@ Einfach `python -m http.server 8000` im Projektroot starten und `http://localhos
 Syntax prüfen: `node --check assets/app.js`.
 Daten prüfen: `node scripts/validate-data.mjs`.
 CI läuft bei Pushes auf `main` und Pull Requests.
+
+## Gestaltung
+
+Leitbild „Compagnie des Antilles, um 1905“: Papiergrund, Didot-Überschriften (Playfair Display), Lesetext in Source Serif 4, Reiseplakat und Küstenband als SVG, Madras-Karo als Band unter Kopf- und über Fußleiste. Alle Farben stehen als Variablen in `assets/styles.css`; Kopf-/Fußleiste und der Dossierkopf setzen sie lokal auf Nachtfarben um. Die bisherigen Variablennamen (`--gold`, `--mint`, `--red`, `--blue`) bleiben und bezeichnen die Druckfarben auf Papier. Ältere Scripts zeichnen Diagramme mit festen Farben der früheren Nachtpalette; ein Block am Ende von `styles.css` ordnet diese Werte per Attributselektor den neuen Diagrammfarben zu. Neue Diagramme sollten die Variablen direkt nutzen (CSS-Klassen oder `style="stroke:var(--series-1)"`; in SVG-Attributen wie `stroke="…"` wirken CSS-Variablen nicht). Schriften werden lokal ausgeliefert, damit keine Anfragen an fremde Server gehen. Kontrast nach WCAG AA wurde für alle Seiten und Reiter geprüft.
