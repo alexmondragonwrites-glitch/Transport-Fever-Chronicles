@@ -18,7 +18,8 @@
     "analysis": "analysis-1911-12.json",
     "decade": "decade-1900-1910.json",
     "transportTimes": "transport-times-1911-12.json",
-    "industryObservations": "industry-observations-1911-04.json"
+    "industryObservations": "industry-observations-1911-04.json",
+    "journal": "journal/redaktion.json"
   },
   "snapshots": [
     {
@@ -135,5 +136,5 @@
   ],
   "monitor": "monitor/index.json",
   "monitor_archive": "monitor-20261011/index.json",
-  "latestReport": "weihnachten-1911.html"
+  "latestReport": "journal.html"
 }

@@ -1,0 +1,269 @@
+{
+  "schema_version": 1,
+  "save_id": "archipel-des-alizes",
+  "editorial_policy": "Artikel, Interviews, Porträts und Anzeigen sind ausdrücklich erfundene Zeitungsstücke der Redaktion. Jede Geschichte nennt unter „Bezug“, welche Werte gemessen sind und was erfunden ist. Personen der Beobachtungsgruppe tragen von der Redaktion vergebene Namen; ihre Wege, Wohnorte und Arbeitsplätze stammen aus den Messungen.",
+  "items": [
+    {
+      "id": "1911-12-sechshundert",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1911-12",
+      "lead": true,
+      "rubrik": "Titelseite",
+      "titel": "Sechshundert Fahrzeuge – und das Meer fährt vorneweg",
+      "teaser": "Zum Jahresende zählt die Société 606 Fahrzeuge auf 95 Linien. Die größte Flotte schwimmt.",
+      "body": [
+        "Am 20. November 1911 überschritt das Netz der Société des Routes et des Rails die Marke von sechshundert Fahrzeugen. Kurz vor Weihnachten sind es 606 auf 95 Linien. Noch im Juli 1910 waren es 474 Fahrzeuge auf 82 Linien.",
+        "Wer glaubt, das Archipel werde von der Schiene regiert, irrt. Die größte Gruppe sind die Frachtschiffe: 219 Stück, 66 mehr als vor anderthalb Jahren. Dahinter folgen 194 Lastwagen, 107 Busse, 27 Straßenbahnen, 15 Güterzüge, 10 Passagierschiffe und 10 Personenzüge.",
+        "„Wir sind Insulaner“, sagt ein alter Hafenarbeiter am Kai von Port des Alizés, der seinen Namen nicht in der Zeitung lesen will. „Hier fährt zuerst das Boot, dann der Wagen.“",
+        "Teuer war das Jahr trotzdem. Im September 1910 meldeten die Bücher der Gesellschaft noch 137,6 Millionen in der Kasse, im Juli 1911 nur noch 37,1 Millionen. Zum Jahresende stehen wieder 63,7 Millionen zu Buche. Was genau das Geld verschlungen hat, verraten die Messbücher nicht. Sie zeigen nur, dass die Flotte im selben Zeitraum kräftig gewachsen ist."
+      ],
+      "grounding": "Gemessen: 600 Fahrzeuge am 20.11.1911; 606 Fahrzeuge und 95 Linien im Dezember 1911; 474 Fahrzeuge und 82 Linien im Juli 1910; Fahrzeuge je Art aus den Linienpräfixen (Frachtschiffe 153 → 219); Kassenstand 137,6 Mio. (09/1910), 37,1 Mio. (07/1911), 63,7 Mio. (12/1911). Erfunden: Hafenarbeiter und Zitat. Ursachen der Kassenbewegung sind nicht gemessen.",
+      "refs": {"staedte": [174632], "linien": [], "personen": [], "betriebe": []}
+    },
+    {
+      "id": "1911-12-tresen-kleider",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1911-12",
+      "rubrik": "Am Tresen",
+      "venue": {"name": "Au Quai des Collines", "place": "Valmorin"},
+      "titel": "Valmorin: Die Kleiderwette geht ins zweite Jahr",
+      "teaser": "Lucie hat auf Weihnachten 1910 gesetzt und verloren. Am Balken stehen neue Wetten.",
+      "body": [
+        "Am Deckenbalken des „Au Quai des Collines“ ist die Kreide dicker geworden. Lucie vom Bahnhof hatte auf Weihnachten 1910 gesetzt und muss seitdem jeden Freitag eine Runde Ti-Punch ausgeben. Der Schmied, der auf „nie“ gesetzt hatte, lässt sich inzwischen von allen bedienen.",
+        "Dabei, sagt Wirt Mathurin, sei die Kleidung doch längst unterwegs. In Lamballe-Armor nähen sie, zwölf Schiffe tragen Wolle und Kleidung nach Pointe des Pêcheurs, und im Fahrplan des Güterzugs nach Valmorin steht das Wort „Kleidung“ seit Februar 1910 schwarz auf weiß. „Im Fahrplan schon“, sagt Mathurin und poliert ein Glas. „In meinem Schrank aber nicht.“",
+        "Der alte Anselme hat eine Theorie. Der Zug sei ein einzelner Zug, und ein einzelner Zug habe eben einen eigenen Kopf. Bei der letzten Durchfahrt hatte er Wolle und Konserven geladen und sonst nichts. „Konserven essen wir. Wolle stricken wir. Aber anziehen?“",
+        "Neue Wetten gibt es trotzdem. Die Lehrerin setzt auf Ostern 1912, Mathurin auf die Fastenzeit. Bis dahin bleibt Valmorin, was es im Sommer 1910 war: eine Stadt, die 68 Einheiten Kleidung verlangt und keine einzige bekommt."
+      ],
+      "grounding": "Gemessen (Dezember 1911): Kleidungsbedarf Valmorin 68, gedeckt 0; Maschinen 85, gedeckt 0. Linie „TC Kleidung,Konserven,Wolle-PoidesPêc-Val-RE-1“ führt Kleidung seit 23.02.1910 im Namen, fährt mit 1 Fahrzeug über Bourg-l’Écorce nach Valmorin, Bordladung bei der Messung: Wolle und Konserven. Schiffslinie Pointe des Pêcheurs–Lamballe-Armor mit 12 Schiffen, Bordladung Wolle und Kleidung. Erfunden: Wirtshaus, Personen, Wetten und Theorien. Warum keine Kleidung ankommt, ist nicht gemessen.",
+      "refs": {"staedte": [174607, 174614, 174602], "linien": [176305, 340428], "personen": [], "betriebe": []}
+    },
+    {
+      "id": "1911-04-reifen",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1911-04",
+      "rubrik": "Neue Entdeckungen",
+      "titel": "Gummi, Reifen, Automobile: Ein ganzer Industriezweig an einem Tag",
+      "teaser": "Am 6. April 1911 tauchen drei Betriebe zugleich im Register auf. Ganz vorn steht eine Fahrzeugfabrik.",
+      "body": [
+        "Selten war das Industrieregister so aufregend wie am 6. April 1911. An einem einzigen Tag verzeichnet es drei neue Betriebe: eine Gummiplantage bei Cournon-d’Auvergne, eine Reifenfabrik in Le Malesherbois und, man staune, eine Fahrzeugfabrik in Péronne.",
+        "In Péronne, einem Ort mit 191 Einwohnern und ohne eine einzige Linie der Gesellschaft, spricht man seitdem von nichts anderem. Der Bürgermeister soll bereits einen Platz für den ersten Ausstellungsraum abgeschritten haben. Seine Frau fragt, wer darin ausstellen soll.",
+        "Sie hat recht. Für Automobile braucht es Blech, Maschinen und Reifen, und für Reifen braucht es Gummi. Die Plantage erntet inzwischen 36 Einheiten im Jahr, verschickt aber nichts. Reifenfabrik und Fahrzeugfabrik stehen auf Stufe 1 und haben bis Weihnachten nichts produziert.",
+        "Ein ganzer Industriezweig wartet also auf eine Verbindung. Wer sie baut, darf sich wohl einen Wagen „made in Péronne“ wünschen."
+      ],
+      "grounding": "Gemessen: Neugründungen Cournon-d’Auvergne Gummiplantage, Le Malesherbois Reifenfabrik und Péronne Fahrzeugfabrik am 06.04.1911. Dezember 1911: Plantage Stufe 4, Produktion 36/Jahr, Versand 0; Reifenfabrik und Fahrzeugfabrik Stufe 1 ohne Produktion; Fahrzeugfabrik benötigt Blech, Maschinen, Reifen. Péronne 191 Einwohner, keine Linie. Erfunden: Bürgermeister, Ehefrau, Gespräche.",
+      "refs": {"staedte": [174636, 174642, 174626], "linien": [], "personen": [], "betriebe": [376683, 354778, 330846]}
+    },
+    {
+      "id": "1911-10-erz",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1911-10",
+      "rubrik": "Neue Entdeckungen",
+      "titel": "Erz unter Sarrians",
+      "teaser": "Seit Oktober wird bei Sarrians Eisenerz gefördert. Abgeholt hat es noch niemand.",
+      "body": [
+        "Ein Hirte soll den roten Stein zuerst bemerkt haben, als ein Sturzregen die Böschung oberhalb von Sarrians aufriss. So erzählt man es jedenfalls in den Schenken. Sicher ist: Am 4. Oktober 1911 verzeichnet das Industrieregister ein neues Eisenerzbergwerk bei Sarrians.",
+        "Bis Weihnachten hat es Stufe 2 erreicht und fördert 40 Einheiten im Jahr. Verschickt wurde davon nichts. Sarrians selbst, 217 Einwohner stark, hat keine einzige Linie der Gesellschaft.",
+        "In Bourg-l’Écorce horcht man auf. Dort steht bereits ein Eisenerzbergwerk, und auch dort hat man klein angefangen. Ob das Erz aus Sarrians eines Tages zu einem Stahlwerk fährt, entscheidet nicht der Hirte, sondern die Société."
+      ],
+      "grounding": "Gemessen: Neugründung Sarrians Eisenerzbergwerk am 04.10.1911; Dezember 1911 Stufe 2, Produktion 40/Jahr, Versand 0; Sarrians 217 Einwohner, keine Linie; Bourg-l’Écorce Eisenerzbergwerk mit Ausbauschritten 1908. Erfunden: Hirte, Sturzregen und Gerüchte.",
+      "refs": {"staedte": [174634, 174605], "linien": [], "personen": [], "betriebe": [303578]}
+    },
+    {
+      "id": "1911-06-roche-noire",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1911-06",
+      "rubrik": "Inseln",
+      "titel": "Roche-Noire bekommt Busse",
+      "teaser": "Auf der Kohleinsel fahren seit Juni die ersten Stadtbusse. Im August kommt ein Bauernhof dazu.",
+      "body": [
+        "Lange war Roche-Noire die Insel, auf der man ankommt, Kohle lädt und wieder abfährt. Im Juni 1911 ändert sich das. Am 1. Juni nimmt eine Stadtbuslinie den Betrieb auf, drei Tage später eine zweite. Am 8. Juni folgt ein Passagierschiff nach Valmorin.",
+        "Im August entsteht auf der Insel ein Bauernhof, und sofort richtet die Gesellschaft zwei kleine Gemüselinien ein, eine zu Lande, eine zu Wasser. Zu Weihnachten sind 4 von 104 verlangten Einheiten Gemüse gedeckt. Zucker kommt weiterhin keiner an.",
+        "Nicht alles ist schon Gewohnheit. Bei der letzten Messung warten an der Haltestelle der ersten Buslinie 55 Menschen, während die sechs Busse der zweiten Linie leer ihre Runden drehen. Das Passagierschiff nach Valmorin ist zum selben Zeitpunkt ebenfalls leer. „Man muss den Leuten Zeit lassen“, sagt die Frau vom Kohlenkontor. „Wir sind vierzig Jahre zu Fuß gegangen.“"
+      ],
+      "grounding": "Gemessen: neue Linien Bus Passagiere-Roc-LO-1 (01.06.1911), Bus Passagiere-Roc-LO-2 (04.06.1911), WP Passagiere-Roc-Val-IC-1 (08.06.1911); Neugründung Roche-Noire Bauernhof (08.08.1911); Gemüselinien 15./17.08.1911. Dezember 1911: Gemüse 4 von 104 gedeckt, Sugar 0 von 104; Momentaufnahme: LO-1 55 Wartende, LO-2 0 von 36 Plätzen belegt, Schiff nach Valmorin 0 von 100 belegt. Roche-Noire 462 Einwohner. Erfunden: die Frau vom Kohlenkontor und ihr Zitat.",
+      "refs": {"staedte": [174601, 174607], "linien": [179398, 335221, 191072, 380653, 358605], "personen": [], "betriebe": [362444]}
+    },
+    {
+      "id": "1911-12-interview-marceline",
+      "typ": "interview",
+      "art": "fiktion",
+      "date": "1911-12",
+      "rubrik": "Gespräch",
+      "titel": "„Seit 1907 fahre ich fast nur noch mit der Bahn“",
+      "teaser": "Marceline Clément aus Pointe des Pêcheurs über die Straßenbahn, den Zug und ein volles Abteil.",
+      "partner": {"name": "Marceline Clément", "rolle": "Bewohnerin von Pointe des Pêcheurs", "person": 84185},
+      "fragen": [
+        {"frage": "Madame Clément, wie sind Sie früher zur Arbeit gekommen?", "antwort": "Zu Fuß, wie alle. Zwischen den Netzen hindurch, am Hafen entlang. Im Sommer 1906 bin ich jeden Weg gelaufen."},
+        {"frage": "Und dann?", "antwort": "Dann waren eines Tages die kleinen Busse weg, und die Straßenbahn war da. Im April 1907 bin ich zum ersten Mal eingestiegen, und ehrlich gesagt bin ich seitdem kaum noch ausgestiegen."},
+        {"frage": "Sie fahren heute sogar mit dem Zug.", "antwort": "Mit dem großen Zug nach Anse Dorée. Er ist oft voll, aber er fährt alle paar Minuten, und man sitzt neben Leuten aus Valmorin und Bourg-l’Écorce. Früher kannte ich niemanden aus Valmorin."},
+        {"frage": "Was wünschen Sie sich für 1912?", "antwort": "Dass die Leute auf dem Bahnsteig nicht so lange warten müssen. Und dass meine Schwester in Romagnat auch einmal eine Haltestelle bekommt."}
+      ],
+      "grounding": "Gemessen (Person 84185 der Beobachtungsgruppe): Wohnort Pointe des Pêcheurs; 1906 alle beobachteten Wege zu Fuß; erste ÖV-Fahrt am 18.04.1907; 1908–1911 fast ausschließlich ÖV; am 23.12.1911 im Fahrzeug der Linie TP Passagiere-PordesAli-AnsDor-RE-1. Vier Buslinien in Pointe des Pêcheurs fehlen ab 13.03.1907, zwei Straßenbahnlinien erscheinen zugleich (Aufzeichnungslücke seit 30.09.1906). RE-1 im Dezember 1911: 10 Züge, 656 von 1140 Plätzen belegt, 185 Wartende, Takt 251 s. Erfunden: Name, Schwester, alle Antworten.",
+      "refs": {"staedte": [174602, 174598], "linien": [322356], "personen": [84185], "betriebe": []}
+    },
+    {
+      "id": "1911-12-interview-romagnat",
+      "typ": "interview",
+      "art": "fiktion",
+      "date": "1911-12",
+      "rubrik": "Gespräch",
+      "titel": "„Wir haben keinen Fahrplan, aber wir haben Zeit“",
+      "teaser": "In Romagnat fährt keine Linie. Adolphe Saint-Cyr findet das nicht so schlimm, wie man denkt.",
+      "partner": {"name": "Adolphe Saint-Cyr", "rolle": "Bewohner von Romagnat", "person": 192991},
+      "fragen": [
+        {"frage": "Monsieur Saint-Cyr, wie oft fahren Sie mit der Société?", "antwort": "Nie. Wohin auch? Bei uns hält nichts. Ich gehe zur Arbeit, ich gehe zum Markt, ich gehe zu meiner Schwester. Seit sieben Jahren."},
+        {"frage": "Stört Sie das nicht?", "antwort": "Fragen Sie die anderen. Achtzehn von uns schreibt die Gesellschaft in ihre Bücher, und keiner von uns ist je mit Bus oder Bahn gefahren. Ein paar haben ein Automobil, die meisten nicht. Unzufrieden ist trotzdem keiner, das steht sogar in Ihren Messbüchern."},
+        {"frage": "Und wenn morgen eine Buslinie käme?", "antwort": "Dann würde ich einmal mitfahren, um zu sehen, wie Pointe des Pêcheurs aussieht. Und dann würde ich wieder nach Hause gehen. Zu Fuß."}
+      ],
+      "grounding": "Gemessen: 18 Personen der Beobachtungsgruppe wohnen in Romagnat; keine einzige beobachtete ÖV-Fahrt seit 1904; einige fahren Auto. Person 192991: 614 Messungen, alle zu Fuß. Alle 18 erreichen beim letzten Messwert den Höchstwert 1 des Zufriedenheitsrohwerts (Skala nicht validiert, Ursache nicht gemessen). Romagnat 257 Einwohner, keine Linie. Erfunden: Name, Schwester, alle Antworten.",
+      "refs": {"staedte": [174598], "linien": [], "personen": [192991], "betriebe": []}
+    },
+    {
+      "id": "1911-12-interview-re1",
+      "typ": "interview",
+      "art": "fiktion",
+      "date": "1911-12",
+      "rubrik": "Gespräch",
+      "titel": "Auf dem Führerstand der RE-1",
+      "teaser": "Ein Lokführer über die einträglichste Strecke der Gesellschaft, volle Bahnsteige und den Weihnachtsverkehr.",
+      "partner": {"name": "Hippolyte Rosemond", "rolle": "Lokführer auf der Linie RE-1"},
+      "fragen": [
+        {"frage": "Monsieur Rosemond, wie viele Züge fahren auf Ihrer Strecke?", "antwort": "Zehn. Von Port des Alizés über Pointe des Pêcheurs, Bourg-l’Écorce und Valmorin bis Anse Dorée und wieder zurück. Alle gut vier Minuten fährt einer."},
+        {"frage": "Und trotzdem warten die Leute.", "antwort": "Hundertfünfundachtzig standen zuletzt auf den Bahnsteigen. Dabei ist der Zug nicht einmal voll, 656 von 1140 Plätzen sind besetzt. Die Leute wollen eben alle gleichzeitig los."},
+        {"frage": "Man sagt, Ihre Linie halte die Gesellschaft über Wasser.", "antwort": "Die Buchhalter sagen, die Linie habe im letzten Jahr gut 21 Millionen eingefahren. Ich sage: Wir fahren pünktlich, den Rest machen andere."},
+        {"frage": "Was machen Sie an Weihnachten?", "antwort": "Fahren. Wer soll die Leute sonst zu ihren Familien bringen?"}
+      ],
+      "grounding": "Gemessen (Dezember 1911): Linie TP Passagiere-PordesAli-AnsDor-RE-1 mit 10 Fahrzeugen, Haltefolge Port des Alizés – Pointe des Pêcheurs – Bourg-l’Écorce – Valmorin – Anse Dorée, 656 von 1140 Plätzen belegt, 185 Wartende, Takt 251 s, rollierende Jahresbilanz der zugeordneten Fahrzeuge 21.767.246 (ohne Investitionen). Erfunden: Lokführer, Name, Antworten.",
+      "refs": {"staedte": [174632, 174602, 174605, 174607, 174645], "linien": [322356], "personen": [], "betriebe": []}
+    },
+    {
+      "id": "1911-08-portraet-isidore",
+      "typ": "portraet",
+      "art": "fiktion",
+      "date": "1911-08",
+      "rubrik": "Menschen im Archipel",
+      "titel": "Isidore Lubin hat wieder Arbeit",
+      "teaser": "Zwei Jahre lang verzeichneten die Bücher für den Mann aus Valmorin keinen Arbeitsplatz. Im August 1911 ändert sich das.",
+      "body": [
+        "Isidore Lubin taucht im März 1907 zum ersten Mal in den Messbüchern auf, als Bewohner von Valmorin. Im September desselben Jahres ist für ihn kein Arbeitsplatz mehr verzeichnet. Im November steigt er zum ersten Mal in ein Fahrzeug der Gesellschaft, und von da an ist er fast nur noch so unterwegs.",
+        "Die Jahre danach sind ein Auf und Ab. Im Januar 1909 hat er wieder Arbeit, im September 1909 nicht mehr. Im ganzen Jahr 1910 vermerken die Bücher keinen Arbeitsplatz, wohl aber in jeder Messung eine Fahrt mit dem öffentlichen Verkehr.",
+        "Am 8. August 1911 steht wieder ein Arbeitsplatz neben seinem Namen. Was er arbeitet, verraten die Bücher nicht. Die Redaktion stellt sich vor, dass er am Umschlagbahnhof von Valmorin Bretter verlädt, und dass er abends im „Au Quai des Collines“ auf die Kleidung wettet."
+      ],
+      "grounding": "Gemessen (Person 54586 der Beobachtungsgruppe): Wohnort Valmorin seit erster Messung 13.03.1907; kein Arbeitsplatz erfasst ab 11.09.1907; erste ÖV-Fahrt 24.11.1907; Arbeitsplatz 12.01.1909 bis 13.09.1909; 1910 in keiner Messung ein Arbeitsplatz; wieder Arbeitsplatz ab 08.08.1911; 1908–1911 überwiegend ÖV. Erfunden: Name, Tätigkeit am Umschlagbahnhof, Wirtshausbesuch.",
+      "refs": {"staedte": [174607], "linien": [], "personen": [54586], "betriebe": []}
+    },
+    {
+      "id": "1911-12-portraet-edmond",
+      "typ": "portraet",
+      "art": "fiktion",
+      "date": "1911-12",
+      "rubrik": "Menschen im Archipel",
+      "titel": "Der Automobilist von Vichy",
+      "teaser": "Edmond Philogène fährt seit 1905 Auto. In Vichy gibt es bis heute keine einzige Linie.",
+      "body": [
+        "Vichy ist kein großer Ort: 131 Einwohner, damals wie heute. Eine Linie der Gesellschaft hat er nie gesehen. Edmond Philogène stört das wenig. Schon im Januar 1905 verzeichnen die Bücher seinen ersten Weg mit dem Automobil, und seither fährt er, wann immer er nicht zu Fuß geht.",
+        "Man kann sich ihn vorstellen: Staubmantel, Lederhandschuhe, eine Hupe, die die Hühner auf der Dorfstraße kennen. Auf dem Weg zur Arbeit grüßt er den Sandbagger draußen auf dem Wasser, der seit Februar 1911 zu Vichy gehört.",
+        "Fragt man ihn nach der Société, winkt er ab. Sein Zufriedenheitswert steht bei der letzten Messung auf dem Höchstwert. Ob das am Automobil liegt, kann keine Messung sagen."
+      ],
+      "grounding": "Gemessen (Person 144145 der Beobachtungsgruppe): Wohnort Vichy; erster Autoweg 15.01.1905; zuletzt (23.12.1911) Auto, mit Arbeitsplatz, Zufriedenheitsrohwert 1 (Skala nicht validiert). Vichy 131 Einwohner, keine Linie; Neugründung Vichy Sandbaggerschiff 19.02.1911. Erfunden: Name, Kleidung, Hupe, Haltung zur Gesellschaft.",
+      "refs": {"staedte": [174638], "linien": [], "personen": [144145], "betriebe": []}
+    },
+    {
+      "id": "1908-01-portraet-seraphine",
+      "typ": "portraet",
+      "art": "fiktion",
+      "date": "1908-01",
+      "rubrik": "Menschen im Archipel",
+      "titel": "Die letzte Fahrt der Séraphine Alexandre",
+      "teaser": "Am 4. Januar 1908 sitzt sie im Bus durch Valmorin. Danach verzeichnen die Bücher sie nie wieder.",
+      "body": [
+        "Séraphine Alexandre gehört zu den ersten Achtzig, die der Monitor ab Dezember 1904 begleitet. Drei Jahre lang geht sie alle Wege zu Fuß. Im März 1907 nimmt sie zum ersten Mal den öffentlichen Verkehr, und danach fast nur noch ihn.",
+        "Am 4. Januar 1908 sitzt sie im Bus der Linie Valmorin LO-1. Es ist die letzte Messung, in der ihr Name vorkommt. Danach verschwindet sie aus der Beobachtungsgruppe.",
+        "Wohin sie gefahren ist, wissen wir nicht. Die Redaktion möchte glauben, dass sie mit dem Schiff nach Roche-Noire übersetzte, wo man damals Hände für die Kohle suchte. Beweisen kann das niemand."
+      ],
+      "grounding": "Gemessen (Person 132154 der Beobachtungsgruppe): seit erster Messung 30.12.1904 beobachtet; bis 1906 nur Fußwege; erste ÖV-Fahrt 13.03.1907; letzte Messung 04.01.1908 im Fahrzeug der Linie Bus Passagiere-Val-LO-1; danach nicht mehr in der Gruppe. Erfunden: Name, Verbleib und Roche-Noire-Vermutung. Warum Personen die Gruppe verlassen, ist nicht gemessen.",
+      "refs": {"staedte": [174607], "linien": [], "personen": [132154], "betriebe": []}
+    },
+    {
+      "id": "1911-12-reclame-tram",
+      "typ": "anzeige",
+      "art": "fiktion",
+      "date": "1911-12",
+      "rubrik": "Réclame",
+      "titel": "Tramways de Bourg-l’Écorce",
+      "anzeige": {
+        "kopf": "Tramways de Bourg-l’Écorce",
+        "zeilen": ["Dreizehn Wagen im Dienst!", "Alle 87 Sekunden ein Zug", "Zehn Haltestellen quer durch die Stadt", "Seit 1905 auf Schienen"],
+        "fuss": "Société des Routes et des Rails · Fahrkarten am Wagen"
+      },
+      "grounding": "Gemessen (Dezember 1911): Linie Tram Passagiere-Bou-LO-1 mit 13 Fahrzeugen, Takt 87 s, 10 Haltestellen; seit 10.06.1905 als Straßenbahn (vorher Buslinie). Erfunden: Werbetext. Antriebsart nicht erfasst.",
+      "refs": {"staedte": [174605], "linien": [321181], "personen": [], "betriebe": []}
+    },
+    {
+      "id": "1911-12-reclame-roche-noire",
+      "typ": "anzeige",
+      "art": "fiktion",
+      "date": "1911-12",
+      "rubrik": "Réclame",
+      "titel": "Passage nach Roche-Noire",
+      "anzeige": {
+        "kopf": "Passage Valmorin – Roche-Noire",
+        "zeilen": ["Platz ist genug!", "Zwei Dampfer, hundert Plätze", "Kein Gedränge, kein Warten", "Kohleinsel, Gemüsegärten, frische Seeluft"],
+        "fuss": "Abfahrt am Hafen Valmorin · Société des Routes et des Rails"
+      },
+      "grounding": "Gemessen (Dezember 1911): Linie WP Passagiere-Roc-Val-IC-1 mit 2 Fahrzeugen, 0 von 100 Plätzen belegt (Momentaufnahme), seit 08.06.1911. Erfunden: Werbetext. „Dampfer“ ist eine Annahme, das Modell ist nicht erfasst.",
+      "refs": {"staedte": [174601, 174607], "linien": [191072], "personen": [], "betriebe": []}
+    },
+    {
+      "id": "1911-12-reclame-peronne",
+      "typ": "anzeige",
+      "art": "fiktion",
+      "date": "1911-12",
+      "rubrik": "Réclame",
+      "titel": "Automobiles de Péronne",
+      "anzeige": {
+        "kopf": "Automobiles de Péronne",
+        "zeilen": ["Demnächst!", "Das erste Automobil des Archipels", "Sobald die Reifen da sind"],
+        "fuss": "Fabrik in Péronne · Anfragen bitte schriftlich"
+      },
+      "grounding": "Gemessen: Péronne Fahrzeugfabrik seit 06.04.1911, im Dezember 1911 Stufe 1 ohne Produktion; benötigt Blech, Maschinen und Reifen; Reifenfabrik Le Malesherbois ebenfalls ohne Produktion. Erfunden: Werbetext, Markenname.",
+      "refs": {"staedte": [174636], "linien": [], "personen": [], "betriebe": [376683, 354778]}
+    },
+    {
+      "id": "1911-12-reclame-re1",
+      "typ": "anzeige",
+      "art": "fiktion",
+      "date": "1911-12",
+      "rubrik": "Réclame",
+      "titel": "Chemin de fer des Alizés",
+      "anzeige": {
+        "kopf": "Chemin de fer des Alizés · RE-1",
+        "zeilen": ["Port des Alizés · Pointe des Pêcheurs · Bourg-l’Écorce · Valmorin · Anse Dorée", "Zehn Züge im Umlauf", "Über tausend Plätze"],
+        "fuss": "Frohe Festtage wünscht die Société des Routes et des Rails"
+      },
+      "grounding": "Gemessen (Dezember 1911): TP Passagiere-PordesAli-AnsDor-RE-1 mit 10 Fahrzeugen, Kapazität 1140, Haltefolge wie angegeben. Erfunden: Werbetext.",
+      "refs": {"staedte": [174632, 174602, 174605, 174607, 174645], "linien": [322356], "personen": [], "betriebe": []}
+    },
+    {
+      "id": "fuhrpark-einordnung",
+      "typ": "einordnung",
+      "art": "einordnung",
+      "date": "1911-12",
+      "rubrik": "Fuhrpark",
+      "titel": "Was die Messbücher über den Fuhrpark wissen und was nicht",
+      "teaser": "Arten, Zahlen und Premieren sind gemessen. Die Modellnamen fehlen noch.",
+      "body": [
+        "Der Monitor zählt die Fahrzeuge jeder Linie. Aus dem Kürzel am Anfang des Liniennamens ergibt sich die Art: Bus, RC für Lastwagen, Tram, TP für Personenzüge, TC für Güterzüge, WP für Passagierschiffe und WC für Frachtschiffe. Bei älteren Messungen ohne Kürzel hilft der Verkehrsträger.",
+        "Daraus lassen sich Premieren und Verläufe ablesen: die erste Straßenbahn im Januar 1905, der erste Güterzug im März 1907 und das Wachstum der Frachtschiffe bis heute.",
+        "Welche Modelle tatsächlich fahren, Baujahr und Typenbezeichnung, erfasst der Monitor bisher nicht. Sobald er es tut, kann diese Seite neue Fahrzeugmodelle bei ihrer ersten Fahrt ankündigen."
+      ],
+      "grounding": "Einordnung der Redaktion zur Datengrundlage; keine Fiktion.",
+      "refs": {"staedte": [], "linien": [], "personen": [], "betriebe": []}
+    }
+  ]
+}

@@ -11,12 +11,15 @@ Only uses the Python standard library; git and node must be on PATH.
 """
 import argparse
 import hashlib
+import importlib
 import json
 from pathlib import Path
 import subprocess
 import sys
 
 from monitor_build import MonitorBuilder
+
+journal = importlib.import_module('build-journal')
 
 ROOT = Path(__file__).resolve().parents[1]
 CACHE = ROOT/'.publish-cache/monitor.json'
@@ -103,7 +106,8 @@ def published_index(save, folder):
 
 
 def validate():
-    for command in (['node', '--check', 'assets/monitor.js'], ['node', 'scripts/validate-monitor.mjs'], ['node', 'scripts/validate-data.mjs']):
+    for command in (['node', '--check', 'assets/monitor.js'], ['node', 'scripts/validate-monitor.mjs'], ['node', 'scripts/validate-data.mjs'],
+                    ['node', 'scripts/validate-journal.mjs'], ['node', 'scripts/build-decade.mjs', '--check']):
         result = subprocess.run(command, cwd=ROOT, capture_output=True, text=True, encoding='utf-8')
         if result.returncode:
             raise SystemExit(f'Prüfung {" ".join(command)} fehlgeschlagen, nichts hochgeladen:\n{result.stdout}{result.stderr}')
@@ -118,7 +122,7 @@ def main():
     args = parser.parse_args()
     config = json.loads((ROOT/'data/monitor-sources.json').read_text(encoding='utf-8'))['saves'][args.save]
     folder = config['folder']
-    paths = [f'saves/{args.save}/data/{folder}', f'saves/{args.save}/data/manifest.json']
+    paths = [f'saves/{args.save}/data/{folder}', f'saves/{args.save}/data/manifest.json', f'saves/{args.save}/data/journal']
 
     if git('diff', '--cached', '--quiet', check=False).returncode:
         raise SystemExit('Im Website-Repository sind bereits Änderungen vorgemerkt (git add). Bitte zuerst committen oder zurücknehmen.')
@@ -143,6 +147,10 @@ def main():
           f"({stats['parsed_sessions']} Sitzungsdatei(en) neu gelesen)")
     if stats['unreadable']:
         print(f"Hinweis: {stats['unreadable']} unlesbare Zeile(n) übersprungen.")
+    print('Aktualisiere Le Journal des Alizés …')
+    journal_changed, _, journal_sizes = journal.build(Path(args.monitor).resolve(), args.save)
+    print(f"Journal: {journal_sizes['meldungen.json']} Meldungen, {journal_sizes['menschen.json']} Personen"
+          + (f" · geändert: {', '.join(journal_changed)}" if journal_changed else ' · unverändert'))
 
     git('add', '-A', '--', *paths)
     has_changes = git('diff', '--cached', '--quiet', check=False).returncode != 0

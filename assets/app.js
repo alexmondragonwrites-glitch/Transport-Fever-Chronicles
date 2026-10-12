@@ -138,7 +138,7 @@ async function start(){
     renderSave(archivedMeta,cities,lines,industries,demands,events,gazette);
     if(manifest.monitor){
       const banner=document.createElement("div");banner.className="note archive-banner";
-      banner.innerHTML='<strong>Historisches Archiv · März 1910.</strong> Diese Werte bleiben als früherer Stand erhalten. <a href="'+(manifest.latestReport||"index.html")+'">Zum aktuellen Wirtschaftsbericht April 1911 →</a> · <a href="'+location.pathname+'?view=monitor#cities">Zum Langzeitmonitor →</a>';
+      banner.innerHTML='<strong>Historisches Archiv · März 1910.</strong> Diese Werte bleiben als früherer Stand erhalten. <a href="'+(manifest.latestReport||"index.html")+'">Zur aktuellen Ausgabe →</a> · <a href="'+location.pathname+'?view=monitor#cities">Zum Langzeitmonitor →</a>';
       document.querySelector(".save-hero .shell").prepend(banner);
     }
     const optional=["worldCities","worldDemand","atlas","historicProduction","historicSupply","analysis"];

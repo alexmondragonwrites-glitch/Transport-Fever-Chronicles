@@ -6,6 +6,10 @@
 
 Ein tropisches französisch geprägtes Archipel. Die *Société des Routes et des Rails* verbindet fünf Hauptinselstädte mit den Außeninseln Roche-Noire und Montfougère.
 
+### Neu: Le Journal des Alizés
+
+Die Welt hat jetzt ihre eigene Zeitung: **[Le Journal des Alizés](saves/archipel-des-alizes/journal.html)** erscheint in monatlichen Ausgaben von Dezember 1904 bis heute. Meldungen aus den Messbüchern (neue Linien, Premieren, Neugründungen, Umbenennungen, Meilensteine) entstehen bei jedem Upload automatisch. Dazu kommen 88 beobachtete Menschen mit ihren Wegen, Ortsakten aller 50 Städte, der Fuhrpark und erfundene Artikel, Gespräche, Porträts und Réclame, jeweils mit Bezug zu den Daten. [Wie die Zeitung funktioniert und wie man Geschichten ergänzt](docs/JOURNAL.md).
+
 ### Aktuell: Weihnachtsbericht vom 24. Dezember 1911
 
 **Quelle:** TF3-Mod, Messung 12. Oktober 2026 um 06:57:34 (MESZ). Der Weihnachtsbericht dokumentiert:
