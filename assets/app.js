@@ -70,7 +70,7 @@ function renderSave(world, citiesData, lineData, industryData, demandData, event
   '<div style="margin-top:29px" class="detail-head"><h3 class="subhead">Industrieregister</h3><span class="small">Stufe ist keine Produktionsmenge</span></div><div class="filters"><input id="industry-search" class="input" type="search" placeholder="Betrieb suchen …" aria-label="Betriebe suchen"><select class="select" id="industry-status" aria-label="Industriestatus"><option value="">Alle Zustände</option><option value="aktiv">Aktiv</option><option value="gestoppt">Gestoppt</option></select></div><div class="table-scroller"><table class="data-table"><thead><tr><th>Betrieb</th><th class="right">Stufe</th><th>Status</th><th>Hinweis</th></tr></thead><tbody id="industry-rows"></tbody></table></div><p class="table-note" id="industry-count"></p>'+
   '<div style="margin-top:40px" class="detail-head"><h3 class="subhead">Warenversorgung</h3><span class="small">Fehlend / Bedarf · März 1910</span></div><div class="filters"><select class="select" id="demand-city" aria-label="Stadtbedarf auswählen"><option value="">Alle sieben Orte</option>'+cities.map(c=>'<option value="'+E(c.id)+'">'+E(c.name)+'</option>').join("")+'</select></div><div class="table-scroller"><table class="data-table"><thead><tr><th>Stadt</th><th>Ware</th><th class="right">Bedarf</th><th class="right">Versorgt</th><th class="right">Fehlend</th><th>Deckung</th></tr></thead><tbody id="demand-rows"></tbody></table></div><div class="note">Die Industrieübersicht nennt unter „Produktion“ lediglich „aktiv“ oder „gestoppt“. Die tatsächlichen Produktionsmengen und Gründe für Stillstand fehlen bisher.</div></section>'+
   '<section id="view-chronicle" role="tabpanel" aria-labelledby="tab-chronicle" class="section view">'+sectionHead("Die Zeitungsarchive","Chronik der Inseln","Fakten, ungefähre Datierungen und redaktionelle Rekonstruktionen bleiben dauerhaft unterscheidbar.")+
-  '<div class="callout"><strong>Redaktionelle Regel:</strong> Ereignisse mit „Fakt“ beruhen auf Exporten oder Screenshots. „Rekonstruktion“ markiert einen aus Gesprächen erschlossenen Ablauf; ein exaktes Datum wird nicht erfunden. Fiktive Zeitungsartikel werden gesondert gekennzeichnet.</div><div id="event-list">'+events.slice().sort((a,b)=>b.date.localeCompare(a.date)).map(e=>'<article class="story"><div class="story-date">'+E(e.date)+'</div><div><span class="kicker">'+E(e.category)+'</span> <span class="tag '+(e.kind==="fakt"?"":"earth")+'">'+E(e.kind==="fakt"?"Belegt":"Rekonstruktion")+'</span><h3>'+E(e.title)+'</h3><p>'+E(e.description)+'</p><span class="small">Quelle: '+E(e.source)+'</span></div></article>').join("")+'</div><div class="section" style="padding-bottom:0"><div class="eyebrow">Aus dem fiktiven Pressehaus</div><h2>La Gazette des Alizés</h2><p class="section-lede">Original verfasste, ausdrücklich erfundene Zeitungsberichte auf Grundlage beobachteter Entwicklungen. Keine zusätzlichen Ingame-Fakten.</p><div class="grid grid2" style="margin-top:22px">' + articles.map(a=>'<article class="card"><span class="tag warning">FIKTION · '+E(a.date)+'</span><div class="kicker" style="margin-top:16px">'+E(a.rubric)+'</div><h3>'+E(a.title)+'</h3><p>'+E(a.teaser)+'</p><details><summary class="mini-link" style="cursor:pointer">Zeitungsartikel lesen</summary><p>'+E(a.body)+'</p><div class="small">Historischer Anknüpfungspunkt: '+E(a.grounding)+'</div></details></article>').join("") + '</div></div></section>'+
+  '<div class="callout" style="margin-bottom:18px"><strong>Neu: Dossier „Zehn Jahre Archipel“.</strong> Wie sich das Leben auf den Inseln zwischen 1900 und 1910 verändert hat. <a class="mini-link" href="jahrzehnt.html">Dossier lesen</a></div><div class="callout"><strong>Redaktionelle Regel:</strong> Ereignisse mit „Fakt“ beruhen auf Exporten oder Screenshots. „Rekonstruktion“ markiert einen aus Gesprächen erschlossenen Ablauf; ein exaktes Datum wird nicht erfunden. Fiktive Zeitungsartikel werden gesondert gekennzeichnet.</div><div id="event-list">'+events.slice().sort((a,b)=>b.date.localeCompare(a.date)).map(e=>'<article class="story"><div class="story-date">'+E(e.date)+'</div><div><span class="kicker">'+E(e.category)+'</span> <span class="tag '+(e.kind==="fakt"?"":"earth")+'">'+E(e.kind==="fakt"?"Belegt":"Rekonstruktion")+'</span><h3>'+E(e.title)+'</h3><p>'+E(e.description)+'</p><span class="small">Quelle: '+E(e.source)+'</span></div></article>').join("")+'</div><div class="section" style="padding-bottom:0"><div class="eyebrow">Aus dem fiktiven Pressehaus</div><h2>La Gazette des Alizés</h2><p class="section-lede">Original verfasste, ausdrücklich erfundene Zeitungsberichte auf Grundlage beobachteter Entwicklungen. Keine zusätzlichen Ingame-Fakten.</p><div class="grid grid2" style="margin-top:22px">' + articles.map(a=>'<article class="card"><span class="tag warning">FIKTION · '+E(a.date)+'</span><div class="kicker" style="margin-top:16px">'+E(a.rubric)+'</div><h3>'+E(a.title)+'</h3><p>'+E(a.teaser)+'</p><details><summary class="mini-link" style="cursor:pointer">Zeitungsartikel lesen</summary>'+E(a.body).split(/\n\s*\n/).map(p=>'<p>'+p+'</p>').join("")+'<div class="small">Historischer Anknüpfungspunkt: '+E(a.grounding)+'</div></details></article>').join("") + '</div></div></section>'+
   '</div></main>'+footer();
   const open=id=>{
     document.querySelectorAll(".view").forEach(el=>el.classList.toggle("active",el.id==="view-"+id));
@@ -119,21 +119,30 @@ async function start(){
     if(document.body.dataset.page==="portal")return renderPortal(await fetchJSON("data/worlds.json"));
     const base="saves/"+document.body.dataset.save+"/data/";
     const manifest=await fetchJSON(base+"manifest.json");
-    if(manifest.monitor && new URLSearchParams(location.search).get("view")!=="archive"){
+    const view=new URLSearchParams(location.search).get("view");
+    if(manifest.latestReport && !view){
+      location.replace(manifest.latestReport+location.hash);
+      return;
+    }
+    if(manifest.monitor && view==="monitor"){
       const index=await fetchJSON(base+manifest.monitor);
       return mountMonitor(APP,index,fetchJSON,base,()=>{location.href=location.pathname+"?view=archive#chronicle";});
     }
+    // Preserve the original 1910 archive, even when the current report advances.
+    const historic=manifest.snapshots?.find(x=>x.game_date==="1910-03-13")||{};
+    const archiveFile=k=>historic[k]||manifest.latest[k];
     const keys=["meta","cities","lines","industries","demand","events"];
-    const [meta,cities,lines,industries,demands,events]=await Promise.all(keys.map(k=>fetchJSON(base+manifest.latest[k])));
+    const [meta,cities,lines,industries,demands,events]=await Promise.all(keys.map(k=>fetchJSON(base+archiveFile(k))));
     const gazette=manifest.latest.gazette ? await fetchJSON(base+manifest.latest.gazette) : {articles:[]};
-    renderSave(meta,cities,lines,industries,demands,events,gazette);
+    const archivedMeta={...meta,latest_game_date:"1910-03-13",description:"Historischer Archivstand März 1910. Neuere Linien, Finanzen und Bevölkerungsdaten findest du im Wirtschaftsbericht April 1911."};
+    renderSave(archivedMeta,cities,lines,industries,demands,events,gazette);
     if(manifest.monitor){
       const banner=document.createElement("div");banner.className="note archive-banner";
-      banner.innerHTML='<strong>Historisches redaktionelles Archiv · März 1910.</strong> Diese Ansicht bleibt als früherer Stand erhalten. <a href="'+location.pathname+'#cities">Zum neueren Monitorstand und allen 50 Städten →</a>';
+      banner.innerHTML='<strong>Historisches Archiv · März 1910.</strong> Diese Werte bleiben als früherer Stand erhalten. <a href="'+(manifest.latestReport||"index.html")+'">Zum aktuellen Wirtschaftsbericht April 1911 →</a> · <a href="'+location.pathname+'?view=monitor#cities">Zum Langzeitmonitor →</a>';
       document.querySelector(".save-hero .shell").prepend(banner);
     }
     const optional=["worldCities","worldDemand","atlas","historicProduction","historicSupply","analysis"];
-    const extra=await Promise.all(optional.map(k=>manifest.latest[k]?fetchJSON(base+manifest.latest[k]):Promise.resolve(null)));
+    const extra=await Promise.all(optional.map(k=>archiveFile(k)?fetchJSON(base+archiveFile(k)):Promise.resolve(null)));
     mountWorldAtlas(document.querySelector("#view-atlas"),{worldCities:extra[0],worldDemand:extra[1],atlas:extra[2],production:extra[3],historicSupply:extra[4],analysis:extra[5]});
   } catch(error) {
     APP.innerHTML=header(document.body.dataset.page!=="portal")+'<main id="main" class="shell"><div class="err"><h1>Das Archiv kann nicht geladen werden.</h1><p>'+E(error.message)+'</p><p>Bitte prüfen, ob die JSON-Dateien vorhanden sind. Lokal die Website über einen HTTP-Server starten, nicht als <code>file://</code>.</p></div></main>'+footer();

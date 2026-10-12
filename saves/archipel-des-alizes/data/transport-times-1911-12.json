@@ -1,0 +1,866 @@
+{
+  "schema_version": 1,
+  "save_id": "archipel-des-alizes",
+  "game_date": "1911-12-24",
+  "observed_at": "2026-10-12T06:57:34+02:00",
+  "source": "TF3-Mod · Transportzeiten & Hinweise",
+  "measurement_note": "Zeitwerte der Simulation in Sekunden; höchstens 400 Zeitstempel je Linie und Messung. Warenalter ist keine abgeschlossene Transportzeit.",
+  "null_handling": "Unbekannt als null, nicht als 0.",
+  "lines": [
+    {
+      "name": "WC Passagiere,Gemüse-Roc-LO-1",
+      "headway_seconds": 228,
+      "waiting_passengers": 0,
+      "waiting_average_seconds": null,
+      "waiting_max_seconds": null,
+      "cargo_age_average_seconds": 120,
+      "cargo_since_pickup_average_seconds": 120
+    },
+    {
+      "name": "TC Kunststoff-LeRov-Neu-IC-1",
+      "headway_seconds": 708,
+      "waiting_passengers": 0,
+      "waiting_average_seconds": null,
+      "waiting_max_seconds": null,
+      "cargo_age_average_seconds": null,
+      "cargo_since_pickup_average_seconds": null
+    },
+    {
+      "name": "WC Chemikalien-Lam-PordesAli-IC-1",
+      "headway_seconds": 66,
+      "waiting_passengers": 0,
+      "waiting_average_seconds": null,
+      "waiting_max_seconds": null,
+      "cargo_age_average_seconds": 4722,
+      "cargo_since_pickup_average_seconds": 1068
+    },
+    {
+      "name": "Bus Passagiere-Lam-LO-1",
+      "headway_seconds": 390,
+      "waiting_passengers": 9,
+      "waiting_average_seconds": 240,
+      "waiting_max_seconds": 360,
+      "cargo_age_average_seconds": null,
+      "cargo_since_pickup_average_seconds": null
+    },
+    {
+      "name": "Bus Passagiere-Val-LO-3",
+      "headway_seconds": 84,
+      "waiting_passengers": 0,
+      "waiting_average_seconds": null,
+      "waiting_max_seconds": null,
+      "cargo_age_average_seconds": null,
+      "cargo_since_pickup_average_seconds": null
+    },
+    {
+      "name": "TC Konserven,Fisch,Fleisch-PoidesPêc-Val-RE-1",
+      "headway_seconds": 1032,
+      "waiting_passengers": 0,
+      "waiting_average_seconds": null,
+      "waiting_max_seconds": null,
+      "cargo_age_average_seconds": 8892,
+      "cargo_since_pickup_average_seconds": 7080
+    },
+    {
+      "name": "Bus Passagiere-Val-LO-2",
+      "headway_seconds": 306,
+      "waiting_passengers": 2,
+      "waiting_average_seconds": 40.5,
+      "waiting_max_seconds": 66,
+      "cargo_age_average_seconds": null,
+      "cargo_since_pickup_average_seconds": null
+    },
+    {
+      "name": "WC Passagiere,Chemikalien,Farbstoffe,+1-Neu-LO-1",
+      "headway_seconds": 132,
+      "waiting_passengers": 0,
+      "waiting_average_seconds": null,
+      "waiting_max_seconds": null,
+      "cargo_age_average_seconds": 20694,
+      "cargo_since_pickup_average_seconds": 3072
+    },
+    {
+      "name": "TC Eisenerz,Kohle-AnsDor-PordesAli-IC-1",
+      "headway_seconds": 630,
+      "waiting_passengers": 0,
+      "waiting_average_seconds": null,
+      "waiting_max_seconds": null,
+      "cargo_age_average_seconds": 8160,
+      "cargo_since_pickup_average_seconds": 1926
+    },
+    {
+      "name": "TC Chemikalien,Farbstoffe-Lam-Ani-IC-1",
+      "headway_seconds": 390,
+      "waiting_passengers": 0,
+      "waiting_average_seconds": null,
+      "waiting_max_seconds": null,
+      "cargo_age_average_seconds": 7548,
+      "cargo_since_pickup_average_seconds": 3444
+    },
+    {
+      "name": "Bus Passagiere-PordesAli-LO-7",
+      "headway_seconds": 66,
+      "waiting_passengers": 2,
+      "waiting_average_seconds": 27.8,
+      "waiting_max_seconds": 40,
+      "cargo_age_average_seconds": null,
+      "cargo_since_pickup_average_seconds": null
+    },
+    {
+      "name": "RC Gemüse-Roc-LO-1",
+      "headway_seconds": 132,
+      "waiting_passengers": 0,
+      "waiting_average_seconds": null,
+      "waiting_max_seconds": null,
+      "cargo_age_average_seconds": 1362,
+      "cargo_since_pickup_average_seconds": 690
+    },
+    {
+      "name": "RC Bretter,Fisch,Holz,+1-Val-LO-1",
+      "headway_seconds": 52,
+      "waiting_passengers": 0,
+      "waiting_average_seconds": null,
+      "waiting_max_seconds": null,
+      "cargo_age_average_seconds": 7308,
+      "cargo_since_pickup_average_seconds": 4980
+    },
+    {
+      "name": "Bus Passagiere-Bou-LO-6",
+      "headway_seconds": 120,
+      "waiting_passengers": 48,
+      "waiting_average_seconds": 462,
+      "waiting_max_seconds": 990,
+      "cargo_age_average_seconds": null,
+      "cargo_since_pickup_average_seconds": null
+    },
+    {
+      "name": "WC Passagiere,Werkzeuge,Bretter-Ram-Val-IC-1",
+      "headway_seconds": 1212,
+      "waiting_passengers": 0,
+      "waiting_average_seconds": null,
+      "waiting_max_seconds": null,
+      "cargo_age_average_seconds": 4578,
+      "cargo_since_pickup_average_seconds": 1938
+    },
+    {
+      "name": "WC Passagiere,Holz,Bretter-Mon-Val-IC-1",
+      "headway_seconds": 858,
+      "waiting_passengers": 0,
+      "waiting_average_seconds": null,
+      "waiting_max_seconds": null,
+      "cargo_age_average_seconds": 7278,
+      "cargo_since_pickup_average_seconds": 5346
+    },
+    {
+      "name": "RC Bretter-Roc-LO-1",
+      "headway_seconds": 156,
+      "waiting_passengers": 0,
+      "waiting_average_seconds": null,
+      "waiting_max_seconds": null,
+      "cargo_age_average_seconds": 14340,
+      "cargo_since_pickup_average_seconds": 11778
+    },
+    {
+      "name": "TC Getreide,Kohle-AnsDor-Val-IC-1",
+      "headway_seconds": 480,
+      "waiting_passengers": 0,
+      "waiting_average_seconds": null,
+      "waiting_max_seconds": null,
+      "cargo_age_average_seconds": 4536,
+      "cargo_since_pickup_average_seconds": 2286
+    },
+    {
+      "name": "WC Passagiere,Bretter,Kohle-Val-Roc-IC-1",
+      "headway_seconds": 492,
+      "waiting_passengers": 0,
+      "waiting_average_seconds": null,
+      "waiting_max_seconds": null,
+      "cargo_age_average_seconds": 6258,
+      "cargo_since_pickup_average_seconds": 2160
+    },
+    {
+      "name": "Bus Passagiere-Bou-LO-3",
+      "headway_seconds": 444,
+      "waiting_passengers": 3,
+      "waiting_average_seconds": 126,
+      "waiting_max_seconds": 162,
+      "cargo_age_average_seconds": null,
+      "cargo_since_pickup_average_seconds": null
+    },
+    {
+      "name": "WC Passagiere,Werkzeuge,Fisch-Val-Mon-IC-1",
+      "headway_seconds": 276,
+      "waiting_passengers": 0,
+      "waiting_average_seconds": null,
+      "waiting_max_seconds": null,
+      "cargo_age_average_seconds": 2142,
+      "cargo_since_pickup_average_seconds": 246
+    },
+    {
+      "name": "RC Passagiere,Kohle-Roc-LO-1",
+      "headway_seconds": 210,
+      "waiting_passengers": 0,
+      "waiting_average_seconds": null,
+      "waiting_max_seconds": null,
+      "cargo_age_average_seconds": 8508,
+      "cargo_since_pickup_average_seconds": 198
+    },
+    {
+      "name": "RC Passagiere,Eisenerz-AnsDor-Bou-IC-1",
+      "headway_seconds": 138,
+      "waiting_passengers": 0,
+      "waiting_average_seconds": null,
+      "waiting_max_seconds": null,
+      "cargo_age_average_seconds": 5598,
+      "cargo_since_pickup_average_seconds": 180
+    },
+    {
+      "name": "TC Holz,Bretter-Val-Bou-IC-1",
+      "headway_seconds": 510,
+      "waiting_passengers": 0,
+      "waiting_average_seconds": null,
+      "waiting_max_seconds": null,
+      "cargo_age_average_seconds": 4446,
+      "cargo_since_pickup_average_seconds": 2280
+    },
+    {
+      "name": "WC Passagiere,Wolle,Kleidung-PoidesPêc-Lam-IC-1",
+      "headway_seconds": 216,
+      "waiting_passengers": 0,
+      "waiting_average_seconds": null,
+      "waiting_max_seconds": null,
+      "cargo_age_average_seconds": 3900,
+      "cargo_since_pickup_average_seconds": 2940
+    },
+    {
+      "name": "Tram Passagiere-PordesAli-LO-1",
+      "headway_seconds": 108,
+      "waiting_passengers": 76,
+      "waiting_average_seconds": 33.2,
+      "waiting_max_seconds": 78,
+      "cargo_age_average_seconds": null,
+      "cargo_since_pickup_average_seconds": null
+    },
+    {
+      "name": "RC Passagiere,Bretter-Bou-LO-3",
+      "headway_seconds": 336,
+      "waiting_passengers": 0,
+      "waiting_average_seconds": null,
+      "waiting_max_seconds": null,
+      "cargo_age_average_seconds": 2718,
+      "cargo_since_pickup_average_seconds": 222
+    },
+    {
+      "name": "Bus Passagiere-AnsDor-LO-4",
+      "headway_seconds": 84,
+      "waiting_passengers": 110,
+      "waiting_average_seconds": 234,
+      "waiting_max_seconds": 606,
+      "cargo_age_average_seconds": null,
+      "cargo_since_pickup_average_seconds": null
+    },
+    {
+      "name": "RC Konserven-PoidesPêc-Bou-IC-1",
+      "headway_seconds": 312,
+      "waiting_passengers": 0,
+      "waiting_average_seconds": null,
+      "waiting_max_seconds": null,
+      "cargo_age_average_seconds": 2394,
+      "cargo_since_pickup_average_seconds": 2142
+    },
+    {
+      "name": "Tram Passagiere-PoidesPêc-LO-1",
+      "headway_seconds": 132,
+      "waiting_passengers": 68,
+      "waiting_average_seconds": 162,
+      "waiting_max_seconds": 216,
+      "cargo_age_average_seconds": null,
+      "cargo_since_pickup_average_seconds": null
+    },
+    {
+      "name": "Bus Passagiere-Roc-LO-2",
+      "headway_seconds": 120,
+      "waiting_passengers": 0,
+      "waiting_average_seconds": null,
+      "waiting_max_seconds": null,
+      "cargo_age_average_seconds": null,
+      "cargo_since_pickup_average_seconds": null
+    },
+    {
+      "name": "Bus Passagiere-Bou-LO-2",
+      "headway_seconds": 564,
+      "waiting_passengers": 0,
+      "waiting_average_seconds": null,
+      "waiting_max_seconds": null,
+      "cargo_age_average_seconds": null,
+      "cargo_since_pickup_average_seconds": null
+    },
+    {
+      "name": "RC Passagiere,Bretter-Bou-LO-2",
+      "headway_seconds": 204,
+      "waiting_passengers": 0,
+      "waiting_average_seconds": null,
+      "waiting_max_seconds": null,
+      "cargo_age_average_seconds": 2814,
+      "cargo_since_pickup_average_seconds": 240
+    },
+    {
+      "name": "RC Passagiere,Bretter-Bou-LO-1",
+      "headway_seconds": 516,
+      "waiting_passengers": 0,
+      "waiting_average_seconds": null,
+      "waiting_max_seconds": null,
+      "cargo_age_average_seconds": 2778,
+      "cargo_since_pickup_average_seconds": 90
+    },
+    {
+      "name": "RC Passagiere,Holz-Bou-LO-1",
+      "headway_seconds": 90,
+      "waiting_passengers": 0,
+      "waiting_average_seconds": null,
+      "waiting_max_seconds": null,
+      "cargo_age_average_seconds": 2562,
+      "cargo_since_pickup_average_seconds": 126
+    },
+    {
+      "name": "Bus Passagiere-PordesAli-LO-4",
+      "headway_seconds": 33,
+      "waiting_passengers": 30,
+      "waiting_average_seconds": 27.3,
+      "waiting_max_seconds": 58.6,
+      "cargo_age_average_seconds": null,
+      "cargo_since_pickup_average_seconds": null
+    },
+    {
+      "name": "RC Fleisch,Bretter-Val-LO-1",
+      "headway_seconds": 174,
+      "waiting_passengers": 0,
+      "waiting_average_seconds": null,
+      "waiting_max_seconds": null,
+      "cargo_age_average_seconds": 1878,
+      "cargo_since_pickup_average_seconds": 984
+    },
+    {
+      "name": "Tram Passagiere-PoidesPêc-LO-2",
+      "headway_seconds": 102,
+      "waiting_passengers": 13,
+      "waiting_average_seconds": 34.7,
+      "waiting_max_seconds": 66,
+      "cargo_age_average_seconds": null,
+      "cargo_since_pickup_average_seconds": null
+    },
+    {
+      "name": "WC Passagiere,Fisch-PoidesPêc-LO-1",
+      "headway_seconds": 300,
+      "waiting_passengers": 0,
+      "waiting_average_seconds": null,
+      "waiting_max_seconds": null,
+      "cargo_age_average_seconds": null,
+      "cargo_since_pickup_average_seconds": null
+    },
+    {
+      "name": "TC Chemikalien,Farbstoffe-LeRov-Neu-IC-1",
+      "headway_seconds": 726,
+      "waiting_passengers": 0,
+      "waiting_average_seconds": null,
+      "waiting_max_seconds": null,
+      "cargo_age_average_seconds": 1608,
+      "cargo_since_pickup_average_seconds": 1542
+    },
+    {
+      "name": "RC Dünger,Passagiere,Sugar Cane-Mon-LO-1",
+      "headway_seconds": 96,
+      "waiting_passengers": 0,
+      "waiting_average_seconds": null,
+      "waiting_max_seconds": null,
+      "cargo_age_average_seconds": 4488,
+      "cargo_since_pickup_average_seconds": 168
+    },
+    {
+      "name": "RC Fisch,Treibstoff-PoidesPêc-LO-1",
+      "headway_seconds": 246,
+      "waiting_passengers": 0,
+      "waiting_average_seconds": null,
+      "waiting_max_seconds": null,
+      "cargo_age_average_seconds": 3444,
+      "cargo_since_pickup_average_seconds": 3438
+    },
+    {
+      "name": "TP Passagiere-PordesAli-AnsDor-RE-1",
+      "headway_seconds": 252,
+      "waiting_passengers": 185,
+      "waiting_average_seconds": 84,
+      "waiting_max_seconds": 204,
+      "cargo_age_average_seconds": null,
+      "cargo_since_pickup_average_seconds": null
+    },
+    {
+      "name": "WP Passagiere-PordesAli-LO-1",
+      "headway_seconds": 768,
+      "waiting_passengers": 11,
+      "waiting_average_seconds": 180,
+      "waiting_max_seconds": 324,
+      "cargo_age_average_seconds": null,
+      "cargo_since_pickup_average_seconds": null
+    },
+    {
+      "name": "Tram Passagiere-Bou-LO-1",
+      "headway_seconds": 84,
+      "waiting_passengers": 42,
+      "waiting_average_seconds": 52.1,
+      "waiting_max_seconds": 84,
+      "cargo_age_average_seconds": null,
+      "cargo_since_pickup_average_seconds": null
+    },
+    {
+      "name": "WC Passagiere,Rohöl,Treibstoff-PoidesPêc-PordesAli-IC-1",
+      "headway_seconds": 408,
+      "waiting_passengers": 0,
+      "waiting_average_seconds": null,
+      "waiting_max_seconds": null,
+      "cargo_age_average_seconds": 3072,
+      "cargo_since_pickup_average_seconds": 264
+    },
+    {
+      "name": "Bus Passagiere-PordesAli-LO-5",
+      "headway_seconds": null,
+      "waiting_passengers": 0,
+      "waiting_average_seconds": null,
+      "waiting_max_seconds": null,
+      "cargo_age_average_seconds": null,
+      "cargo_since_pickup_average_seconds": null
+    },
+    {
+      "name": "WC Passagiere,Fisch-PoidesPêc-LO-2",
+      "headway_seconds": 306,
+      "waiting_passengers": 0,
+      "waiting_average_seconds": null,
+      "waiting_max_seconds": null,
+      "cargo_age_average_seconds": null,
+      "cargo_since_pickup_average_seconds": null
+    },
+    {
+      "name": "RC Sugar,Gemüse-PordesAli-LO-1",
+      "headway_seconds": 306,
+      "waiting_passengers": 0,
+      "waiting_average_seconds": null,
+      "waiting_max_seconds": null,
+      "cargo_age_average_seconds": 10476,
+      "cargo_since_pickup_average_seconds": 10404
+    },
+    {
+      "name": "WP Passagiere-PoidesPêc-LO-1",
+      "headway_seconds": 492,
+      "waiting_passengers": 3,
+      "waiting_average_seconds": 396,
+      "waiting_max_seconds": 456,
+      "cargo_age_average_seconds": null,
+      "cargo_since_pickup_average_seconds": null
+    },
+    {
+      "name": "WP Passagiere-AnsDor-PordesAli-IC-1",
+      "headway_seconds": 252,
+      "waiting_passengers": 5,
+      "waiting_average_seconds": 90,
+      "waiting_max_seconds": 114,
+      "cargo_age_average_seconds": null,
+      "cargo_since_pickup_average_seconds": null
+    },
+    {
+      "name": "WC Passagiere,Sugar Cane,Sugar-Cor-LO-1",
+      "headway_seconds": 150,
+      "waiting_passengers": 0,
+      "waiting_average_seconds": null,
+      "waiting_max_seconds": null,
+      "cargo_age_average_seconds": 3708,
+      "cargo_since_pickup_average_seconds": 438
+    },
+    {
+      "name": "WC Sugar,Dünger-Cor-PordesAli-IC-1",
+      "headway_seconds": 216,
+      "waiting_passengers": 0,
+      "waiting_average_seconds": null,
+      "waiting_max_seconds": null,
+      "cargo_age_average_seconds": 6054,
+      "cargo_since_pickup_average_seconds": 5988
+    },
+    {
+      "name": "Bus Passagiere-PoidesPêc-LO-2",
+      "headway_seconds": 114,
+      "waiting_passengers": 2,
+      "waiting_average_seconds": 22.1,
+      "waiting_max_seconds": 31,
+      "cargo_age_average_seconds": null,
+      "cargo_since_pickup_average_seconds": null
+    },
+    {
+      "name": "RC Fisch,Konserven-Bou-LO-1",
+      "headway_seconds": 90,
+      "waiting_passengers": 0,
+      "waiting_average_seconds": null,
+      "waiting_max_seconds": null,
+      "cargo_age_average_seconds": 492,
+      "cargo_since_pickup_average_seconds": 432
+    },
+    {
+      "name": "TC Blech-PordesAli-PoidesPêc-IC-1",
+      "headway_seconds": 828,
+      "waiting_passengers": 0,
+      "waiting_average_seconds": null,
+      "waiting_max_seconds": null,
+      "cargo_age_average_seconds": 750,
+      "cargo_since_pickup_average_seconds": 300
+    },
+    {
+      "name": "RC Passagiere,Treibstoff-PordesAli-LO-1",
+      "headway_seconds": 414,
+      "waiting_passengers": 2,
+      "waiting_average_seconds": 90,
+      "waiting_max_seconds": 174,
+      "cargo_age_average_seconds": null,
+      "cargo_since_pickup_average_seconds": null
+    },
+    {
+      "name": "Bus Passagiere-Bou-LO-1",
+      "headway_seconds": 58,
+      "waiting_passengers": 12,
+      "waiting_average_seconds": 17,
+      "waiting_max_seconds": 36.4,
+      "cargo_age_average_seconds": null,
+      "cargo_since_pickup_average_seconds": null
+    },
+    {
+      "name": "WC Passagiere,Fisch-Bou-LO-1",
+      "headway_seconds": 126,
+      "waiting_passengers": 0,
+      "waiting_average_seconds": null,
+      "waiting_max_seconds": null,
+      "cargo_age_average_seconds": 37.6,
+      "cargo_since_pickup_average_seconds": 6.6
+    },
+    {
+      "name": "RC Fisch,Konserven-PoidesPêc-LO-1",
+      "headway_seconds": 150,
+      "waiting_passengers": 0,
+      "waiting_average_seconds": null,
+      "waiting_max_seconds": null,
+      "cargo_age_average_seconds": 5628,
+      "cargo_since_pickup_average_seconds": 2148
+    },
+    {
+      "name": "RC Passagiere,Holz-Mon-Roc-IC-1",
+      "headway_seconds": 102,
+      "waiting_passengers": 0,
+      "waiting_average_seconds": null,
+      "waiting_max_seconds": null,
+      "cargo_age_average_seconds": 384,
+      "cargo_since_pickup_average_seconds": 306
+    },
+    {
+      "name": "Bus Passagiere-AnsDor-LO-2",
+      "headway_seconds": 57,
+      "waiting_passengers": 2,
+      "waiting_average_seconds": 13.6,
+      "waiting_max_seconds": 15,
+      "cargo_age_average_seconds": null,
+      "cargo_since_pickup_average_seconds": null
+    },
+    {
+      "name": "Bus Passagiere-PordesAli-LO-2",
+      "headway_seconds": 66,
+      "waiting_passengers": 5,
+      "waiting_average_seconds": 27.4,
+      "waiting_max_seconds": 41,
+      "cargo_age_average_seconds": null,
+      "cargo_since_pickup_average_seconds": null
+    },
+    {
+      "name": "RC Bretter-Val-LO-1",
+      "headway_seconds": 300,
+      "waiting_passengers": 0,
+      "waiting_average_seconds": null,
+      "waiting_max_seconds": null,
+      "cargo_age_average_seconds": 3852,
+      "cargo_since_pickup_average_seconds": 1146
+    },
+    {
+      "name": "RC Passagiere,Getreide-AnsDor-LO-1",
+      "headway_seconds": 28,
+      "waiting_passengers": 0,
+      "waiting_average_seconds": null,
+      "waiting_max_seconds": null,
+      "cargo_age_average_seconds": 954,
+      "cargo_since_pickup_average_seconds": 120
+    },
+    {
+      "name": "RC Sugar,Gemüse-PordesAli-LO-2",
+      "headway_seconds": 72,
+      "waiting_passengers": 0,
+      "waiting_average_seconds": null,
+      "waiting_max_seconds": null,
+      "cargo_age_average_seconds": 3222,
+      "cargo_since_pickup_average_seconds": 2454
+    },
+    {
+      "name": "WC Dünger,Gemüse-PordesAli-AnsDor-IC-1",
+      "headway_seconds": 144,
+      "waiting_passengers": 0,
+      "waiting_average_seconds": null,
+      "waiting_max_seconds": null,
+      "cargo_age_average_seconds": 1404,
+      "cargo_since_pickup_average_seconds": 798
+    },
+    {
+      "name": "WC Passagiere,Gemüse-AnsDor-LO-1",
+      "headway_seconds": 108,
+      "waiting_passengers": 0,
+      "waiting_average_seconds": null,
+      "waiting_max_seconds": null,
+      "cargo_age_average_seconds": 1476,
+      "cargo_since_pickup_average_seconds": 636
+    },
+    {
+      "name": "Bus Passagiere-PordesAli-LO-1",
+      "headway_seconds": 35,
+      "waiting_passengers": 1,
+      "waiting_average_seconds": 7.8,
+      "waiting_max_seconds": 7.8,
+      "cargo_age_average_seconds": null,
+      "cargo_since_pickup_average_seconds": null
+    },
+    {
+      "name": "Bus Passagiere-AnsDor-LO-1",
+      "headway_seconds": 570,
+      "waiting_passengers": 3,
+      "waiting_average_seconds": 60,
+      "waiting_max_seconds": 114,
+      "cargo_age_average_seconds": null,
+      "cargo_since_pickup_average_seconds": null
+    },
+    {
+      "name": "RC Treibstoff-AnsDor-LO-1",
+      "headway_seconds": 126,
+      "waiting_passengers": 0,
+      "waiting_average_seconds": null,
+      "waiting_max_seconds": null,
+      "cargo_age_average_seconds": 1350,
+      "cargo_since_pickup_average_seconds": 1344
+    },
+    {
+      "name": "RC Bretter-Mon-LO-1",
+      "headway_seconds": 312,
+      "waiting_passengers": 0,
+      "waiting_average_seconds": null,
+      "waiting_max_seconds": null,
+      "cargo_age_average_seconds": 11982,
+      "cargo_since_pickup_average_seconds": 9192
+    },
+    {
+      "name": "WC Farbstoffe,Chemikalien-LeRov-Ani-IC-1",
+      "headway_seconds": 66,
+      "waiting_passengers": 0,
+      "waiting_average_seconds": null,
+      "waiting_max_seconds": null,
+      "cargo_age_average_seconds": 30282,
+      "cargo_since_pickup_average_seconds": 5700
+    },
+    {
+      "name": "RC Gemüse,Treibstoff,Kleidung-AnsDor-LO-1",
+      "headway_seconds": 40,
+      "waiting_passengers": 0,
+      "waiting_average_seconds": null,
+      "waiting_max_seconds": null,
+      "cargo_age_average_seconds": 1866,
+      "cargo_since_pickup_average_seconds": 1116
+    },
+    {
+      "name": "RC Treibstoff-PordesAli-LO-1",
+      "headway_seconds": 54,
+      "waiting_passengers": 0,
+      "waiting_average_seconds": null,
+      "waiting_max_seconds": null,
+      "cargo_age_average_seconds": 1050,
+      "cargo_since_pickup_average_seconds": 1020
+    },
+    {
+      "name": "WC Rohöl,Treibstoff-AnsDor-PordesAli-IC-1",
+      "headway_seconds": 258,
+      "waiting_passengers": 0,
+      "waiting_average_seconds": null,
+      "waiting_max_seconds": null,
+      "cargo_age_average_seconds": 594,
+      "cargo_since_pickup_average_seconds": 486
+    },
+    {
+      "name": "RC Getreide,Fleisch,Wolle-Val-LO-1",
+      "headway_seconds": 42,
+      "waiting_passengers": 0,
+      "waiting_average_seconds": null,
+      "waiting_max_seconds": null,
+      "cargo_age_average_seconds": 2928,
+      "cargo_since_pickup_average_seconds": 2100
+    },
+    {
+      "name": "Bus Passagiere-Val-LO-1",
+      "headway_seconds": 32,
+      "waiting_passengers": 123,
+      "waiting_average_seconds": 240,
+      "waiting_max_seconds": 708,
+      "cargo_age_average_seconds": null,
+      "cargo_since_pickup_average_seconds": null
+    },
+    {
+      "name": "WC Rohöl,Passagiere,Dünger,+1-PordesAli-LO-1",
+      "headway_seconds": 168,
+      "waiting_passengers": 0,
+      "waiting_average_seconds": null,
+      "waiting_max_seconds": null,
+      "cargo_age_average_seconds": 486,
+      "cargo_since_pickup_average_seconds": 396
+    },
+    {
+      "name": "RC Dünger,Gemüse-AnsDor-LO-1",
+      "headway_seconds": 44,
+      "waiting_passengers": 0,
+      "waiting_average_seconds": null,
+      "waiting_max_seconds": null,
+      "cargo_age_average_seconds": 1350,
+      "cargo_since_pickup_average_seconds": 930
+    },
+    {
+      "name": "Bus Passagiere-AnsDor-LO-3",
+      "headway_seconds": 84,
+      "waiting_passengers": 5,
+      "waiting_average_seconds": 26.9,
+      "waiting_max_seconds": 42.6,
+      "cargo_age_average_seconds": null,
+      "cargo_since_pickup_average_seconds": null
+    },
+    {
+      "name": "WP Passagiere-Roc-Val-IC-1",
+      "headway_seconds": 882,
+      "waiting_passengers": 9,
+      "waiting_average_seconds": 144,
+      "waiting_max_seconds": 222,
+      "cargo_age_average_seconds": null,
+      "cargo_since_pickup_average_seconds": null
+    },
+    {
+      "name": "Bus Passagiere-PordesAli-LO-3",
+      "headway_seconds": 156,
+      "waiting_passengers": 10,
+      "waiting_average_seconds": 84,
+      "waiting_max_seconds": 150,
+      "cargo_age_average_seconds": null,
+      "cargo_since_pickup_average_seconds": null
+    },
+    {
+      "name": "RC Konserven-Bou-LO-1",
+      "headway_seconds": 438,
+      "waiting_passengers": 0,
+      "waiting_average_seconds": null,
+      "waiting_max_seconds": null,
+      "cargo_age_average_seconds": 2490,
+      "cargo_since_pickup_average_seconds": 2148
+    },
+    {
+      "name": "WC Passagiere,Fisch-Bou-LO-2",
+      "headway_seconds": 258,
+      "waiting_passengers": 0,
+      "waiting_average_seconds": null,
+      "waiting_max_seconds": null,
+      "cargo_age_average_seconds": null,
+      "cargo_since_pickup_average_seconds": null
+    },
+    {
+      "name": "Bus Passagiere-Bou-LO-4",
+      "headway_seconds": 198,
+      "waiting_passengers": 0,
+      "waiting_average_seconds": null,
+      "waiting_max_seconds": null,
+      "cargo_age_average_seconds": null,
+      "cargo_since_pickup_average_seconds": null
+    },
+    {
+      "name": "Bus Passagiere-PordesAli-LO-6",
+      "headway_seconds": 468,
+      "waiting_passengers": 5,
+      "waiting_average_seconds": 204,
+      "waiting_max_seconds": 294,
+      "cargo_age_average_seconds": null,
+      "cargo_since_pickup_average_seconds": null
+    },
+    {
+      "name": "Bus Passagiere-Roc-LO-1",
+      "headway_seconds": 72,
+      "waiting_passengers": 55,
+      "waiting_average_seconds": 216,
+      "waiting_max_seconds": 450,
+      "cargo_age_average_seconds": null,
+      "cargo_since_pickup_average_seconds": null
+    },
+    {
+      "name": "Bus Passagiere-Bou-LO-5",
+      "headway_seconds": 474,
+      "waiting_passengers": 5,
+      "waiting_average_seconds": 90,
+      "waiting_max_seconds": 120,
+      "cargo_age_average_seconds": null,
+      "cargo_since_pickup_average_seconds": null
+    },
+    {
+      "name": "WC Passagiere,Kunststoff-Ram-LeRov-IC-1",
+      "headway_seconds": 330,
+      "waiting_passengers": 0,
+      "waiting_average_seconds": null,
+      "waiting_max_seconds": null,
+      "cargo_age_average_seconds": 2754,
+      "cargo_since_pickup_average_seconds": 2646
+    },
+    {
+      "name": "TC Kleidung,Konserven,Wolle-PoidesPêc-Val-RE-1",
+      "headway_seconds": 1932,
+      "waiting_passengers": 0,
+      "waiting_average_seconds": null,
+      "waiting_max_seconds": null,
+      "cargo_age_average_seconds": 420,
+      "cargo_since_pickup_average_seconds": 216
+    },
+    {
+      "name": "WP Passagiere-PordesAli-LO-2",
+      "headway_seconds": 624,
+      "waiting_passengers": 3,
+      "waiting_average_seconds": 66,
+      "waiting_max_seconds": 108,
+      "cargo_age_average_seconds": null,
+      "cargo_since_pickup_average_seconds": null
+    },
+    {
+      "name": "WC Passagiere,Rohöl,Dünger,+1-PordesAli-LO-1",
+      "headway_seconds": 264,
+      "waiting_passengers": 0,
+      "waiting_average_seconds": null,
+      "waiting_max_seconds": null,
+      "cargo_age_average_seconds": 1308,
+      "cargo_since_pickup_average_seconds": 444
+    },
+    {
+      "name": "RC Farbstoffe,Stoff,Kleidung-Lam-LO-1",
+      "headway_seconds": 78,
+      "waiting_passengers": 0,
+      "waiting_average_seconds": null,
+      "waiting_max_seconds": null,
+      "cargo_age_average_seconds": 360,
+      "cargo_since_pickup_average_seconds": 198
+    },
+    {
+      "name": "RC Passagiere,Stahl-PordesAli-LO-1",
+      "headway_seconds": 168,
+      "waiting_passengers": 0,
+      "waiting_average_seconds": null,
+      "waiting_max_seconds": null,
+      "cargo_age_average_seconds": null,
+      "cargo_since_pickup_average_seconds": null
+    }
+  ]
+}

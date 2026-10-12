@@ -23,3 +23,20 @@
 #view-atlas .data-table th,#view-atlas .data-table td{padding:11px 12px}
 #view-atlas .section+.section{border-top:1px solid #25404b}
 @media(max-width:650px){#view-atlas .metrics{grid-template-columns:repeat(2,minmax(0,1fr))}#view-atlas .section-header h2{font-size:29px}}
+
+/* April 1911: archival financial ledger and transport report */
+.report-hero{background:radial-gradient(ellipse at 80% 30%,#27505e80,transparent 48%),linear-gradient(120deg,#112b37,#0e202e 70%)}
+.report-hero .gold{color:var(--gold)}
+.report-hero .metrics{margin-top:35px}
+.report-body>.section{min-height:420px}
+.report-ranking{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:10px;padding:12px 0;border-bottom:1px solid #536c744f;font-size:12px}
+.report-ranking:last-child{border-bottom:0}
+.report-ranking span{overflow-wrap:anywhere;color:var(--ink)}
+.report-ranking strong{font-variant-numeric:tabular-nums;font-size:12px;white-space:nowrap}
+#report-lines .data-table{min-width:960px}
+#report-times .data-table{min-width:1080px}
+#report-cities .data-table{min-width:600px}
+#report-lines .data-table td:first-child,#report-times .data-table td:first-child{min-width:250px;max-width:470px;overflow-wrap:anywhere}
+#report-industry .route-mini{overflow-wrap:anywhere}
+.report-body .city-number{font-family:var(--serif);font-size:40px;letter-spacing:-.03em}
+@media(max-width:700px){.report-hero h1{font-size:clamp(40px,11vw,66px)}.report-ranking{font-size:11px}.report-body>.section{padding-top:36px}}

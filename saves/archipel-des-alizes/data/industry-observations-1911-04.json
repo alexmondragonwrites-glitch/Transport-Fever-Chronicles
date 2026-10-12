@@ -1,0 +1,226 @@
+{
+  "schema_version": 1,
+  "save_id": "archipel-des-alizes",
+  "game_date": "1911-04-13",
+  "observed_at": "2026-10-11T19:19:55+02:00",
+  "reported_industries": 104,
+  "observed_stopped_industries": 28,
+  "source": "TF3-Mod · Beobachtungen zum letzten Datenstand",
+  "completeness": "Teilmenge gestoppter Betriebe. Für alle anderen Industrien wurden in diesem Ausschnitt keine aktuellen Statuswerte geliefert. Nicht automatisch als aktiv interpretieren.",
+  "stopped": [
+    {
+      "name": "Garches Sägewerk",
+      "status": "gestoppt",
+      "previous_status": "gestoppt",
+      "tier": 1,
+      "cause": null
+    },
+    {
+      "name": "Reichshoffen Möbelfabrik",
+      "status": "gestoppt",
+      "previous_status": "gestoppt",
+      "tier": 1,
+      "cause": null
+    },
+    {
+      "name": "Pointe des Pêcheurs Konservenfabrik",
+      "status": "gestoppt",
+      "previous_status": "aktiv",
+      "tier": 1,
+      "cause": null
+    },
+    {
+      "name": "Port des Alizés Stahlwerk",
+      "status": "gestoppt",
+      "previous_status": "gestoppt",
+      "tier": 1,
+      "cause": null
+    },
+    {
+      "name": "Labenne Maschinenfabrik",
+      "status": "gestoppt",
+      "previous_status": "gestoppt",
+      "tier": 1,
+      "cause": null
+    },
+    {
+      "name": "Lardy Rum Distillery",
+      "status": "gestoppt",
+      "previous_status": "gestoppt",
+      "tier": 1,
+      "cause": null
+    },
+    {
+      "name": "Lardy Sugar Mill",
+      "status": "gestoppt",
+      "previous_status": "gestoppt",
+      "tier": 1,
+      "cause": null
+    },
+    {
+      "name": "Cestas Viehzuchtbetrieb",
+      "status": "gestoppt",
+      "previous_status": "nicht im 1910er Industrieexport",
+      "tier": null,
+      "cause": null
+    },
+    {
+      "name": "Lamballe-Armor Weberei",
+      "status": "gestoppt",
+      "previous_status": "gestoppt",
+      "tier": 1,
+      "cause": null
+    },
+    {
+      "name": "Rambervillers Werkzeugfabrik",
+      "status": "gestoppt",
+      "previous_status": "gestoppt",
+      "tier": 1,
+      "cause": null
+    },
+    {
+      "name": "Reichshoffen Sägewerk",
+      "status": "gestoppt",
+      "previous_status": "gestoppt",
+      "tier": 1,
+      "cause": null
+    },
+    {
+      "name": "Le Malesherbois Sägewerk",
+      "status": "gestoppt",
+      "previous_status": "gestoppt",
+      "tier": 1,
+      "cause": null
+    },
+    {
+      "name": "Gleizé Konservenfabrik",
+      "status": "gestoppt",
+      "previous_status": "nicht im 1910er Industrieexport",
+      "tier": null,
+      "cause": null
+    },
+    {
+      "name": "Melle Rum Distillery",
+      "status": "gestoppt",
+      "previous_status": "nicht im 1910er Industrieexport",
+      "tier": null,
+      "cause": null
+    },
+    {
+      "name": "Lamballe-Armor Textilfabrik",
+      "status": "gestoppt",
+      "previous_status": "gestoppt",
+      "tier": 1,
+      "cause": null
+    },
+    {
+      "name": "Hombourg-Haut Ölraffinerie",
+      "status": "gestoppt",
+      "previous_status": "gestoppt",
+      "tier": 1,
+      "cause": null
+    },
+    {
+      "name": "Châteaubourg Viehzuchtbetrieb",
+      "status": "gestoppt",
+      "previous_status": "gestoppt",
+      "tier": 5,
+      "cause": null
+    },
+    {
+      "name": "Sin-le-Noble Glashütte",
+      "status": "gestoppt",
+      "previous_status": "gestoppt",
+      "tier": 1,
+      "cause": null
+    },
+    {
+      "name": "Grenay Ölraffinerie",
+      "status": "gestoppt",
+      "previous_status": "gestoppt",
+      "tier": 1,
+      "cause": null
+    },
+    {
+      "name": "Combs-la-Ville Ölraffinerie",
+      "status": "gestoppt",
+      "previous_status": "gestoppt",
+      "tier": 1,
+      "cause": null
+    },
+    {
+      "name": "Cournon-d'Auvergne Ölraffinerie",
+      "status": "gestoppt",
+      "previous_status": "gestoppt",
+      "tier": 1,
+      "cause": null
+    },
+    {
+      "name": "Gleizé Viehzuchtbetrieb",
+      "status": "gestoppt",
+      "previous_status": "nicht im 1910er Industrieexport",
+      "tier": null,
+      "cause": null
+    },
+    {
+      "name": "Neuilly-Plaisance Ölraffinerie",
+      "status": "gestoppt",
+      "previous_status": "gestoppt",
+      "tier": 1,
+      "cause": null
+    },
+    {
+      "name": "Lamballe-Armor Viehzuchtbetrieb",
+      "status": "gestoppt",
+      "previous_status": "gestoppt",
+      "tier": 10,
+      "cause": null
+    },
+    {
+      "name": "Aniche Viehzuchtbetrieb",
+      "status": "gestoppt",
+      "previous_status": "gestoppt",
+      "tier": 4,
+      "cause": null
+    },
+    {
+      "name": "Vichy Viehzuchtbetrieb",
+      "status": "gestoppt",
+      "previous_status": "gestoppt",
+      "tier": 5,
+      "cause": null
+    },
+    {
+      "name": "Péronne Fahrzeugfabrik",
+      "status": "gestoppt",
+      "previous_status": "nicht im 1910er Industrieexport",
+      "tier": null,
+      "cause": null
+    },
+    {
+      "name": "Le Malesherbois Reifenfabrik",
+      "status": "gestoppt",
+      "previous_status": "nicht im 1910er Industrieexport",
+      "tier": null,
+      "cause": null
+    }
+  ],
+  "newly_named_in_1911": [
+    "Cestas Viehzuchtbetrieb",
+    "Gleizé Konservenfabrik",
+    "Gleizé Viehzuchtbetrieb",
+    "Le Malesherbois Reifenfabrik",
+    "Melle Rum Distillery",
+    "Péronne Fahrzeugfabrik"
+  ],
+  "previously_stopped_not_reported_in_1911": [
+    "Lardy Glashütte",
+    "Neuilly-Plaisance Chemiefabrik",
+    "Cormontreuil Sugar Mill",
+    "Scierie de l’Écorce",
+    "Hombourg-Haut Ölraffinerie #1",
+    "Combs-la-Ville Viehzuchtbetrieb",
+    "Bry-sur-Marne Viehzuchtbetrieb"
+  ],
+  "question": "Ob ein nicht erneut als gestoppt genannter Betrieb aktiv wurde, gelöscht wurde oder umkonfiguriert ist, kann dieser Ausschnitt nicht beantworten."
+}

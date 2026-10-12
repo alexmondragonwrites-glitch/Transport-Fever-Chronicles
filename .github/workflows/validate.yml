@@ -15,13 +15,22 @@ jobs:
         run: |
           node --check assets/app.js
           node --check assets/monitor.js
+          node --check assets/report-1911.js
+          node --check assets/report-1911-dec.js
+          node --check assets/decade.js
+          node --check scripts/build-decade.mjs
           node --check scripts/validate-data.mjs
+          node --check scripts/validate-report-1911.mjs
+          node --check scripts/validate-report-1911-dec.mjs
           node --check scripts/import-watcher.mjs
           python3 -m py_compile scripts/monitor_build.py scripts/import-monitor.py scripts/publish-monitor.py
       - name: Daten prüfen
         run: |
           node scripts/validate-data.mjs
           node scripts/validate-monitor.mjs
+          node scripts/validate-report-1911.mjs
+          node scripts/validate-report-1911-dec.mjs
+          node scripts/build-decade.mjs --check
       - name: Neue Welt und Watcher-Import testen
         run: |
           node scripts/new-save.mjs --id ci-test-world --name "Test-Welt" --year 1900

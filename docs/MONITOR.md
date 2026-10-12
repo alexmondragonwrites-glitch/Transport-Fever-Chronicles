@@ -1,6 +1,8 @@
 # Monitoransicht – Archipel
 
-Die Standardansicht zeigt den aktuell hochgeladenen Spielemonitor-Stand. Das frühere redaktionelle Archiv mit Weltatlas, Geschichten und März-1910-Tabellen bleibt über `?view=archive` erreichbar. Diese Quellen werden nicht still vermischt.
+Der Langzeitmonitor unter `saves/archipel-des-alizes/index.html?view=monitor` zeigt den zuletzt hochgeladenen Spielemonitor-Stand. Ohne Parameter leitet die Seite auf den aktuellen Bericht (`latestReport`) weiter; das redaktionelle Archiv mit Weltatlas und März-1910-Tabellen bleibt über `?view=archive` erreichbar. Diese Quellen werden nicht still vermischt.
+
+**Zwei Monitorordner:** `data/monitor/` (Manifest `monitor`) wird laufend aktualisiert. `data/monitor-20261011/` (Manifest `monitor_archive`) ist der eingefrorene Stand des Release-Exports vom 11.10.2026 im ursprünglichen Format; auf ihm beruhen die Fakten des Dossiers „Zehn Jahre Archipel“ (`scripts/build-decade.mjs`). Diesen Ordner nicht neu erzeugen oder überschreiben; `validate-monitor.mjs` prüft seine Eckwerte.
 
 ## Aktuellen Stand hochladen
 

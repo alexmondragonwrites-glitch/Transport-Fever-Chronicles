@@ -1,0 +1,1337 @@
+{
+  "schema_version": 2,
+  "save_id": "archipel-des-alizes",
+  "game_date": "1911-04-13",
+  "observed_at": "2026-10-11T19:19:55+02:00",
+  "source": "TF3-Mod, Linien / Linien & Auslastung; benutzerseitiger Export",
+  "account_balance": 61164100,
+  "overview": {
+    "reported_lines": 85,
+    "reported_vehicles": 487,
+    "listed_line_vehicles": 465,
+    "unreconciled_vehicle_difference": 22,
+    "reported_industries": 104,
+    "reported_towns": 50,
+    "without_path": 0
+  },
+  "units": {
+    "operating_balance_last_game_year": "Ingame-Währung für letztes Spieljahr",
+    "occupied": "Aktuelle Kapazitätsbelegung; gemischte Einheiten"
+  },
+  "caveat": "Die Übersicht nennt 487 Fahrzeuge, aber die 85 tabellarisch genannten Linien summieren sich auf 465. Differenz offen; keine erfundene Erklärung. Momentbelegung ≠ Jahresdurchsatz.",
+  "lines": [
+    {
+      "id": "line-001",
+      "name": "WC Passagiere,Holz,Bretter-Mon-Val-IC-1",
+      "mode": "Schiff (Güter/Misch)",
+      "stops": 2,
+      "vehicles": 3,
+      "occupied": 119,
+      "capacity": 120,
+      "utilization": 99.2,
+      "operating_balance_last_game_year": 1886368,
+      "ordered_towns": [
+        "Montfougère",
+        "Valmorin"
+      ]
+    },
+    {
+      "id": "line-002",
+      "name": "RC Bretter-Roc-LO-1",
+      "mode": "Straße (Güter/Misch)",
+      "stops": 2,
+      "vehicles": 3,
+      "occupied": 10,
+      "capacity": 30,
+      "utilization": 33.3,
+      "operating_balance_last_game_year": 125257,
+      "ordered_towns": [
+        "Roche-Noire",
+        "Roche-Noire"
+      ]
+    },
+    {
+      "id": "line-003",
+      "name": "RC Passagiere,Bretter-Bou-LO-3",
+      "mode": "Straße (Güter/Misch)",
+      "stops": 2,
+      "vehicles": 3,
+      "occupied": 20,
+      "capacity": 30,
+      "utilization": 66.7,
+      "operating_balance_last_game_year": 180234,
+      "ordered_towns": [
+        "Bourg-l’Écorce",
+        "Bourg-l’Écorce"
+      ]
+    },
+    {
+      "id": "line-004",
+      "name": "Bus Passagiere-AnsDor-LO-4",
+      "mode": "Bus",
+      "stops": 4,
+      "vehicles": 5,
+      "occupied": 20,
+      "capacity": 30,
+      "utilization": 66.7,
+      "operating_balance_last_game_year": 240870,
+      "ordered_towns": [
+        "Anse Dorée",
+        "Anse Dorée",
+        "Anse Dorée",
+        "Anse Dorée"
+      ]
+    },
+    {
+      "id": "line-005",
+      "name": "RC Passagiere,Bretter-Bou-LO-2",
+      "mode": "Straße (Güter/Misch)",
+      "stops": 2,
+      "vehicles": 5,
+      "occupied": 25,
+      "capacity": 50,
+      "utilization": 50,
+      "operating_balance_last_game_year": 264079,
+      "ordered_towns": [
+        "Bourg-l’Écorce",
+        "Bourg-l’Écorce"
+      ]
+    },
+    {
+      "id": "line-006",
+      "name": "RC Passagiere,Bretter-Bou-LO-1",
+      "mode": "Straße (Güter/Misch)",
+      "stops": 2,
+      "vehicles": 2,
+      "occupied": 10,
+      "capacity": 20,
+      "utilization": 50,
+      "operating_balance_last_game_year": 141479,
+      "ordered_towns": [
+        "Bourg-l’Écorce",
+        "Bourg-l’Écorce"
+      ]
+    },
+    {
+      "id": "line-007",
+      "name": "RC Dünger,Passagiere,Sugar Cane-Mon-LO-1",
+      "mode": "Straße (Güter/Misch)",
+      "stops": 2,
+      "vehicles": 6,
+      "occupied": 30,
+      "capacity": 60,
+      "utilization": 50,
+      "operating_balance_last_game_year": 341216,
+      "ordered_towns": [
+        "Montceau-les-Mines",
+        "Montceau-les-Mines"
+      ]
+    },
+    {
+      "id": "line-008",
+      "name": "WP Passagiere-PordesAli-LO-1",
+      "mode": "Schiff (Passagiere)",
+      "stops": 2,
+      "vehicles": 1,
+      "occupied": 2,
+      "capacity": 20,
+      "utilization": 10,
+      "operating_balance_last_game_year": -13105,
+      "ordered_towns": [
+        "Port des Alizés",
+        "Port des Alizés"
+      ]
+    },
+    {
+      "id": "line-009",
+      "name": "RC Sugar,Gemüse-PordesAli-LO-1",
+      "mode": "Straße (Güter/Misch)",
+      "stops": 2,
+      "vehicles": 2,
+      "occupied": 16,
+      "capacity": 20,
+      "utilization": 80,
+      "operating_balance_last_game_year": 21369,
+      "ordered_towns": [
+        "Port des Alizés",
+        "Port des Alizés"
+      ]
+    },
+    {
+      "id": "line-010",
+      "name": "WP Passagiere-PoidesPêc-LO-1",
+      "mode": "Schiff (Passagiere)",
+      "stops": 2,
+      "vehicles": 1,
+      "occupied": 2,
+      "capacity": 20,
+      "utilization": 10,
+      "operating_balance_last_game_year": -7057,
+      "ordered_towns": [
+        "Pointe des Pêcheurs",
+        "Pointe des Pêcheurs"
+      ]
+    },
+    {
+      "id": "line-011",
+      "name": "WP Passagiere-AnsDor-PordesAli-IC-1",
+      "mode": "Schiff (Passagiere)",
+      "stops": 2,
+      "vehicles": 5,
+      "occupied": 58,
+      "capacity": 100,
+      "utilization": 58,
+      "operating_balance_last_game_year": 1384156,
+      "ordered_towns": [
+        "Anse Dorée",
+        "Port des Alizés"
+      ]
+    },
+    {
+      "id": "line-012",
+      "name": "RC Passagiere,Treibstoff-PordesAli-LO-1",
+      "mode": "Straße (Güter/Misch)",
+      "stops": 2,
+      "vehicles": 2,
+      "occupied": 4,
+      "capacity": 12,
+      "utilization": 33.3,
+      "operating_balance_last_game_year": 31827,
+      "ordered_towns": [
+        "Port des Alizés",
+        "Port des Alizés"
+      ]
+    },
+    {
+      "id": "line-013",
+      "name": "WC Passagiere,Fisch-Bou-LO-1",
+      "mode": "Schiff (Güter/Misch)",
+      "stops": 2,
+      "vehicles": 2,
+      "occupied": 8,
+      "capacity": 40,
+      "utilization": 20,
+      "operating_balance_last_game_year": -17644,
+      "ordered_towns": [
+        "Bourg-l’Écorce",
+        "Bourg-l’Écorce"
+      ]
+    },
+    {
+      "id": "line-014",
+      "name": "Bus Passagiere-AnsDor-LO-2",
+      "mode": "Bus",
+      "stops": 2,
+      "vehicles": 4,
+      "occupied": 14,
+      "capacity": 24,
+      "utilization": 58.3,
+      "operating_balance_last_game_year": 69740,
+      "ordered_towns": [
+        "Anse Dorée",
+        "Anse Dorée"
+      ]
+    },
+    {
+      "id": "line-015",
+      "name": "WC Dünger,Gemüse-PordesAli-AnsDor-IC-1",
+      "mode": "Schiff (Güter/Misch)",
+      "stops": 2,
+      "vehicles": 8,
+      "occupied": 107,
+      "capacity": 160,
+      "utilization": 66.9,
+      "operating_balance_last_game_year": 1504534,
+      "ordered_towns": [
+        "Port des Alizés",
+        "Anse Dorée"
+      ]
+    },
+    {
+      "id": "line-016",
+      "name": "WC Passagiere,Gemüse-AnsDor-LO-1",
+      "mode": "Schiff (Güter/Misch)",
+      "stops": 2,
+      "vehicles": 7,
+      "occupied": 70,
+      "capacity": 140,
+      "utilization": 50,
+      "operating_balance_last_game_year": 3975,
+      "ordered_towns": [
+        "Anse Dorée",
+        "Anse Dorée"
+      ]
+    },
+    {
+      "id": "line-017",
+      "name": "Bus Passagiere-AnsDor-LO-1",
+      "mode": "Bus",
+      "stops": 2,
+      "vehicles": 3,
+      "occupied": 4,
+      "capacity": 18,
+      "utilization": 22.2,
+      "operating_balance_last_game_year": 16879,
+      "ordered_towns": [
+        "Anse Dorée",
+        "Anse Dorée"
+      ]
+    },
+    {
+      "id": "line-018",
+      "name": "RC Treibstoff-AnsDor-LO-1",
+      "mode": "Straße (Güter/Misch)",
+      "stops": 2,
+      "vehicles": 4,
+      "occupied": 13,
+      "capacity": 40,
+      "utilization": 32.5,
+      "operating_balance_last_game_year": -56411,
+      "ordered_towns": [
+        "Anse Dorée",
+        "Anse Dorée"
+      ]
+    },
+    {
+      "id": "line-019",
+      "name": "RC Bretter-Mon-LO-1",
+      "mode": "Straße (Güter/Misch)",
+      "stops": 2,
+      "vehicles": 2,
+      "occupied": 9,
+      "capacity": 20,
+      "utilization": 45,
+      "operating_balance_last_game_year": 84914,
+      "ordered_towns": [
+        "Montfougère",
+        "Montfougère"
+      ]
+    },
+    {
+      "id": "line-020",
+      "name": "RC Gemüse,Treibstoff,Kleidung-AnsDor-LO-1",
+      "mode": "Straße (Güter/Misch)",
+      "stops": 2,
+      "vehicles": 17,
+      "occupied": 61,
+      "capacity": 170,
+      "utilization": 35.9,
+      "operating_balance_last_game_year": -332605,
+      "ordered_towns": [
+        "Anse Dorée",
+        "Anse Dorée"
+      ]
+    },
+    {
+      "id": "line-021",
+      "name": "RC Treibstoff-PordesAli-LO-1",
+      "mode": "Straße (Güter/Misch)",
+      "stops": 2,
+      "vehicles": 8,
+      "occupied": 21,
+      "capacity": 80,
+      "utilization": 26.3,
+      "operating_balance_last_game_year": -68432,
+      "ordered_towns": [
+        "Port des Alizés",
+        "Port des Alizés"
+      ]
+    },
+    {
+      "id": "line-022",
+      "name": "Bus Passagiere-Val-LO-1",
+      "mode": "Bus",
+      "stops": 4,
+      "vehicles": 16,
+      "occupied": 92,
+      "capacity": 96,
+      "utilization": 95.8,
+      "operating_balance_last_game_year": 834817,
+      "ordered_towns": [
+        "Valmorin",
+        "Valmorin",
+        "Valmorin",
+        "Valmorin"
+      ]
+    },
+    {
+      "id": "line-023",
+      "name": "RC Dünger,Gemüse-AnsDor-LO-1",
+      "mode": "Straße (Güter/Misch)",
+      "stops": 2,
+      "vehicles": 13,
+      "occupied": 37,
+      "capacity": 130,
+      "utilization": 28.5,
+      "operating_balance_last_game_year": 116602,
+      "ordered_towns": [
+        "Anse Dorée",
+        "Anse Dorée"
+      ]
+    },
+    {
+      "id": "line-024",
+      "name": "Bus Passagiere-AnsDor-LO-3",
+      "mode": "Bus",
+      "stops": 2,
+      "vehicles": 3,
+      "occupied": 12,
+      "capacity": 18,
+      "utilization": 66.7,
+      "operating_balance_last_game_year": 53514,
+      "ordered_towns": [
+        "Anse Dorée",
+        "Anse Dorée"
+      ]
+    },
+    {
+      "id": "line-025",
+      "name": "WC Passagiere,Fisch-Bou-LO-2",
+      "mode": "Schiff (Güter/Misch)",
+      "stops": 2,
+      "vehicles": 1,
+      "occupied": 0,
+      "capacity": 20,
+      "utilization": 0,
+      "operating_balance_last_game_year": -86820,
+      "ordered_towns": [
+        "Bourg-l’Écorce",
+        "Bourg-l’Écorce"
+      ]
+    },
+    {
+      "id": "line-026",
+      "name": "WC Passagiere,Bretter,Kohle-Val-Roc-IC-1",
+      "mode": "Schiff (Güter/Misch)",
+      "stops": 2,
+      "vehicles": 5,
+      "occupied": 170,
+      "capacity": 200,
+      "utilization": 85,
+      "operating_balance_last_game_year": 2131020,
+      "ordered_towns": [
+        "Valmorin",
+        "Roche-Noire"
+      ]
+    },
+    {
+      "id": "line-027",
+      "name": "WC Sugar,Dünger-Cor-PordesAli-IC-1",
+      "mode": "Schiff (Güter/Misch)",
+      "stops": 2,
+      "vehicles": 20,
+      "occupied": 155,
+      "capacity": 200,
+      "utilization": 77.5,
+      "operating_balance_last_game_year": 3681087,
+      "ordered_towns": [
+        "Cormontreuil",
+        "Port des Alizés"
+      ]
+    },
+    {
+      "id": "line-028",
+      "name": "RC Passagiere,Holz-Mon-Roc-IC-1",
+      "mode": "Straße (Güter/Misch)",
+      "stops": 2,
+      "vehicles": 5,
+      "occupied": 27,
+      "capacity": 50,
+      "utilization": 54,
+      "operating_balance_last_game_year": 122754,
+      "ordered_towns": [
+        "Montfougère",
+        "Roche-Noire"
+      ]
+    },
+    {
+      "id": "line-029",
+      "name": "WC Passagiere,Sugar Cane,Sugar-Cor-LO-1",
+      "mode": "Schiff (Güter/Misch)",
+      "stops": 2,
+      "vehicles": 4,
+      "occupied": 60,
+      "capacity": 80,
+      "utilization": 75,
+      "operating_balance_last_game_year": 1161961,
+      "ordered_towns": [
+        "Cormontreuil",
+        "Cormontreuil"
+      ]
+    },
+    {
+      "id": "line-030",
+      "name": "TC Eisenerz,Kohle-AnsDor-PordesAli-IC-1",
+      "mode": "Güterzug",
+      "stops": 2,
+      "vehicles": 2,
+      "occupied": 79,
+      "capacity": 240,
+      "utilization": 32.9,
+      "operating_balance_last_game_year": 154720,
+      "ordered_towns": [
+        "Anse Dorée",
+        "Port des Alizés"
+      ]
+    },
+    {
+      "id": "line-031",
+      "name": "Bus Passagiere-PoidesPêc-LO-2",
+      "mode": "Bus",
+      "stops": 2,
+      "vehicles": 3,
+      "occupied": 0,
+      "capacity": 18,
+      "utilization": 0,
+      "operating_balance_last_game_year": 33199,
+      "ordered_towns": [
+        "Pointe des Pêcheurs",
+        "Pointe des Pêcheurs"
+      ]
+    },
+    {
+      "id": "line-032",
+      "name": "RC Bretter,Fisch,Holz,+1-Val-LO-1",
+      "mode": "Straße (Güter/Misch)",
+      "stops": 2,
+      "vehicles": 12,
+      "occupied": 70,
+      "capacity": 120,
+      "utilization": 58.3,
+      "operating_balance_last_game_year": 791347,
+      "ordered_towns": [
+        "Valmorin",
+        "Valmorin"
+      ]
+    },
+    {
+      "id": "line-033",
+      "name": "RC Fleisch,Bretter-Val-LO-1",
+      "mode": "Straße (Güter/Misch)",
+      "stops": 2,
+      "vehicles": 4,
+      "occupied": 10,
+      "capacity": 40,
+      "utilization": 25,
+      "operating_balance_last_game_year": 58197,
+      "ordered_towns": [
+        "Valmorin",
+        "Valmorin"
+      ]
+    },
+    {
+      "id": "line-034",
+      "name": "RC Fisch,Konserven-PoidesPêc-LO-1",
+      "mode": "Straße (Güter/Misch)",
+      "stops": 2,
+      "vehicles": 3,
+      "occupied": 15,
+      "capacity": 30,
+      "utilization": 50,
+      "operating_balance_last_game_year": -9054,
+      "ordered_towns": [
+        "Pointe des Pêcheurs",
+        "Pointe des Pêcheurs"
+      ]
+    },
+    {
+      "id": "line-035",
+      "name": "TC Getreide,Kohle-AnsDor-Val-IC-1",
+      "mode": "Güterzug",
+      "stops": 2,
+      "vehicles": 1,
+      "occupied": 96,
+      "capacity": 120,
+      "utilization": 80,
+      "operating_balance_last_game_year": 1065094,
+      "ordered_towns": [
+        "Anse Dorée",
+        "Valmorin"
+      ]
+    },
+    {
+      "id": "line-036",
+      "name": "RC Passagiere,Eisenerz-AnsDor-Bou-IC-1",
+      "mode": "Straße (Güter/Misch)",
+      "stops": 2,
+      "vehicles": 6,
+      "occupied": 30,
+      "capacity": 60,
+      "utilization": 50,
+      "operating_balance_last_game_year": 271602,
+      "ordered_towns": [
+        "Anse Dorée",
+        "Bourg-l’Écorce"
+      ]
+    },
+    {
+      "id": "line-037",
+      "name": "RC Passagiere,Kohle-Roc-LO-1",
+      "mode": "Straße (Güter/Misch)",
+      "stops": 2,
+      "vehicles": 4,
+      "occupied": 20,
+      "capacity": 40,
+      "utilization": 50,
+      "operating_balance_last_game_year": 420458,
+      "ordered_towns": [
+        "Roche-Noire",
+        "Roche-Noire"
+      ]
+    },
+    {
+      "id": "line-038",
+      "name": "WC Passagiere,Werkzeuge,Fisch-Val-Mon-IC-1",
+      "mode": "Schiff (Güter/Misch)",
+      "stops": 2,
+      "vehicles": 3,
+      "occupied": 20,
+      "capacity": 60,
+      "utilization": 33.3,
+      "operating_balance_last_game_year": 113932,
+      "ordered_towns": [
+        "Valmorin",
+        "Montfougère"
+      ]
+    },
+    {
+      "id": "line-039",
+      "name": "RC Fisch,Konserven-Bou-LO-1",
+      "mode": "Straße (Güter/Misch)",
+      "stops": 2,
+      "vehicles": 4,
+      "occupied": 3,
+      "capacity": 40,
+      "utilization": 7.5,
+      "operating_balance_last_game_year": -74207,
+      "ordered_towns": [
+        "Bourg-l’Écorce",
+        "Bourg-l’Écorce"
+      ]
+    },
+    {
+      "id": "line-040",
+      "name": "RC Getreide,Fleisch,Wolle-Val-LO-1",
+      "mode": "Straße (Güter/Misch)",
+      "stops": 2,
+      "vehicles": 14,
+      "occupied": 119,
+      "capacity": 140,
+      "utilization": 85,
+      "operating_balance_last_game_year": 459204,
+      "ordered_towns": [
+        "Valmorin",
+        "Valmorin"
+      ]
+    },
+    {
+      "id": "line-041",
+      "name": "Bus Passagiere-PordesAli-LO-6",
+      "mode": "Bus",
+      "stops": 2,
+      "vehicles": 2,
+      "occupied": 3,
+      "capacity": 12,
+      "utilization": 25,
+      "operating_balance_last_game_year": 63953,
+      "ordered_towns": [
+        "Port des Alizés",
+        "Port des Alizés"
+      ]
+    },
+    {
+      "id": "line-042",
+      "name": "Bus Passagiere-PordesAli-LO-7",
+      "mode": "Bus",
+      "stops": 3,
+      "vehicles": 3,
+      "occupied": 16,
+      "capacity": 18,
+      "utilization": 88.9,
+      "operating_balance_last_game_year": 177235,
+      "ordered_towns": [
+        "Port des Alizés",
+        "Port des Alizés",
+        "Port des Alizés"
+      ]
+    },
+    {
+      "id": "line-043",
+      "name": "Bus Passagiere-Val-LO-2",
+      "mode": "Bus",
+      "stops": 2,
+      "vehicles": 2,
+      "occupied": 3,
+      "capacity": 12,
+      "utilization": 25,
+      "operating_balance_last_game_year": 34029,
+      "ordered_towns": [
+        "Valmorin",
+        "Valmorin"
+      ]
+    },
+    {
+      "id": "line-044",
+      "name": "TC Blech-PordesAli-PoidesPêc-IC-1",
+      "mode": "Güterzug",
+      "stops": 2,
+      "vehicles": 1,
+      "occupied": 58,
+      "capacity": 120,
+      "utilization": 48.3,
+      "operating_balance_last_game_year": -602034,
+      "ordered_towns": [
+        "Port des Alizés",
+        "Pointe des Pêcheurs"
+      ]
+    },
+    {
+      "id": "line-045",
+      "name": "TC Chemikalien,Farbstoffe-LeRov-Neu-IC-1",
+      "mode": "Güterzug",
+      "stops": 2,
+      "vehicles": 1,
+      "occupied": 59,
+      "capacity": 120,
+      "utilization": 49.2,
+      "operating_balance_last_game_year": -717956,
+      "ordered_towns": [
+        "Le Rove",
+        "Neuilly-Plaisance"
+      ]
+    },
+    {
+      "id": "line-046",
+      "name": "TC Chemikalien,Farbstoffe-Lam-Ani-IC-1",
+      "mode": "Güterzug",
+      "stops": 2,
+      "vehicles": 1,
+      "occupied": 42,
+      "capacity": 120,
+      "utilization": 35,
+      "operating_balance_last_game_year": -617904,
+      "ordered_towns": [
+        "Lamballe-Armor",
+        "Aniche"
+      ]
+    },
+    {
+      "id": "line-047",
+      "name": "RC Farbstoffe,Stoff,Passagiere,+1-Lam-LO-1",
+      "mode": "Straße (Güter/Misch)",
+      "stops": 2,
+      "vehicles": 4,
+      "occupied": 15,
+      "capacity": 40,
+      "utilization": 37.5,
+      "operating_balance_last_game_year": 140873,
+      "ordered_towns": [
+        "Lamballe-Armor",
+        "Lamballe-Armor"
+      ]
+    },
+    {
+      "id": "line-048",
+      "name": "Bus Passagiere-PordesAli-LO-3",
+      "mode": "Bus",
+      "stops": 2,
+      "vehicles": 2,
+      "occupied": 6,
+      "capacity": 12,
+      "utilization": 50,
+      "operating_balance_last_game_year": 30821,
+      "ordered_towns": [
+        "Port des Alizés",
+        "Port des Alizés"
+      ]
+    },
+    {
+      "id": "line-049",
+      "name": "Bus Passagiere-PordesAli-LO-1",
+      "mode": "Bus",
+      "stops": 3,
+      "vehicles": 8,
+      "occupied": 21,
+      "capacity": 48,
+      "utilization": 43.8,
+      "operating_balance_last_game_year": 74773,
+      "ordered_towns": [
+        "Port des Alizés",
+        "Port des Alizés",
+        "Port des Alizés"
+      ]
+    },
+    {
+      "id": "line-050",
+      "name": "Bus Passagiere-PordesAli-LO-2",
+      "mode": "Bus",
+      "stops": 2,
+      "vehicles": 6,
+      "occupied": 13,
+      "capacity": 36,
+      "utilization": 36.1,
+      "operating_balance_last_game_year": 290439,
+      "ordered_towns": [
+        "Port des Alizés",
+        "Port des Alizés"
+      ]
+    },
+    {
+      "id": "line-051",
+      "name": "Bus Passagiere-PordesAli-LO-5",
+      "mode": "Bus",
+      "stops": 1,
+      "vehicles": 0,
+      "occupied": 0,
+      "capacity": 0,
+      "utilization": null,
+      "operating_balance_last_game_year": 0,
+      "ordered_towns": [
+        "Port des Alizés"
+      ]
+    },
+    {
+      "id": "line-052",
+      "name": "Bus Passagiere-PordesAli-LO-4",
+      "mode": "Bus",
+      "stops": 2,
+      "vehicles": 8,
+      "occupied": 40,
+      "capacity": 48,
+      "utilization": 83.3,
+      "operating_balance_last_game_year": 456924,
+      "ordered_towns": [
+        "Port des Alizés",
+        "Port des Alizés"
+      ]
+    },
+    {
+      "id": "line-053",
+      "name": "Tram Passagiere-PordesAli-LO-1",
+      "mode": "Straßenbahn",
+      "stops": 6,
+      "vehicles": 3,
+      "occupied": 75,
+      "capacity": 99,
+      "utilization": 75.8,
+      "operating_balance_last_game_year": 599506,
+      "ordered_towns": [
+        "Port des Alizés",
+        "Port des Alizés",
+        "Port des Alizés",
+        "Port des Alizés",
+        "Port des Alizés",
+        "Port des Alizés"
+      ]
+    },
+    {
+      "id": "line-054",
+      "name": "WC Passagiere,Wolle,Kleidung-PoidesPêc-Lam-IC-1",
+      "mode": "Schiff (Güter/Misch)",
+      "stops": 2,
+      "vehicles": 12,
+      "occupied": 100,
+      "capacity": 120,
+      "utilization": 83.3,
+      "operating_balance_last_game_year": 492510,
+      "ordered_towns": [
+        "Pointe des Pêcheurs",
+        "Lamballe-Armor"
+      ]
+    },
+    {
+      "id": "line-055",
+      "name": "TC Kleidung,Konserven,Wolle-PoidesPêc-Val-RE-1",
+      "mode": "Güterzug",
+      "stops": 3,
+      "vehicles": 1,
+      "occupied": 52,
+      "capacity": 104,
+      "utilization": 50,
+      "operating_balance_last_game_year": 194028,
+      "ordered_towns": [
+        "Pointe des Pêcheurs",
+        "Bourg-l’Écorce",
+        "Valmorin"
+      ]
+    },
+    {
+      "id": "line-056",
+      "name": "WC Chemikalien-LeRov-Ani-IC-1",
+      "mode": "Schiff (Güter/Misch)",
+      "stops": 2,
+      "vehicles": 11,
+      "occupied": 180,
+      "capacity": 220,
+      "utilization": 81.8,
+      "operating_balance_last_game_year": 81254,
+      "ordered_towns": [
+        "Le Rove",
+        "Aniche"
+      ]
+    },
+    {
+      "id": "line-057",
+      "name": "Tram Passagiere-PoidesPêc-LO-1",
+      "mode": "Straßenbahn",
+      "stops": 4,
+      "vehicles": 4,
+      "occupied": 39,
+      "capacity": 96,
+      "utilization": 40.6,
+      "operating_balance_last_game_year": 241572,
+      "ordered_towns": [
+        "Pointe des Pêcheurs",
+        "Pointe des Pêcheurs",
+        "Pointe des Pêcheurs",
+        "Pointe des Pêcheurs"
+      ]
+    },
+    {
+      "id": "line-058",
+      "name": "Tram Passagiere-PoidesPêc-LO-2",
+      "mode": "Straßenbahn",
+      "stops": 5,
+      "vehicles": 5,
+      "occupied": 57,
+      "capacity": 220,
+      "utilization": 25.9,
+      "operating_balance_last_game_year": -232881,
+      "ordered_towns": [
+        "Pointe des Pêcheurs",
+        "Pointe des Pêcheurs",
+        "Pointe des Pêcheurs",
+        "Pointe des Pêcheurs",
+        "Pointe des Pêcheurs"
+      ]
+    },
+    {
+      "id": "line-059",
+      "name": "RC Fisch,Treibstoff-PoidesPêc-LO-1",
+      "mode": "Straße (Güter/Misch)",
+      "stops": 2,
+      "vehicles": 2,
+      "occupied": 10,
+      "capacity": 20,
+      "utilization": 50,
+      "operating_balance_last_game_year": 58571,
+      "ordered_towns": [
+        "Pointe des Pêcheurs",
+        "Pointe des Pêcheurs"
+      ]
+    },
+    {
+      "id": "line-060",
+      "name": "RC Konserven-Bou-LO-1",
+      "mode": "Straße (Güter/Misch)",
+      "stops": 2,
+      "vehicles": 2,
+      "occupied": 10,
+      "capacity": 20,
+      "utilization": 50,
+      "operating_balance_last_game_year": 105191,
+      "ordered_towns": [
+        "Bourg-l’Écorce",
+        "Bourg-l’Écorce"
+      ]
+    },
+    {
+      "id": "line-061",
+      "name": "RC Konserven-PoidesPêc-Bou-IC-1",
+      "mode": "Straße (Güter/Misch)",
+      "stops": 2,
+      "vehicles": 4,
+      "occupied": 10,
+      "capacity": 40,
+      "utilization": 25,
+      "operating_balance_last_game_year": -73921,
+      "ordered_towns": [
+        "Pointe des Pêcheurs",
+        "Bourg-l’Écorce"
+      ]
+    },
+    {
+      "id": "line-062",
+      "name": "RC Passagiere,Holz-Bou-LO-1",
+      "mode": "Straße (Güter/Misch)",
+      "stops": 2,
+      "vehicles": 6,
+      "occupied": 30,
+      "capacity": 60,
+      "utilization": 50,
+      "operating_balance_last_game_year": 272426,
+      "ordered_towns": [
+        "Bourg-l’Écorce",
+        "Bourg-l’Écorce"
+      ]
+    },
+    {
+      "id": "line-063",
+      "name": "Bus Passagiere-Bou-LO-5",
+      "mode": "Bus",
+      "stops": 2,
+      "vehicles": 3,
+      "occupied": 12,
+      "capacity": 18,
+      "utilization": 66.7,
+      "operating_balance_last_game_year": 91838,
+      "ordered_towns": [
+        "Bourg-l’Écorce",
+        "Bourg-l’Écorce"
+      ]
+    },
+    {
+      "id": "line-064",
+      "name": "Bus Passagiere-Bou-LO-4",
+      "mode": "Bus",
+      "stops": 2,
+      "vehicles": 2,
+      "occupied": 0,
+      "capacity": 12,
+      "utilization": 0,
+      "operating_balance_last_game_year": -36925,
+      "ordered_towns": [
+        "Bourg-l’Écorce",
+        "Bourg-l’Écorce"
+      ]
+    },
+    {
+      "id": "line-065",
+      "name": "Bus Passagiere-Bou-LO-3",
+      "mode": "Bus",
+      "stops": 2,
+      "vehicles": 2,
+      "occupied": 7,
+      "capacity": 12,
+      "utilization": 58.3,
+      "operating_balance_last_game_year": 50178,
+      "ordered_towns": [
+        "Bourg-l’Écorce",
+        "Bourg-l’Écorce"
+      ]
+    },
+    {
+      "id": "line-066",
+      "name": "Bus Passagiere-Bou-LO-2",
+      "mode": "Bus",
+      "stops": 2,
+      "vehicles": 2,
+      "occupied": 5,
+      "capacity": 12,
+      "utilization": 41.7,
+      "operating_balance_last_game_year": 26554,
+      "ordered_towns": [
+        "Bourg-l’Écorce",
+        "Bourg-l’Écorce"
+      ]
+    },
+    {
+      "id": "line-067",
+      "name": "Bus Passagiere-Bou-LO-1",
+      "mode": "Bus",
+      "stops": 4,
+      "vehicles": 7,
+      "occupied": 31,
+      "capacity": 42,
+      "utilization": 73.8,
+      "operating_balance_last_game_year": 179691,
+      "ordered_towns": [
+        "Bourg-l’Écorce",
+        "Bourg-l’Écorce",
+        "Bourg-l’Écorce",
+        "Bourg-l’Écorce"
+      ]
+    },
+    {
+      "id": "line-068",
+      "name": "Tram Passagiere-Bou-LO-1",
+      "mode": "Straßenbahn",
+      "stops": 10,
+      "vehicles": 13,
+      "occupied": 214,
+      "capacity": 572,
+      "utilization": 37.4,
+      "operating_balance_last_game_year": 46610,
+      "ordered_towns": [
+        "Bourg-l’Écorce",
+        "Bourg-l’Écorce",
+        "Bourg-l’Écorce",
+        "Bourg-l’Écorce",
+        "Bourg-l’Écorce",
+        "Bourg-l’Écorce",
+        "Bourg-l’Écorce",
+        "Bourg-l’Écorce",
+        "Bourg-l’Écorce",
+        "Bourg-l’Écorce"
+      ]
+    },
+    {
+      "id": "line-069",
+      "name": "WC Rohöl,Passagiere,Dünger,+1-PordesAli-LO-1",
+      "mode": "Schiff (Güter/Misch)",
+      "stops": 3,
+      "vehicles": 11,
+      "occupied": 249,
+      "capacity": 440,
+      "utilization": 56.6,
+      "operating_balance_last_game_year": 2569233,
+      "ordered_towns": [
+        "Port des Alizés",
+        "Port des Alizés",
+        "Port des Alizés"
+      ]
+    },
+    {
+      "id": "line-070",
+      "name": "WC Rohöl,Treibstoff-AnsDor-PordesAli-IC-1",
+      "mode": "Schiff (Güter/Misch)",
+      "stops": 3,
+      "vehicles": 9,
+      "occupied": 104,
+      "capacity": 180,
+      "utilization": 57.8,
+      "operating_balance_last_game_year": 1409207,
+      "ordered_towns": [
+        "Anse Dorée",
+        "Anse Dorée",
+        "Port des Alizés"
+      ]
+    },
+    {
+      "id": "line-071",
+      "name": "WC Chemikalien-Lam-PordesAli-IC-1",
+      "mode": "Schiff (Güter/Misch)",
+      "stops": 2,
+      "vehicles": 40,
+      "occupied": 320,
+      "capacity": 800,
+      "utilization": 40,
+      "operating_balance_last_game_year": -2697085,
+      "ordered_towns": [
+        "Lamballe-Armor",
+        "Port des Alizés"
+      ]
+    },
+    {
+      "id": "line-072",
+      "name": "TP Passagiere-PordesAli-AnsDor-RE-1",
+      "mode": "Personenzug",
+      "stops": 8,
+      "vehicles": 10,
+      "occupied": 616,
+      "capacity": 1140,
+      "utilization": 54,
+      "operating_balance_last_game_year": 22785421,
+      "ordered_towns": [
+        "Port des Alizés",
+        "Pointe des Pêcheurs",
+        "Bourg-l’Écorce",
+        "Valmorin",
+        "Anse Dorée",
+        "Valmorin",
+        "Bourg-l’Écorce",
+        "Pointe des Pêcheurs"
+      ]
+    },
+    {
+      "id": "line-073",
+      "name": "Bus Passagiere-Bou-LO-6",
+      "mode": "Bus",
+      "stops": 4,
+      "vehicles": 3,
+      "occupied": 16,
+      "capacity": 18,
+      "utilization": 88.9,
+      "operating_balance_last_game_year": 56139,
+      "ordered_towns": [
+        "Bourg-l’Écorce",
+        "Bourg-l’Écorce",
+        "Bourg-l’Écorce",
+        "Bourg-l’Écorce"
+      ]
+    },
+    {
+      "id": "line-074",
+      "name": "WC Passagiere,Rohöl,Treibstoff-PoidesPêc-PordesAli-IC-1",
+      "mode": "Schiff (Güter/Misch)",
+      "stops": 3,
+      "vehicles": 3,
+      "occupied": 40,
+      "capacity": 60,
+      "utilization": 66.7,
+      "operating_balance_last_game_year": 1218270,
+      "ordered_towns": [
+        "Pointe des Pêcheurs",
+        "Pointe des Pêcheurs",
+        "Port des Alizés"
+      ]
+    },
+    {
+      "id": "line-075",
+      "name": "RC Bretter-Val-LO-1",
+      "mode": "Straße (Güter/Misch)",
+      "stops": 2,
+      "vehicles": 3,
+      "occupied": 20,
+      "capacity": 30,
+      "utilization": 66.7,
+      "operating_balance_last_game_year": -67042,
+      "ordered_towns": [
+        "Valmorin",
+        "Valmorin"
+      ]
+    },
+    {
+      "id": "line-076",
+      "name": "RC Sugar,Gemüse-PordesAli-LO-2",
+      "mode": "Straße (Güter/Misch)",
+      "stops": 2,
+      "vehicles": 8,
+      "occupied": 10,
+      "capacity": 80,
+      "utilization": 12.5,
+      "operating_balance_last_game_year": 79871,
+      "ordered_towns": [
+        "Port des Alizés",
+        "Port des Alizés"
+      ]
+    },
+    {
+      "id": "line-077",
+      "name": "WC Passagiere,Fisch-PoidesPêc-LO-1",
+      "mode": "Schiff (Güter/Misch)",
+      "stops": 2,
+      "vehicles": 1,
+      "occupied": 20,
+      "capacity": 20,
+      "utilization": 100,
+      "operating_balance_last_game_year": 26096,
+      "ordered_towns": [
+        "Pointe des Pêcheurs",
+        "Pointe des Pêcheurs"
+      ]
+    },
+    {
+      "id": "line-078",
+      "name": "WC Passagiere,Fisch-PoidesPêc-LO-2",
+      "mode": "Schiff (Güter/Misch)",
+      "stops": 2,
+      "vehicles": 1,
+      "occupied": 2,
+      "capacity": 20,
+      "utilization": 10,
+      "operating_balance_last_game_year": -52225,
+      "ordered_towns": [
+        "Pointe des Pêcheurs",
+        "Pointe des Pêcheurs"
+      ]
+    },
+    {
+      "id": "line-079",
+      "name": "WC Passagiere,Werkzeuge,Bretter-Ram-Val-IC-1",
+      "mode": "Schiff (Güter/Misch)",
+      "stops": 2,
+      "vehicles": 6,
+      "occupied": 0,
+      "capacity": 120,
+      "utilization": 0,
+      "operating_balance_last_game_year": -603884,
+      "ordered_towns": [
+        "Rambervillers",
+        "Valmorin"
+      ]
+    },
+    {
+      "id": "line-080",
+      "name": "WC Passagiere,Kunststoff-Ram-LeRov-IC-1",
+      "mode": "Schiff (Güter/Misch)",
+      "stops": 2,
+      "vehicles": 2,
+      "occupied": 0,
+      "capacity": 40,
+      "utilization": 0,
+      "operating_balance_last_game_year": -172283,
+      "ordered_towns": [
+        "Rambervillers",
+        "Le Rove"
+      ]
+    },
+    {
+      "id": "line-081",
+      "name": "TC Kunststoff-LeRov-Neu-IC-1",
+      "mode": "Güterzug",
+      "stops": 2,
+      "vehicles": 1,
+      "occupied": 65,
+      "capacity": 120,
+      "utilization": 54.2,
+      "operating_balance_last_game_year": -1152673,
+      "ordered_towns": [
+        "Le Rove",
+        "Neuilly-Plaisance"
+      ]
+    },
+    {
+      "id": "line-082",
+      "name": "WC Passagiere,Chemikalien,Farbstoffe,+1-Neu-LO-1",
+      "mode": "Schiff (Güter/Misch)",
+      "stops": 2,
+      "vehicles": 12,
+      "occupied": 33,
+      "capacity": 480,
+      "utilization": 6.9,
+      "operating_balance_last_game_year": -1030615,
+      "ordered_towns": [
+        "Neuilly-Plaisance",
+        "Neuilly-Plaisance"
+      ]
+    },
+    {
+      "id": "line-083",
+      "name": "RC Passagiere,Getreide-AnsDor-LO-1",
+      "mode": "Straße (Güter/Misch)",
+      "stops": 2,
+      "vehicles": 17,
+      "occupied": 100,
+      "capacity": 170,
+      "utilization": 58.8,
+      "operating_balance_last_game_year": -275327,
+      "ordered_towns": [
+        "Anse Dorée",
+        "Anse Dorée"
+      ]
+    },
+    {
+      "id": "line-084",
+      "name": "TC Holz,Bretter-Val-Bou-IC-1",
+      "mode": "Güterzug",
+      "stops": 2,
+      "vehicles": 3,
+      "occupied": 208,
+      "capacity": 312,
+      "utilization": 66.7,
+      "operating_balance_last_game_year": 2288233,
+      "ordered_towns": [
+        "Valmorin",
+        "Bourg-l’Écorce"
+      ]
+    },
+    {
+      "id": "line-085",
+      "name": "TC Konserven,Fisch,Fleisch-PoidesPêc-Val-RE-1",
+      "mode": "Güterzug",
+      "stops": 3,
+      "vehicles": 2,
+      "occupied": 100,
+      "capacity": 208,
+      "utilization": 48.1,
+      "operating_balance_last_game_year": -9620,
+      "ordered_towns": [
+        "Pointe des Pêcheurs",
+        "Bourg-l’Écorce",
+        "Valmorin"
+      ]
+    }
+  ],
+  "ordered_town_names_provenance": "Übernommene Ortsfolge aus der Tabelle 'Linien · Orte in Haltestellenfolge' des Exports 1911-04-13. Gleichlautende Kürzel können andere Orte meinen, deswegen explizite Ortslisten."
+}
