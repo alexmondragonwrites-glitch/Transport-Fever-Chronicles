@@ -358,6 +358,438 @@
       }
     },
     {
+      "id": "1912-02-kipper",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1912-02",
+      "lead": true,
+      "rubrik": "Neue Fahrzeugmodelle",
+      "titel": "Siebenundzwanzig Kipper in drei Tagen",
+      "teaser": "Der Sekretär mit dem Eselsohr hat sich durchgesetzt: Die Société kauft ihre ersten Motorlastwagen, und zwar gleich in Massen.",
+      "body": [
+        "Wer Anfang Februar 1912 an den Hof der Société in Anse Dorée kam, glaubte an einen Jahrmarkt. Zwischen dem 1. und dem 3. Februar rollten dort siebenundzwanzig nagelneue Benz Dreitonner Kipper vom Schiff, frisch lackiert und knatternd. Kinder liefen nebenher, die Hühner liefen davon.",
+        "Schon im Januar hatte die Gesellschaft vorsichtig angefangen: drei Kesselwagen 1912 zwischen dem 18. und dem 26. Januar, am 23. Januar der erste gedeckte Güterwagen. Mit den Kippern aber beginnt im Archipel das Zeitalter des Motors auf der Straße.",
+        "Wohin sie fahren, steht inzwischen fest. Siebzehn Kipper bringen in Anse Dorée Getreide und Fahrgäste, sechs fahren Eisenerz nach Bourg-l’Écorce, vier schaufeln auf Roche-Noire Kohle. Und auf Roche-Noire selbst gibt es Grund zum Feiern: Am 21. Februar zählt die Insel erstmals über 500 Einwohner."
+      ],
+      "grounding": "Kaufdaten und Modelle laut Spielmonitor-Revision 15 (Kaufdatum laut Spiel). Gemessen: 27 Benz Dreitonner Kipper, gekauft 01.–03.02.1912; Kesselwagen 1912 gekauft 18.–26.01.1912 (3 Wagen); erster Gedeckter Güterwagen 1910 gekauft 23.01.1912. Linien im September 1912: RC Passagiere,Getreide-AnsDor-LO-1 (17 Kipper), RC Passagiere,Eisenerz-AnsDor-Bou-IC-1 (6), RC Passagiere,Kohle-Roc-LO-1 (4). Roche-Noire 501 Einwohner am 21.02.1912. Erfunden: Szene im Hof, Anlieferung per Schiff, Lack, Kinder und Hühner; wo die Kipper im Februar eingesetzt waren, ist erst ab der Septembermessung belegt.",
+      "refs": {
+        "staedte": [
+          174645,
+          174601,
+          174605
+        ],
+        "linien": [
+          291436,
+          349234,
+          351628
+        ],
+        "personen": [],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1912-03-chauffeur",
+      "typ": "interview",
+      "art": "fiktion",
+      "date": "1912-03",
+      "rubrik": "Gespräch",
+      "titel": "„Früher habe ich Kohle geschaufelt, heute drehe ich an der Kurbel“",
+      "teaser": "Maximilien Ozier fährt einen der neuen Benz-Kastenwagen durch Anse Dorée. Ein Gespräch über Kurbeln, Ketten und Gemüse.",
+      "partner": {
+        "name": "Maximilien Ozier",
+        "rolle": "Fahrer auf der Gemüselinie in Anse Dorée"
+      },
+      "fragen": [
+        {
+          "frage": "Monsieur Ozier, seit wann fahren Sie einen Benz?",
+          "antwort": "Seit März. Am 5. März kam der erste Kastenwagen, und dann ging es Schlag auf Schlag. Auf meiner Linie in Anse Dorée fahren jetzt siebzehn Stück, alle gleich, alle Benz."
+        },
+        {
+          "frage": "Und vorher?",
+          "antwort": "Vorher Dampf. Die Gesellschaft hat noch über hundert Dampfkraftwagen, den letzten hat sie am 11. März gekauft, eine Woche nach meinem Benz. Aber wer einmal ohne Kessel gefahren ist, will nicht mehr zurück. Ich kurble, er springt an, fertig."
+        },
+        {
+          "frage": "Was fahren Sie?",
+          "antwort": "Gemüse vor allem, manchmal Fisch. Kleidung steht auch auf dem Fahrplan, aber gesehen habe ich noch keine. Den Treibstoff hat man uns im März abgenommen, dafür fährt jetzt eine eigene Linie mit sechs Wagen."
+        },
+        {
+          "frage": "Ist die Linie gut ausgelastet?",
+          "antwort": "Ehrlich gesagt fahren wir oft mit halbleeren Kästen. Bei der letzten Zählung waren 34 von 204 Plätzen belegt. Die Buchhalter schauen schon böse. Aber das Gemüse kommt an: Anse Dorée ist zu mehr als der Hälfte versorgt."
+        }
+      ],
+      "grounding": "Kaufdaten und Modelle laut Spielmonitor-Revision 15 (Kaufdatum laut Spiel). Gemessen: erster Benz Dreitonner Kasten gekauft 05.03.1912; letzter Dampfkraftwagen gekauft 11.03.1912, im September 1912 noch 139 Dampfkraftwagen. Linie RC Gemüse,Kleidung-AnsDor-LO-1 im September 1912 mit 17 Benz Kasten, 34 von 204 Plätzen belegt, Bordladung Fisch und Gemüse; Treibstoff entfällt am 12.03.1912, RC Treibstoff-AnsDor-LO-1 am selben Tag von 2 auf 6 Fahrzeuge. Anse Dorée: Gemüse 168 von 273 gedeckt, Kleidung 0 von 136. Erfunden: Fahrer, Name, Kurbel-Anekdote, alle Antworten; welche Fahrzeuge vorher auf der Linie fuhren, ist nicht gemessen.",
+      "refs": {
+        "staedte": [
+          174645
+        ],
+        "linien": [
+          271118,
+          286842
+        ],
+        "personen": [],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1912-03-portraet-isidore",
+      "typ": "portraet",
+      "art": "fiktion",
+      "date": "1912-03",
+      "rubrik": "Menschen im Archipel",
+      "titel": "Isidore Lubin ist wieder ohne Arbeit",
+      "teaser": "Im August 1911 hatte er endlich wieder eine Stelle. Seit dem 4. März 1912 verzeichnen die Bücher keine mehr.",
+      "body": [
+        "Es hätte die Geschichte eines Neuanfangs sein können. Im August 1911 stand neben dem Namen von Isidore Lubin aus Valmorin nach langer Zeit wieder ein Arbeitsplatz. Ein gutes halbes Jahr später, am 4. März 1912, ist er wieder verschwunden.",
+        "Seitdem ist Isidore viel unterwegs, meistens mit dem öffentlichen Verkehr, manchmal zu Fuß. In den Messungen des Jahres 1912 hat er nur in 8 von 48 Fällen eine Arbeit. Sein Zufriedenheitswert liegt im Mittel bei 0,81, deutlich unter den 0,94 des Vorjahres.",
+        "Die Redaktion stellt sich vor, dass er jeden Morgen an der Haltestelle der Omnibusse in Valmorin steht, die seit Juli voller sind denn je, und in der Stadt nach Arbeit fragt. Im „Au Quai des Collines“ hat Mathurin ihm angeboten, beim Kreideanschreiben der Wetten zu helfen. Bezahlt wird in Ti-Punch."
+      ],
+      "grounding": "Gemessen (Person 54586 der Beobachtungsgruppe): Wohnort Valmorin; Arbeitsplatz ab 08.08.1911; kein Arbeitsplatz erfasst ab 04.03.1912; 1912 in 8 von 48 Messungen mit Arbeitsplatz, 34 ÖV- und 14 Fußwege; Zufriedenheitsrohwert Mittel 1912 0,81 (1911: 0,94; Skala nicht validiert). Bus Passagiere-Val-LO-1 seit 17.07.1912 mit 22 statt 14 Fahrzeugen. Erfunden: Name, Morgenroutine, Arbeitssuche, Mathurins Angebot.",
+      "refs": {
+        "staedte": [
+          174607
+        ],
+        "linien": [
+          212152
+        ],
+        "personen": [
+          54586
+        ],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1912-04-portraet-solange",
+      "typ": "portraet",
+      "art": "fiktion",
+      "date": "1912-04",
+      "rubrik": "Menschen im Archipel",
+      "titel": "Solange Laurent fährt Auto",
+      "teaser": "In Anse Dorée knattern seit dem Frühjahr die Benz-Lastwagen. Am 5. April setzt sich auch Solange Laurent zum ersten Mal ans Steuer.",
+      "body": [
+        "Bis zum Frühjahr 1912 war Solange Laurent eine Fußgängerin, wie die meisten in Anse Dorée. Dann kamen die Motoren. Erst die Kipper im Februar, dann die Kastenwagen im März, und am 5. April 1912 verzeichnen die Messbücher den ersten Weg, den Solange mit dem Automobil zurücklegt.",
+        "Seitdem fährt sie gern. Von 48 Messungen des Jahres 1912 ist sie in 24 mit dem Auto unterwegs, in 18 zu Fuß und nur in 6 mit Bus oder Bahn. Ihr Zufriedenheitswert steht durchgehend auf dem Höchstwert.",
+        "Die Redaktion sieht sie mit Schutzbrille und Seidentuch über die Küstenstraße fahren, den Lastwagen der Société hinterher, und den Leuten am Straßenrand zuwinkend. Nur eines trübt den Sommer: Seit dem 10. August ist für Solange kein Arbeitsplatz mehr erfasst. Vielleicht, so meint man im Dorf, fährt sie jetzt einfach nur noch zum Vergnügen."
+      ],
+      "grounding": "Gemessen (Person 63194 der Beobachtungsgruppe): Wohnort Anse Dorée; Arbeitsplatz ab 27.02.1912; erster Autoweg 05.04.1912; 1912 von 48 Messungen 24 Auto, 18 zu Fuß, 6 ÖV; kein Arbeitsplatz erfasst ab 10.08.1912; Zufriedenheitsrohwert 1912 im Mittel 1,0 (Skala nicht validiert). Benz Kipper ab 01.02.1912, Benz Kasten ab 05.03.1912 (Kaufdatum laut Spiel). Erfunden: Name, Schutzbrille, Seidentuch, Küstenstraße, Dorfgerede; ob sie ein eigenes Auto besitzt, ist nicht gemessen.",
+      "refs": {
+        "staedte": [
+          174645
+        ],
+        "linien": [],
+        "personen": [
+          63194
+        ],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1912-06-bourg",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1912-06",
+      "lead": true,
+      "rubrik": "Stadtleben",
+      "titel": "Zweieinhalbtausend und kein Tropfen Rum",
+      "teaser": "Bourg-l’Écorce ist die erste Stadt des Archipels mit 2.500 Einwohnern. Im „Café de la Gare“ fehlt trotzdem das Wichtigste.",
+      "body": [
+        "Am 20. Juni 1912 zählt Bourg-l’Écorce 2.507 Einwohner. Keine Stadt des Archipels ist größer, und keine wächst so verlässlich: 1904 lebten hier 673 Menschen. Bis zum September kommen weitere 60 dazu.",
+        "Der Takt der Stadt sind die dreizehn AEG-Triebwagen der Straßenbahn. Sie fahren alle anderthalb Minuten, und trotzdem stehen bei der letzten Zählung 90 Menschen an den Haltestellen. Fast die Hälfte aller Wege in Bourg-l’Écorce führt inzwischen über das Netz der Société.",
+        "Nur im „Café de la Gare“ ist die Stimmung gedämpft. Die Stadt verlangt nach 300 Einheiten Rum und bekommt keinen einzigen Tropfen. Möbel fehlen ebenso, und vom Fisch kommt nur ein Sechstel an. „Wir sind eine Großstadt“, sagt die Wirtin, „aber trinken müssen wir wie ein Dorf: Wasser.“"
+      ],
+      "grounding": "Gemessen: Bourg-l’Écorce 2.507 Einwohner (belegter Wohnraum) am 20.06.1912, 2.567 im September 1912, 673 im Dezember 1904; Tram Passagiere-Bou-LO-1 mit 13 AEG Triebwagen, Takt 87 s, 90 Wartende (September 1912); Netzanteil der Wege 47 %. Warenbedarf September 1912: Rum 300, gedeckt 0; Möbel 280, gedeckt 0; Fisch 600, gedeckt 106. Erfunden: Wirtin, Zitat, Stimmung im Café; das „Café de la Gare“ stammt aus einer früheren Kolumne.",
+      "refs": {
+        "staedte": [
+          174605
+        ],
+        "linien": [
+          321181
+        ],
+        "personen": [],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1912-07-valmorin-busse",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1912-07",
+      "lead": true,
+      "rubrik": "Verkehr",
+      "titel": "Valmorin steigt ein",
+      "teaser": "Acht neue Omnibusse auf einen Schlag: Die Stadtlinie in Valmorin wächst auf 22 Wagen. Leer bleiben sie nicht.",
+      "body": [
+        "Mitte Juli 1912 kauft die Société ihre bislang letzten Omnibusse vom Typ L’Obéissante, und am 17. Juli fährt die Stadtlinie in Valmorin plötzlich mit 22 statt 14 Wagen. Wer an der Hauptstraße wohnt, hört seitdem alle paar Minuten das Rattern der Räder.",
+        "Nötig war es. Bei der letzten Messung im September sind 128 von 132 Plätzen besetzt, und 87 Menschen warten trotzdem an den Haltestellen. Valmorin ist die Stadt des Archipels, deren Bewohner am häufigsten das Netz der Société benutzen: 73 von hundert Wegen führen darüber.",
+        "Die Linie lohnt sich auch für die Gesellschaft. Über ein Jahr gerechnet fahren die Busse gut eine Million ein. Am Busbahnhof erzählt man sich, der Schaffner kenne inzwischen jeden Fahrgast beim Namen und jeden zweiten bei seinen Schulden."
+      ],
+      "grounding": "Kaufdaten und Modelle laut Spielmonitor-Revision 15 (Kaufdatum laut Spiel). Gemessen: L’Obéissante zuletzt gekauft 16.07.1912; Bus Passagiere-Val-LO-1 am 17.07.1912 von 14 auf 22 Fahrzeuge; September 1912: 22 L’Obéissante, 128 von 132 Plätzen belegt, 87 Wartende, rollierende Jahresbilanz 1.053.742 (ohne Investitionen); Valmorin Netzanteil der Wege 73 %, der höchste aller Städte. Erfunden: Hauptstraße, Busbahnhof, Schaffner. Belegt ist nur das letzte Kaufdatum, nicht der Kauf aller acht Wagen.",
+      "refs": {
+        "staedte": [
+          174607
+        ],
+        "linien": [
+          212152
+        ],
+        "personen": [],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1912-08-tresen-rum",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1912-08",
+      "rubrik": "Am Tresen",
+      "venue": {
+        "name": "Chez Honorine",
+        "place": "Port des Alizés, am Hafen"
+      },
+      "titel": "Port des Alizés: Zuckerrohr, aber keine Flaschen",
+      "teaser": "In La Wantzenau wächst neues Zuckerrohr. Honorine hat ausgerechnet, wann der erste Rum kommt, und lacht dabei nicht.",
+      "body": [
+        "Zwei Jahre ist es her, dass man bei Honorine am Hafen sagte: Zucker ja, Rum nein. Seitdem hat sich viel getan, nur am Rum nicht. Port des Alizés verlangt nach 176 Einheiten, Bourg-l’Écorce nach 300, Pointe des Pêcheurs nach 135. Gedeckt: nichts, nirgends.",
+        "Als am 21. August die Nachricht kommt, in La Wantzenau sei eine neue Zuckerrohrfarm angelegt worden, gibt Honorine trotzdem keine Runde aus. Sie hat eine Kreidetafel neben die Theke gehängt und die Kette aufgemalt: Zuckerrohr, dann Melasse, dann die Brennerei, und die Brennerei braucht Glas für die Flaschen.",
+        "„Brennereien haben wir zwei“, sagt sie und tippt auf die Tafel, „in Melle und in Lardy. Beide stehen still. Und die Glashütte in Lardy, gegründet im Februar, steht auch still, weil ihr der Sand fehlt.“ Ein Matrose fragt, ob man Rum nicht auch aus dem Fass trinken könne. Honorine wischt die Tafel nicht ab. Sie wird sie noch brauchen."
+      ],
+      "grounding": "Gemessen: Neugründung La Wantzenau Sugar Cane Farm 21.08.1912 (Stufe 10, Produktion 12/Jahr, Versand 0); weitere Zuckerrohrfarmen, u. a. Montceau-les-Mines (Stufe 19, Versand 130). Rumbedarf September 1912: Port des Alizés 176, Bourg-l’Écorce 300, Pointe des Pêcheurs 135, jeweils gedeckt 0. Melle Rum Distillery und Lardy Rum Distillery Stufe 1 ohne Produktion, Eingänge Melasse und Glas; Lardy Glashütte seit 17.02.1912, Stufe 1 ohne Produktion, Eingang Sand. Erfunden: Honorine, Tafel, Matrose; „Chez Honorine“ stammt aus einer früheren Kolumne. Die Zwischenstufe Melasse ist eine Annahme aus den Betriebseingängen.",
+      "refs": {
+        "staedte": [
+          174632,
+          174603,
+          174612,
+          174621,
+          174605,
+          174602
+        ],
+        "linien": [],
+        "personen": [],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1912-09-roche-noire",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1912-09",
+      "lead": true,
+      "rubrik": "Titelseite",
+      "titel": "Roche-Noire, die Insel, die nicht stillsteht",
+      "teaser": "Keine Stadt wächst 1912 so schnell wie die Kohleinsel: ein Drittel mehr Einwohner in neun Monaten, ein Bauernhof, der endlich liefert, und Lastwagen mit Motor.",
+      "body": [
+        "Im Dezember 1911 lebten auf Roche-Noire 462 Menschen. Im September 1912 sind es 613. Ein Drittel mehr in neun Monaten: Keine Stadt des Archipels ist in dieser Zeit schneller gewachsen. Wer heute mit dem Schiff aus Valmorin anlegt, muss sich seinen Platz erkämpfen; die Dampfer der Linie sind voll beladen mit Brettern, Kohle und Menschen.",
+        "Auf der Insel selbst hat sich das Leben verändert. Der Bauernhof, im August 1911 gegründet, ist im Juni auf Stufe 8 gewachsen. Waren es zu Weihnachten 1911 noch 4 Einheiten Gemüse auf den Märkten, sind es jetzt 43. Fünf Benz-Kastenwagen bringen es aus den Feldern in die Stadt, vier Benz-Kipper fahren die Kohle, und auf der Bretterlinie sind seit März neun Dampfkraftwagen unterwegs statt sechs.",
+        "Im „Le Puits“, der Kneipe am alten Förderturm, erzählt man sich, dass die Insel jetzt endlich ihren Namen verdient: schwarz vom Fels, aber voller Leben. Nur Zucker bleibt ein Wunsch. 120 Einheiten verlangt die Stadt, angekommen ist keine."
+      ],
+      "grounding": "Kaufdaten und Modelle laut Spielmonitor-Revision 15 (Kaufdatum laut Spiel). Gemessen: Roche-Noire 462 Einwohner (Dezember 1911), 613 (September 1912), stärkstes Wachstum aller Städte in diesem Zeitraum; Roche-Noire Bauernhof gegründet 08.08.1911, Stufe 8 seit 02.06.1912, Produktion 94/Jahr; Gemüse gedeckt 4 von 104 (Dezember 1911) bzw. 43 von 120 (September 1912); Sugar 0 von 120. Linien September 1912: RC Gemüse-Roc-LO-1 mit 5 Benz Kasten, RC Passagiere,Kohle-Roc-LO-1 mit 4 Benz Kipper, RC Bretter-Roc-LO-1 seit 04.03.1912 mit 9 statt 6 Fahrzeugen (Dampfkraftwagen); Schiffslinie Valmorin–Roche-Noire (Dunara Castle) 200 von 200 Plätzen belegt. Erfunden: Szenen beim Anlegen, Kneipengespräch, Förderturm; „Le Puits“ stammt aus einer früheren Kolumne.",
+      "refs": {
+        "staedte": [
+          174601,
+          174607
+        ],
+        "linien": [
+          358605,
+          351628,
+          354698,
+          354366
+        ],
+        "personen": [],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1912-09-interview-leandre",
+      "typ": "interview",
+      "art": "fiktion",
+      "date": "1912-09",
+      "rubrik": "Gespräch",
+      "titel": "„Auf Roche-Noire fährt man jetzt Bus. Stellen Sie sich das vor!“",
+      "teaser": "Léandre Rosemond lebt auf der Kohleinsel und nimmt fast jeden Weg mit dem öffentlichen Verkehr. Sein Vetter fährt die große Bahn auf der Hauptinsel.",
+      "partner": {
+        "name": "Léandre Rosemond",
+        "rolle": "Bewohner von Roche-Noire",
+        "person": 110038
+      },
+      "fragen": [
+        {
+          "frage": "Monsieur Rosemond, wie kommen Sie auf der Insel herum?",
+          "antwort": "Mit dem Bus, fast immer. Von achtundvierzig Wegen dieses Jahr bin ich neununddreißig gefahren. Mein Großvater hätte mich ausgelacht. Auf einer Insel fährt man doch nicht Bus!"
+        },
+        {
+          "frage": "Was hat sich 1912 verändert?",
+          "antwort": "Alles wird mehr. Mehr Leute, mehr Gemüse, mehr Lärm von den Lastwagen. Im April hatte ich zwei Wochen keine Arbeit, das war ein Schreck, aber am 27. war ich wieder dabei. Auf Roche-Noire wird gerade jeder gebraucht."
+        },
+        {
+          "frage": "Ihr Vetter Hippolyte fährt die RE-1 auf der Hauptinsel. Beneiden Sie ihn?",
+          "antwort": "Ich? Er hat 264 Leute auf dem Bahnsteig stehen, die alle gleichzeitig wollen. Ich habe meinen Bus und meinen Fischmarkt. Wenn er mich besuchen will, soll er das Schiff nehmen wie alle anderen."
+        }
+      ],
+      "grounding": "Gemessen (Person 110038 der Beobachtungsgruppe): Wohnort Roche-Noire; 1912 von 48 Messungen 39 ÖV, 9 zu Fuß; kein Arbeitsplatz ab 13.04.1912, wieder Arbeitsplatz ab 27.04.1912; Zufriedenheitsrohwert 1912 im Mittel 0,96 (Skala nicht validiert). Auf Roche-Noire fahren zwei Buslinien mit 10 L’Obéissante. RE-1 im September 1912: 264 Wartende. Erfunden: Name, Vetter Hippolyte (aus einem früheren Gespräch), Großvater, Fischmarkt, alle Antworten; welches ÖV-Mittel er nutzt, ist nicht gemessen.",
+      "refs": {
+        "staedte": [
+          174601
+        ],
+        "linien": [
+          179398,
+          335221,
+          322356
+        ],
+        "personen": [
+          110038
+        ],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1912-09-tresen-kleider",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1912-09",
+      "rubrik": "Am Tresen",
+      "venue": {
+        "name": "Au Quai des Collines",
+        "place": "Valmorin"
+      },
+      "titel": "Valmorin: Fünf Linien und kein Hemd",
+      "teaser": "Der Wagen mit Dach ist gekommen, die Benz-Lastwagen auch. Mathurin schuldet trotzdem zwei Runden.",
+      "body": [
+        "Man muss es Mathurin lassen: Er hatte recht, irgendwie. Im Januar setzte er zwei Runden Ti-Punch darauf, dass die Kleidung kommt, sobald der Wagen mit Dach kommt. Der Wagen kam. Seit dem 23. Januar besitzt die Société gedeckte Güterwagen, und im September fahren beide Güterzüge von Pointe des Pêcheurs nach Valmorin damit, Kleidung an Bord.",
+        "Damit nicht genug. Seit April fahren drei Benz-Kastenwagen eine eigene Kleidungslinie von Anse Dorée nach Valmorin, randvoll, 36 von 36 Plätzen. Im Juni kam die Kleidung auf den zweiten Güterzug, im Juli auf zwei Lastwagenlinien in der Stadt. Fünf Linien führen jetzt das Wort Kleidung im Namen und halten in Valmorin.",
+        "Und im Geschäft an der Hauptstraße? Nichts. 72 Einheiten Kleidung verlangt die Stadt, gedeckt: null. Der alte Anselme hat eine neue Theorie: Die Kleidung fahre so gern Bahn, dass sie gar nicht mehr aussteigen wolle. Lucie vom Bahnhof hat die Kreide übernommen und einen neuen Strich an den Balken gemacht. Mathurin zahlt seine zwei Runden, und Isidore Lubin, der beim Anschreiben hilft, bekommt die erste."
+      ],
+      "grounding": "Kaufdaten und Modelle laut Spielmonitor-Revision 15 (Kaufdatum laut Spiel). Gemessen: erster Gedeckter Güterwagen 1910 gekauft 23.01.1912; September 1912 TC Kleidung,Konserven,Wolle-PoidesPêc-Val-RE-1 (1 gedeckter Güterwagen) und TC Kleidung,Konserven,Fisch,+1-PoidesPêc-Val-RE-1 (2 gedeckte Güterwagen), jeweils Kleidung an Bord; RC Kleidung-AnsDor-Val-IC-1 seit 13.04.1912 mit 3 Benz Kasten, 36 von 36 Plätzen, Kleidung an Bord; Kleidung neu auf dem Güterzug 22.06.1912 sowie auf RC Fleisch,Bretter,Kleidung-Val-LO-1 (04.07.1912) und RC Fleisch,Kleidung-Val-LO-1 (08.07.1912). Valmorin Kleidung 72, gedeckt 0 (September 1912); Anse Dorée Kleidung 136, gedeckt 0. Erfunden: Wirtshausszene, Personen, Wetten, Theorie; warum keine Kleidung als gedeckt zählt, ist nicht gemessen.",
+      "refs": {
+        "staedte": [
+          174607,
+          174645,
+          174602
+        ],
+        "linien": [
+          176305,
+          363292,
+          380855,
+          326990,
+          296054
+        ],
+        "personen": [
+          54586
+        ],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1912-09-kasse",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1912-09",
+      "rubrik": "Wirtschaft",
+      "titel": "Die Kasse klingelt wieder",
+      "teaser": "Im März stand die Société bei 55 Millionen, im September bei 126. Den größten Anteil fährt eine einzige Bahnlinie ein.",
+      "body": [
+        "Die Buchhalter der Société haben ein gutes Jahr. Im März 1912 meldeten die Bücher einen Kassenstand von 55,7 Millionen, so wenig wie seit langem nicht. Seitdem geht es steil bergauf: 68 Millionen im April, 97 im Juni, 126 im August. Im September stehen 125,9 Millionen zu Buche, fast doppelt so viel wie zu Weihnachten 1911.",
+        "Die einträglichste Linie ist die Personenbahn RE-1 zwischen Port des Alizés und Anse Dorée. Über ein Jahr gerechnet fahren ihre zehn Züge 24,8 Millionen ein, drei Millionen mehr als vor neun Monaten. Gleichzeitig wartet niemand so geduldig wie ihre Fahrgäste: 264 Menschen stehen bei der letzten Zählung auf den Bahnsteigen.",
+        "In der Direktion soll man schon von weiteren Zügen auf der Strecke träumen. Gemessen ist davon nichts. Gemessen ist nur, dass das Netz inzwischen 622 Fahrzeuge auf 96 Linien zählt, darunter 63 Benz-Lastwagen, die es vor einem Jahr noch gar nicht gab."
+      ],
+      "grounding": "Kaufdaten und Modelle laut Spielmonitor-Revision 15 (Kaufdatum laut Spiel). Gemessen: Kassenstand (letzte Detailmessung je Monat) Dezember 1911 63,7 Mio., März 1912 55,7 Mio., April 68,2 Mio., Juni 96,8 Mio., August 126,5 Mio., September 125,9 Mio.; TP Passagiere-PordesAli-AnsDor-RE-1 im September 1912 mit 10 Zügen, rollierende Jahresbilanz 24.752.585 (Dezember 1911: 21.767.246), 706 von 1140 Plätzen belegt, 264 Wartende; Netz 622 Fahrzeuge, 96 Linien; 36 Benz Kasten und 27 Benz Kipper. Erfunden: Buchhalter, Träume der Direktion. Ursachen der Kassenbewegung sind nicht gemessen; die Linienbilanz enthält keine Investitionen und ist kein Anteil an der Kasse.",
+      "refs": {
+        "staedte": [
+          174632,
+          174645
+        ],
+        "linien": [
+          322356
+        ],
+        "personen": [],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1912-07-reclame-obeissante",
+      "typ": "anzeige",
+      "art": "fiktion",
+      "date": "1912-07",
+      "rubrik": "Réclame",
+      "titel": "Omnibus de Valmorin",
+      "anzeige": {
+        "kopf": "Omnibus de Valmorin",
+        "zeilen": [
+          "Jetzt mit 22 Wagen!",
+          "Omnibusse L’Obéissante",
+          "Fahren Sie mit, solange noch Platz ist",
+          "(Es ist selten noch Platz.)"
+        ],
+        "fuss": "Société des Routes et des Rails · Stadtlinie Valmorin"
+      },
+      "grounding": "Kaufdaten und Modelle laut Spielmonitor-Revision 15 (Kaufdatum laut Spiel). Gemessen: Bus Passagiere-Val-LO-1 ab 17.07.1912 mit 22 Fahrzeugen vom Modell L’Obéissante; September 1912: 128 von 132 Plätzen belegt. Erfunden: Werbetext.",
+      "refs": {
+        "staedte": [
+          174607
+        ],
+        "linien": [
+          212152
+        ],
+        "personen": [],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1912-08-reclame-rhum",
+      "typ": "anzeige",
+      "art": "fiktion",
+      "date": "1912-08",
+      "rubrik": "Réclame",
+      "titel": "Rhum des Alizés",
+      "anzeige": {
+        "kopf": "Rhum des Alizés",
+        "zeilen": [
+          "Demnächst!",
+          "Aus bestem Zuckerrohr von La Wantzenau",
+          "Sobald Melasse, Glas und Sand sich finden",
+          "Vorbestellungen bei Honorine am Hafen"
+        ],
+        "fuss": "Brennereien Melle & Lardy · derzeit außer Betrieb"
+      },
+      "grounding": "Gemessen: La Wantzenau Sugar Cane Farm seit 21.08.1912; Melle und Lardy Rum Distillery ohne Produktion (Eingänge Melasse, Glas); Lardy Glashütte ohne Produktion (Eingang Sand); Rumbedarf in drei Städten ungedeckt. Erfunden: Werbetext, Marke, Vorbestellungen.",
+      "refs": {
+        "staedte": [
+          174603,
+          174621,
+          174612,
+          174632
+        ],
+        "linien": [],
+        "personen": [],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1912-09-reclame-benz",
+      "typ": "anzeige",
+      "art": "fiktion",
+      "date": "1912-09",
+      "rubrik": "Réclame",
+      "titel": "63 Benz im Archipel",
+      "anzeige": {
+        "kopf": "Benz Dreitonner",
+        "zeilen": [
+          "63 Wagen im Dienst der Société",
+          "Kipper für Kohle, Erz und Getreide",
+          "Kastenwagen für Gemüse, Konserven und Kleidung",
+          "Von Anse Dorée bis Roche-Noire"
+        ],
+        "fuss": "Seit Februar 1912 im Archipel"
+      },
+      "grounding": "Kaufdaten und Modelle laut Spielmonitor-Revision 15 (Kaufdatum laut Spiel). Gemessen (September 1912): 36 Benz Dreitonner Kasten auf 6 Linien, 27 Benz Dreitonner Kipper auf 3 Linien; Kipper auf Getreide-, Eisenerz- und Kohlelinien, Kasten u. a. auf Gemüse-, Konserven- und Kleidungslinien in Anse Dorée, Valmorin, Bourg-l’Écorce, Pointe des Pêcheurs und Roche-Noire; erste Käufe 01.02.1912 (Kipper) und 05.03.1912 (Kasten). Erfunden: Werbetext.",
+      "refs": {
+        "staedte": [
+          174645,
+          174601
+        ],
+        "linien": [],
+        "personen": [],
+        "betriebe": []
+      }
+    },
+    {
       "id": "fuhrpark-einordnung",
       "typ": "einordnung",
       "art": "einordnung",
