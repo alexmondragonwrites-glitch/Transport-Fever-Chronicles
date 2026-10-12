@@ -1,0 +1,1533 @@
+{
+  "schema_version": 2,
+  "save_id": "archipel-des-alizes",
+  "game_date": "1911-12-24",
+  "observed_at": "2026-10-12T06:57:34+02:00",
+  "source": "TF3-Mod · Industrien · Einheiten/Jahr, Versand/Jahr, Zulieferung/Jahr und Eingang→Ausgang",
+  "cautions": [
+    "Status ist eine Momentaufnahme, Produktion/Versand/Zulieferung sind Jahreskennzahlen; 'gestoppt' und positive Jahresproduktion sind vereinbar.",
+    "Versandwert 0 beweist noch nicht, dass keine lokal verbrauchte Produktion existiert.",
+    "Zulieferung bei Rohstoffproduzenten kann nicht ohne Rezept-/Zeitraumdefinition als Verbrauch interpretiert werden."
+  ],
+  "industries": [
+    {
+      "id": "industry-001",
+      "name": "Vichy Sandbaggerschiff",
+      "status": "aktiv",
+      "production_per_year": 72,
+      "shipped_per_year": 0,
+      "received_per_year": 0,
+      "inputs": [],
+      "outputs": [
+        "Sand"
+      ],
+      "recipe_text": "→ Sand"
+    },
+    {
+      "id": "industry-002",
+      "name": "Beuvrages Fischzucht",
+      "status": "aktiv",
+      "production_per_year": 65,
+      "shipped_per_year": 0,
+      "received_per_year": 0,
+      "inputs": [],
+      "outputs": [
+        "Fisch"
+      ],
+      "recipe_text": "→ Fisch"
+    },
+    {
+      "id": "industry-003",
+      "name": "Grenay Ölplattform Nord",
+      "status": "aktiv",
+      "production_per_year": 47,
+      "shipped_per_year": 0,
+      "received_per_year": 0,
+      "inputs": [],
+      "outputs": [
+        "Rohöl"
+      ],
+      "recipe_text": "→ Rohöl"
+    },
+    {
+      "id": "industry-004",
+      "name": "Lardy Ölplattform",
+      "status": "aktiv",
+      "production_per_year": 51,
+      "shipped_per_year": 0,
+      "received_per_year": 0,
+      "inputs": [],
+      "outputs": [
+        "Rohöl"
+      ],
+      "recipe_text": "→ Rohöl"
+    },
+    {
+      "id": "industry-005",
+      "name": "Lardy Ölplattform Nord",
+      "status": "aktiv",
+      "production_per_year": 94,
+      "shipped_per_year": 0,
+      "received_per_year": 0,
+      "inputs": [],
+      "outputs": [
+        "Rohöl"
+      ],
+      "recipe_text": "→ Rohöl"
+    },
+    {
+      "id": "industry-006",
+      "name": "Cormontreuil Sandbaggerschiff",
+      "status": "aktiv",
+      "production_per_year": 78,
+      "shipped_per_year": 0,
+      "received_per_year": 0,
+      "inputs": [],
+      "outputs": [
+        "Sand"
+      ],
+      "recipe_text": "→ Sand"
+    },
+    {
+      "id": "industry-007",
+      "name": "Romagnat Ölplattform",
+      "status": "aktiv",
+      "production_per_year": 46,
+      "shipped_per_year": 0,
+      "received_per_year": 0,
+      "inputs": [],
+      "outputs": [
+        "Rohöl"
+      ],
+      "recipe_text": "→ Rohöl"
+    },
+    {
+      "id": "industry-008",
+      "name": "Fontenay-aux-Roses Fischzucht",
+      "status": "aktiv",
+      "production_per_year": 72,
+      "shipped_per_year": 0,
+      "received_per_year": 0,
+      "inputs": [],
+      "outputs": [
+        "Fisch"
+      ],
+      "recipe_text": "→ Fisch"
+    },
+    {
+      "id": "industry-009",
+      "name": "Auch Ölplattform Süd",
+      "status": "aktiv",
+      "production_per_year": 52,
+      "shipped_per_year": 0,
+      "received_per_year": 0,
+      "inputs": [],
+      "outputs": [
+        "Rohöl"
+      ],
+      "recipe_text": "→ Rohöl"
+    },
+    {
+      "id": "industry-010",
+      "name": "Labenne Sandbaggerschiff Ost",
+      "status": "aktiv",
+      "production_per_year": 100,
+      "shipped_per_year": 0,
+      "received_per_year": 0,
+      "inputs": [],
+      "outputs": [
+        "Sand"
+      ],
+      "recipe_text": "→ Sand"
+    },
+    {
+      "id": "industry-011",
+      "name": "Changé Fischzucht",
+      "status": "aktiv",
+      "production_per_year": 13,
+      "shipped_per_year": 0,
+      "received_per_year": 0,
+      "inputs": [],
+      "outputs": [
+        "Fisch"
+      ],
+      "recipe_text": "→ Fisch"
+    },
+    {
+      "id": "industry-012",
+      "name": "Bry-sur-Marne Viehzuchtbetrieb",
+      "status": "aktiv",
+      "production_per_year": 357,
+      "shipped_per_year": 335,
+      "received_per_year": 196,
+      "inputs": [
+        "Getreide"
+      ],
+      "outputs": [
+        "Fleisch",
+        "Wolle"
+      ],
+      "recipe_text": "Getreide → Fleisch + Wolle"
+    },
+    {
+      "id": "industry-013",
+      "name": "Port des Alizés Ölplattform West",
+      "status": "aktiv",
+      "production_per_year": 45,
+      "shipped_per_year": 0,
+      "received_per_year": 0,
+      "inputs": [],
+      "outputs": [
+        "Rohöl"
+      ],
+      "recipe_text": "→ Rohöl"
+    },
+    {
+      "id": "industry-014",
+      "name": "Valenton Fischzucht",
+      "status": "aktiv",
+      "production_per_year": 192,
+      "shipped_per_year": 80,
+      "received_per_year": 82,
+      "inputs": [],
+      "outputs": [
+        "Fisch"
+      ],
+      "recipe_text": "→ Fisch"
+    },
+    {
+      "id": "industry-015",
+      "name": "Port des Alizés Ölplattform",
+      "status": "aktiv",
+      "production_per_year": 309,
+      "shipped_per_year": 293,
+      "received_per_year": 325,
+      "inputs": [],
+      "outputs": [
+        "Rohöl"
+      ],
+      "recipe_text": "→ Rohöl"
+    },
+    {
+      "id": "industry-016",
+      "name": "Anse Dorée Ölplattform",
+      "status": "aktiv",
+      "production_per_year": 49,
+      "shipped_per_year": 0,
+      "received_per_year": 0,
+      "inputs": [],
+      "outputs": [
+        "Rohöl"
+      ],
+      "recipe_text": "→ Rohöl"
+    },
+    {
+      "id": "industry-017",
+      "name": "Floirac Ölplattform",
+      "status": "aktiv",
+      "production_per_year": 96,
+      "shipped_per_year": 96,
+      "received_per_year": 96,
+      "inputs": [],
+      "outputs": [
+        "Rohöl"
+      ],
+      "recipe_text": "→ Rohöl"
+    },
+    {
+      "id": "industry-018",
+      "name": "Meyzieu Ölplattform",
+      "status": "aktiv",
+      "production_per_year": 48,
+      "shipped_per_year": 0,
+      "received_per_year": 0,
+      "inputs": [],
+      "outputs": [
+        "Rohöl"
+      ],
+      "recipe_text": "→ Rohöl"
+    },
+    {
+      "id": "industry-019",
+      "name": "Labenne Sandbaggerschiff",
+      "status": "aktiv",
+      "production_per_year": 104,
+      "shipped_per_year": 0,
+      "received_per_year": 0,
+      "inputs": [],
+      "outputs": [
+        "Sand"
+      ],
+      "recipe_text": "→ Sand"
+    },
+    {
+      "id": "industry-020",
+      "name": "Cassis Fischzucht #1",
+      "status": "aktiv",
+      "production_per_year": 52,
+      "shipped_per_year": 0,
+      "received_per_year": 0,
+      "inputs": [],
+      "outputs": [
+        "Fisch"
+      ],
+      "recipe_text": "→ Fisch"
+    },
+    {
+      "id": "industry-021",
+      "name": "Val de Briey Fischzucht #1",
+      "status": "aktiv",
+      "production_per_year": 33,
+      "shipped_per_year": 0,
+      "received_per_year": 0,
+      "inputs": [],
+      "outputs": [
+        "Fisch"
+      ],
+      "recipe_text": "→ Fisch"
+    },
+    {
+      "id": "industry-022",
+      "name": "Changé Ölplattform",
+      "status": "aktiv",
+      "production_per_year": 96,
+      "shipped_per_year": 0,
+      "received_per_year": 0,
+      "inputs": [],
+      "outputs": [
+        "Rohöl"
+      ],
+      "recipe_text": "→ Rohöl"
+    },
+    {
+      "id": "industry-023",
+      "name": "Combs-la-Ville Fischzucht",
+      "status": "aktiv",
+      "production_per_year": 60,
+      "shipped_per_year": 0,
+      "received_per_year": 0,
+      "inputs": [],
+      "outputs": [
+        "Fisch"
+      ],
+      "recipe_text": "→ Fisch"
+    },
+    {
+      "id": "industry-024",
+      "name": "Cassis Fischzucht",
+      "status": "aktiv",
+      "production_per_year": 52,
+      "shipped_per_year": 0,
+      "received_per_year": 0,
+      "inputs": [],
+      "outputs": [
+        "Fisch"
+      ],
+      "recipe_text": "→ Fisch"
+    },
+    {
+      "id": "industry-025",
+      "name": "Aulnay-sous-Bois Fischzucht",
+      "status": "aktiv",
+      "production_per_year": 104,
+      "shipped_per_year": 108,
+      "received_per_year": 87,
+      "inputs": [],
+      "outputs": [
+        "Fisch"
+      ],
+      "recipe_text": "→ Fisch"
+    },
+    {
+      "id": "industry-026",
+      "name": "Lardy Ölplattform #1",
+      "status": "aktiv",
+      "production_per_year": 92,
+      "shipped_per_year": 0,
+      "received_per_year": 0,
+      "inputs": [],
+      "outputs": [
+        "Rohöl"
+      ],
+      "recipe_text": "→ Rohöl"
+    },
+    {
+      "id": "industry-027",
+      "name": "Enghien-les-Bains Fischzucht",
+      "status": "aktiv",
+      "production_per_year": 66,
+      "shipped_per_year": 0,
+      "received_per_year": 0,
+      "inputs": [],
+      "outputs": [
+        "Fisch"
+      ],
+      "recipe_text": "→ Fisch"
+    },
+    {
+      "id": "industry-028",
+      "name": "Châteauroux Ölplattform",
+      "status": "aktiv",
+      "production_per_year": 96,
+      "shipped_per_year": 0,
+      "received_per_year": 0,
+      "inputs": [],
+      "outputs": [
+        "Rohöl"
+      ],
+      "recipe_text": "→ Rohöl"
+    },
+    {
+      "id": "industry-029",
+      "name": "Lardy Sandbaggerschiff",
+      "status": "aktiv",
+      "production_per_year": 100,
+      "shipped_per_year": 0,
+      "received_per_year": 0,
+      "inputs": [],
+      "outputs": [
+        "Sand"
+      ],
+      "recipe_text": "→ Sand"
+    },
+    {
+      "id": "industry-030",
+      "name": "Neuilly-Plaisance Fischzucht",
+      "status": "aktiv",
+      "production_per_year": 77,
+      "shipped_per_year": 0,
+      "received_per_year": 0,
+      "inputs": [],
+      "outputs": [
+        "Fisch"
+      ],
+      "recipe_text": "→ Fisch"
+    },
+    {
+      "id": "industry-031",
+      "name": "Reichshoffen Ölplattform",
+      "status": "aktiv",
+      "production_per_year": 52,
+      "shipped_per_year": 0,
+      "received_per_year": 0,
+      "inputs": [],
+      "outputs": [
+        "Rohöl"
+      ],
+      "recipe_text": "→ Rohöl"
+    },
+    {
+      "id": "industry-032",
+      "name": "La Wantzenau Ölplattform",
+      "status": "aktiv",
+      "production_per_year": 104,
+      "shipped_per_year": 0,
+      "received_per_year": 0,
+      "inputs": [],
+      "outputs": [
+        "Rohöl"
+      ],
+      "recipe_text": "→ Rohöl"
+    },
+    {
+      "id": "industry-033",
+      "name": "Chamonix-Mont-Blanc Ölplattform",
+      "status": "aktiv",
+      "production_per_year": 100,
+      "shipped_per_year": 0,
+      "received_per_year": 0,
+      "inputs": [],
+      "outputs": [
+        "Rohöl"
+      ],
+      "recipe_text": "→ Rohöl"
+    },
+    {
+      "id": "industry-034",
+      "name": "Auch Ölplattform Ost",
+      "status": "aktiv",
+      "production_per_year": 52,
+      "shipped_per_year": 0,
+      "received_per_year": 0,
+      "inputs": [],
+      "outputs": [
+        "Rohöl"
+      ],
+      "recipe_text": "→ Rohöl"
+    },
+    {
+      "id": "industry-035",
+      "name": "Valenton Ölplattform #1",
+      "status": "aktiv",
+      "production_per_year": 52,
+      "shipped_per_year": 0,
+      "received_per_year": 0,
+      "inputs": [],
+      "outputs": [
+        "Rohöl"
+      ],
+      "recipe_text": "→ Rohöl"
+    },
+    {
+      "id": "industry-036",
+      "name": "Valenton Ölplattform",
+      "status": "aktiv",
+      "production_per_year": 300,
+      "shipped_per_year": 80,
+      "received_per_year": 80,
+      "inputs": [],
+      "outputs": [
+        "Rohöl"
+      ],
+      "recipe_text": "→ Rohöl"
+    },
+    {
+      "id": "industry-037",
+      "name": "Beaucaire Fischzucht",
+      "status": "aktiv",
+      "production_per_year": 60,
+      "shipped_per_year": 0,
+      "received_per_year": 0,
+      "inputs": [],
+      "outputs": [
+        "Fisch"
+      ],
+      "recipe_text": "→ Fisch"
+    },
+    {
+      "id": "industry-038",
+      "name": "Rambervillers Fischzucht",
+      "status": "aktiv",
+      "production_per_year": 78,
+      "shipped_per_year": 0,
+      "received_per_year": 0,
+      "inputs": [],
+      "outputs": [
+        "Fisch"
+      ],
+      "recipe_text": "→ Fisch"
+    },
+    {
+      "id": "industry-039",
+      "name": "Divatte-sur-Loire Fischzucht",
+      "status": "aktiv",
+      "production_per_year": 117,
+      "shipped_per_year": 100,
+      "received_per_year": 52,
+      "inputs": [],
+      "outputs": [
+        "Fisch"
+      ],
+      "recipe_text": "→ Fisch"
+    },
+    {
+      "id": "industry-040",
+      "name": "Val de Briey Fischzucht",
+      "status": "aktiv",
+      "production_per_year": 60,
+      "shipped_per_year": 0,
+      "received_per_year": 0,
+      "inputs": [],
+      "outputs": [
+        "Fisch"
+      ],
+      "recipe_text": "→ Fisch"
+    },
+    {
+      "id": "industry-041",
+      "name": "Grenay Ölplattform",
+      "status": "aktiv",
+      "production_per_year": 52,
+      "shipped_per_year": 0,
+      "received_per_year": 0,
+      "inputs": [],
+      "outputs": [
+        "Rohöl"
+      ],
+      "recipe_text": "→ Rohöl"
+    },
+    {
+      "id": "industry-042",
+      "name": "Changé Ölplattform West",
+      "status": "aktiv",
+      "production_per_year": 104,
+      "shipped_per_year": 0,
+      "received_per_year": 0,
+      "inputs": [],
+      "outputs": [
+        "Rohöl"
+      ],
+      "recipe_text": "→ Rohöl"
+    },
+    {
+      "id": "industry-043",
+      "name": "Beaucaire Bauernhof",
+      "status": "aktiv",
+      "production_per_year": 98,
+      "shipped_per_year": 0,
+      "received_per_year": 0,
+      "inputs": [],
+      "outputs": [
+        "Getreide",
+        "Gemüse"
+      ],
+      "recipe_text": "→ Getreide + Gemüse"
+    },
+    {
+      "id": "industry-044",
+      "name": "Péronne Fahrzeugfabrik",
+      "status": "gestoppt",
+      "production_per_year": 0,
+      "shipped_per_year": 0,
+      "received_per_year": 0,
+      "inputs": [
+        "Blech",
+        "Maschinen",
+        "Reifen"
+      ],
+      "outputs": [
+        "Fahrzeuge"
+      ],
+      "recipe_text": "Blech + Maschinen + Reifen → Fahrzeuge"
+    },
+    {
+      "id": "industry-045",
+      "name": "Gleizé Konservenfabrik",
+      "status": "gestoppt",
+      "production_per_year": 0,
+      "shipped_per_year": 0,
+      "received_per_year": 0,
+      "inputs": [
+        "Fisch",
+        "Fleisch",
+        "Blech"
+      ],
+      "outputs": [
+        "Konserven"
+      ],
+      "recipe_text": "Fisch + Fleisch + Blech → Konserven"
+    },
+    {
+      "id": "industry-046",
+      "name": "Beuvrages Holzfällerlager",
+      "status": "aktiv",
+      "production_per_year": 72,
+      "shipped_per_year": 0,
+      "received_per_year": 0,
+      "inputs": [],
+      "outputs": [
+        "Holz"
+      ],
+      "recipe_text": "→ Holz"
+    },
+    {
+      "id": "industry-047",
+      "name": "Tournus Bauernhof",
+      "status": "aktiv",
+      "production_per_year": 168,
+      "shipped_per_year": 0,
+      "received_per_year": 0,
+      "inputs": [],
+      "outputs": [
+        "Getreide",
+        "Gemüse"
+      ],
+      "recipe_text": "→ Getreide + Gemüse"
+    },
+    {
+      "id": "industry-048",
+      "name": "Gleizé Sugar Cane Farm",
+      "status": "aktiv",
+      "production_per_year": 77,
+      "shipped_per_year": 0,
+      "received_per_year": 0,
+      "inputs": [],
+      "outputs": [
+        "Sugar Cane"
+      ],
+      "recipe_text": "→ Sugar Cane"
+    },
+    {
+      "id": "industry-049",
+      "name": "Labenne Maschinenfabrik",
+      "status": "gestoppt",
+      "production_per_year": 0,
+      "shipped_per_year": 0,
+      "received_per_year": 0,
+      "inputs": [
+        "Stahl",
+        "Kunststoff"
+      ],
+      "outputs": [
+        "Maschinen"
+      ],
+      "recipe_text": "Stahl + Kunststoff → Maschinen"
+    },
+    {
+      "id": "industry-050",
+      "name": "Péronne Bauernhof",
+      "status": "aktiv",
+      "production_per_year": 36,
+      "shipped_per_year": 0,
+      "received_per_year": 0,
+      "inputs": [],
+      "outputs": [
+        "Getreide",
+        "Gemüse"
+      ],
+      "recipe_text": "→ Getreide + Gemüse"
+    },
+    {
+      "id": "industry-051",
+      "name": "Nyons Bauernhof",
+      "status": "aktiv",
+      "production_per_year": 154,
+      "shipped_per_year": 0,
+      "received_per_year": 0,
+      "inputs": [],
+      "outputs": [
+        "Getreide",
+        "Gemüse"
+      ],
+      "recipe_text": "→ Getreide + Gemüse"
+    },
+    {
+      "id": "industry-052",
+      "name": "Garches Sägewerk",
+      "status": "gestoppt",
+      "production_per_year": 0,
+      "shipped_per_year": 0,
+      "received_per_year": 0,
+      "inputs": [
+        "Holz"
+      ],
+      "outputs": [
+        "Bretter"
+      ],
+      "recipe_text": "Holz → Bretter"
+    },
+    {
+      "id": "industry-053",
+      "name": "Le Malesherbois Reifenfabrik",
+      "status": "gestoppt",
+      "production_per_year": 0,
+      "shipped_per_year": 0,
+      "received_per_year": 0,
+      "inputs": [
+        "Gummi"
+      ],
+      "outputs": [
+        "Reifen"
+      ],
+      "recipe_text": "Gummi → Reifen"
+    },
+    {
+      "id": "industry-054",
+      "name": "Sin-le-Noble Glashütte",
+      "status": "gestoppt",
+      "production_per_year": 0,
+      "shipped_per_year": 0,
+      "received_per_year": 0,
+      "inputs": [
+        "Sand"
+      ],
+      "outputs": [
+        "Glas"
+      ],
+      "recipe_text": "Sand → Glas"
+    },
+    {
+      "id": "industry-055",
+      "name": "Reichshoffen Möbelfabrik",
+      "status": "gestoppt",
+      "production_per_year": 0,
+      "shipped_per_year": 0,
+      "received_per_year": 0,
+      "inputs": [
+        "Bretter",
+        "Glas"
+      ],
+      "outputs": [
+        "Möbel"
+      ],
+      "recipe_text": "Bretter + Glas → Möbel"
+    },
+    {
+      "id": "industry-056",
+      "name": "Vichy Bauernhof",
+      "status": "aktiv",
+      "production_per_year": 84,
+      "shipped_per_year": 0,
+      "received_per_year": 0,
+      "inputs": [],
+      "outputs": [
+        "Getreide",
+        "Gemüse"
+      ],
+      "recipe_text": "→ Getreide + Gemüse"
+    },
+    {
+      "id": "industry-057",
+      "name": "Pointe des Pêcheurs Konservenfabrik",
+      "status": "aktiv",
+      "production_per_year": 168,
+      "shipped_per_year": 152,
+      "received_per_year": 95,
+      "inputs": [
+        "Fisch",
+        "Fleisch",
+        "Blech"
+      ],
+      "outputs": [
+        "Konserven"
+      ],
+      "recipe_text": "Fisch + Fleisch + Blech → Konserven"
+    },
+    {
+      "id": "industry-058",
+      "name": "Port des Alizés Stahlwerk",
+      "status": "gestoppt",
+      "production_per_year": 56,
+      "shipped_per_year": 64,
+      "received_per_year": 32,
+      "inputs": [
+        "Eisenerz",
+        "Kohle"
+      ],
+      "outputs": [
+        "Blech",
+        "Stahl"
+      ],
+      "recipe_text": "Eisenerz + Kohle → Blech + Stahl"
+    },
+    {
+      "id": "industry-059",
+      "name": "Val de Briey Kohlebergwerk",
+      "status": "aktiv",
+      "production_per_year": 208,
+      "shipped_per_year": 77,
+      "received_per_year": 48,
+      "inputs": [],
+      "outputs": [
+        "Kohle"
+      ],
+      "recipe_text": "→ Kohle"
+    },
+    {
+      "id": "industry-060",
+      "name": "Lardy Rum Distillery",
+      "status": "gestoppt",
+      "production_per_year": 0,
+      "shipped_per_year": 0,
+      "received_per_year": 0,
+      "inputs": [
+        "Molasses",
+        "Glas"
+      ],
+      "outputs": [
+        "Rum"
+      ],
+      "recipe_text": "Molasses + Glas → Rum"
+    },
+    {
+      "id": "industry-061",
+      "name": "Romagnat Bauernhof",
+      "status": "aktiv",
+      "production_per_year": 112,
+      "shipped_per_year": 0,
+      "received_per_year": 0,
+      "inputs": [],
+      "outputs": [
+        "Getreide",
+        "Gemüse"
+      ],
+      "recipe_text": "→ Getreide + Gemüse"
+    },
+    {
+      "id": "industry-062",
+      "name": "Chamonix-Mont-Blanc Bauernhof",
+      "status": "aktiv",
+      "production_per_year": 98,
+      "shipped_per_year": 0,
+      "received_per_year": 0,
+      "inputs": [],
+      "outputs": [
+        "Getreide",
+        "Gemüse"
+      ],
+      "recipe_text": "→ Getreide + Gemüse"
+    },
+    {
+      "id": "industry-063",
+      "name": "Lamballe-Armor Weberei",
+      "status": "gestoppt",
+      "production_per_year": 112,
+      "shipped_per_year": 106,
+      "received_per_year": 24,
+      "inputs": [
+        "Wolle"
+      ],
+      "outputs": [
+        "Stoff"
+      ],
+      "recipe_text": "Wolle → Stoff"
+    },
+    {
+      "id": "industry-064",
+      "name": "Cournon-d'Auvergne Gummiplantage",
+      "status": "aktiv",
+      "production_per_year": 36,
+      "shipped_per_year": 0,
+      "received_per_year": 0,
+      "inputs": [],
+      "outputs": [
+        "Gummi"
+      ],
+      "recipe_text": "→ Gummi"
+    },
+    {
+      "id": "industry-065",
+      "name": "Cournon-d'Auvergne Holzfällerlager",
+      "status": "aktiv",
+      "production_per_year": 34,
+      "shipped_per_year": 0,
+      "received_per_year": 0,
+      "inputs": [],
+      "outputs": [
+        "Holz"
+      ],
+      "recipe_text": "→ Holz"
+    },
+    {
+      "id": "industry-066",
+      "name": "Rambervillers Werkzeugfabrik",
+      "status": "gestoppt",
+      "production_per_year": 0,
+      "shipped_per_year": 0,
+      "received_per_year": 0,
+      "inputs": [
+        "Bretter",
+        "Kunststoff"
+      ],
+      "outputs": [
+        "Werkzeuge"
+      ],
+      "recipe_text": "Bretter + Kunststoff → Werkzeuge"
+    },
+    {
+      "id": "industry-067",
+      "name": "Reichshoffen Sägewerk",
+      "status": "gestoppt",
+      "production_per_year": 0,
+      "shipped_per_year": 0,
+      "received_per_year": 0,
+      "inputs": [
+        "Holz"
+      ],
+      "outputs": [
+        "Bretter"
+      ],
+      "recipe_text": "Holz → Bretter"
+    },
+    {
+      "id": "industry-068",
+      "name": "Le Malesherbois Sägewerk",
+      "status": "gestoppt",
+      "production_per_year": 0,
+      "shipped_per_year": 0,
+      "received_per_year": 0,
+      "inputs": [
+        "Holz"
+      ],
+      "outputs": [
+        "Bretter"
+      ],
+      "recipe_text": "Holz → Bretter"
+    },
+    {
+      "id": "industry-069",
+      "name": "Neuilly-Plaisance Chemiefabrik",
+      "status": "gestoppt",
+      "production_per_year": 140,
+      "shipped_per_year": 162,
+      "received_per_year": 106,
+      "inputs": [
+        "Chemikalien"
+      ],
+      "outputs": [
+        "Farbstoffe",
+        "Kunststoff"
+      ],
+      "recipe_text": "Chemikalien → Farbstoffe + Kunststoff"
+    },
+    {
+      "id": "industry-070",
+      "name": "Sarrians Bauernhof",
+      "status": "aktiv",
+      "production_per_year": 70,
+      "shipped_per_year": 0,
+      "received_per_year": 0,
+      "inputs": [],
+      "outputs": [
+        "Getreide",
+        "Gemüse"
+      ],
+      "recipe_text": "→ Getreide + Gemüse"
+    },
+    {
+      "id": "industry-071",
+      "name": "Montceau-les-Mines Sugar Cane Farm West",
+      "status": "aktiv",
+      "production_per_year": 48,
+      "shipped_per_year": 0,
+      "received_per_year": 0,
+      "inputs": [],
+      "outputs": [
+        "Sugar Cane"
+      ],
+      "recipe_text": "→ Sugar Cane"
+    },
+    {
+      "id": "industry-072",
+      "name": "Neuilly-Plaisance Ölraffinerie",
+      "status": "gestoppt",
+      "production_per_year": 0,
+      "shipped_per_year": 0,
+      "received_per_year": 0,
+      "inputs": [
+        "Rohöl"
+      ],
+      "outputs": [
+        "Dünger",
+        "Chemikalien",
+        "Treibstoff"
+      ],
+      "recipe_text": "Rohöl → Dünger + Chemikalien + Treibstoff"
+    },
+    {
+      "id": "industry-073",
+      "name": "Port des Alizés Steinbruch",
+      "status": "aktiv",
+      "production_per_year": 208,
+      "shipped_per_year": 0,
+      "received_per_year": 0,
+      "inputs": [],
+      "outputs": [
+        "Stein"
+      ],
+      "recipe_text": "→ Stein"
+    },
+    {
+      "id": "industry-074",
+      "name": "Cormontreuil Sugar Mill",
+      "status": "gestoppt",
+      "production_per_year": 99,
+      "shipped_per_year": 64,
+      "received_per_year": 79,
+      "inputs": [
+        "Sugar Cane"
+      ],
+      "outputs": [
+        "Sugar",
+        "Molasses"
+      ],
+      "recipe_text": "Sugar Cane → Sugar + Molasses"
+    },
+    {
+      "id": "industry-075",
+      "name": "Montceau-les-Mines Sugar Cane Farm",
+      "status": "aktiv",
+      "production_per_year": 207,
+      "shipped_per_year": 150,
+      "received_per_year": 121,
+      "inputs": [],
+      "outputs": [
+        "Sugar Cane"
+      ],
+      "recipe_text": "→ Sugar Cane"
+    },
+    {
+      "id": "industry-076",
+      "name": "La Mulatière Bauernhof",
+      "status": "aktiv",
+      "production_per_year": 60,
+      "shipped_per_year": 0,
+      "received_per_year": 0,
+      "inputs": [],
+      "outputs": [
+        "Getreide",
+        "Gemüse"
+      ],
+      "recipe_text": "→ Getreide + Gemüse"
+    },
+    {
+      "id": "industry-077",
+      "name": "Grenay Kohlebergwerk",
+      "status": "aktiv",
+      "production_per_year": 88,
+      "shipped_per_year": 0,
+      "received_per_year": 0,
+      "inputs": [],
+      "outputs": [
+        "Kohle"
+      ],
+      "recipe_text": "→ Kohle"
+    },
+    {
+      "id": "industry-078",
+      "name": "Lardy Sugar Mill",
+      "status": "gestoppt",
+      "production_per_year": 0,
+      "shipped_per_year": 0,
+      "received_per_year": 0,
+      "inputs": [
+        "Sugar Cane"
+      ],
+      "outputs": [
+        "Sugar",
+        "Molasses"
+      ],
+      "recipe_text": "Sugar Cane → Sugar + Molasses"
+    },
+    {
+      "id": "industry-079",
+      "name": "Le Malesherbois Bauernhof",
+      "status": "aktiv",
+      "production_per_year": 112,
+      "shipped_per_year": 0,
+      "received_per_year": 0,
+      "inputs": [],
+      "outputs": [
+        "Getreide",
+        "Gemüse"
+      ],
+      "recipe_text": "→ Getreide + Gemüse"
+    },
+    {
+      "id": "industry-080",
+      "name": "Lamballe-Armor Textilfabrik",
+      "status": "gestoppt",
+      "production_per_year": 39,
+      "shipped_per_year": 39,
+      "received_per_year": 0,
+      "inputs": [
+        "Farbstoffe",
+        "Stoff"
+      ],
+      "outputs": [
+        "Kleidung"
+      ],
+      "recipe_text": "Farbstoffe + Stoff → Kleidung"
+    },
+    {
+      "id": "industry-081",
+      "name": "Melle Rum Distillery",
+      "status": "gestoppt",
+      "production_per_year": 0,
+      "shipped_per_year": 0,
+      "received_per_year": 0,
+      "inputs": [
+        "Molasses",
+        "Glas"
+      ],
+      "outputs": [
+        "Rum"
+      ],
+      "recipe_text": "Molasses + Glas → Rum"
+    },
+    {
+      "id": "industry-082",
+      "name": "Rambervillers Baumwollplantage",
+      "status": "aktiv",
+      "production_per_year": 65,
+      "shipped_per_year": 0,
+      "received_per_year": 0,
+      "inputs": [],
+      "outputs": [
+        "Wolle"
+      ],
+      "recipe_text": "→ Wolle"
+    },
+    {
+      "id": "industry-083",
+      "name": "Scierie de l’Écorce",
+      "status": "gestoppt",
+      "production_per_year": 520,
+      "shipped_per_year": 457,
+      "received_per_year": 382,
+      "inputs": [
+        "Holz"
+      ],
+      "outputs": [
+        "Bretter"
+      ],
+      "recipe_text": "Holz → Bretter"
+    },
+    {
+      "id": "industry-084",
+      "name": "Aulnay-sous-Bois Holzfällerlager",
+      "status": "aktiv",
+      "production_per_year": 168,
+      "shipped_per_year": 174,
+      "received_per_year": 173,
+      "inputs": [],
+      "outputs": [
+        "Holz"
+      ],
+      "recipe_text": "→ Holz"
+    },
+    {
+      "id": "industry-085",
+      "name": "Cournon-d'Auvergne Holzfällerlager #1",
+      "status": "aktiv",
+      "production_per_year": 32,
+      "shipped_per_year": 0,
+      "received_per_year": 0,
+      "inputs": [],
+      "outputs": [
+        "Holz"
+      ],
+      "recipe_text": "→ Holz"
+    },
+    {
+      "id": "industry-086",
+      "name": "Cournon-d'Auvergne Ölraffinerie",
+      "status": "gestoppt",
+      "production_per_year": 0,
+      "shipped_per_year": 0,
+      "received_per_year": 0,
+      "inputs": [
+        "Rohöl"
+      ],
+      "outputs": [
+        "Dünger",
+        "Chemikalien",
+        "Treibstoff"
+      ],
+      "recipe_text": "Rohöl → Dünger + Chemikalien + Treibstoff"
+    },
+    {
+      "id": "industry-087",
+      "name": "Port des Alizés Bauernhof",
+      "status": "aktiv",
+      "production_per_year": 84,
+      "shipped_per_year": 0,
+      "received_per_year": 0,
+      "inputs": [],
+      "outputs": [
+        "Getreide",
+        "Gemüse"
+      ],
+      "recipe_text": "→ Getreide + Gemüse"
+    },
+    {
+      "id": "industry-088",
+      "name": "La Mulatière Eisenerzbergwerk",
+      "status": "aktiv",
+      "production_per_year": 130,
+      "shipped_per_year": 0,
+      "received_per_year": 0,
+      "inputs": [],
+      "outputs": [
+        "Eisenerz"
+      ],
+      "recipe_text": "→ Eisenerz"
+    },
+    {
+      "id": "industry-089",
+      "name": "Labenne Sugar Cane Farm",
+      "status": "aktiv",
+      "production_per_year": 42,
+      "shipped_per_year": 0,
+      "received_per_year": 0,
+      "inputs": [],
+      "outputs": [
+        "Sugar Cane"
+      ],
+      "recipe_text": "→ Sugar Cane"
+    },
+    {
+      "id": "industry-090",
+      "name": "Tournus Kohlebergwerk",
+      "status": "aktiv",
+      "production_per_year": 78,
+      "shipped_per_year": 0,
+      "received_per_year": 0,
+      "inputs": [],
+      "outputs": [
+        "Kohle"
+      ],
+      "recipe_text": "→ Kohle"
+    },
+    {
+      "id": "industry-091",
+      "name": "Bourg-l’Écorce Eisenerzbergwerk",
+      "status": "aktiv",
+      "production_per_year": 448,
+      "shipped_per_year": 115,
+      "received_per_year": 100,
+      "inputs": [],
+      "outputs": [
+        "Eisenerz"
+      ],
+      "recipe_text": "→ Eisenerz"
+    },
+    {
+      "id": "industry-092",
+      "name": "Pont-Saint-Martin Holzfällerlager",
+      "status": "aktiv",
+      "production_per_year": 112,
+      "shipped_per_year": 120,
+      "received_per_year": 58,
+      "inputs": [],
+      "outputs": [
+        "Holz"
+      ],
+      "recipe_text": "→ Holz"
+    },
+    {
+      "id": "industry-093",
+      "name": "Roche-Noire Bauernhof",
+      "status": "aktiv",
+      "production_per_year": 88,
+      "shipped_per_year": 47,
+      "received_per_year": 4,
+      "inputs": [],
+      "outputs": [
+        "Getreide",
+        "Gemüse"
+      ],
+      "recipe_text": "→ Getreide + Gemüse"
+    },
+    {
+      "id": "industry-094",
+      "name": "Hombourg-Haut Ölraffinerie",
+      "status": "gestoppt",
+      "production_per_year": 0,
+      "shipped_per_year": 0,
+      "received_per_year": 0,
+      "inputs": [
+        "Rohöl"
+      ],
+      "outputs": [
+        "Dünger",
+        "Chemikalien",
+        "Treibstoff"
+      ],
+      "recipe_text": "Rohöl → Dünger + Chemikalien + Treibstoff"
+    },
+    {
+      "id": "industry-095",
+      "name": "Domaine des Alizés",
+      "status": "aktiv",
+      "production_per_year": 1190,
+      "shipped_per_year": 856,
+      "received_per_year": 732,
+      "inputs": [],
+      "outputs": [
+        "Getreide",
+        "Gemüse"
+      ],
+      "recipe_text": "→ Getreide + Gemüse"
+    },
+    {
+      "id": "industry-096",
+      "name": "Grenay Ölraffinerie",
+      "status": "gestoppt",
+      "production_per_year": 0,
+      "shipped_per_year": 0,
+      "received_per_year": 0,
+      "inputs": [
+        "Rohöl"
+      ],
+      "outputs": [
+        "Dünger",
+        "Chemikalien",
+        "Treibstoff"
+      ],
+      "recipe_text": "Rohöl → Dünger + Chemikalien + Treibstoff"
+    },
+    {
+      "id": "industry-097",
+      "name": "Fontenay-aux-Roses Holzfällerlager",
+      "status": "aktiv",
+      "production_per_year": 72,
+      "shipped_per_year": 0,
+      "received_per_year": 0,
+      "inputs": [],
+      "outputs": [
+        "Holz"
+      ],
+      "recipe_text": "→ Holz"
+    },
+    {
+      "id": "industry-098",
+      "name": "Hombourg-Haut Ölraffinerie #1",
+      "status": "aktiv",
+      "production_per_year": 1204,
+      "shipped_per_year": 735,
+      "received_per_year": 637,
+      "inputs": [
+        "Rohöl"
+      ],
+      "outputs": [
+        "Dünger",
+        "Chemikalien",
+        "Treibstoff"
+      ],
+      "recipe_text": "Rohöl → Dünger + Chemikalien + Treibstoff"
+    },
+    {
+      "id": "industry-099",
+      "name": "Neuilly-Plaisance Holzfällerlager",
+      "status": "aktiv",
+      "production_per_year": 34,
+      "shipped_per_year": 0,
+      "received_per_year": 0,
+      "inputs": [],
+      "outputs": [
+        "Holz"
+      ],
+      "recipe_text": "→ Holz"
+    },
+    {
+      "id": "industry-100",
+      "name": "Combs-la-Ville Ölraffinerie",
+      "status": "gestoppt",
+      "production_per_year": 0,
+      "shipped_per_year": 0,
+      "received_per_year": 0,
+      "inputs": [
+        "Rohöl"
+      ],
+      "outputs": [
+        "Dünger",
+        "Chemikalien",
+        "Treibstoff"
+      ],
+      "recipe_text": "Rohöl → Dünger + Chemikalien + Treibstoff"
+    },
+    {
+      "id": "industry-101",
+      "name": "Gleizé Viehzuchtbetrieb",
+      "status": "gestoppt",
+      "production_per_year": 0,
+      "shipped_per_year": 0,
+      "received_per_year": 0,
+      "inputs": [
+        "Getreide"
+      ],
+      "outputs": [
+        "Fleisch",
+        "Wolle"
+      ],
+      "recipe_text": "Getreide → Fleisch + Wolle"
+    },
+    {
+      "id": "industry-102",
+      "name": "Lamballe-Armor Viehzuchtbetrieb",
+      "status": "gestoppt",
+      "production_per_year": 0,
+      "shipped_per_year": 0,
+      "received_per_year": 0,
+      "inputs": [
+        "Getreide"
+      ],
+      "outputs": [
+        "Fleisch",
+        "Wolle"
+      ],
+      "recipe_text": "Getreide → Fleisch + Wolle"
+    },
+    {
+      "id": "industry-103",
+      "name": "Aniche Viehzuchtbetrieb",
+      "status": "gestoppt",
+      "production_per_year": 0,
+      "shipped_per_year": 0,
+      "received_per_year": 0,
+      "inputs": [
+        "Getreide"
+      ],
+      "outputs": [
+        "Fleisch",
+        "Wolle"
+      ],
+      "recipe_text": "Getreide → Fleisch + Wolle"
+    },
+    {
+      "id": "industry-104",
+      "name": "Cestas Viehzuchtbetrieb",
+      "status": "gestoppt",
+      "production_per_year": 0,
+      "shipped_per_year": 0,
+      "received_per_year": 0,
+      "inputs": [
+        "Getreide"
+      ],
+      "outputs": [
+        "Fleisch",
+        "Wolle"
+      ],
+      "recipe_text": "Getreide → Fleisch + Wolle"
+    },
+    {
+      "id": "industry-105",
+      "name": "Vichy Viehzuchtbetrieb",
+      "status": "gestoppt",
+      "production_per_year": 0,
+      "shipped_per_year": 0,
+      "received_per_year": 0,
+      "inputs": [
+        "Getreide"
+      ],
+      "outputs": [
+        "Fleisch",
+        "Wolle"
+      ],
+      "recipe_text": "Getreide → Fleisch + Wolle"
+    },
+    {
+      "id": "industry-106",
+      "name": "Châteaubourg Viehzuchtbetrieb",
+      "status": "gestoppt",
+      "production_per_year": 0,
+      "shipped_per_year": 0,
+      "received_per_year": 0,
+      "inputs": [
+        "Getreide"
+      ],
+      "outputs": [
+        "Fleisch",
+        "Wolle"
+      ],
+      "recipe_text": "Getreide → Fleisch + Wolle"
+    },
+    {
+      "id": "industry-107",
+      "name": "Port des Alizés Ölplattform #1",
+      "status": "aktiv",
+      "production_per_year": 225,
+      "shipped_per_year": 240,
+      "received_per_year": 200,
+      "inputs": [],
+      "outputs": [
+        "Rohöl"
+      ],
+      "recipe_text": "→ Rohöl"
+    },
+    {
+      "id": "industry-108",
+      "name": "Sarrians Eisenerzbergwerk",
+      "status": "aktiv",
+      "production_per_year": 40,
+      "shipped_per_year": 0,
+      "received_per_year": 0,
+      "inputs": [],
+      "outputs": [
+        "Eisenerz"
+      ],
+      "recipe_text": "→ Eisenerz"
+    }
+  ]
+}
