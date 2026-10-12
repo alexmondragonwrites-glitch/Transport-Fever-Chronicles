@@ -28,7 +28,9 @@
       "industries": "industries-1910-03.json",
       "demand": "demand-1910-03.json",
       "worldDemand": "world-demand-1910-03.json",
-      "worldCities": "world-cities.json"
+      "worldCities": "world-cities.json",
+      "cities": "cities.json",
+      "analysis": "analysis-1910-03.json"
     },
     {
       "game_date": "1911-04-13",
