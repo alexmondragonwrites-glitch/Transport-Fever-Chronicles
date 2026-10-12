@@ -24,12 +24,13 @@ jobs:
           node --check scripts/validate-report-1911.mjs
           node --check scripts/validate-report-1911-dec.mjs
           node --check scripts/import-watcher.mjs
-          python3 -m py_compile scripts/monitor_build.py scripts/import-monitor.py scripts/publish-monitor.py scripts/build-journal.py
+          python3 -m py_compile scripts/monitor_build.py scripts/import-monitor.py scripts/publish-monitor.py scripts/build-journal.py scripts/test-build-journal.py
       - name: Daten prüfen
         run: |
           node scripts/validate-data.mjs
           node scripts/validate-monitor.mjs
           node scripts/validate-journal.mjs
+          python3 scripts/test-build-journal.py
           node scripts/validate-report-1911.mjs
           node scripts/validate-report-1911-dec.mjs
           node scripts/build-decade.mjs --check

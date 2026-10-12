@@ -12,6 +12,7 @@ const fetchJSON = async path => { const r = await fetch(path, {cache:'no-cache'}
 
 const TYPES = {
   premiere:{label:'Premiere', group:'verkehr', weight:9}, umbenennung:{label:'Umbenennung', group:'staedte', weight:8},
+  modell:{label:'Neues Modell', group:'verkehr', weight:8},
   netz:{label:'Netz', group:'netz', weight:7}, stadt:{label:'Meilenstein', group:'staedte', weight:6},
   aufzeichnung:{label:'Aufzeichnung', group:'netz', weight:5}, industrie:{label:'Neugründung', group:'industrie', weight:5},
   linie:{label:'Neue Linie', group:'verkehr', weight:4}, 'linie-ende':{label:'Eingestellt', group:'verkehr', weight:4},
@@ -26,6 +27,7 @@ const STORY_TYPES = {artikel:'Artikel', interview:'Gespräch', portraet:'Porträ
 // Story hooks: suggestions the editors can pick up. They only restate measured facts and ask open questions.
 const HOOKS = {
   premiere: e => `Premiere im Archipel: Wer fuhr als Erstes mit? Wie reagierten die Menschen in ${e.text.match(/(?:in|zwischen) ([^.]+)\./)?.[1] || 'der Stadt'}?`,
+  modell: e => `${e.titel}: Wer hat das neue Modell als Erstes gesehen? Was erzählt man sich im Depot darüber?`,
   umbenennung: e => `${e.titel}: Was sagen die Alteingesessenen zum neuen Namen? Wer hängt das alte Schild noch auf?`,
   stadt: e => `${e.titel}: Wie fühlt sich die Stadt an, seit sie so gewachsen ist? Wer ist neu zugezogen?`,
   industrie: e => `${e.titel.replace('Neugründung: ','')} ist neu im Register: Wer arbeitet dort? Wer hat den Ort entdeckt?`,
@@ -125,7 +127,7 @@ function une(){
     </div>
     <aside class="j-side">
       <section class="j-box"><h3>Aus den Messbüchern</h3>${events.length?`<ul class="j-mlist">${top.slice(0,9).map(e=>meldung(e,true)).join('')}</ul><button class="mini-link" data-goto="meldungen" data-month="${m}">Alle ${events.length} Meldungen dieses Monats →</button>`:'<p class="small">Keine Meldungen in diesem Monat.</p>'}</section>
-      ${stats?`<section class="j-box j-numbers"><h3>Zahlen der Ausgabe</h3><dl><div><dt>Fahrzeuge</dt><dd>${N(stats.gesamt_fahrzeuge)}${delta(stats.gesamt_fahrzeuge,prevStats?.gesamt_fahrzeuge)}</dd></div><div><dt>Linien</dt><dd>${N(stats.gesamt_linien)}${delta(stats.gesamt_linien,prevStats?.gesamt_linien)}</dd></div>${residents?`<div><dt>Einwohner, alle Orte</dt><dd>${N(residents)}</dd></div>`:''}<div><dt>Kasse der Société</dt><dd>${N(stats.kasse/1e6,1)} Mio.</dd></div></dl><p class="small">Letzte Detailmessung des Monats.</p></section>`:''}
+      ${stats?`<section class="j-box j-numbers"><h3>Zahlen der Ausgabe</h3><dl><div><dt>Fahrzeuge</dt><dd>${N(stats.gesamt_fahrzeuge)}${delta(stats.gesamt_fahrzeuge,prevStats?.gesamt_fahrzeuge)}</dd></div><div><dt>Linien</dt><dd>${N(stats.gesamt_linien)}${delta(stats.gesamt_linien,prevStats?.gesamt_linien)}</dd></div>${stats.modelle?`<div><dt>Fahrzeugmodelle</dt><dd>${N(stats.modelle)}${prevStats?.modelle?delta(stats.modelle,prevStats.modelle):''}</dd></div>`:''}${residents?`<div><dt>Einwohner, alle Orte</dt><dd>${N(residents)}</dd></div>`:''}<div><dt>Kasse der Société</dt><dd>${N(stats.kasse/1e6,1)} Mio.</dd></div></dl><p class="small">Letzte Detailmessung des Monats.</p></section>`:''}
       ${adPool.map(reclame).join('')}
       ${faces.length?`<section class="j-box"><h3>Gesichter des Monats</h3>${faces.map(p=>{const mo=p.moments.find(x=>x.date.slice(0,7)===m && x.typ!=='arbeit' && x.typ!=='ohne-arbeit');return `<p class="j-face"><a href="#menschen/${p.id}">${E(p.name)}</a> <span class="small">(${E(p.home_town||'unbekannt')})</span><br><span class="small">${E(dayName(mo.date))}: ${E(mo.text)}</span></p>`;}).join('')}<p class="small">Namen von der Redaktion vergeben.</p></section>`:''}
       <section class="j-box j-specials"><h3>Sonderausgaben</h3><a href="weihnachten-1911.html">Weihnachtsbericht 1911</a><a href="1911.html">Wirtschaftsbericht April 1911</a><a href="jahrzehnt.html">Zehn Jahre Archipel 1900–1910</a><a href="index.html?view=monitor#overview">Langzeitmonitor</a></section>
@@ -239,18 +241,21 @@ function townDetail(t){
 const cardsHTML = items => '<div class="metrics">'+items.map(([v,l])=>`<div class="metric"><div class="num">${E(v)}</div><div class="lbl">${E(l)}</div></div>`).join('')+'</div>';
 
 function fuhrpark(){
-  const F = D.fleet, last = F.verlauf.at(-1);
+  const F = D.fleet, last = F.verlauf.at(-1), M = F.modelle;
   const kinds = Object.keys(KIND_COLORS).filter(k=>F.verlauf.some(v=>v.fahrzeuge[k]));
   const ein = D.stories.find(s=>s.id==='fuhrpark-einordnung');
   const label = k => F.arten.find(a=>a.art===k)?.bezeichnung||k;
-  return `<div class="section-header"><div><div class="eyebrow">Belegt · Fahrzeuge je Art</div><h2>Der Fuhrpark der Société</h2><p class="section-lede">${E(F.hinweis)}</p></div></div>
+  const bought = m => m.kauf_erstes ? (m.kauf_letztes && m.kauf_letztes!==m.kauf_erstes ? `${dayName(m.kauf_erstes)} – ${dayName(m.kauf_letztes)}` : dayName(m.kauf_erstes)) : '–';
+  return `<div class="section-header"><div><div class="eyebrow">Belegt · Fahrzeuge je Art${M?' und Modell':''}</div><h2>Der Fuhrpark der Société</h2><p class="section-lede">${E(F.hinweis)}</p></div></div>
   ${lineChart(kinds.map(k=>({label:label(k), color:KIND_COLORS[k], points:F.verlauf.filter(v=>v.fahrzeuge[k]!==undefined).map(v=>({x:v.monat,y:v.fahrzeuge[k]}))})),{title:'Fahrzeuge je Art'})}
   <div class="grid grid2" style="margin-top:26px"><section><h3 class="subhead">Premieren</h3><ol class="station-timeline">${F.premieren.map(p=>`<li><strong>${E(p.bezeichnung)}</strong> · ${p.seit_beginn?'bei Aufzeichnungsbeginn vorhanden':E(dayName(p.date))}<br><span class="small">${E(p.linie)}</span></li>`).join('')}</ol></section>
   <section><h3 class="subhead">Stand ${E(monthName(last.monat))}</h3><div class="table-scroller"><table class="data-table" style="min-width:0"><thead><tr><th>Art</th><th class="right">Linien</th><th class="right">Fahrzeuge</th><th class="right">je Linie</th></tr></thead><tbody>${kinds.sort((a,b)=>(last.fahrzeuge[b]||0)-(last.fahrzeuge[a]||0)).map(k=>`<tr><td><i class="dot" style="background:${KIND_COLORS[k]}"></i>${E(label(k))}</td><td class="right">${N(last.linien[k])}</td><td class="right">${N(last.fahrzeuge[k])}</td><td class="right">${N((last.fahrzeuge[k]||0)/(last.linien[k]||1),1)}</td></tr>`).join('')}</tbody></table></div></section></div>
+  ${M?`<h3 class="subhead">Modelle je Art · Stand ${E(dayName(M.stand))}</h3><p class="small">${N(M.anzahl)} Modelle im Linienbetrieb. „Einheiten“ zählt Fahrzeugteile, etwa Wagen eines Zuges; ein Zug mit Lok und Wagen erscheint bei jedem seiner Modelle. Fahrzeuge im Depot ohne Linie sind nicht erfasst.${M.vollstaendig?'':' Die letzte Messung konnte nicht alle Fahrzeuge lesen; Zahlen sind Untergrenzen.'}</p>
+  ${M.je_art.map(k=>`<h4><i class="dot" style="background:${KIND_COLORS[k.art]||'var(--muted)'}"></i>${E(k.bezeichnung)}</h4><div class="table-scroller"><table class="data-table"><thead><tr><th>Modell</th><th class="right">Fahrzeuge</th><th class="right">Einheiten</th><th class="right">Linien</th><th>Gekauft</th><th>Erstmals erfasst</th></tr></thead><tbody>${k.modelle.map(m=>`<tr><td>${E(m.modell)}${Number.isFinite(m.verfuegbar_ab)&&m.verfuegbar_ab>0?` <span class="small">(ab ${m.verfuegbar_ab})</span>`:''}</td><td class="right">${N(m.fahrzeuge)}</td><td class="right">${N(m.einheiten)}</td><td class="right">${N(m.linien)}</td><td>${E(bought(m))}</td><td>${m.seit_beginn?'bei Beginn der Modellerfassung':E(dayName(m.erstmals))}</td></tr>`).join('')}</tbody></table></div>`).join('')}`:''}
   <h3 class="subhead">Die größten Flotten</h3><div class="table-scroller"><table class="data-table"><thead><tr><th>Linie</th><th>Art</th><th>Orte</th><th class="right">Fahrzeuge</th></tr></thead><tbody>${F.groesste.map(l=>`<tr><td>${E(l.name)}</td><td>${E(label(l.art))}</td><td>${E([...new Set(l.orte)].join(' – '))}</td><td class="right">${N(l.fahrzeuge)}</td></tr>`).join('')}</tbody></table></div>
   <h3 class="subhead">Die Kasse der Gesellschaft</h3>${lineChart([{label:'Kassenstand (Mio.)', color:'var(--series-1)', points:F.verlauf.filter(v=>Number.isFinite(v.kasse)).map(v=>({x:v.monat,y:v.kasse/1e6}))}],{title:'Kassenstand',h:220,fmt:v=>N(v)+' Mio.'})}
   <p class="small">Kassenstand der letzten Detailmessung je Monat. Ursachen von Zu- und Abflüssen werden nicht erfasst.</p>
-  ${ein?`<article class="card" style="margin-top:26px"><span class="kicker">${E(ein.rubrik)}</span> ${prov(ein.art)}<h3>${E(ein.titel)}</h3>${storyBody(ein)}</article>`:''}`;
+  ${ein?`<article class="card" style="margin-top:26px"><span class="kicker">${E(ein.rubrik)}</span> ${prov(ein.art)}<h3>${E(ein.titel)}</h3>${storyBody(ein)}${M?`<p class="small"><strong>Nachtrag:</strong> Seit dem ${E(dayName(M.erfasst_seit))} erfasst der Monitor die Modelle; neue Modelle erscheinen als Meldung „Neues Modell“.</p>`:''}</article>`:''}`;
 }
 
 function geschichten(){

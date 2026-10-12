@@ -8,7 +8,7 @@ Die Zeitung `saves/archipel-des-alizes/journal.html` ist die Startseite der Welt
 | Meldungen | Ereignisse aus den Messbüchern, filterbar nach Rubrik, Jahr und Suche | `meldungen.json` (automatisch) |
 | Menschen | Beobachtungsgruppe des Monitors mit Verkehrsmitteln je Jahr, Arbeitsplatz, Zufriedenheitsrohwert und Lebensmomenten | `menschen.json` (automatisch) |
 | Städte | Ortsakten aller Städte mit Einwohnerverlauf, Waren, Linien und Betrieben | `staedte.json` (automatisch) |
-| Fuhrpark | Fahrzeuge je Art, Premieren, größte Flotten, Kasse | `fuhrpark.json` (automatisch) |
+| Fuhrpark | Fahrzeuge je Art, Modelle je Art (ab Monitor-Revision 15), Premieren, größte Flotten, Kasse | `fuhrpark.json` (automatisch) |
 | Geschichten | Artikel, Gespräche, Porträts, Réclame, „Am Tresen“ | `redaktion.json` (von Hand), `gazette.json` |
 
 Alle Dateien liegen in `saves/archipel-des-alizes/data/journal/`.
@@ -23,17 +23,19 @@ Regeln:
 - **Erkannte Ereignisse:**
   - neue, geänderte und eingestellte Linien
   - Premieren je Fahrzeugart
+  - neue Fahrzeugmodelle (`modell`, ab Monitor-Revision 15)
   - Flottenänderungen ab ±3 Fahrzeugen
   - Neugründungen, Schließungen und Ausbaustufen von Betrieben
   - Einwohnerschwellen und Umbenennungen von Städten
   - Netz-Meilensteine (je 10 Linien, je 50 Fahrzeuge)
 - **Bestätigung:** Schließungen brauchen drei aufeinanderfolgende Messungen ohne das Objekt, Einwohnerschwellen zwei Stadtstände.
 - **Unscharfe Zeitpunkte:** Liegt vor einer Meldung eine Aufzeichnungslücke von mehr als 31 Tagen, nennt sie den Zeitraum (`fruehestens`) statt eines Tages.
-- **Fahrzeugarten:** Sie stammen aus dem Linienpräfix (Bus, RC = Lkw, Tram, TP = Personenzug, TC = Güterzug, WP = Passagierschiff, WC = Frachtschiff) bzw. dem Verkehrsträger. Modellnamen erfasst der Monitor noch nicht.
+- **Fahrzeugarten:** Sie stammen aus dem Linienpräfix (Bus, RC = Lkw, Tram, TP = Personenzug, TC = Güterzug, WP = Passagierschiff, WC = Frachtschiff) bzw. dem Verkehrsträger.
+- **Fahrzeugmodelle:** Ab Spielmonitor-Revision 15 tragen Detailmessungen je Linie `vehicle_models` (Spielname, Ressourcendatei, Fahrzeuge, Teile, Kaufdaten). Kennung ist die Ressourcendatei, sonst `id:<Modell-ID>`. Die erste Messung mit Modelldaten ist der Ausgangsbestand: Ihre Modelle gelten als „bei Beginn der Modellerfassung“ vorhanden und werden nicht gemeldet. Jedes später erstmals gesehene Modell wird einmal als „Neues Fahrzeugmodell“ gemeldet, mit Linie, Fahrzeug-/Teilezahl und erstem Kaufdatum laut Spiel. War der Ausgangsbestand unvollständig, zählt nur ein Kauf nach ihm als neu. Die Art eines Modells ist die Art der Linie, auf der es fährt; Fahrzeuge im Depot ohne Linie sind nicht erfasst. Ohne Modelldaten bleibt `fuhrpark.json` wie bisher (kein Feld `modelle`, Hinweis „bisher nicht“).
 - **Beobachtungsgruppe:** Die Namen sind deterministisch aus der Personen-ID erfunden und stets als erfunden markiert. Wohnort, Verkehrsmittel, Arbeitsplatz und Zufriedenheitsrohwert (Skala nicht validiert) sind gemessen.
 - **Cache:** Er liegt in `.publish-cache/journal/` und wird bei jeder Änderung am Script verworfen.
 
-Von Hand: `python scripts/build-journal.py [--monitor PFAD]`.
+Von Hand: `python scripts/build-journal.py [--monitor PFAD] [--out ORDNER]` (`--out` schreibt woandershin, z. B. für Tests).
 
 ## Geschichten schreiben
 
@@ -47,4 +49,4 @@ Neue Beiträge kommen als Eintrag in `redaktion.json` hinzu. Pflicht für jeden 
 
 Ideen liefert die Zeitung selbst. Der Kasten „Stoff für Geschichten“ auf jeder Titelseite und „Noch unerzählt“ unter Geschichten leiten offene Fragen aus den Meldungen ab. Wiederkehrende Figuren: Wirt Mathurin vom „Au Quai des Collines“ (Valmorin), der alte Anselme, Lucie vom Bahnhof; aus der Beobachtungsgruppe Marceline Clément (84185), Isidore Lubin (54586), Edmond Philogène (144145).
 
-Prüfen: `node scripts/validate-journal.mjs` (läuft auch in CI und vor jedem Upload).
+Prüfen: `node scripts/validate-journal.mjs [ORDNER]` (läuft auch in CI und vor jedem Upload). `python scripts/test-build-journal.py` baut synthetische Messungen mit und ohne Modelldaten in einen Temp-Ordner und prüft Meldungen, Fuhrpark und Validator (CI).

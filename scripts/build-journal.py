@@ -1,6 +1,6 @@
 """Build the fact data of „Le Journal des Alizés“ from the local Spielmonitor sessions.
 
-Usage: python scripts/build-journal.py [--monitor PATH] [--save ID]
+Usage: python scripts/build-journal.py [--monitor PATH] [--save ID] [--out DIR]
 
 Writes saves/<save>/data/journal/{meldungen,menschen,staedte,fuhrpark}.json, only when the content changed.
 Everything here is derived from detail measurements of the configured world on the canonical timeline:
@@ -14,6 +14,7 @@ import collections
 import datetime
 import hashlib
 import json
+import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -65,8 +66,23 @@ def line_goods(name):
     return [g for g in head.split(' ', 1)[1].split(',') if g and not g.startswith('+')] if ' ' in head else []
 
 
+def model_key(m):
+    # The resource file stays the same across game sessions; the numeric model ID is only a fallback.
+    return m.get('model_file') or f"id:{m.get('model_id')}"
+
+
+def compact_models(line):
+    """[complete, [[key, name, vehicles, parts, first purchase, last purchase, available from], …]] or None before revision 15."""
+    models = line.get('vehicle_models')
+    if models is None:
+        return None
+    return [bool(line.get('vehicle_models_complete')),
+            [[model_key(m), m.get('name'), m.get('vehicles') or 0, m.get('parts') or 0, date(m.get('purchase_first_game_date')),
+              date(m.get('purchase_last_game_date')), m.get('available_from')] for m in (models or [])]]
+
+
 def compact(row):
-    lines = [[l['id'], l['name'], l.get('carrier'), l.get('vehicles'), l.get('places')] for l in row.get('lines', [])]
+    lines = [[l['id'], l['name'], l.get('carrier'), l.get('vehicles'), l.get('places'), compact_models(l)] for l in row.get('lines', [])]
     inds = [[i['id'], i['name'], i.get('level')] for i in row.get('industries', [])]
     towns = [[t['id'], t['name'], t.get('housing_occupied')] for t in row.get('towns', [])]
     people = [[p['id'], p.get('home_town_id'), p.get('home_town_name'), MODES.get(p.get('last_move_mode')), p.get('state'),
@@ -76,12 +92,12 @@ def compact(row):
             'towns':towns, 'td':date(row.get('towns_game_date')), 'people':people}
 
 
-def session_rows(path, world_id):
+def session_rows(path, world_id, cache_dir=CACHE):
     """Compact detail rows of one session, cached by file size, mtime and this script's version."""
     stat = path.stat()
     key = {'size':stat.st_size, 'mtime_ns':stat.st_mtime_ns,
            'script':hashlib.sha256(Path(__file__).read_bytes()).hexdigest()}
-    cache = CACHE/(path.parent.name+'.json')
+    cache = cache_dir/(path.parent.name+'.json')
     try:
         cached = json.loads(cache.read_text(encoding='utf-8'))
         if cached['key'] == key:
@@ -108,7 +124,7 @@ def session_rows(path, world_id):
                 last_towns = {'d':date(row.get('towns_game_date')), 'r':row.get('towns_recorded_at'), 'towns':row['towns'],
                               'lines':[{k:l.get(k) for k in ('id','name','places','vehicles')} for l in row.get('lines', [])],
                               'industries':[{k:i.get(k) for k in ('id','name','level','producing','production_year','shipped_year')} for i in row.get('industries', [])]}
-    CACHE.mkdir(parents=True, exist_ok=True)
+    cache_dir.mkdir(parents=True, exist_ok=True)
     cache.write_text(json.dumps({'key':key, 'rows':rows, 'last_towns':last_towns}, ensure_ascii=False), encoding='utf-8')
     return rows, last_towns
 
@@ -289,8 +305,54 @@ def detect(rows, jumps, latest_places):
                 add('netz', row, f"Das Netz zählt {mark} {unit}", f"Gemessen: {value} {unit} am {de(row['d'])}.", values={'wert':value}, key=f"{unit}-{mark}")
         last_lc = row['lc'] if row['lc'] is not None else last_lc
         last_vc = row['vc'] if row['vc'] is not None else last_vc
+    detect_models(rows, add)
     events.sort(key=lambda e:(e['game_time'] or 0, e['id']))
     return events
+
+
+def model_rows(rows):
+    """Detail rows that carry vehicle models (Spielmonitor revision 15 or later)."""
+    return [r for r in rows if any(len(l) > 5 and l[5] is not None for l in r['lines'])]
+
+
+def model_name(key, name):
+    return name or key.rsplit('/', 1)[-1].removesuffix('.mdl')
+
+
+def detect_models(rows, add):
+    """A model is news when it appears after the first measurement with model data.
+    That first measurement is the baseline: its models were already there when the recording began."""
+    known, base = set(), None
+    for row in model_rows(rows):
+        captured = [l for l in row['lines'] if len(l) > 5 and l[5] is not None]
+        if base is None:
+            base = {'d':row['d'], 'complete':len(captured) == len(row['lines']) and all(l[5][0] for l in captured)}
+            known.update(m[0] for l in captured for m in l[5][1])
+            continue
+        new = collections.defaultdict(list)
+        for l in captured:
+            for m in l[5][1]:
+                if m[0] not in known:
+                    new[m[0]].append((l, m))
+        for key, uses in new.items():
+            known.add(key)
+            name = model_name(key, next((m[1] for _, m in uses if m[1]), None))
+            bought = min((m[4] for _, m in uses if m[4]), default=None)
+            # An incomplete baseline may have missed older vehicles: only a purchase after it proves a newcomer.
+            if not base['complete'] and (bought is None or bought < base['d']):
+                continue
+            vehicles, parts = sum(m[2] for _, m in uses), sum(m[3] for _, m in uses)
+            line = max(uses, key=lambda u:u[1][2])[0]
+            kind = line_kind(line[1], line[2])
+            where = (f"auf der {LINE_LABEL[kind]} „{line[1]}“ {place_text(line[4])}".rstrip() if len(uses) == 1
+                     else f"auf {len(uses)} Linien, darunter „{line[1]}“")
+            text = (f"„{name}“ ist erstmals im Linienbetrieb der Gesellschaft: {vehicles} Fahrzeug{'e' if vehicles != 1 else ''}"
+                    + (f" mit {parts} Einheiten dieses Modells" if parts != vehicles else '') + f" {where}.")
+            if bought:
+                text += f" Erstes Exemplar laut Spiel gekauft am {de(bought)}."
+            add('modell', row, f"Neues Fahrzeugmodell: {name}", text, {'line':line[0], 'lines':[l[0] for l, _ in uses]},
+                {'art':kind, 'modell':name, 'datei':key, 'fahrzeuge':vehicles, 'einheiten':parts, 'gekauft':bought},
+                key=re.sub(r'[^A-Za-z0-9]+', '-', key).strip('-'))
 
 
 def fictional_name(pid):
@@ -392,7 +454,7 @@ def fleet(rows, latest_lines):
             continue
         by = collections.Counter()
         count = collections.Counter()
-        for lid, name, carrier, vehicles, places in row['lines']:
+        for lid, name, carrier, vehicles, places, *_ in row['lines']:
             kind = line_kind(name, carrier)
             by[kind] += vehicles or 0
             count[kind] += 1
@@ -400,13 +462,53 @@ def fleet(rows, latest_lines):
                 premieres.setdefault(kind, {'art':kind, 'bezeichnung':KIND_LABEL[kind], 'date':row['d'], 'linie':name, 'line':lid})
         months[row['d'][:7]] = {'monat':row['d'][:7], 'fahrzeuge':dict(by), 'linien':dict(count), 'gesamt_fahrzeuge':row['vc'],
                                 'gesamt_linien':row['lc'], 'kasse':row['money']}
+        captured = {m[0] for l in row['lines'] if len(l) > 5 and l[5] is not None for m in l[5][1]}
+        if captured:
+            months[row['d'][:7]]['modelle'] = len(captured)
     first_date = rows[0]['d']
-    return {'arten':[{'art':k, 'bezeichnung':v} for k, v in KIND_LABEL.items()],
-            'premieren':sorted([p | {'seit_beginn':p['date'] == first_date} for p in premieres.values()], key=lambda p:p['date']),
-            'verlauf':list(months.values()),
-            'groesste':[{'id':l['id'], 'name':l['name'], 'art':line_kind(l['name'], None), 'fahrzeuge':l.get('vehicles'), 'orte':l.get('places') or []}
-                        for l in sorted(latest_lines, key=lambda l:-(l.get('vehicles') or 0))[:12]],
-            'hinweis':'Fahrzeugmodelle (Typenbezeichnungen) erfasst der Monitor bisher nicht; die Arten stammen aus dem Linienpräfix bzw. Verkehrsträger.'}
+    out = {'arten':[{'art':k, 'bezeichnung':v} for k, v in KIND_LABEL.items()],
+           'premieren':sorted([p | {'seit_beginn':p['date'] == first_date} for p in premieres.values()], key=lambda p:p['date']),
+           'verlauf':list(months.values()),
+           'groesste':[{'id':l['id'], 'name':l['name'], 'art':line_kind(l['name'], None), 'fahrzeuge':l.get('vehicles'), 'orte':l.get('places') or []}
+                       for l in sorted(latest_lines, key=lambda l:-(l.get('vehicles') or 0))[:12]],
+           'hinweis':'Fahrzeugmodelle (Typenbezeichnungen) erfasst der Monitor bisher nicht; die Arten stammen aus dem Linienpräfix bzw. Verkehrsträger.'}
+    models = fleet_models(rows)
+    if models:
+        out['modelle'] = models
+        out['hinweis'] = (f"Arten aus dem Linienpräfix bzw. Verkehrsträger. Fahrzeugmodelle (Typenbezeichnung laut Spiel, je Fahrzeugteil) "
+                          f"erfasst der Monitor seit {de(models['erfasst_seit'])}; frühere Modelle und Wechsel sind nicht belegt.")
+    return out
+
+
+def fleet_models(rows):
+    """Models per kind in the latest measurement with model data; None for recordings before revision 15."""
+    found = model_rows(rows)
+    if not found:
+        return None
+    first, last = found[0], found[-1]
+    first_seen = {}
+    for row in found:
+        for l in row['lines']:
+            for m in (l[5][1] if len(l) > 5 and l[5] is not None else []):
+                first_seen.setdefault(m[0], row['d'])
+    kinds = collections.defaultdict(dict)
+    captured = [l for l in last['lines'] if len(l) > 5 and l[5] is not None]
+    for l in captured:
+        kind = line_kind(l[1], l[2])
+        for key, name, vehicles, parts, bought_first, bought_last, available in l[5][1]:
+            e = kinds[kind].setdefault(key, {'modell':model_name(key, name), 'datei':key, 'fahrzeuge':0, 'einheiten':0, 'linien':0,
+                                             'kauf_erstes':None, 'kauf_letztes':None, 'verfuegbar_ab':available,
+                                             'erstmals':first_seen[key], 'seit_beginn':first_seen[key] == first['d']})
+            e['fahrzeuge'] += vehicles
+            e['einheiten'] += parts
+            e['linien'] += 1
+            e['kauf_erstes'] = min([d for d in (e['kauf_erstes'], bought_first) if d], default=None)
+            e['kauf_letztes'] = max([d for d in (e['kauf_letztes'], bought_last) if d], default=None)
+    order = list(KIND_LABEL)
+    return {'stand':last['d'], 'erfasst_seit':first['d'], 'anzahl':len({k for models in kinds.values() for k in models}),
+            'vollstaendig':len(captured) == len(last['lines']) and all(l[5][0] for l in captured),
+            'je_art':[{'art':k, 'bezeichnung':KIND_LABEL[k], 'modelle':sorted(kinds[k].values(), key=lambda e:(-e['fahrzeuge'], e['modell']))}
+                      for k in sorted(kinds, key=order.index)]}
 
 
 def write(path, obj):
@@ -417,12 +519,12 @@ def write(path, obj):
     return True
 
 
-def build(monitor, save):
+def build(monitor, save, out=None, cache_dir=CACHE):
     config = json.loads((ROOT/'data/monitor-sources.json').read_text(encoding='utf-8'))['saves'][save]
     world_id = config['world']['world_id']
     sessions, last_towns = [], None
     for path in sorted((monitor/'sessions').glob('*/daten.jsonl')):
-        rows, last = session_rows(path, world_id)
+        rows, last = session_rows(path, world_id, cache_dir)
         if rows:
             sessions.append((path.parent.name, rows))
             last_towns = last or last_towns
@@ -437,7 +539,7 @@ def build(monitor, save):
             line_names[l[0]] = l[1]
     stand = {'date':rows[-1]['d'], 'recorded_at':rows[-1]['r'], 'messungen':len(rows), 'zeitspruenge':len(jumps)}
     persons, cohort = people(rows, town_names, line_names)
-    out = ROOT/'saves'/save/'data/journal'
+    out = Path(out) if out else ROOT/'saves'/save/'data/journal'
     out.mkdir(parents=True, exist_ok=True)
     files = {
         'meldungen.json':{'schema_version':1, 'stand':stand, 'quelle':'Detailmessungen des Spielmonitors, kanonischer Verlauf',
@@ -457,6 +559,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__.split('\n')[0])
     parser.add_argument('--monitor', default=str(ROOT.parent/'Spielmonitor'))
     parser.add_argument('--save', default='archipel-des-alizes')
+    parser.add_argument('--out', help='anderer Zielordner, z. B. für Tests (Standard: saves/<save>/data/journal)')
     args = parser.parse_args()
-    changed, stand, sizes = build(Path(args.monitor).resolve(), args.save)
+    changed, stand, sizes = build(Path(args.monitor).resolve(), args.save, args.out)
     print(json.dumps({'stand':stand, 'eintraege':sizes, 'geaendert':changed}, ensure_ascii=False))
