@@ -53,13 +53,14 @@ export async function mountMonitor(app,index,fetchJSON,base,openArchive){
   let segment=null, selectedCity=null, selectedLine=null, loadSequence=0;
   let tab=['overview','cities','network','industry','logistics','chronicle'].includes(location.hash.slice(1))?location.hash.slice(1):'overview';
   const names={overview:'Überblick',cities:'Städte',network:'Verkehr',industry:'Industrie',logistics:'Stationen',chronicle:'Aufzeichnung'};
-  const cache=new Map();
+  const cache=new Map(), lineCache=new Map(), linePending=new Map();
   app.innerHTML=`<header class="topbar"><div class="shell topbar-inner"><a class="brand" href="../../index.html">✦ Transport Fever <span class="strong">Chronicles</span></a><nav class="toplinks" aria-label="Hauptnavigation"><a href="../../index.html">Alle Welten</a><button class="monitor-link" id="monitor-archive">Chronik & Weltatlas · März 1910</button></nav></div></header><main id="main" class="monitor"><section class="save-hero"><div class="shell"><div class="eyebrow">Transport Fever 3 · Monitorarchiv</div><h1>Archipel des Alizés</h1><p class="seal">Société des Routes et des Rails</p><p>Städte, Verkehrsnetze und Versorgung im Verlauf deiner aufgezeichneten Spielwelt.</p><div class="monitor-toolbar"><label for="monitor-session">Aufzeichnungsstand</label><select class="select" id="monitor-session">${[...index.segments].reverse().map(s=>`<option value="${escape(s.id)}">${escape(realDate(s.ended_at))} · Spiel ${escape(s.last_game_date)}${s.rollback_before?' · nach Rücksprung':''}</option>`).join('')}</select><a class="mini-link" href="${escape(index.archive.url)}">Rohdaten-Archiv vom ${escape(realDay(index.archive.created_at))} ↗</a></div><div id="monitor-head" aria-live="polite"></div></div></section><nav class="tabs" aria-label="Monitorbereiche"><div class="shell tab-inner" role="tablist">${Object.entries(names).map(([id,label])=>`<button type="button" class="tab" role="tab" id="mt-${id}" aria-controls="mp-${id}" data-monitor-tab="${id}" aria-selected="${id===tab}" tabindex="${id===tab?0:-1}">${label}</button>`).join('')}</div></nav><div class="shell"><div id="monitor-quality"></div>${Object.keys(names).map(id=>`<section class="section view${id===tab?' active':''}" id="mp-${id}" role="tabpanel" aria-labelledby="mt-${id}"></section>`).join('')}</div></main><footer class="footer"><div class="shell">Monitorstand vom ${escape(realDate(index.exported_at))} · Aus dem Spielmonitor hochgeladen, kein Live-Monitor · Originale bleiben erhalten</div></footer>`;
   document.querySelector('#monitor-archive').onclick=openArchive;
   const open=id=>{
     tab=id;app.querySelectorAll('[data-monitor-tab]').forEach(b=>{b.setAttribute('aria-selected',String(b.dataset.monitorTab===id));b.tabIndex=b.dataset.monitorTab===id?0:-1;});
     app.querySelectorAll('.view').forEach(p=>p.classList.toggle('active',p.id==='mp-'+id));
     history.replaceState(null,'','#'+id);
+    if(id==='network'&&segment&&selectedLine&&!lineCache.has(segment.id))lineDetail(selectedLine);
   };
   app.querySelectorAll('[data-monitor-tab]').forEach((b,i)=>{
     b.onclick=()=>open(b.dataset.monitorTab);
@@ -87,9 +88,20 @@ export async function mountMonitor(app,index,fetchJSON,base,openArchive){
   }
   function lineDetail(id){
     selectedLine=String(id);const l=segment.snapshot.lines.find(l=>String(l.id)===selectedLine);if(!l)return;
-    const points=segment.line_history[selectedLine]||[];
+    const histories=lineCache.get(segment.id),points=histories?.[selectedLine]||[];
+    if(!histories&&tab==='network'&&!linePending.has(segment.id))loadLines(segment);
+    const pending=`<p class="empty">${linePending.get(segment.id)==='error'?'Verlauf konnte nicht geladen werden. Linie erneut öffnen.':'Verlauf wird geladen …'}</p>`;
     const waiting=l.timing?.waiting_by_stop||[];
-    document.querySelector('#monitor-line-detail').innerHTML=`<div class="detail-head"><h3>${escape(l.name)}</h3><span class="tag">Linien-ID ${escape(l.id)}</span></div>${cards([[number(l.vehicles),'Fahrzeuge'],[`${number(l.used)} / ${number(l.capacity)}`,'Belegt / Kapazität'],[number(l.timing?.waiting_count),'Wartende · Messwert'],[number(l.timing?.headway_seconds),'Takt · Sekunden'],[number(l.balance_year),'Rollierende Betriebsbilanz']])}<p class="small">Bilanz der aktuell zugeordneten Fahrzeuge ohne Investitionen. Messung ${escape(realDate(l.balance_recorded_at))}; Kalendergrenzen ${l.balance_start_game_date&&l.balance_end_game_date?'erfasst':'nicht verfügbar'}. Keine Gewinnprognose.</p><h4>Belegung im ausgewählten Abschnitt</h4>${chart(points,[['used','Belegt','#7fd6bb'],['capacity','Kapazität','#e8b966']],'Belegungsverlauf '+l.name)}<h4>Stationsfolge</h4><ol class="station-timeline">${(l.station_names||[]).map((n,i)=>`<li>${escape(n)} <span class="small">Gruppe ${escape(l.station_group_ids?.[i]??'unbekannt')}</span></li>`).join('')}</ol><h4>Wartende nach Halt und Ware</h4>${table(['Halt','Ware','Wartende','Nächster Fahrplanhalt'],waiting.map(r=>[escape(r.station_name),escape(r.cargo_name),number(r.count),escape(r.next_station_name)]))}<p class="small">Zeitpunkt ${escape(realDate(l.timing?.recorded_at))}. Der nächste Fahrplanhalt ist kein nachgewiesenes individuelles Ziel.</p>${detailBox('Linienmessungen als Tabelle',table(['Spieltag','Aufzeichnung','Fahrzeuge','Belegt','Kapazität','Wartende'],points.map(p=>[escape(p.game_date),escape(realDate(p.recorded_at)),number(p.vehicles),number(p.used),number(p.capacity),number(p.waiting)])))}${detailBox('Ladung, Qualitätsrohwerte und Bilanzgrenzen',raw({cargo:l.cargo,quality_by_cargo:l.timing?.quality_by_cargo,balance_start_game_time:l.balance_start_game_time,balance_end_game_time:l.balance_end_game_time}))}`;
+    document.querySelector('#monitor-line-detail').innerHTML=`<div class="detail-head"><h3>${escape(l.name)}</h3><span class="tag">Linien-ID ${escape(l.id)}</span></div>${cards([[number(l.vehicles),'Fahrzeuge'],[`${number(l.used)} / ${number(l.capacity)}`,'Belegt / Kapazität'],[number(l.timing?.waiting_count),'Wartende · Messwert'],[number(l.timing?.headway_seconds),'Takt · Sekunden'],[number(l.balance_year),'Rollierende Betriebsbilanz']])}<p class="small">Bilanz der aktuell zugeordneten Fahrzeuge ohne Investitionen. Messung ${escape(realDate(l.balance_recorded_at))}; Kalendergrenzen ${l.balance_start_game_date&&l.balance_end_game_date?'erfasst':'nicht verfügbar'}. Keine Gewinnprognose.</p><h4>Belegung im ausgewählten Abschnitt</h4>${histories?chart(points,[['used','Belegt','#7fd6bb'],['capacity','Kapazität','#e8b966']],'Belegungsverlauf '+l.name):pending}<h4>Stationsfolge</h4><ol class="station-timeline">${(l.station_names||[]).map((n,i)=>`<li>${escape(n)} <span class="small">Gruppe ${escape(l.station_group_ids?.[i]??'unbekannt')}</span></li>`).join('')}</ol><h4>Wartende nach Halt und Ware</h4>${table(['Halt','Ware','Wartende','Nächster Fahrplanhalt'],waiting.map(r=>[escape(r.station_name),escape(r.cargo_name),number(r.count),escape(r.next_station_name)]))}<p class="small">Zeitpunkt ${escape(realDate(l.timing?.recorded_at))}. Der nächste Fahrplanhalt ist kein nachgewiesenes individuelles Ziel.</p>${histories?detailBox('Linienmessungen als Tabelle',table(['Spieltag','Aufzeichnung','Fahrzeuge','Belegt','Kapazität','Wartende'],points.map(p=>[escape(p.game_date),escape(realDate(p.recorded_at)),number(p.vehicles),number(p.used),number(p.capacity),number(p.waiting)]))):''}${detailBox('Ladung, Qualitätsrohwerte und Bilanzgrenzen',raw({cargo:l.cargo,quality_by_cargo:l.timing?.quality_by_cargo,balance_start_game_time:l.balance_start_game_time,balance_end_game_time:l.balance_end_game_time}))}`;
+  }
+  // Line histories are the largest part of a segment and are only fetched when the traffic tab is used.
+  async function loadLines(seg){
+    linePending.set(seg.id,true);
+    try{
+      const data=await fetchJSON(base+index.segments.find(s=>s.id===seg.id).lines_file);
+      lineCache.set(seg.id,data.line_history);linePending.delete(seg.id);
+    }catch(error){linePending.set(seg.id,'error');}
+    if(segment===seg&&selectedLine)lineDetail(selectedLine);
   }
   function network(){
     const lines=segment.snapshot.lines;
@@ -99,7 +111,7 @@ export async function mountMonitor(app,index,fetchJSON,base,openArchive){
       const rows=sorted(lines).filter(l=>(!q||[l.name,...(l.station_names||[])].join(' ').toLocaleLowerCase('de').includes(q))&&(!m||l.carrier===m)&&(!load||(load==='empty'?l.used===0&&l.vehicles>0:l.capacity>0&&l.used/l.capacity>=.85)));
       document.querySelector('#monitor-lines').innerHTML=table(['Linie','Träger','Fahrzeuge','Belegt / Kapazität','Belegung','Wartende','Betriebsbilanz'],rows.map(l=>[button(l.name,l.id,'line'),escape(mode(l.carrier)),number(l.vehicles),`${number(l.used)} / ${number(l.capacity)}`,pct(l.used,l.capacity),number(l.timing?.waiting_count),number(l.balance_year)]));
       document.querySelector('#monitor-line-count').textContent=`${rows.length} von ${lines.length} Linien · Linie öffnen für Messzeitpunkte und Verlauf.`;
-      document.querySelectorAll('[data-line]').forEach(b=>b.onclick=()=>lineDetail(b.dataset.line));
+      document.querySelectorAll('[data-line]').forEach(b=>b.onclick=()=>{if(linePending.get(segment.id)==='error')linePending.delete(segment.id);lineDetail(b.dataset.line);});
     };
     ['monitor-line-search','monitor-mode','monitor-load'].forEach(id=>document.querySelector('#'+id).oninput=list);list();
     lineDetail(lines.find(l=>String(l.id)===selectedLine)?.id??lines[0]?.id);

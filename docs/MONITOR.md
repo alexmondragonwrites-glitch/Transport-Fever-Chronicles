@@ -27,7 +27,7 @@ node scripts/validate-monitor.mjs
 node scripts/validate-data.mjs
 ```
 
-Der Import prüft SHA256 und die Weltkennung jedes Sitzungspakets und schreibt denselben Ordner `monitor/` mit dem Stand des Archivs. Beide Wege nutzen `scripts/monitor_build.py`; für dieselben Messungen entstehen identische Abschnittsdateien. Das kleine `index.json` nennt Quellen, Summen und Abschnittsdateien. Das Manifest referenziert es über `monitor`. Die Website lädt zunächst nur den neuesten Abschnitt; andere werden auf Auswahl geladen.
+Der Import prüft SHA256 und die Weltkennung jedes Sitzungspakets und schreibt denselben Ordner `monitor/` mit dem Stand des Archivs. Beide Wege nutzen `scripts/monitor_build.py`; für dieselben Messungen entstehen identische Abschnittsdateien. Das kleine `index.json` nennt Quellen, Summen und Abschnittsdateien. Das Manifest referenziert es über `monitor`. Je Abschnitt gibt es `<id>.json` (Stand, Städte, Flotte, Qualität) und `<id>-lines.json` (Linienverläufe, der größte Teil). Die Website lädt zunächst nur den neuesten Abschnitt ohne Linienverläufe; diese kommen erst beim Reiter „Verkehr“, andere Abschnitte erst auf Auswahl.
 
 ## Bedeutung und Grenzen
 

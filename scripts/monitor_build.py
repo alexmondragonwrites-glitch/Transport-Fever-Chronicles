@@ -74,9 +74,12 @@ class MonitorBuilder:
                 entries.sort(key=lambda x:x['game_time'])
             segment['detail_quality'] = {'recorded_at':last_detail['recorded_at'] if last_detail else None,
                                          'errors':last_detail.get('errors', []) if last_detail else None}
-            filename = segment['id']+'.json'
+            # Line histories are the bulk of a segment; the website loads them only when a line is opened.
+            filename, lines_name = segment['id']+'.json', segment['id']+'-lines.json'
+            self.files[lines_name] = dumps({'id':segment['id'], 'line_history':segment.pop('line_history')})
             self.files[filename] = dumps(segment)
-            self.segments.append({k:segment[k] for k in SEGMENT_KEYS} | {'file':self.folder+'/'+filename})
+            self.segments.append({k:segment[k] for k in SEGMENT_KEYS} | {'file':self.folder+'/'+filename,
+                                                                        'lines_file':self.folder+'/'+lines_name})
 
         for row in rows:
             if row.get('world_id') != self.world_id:
@@ -137,7 +140,8 @@ class MonitorBuilder:
         """Add a session whose files are already current, from a cache record of add_session."""
         for entry in record['segments']:
             self.segments.append(entry)
-            self.files[entry['file'].split('/', 1)[1]] = None
+            for key in ('file', 'lines_file'):
+                self.files[entry[key].split('/', 1)[1]] = None
         for k, v in record['counts'].items():
             self.counts[k] += v
         self.session_count += 1

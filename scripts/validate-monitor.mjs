@@ -14,7 +14,9 @@ for(const entry of index.segments){
   assert.equal(segment.ended_at,segment.snapshot.recorded_at);
   assert.equal(segment.snapshot.lines.length,segment.snapshot.line_count);
   assert.equal(segment.snapshot.industries.length,segment.snapshot.industry_count);
-  for(const rows of Object.values(segment.line_history)){
+  assert(!('line_history' in segment),'line history belongs in the separate lines file');
+  const lines=read(entry.lines_file);assert.equal(lines.id,entry.id);
+  for(const rows of Object.values(lines.line_history)){
     for(let i=1;i<rows.length;i++)assert(rows[i].game_time>=rows[i-1].game_time,'rollback joined into line history');
   }
   for(const rows of Object.values(segment.cities_history)){
@@ -26,7 +28,7 @@ assert(ids.has(index.latest));
 assert.equal(records,index.counts.measurements);assert.equal(details,index.counts.details);assert.equal(errors,index.counts.error_measurements);
 assert.equal(index.latest,index.segments.at(-1).id,'latest must be the newest segment');
 const folder=dirname(manifest.monitor);
-assert.deepEqual(readdirSync(base+folder).filter(f=>f.endsWith('.json')).sort(),[...index.segments.map(s=>basename(s.file)),'index.json'].sort(),'stale or missing segment files');
+assert.deepEqual(readdirSync(base+folder).filter(f=>f.endsWith('.json')).sort(),[...index.segments.flatMap(s=>[basename(s.file),basename(s.lines_file)]),'index.json'].sort(),'stale or missing segment files');
 assert(index.archive?.url&&/^[0-9a-f]{64}$/.test(index.archive.sha256),'raw data archive reference missing');
 const known=index.segments.find(s=>s.id==='20261011_135432_045539-1');
 if(known)assert(known.rollback_before,'known return to earlier save must stay explicit');
