@@ -1,0 +1,283 @@
+{
+  "schema_version": 1,
+  "save_id": "archipel-des-alizes",
+  "game_date": "1911-04-13",
+  "observed_at": "2026-10-11T19:19:55+02:00",
+  "sources": [
+    "lines-1911-04.json",
+    "transport-times-1911-04.json",
+    "world-cities-1911-04.json",
+    "industry-observations-1911-04.json",
+    "lines-1910-03.json"
+  ],
+  "account_balance": 61164100,
+  "population": {
+    "total": 15837,
+    "previous": 15268,
+    "growth": 569,
+    "relative_growth_pct": 3.7,
+    "timeline": [
+      {
+        "date": "1904-12",
+        "population": 11399
+      },
+      {
+        "date": "1905-12",
+        "population": 12212
+      },
+      {
+        "date": "1906-09",
+        "population": 12797
+      },
+      {
+        "date": "1907-12",
+        "population": 13768
+      },
+      {
+        "date": "1908-12",
+        "population": 14566
+      },
+      {
+        "date": "1909-12",
+        "population": 15162
+      },
+      {
+        "date": "1910-03",
+        "population": 15268
+      },
+      {
+        "date": "1910-12",
+        "population": 15688
+      },
+      {
+        "date": "1911-04",
+        "population": 15837
+      }
+    ]
+  },
+  "transport": {
+    "overview_lines": 85,
+    "listed_lines": 85,
+    "overview_vehicles": 487,
+    "listed_line_vehicles": 465,
+    "difference_vehicles": 22,
+    "occupied": 4649,
+    "capacity": 9397,
+    "utilization_pct": 49.5,
+    "positive_lines": 60,
+    "negative_lines": 24,
+    "zero_lines": 1,
+    "combined_line_balance_last_game_year": 42900141,
+    "total_positive_balances": 51907851,
+    "total_negative_balances": -9007710,
+    "top_profit": [
+      {
+        "name": "TP Passagiere-PordesAli-AnsDor-RE-1",
+        "balance": 22785421
+      },
+      {
+        "name": "WC Sugar,Dünger-Cor-PordesAli-IC-1",
+        "balance": 3681087
+      },
+      {
+        "name": "WC Rohöl,Passagiere,Dünger,+1-PordesAli-LO-1",
+        "balance": 2569233
+      },
+      {
+        "name": "TC Holz,Bretter-Val-Bou-IC-1",
+        "balance": 2288233
+      },
+      {
+        "name": "WC Passagiere,Bretter,Kohle-Val-Roc-IC-1",
+        "balance": 2131020
+      },
+      {
+        "name": "WC Passagiere,Holz,Bretter-Mon-Val-IC-1",
+        "balance": 1886368
+      },
+      {
+        "name": "WC Dünger,Gemüse-PordesAli-AnsDor-IC-1",
+        "balance": 1504534
+      },
+      {
+        "name": "WC Rohöl,Treibstoff-AnsDor-PordesAli-IC-1",
+        "balance": 1409207
+      }
+    ],
+    "top_loss": [
+      {
+        "name": "WC Chemikalien-Lam-PordesAli-IC-1",
+        "balance": -2697085
+      },
+      {
+        "name": "TC Kunststoff-LeRov-Neu-IC-1",
+        "balance": -1152673
+      },
+      {
+        "name": "WC Passagiere,Chemikalien,Farbstoffe,+1-Neu-LO-1",
+        "balance": -1030615
+      },
+      {
+        "name": "TC Chemikalien,Farbstoffe-LeRov-Neu-IC-1",
+        "balance": -717956
+      },
+      {
+        "name": "TC Chemikalien,Farbstoffe-Lam-Ani-IC-1",
+        "balance": -617904
+      },
+      {
+        "name": "WC Passagiere,Werkzeuge,Bretter-Ram-Val-IC-1",
+        "balance": -603884
+      },
+      {
+        "name": "TC Blech-PordesAli-PoidesPêc-IC-1",
+        "balance": -602034
+      },
+      {
+        "name": "RC Gemüse,Treibstoff,Kleidung-AnsDor-LO-1",
+        "balance": -332605
+      },
+      {
+        "name": "RC Passagiere,Getreide-AnsDor-LO-1",
+        "balance": -275327
+      },
+      {
+        "name": "Tram Passagiere-PoidesPêc-LO-2",
+        "balance": -232881
+      }
+    ],
+    "new_line_names": [
+      "Bus Passagiere-Bou-LO-5",
+      "Bus Passagiere-Bou-LO-6",
+      "WC Passagiere,Fisch-PoidesPêc-LO-1",
+      "WC Passagiere,Fisch-PoidesPêc-LO-2",
+      "WC Passagiere,Werkzeuge,Bretter-Ram-Val-IC-1",
+      "WC Passagiere,Kunststoff-Ram-LeRov-IC-1",
+      "TC Kunststoff-LeRov-Neu-IC-1",
+      "WC Passagiere,Chemikalien,Farbstoffe,+1-Neu-LO-1"
+    ],
+    "missing_prior_line_names": [
+      "WC Passagiere,Werkzeuge,Fisch-PoidesPêc-LO-1",
+      "WC Passagiere,Werkzeuge,Fisch-PoidesPêc-LO-2",
+      "WC Passagiere,Chemikalien,Farbstoffe-Neu-LO-1"
+    ]
+  },
+  "operations": {
+    "highest_waiting_passengers": [
+      {
+        "name": "TP Passagiere-PordesAli-AnsDor-RE-1",
+        "waiting": 178,
+        "average_wait_seconds": 114,
+        "max_wait_seconds": 342
+      },
+      {
+        "name": "Tram Passagiere-Bou-LO-1",
+        "waiting": 115,
+        "average_wait_seconds": 27.1,
+        "max_wait_seconds": 114
+      },
+      {
+        "name": "Bus Passagiere-Val-LO-1",
+        "waiting": 91,
+        "average_wait_seconds": 138,
+        "max_wait_seconds": 510
+      },
+      {
+        "name": "Bus Passagiere-AnsDor-LO-4",
+        "waiting": 90,
+        "average_wait_seconds": 312,
+        "max_wait_seconds": 588
+      },
+      {
+        "name": "Tram Passagiere-PordesAli-LO-1",
+        "waiting": 85,
+        "average_wait_seconds": 186,
+        "max_wait_seconds": 330
+      },
+      {
+        "name": "Tram Passagiere-PoidesPêc-LO-1",
+        "waiting": 74,
+        "average_wait_seconds": 180,
+        "max_wait_seconds": 384
+      },
+      {
+        "name": "Bus Passagiere-PordesAli-LO-7",
+        "waiting": 62,
+        "average_wait_seconds": 240,
+        "max_wait_seconds": 600
+      },
+      {
+        "name": "Bus Passagiere-Bou-LO-6",
+        "waiting": 52,
+        "average_wait_seconds": 786,
+        "max_wait_seconds": 1758
+      },
+      {
+        "name": "Bus Passagiere-PordesAli-LO-4",
+        "waiting": 25,
+        "average_wait_seconds": 150,
+        "max_wait_seconds": 180
+      }
+    ],
+    "highest_cargo_age": [
+      {
+        "name": "TC Chemikalien,Farbstoffe-LeRov-Neu-IC-1",
+        "cargo_age_average_seconds": 60474,
+        "transit_since_pickup_average_seconds": 7782
+      },
+      {
+        "name": "WC Chemikalien-LeRov-Ani-IC-1",
+        "cargo_age_average_seconds": 58404,
+        "transit_since_pickup_average_seconds": 5538
+      },
+      {
+        "name": "TC Chemikalien,Farbstoffe-Lam-Ani-IC-1",
+        "cargo_age_average_seconds": 54216,
+        "transit_since_pickup_average_seconds": 2550
+      },
+      {
+        "name": "WC Passagiere,Wolle,Kleidung-PoidesPêc-Lam-IC-1",
+        "cargo_age_average_seconds": 15960,
+        "transit_since_pickup_average_seconds": 9432
+      },
+      {
+        "name": "RC Bretter-Roc-LO-1",
+        "cargo_age_average_seconds": 12858,
+        "transit_since_pickup_average_seconds": 10704
+      },
+      {
+        "name": "TC Getreide,Kohle-AnsDor-Val-IC-1",
+        "cargo_age_average_seconds": 11376,
+        "transit_since_pickup_average_seconds": 3042
+      },
+      {
+        "name": "RC Bretter-Mon-LO-1",
+        "cargo_age_average_seconds": 10908,
+        "transit_since_pickup_average_seconds": 8286
+      },
+      {
+        "name": "WC Passagiere,Holz,Bretter-Mon-Val-IC-1",
+        "cargo_age_average_seconds": 9342,
+        "transit_since_pickup_average_seconds": 7950
+      },
+      {
+        "name": "TC Konserven,Fisch,Fleisch-PoidesPêc-Val-RE-1",
+        "cargo_age_average_seconds": 9108,
+        "transit_since_pickup_average_seconds": 6438
+      }
+    ],
+    "service_headways": 85
+  },
+  "industry": {
+    "reported_total": 104,
+    "listed_stopped": 28,
+    "status_coverage": "Stopp-Teilmenge; der Export liefert keine 104 vollständigen Industriezeilen"
+  },
+  "methodology": [
+    "Summe der Fahrzeug-Betriebsbilanzen entspricht nicht automatisch dem gesamten Unternehmensgewinn.",
+    "Werte 'Belegt' und 'Kapazität' sind Momentaufnahmen mit gemischten Einheiten.",
+    "Warenalter beschreibt keine abgeschlossene Transportzeit und beweist keinen Verderb.",
+    "Die Übersicht meldet 487 Fahrzeuge, die 85 Linien summieren sich auf 465; Differenz ungelöst.",
+    "Die Namen und IDs von Linien können sich zwischen Exporten ändern. Match per Name ist nur ein vorläufiger Vergleich."
+  ]
+}
