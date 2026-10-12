@@ -1,23 +1,23 @@
 {
   "schema_version": 1,
   "save_id": "archipel-des-alizes",
-  "latest_game_date": "1911-04-13",
+  "latest_game_date": "1911-12-24",
   "latest": {
     "meta": "meta.json",
-    "cities": "cities-1911-04.json",
-    "lines": "lines-1911-04.json",
-    "industries": "industries-1910-03.json",
+    "cities": "cities-1911-12.json",
+    "lines": "lines-1911-12.json",
+    "industries": "industries-1911-12.json",
     "demand": "demand-1910-03.json",
     "events": "events.json",
     "gazette": "gazette.json",
-    "worldCities": "world-cities-1911-04.json",
+    "worldCities": "world-cities-1911-12.json",
     "worldDemand": "world-demand-1910-03.json",
     "atlas": "atlas.json",
     "historicProduction": "production-1908-03.json",
     "historicSupply": "city-supply-1906-10.json",
-    "analysis": "analysis-1911-04.json",
+    "analysis": "analysis-1911-12.json",
     "decade": "decade-1900-1910.json",
-    "transportTimes": "transport-times-1911-04.json",
+    "transportTimes": "transport-times-1911-12.json",
     "industryObservations": "industry-observations-1911-04.json"
   },
   "snapshots": [
@@ -42,6 +42,18 @@
       "transportTimes": "transport-times-1911-04.json",
       "industryObservations": "industry-observations-1911-04.json",
       "note": "Warenbedarf und vollständiger Industrie-Zustand bleiben vom vorherigen Datum (1910); nicht mit 1911 gleichsetzen."
+    },
+    {
+      "game_date": "1911-12-24",
+      "observed_at": "2026-10-12T06:57:34+02:00",
+      "source": "TF3-Mod: Stadtentwicklung, Linien & Auslastung, Transportzeiten, Industrien mit Produktions-, Versand- und Zulieferungsdaten",
+      "cities": "cities-1911-12.json",
+      "worldCities": "world-cities-1911-12.json",
+      "lines": "lines-1911-12.json",
+      "industries": "industries-1911-12.json",
+      "transportTimes": "transport-times-1911-12.json",
+      "analysis": "analysis-1911-12.json",
+      "note": "Für Dezember liegen keine neuen Jahresbilanzen oder Kontostandsdaten vor; ältere Werte von April werden nicht auf Weihnachten übertragen."
     }
   ],
   "historical_sources": [
@@ -94,8 +106,33 @@
       "date": "1911-04-13",
       "type": "derived_analysis",
       "file": "analysis-1911-04.json"
+    },
+    {
+      "date": "1911-12-24",
+      "type": "world_population",
+      "file": "world-cities-1911-12.json"
+    },
+    {
+      "date": "1911-12-24",
+      "type": "industries_with_flows",
+      "file": "industries-1911-12.json"
+    },
+    {
+      "date": "1911-12-24",
+      "type": "line_load",
+      "file": "lines-1911-12.json"
+    },
+    {
+      "date": "1911-12-24",
+      "type": "transport_times",
+      "file": "transport-times-1911-12.json"
+    },
+    {
+      "date": "1911-12-24",
+      "type": "derived_analysis",
+      "file": "analysis-1911-12.json"
     }
   ],
   "monitor": "monitor-20261011/index.json",
-  "latestReport": "1911.html"
+  "latestReport": "weihnachten-1911.html"
 }
