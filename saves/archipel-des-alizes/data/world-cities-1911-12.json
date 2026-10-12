@@ -1,0 +1,2618 @@
+{
+  "schema_version": 1,
+  "save_id": "archipel-des-alizes",
+  "periods": [
+    "1904-12",
+    "1905-12",
+    "1906-09",
+    "1907-12",
+    "1908-12",
+    "1909-12",
+    "1910-03",
+    "1910-12",
+    "1911-04",
+    "1911-12"
+  ],
+  "source": "TF3-Mod · Stadtentwicklung bis 1911-12-24 · Messung 2026-10-12T06:57:34+02:00; historische Werte bleiben bestehen",
+  "note": "Gemeindename zum letzten Messzeitpunkt; frühere Namen als aliases. Inselzuordnung nur für belegte sieben erschlossene Städte; übrige Lage nicht dokumentiert.",
+  "world_totals": [
+    {
+      "date": "1904-12",
+      "population": 11399
+    },
+    {
+      "date": "1905-12",
+      "population": 12212
+    },
+    {
+      "date": "1906-09",
+      "population": 12797
+    },
+    {
+      "date": "1907-12",
+      "population": 13768
+    },
+    {
+      "date": "1908-12",
+      "population": 14566
+    },
+    {
+      "date": "1909-12",
+      "population": 15162
+    },
+    {
+      "date": "1910-03",
+      "population": 15268
+    },
+    {
+      "date": "1910-12",
+      "population": 15688
+    },
+    {
+      "date": "1911-04",
+      "population": 15837
+    },
+    {
+      "date": "1911-12",
+      "population": 16245
+    }
+  ],
+  "cities": [
+    {
+      "id": "romagnat",
+      "name": "Romagnat",
+      "aliases": [],
+      "infrastructure_status": "ohne dokumentierte Verbindung",
+      "island_id": null,
+      "history": [
+        {
+          "date": "1904-12",
+          "population": 257
+        },
+        {
+          "date": "1905-12",
+          "population": 257
+        },
+        {
+          "date": "1906-09",
+          "population": 257
+        },
+        {
+          "date": "1907-12",
+          "population": 257
+        },
+        {
+          "date": "1908-12",
+          "population": 257
+        },
+        {
+          "date": "1909-12",
+          "population": 257
+        },
+        {
+          "date": "1910-03",
+          "population": 257
+        },
+        {
+          "date": "1910-12",
+          "population": 257
+        },
+        {
+          "date": "1911-04",
+          "population": 257
+        },
+        {
+          "date": "1911-12",
+          "population": 257
+        }
+      ],
+      "housing_occupancy_latest": 257,
+      "source": "Stadtentwicklung · TF3-Mod · Export bis 1910-03"
+    },
+    {
+      "id": "reichshoffen",
+      "name": "Reichshoffen",
+      "aliases": [],
+      "infrastructure_status": "ohne dokumentierte Verbindung",
+      "island_id": null,
+      "history": [
+        {
+          "date": "1904-12",
+          "population": 301
+        },
+        {
+          "date": "1905-12",
+          "population": 301
+        },
+        {
+          "date": "1906-09",
+          "population": 301
+        },
+        {
+          "date": "1907-12",
+          "population": 301
+        },
+        {
+          "date": "1908-12",
+          "population": 301
+        },
+        {
+          "date": "1909-12",
+          "population": 301
+        },
+        {
+          "date": "1910-03",
+          "population": 301
+        },
+        {
+          "date": "1910-12",
+          "population": 301
+        },
+        {
+          "date": "1911-04",
+          "population": 301
+        },
+        {
+          "date": "1911-12",
+          "population": 301
+        }
+      ],
+      "housing_occupancy_latest": 301,
+      "source": "Stadtentwicklung · TF3-Mod · Export bis 1910-03"
+    },
+    {
+      "id": "aniche",
+      "name": "Aniche",
+      "aliases": [],
+      "infrastructure_status": "ohne dokumentierte Verbindung",
+      "island_id": null,
+      "history": [
+        {
+          "date": "1904-12",
+          "population": 264
+        },
+        {
+          "date": "1905-12",
+          "population": 264
+        },
+        {
+          "date": "1906-09",
+          "population": 264
+        },
+        {
+          "date": "1907-12",
+          "population": 264
+        },
+        {
+          "date": "1908-12",
+          "population": 264
+        },
+        {
+          "date": "1909-12",
+          "population": 264
+        },
+        {
+          "date": "1910-03",
+          "population": 264
+        },
+        {
+          "date": "1910-12",
+          "population": 264
+        },
+        {
+          "date": "1911-04",
+          "population": 264
+        },
+        {
+          "date": "1911-12",
+          "population": 264
+        }
+      ],
+      "housing_occupancy_latest": 264,
+      "source": "Stadtentwicklung · TF3-Mod · Export bis 1910-03"
+    },
+    {
+      "id": "roche-noire",
+      "name": "Roche-Noire",
+      "aliases": [
+        "Pont-Saint-Martin"
+      ],
+      "infrastructure_status": "erschlossen",
+      "island_id": "ausseninsel-roche-noire",
+      "history": [
+        {
+          "date": "1904-12",
+          "population": 355
+        },
+        {
+          "date": "1905-12",
+          "population": 355
+        },
+        {
+          "date": "1906-09",
+          "population": 355
+        },
+        {
+          "date": "1907-12",
+          "population": 356
+        },
+        {
+          "date": "1908-12",
+          "population": 362
+        },
+        {
+          "date": "1909-12",
+          "population": 365
+        },
+        {
+          "date": "1910-03",
+          "population": 366
+        },
+        {
+          "date": "1910-12",
+          "population": 375
+        },
+        {
+          "date": "1911-04",
+          "population": 375
+        },
+        {
+          "date": "1911-12",
+          "population": 462
+        }
+      ],
+      "housing_occupancy_latest": 462,
+      "source": "Stadtentwicklung · TF3-Mod · Export bis 1910-03"
+    },
+    {
+      "id": "pointe-des-pecheurs",
+      "name": "Pointe des Pêcheurs",
+      "aliases": [],
+      "infrastructure_status": "erschlossen",
+      "island_id": "hauptinsel",
+      "history": [
+        {
+          "date": "1904-12",
+          "population": 261
+        },
+        {
+          "date": "1905-12",
+          "population": 466
+        },
+        {
+          "date": "1906-09",
+          "population": 557
+        },
+        {
+          "date": "1907-12",
+          "population": 724
+        },
+        {
+          "date": "1908-12",
+          "population": 857
+        },
+        {
+          "date": "1909-12",
+          "population": 964
+        },
+        {
+          "date": "1910-03",
+          "population": 991
+        },
+        {
+          "date": "1910-12",
+          "population": 1034
+        },
+        {
+          "date": "1911-04",
+          "population": 1047
+        },
+        {
+          "date": "1911-12",
+          "population": 1102
+        }
+      ],
+      "housing_occupancy_latest": 1102,
+      "source": "Stadtentwicklung · TF3-Mod · Export bis 1910-03"
+    },
+    {
+      "id": "la-wantzenau",
+      "name": "La Wantzenau",
+      "aliases": [],
+      "infrastructure_status": "ohne dokumentierte Verbindung",
+      "island_id": null,
+      "history": [
+        {
+          "date": "1904-12",
+          "population": 192
+        },
+        {
+          "date": "1905-12",
+          "population": 192
+        },
+        {
+          "date": "1906-09",
+          "population": 192
+        },
+        {
+          "date": "1907-12",
+          "population": 192
+        },
+        {
+          "date": "1908-12",
+          "population": 192
+        },
+        {
+          "date": "1909-12",
+          "population": 192
+        },
+        {
+          "date": "1910-03",
+          "population": 192
+        },
+        {
+          "date": "1910-12",
+          "population": 192
+        },
+        {
+          "date": "1911-04",
+          "population": 192
+        },
+        {
+          "date": "1911-12",
+          "population": 192
+        }
+      ],
+      "housing_occupancy_latest": 192,
+      "source": "Stadtentwicklung · TF3-Mod · Export bis 1910-03"
+    },
+    {
+      "id": "nyons",
+      "name": "Nyons",
+      "aliases": [],
+      "infrastructure_status": "ohne dokumentierte Verbindung",
+      "island_id": null,
+      "history": [
+        {
+          "date": "1904-12",
+          "population": 106
+        },
+        {
+          "date": "1905-12",
+          "population": 106
+        },
+        {
+          "date": "1906-09",
+          "population": 106
+        },
+        {
+          "date": "1907-12",
+          "population": 106
+        },
+        {
+          "date": "1908-12",
+          "population": 106
+        },
+        {
+          "date": "1909-12",
+          "population": 106
+        },
+        {
+          "date": "1910-03",
+          "population": 106
+        },
+        {
+          "date": "1910-12",
+          "population": 106
+        },
+        {
+          "date": "1911-04",
+          "population": 106
+        },
+        {
+          "date": "1911-12",
+          "population": 106
+        }
+      ],
+      "housing_occupancy_latest": 106,
+      "source": "Stadtentwicklung · TF3-Mod · Export bis 1910-03"
+    },
+    {
+      "id": "bourg-l-ecorce",
+      "name": "Bourg-l’Écorce",
+      "aliases": [],
+      "infrastructure_status": "erschlossen",
+      "island_id": "hauptinsel",
+      "history": [
+        {
+          "date": "1904-12",
+          "population": 673
+        },
+        {
+          "date": "1905-12",
+          "population": 1092
+        },
+        {
+          "date": "1906-09",
+          "population": 1363
+        },
+        {
+          "date": "1907-12",
+          "population": 1726
+        },
+        {
+          "date": "1908-12",
+          "population": 1973
+        },
+        {
+          "date": "1909-12",
+          "population": 2144
+        },
+        {
+          "date": "1910-03",
+          "population": 2175
+        },
+        {
+          "date": "1910-12",
+          "population": 2276
+        },
+        {
+          "date": "1911-04",
+          "population": 2318
+        },
+        {
+          "date": "1911-12",
+          "population": 2441
+        }
+      ],
+      "housing_occupancy_latest": 2441,
+      "source": "Stadtentwicklung · TF3-Mod · Export bis 1910-03"
+    },
+    {
+      "id": "la-talaudiere",
+      "name": "La Talaudière",
+      "aliases": [],
+      "infrastructure_status": "ohne dokumentierte Verbindung",
+      "island_id": null,
+      "history": [
+        {
+          "date": "1904-12",
+          "population": 192
+        },
+        {
+          "date": "1905-12",
+          "population": 192
+        },
+        {
+          "date": "1906-09",
+          "population": 192
+        },
+        {
+          "date": "1907-12",
+          "population": 192
+        },
+        {
+          "date": "1908-12",
+          "population": 192
+        },
+        {
+          "date": "1909-12",
+          "population": 192
+        },
+        {
+          "date": "1910-03",
+          "population": 192
+        },
+        {
+          "date": "1910-12",
+          "population": 192
+        },
+        {
+          "date": "1911-04",
+          "population": 192
+        },
+        {
+          "date": "1911-12",
+          "population": 192
+        }
+      ],
+      "housing_occupancy_latest": 192,
+      "source": "Stadtentwicklung · TF3-Mod · Export bis 1910-03"
+    },
+    {
+      "id": "valmorin",
+      "name": "Valmorin",
+      "aliases": [
+        "Bry-sur-Marne"
+      ],
+      "infrastructure_status": "erschlossen",
+      "island_id": "hauptinsel",
+      "history": [
+        {
+          "date": "1904-12",
+          "population": 228
+        },
+        {
+          "date": "1905-12",
+          "population": 228
+        },
+        {
+          "date": "1906-09",
+          "population": 296
+        },
+        {
+          "date": "1907-12",
+          "population": 461
+        },
+        {
+          "date": "1908-12",
+          "population": 616
+        },
+        {
+          "date": "1909-12",
+          "population": 694
+        },
+        {
+          "date": "1910-03",
+          "population": 705
+        },
+        {
+          "date": "1910-12",
+          "population": 760
+        },
+        {
+          "date": "1911-04",
+          "population": 785
+        },
+        {
+          "date": "1911-12",
+          "population": 828
+        }
+      ],
+      "housing_occupancy_latest": 828,
+      "source": "Stadtentwicklung · TF3-Mod · Export bis 1910-03"
+    },
+    {
+      "id": "chamonix-mont-blanc",
+      "name": "Chamonix-Mont-Blanc",
+      "aliases": [],
+      "infrastructure_status": "ohne dokumentierte Verbindung",
+      "island_id": null,
+      "history": [
+        {
+          "date": "1904-12",
+          "population": 125
+        },
+        {
+          "date": "1905-12",
+          "population": 125
+        },
+        {
+          "date": "1906-09",
+          "population": 125
+        },
+        {
+          "date": "1907-12",
+          "population": 125
+        },
+        {
+          "date": "1908-12",
+          "population": 125
+        },
+        {
+          "date": "1909-12",
+          "population": 125
+        },
+        {
+          "date": "1910-03",
+          "population": 125
+        },
+        {
+          "date": "1910-12",
+          "population": 125
+        },
+        {
+          "date": "1911-04",
+          "population": 125
+        },
+        {
+          "date": "1911-12",
+          "population": 125
+        }
+      ],
+      "housing_occupancy_latest": 125,
+      "source": "Stadtentwicklung · TF3-Mod · Export bis 1910-03"
+    },
+    {
+      "id": "le-cannet",
+      "name": "Le Cannet",
+      "aliases": [],
+      "infrastructure_status": "ohne dokumentierte Verbindung",
+      "island_id": null,
+      "history": [
+        {
+          "date": "1904-12",
+          "population": 321
+        },
+        {
+          "date": "1905-12",
+          "population": 321
+        },
+        {
+          "date": "1906-09",
+          "population": 321
+        },
+        {
+          "date": "1907-12",
+          "population": 321
+        },
+        {
+          "date": "1908-12",
+          "population": 321
+        },
+        {
+          "date": "1909-12",
+          "population": 321
+        },
+        {
+          "date": "1910-03",
+          "population": 321
+        },
+        {
+          "date": "1910-12",
+          "population": 321
+        },
+        {
+          "date": "1911-04",
+          "population": 321
+        },
+        {
+          "date": "1911-12",
+          "population": 321
+        }
+      ],
+      "housing_occupancy_latest": 321,
+      "source": "Stadtentwicklung · TF3-Mod · Export bis 1910-03"
+    },
+    {
+      "id": "beuvrages",
+      "name": "Beuvrages",
+      "aliases": [],
+      "infrastructure_status": "ohne dokumentierte Verbindung",
+      "island_id": null,
+      "history": [
+        {
+          "date": "1904-12",
+          "population": 252
+        },
+        {
+          "date": "1905-12",
+          "population": 252
+        },
+        {
+          "date": "1906-09",
+          "population": 252
+        },
+        {
+          "date": "1907-12",
+          "population": 252
+        },
+        {
+          "date": "1908-12",
+          "population": 252
+        },
+        {
+          "date": "1909-12",
+          "population": 252
+        },
+        {
+          "date": "1910-03",
+          "population": 252
+        },
+        {
+          "date": "1910-12",
+          "population": 252
+        },
+        {
+          "date": "1911-04",
+          "population": 252
+        },
+        {
+          "date": "1911-12",
+          "population": 252
+        }
+      ],
+      "housing_occupancy_latest": 252,
+      "source": "Stadtentwicklung · TF3-Mod · Export bis 1910-03"
+    },
+    {
+      "id": "cestas",
+      "name": "Cestas",
+      "aliases": [],
+      "infrastructure_status": "ohne dokumentierte Verbindung",
+      "island_id": null,
+      "history": [
+        {
+          "date": "1904-12",
+          "population": 389
+        },
+        {
+          "date": "1905-12",
+          "population": 389
+        },
+        {
+          "date": "1906-09",
+          "population": 389
+        },
+        {
+          "date": "1907-12",
+          "population": 389
+        },
+        {
+          "date": "1908-12",
+          "population": 389
+        },
+        {
+          "date": "1909-12",
+          "population": 389
+        },
+        {
+          "date": "1910-03",
+          "population": 389
+        },
+        {
+          "date": "1910-12",
+          "population": 389
+        },
+        {
+          "date": "1911-04",
+          "population": 389
+        },
+        {
+          "date": "1911-12",
+          "population": 389
+        }
+      ],
+      "housing_occupancy_latest": 389,
+      "source": "Stadtentwicklung · TF3-Mod · Export bis 1910-03"
+    },
+    {
+      "id": "lardy",
+      "name": "Lardy",
+      "aliases": [],
+      "infrastructure_status": "ohne dokumentierte Verbindung",
+      "island_id": null,
+      "history": [
+        {
+          "date": "1904-12",
+          "population": 214
+        },
+        {
+          "date": "1905-12",
+          "population": 214
+        },
+        {
+          "date": "1906-09",
+          "population": 214
+        },
+        {
+          "date": "1907-12",
+          "population": 214
+        },
+        {
+          "date": "1908-12",
+          "population": 214
+        },
+        {
+          "date": "1909-12",
+          "population": 214
+        },
+        {
+          "date": "1910-03",
+          "population": 214
+        },
+        {
+          "date": "1910-12",
+          "population": 214
+        },
+        {
+          "date": "1911-04",
+          "population": 214
+        },
+        {
+          "date": "1911-12",
+          "population": 214
+        }
+      ],
+      "housing_occupancy_latest": 214,
+      "source": "Stadtentwicklung · TF3-Mod · Export bis 1910-03"
+    },
+    {
+      "id": "chateauroux",
+      "name": "Châteauroux",
+      "aliases": [],
+      "infrastructure_status": "ohne dokumentierte Verbindung",
+      "island_id": null,
+      "history": [
+        {
+          "date": "1904-12",
+          "population": 96
+        },
+        {
+          "date": "1905-12",
+          "population": 96
+        },
+        {
+          "date": "1906-09",
+          "population": 96
+        },
+        {
+          "date": "1907-12",
+          "population": 96
+        },
+        {
+          "date": "1908-12",
+          "population": 96
+        },
+        {
+          "date": "1909-12",
+          "population": 96
+        },
+        {
+          "date": "1910-03",
+          "population": 96
+        },
+        {
+          "date": "1910-12",
+          "population": 96
+        },
+        {
+          "date": "1911-04",
+          "population": 96
+        },
+        {
+          "date": "1911-12",
+          "population": 96
+        }
+      ],
+      "housing_occupancy_latest": 96,
+      "source": "Stadtentwicklung · TF3-Mod · Export bis 1910-03"
+    },
+    {
+      "id": "lamballe-armor",
+      "name": "Lamballe-Armor",
+      "aliases": [],
+      "infrastructure_status": "ohne dokumentierte Verbindung",
+      "island_id": null,
+      "history": [
+        {
+          "date": "1904-12",
+          "population": 234
+        },
+        {
+          "date": "1905-12",
+          "population": 234
+        },
+        {
+          "date": "1906-09",
+          "population": 234
+        },
+        {
+          "date": "1907-12",
+          "population": 234
+        },
+        {
+          "date": "1908-12",
+          "population": 234
+        },
+        {
+          "date": "1909-12",
+          "population": 234
+        },
+        {
+          "date": "1910-03",
+          "population": 234
+        },
+        {
+          "date": "1910-12",
+          "population": 234
+        },
+        {
+          "date": "1911-04",
+          "population": 234
+        },
+        {
+          "date": "1911-12",
+          "population": 234
+        }
+      ],
+      "housing_occupancy_latest": 234,
+      "source": "Stadtentwicklung · TF3-Mod · Export bis 1910-03"
+    },
+    {
+      "id": "fontenay-aux-roses",
+      "name": "Fontenay-aux-Roses",
+      "aliases": [],
+      "infrastructure_status": "ohne dokumentierte Verbindung",
+      "island_id": null,
+      "history": [
+        {
+          "date": "1904-12",
+          "population": 139
+        },
+        {
+          "date": "1905-12",
+          "population": 139
+        },
+        {
+          "date": "1906-09",
+          "population": 139
+        },
+        {
+          "date": "1907-12",
+          "population": 139
+        },
+        {
+          "date": "1908-12",
+          "population": 139
+        },
+        {
+          "date": "1909-12",
+          "population": 139
+        },
+        {
+          "date": "1910-03",
+          "population": 139
+        },
+        {
+          "date": "1910-12",
+          "population": 139
+        },
+        {
+          "date": "1911-04",
+          "population": 139
+        },
+        {
+          "date": "1911-12",
+          "population": 139
+        }
+      ],
+      "housing_occupancy_latest": 139,
+      "source": "Stadtentwicklung · TF3-Mod · Export bis 1910-03"
+    },
+    {
+      "id": "meyzieu",
+      "name": "Meyzieu",
+      "aliases": [],
+      "infrastructure_status": "ohne dokumentierte Verbindung",
+      "island_id": null,
+      "history": [
+        {
+          "date": "1904-12",
+          "population": 227
+        },
+        {
+          "date": "1905-12",
+          "population": 227
+        },
+        {
+          "date": "1906-09",
+          "population": 227
+        },
+        {
+          "date": "1907-12",
+          "population": 227
+        },
+        {
+          "date": "1908-12",
+          "population": 227
+        },
+        {
+          "date": "1909-12",
+          "population": 227
+        },
+        {
+          "date": "1910-03",
+          "population": 227
+        },
+        {
+          "date": "1910-12",
+          "population": 227
+        },
+        {
+          "date": "1911-04",
+          "population": 227
+        },
+        {
+          "date": "1911-12",
+          "population": 227
+        }
+      ],
+      "housing_occupancy_latest": 227,
+      "source": "Stadtentwicklung · TF3-Mod · Export bis 1910-03"
+    },
+    {
+      "id": "sin-le-noble",
+      "name": "Sin-le-Noble",
+      "aliases": [],
+      "infrastructure_status": "ohne dokumentierte Verbindung",
+      "island_id": null,
+      "history": [
+        {
+          "date": "1904-12",
+          "population": 102
+        },
+        {
+          "date": "1905-12",
+          "population": 102
+        },
+        {
+          "date": "1906-09",
+          "population": 102
+        },
+        {
+          "date": "1907-12",
+          "population": 102
+        },
+        {
+          "date": "1908-12",
+          "population": 102
+        },
+        {
+          "date": "1909-12",
+          "population": 102
+        },
+        {
+          "date": "1910-03",
+          "population": 102
+        },
+        {
+          "date": "1910-12",
+          "population": 102
+        },
+        {
+          "date": "1911-04",
+          "population": 102
+        },
+        {
+          "date": "1911-12",
+          "population": 102
+        }
+      ],
+      "housing_occupancy_latest": 102,
+      "source": "Stadtentwicklung · TF3-Mod · Export bis 1910-03"
+    },
+    {
+      "id": "le-rove",
+      "name": "Le Rove",
+      "aliases": [],
+      "infrastructure_status": "ohne dokumentierte Verbindung",
+      "island_id": null,
+      "history": [
+        {
+          "date": "1904-12",
+          "population": 186
+        },
+        {
+          "date": "1905-12",
+          "population": 186
+        },
+        {
+          "date": "1906-09",
+          "population": 186
+        },
+        {
+          "date": "1907-12",
+          "population": 186
+        },
+        {
+          "date": "1908-12",
+          "population": 186
+        },
+        {
+          "date": "1909-12",
+          "population": 186
+        },
+        {
+          "date": "1910-03",
+          "population": 186
+        },
+        {
+          "date": "1910-12",
+          "population": 186
+        },
+        {
+          "date": "1911-04",
+          "population": 186
+        },
+        {
+          "date": "1911-12",
+          "population": 186
+        }
+      ],
+      "housing_occupancy_latest": 186,
+      "source": "Stadtentwicklung · TF3-Mod · Export bis 1910-03"
+    },
+    {
+      "id": "labenne",
+      "name": "Labenne",
+      "aliases": [],
+      "infrastructure_status": "ohne dokumentierte Verbindung",
+      "island_id": null,
+      "history": [
+        {
+          "date": "1904-12",
+          "population": 351
+        },
+        {
+          "date": "1905-12",
+          "population": 351
+        },
+        {
+          "date": "1906-09",
+          "population": 351
+        },
+        {
+          "date": "1907-12",
+          "population": 351
+        },
+        {
+          "date": "1908-12",
+          "population": 351
+        },
+        {
+          "date": "1909-12",
+          "population": 351
+        },
+        {
+          "date": "1910-03",
+          "population": 351
+        },
+        {
+          "date": "1910-12",
+          "population": 351
+        },
+        {
+          "date": "1911-04",
+          "population": 351
+        },
+        {
+          "date": "1911-12",
+          "population": 351
+        }
+      ],
+      "housing_occupancy_latest": 351,
+      "source": "Stadtentwicklung · TF3-Mod · Export bis 1910-03"
+    },
+    {
+      "id": "meru",
+      "name": "Méru",
+      "aliases": [],
+      "infrastructure_status": "ohne dokumentierte Verbindung",
+      "island_id": null,
+      "history": [
+        {
+          "date": "1904-12",
+          "population": 242
+        },
+        {
+          "date": "1905-12",
+          "population": 242
+        },
+        {
+          "date": "1906-09",
+          "population": 242
+        },
+        {
+          "date": "1907-12",
+          "population": 242
+        },
+        {
+          "date": "1908-12",
+          "population": 242
+        },
+        {
+          "date": "1909-12",
+          "population": 242
+        },
+        {
+          "date": "1910-03",
+          "population": 242
+        },
+        {
+          "date": "1910-12",
+          "population": 242
+        },
+        {
+          "date": "1911-04",
+          "population": 242
+        },
+        {
+          "date": "1911-12",
+          "population": 242
+        }
+      ],
+      "housing_occupancy_latest": 242,
+      "source": "Stadtentwicklung · TF3-Mod · Export bis 1910-03"
+    },
+    {
+      "id": "melle",
+      "name": "Melle",
+      "aliases": [],
+      "infrastructure_status": "ohne dokumentierte Verbindung",
+      "island_id": null,
+      "history": [
+        {
+          "date": "1904-12",
+          "population": 265
+        },
+        {
+          "date": "1905-12",
+          "population": 265
+        },
+        {
+          "date": "1906-09",
+          "population": 265
+        },
+        {
+          "date": "1907-12",
+          "population": 265
+        },
+        {
+          "date": "1908-12",
+          "population": 265
+        },
+        {
+          "date": "1909-12",
+          "population": 265
+        },
+        {
+          "date": "1910-03",
+          "population": 265
+        },
+        {
+          "date": "1910-12",
+          "population": 265
+        },
+        {
+          "date": "1911-04",
+          "population": 265
+        },
+        {
+          "date": "1911-12",
+          "population": 265
+        }
+      ],
+      "housing_occupancy_latest": 265,
+      "source": "Stadtentwicklung · TF3-Mod · Export bis 1910-03"
+    },
+    {
+      "id": "cormontreuil",
+      "name": "Cormontreuil",
+      "aliases": [],
+      "infrastructure_status": "ohne dokumentierte Verbindung",
+      "island_id": null,
+      "history": [
+        {
+          "date": "1904-12",
+          "population": 137
+        },
+        {
+          "date": "1905-12",
+          "population": 137
+        },
+        {
+          "date": "1906-09",
+          "population": 137
+        },
+        {
+          "date": "1907-12",
+          "population": 137
+        },
+        {
+          "date": "1908-12",
+          "population": 137
+        },
+        {
+          "date": "1909-12",
+          "population": 137
+        },
+        {
+          "date": "1910-03",
+          "population": 137
+        },
+        {
+          "date": "1910-12",
+          "population": 137
+        },
+        {
+          "date": "1911-04",
+          "population": 137
+        },
+        {
+          "date": "1911-12",
+          "population": 137
+        }
+      ],
+      "housing_occupancy_latest": 137,
+      "source": "Stadtentwicklung · TF3-Mod · Export bis 1910-03"
+    },
+    {
+      "id": "gleize",
+      "name": "Gleizé",
+      "aliases": [],
+      "infrastructure_status": "ohne dokumentierte Verbindung",
+      "island_id": null,
+      "history": [
+        {
+          "date": "1904-12",
+          "population": 224
+        },
+        {
+          "date": "1905-12",
+          "population": 224
+        },
+        {
+          "date": "1906-09",
+          "population": 224
+        },
+        {
+          "date": "1907-12",
+          "population": 224
+        },
+        {
+          "date": "1908-12",
+          "population": 224
+        },
+        {
+          "date": "1909-12",
+          "population": 224
+        },
+        {
+          "date": "1910-03",
+          "population": 224
+        },
+        {
+          "date": "1910-12",
+          "population": 224
+        },
+        {
+          "date": "1911-04",
+          "population": 224
+        },
+        {
+          "date": "1911-12",
+          "population": 224
+        }
+      ],
+      "housing_occupancy_latest": 224,
+      "source": "Stadtentwicklung · TF3-Mod · Export bis 1910-03"
+    },
+    {
+      "id": "auch",
+      "name": "Auch",
+      "aliases": [],
+      "infrastructure_status": "ohne dokumentierte Verbindung",
+      "island_id": null,
+      "history": [
+        {
+          "date": "1904-12",
+          "population": 141
+        },
+        {
+          "date": "1905-12",
+          "population": 141
+        },
+        {
+          "date": "1906-09",
+          "population": 141
+        },
+        {
+          "date": "1907-12",
+          "population": 141
+        },
+        {
+          "date": "1908-12",
+          "population": 141
+        },
+        {
+          "date": "1909-12",
+          "population": 141
+        },
+        {
+          "date": "1910-03",
+          "population": 141
+        },
+        {
+          "date": "1910-12",
+          "population": 141
+        },
+        {
+          "date": "1911-04",
+          "population": 141
+        },
+        {
+          "date": "1911-12",
+          "population": 141
+        }
+      ],
+      "housing_occupancy_latest": 141,
+      "source": "Stadtentwicklung · TF3-Mod · Export bis 1910-03"
+    },
+    {
+      "id": "grenay",
+      "name": "Grenay",
+      "aliases": [],
+      "infrastructure_status": "ohne dokumentierte Verbindung",
+      "island_id": null,
+      "history": [
+        {
+          "date": "1904-12",
+          "population": 152
+        },
+        {
+          "date": "1905-12",
+          "population": 152
+        },
+        {
+          "date": "1906-09",
+          "population": 152
+        },
+        {
+          "date": "1907-12",
+          "population": 152
+        },
+        {
+          "date": "1908-12",
+          "population": 152
+        },
+        {
+          "date": "1909-12",
+          "population": 152
+        },
+        {
+          "date": "1910-03",
+          "population": 152
+        },
+        {
+          "date": "1910-12",
+          "population": 152
+        },
+        {
+          "date": "1911-04",
+          "population": 152
+        },
+        {
+          "date": "1911-12",
+          "population": 152
+        }
+      ],
+      "housing_occupancy_latest": 152,
+      "source": "Stadtentwicklung · TF3-Mod · Export bis 1910-03"
+    },
+    {
+      "id": "cournon-dauvergne",
+      "name": "Cournon-d'Auvergne",
+      "aliases": [],
+      "infrastructure_status": "ohne dokumentierte Verbindung",
+      "island_id": null,
+      "history": [
+        {
+          "date": "1904-12",
+          "population": 178
+        },
+        {
+          "date": "1905-12",
+          "population": 178
+        },
+        {
+          "date": "1906-09",
+          "population": 178
+        },
+        {
+          "date": "1907-12",
+          "population": 178
+        },
+        {
+          "date": "1908-12",
+          "population": 178
+        },
+        {
+          "date": "1909-12",
+          "population": 178
+        },
+        {
+          "date": "1910-03",
+          "population": 178
+        },
+        {
+          "date": "1910-12",
+          "population": 178
+        },
+        {
+          "date": "1911-04",
+          "population": 178
+        },
+        {
+          "date": "1911-12",
+          "population": 178
+        }
+      ],
+      "housing_occupancy_latest": 178,
+      "source": "Stadtentwicklung · TF3-Mod · Export bis 1910-03"
+    },
+    {
+      "id": "beaucaire",
+      "name": "Beaucaire",
+      "aliases": [],
+      "infrastructure_status": "ohne dokumentierte Verbindung",
+      "island_id": null,
+      "history": [
+        {
+          "date": "1904-12",
+          "population": 206
+        },
+        {
+          "date": "1905-12",
+          "population": 206
+        },
+        {
+          "date": "1906-09",
+          "population": 206
+        },
+        {
+          "date": "1907-12",
+          "population": 206
+        },
+        {
+          "date": "1908-12",
+          "population": 206
+        },
+        {
+          "date": "1909-12",
+          "population": 206
+        },
+        {
+          "date": "1910-03",
+          "population": 206
+        },
+        {
+          "date": "1910-12",
+          "population": 206
+        },
+        {
+          "date": "1911-04",
+          "population": 206
+        },
+        {
+          "date": "1911-12",
+          "population": 206
+        }
+      ],
+      "housing_occupancy_latest": 206,
+      "source": "Stadtentwicklung · TF3-Mod · Export bis 1910-03"
+    },
+    {
+      "id": "change",
+      "name": "Changé",
+      "aliases": [],
+      "infrastructure_status": "ohne dokumentierte Verbindung",
+      "island_id": null,
+      "history": [
+        {
+          "date": "1904-12",
+          "population": 138
+        },
+        {
+          "date": "1905-12",
+          "population": 138
+        },
+        {
+          "date": "1906-09",
+          "population": 138
+        },
+        {
+          "date": "1907-12",
+          "population": 138
+        },
+        {
+          "date": "1908-12",
+          "population": 138
+        },
+        {
+          "date": "1909-12",
+          "population": 138
+        },
+        {
+          "date": "1910-03",
+          "population": 138
+        },
+        {
+          "date": "1910-12",
+          "population": 138
+        },
+        {
+          "date": "1911-04",
+          "population": 138
+        },
+        {
+          "date": "1911-12",
+          "population": 138
+        }
+      ],
+      "housing_occupancy_latest": 138,
+      "source": "Stadtentwicklung · TF3-Mod · Export bis 1910-03"
+    },
+    {
+      "id": "val-de-briey",
+      "name": "Val de Briey",
+      "aliases": [],
+      "infrastructure_status": "ohne dokumentierte Verbindung",
+      "island_id": null,
+      "history": [
+        {
+          "date": "1904-12",
+          "population": 120
+        },
+        {
+          "date": "1905-12",
+          "population": 120
+        },
+        {
+          "date": "1906-09",
+          "population": 120
+        },
+        {
+          "date": "1907-12",
+          "population": 120
+        },
+        {
+          "date": "1908-12",
+          "population": 120
+        },
+        {
+          "date": "1909-12",
+          "population": 120
+        },
+        {
+          "date": "1910-03",
+          "population": 120
+        },
+        {
+          "date": "1910-12",
+          "population": 120
+        },
+        {
+          "date": "1911-04",
+          "population": 120
+        },
+        {
+          "date": "1911-12",
+          "population": 120
+        }
+      ],
+      "housing_occupancy_latest": 120,
+      "source": "Stadtentwicklung · TF3-Mod · Export bis 1910-03"
+    },
+    {
+      "id": "rambervillers",
+      "name": "Rambervillers",
+      "aliases": [],
+      "infrastructure_status": "ohne dokumentierte Verbindung",
+      "island_id": null,
+      "history": [
+        {
+          "date": "1904-12",
+          "population": 78
+        },
+        {
+          "date": "1905-12",
+          "population": 78
+        },
+        {
+          "date": "1906-09",
+          "population": 78
+        },
+        {
+          "date": "1907-12",
+          "population": 78
+        },
+        {
+          "date": "1908-12",
+          "population": 78
+        },
+        {
+          "date": "1909-12",
+          "population": 78
+        },
+        {
+          "date": "1910-03",
+          "population": 78
+        },
+        {
+          "date": "1910-12",
+          "population": 78
+        },
+        {
+          "date": "1911-04",
+          "population": 78
+        },
+        {
+          "date": "1911-12",
+          "population": 78
+        }
+      ],
+      "housing_occupancy_latest": 78,
+      "source": "Stadtentwicklung · TF3-Mod · Export bis 1910-03"
+    },
+    {
+      "id": "la-mulatiere",
+      "name": "La Mulatière",
+      "aliases": [],
+      "infrastructure_status": "ohne dokumentierte Verbindung",
+      "island_id": null,
+      "history": [
+        {
+          "date": "1904-12",
+          "population": 117
+        },
+        {
+          "date": "1905-12",
+          "population": 117
+        },
+        {
+          "date": "1906-09",
+          "population": 117
+        },
+        {
+          "date": "1907-12",
+          "population": 117
+        },
+        {
+          "date": "1908-12",
+          "population": 117
+        },
+        {
+          "date": "1909-12",
+          "population": 117
+        },
+        {
+          "date": "1910-03",
+          "population": 117
+        },
+        {
+          "date": "1910-12",
+          "population": 117
+        },
+        {
+          "date": "1911-04",
+          "population": 117
+        },
+        {
+          "date": "1911-12",
+          "population": 117
+        }
+      ],
+      "housing_occupancy_latest": 117,
+      "source": "Stadtentwicklung · TF3-Mod · Export bis 1910-03"
+    },
+    {
+      "id": "port-des-alizes",
+      "name": "Port des Alizés",
+      "aliases": [],
+      "infrastructure_status": "erschlossen",
+      "island_id": "hauptinsel",
+      "history": [
+        {
+          "date": "1904-12",
+          "population": 728
+        },
+        {
+          "date": "1905-12",
+          "population": 868
+        },
+        {
+          "date": "1906-09",
+          "population": 992
+        },
+        {
+          "date": "1907-12",
+          "population": 1142
+        },
+        {
+          "date": "1908-12",
+          "population": 1281
+        },
+        {
+          "date": "1909-12",
+          "population": 1400
+        },
+        {
+          "date": "1910-03",
+          "population": 1422
+        },
+        {
+          "date": "1910-12",
+          "population": 1574
+        },
+        {
+          "date": "1911-04",
+          "population": 1629
+        },
+        {
+          "date": "1911-12",
+          "population": 1677
+        }
+      ],
+      "housing_occupancy_latest": 1677,
+      "source": "Stadtentwicklung · TF3-Mod · Export bis 1910-03"
+    },
+    {
+      "id": "cassis",
+      "name": "Cassis",
+      "aliases": [],
+      "infrastructure_status": "ohne dokumentierte Verbindung",
+      "island_id": null,
+      "history": [
+        {
+          "date": "1904-12",
+          "population": 139
+        },
+        {
+          "date": "1905-12",
+          "population": 139
+        },
+        {
+          "date": "1906-09",
+          "population": 139
+        },
+        {
+          "date": "1907-12",
+          "population": 139
+        },
+        {
+          "date": "1908-12",
+          "population": 139
+        },
+        {
+          "date": "1909-12",
+          "population": 139
+        },
+        {
+          "date": "1910-03",
+          "population": 139
+        },
+        {
+          "date": "1910-12",
+          "population": 139
+        },
+        {
+          "date": "1911-04",
+          "population": 139
+        },
+        {
+          "date": "1911-12",
+          "population": 139
+        }
+      ],
+      "housing_occupancy_latest": 139,
+      "source": "Stadtentwicklung · TF3-Mod · Export bis 1910-03"
+    },
+    {
+      "id": "sarrians",
+      "name": "Sarrians",
+      "aliases": [],
+      "infrastructure_status": "ohne dokumentierte Verbindung",
+      "island_id": null,
+      "history": [
+        {
+          "date": "1904-12",
+          "population": 217
+        },
+        {
+          "date": "1905-12",
+          "population": 217
+        },
+        {
+          "date": "1906-09",
+          "population": 217
+        },
+        {
+          "date": "1907-12",
+          "population": 217
+        },
+        {
+          "date": "1908-12",
+          "population": 217
+        },
+        {
+          "date": "1909-12",
+          "population": 217
+        },
+        {
+          "date": "1910-03",
+          "population": 217
+        },
+        {
+          "date": "1910-12",
+          "population": 217
+        },
+        {
+          "date": "1911-04",
+          "population": 217
+        },
+        {
+          "date": "1911-12",
+          "population": 217
+        }
+      ],
+      "housing_occupancy_latest": 217,
+      "source": "Stadtentwicklung · TF3-Mod · Export bis 1910-03"
+    },
+    {
+      "id": "montceau-les-mines",
+      "name": "Montceau-les-Mines",
+      "aliases": [],
+      "infrastructure_status": "ohne dokumentierte Verbindung",
+      "island_id": null,
+      "history": [
+        {
+          "date": "1904-12",
+          "population": 122
+        },
+        {
+          "date": "1905-12",
+          "population": 122
+        },
+        {
+          "date": "1906-09",
+          "population": 122
+        },
+        {
+          "date": "1907-12",
+          "population": 122
+        },
+        {
+          "date": "1908-12",
+          "population": 122
+        },
+        {
+          "date": "1909-12",
+          "population": 122
+        },
+        {
+          "date": "1910-03",
+          "population": 122
+        },
+        {
+          "date": "1910-12",
+          "population": 122
+        },
+        {
+          "date": "1911-04",
+          "population": 122
+        },
+        {
+          "date": "1911-12",
+          "population": 122
+        }
+      ],
+      "housing_occupancy_latest": 122,
+      "source": "Stadtentwicklung · TF3-Mod · Export bis 1910-03"
+    },
+    {
+      "id": "peronne",
+      "name": "Péronne",
+      "aliases": [],
+      "infrastructure_status": "ohne dokumentierte Verbindung",
+      "island_id": null,
+      "history": [
+        {
+          "date": "1904-12",
+          "population": 191
+        },
+        {
+          "date": "1905-12",
+          "population": 191
+        },
+        {
+          "date": "1906-09",
+          "population": 191
+        },
+        {
+          "date": "1907-12",
+          "population": 191
+        },
+        {
+          "date": "1908-12",
+          "population": 191
+        },
+        {
+          "date": "1909-12",
+          "population": 191
+        },
+        {
+          "date": "1910-03",
+          "population": 191
+        },
+        {
+          "date": "1910-12",
+          "population": 191
+        },
+        {
+          "date": "1911-04",
+          "population": 191
+        },
+        {
+          "date": "1911-12",
+          "population": 191
+        }
+      ],
+      "housing_occupancy_latest": 191,
+      "source": "Stadtentwicklung · TF3-Mod · Export bis 1910-03"
+    },
+    {
+      "id": "tournus",
+      "name": "Tournus",
+      "aliases": [],
+      "infrastructure_status": "ohne dokumentierte Verbindung",
+      "island_id": null,
+      "history": [
+        {
+          "date": "1904-12",
+          "population": 240
+        },
+        {
+          "date": "1905-12",
+          "population": 240
+        },
+        {
+          "date": "1906-09",
+          "population": 240
+        },
+        {
+          "date": "1907-12",
+          "population": 240
+        },
+        {
+          "date": "1908-12",
+          "population": 240
+        },
+        {
+          "date": "1909-12",
+          "population": 240
+        },
+        {
+          "date": "1910-03",
+          "population": 240
+        },
+        {
+          "date": "1910-12",
+          "population": 240
+        },
+        {
+          "date": "1911-04",
+          "population": 240
+        },
+        {
+          "date": "1911-12",
+          "population": 240
+        }
+      ],
+      "housing_occupancy_latest": 240,
+      "source": "Stadtentwicklung · TF3-Mod · Export bis 1910-03"
+    },
+    {
+      "id": "vichy",
+      "name": "Vichy",
+      "aliases": [],
+      "infrastructure_status": "ohne dokumentierte Verbindung",
+      "island_id": null,
+      "history": [
+        {
+          "date": "1904-12",
+          "population": 131
+        },
+        {
+          "date": "1905-12",
+          "population": 131
+        },
+        {
+          "date": "1906-09",
+          "population": 131
+        },
+        {
+          "date": "1907-12",
+          "population": 131
+        },
+        {
+          "date": "1908-12",
+          "population": 131
+        },
+        {
+          "date": "1909-12",
+          "population": 131
+        },
+        {
+          "date": "1910-03",
+          "population": 131
+        },
+        {
+          "date": "1910-12",
+          "population": 131
+        },
+        {
+          "date": "1911-04",
+          "population": 131
+        },
+        {
+          "date": "1911-12",
+          "population": 131
+        }
+      ],
+      "housing_occupancy_latest": 131,
+      "source": "Stadtentwicklung · TF3-Mod · Export bis 1910-03"
+    },
+    {
+      "id": "neuilly-plaisance",
+      "name": "Neuilly-Plaisance",
+      "aliases": [],
+      "infrastructure_status": "ohne dokumentierte Verbindung",
+      "island_id": null,
+      "history": [
+        {
+          "date": "1904-12",
+          "population": 112
+        },
+        {
+          "date": "1905-12",
+          "population": 112
+        },
+        {
+          "date": "1906-09",
+          "population": 112
+        },
+        {
+          "date": "1907-12",
+          "population": 112
+        },
+        {
+          "date": "1908-12",
+          "population": 112
+        },
+        {
+          "date": "1909-12",
+          "population": 112
+        },
+        {
+          "date": "1910-03",
+          "population": 112
+        },
+        {
+          "date": "1910-12",
+          "population": 112
+        },
+        {
+          "date": "1911-04",
+          "population": 112
+        },
+        {
+          "date": "1911-12",
+          "population": 112
+        }
+      ],
+      "housing_occupancy_latest": 112,
+      "source": "Stadtentwicklung · TF3-Mod · Export bis 1910-03"
+    },
+    {
+      "id": "chateaubourg",
+      "name": "Châteaubourg",
+      "aliases": [],
+      "infrastructure_status": "ohne dokumentierte Verbindung",
+      "island_id": null,
+      "history": [
+        {
+          "date": "1904-12",
+          "population": 359
+        },
+        {
+          "date": "1905-12",
+          "population": 359
+        },
+        {
+          "date": "1906-09",
+          "population": 359
+        },
+        {
+          "date": "1907-12",
+          "population": 359
+        },
+        {
+          "date": "1908-12",
+          "population": 359
+        },
+        {
+          "date": "1909-12",
+          "population": 359
+        },
+        {
+          "date": "1910-03",
+          "population": 359
+        },
+        {
+          "date": "1910-12",
+          "population": 359
+        },
+        {
+          "date": "1911-04",
+          "population": 359
+        },
+        {
+          "date": "1911-12",
+          "population": 359
+        }
+      ],
+      "housing_occupancy_latest": 359,
+      "source": "Stadtentwicklung · TF3-Mod · Export bis 1910-03"
+    },
+    {
+      "id": "beuvry",
+      "name": "Beuvry",
+      "aliases": [],
+      "infrastructure_status": "ohne dokumentierte Verbindung",
+      "island_id": null,
+      "history": [
+        {
+          "date": "1904-12",
+          "population": 321
+        },
+        {
+          "date": "1905-12",
+          "population": 321
+        },
+        {
+          "date": "1906-09",
+          "population": 321
+        },
+        {
+          "date": "1907-12",
+          "population": 321
+        },
+        {
+          "date": "1908-12",
+          "population": 321
+        },
+        {
+          "date": "1909-12",
+          "population": 321
+        },
+        {
+          "date": "1910-03",
+          "population": 321
+        },
+        {
+          "date": "1910-12",
+          "population": 321
+        },
+        {
+          "date": "1911-04",
+          "population": 321
+        },
+        {
+          "date": "1911-12",
+          "population": 321
+        }
+      ],
+      "housing_occupancy_latest": 321,
+      "source": "Stadtentwicklung · TF3-Mod · Export bis 1910-03"
+    },
+    {
+      "id": "le-malesherbois",
+      "name": "Le Malesherbois",
+      "aliases": [],
+      "infrastructure_status": "ohne dokumentierte Verbindung",
+      "island_id": null,
+      "history": [
+        {
+          "date": "1904-12",
+          "population": 190
+        },
+        {
+          "date": "1905-12",
+          "population": 190
+        },
+        {
+          "date": "1906-09",
+          "population": 190
+        },
+        {
+          "date": "1907-12",
+          "population": 190
+        },
+        {
+          "date": "1908-12",
+          "population": 190
+        },
+        {
+          "date": "1909-12",
+          "population": 190
+        },
+        {
+          "date": "1910-03",
+          "population": 190
+        },
+        {
+          "date": "1910-12",
+          "population": 190
+        },
+        {
+          "date": "1911-04",
+          "population": 190
+        },
+        {
+          "date": "1911-12",
+          "population": 190
+        }
+      ],
+      "housing_occupancy_latest": 190,
+      "source": "Stadtentwicklung · TF3-Mod · Export bis 1910-03"
+    },
+    {
+      "id": "combs-la-ville",
+      "name": "Combs-la-Ville",
+      "aliases": [],
+      "infrastructure_status": "ohne dokumentierte Verbindung",
+      "island_id": null,
+      "history": [
+        {
+          "date": "1904-12",
+          "population": 148
+        },
+        {
+          "date": "1905-12",
+          "population": 148
+        },
+        {
+          "date": "1906-09",
+          "population": 148
+        },
+        {
+          "date": "1907-12",
+          "population": 148
+        },
+        {
+          "date": "1908-12",
+          "population": 148
+        },
+        {
+          "date": "1909-12",
+          "population": 148
+        },
+        {
+          "date": "1910-03",
+          "population": 148
+        },
+        {
+          "date": "1910-12",
+          "population": 148
+        },
+        {
+          "date": "1911-04",
+          "population": 148
+        },
+        {
+          "date": "1911-12",
+          "population": 148
+        }
+      ],
+      "housing_occupancy_latest": 148,
+      "source": "Stadtentwicklung · TF3-Mod · Export bis 1910-03"
+    },
+    {
+      "id": "garches",
+      "name": "Garches",
+      "aliases": [],
+      "infrastructure_status": "ohne dokumentierte Verbindung",
+      "island_id": null,
+      "history": [
+        {
+          "date": "1904-12",
+          "population": 399
+        },
+        {
+          "date": "1905-12",
+          "population": 399
+        },
+        {
+          "date": "1906-09",
+          "population": 399
+        },
+        {
+          "date": "1907-12",
+          "population": 399
+        },
+        {
+          "date": "1908-12",
+          "population": 399
+        },
+        {
+          "date": "1909-12",
+          "population": 399
+        },
+        {
+          "date": "1910-03",
+          "population": 399
+        },
+        {
+          "date": "1910-12",
+          "population": 399
+        },
+        {
+          "date": "1911-04",
+          "population": 399
+        },
+        {
+          "date": "1911-12",
+          "population": 399
+        }
+      ],
+      "housing_occupancy_latest": 399,
+      "source": "Stadtentwicklung · TF3-Mod · Export bis 1910-03"
+    },
+    {
+      "id": "anse-doree",
+      "name": "Anse Dorée",
+      "aliases": [],
+      "infrastructure_status": "erschlossen",
+      "island_id": "hauptinsel",
+      "history": [
+        {
+          "date": "1904-12",
+          "population": 366
+        },
+        {
+          "date": "1905-12",
+          "population": 415
+        },
+        {
+          "date": "1906-09",
+          "population": 446
+        },
+        {
+          "date": "1907-12",
+          "population": 571
+        },
+        {
+          "date": "1908-12",
+          "population": 677
+        },
+        {
+          "date": "1909-12",
+          "population": 769
+        },
+        {
+          "date": "1910-03",
+          "population": 782
+        },
+        {
+          "date": "1910-12",
+          "population": 830
+        },
+        {
+          "date": "1911-04",
+          "population": 841
+        },
+        {
+          "date": "1911-12",
+          "population": 882
+        }
+      ],
+      "housing_occupancy_latest": 882,
+      "source": "Stadtentwicklung · TF3-Mod · Export bis 1910-03"
+    },
+    {
+      "id": "montfougere",
+      "name": "Montfougère",
+      "aliases": [
+        "Divatte-sur-Loire"
+      ],
+      "infrastructure_status": "erschlossen",
+      "island_id": "ausseninsel-montfougere",
+      "history": [
+        {
+          "date": "1904-12",
+          "population": 131
+        },
+        {
+          "date": "1905-12",
+          "population": 131
+        },
+        {
+          "date": "1906-09",
+          "population": 131
+        },
+        {
+          "date": "1907-12",
+          "population": 131
+        },
+        {
+          "date": "1908-12",
+          "population": 143
+        },
+        {
+          "date": "1909-12",
+          "population": 169
+        },
+        {
+          "date": "1910-03",
+          "population": 170
+        },
+        {
+          "date": "1910-12",
+          "population": 182
+        },
+        {
+          "date": "1911-04",
+          "population": 185
+        },
+        {
+          "date": "1911-12",
+          "population": 196
+        }
+      ],
+      "housing_occupancy_latest": 196,
+      "source": "Stadtentwicklung · TF3-Mod · Export bis 1910-03"
+    },
+    {
+      "id": "enghien-les-bains",
+      "name": "Enghien-les-Bains",
+      "aliases": [],
+      "infrastructure_status": "ohne dokumentierte Verbindung",
+      "island_id": null,
+      "history": [
+        {
+          "date": "1904-12",
+          "population": 142
+        },
+        {
+          "date": "1905-12",
+          "population": 142
+        },
+        {
+          "date": "1906-09",
+          "population": 142
+        },
+        {
+          "date": "1907-12",
+          "population": 142
+        },
+        {
+          "date": "1908-12",
+          "population": 142
+        },
+        {
+          "date": "1909-12",
+          "population": 142
+        },
+        {
+          "date": "1910-03",
+          "population": 142
+        },
+        {
+          "date": "1910-12",
+          "population": 142
+        },
+        {
+          "date": "1911-04",
+          "population": 142
+        },
+        {
+          "date": "1911-12",
+          "population": 142
+        }
+      ],
+      "housing_occupancy_latest": 142,
+      "source": "Stadtentwicklung · TF3-Mod · Export bis 1910-03"
+    }
+  ]
+}
