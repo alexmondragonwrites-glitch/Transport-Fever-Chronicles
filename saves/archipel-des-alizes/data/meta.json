@@ -5,12 +5,12 @@
   "subtitle": "Eine tropische Inselwelt zwischen Dampf, Handel und Aufbruch",
   "game": "Transport Fever 3",
   "starting_year": 1900,
-  "latest_game_date": "1910-03-13",
+  "latest_game_date": "1911-04-13",
   "last_observed": "2026-10-11",
   "company": "Société des Routes et des Rails",
   "status": "Aktiver Spielstand",
   "tone": "Französisch geprägte Tropenwelt",
-  "description": "Von fünf wachsenden Städten einer Hauptinsel bis zum Inselhandel mit Roche-Noire und Montfougère: das Wirtschafts- und Verkehrsarchiv eines tropischen Archipels.",
+  "description": "Die erste Dekade ist abgeschlossen. Stand April 1911: 50 Städte, eine Hauptbahn, 85 Linien sowie dokumentierte Betriebsbilanzen und Transportzeiten.",
   "city_ids": [
     "bourg-l-ecorce",
     "port-des-alizes",
@@ -20,5 +20,12 @@
     "roche-noire",
     "montfougere"
   ],
-  "disclaimer": "Spielbeobachtungen und Momentaufnahmen, keine Echtzeitdaten. Geschichten sind als Fiktion markiert."
+  "disclaimer": "Spielbeobachtungen und Momentaufnahmen, keine Echtzeitdaten. Geschichten sind als Fiktion markiert.",
+  "financial_snapshot": {
+    "game_date": "1911-04-13",
+    "account_balance": 61164100,
+    "reported_vehicles": 487,
+    "reported_lines": 85
+  },
+  "data_integrity_note": "Das Verkehrsregister weist nur 465 Linienfahrzeuge aus; die Weltübersicht meldet 487. Für 1911 liegen nur Stillstandsbeobachtungen zu Industrien vor, keine vollständige neue Industriestatusliste."
 }
