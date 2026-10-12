@@ -19,7 +19,14 @@
         "Teuer war das Jahr trotzdem. Im September 1910 meldeten die Bücher der Gesellschaft noch 137,6 Millionen in der Kasse, im Juli 1911 nur noch 37,1 Millionen. Zum Jahresende stehen wieder 63,7 Millionen zu Buche. Was genau das Geld verschlungen hat, verraten die Messbücher nicht. Sie zeigen nur, dass die Flotte im selben Zeitraum kräftig gewachsen ist."
       ],
       "grounding": "Gemessen: 600 Fahrzeuge am 20.11.1911; 606 Fahrzeuge und 95 Linien im Dezember 1911; 474 Fahrzeuge und 82 Linien im Juli 1910; Fahrzeuge je Art aus den Linienpräfixen (Frachtschiffe 153 → 219); Kassenstand 137,6 Mio. (09/1910), 37,1 Mio. (07/1911), 63,7 Mio. (12/1911). Erfunden: Hafenarbeiter und Zitat. Ursachen der Kassenbewegung sind nicht gemessen.",
-      "refs": {"staedte": [174632], "linien": [], "personen": [], "betriebe": []}
+      "refs": {
+        "staedte": [
+          174632
+        ],
+        "linien": [],
+        "personen": [],
+        "betriebe": []
+      }
     },
     {
       "id": "1911-12-tresen-kleider",
@@ -27,7 +34,10 @@
       "art": "fiktion",
       "date": "1911-12",
       "rubrik": "Am Tresen",
-      "venue": {"name": "Au Quai des Collines", "place": "Valmorin"},
+      "venue": {
+        "name": "Au Quai des Collines",
+        "place": "Valmorin"
+      },
       "titel": "Valmorin: Die Kleiderwette geht ins zweite Jahr",
       "teaser": "Lucie hat auf Weihnachten 1910 gesetzt und verloren. Am Balken stehen neue Wetten.",
       "body": [
@@ -37,7 +47,19 @@
         "Neue Wetten gibt es trotzdem. Die Lehrerin setzt auf Ostern 1912, Mathurin auf die Fastenzeit. Bis dahin bleibt Valmorin, was es im Sommer 1910 war: eine Stadt, die 68 Einheiten Kleidung verlangt und keine einzige bekommt."
       ],
       "grounding": "Gemessen (Dezember 1911): Kleidungsbedarf Valmorin 68, gedeckt 0; Maschinen 85, gedeckt 0. Linie „TC Kleidung,Konserven,Wolle-PoidesPêc-Val-RE-1“ führt Kleidung seit 23.02.1910 im Namen, fährt mit 1 Fahrzeug über Bourg-l’Écorce nach Valmorin, Bordladung bei der Messung: Wolle und Konserven. Schiffslinie Pointe des Pêcheurs–Lamballe-Armor mit 12 Schiffen, Bordladung Wolle und Kleidung. Erfunden: Wirtshaus, Personen, Wetten und Theorien. Warum keine Kleidung ankommt, ist nicht gemessen.",
-      "refs": {"staedte": [174607, 174614, 174602], "linien": [176305, 340428], "personen": [], "betriebe": []}
+      "refs": {
+        "staedte": [
+          174607,
+          174614,
+          174602
+        ],
+        "linien": [
+          176305,
+          340428
+        ],
+        "personen": [],
+        "betriebe": []
+      }
     },
     {
       "id": "1911-04-reifen",
@@ -54,7 +76,20 @@
         "Ein ganzer Industriezweig wartet also auf eine Verbindung. Wer sie baut, darf sich wohl einen Wagen „made in Péronne“ wünschen."
       ],
       "grounding": "Gemessen: Neugründungen Cournon-d’Auvergne Gummiplantage, Le Malesherbois Reifenfabrik und Péronne Fahrzeugfabrik am 06.04.1911. Dezember 1911: Plantage Stufe 4, Produktion 36/Jahr, Versand 0; Reifenfabrik und Fahrzeugfabrik Stufe 1 ohne Produktion; Fahrzeugfabrik benötigt Blech, Maschinen, Reifen. Péronne 191 Einwohner, keine Linie. Erfunden: Bürgermeister, Ehefrau, Gespräche.",
-      "refs": {"staedte": [174636, 174642, 174626], "linien": [], "personen": [], "betriebe": [376683, 354778, 330846]}
+      "refs": {
+        "staedte": [
+          174636,
+          174642,
+          174626
+        ],
+        "linien": [],
+        "personen": [],
+        "betriebe": [
+          376683,
+          354778,
+          330846
+        ]
+      }
     },
     {
       "id": "1911-10-erz",
@@ -70,7 +105,17 @@
         "In Bourg-l’Écorce horcht man auf. Dort steht bereits ein Eisenerzbergwerk, und auch dort hat man klein angefangen. Ob das Erz aus Sarrians eines Tages zu einem Stahlwerk fährt, entscheidet nicht der Hirte, sondern die Société."
       ],
       "grounding": "Gemessen: Neugründung Sarrians Eisenerzbergwerk am 04.10.1911; Dezember 1911 Stufe 2, Produktion 40/Jahr, Versand 0; Sarrians 217 Einwohner, keine Linie; Bourg-l’Écorce Eisenerzbergwerk mit Ausbauschritten 1908. Erfunden: Hirte, Sturzregen und Gerüchte.",
-      "refs": {"staedte": [174634, 174605], "linien": [], "personen": [], "betriebe": [303578]}
+      "refs": {
+        "staedte": [
+          174634,
+          174605
+        ],
+        "linien": [],
+        "personen": [],
+        "betriebe": [
+          303578
+        ]
+      }
     },
     {
       "id": "1911-06-roche-noire",
@@ -86,7 +131,23 @@
         "Nicht alles ist schon Gewohnheit. Bei der letzten Messung warten an der Haltestelle der ersten Buslinie 55 Menschen, während die sechs Busse der zweiten Linie leer ihre Runden drehen. Das Passagierschiff nach Valmorin ist zum selben Zeitpunkt ebenfalls leer. „Man muss den Leuten Zeit lassen“, sagt die Frau vom Kohlenkontor. „Wir sind vierzig Jahre zu Fuß gegangen.“"
       ],
       "grounding": "Gemessen: neue Linien Bus Passagiere-Roc-LO-1 (01.06.1911), Bus Passagiere-Roc-LO-2 (04.06.1911), WP Passagiere-Roc-Val-IC-1 (08.06.1911); Neugründung Roche-Noire Bauernhof (08.08.1911); Gemüselinien 15./17.08.1911. Dezember 1911: Gemüse 4 von 104 gedeckt, Sugar 0 von 104; Momentaufnahme: LO-1 55 Wartende, LO-2 0 von 36 Plätzen belegt, Schiff nach Valmorin 0 von 100 belegt. Roche-Noire 462 Einwohner. Erfunden: die Frau vom Kohlenkontor und ihr Zitat.",
-      "refs": {"staedte": [174601, 174607], "linien": [179398, 335221, 191072, 380653, 358605], "personen": [], "betriebe": [362444]}
+      "refs": {
+        "staedte": [
+          174601,
+          174607
+        ],
+        "linien": [
+          179398,
+          335221,
+          191072,
+          380653,
+          358605
+        ],
+        "personen": [],
+        "betriebe": [
+          362444
+        ]
+      }
     },
     {
       "id": "1911-12-interview-marceline",
@@ -96,15 +157,43 @@
       "rubrik": "Gespräch",
       "titel": "„Seit 1907 fahre ich fast nur noch mit der Bahn“",
       "teaser": "Marceline Clément aus Pointe des Pêcheurs über die Straßenbahn, den Zug und ein volles Abteil.",
-      "partner": {"name": "Marceline Clément", "rolle": "Bewohnerin von Pointe des Pêcheurs", "person": 84185},
+      "partner": {
+        "name": "Marceline Clément",
+        "rolle": "Bewohnerin von Pointe des Pêcheurs",
+        "person": 84185
+      },
       "fragen": [
-        {"frage": "Madame Clément, wie sind Sie früher zur Arbeit gekommen?", "antwort": "Zu Fuß, wie alle. Zwischen den Netzen hindurch, am Hafen entlang. Im Sommer 1906 bin ich jeden Weg gelaufen."},
-        {"frage": "Und dann?", "antwort": "Dann waren eines Tages die kleinen Busse weg, und die Straßenbahn war da. Im April 1907 bin ich zum ersten Mal eingestiegen, und ehrlich gesagt bin ich seitdem kaum noch ausgestiegen."},
-        {"frage": "Sie fahren heute sogar mit dem Zug.", "antwort": "Mit dem großen Zug nach Anse Dorée. Er ist oft voll, aber er fährt alle paar Minuten, und man sitzt neben Leuten aus Valmorin und Bourg-l’Écorce. Früher kannte ich niemanden aus Valmorin."},
-        {"frage": "Was wünschen Sie sich für 1912?", "antwort": "Dass die Leute auf dem Bahnsteig nicht so lange warten müssen. Und dass meine Schwester in Romagnat auch einmal eine Haltestelle bekommt."}
+        {
+          "frage": "Madame Clément, wie sind Sie früher zur Arbeit gekommen?",
+          "antwort": "Zu Fuß, wie alle. Zwischen den Netzen hindurch, am Hafen entlang. Im Sommer 1906 bin ich jeden Weg gelaufen."
+        },
+        {
+          "frage": "Und dann?",
+          "antwort": "Dann waren eines Tages die kleinen Busse weg, und die Straßenbahn war da. Im April 1907 bin ich zum ersten Mal eingestiegen, und ehrlich gesagt bin ich seitdem kaum noch ausgestiegen."
+        },
+        {
+          "frage": "Sie fahren heute sogar mit dem Zug.",
+          "antwort": "Mit dem großen Zug nach Anse Dorée. Er ist oft voll, aber er fährt alle paar Minuten, und man sitzt neben Leuten aus Valmorin und Bourg-l’Écorce. Früher kannte ich niemanden aus Valmorin."
+        },
+        {
+          "frage": "Was wünschen Sie sich für 1912?",
+          "antwort": "Dass die Leute auf dem Bahnsteig nicht so lange warten müssen. Und dass meine Schwester in Romagnat auch einmal eine Haltestelle bekommt."
+        }
       ],
       "grounding": "Gemessen (Person 84185 der Beobachtungsgruppe): Wohnort Pointe des Pêcheurs; 1906 alle beobachteten Wege zu Fuß; erste ÖV-Fahrt am 18.04.1907; 1908–1911 fast ausschließlich ÖV; am 23.12.1911 im Fahrzeug der Linie TP Passagiere-PordesAli-AnsDor-RE-1. Vier Buslinien in Pointe des Pêcheurs fehlen ab 13.03.1907, zwei Straßenbahnlinien erscheinen zugleich (Aufzeichnungslücke seit 30.09.1906). RE-1 im Dezember 1911: 10 Züge, 656 von 1140 Plätzen belegt, 185 Wartende, Takt 251 s. Erfunden: Name, Schwester, alle Antworten.",
-      "refs": {"staedte": [174602, 174598], "linien": [322356], "personen": [84185], "betriebe": []}
+      "refs": {
+        "staedte": [
+          174602,
+          174598
+        ],
+        "linien": [
+          322356
+        ],
+        "personen": [
+          84185
+        ],
+        "betriebe": []
+      }
     },
     {
       "id": "1911-12-interview-romagnat",
@@ -114,14 +203,36 @@
       "rubrik": "Gespräch",
       "titel": "„Wir haben keinen Fahrplan, aber wir haben Zeit“",
       "teaser": "In Romagnat fährt keine Linie. Adolphe Saint-Cyr findet das nicht so schlimm, wie man denkt.",
-      "partner": {"name": "Adolphe Saint-Cyr", "rolle": "Bewohner von Romagnat", "person": 192991},
+      "partner": {
+        "name": "Adolphe Saint-Cyr",
+        "rolle": "Bewohner von Romagnat",
+        "person": 192991
+      },
       "fragen": [
-        {"frage": "Monsieur Saint-Cyr, wie oft fahren Sie mit der Société?", "antwort": "Nie. Wohin auch? Bei uns hält nichts. Ich gehe zur Arbeit, ich gehe zum Markt, ich gehe zu meiner Schwester. Seit sieben Jahren."},
-        {"frage": "Stört Sie das nicht?", "antwort": "Fragen Sie die anderen. Achtzehn von uns schreibt die Gesellschaft in ihre Bücher, und keiner von uns ist je mit Bus oder Bahn gefahren. Ein paar haben ein Automobil, die meisten nicht. Unzufrieden ist trotzdem keiner, das steht sogar in Ihren Messbüchern."},
-        {"frage": "Und wenn morgen eine Buslinie käme?", "antwort": "Dann würde ich einmal mitfahren, um zu sehen, wie Pointe des Pêcheurs aussieht. Und dann würde ich wieder nach Hause gehen. Zu Fuß."}
+        {
+          "frage": "Monsieur Saint-Cyr, wie oft fahren Sie mit der Société?",
+          "antwort": "Nie. Wohin auch? Bei uns hält nichts. Ich gehe zur Arbeit, ich gehe zum Markt, ich gehe zu meiner Schwester. Seit sieben Jahren."
+        },
+        {
+          "frage": "Stört Sie das nicht?",
+          "antwort": "Fragen Sie die anderen. Achtzehn von uns schreibt die Gesellschaft in ihre Bücher, und keiner von uns ist je mit Bus oder Bahn gefahren. Ein paar haben ein Automobil, die meisten nicht. Unzufrieden ist trotzdem keiner, das steht sogar in Ihren Messbüchern."
+        },
+        {
+          "frage": "Und wenn morgen eine Buslinie käme?",
+          "antwort": "Dann würde ich einmal mitfahren, um zu sehen, wie Pointe des Pêcheurs aussieht. Und dann würde ich wieder nach Hause gehen. Zu Fuß."
+        }
       ],
       "grounding": "Gemessen: 18 Personen der Beobachtungsgruppe wohnen in Romagnat; keine einzige beobachtete ÖV-Fahrt seit 1904; einige fahren Auto. Person 192991: 614 Messungen, alle zu Fuß. Alle 18 erreichen beim letzten Messwert den Höchstwert 1 des Zufriedenheitsrohwerts (Skala nicht validiert, Ursache nicht gemessen). Romagnat 257 Einwohner, keine Linie. Erfunden: Name, Schwester, alle Antworten.",
-      "refs": {"staedte": [174598], "linien": [], "personen": [192991], "betriebe": []}
+      "refs": {
+        "staedte": [
+          174598
+        ],
+        "linien": [],
+        "personen": [
+          192991
+        ],
+        "betriebe": []
+      }
     },
     {
       "id": "1911-12-interview-re1",
@@ -131,15 +242,43 @@
       "rubrik": "Gespräch",
       "titel": "Auf dem Führerstand der RE-1",
       "teaser": "Ein Lokführer über die einträglichste Strecke der Gesellschaft, volle Bahnsteige und den Weihnachtsverkehr.",
-      "partner": {"name": "Hippolyte Rosemond", "rolle": "Lokführer auf der Linie RE-1"},
+      "partner": {
+        "name": "Hippolyte Rosemond",
+        "rolle": "Lokführer auf der Linie RE-1"
+      },
       "fragen": [
-        {"frage": "Monsieur Rosemond, wie viele Züge fahren auf Ihrer Strecke?", "antwort": "Zehn. Von Port des Alizés über Pointe des Pêcheurs, Bourg-l’Écorce und Valmorin bis Anse Dorée und wieder zurück. Alle gut vier Minuten fährt einer."},
-        {"frage": "Und trotzdem warten die Leute.", "antwort": "Hundertfünfundachtzig standen zuletzt auf den Bahnsteigen. Dabei ist der Zug nicht einmal voll, 656 von 1140 Plätzen sind besetzt. Die Leute wollen eben alle gleichzeitig los."},
-        {"frage": "Man sagt, Ihre Linie halte die Gesellschaft über Wasser.", "antwort": "Die Buchhalter sagen, die Linie habe im letzten Jahr gut 21 Millionen eingefahren. Ich sage: Wir fahren pünktlich, den Rest machen andere."},
-        {"frage": "Was machen Sie an Weihnachten?", "antwort": "Fahren. Wer soll die Leute sonst zu ihren Familien bringen?"}
+        {
+          "frage": "Monsieur Rosemond, wie viele Züge fahren auf Ihrer Strecke?",
+          "antwort": "Zehn. Von Port des Alizés über Pointe des Pêcheurs, Bourg-l’Écorce und Valmorin bis Anse Dorée und wieder zurück. Alle gut vier Minuten fährt einer."
+        },
+        {
+          "frage": "Und trotzdem warten die Leute.",
+          "antwort": "Hundertfünfundachtzig standen zuletzt auf den Bahnsteigen. Dabei ist der Zug nicht einmal voll, 656 von 1140 Plätzen sind besetzt. Die Leute wollen eben alle gleichzeitig los."
+        },
+        {
+          "frage": "Man sagt, Ihre Linie halte die Gesellschaft über Wasser.",
+          "antwort": "Die Buchhalter sagen, die Linie habe im letzten Jahr gut 21 Millionen eingefahren. Ich sage: Wir fahren pünktlich, den Rest machen andere."
+        },
+        {
+          "frage": "Was machen Sie an Weihnachten?",
+          "antwort": "Fahren. Wer soll die Leute sonst zu ihren Familien bringen?"
+        }
       ],
       "grounding": "Gemessen (Dezember 1911): Linie TP Passagiere-PordesAli-AnsDor-RE-1 mit 10 Fahrzeugen, Haltefolge Port des Alizés – Pointe des Pêcheurs – Bourg-l’Écorce – Valmorin – Anse Dorée, 656 von 1140 Plätzen belegt, 185 Wartende, Takt 251 s, rollierende Jahresbilanz der zugeordneten Fahrzeuge 21.767.246 (ohne Investitionen). Erfunden: Lokführer, Name, Antworten.",
-      "refs": {"staedte": [174632, 174602, 174605, 174607, 174645], "linien": [322356], "personen": [], "betriebe": []}
+      "refs": {
+        "staedte": [
+          174632,
+          174602,
+          174605,
+          174607,
+          174645
+        ],
+        "linien": [
+          322356
+        ],
+        "personen": [],
+        "betriebe": []
+      }
     },
     {
       "id": "1911-08-portraet-isidore",
@@ -155,7 +294,16 @@
         "Am 8. August 1911 steht wieder ein Arbeitsplatz neben seinem Namen. Was er arbeitet, verraten die Bücher nicht. Die Redaktion stellt sich vor, dass er am Umschlagbahnhof von Valmorin Bretter verlädt, und dass er abends im „Au Quai des Collines“ auf die Kleidung wettet."
       ],
       "grounding": "Gemessen (Person 54586 der Beobachtungsgruppe): Wohnort Valmorin seit erster Messung 13.03.1907; kein Arbeitsplatz erfasst ab 11.09.1907; erste ÖV-Fahrt 24.11.1907; Arbeitsplatz 12.01.1909 bis 13.09.1909; 1910 in keiner Messung ein Arbeitsplatz; wieder Arbeitsplatz ab 08.08.1911; 1908–1911 überwiegend ÖV. Erfunden: Name, Tätigkeit am Umschlagbahnhof, Wirtshausbesuch.",
-      "refs": {"staedte": [174607], "linien": [], "personen": [54586], "betriebe": []}
+      "refs": {
+        "staedte": [
+          174607
+        ],
+        "linien": [],
+        "personen": [
+          54586
+        ],
+        "betriebe": []
+      }
     },
     {
       "id": "1911-12-portraet-edmond",
@@ -171,7 +319,16 @@
         "Fragt man ihn nach der Société, winkt er ab. Sein Zufriedenheitswert steht bei der letzten Messung auf dem Höchstwert. Ob das am Automobil liegt, kann keine Messung sagen."
       ],
       "grounding": "Gemessen (Person 144145 der Beobachtungsgruppe): Wohnort Vichy; erster Autoweg 15.01.1905; zuletzt (23.12.1911) Auto, mit Arbeitsplatz, Zufriedenheitsrohwert 1 (Skala nicht validiert). Vichy 131 Einwohner, keine Linie; Neugründung Vichy Sandbaggerschiff 19.02.1911. Erfunden: Name, Kleidung, Hupe, Haltung zur Gesellschaft.",
-      "refs": {"staedte": [174638], "linien": [], "personen": [144145], "betriebe": []}
+      "refs": {
+        "staedte": [
+          174638
+        ],
+        "linien": [],
+        "personen": [
+          144145
+        ],
+        "betriebe": []
+      }
     },
     {
       "id": "1908-01-portraet-seraphine",
@@ -187,7 +344,16 @@
         "Wohin sie gefahren ist, wissen wir nicht. Die Redaktion möchte glauben, dass sie mit dem Schiff nach Roche-Noire übersetzte, wo man damals Hände für die Kohle suchte. Beweisen kann das niemand."
       ],
       "grounding": "Gemessen (Person 132154 der Beobachtungsgruppe): seit erster Messung 30.12.1904 beobachtet; bis 1906 nur Fußwege; erste ÖV-Fahrt 13.03.1907; letzte Messung 04.01.1908 im Fahrzeug der Linie Bus Passagiere-Val-LO-1; danach nicht mehr in der Gruppe. Erfunden: Name, Verbleib und Roche-Noire-Vermutung. Warum Personen die Gruppe verlassen, ist nicht gemessen.",
-      "refs": {"staedte": [174607], "linien": [], "personen": [132154], "betriebe": []}
+      "refs": {
+        "staedte": [
+          174607
+        ],
+        "linien": [],
+        "personen": [
+          132154
+        ],
+        "betriebe": []
+      }
     },
     {
       "id": "1911-12-reclame-tram",
@@ -198,11 +364,25 @@
       "titel": "Tramways de Bourg-l’Écorce",
       "anzeige": {
         "kopf": "Tramways de Bourg-l’Écorce",
-        "zeilen": ["Dreizehn Wagen im Dienst!", "Alle 87 Sekunden ein Zug", "Zehn Haltestellen quer durch die Stadt", "Seit 1905 auf Schienen"],
+        "zeilen": [
+          "Dreizehn Wagen im Dienst!",
+          "Alle 87 Sekunden ein Zug",
+          "Zehn Haltestellen quer durch die Stadt",
+          "Seit 1905 auf Schienen"
+        ],
         "fuss": "Société des Routes et des Rails · Fahrkarten am Wagen"
       },
       "grounding": "Gemessen (Dezember 1911): Linie Tram Passagiere-Bou-LO-1 mit 13 Fahrzeugen, Takt 87 s, 10 Haltestellen; seit 10.06.1905 als Straßenbahn (vorher Buslinie). Erfunden: Werbetext. Antriebsart nicht erfasst.",
-      "refs": {"staedte": [174605], "linien": [321181], "personen": [], "betriebe": []}
+      "refs": {
+        "staedte": [
+          174605
+        ],
+        "linien": [
+          321181
+        ],
+        "personen": [],
+        "betriebe": []
+      }
     },
     {
       "id": "1911-12-reclame-roche-noire",
@@ -213,11 +393,26 @@
       "titel": "Passage nach Roche-Noire",
       "anzeige": {
         "kopf": "Passage Valmorin – Roche-Noire",
-        "zeilen": ["Platz ist genug!", "Zwei Dampfer, hundert Plätze", "Kein Gedränge, kein Warten", "Kohleinsel, Gemüsegärten, frische Seeluft"],
+        "zeilen": [
+          "Platz ist genug!",
+          "Zwei Dampfer, hundert Plätze",
+          "Kein Gedränge, kein Warten",
+          "Kohleinsel, Gemüsegärten, frische Seeluft"
+        ],
         "fuss": "Abfahrt am Hafen Valmorin · Société des Routes et des Rails"
       },
       "grounding": "Gemessen (Dezember 1911): Linie WP Passagiere-Roc-Val-IC-1 mit 2 Fahrzeugen, 0 von 100 Plätzen belegt (Momentaufnahme), seit 08.06.1911. Erfunden: Werbetext. „Dampfer“ ist eine Annahme, das Modell ist nicht erfasst.",
-      "refs": {"staedte": [174601, 174607], "linien": [191072], "personen": [], "betriebe": []}
+      "refs": {
+        "staedte": [
+          174601,
+          174607
+        ],
+        "linien": [
+          191072
+        ],
+        "personen": [],
+        "betriebe": []
+      }
     },
     {
       "id": "1911-12-reclame-peronne",
@@ -228,11 +423,25 @@
       "titel": "Automobiles de Péronne",
       "anzeige": {
         "kopf": "Automobiles de Péronne",
-        "zeilen": ["Demnächst!", "Das erste Automobil des Archipels", "Sobald die Reifen da sind"],
+        "zeilen": [
+          "Demnächst!",
+          "Das erste Automobil des Archipels",
+          "Sobald die Reifen da sind"
+        ],
         "fuss": "Fabrik in Péronne · Anfragen bitte schriftlich"
       },
       "grounding": "Gemessen: Péronne Fahrzeugfabrik seit 06.04.1911, im Dezember 1911 Stufe 1 ohne Produktion; benötigt Blech, Maschinen und Reifen; Reifenfabrik Le Malesherbois ebenfalls ohne Produktion. Erfunden: Werbetext, Markenname.",
-      "refs": {"staedte": [174636], "linien": [], "personen": [], "betriebe": [376683, 354778]}
+      "refs": {
+        "staedte": [
+          174636
+        ],
+        "linien": [],
+        "personen": [],
+        "betriebe": [
+          376683,
+          354778
+        ]
+      }
     },
     {
       "id": "1911-12-reclame-re1",
@@ -243,11 +452,28 @@
       "titel": "Chemin de fer des Alizés",
       "anzeige": {
         "kopf": "Chemin de fer des Alizés · RE-1",
-        "zeilen": ["Port des Alizés · Pointe des Pêcheurs · Bourg-l’Écorce · Valmorin · Anse Dorée", "Zehn Züge im Umlauf", "Über tausend Plätze"],
+        "zeilen": [
+          "Port des Alizés · Pointe des Pêcheurs · Bourg-l’Écorce · Valmorin · Anse Dorée",
+          "Zehn Züge im Umlauf",
+          "Über tausend Plätze"
+        ],
         "fuss": "Frohe Festtage wünscht die Société des Routes et des Rails"
       },
       "grounding": "Gemessen (Dezember 1911): TP Passagiere-PordesAli-AnsDor-RE-1 mit 10 Fahrzeugen, Kapazität 1140, Haltefolge wie angegeben. Erfunden: Werbetext.",
-      "refs": {"staedte": [174632, 174602, 174605, 174607, 174645], "linien": [322356], "personen": [], "betriebe": []}
+      "refs": {
+        "staedte": [
+          174632,
+          174602,
+          174605,
+          174607,
+          174645
+        ],
+        "linien": [
+          322356
+        ],
+        "personen": [],
+        "betriebe": []
+      }
     },
     {
       "id": "1912-01-katalog",
@@ -803,7 +1029,279 @@
         "Welche Modelle tatsächlich fahren, Baujahr und Typenbezeichnung, erfasst der Monitor bisher nicht. Sobald er es tut, kann diese Seite neue Fahrzeugmodelle bei ihrer ersten Fahrt ankündigen."
       ],
       "grounding": "Einordnung der Redaktion zur Datengrundlage; keine Fiktion.",
-      "refs": {"staedte": [], "linien": [], "personen": [], "betriebe": []}
+      "refs": {
+        "staedte": [],
+        "linien": [],
+        "personen": [],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1912-09-eiffelturm",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1912-09",
+      "rubrik": "Stadt & Gesellschaft",
+      "titel": "Port baut sich einen Himmel aus Eisen",
+      "teaser": "Am Eiffelturm wachsen die Streben. Unterdessen streitet die Stadt darüber, wie hoch ihre Zukunft werden darf.",
+      "body": [
+        "Wer dieser Tage in Port des Alizés nach dem Weg fragt, bekommt neuerdings eine Himmelsrichtung mehr: zum Turm. Noch ist der Eiffelturm eine Baustelle, noch besteht seine Verheißung aus offenen Streben, Arbeitsgeräuschen und Menschen, die mitten im Satz stehen bleiben und nach oben schauen. Aber in den Gesprächen ist er bereits fertig. Dort hat er eine Aussichtsplattform, ein Restaurant und selbstverständlich einen Tisch, an dem jeder schon reserviert haben will.",
+        "Am Bauzaun begegnen wir Émile Vautrin, der sich als Nieter vorstellt und seine Frühstücksdose auf dem Knie balanciert. Ob er stolz sei? „Abends schon. Morgens schaue ich erst, ob mein Werkzeug vollständig ist.“ Er wünscht sich, dass die Besucher später auch einmal nach unten sehen: auf die Männer, die die Teile heranschaffen, und auf jene, die sie zusammenfügen.",
+        "Eine Händlerin neben ihm hält den Turm für ausgezeichnet. Sie verkauft den Zuschauern Gebäck. Ein älterer Herr hält ihn für überflüssig. Er kauft dennoch zweimal. Weiter hinten erklärt ein Vater seinem Sohn, das Eisen werde einmal die Wolken berühren. Der Junge fragt, wer dort oben die Schrauben festhalte. Zum ersten Mal an diesem Vormittag weiß der Vater keine Antwort.",
+        "Port, dessen Ortsakte inzwischen 1.755 Einwohner zählt, bekommt damit etwas, das keine Einwohnerzahl ausdrücken kann: ein Bild von sich selbst. Die einen sehen eine Stadt, die sich endlich etwas zutraut. Die anderen sehen eine Stadt, die beim Blick nach oben womöglich die schlecht versorgten Schaufenster vergisst.",
+        "Ein Eröffnungstermin lässt sich unserem Besuch nicht entnehmen. Dafür steht bereits fest, dass der Turm lange vor seiner Vollendung Arbeit macht: den Bauleuten, den Wirten und all jenen, die bei jeder Einladung erklären müssen, ob sie für oder gegen ihn sind."
+      ],
+      "grounding": "Spielervorgabe vom 12.10.2026: Eiffelturm in Port des Alizés im Bau. Ortsakte September 1912: 1.755 Einwohner. Baufortschritt, Eröffnungstermin und Baustellenlogistik sind nicht im Journal gemessen. Erfunden: Baustellenbesuch, Émile Vautrin, übrige Personen, Gespräche und gesellschaftliche Reaktionen; Restaurant und Reservierungen sind Vorstellungen der Figuren.",
+      "refs": {
+        "staedte": [
+          174632
+        ],
+        "linien": [],
+        "personen": [],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1912-09-kleidung",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1912-09",
+      "rubrik": "Aus Valmorin",
+      "titel": "Die Hemden sind da. Jetzt fehlt nur noch die Gewissheit.",
+      "teaser": "Nach langem Warten wird in Valmorin ausgepackt. Für einen Neuanfang braucht es allerdings mehr als eine Kiste.",
+      "body": [
+        "Noch in dieser Ausgabe berichteten wir über fünf Linien und kein Hemd im Laden. Nun bekommt unsere Valmoriner Erzählung ihre ersehnte Fortsetzung: Lucie vom Bahnhof kommt nicht mit einer Erklärung ins Au Quai des Collines. Sie kommt mit einem Hemd. Sie legt es auf den Tresen, streicht einen Ärmel glatt und sagt: „Mathurin. Die zweite Runde ist fällig.“ Hinten hört Anselme auf, seine Dominosteine zu zählen.",
+        "Die Nachricht von der angekommenen Kleidung wanderte schneller durch Valmorin, als die Ware selbst es vermocht hatte. Vor dem Laden wurde angefasst, verglichen und gefragt, ob es dieselbe Größe auch in einer anderen Farbe gebe. Eine Mutter hielt ein Stück gegen die Schultern ihres Sohnes. „Als ich danach gefragt habe, warst du kleiner“, sagte sie. Er fand, das sei ein Problem der Erwachsenen.",
+        "Die neue Bewegung hat einen nüchternen Hintergrund. Seit dem 22. Juni führt eine weitere Güterzuglinie nach Valmorin Kleidung in ihrer Warenliste; im Juli kam sie auch bei zwei örtlichen Verteilerlinien hinzu. In den Büchern lässt sich also verfolgen, wie aus einem fernen Versprechen eine Aufgabe für die Straßen des Ortes wird.",
+        "Doch die jüngste Ortsakte verzeichnet bei 72 Einheiten Kleidungsbedarf weiterhin null gedeckte Einheiten. Eine Ankunftsgeschichte ist noch keine Geschichte über volle Regale. Ob ausreichend viel, regelmäßig und bis zu den richtigen Geschäften geliefert wird, bleibt die entscheidende Frage.",
+        "Die Ladenkundschaft formuliert es weniger umständlich. „Ich freue mich heute“, sagt eine Frau mit einem sorgfältig verschnürten Paket. „Und nächste Woche komme ich wieder. Dann sehen wir weiter.“ Das ist vermutlich die vernünftigste Form von Zuversicht, die Valmorin nach dieser Wartezeit aufzubringen hat."
+      ],
+      "grounding": "Spielervorgabe: Kleidung kommt verspätet in Valmorin an. Gemessen: neue Ware Kleidung auf Linie 363292 am 22.06.1912, auf 326990 am 04.07. und 296054 am 08.07.; Ortsakte September: Bedarf 72, gedeckt 0. Die Linienmeldungen belegen keine vollständige Versorgung und keinen genauen ersten Liefertag. Erfunden: konkrete Lieferungsszene, Hemd, Ladenkundschaft und Dialoge mit den wiederkehrenden Figuren Lucie, Mathurin und Anselme. Redaktionelle Fortsetzung von „Fünf Linien und kein Hemd“ nach der neuen Spielervorgabe; kein neuer Messstand und kein aus den Daten abgeleiteter Ankunftstag.",
+      "refs": {
+        "staedte": [
+          174607
+        ],
+        "linien": [
+          363292,
+          326990,
+          296054
+        ],
+        "personen": [],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1912-09-interview-transport",
+      "typ": "interview",
+      "art": "fiktion",
+      "date": "1912-09",
+      "rubrik": "Das große Gespräch",
+      "titel": "„Ein schneller Wagen allein liefert noch kein Hemd“",
+      "teaser": "Die Société über Fortschritte, verlorene Zeit zwischen zwei Anschlüssen und Lieferketten, die heute noch kühn erscheinen.",
+      "grounding": "Anlass: Spielervorgabe zu Fortschritten bei der Transportgeschwindigkeit und zu künftigen kürzeren, komplexeren Lieferketten; gemessene Erweiterungen der Kleidungsbeförderung nach Valmorin im Juni/Juli 1912. Ein vergleichbarer Zeitreihennachweis tatsächlich verkürzter Ende-zu-Ende-Lieferzeiten liegt hier nicht vor. Erfunden: Étienne Morel, seine Funktion, das Interview, interne Abläufe und Zukunftspläne; Fortschrittsaussagen sind Figurenperspektive, keine gemessenen Ergebnisse.",
+      "partner": {
+        "name": "Étienne Morel",
+        "rolle": "Disponent der Société des Routes et des Rails (erfundene Figur)"
+      },
+      "fragen": [
+        {
+          "frage": "Herr Morel, sind die Transporte in den vergangenen Jahren schneller geworden?",
+          "antwort": "Wir haben nach meiner Erfahrung bei der Geschwindigkeit Fortschritte gemacht. Wege, die uns früher umständlich erschienen, gehören inzwischen zum Alltag. Aber fragen Sie die Menschen in Valmorin: Wer lange auf Kleidung gewartet hat, misst uns nicht an einer flotten Vorbeifahrt. Er misst uns daran, wann die Ware im Laden liegt."
+        },
+        {
+          "frage": "Weshalb kann ein schnelleres Fahrzeug trotzdem eine späte Lieferung bringen?",
+          "antwort": "Weil die Reise aus mehr besteht als aus Fahrt. Ware muss bereitstehen, verladen werden und ihren Anschluss erreichen. Wenn ein Wagen früher am Kai ist, das Schiff aber gerade abgelegt hat, hat der Kunde von diesem Vorsprung wenig. Ein schneller Wagen allein liefert noch kein Hemd."
+        },
+        {
+          "frage": "Hat die Société zu sehr auf neue Verbindungen und zu wenig auf ihr Zusammenspiel geachtet?",
+          "antwort": "Wir mussten zunächst überhaupt Verbindungen schaffen. Trotzdem ist die Frage berechtigt. Mit jedem zusätzlichen Übergang entsteht eine weitere Gelegenheit zum Warten. Wir müssen lernen, die ganze Reise zu planen, vom Hersteller bis zum Händler. Die Verantwortung darf nicht an jeder Laderampe neu anfangen."
+        },
+        {
+          "frage": "Was dürfen die Orte für die nächsten Jahre erwarten?",
+          "antwort": "Wir hoffen, die Lieferzeiten weiter zu verringern: durch passendere Fahrzeuge, besser abgestimmte Übergaben und eine Verteilung, die mit der ankommenden Menge zurechtkommt. Ich nenne Ihnen dafür heute keine feste Frist. Ein Versprechen auf Papier wäre schneller geschrieben als eingelöst."
+        },
+        {
+          "frage": "Und worauf zielt das langfristig?",
+          "antwort": "Dass wir komplexer beliefern können, als wir es uns heute im täglichen Betrieb vorstellen. Dass mehrere Zulieferer an verschiedenen Orten verlässlich zusammenarbeiten und am Ende ein fertiges Erzeugnis dort ankommt, wo es gebraucht wird. Für den Kunden sollte es selbstverständlich werden, was für uns eine anspruchsvolle Kette von Entscheidungen ist."
+        },
+        {
+          "frage": "Was sagen Sie Mathurin, der inzwischen Wetten auf die Kleidung abschließt?",
+          "antwort": "Er soll seine Gäste ruhig weiter unterhalten. Ich hoffe allerdings, dass ihm die verspäteten Hemden als Stoff ausgehen. Dann muss er über unsere Hüte reden."
+        }
+      ],
+      "refs": {
+        "staedte": [
+          174607,
+          174632
+        ],
+        "linien": [
+          363292,
+          326990,
+          296054
+        ],
+        "personen": [],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1912-09-tresen-wette",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1912-09",
+      "rubrik": "Am Tresen",
+      "titel": "Mathurin zahlt. Unter Vorbehalt.",
+      "teaser": "Im Au Quai des Collines wird die zweite Wettrunde fällig – und die nächste Wette eröffnet.",
+      "body": [
+        "Mathurin hatte seine Niederlage vorbereitet. Auf dem Tresen lagen zwei Münzen, daneben ein Zettel mit der Aufschrift: „Keine Anerkennung der Dachtheorie.“ Lucie las ihn, nahm die Münzen nicht und zeigte auf die Flaschen hinter ihm.",
+        "Seit Januar hatte der Wirt behauptet, die Kleidung werde erst eintreffen, wenn man ihr einen Wagen mit Dach spendiere. Nun war sie angekommen, und niemand am Tisch konnte sagen, welchen Wagen sie zuletzt von innen gesehen hatte. Mathurin erklärte das zum Unentschieden. Anselme erklärte, bei einem Unentschieden müsse der Schiedsrichter trinken. Er ernannte sich selbst.",
+        "Lucie bestand auf der noch ausstehenden Runde Ti-Punch. Die erste hatte Mathurin nach dem letzten Streit spendiert; ob damit schon die ganze Schuld beglichen sei, beschäftigte ihn seither auffallend. „Wir haben auf Kleidung gewettet, nicht auf deine Erklärung dafür.“ Darauf schenkte er aus, langsam und mit jener Würde, die Männer entwickeln, wenn sie öffentlich verlieren und privat die Gläser etwas weniger voll machen.",
+        "Später kam das Gespräch auf den Turm in Port. Anselme war überzeugt, man könne von oben die nächste Kleiderlieferung früher sehen. „Dann bauen wir hier auch einen“, sagte jemand. Mathurin holte die Kreide.",
+        "Am Deckenbalken steht nun: „Was kommt zuerst: die nächste Lieferung oder Mathurins neues Hemd?“ Der Wirt hält die Wette für unzulässig. Seine Frau, die gerade zur Tür hereinkam, hat bereits gesetzt."
+      ],
+      "grounding": "Fortsetzung der vorhandenen Beiträge „Die Kleiderwette geht ins zweite Jahr“ (Dezember 1911) und „Ein Wagen mit Dach“ (Januar 1912). Spielervorgaben: verspätete Kleidung in Valmorin und Turmbau in Port. Erfunden: gesamte Wirtshausszene, Wettschlichtung, Mathurins Frau und Dialoge; ein ursächlicher Zusammenhang mit einem gedeckten Wagen ist nicht belegt.",
+      "venue": {
+        "name": "Au Quai des Collines",
+        "place": "Valmorin"
+      },
+      "refs": {
+        "staedte": [
+          174607,
+          174632
+        ],
+        "linien": [],
+        "personen": [],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1912-09-salon-turm",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1912-09",
+      "rubrik": "Salon & Gesellschaft",
+      "titel": "Die beste Aussicht hat vorläufig Madame de Bellombre",
+      "teaser": "Ports Gesellschaft streitet über den Eiffelturm. Vor allem darüber, wer daneben sitzen darf.",
+      "body": [
+        "Madame de Bellombre hat zum Tee gebeten und die Stühle umstellen lassen. Seit man von einem bestimmten Fenster aus den Turmbau verfolgen kann, gilt die bisher zugige Ecke ihres Salons als beste Adresse des Hauses. Drei Damen, die dort im vergangenen Jahr keinesfalls sitzen wollten, erklärten unabhängig voneinander ihre besondere Liebe zur frischen Luft.",
+        "Madame empfing in einem Kleid, dessen Farbton sie „Eisen im Morgenlicht“ nannte. Ihr Schneider hatte nach Auskunft einer gut unterrichteten Besucherin „Grau“ auf die Rechnung geschrieben. Die Redaktion bewundert beide Beschreibungen, zumal nur eine davon bezahlt werden muss.",
+        "Für Unruhe sorgte ein Herr, der laut über die Verschandelung des Stadtbildes klagte und leise anfragte, ob für eine spätere Eröffnungsfeier bereits Einladungen vergeben würden. Madame erwiderte, ästhetische Bedenken ließen sich sicher auf einer Gästeliste vermerken.",
+        "Am meisten sprach man jedoch über Mademoiselle Aveline, die das Fenster dem jungen Jules Perrin überließ. Er zeichnete das Stahlgerüst auf die Rückseite einer Menükarte. Ihre Tante erklärte, das Interesse gelte ausschließlich der Architektur. Dass Aveline die Zeichnung anschließend behielt, ist damit selbstverständlich vollständig erklärt.",
+        "Über Verlobungen ist nichts bekannt. Über Sitzordnungen erstaunlich viel. Wir bleiben für unsere Leser an dieser gesellschaftlich bedeutenden Angelegenheit dran."
+      ],
+      "grounding": "Spielervorgabe: Eiffelturm in Port des Alizés im Bau und High-Society-Klatsch. Erfunden: Madame de Bellombre, Aveline, Jules Perrin, Salon, Kleidung, Gespräche und sämtliche Gerüchte. Keine realen Personen oder gemessenen Beziehungen werden beschrieben.",
+      "venue": {
+        "name": "Salon de Bellombre",
+        "place": "Port des Alizés"
+      },
+      "refs": {
+        "staedte": [
+          174632
+        ],
+        "linien": [],
+        "personen": [],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1912-09-hafen-schatten",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1912-09",
+      "rubrik": "Am Tresen",
+      "titel": "Der Mann, der den Schatten des Turms verkaufen wollte",
+      "teaser": "Eine Hafenrunde, ein gefalteter Plan und ein Geschäft, das an einer einzigen Frage scheiterte.",
+      "body": [
+        "Im erfundenen Hafenlokal À l’Ancre Bleue erschien ein Herr mit blanken Schuhen und einem Plan, den er nur zur Hälfte entfaltete. Er suche Teilhaber, sagte er. Der Turm werde Besucher bringen, Besucher würden Durst bekommen, und kluge Menschen kauften rechtzeitig die besten Plätze.",
+        "Bis hierher fand die Runde seine Ausführungen überzeugend. Dann bot er Beteiligungen an einem künftigen Ausschank „im garantierten Schatten des Eiffelturms“ an. Der Hafenarbeiter Baptiste fragte, zu welcher Uhrzeit dieser Schatten garantiert sei.",
+        "Der Herr sagte, es gehe um die große Linie. Baptiste sagte, die Sonne halte sich selten daran. Die Wirtin Odette stellte ein Glas mitten auf den Tisch, schob die Lampe darüber hinweg und führte vor, wie eine gute Geschäftslage wandern könne.",
+        "Nach dem zweiten Glas war aus der garantierten Lage eine bevorzugte Lage geworden. Nach dem dritten sprach der Besucher nur noch von einer Idee. Odette schrieb die Zeche auf und erklärte, diese Forderung sei erfreulicherweise ortsfest.",
+        "Man hat den Herrn seither nicht wieder im Lokal gesehen. Seinen Plan schon: Er liegt unter dem kurzen Tischbein am Fenster. Zum ersten Mal, urteilt Baptiste, trage das Vorhaben etwas."
+      ],
+      "grounding": "Spielervorgabe: Turmbau in Port und Kneipengeschichten. Erfunden: Lokal À l’Ancre Bleue, Odette, Baptiste, Besucher und gesamte Handlung. Grundstücksgeschäfte, Schattenlage, Gastronomieplanung und konkrete Hafenverhältnisse sind nicht gemessen.",
+      "venue": {
+        "name": "À l’Ancre Bleue",
+        "place": "Port des Alizés"
+      },
+      "refs": {
+        "staedte": [
+          174632
+        ],
+        "linien": [],
+        "personen": [],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1912-09-interview-laden",
+      "typ": "interview",
+      "art": "fiktion",
+      "date": "1912-09",
+      "rubrik": "Stimmen aus Valmorin",
+      "titel": "„Ich brauche keinen Festzug. Ich brauche die nächste Lieferung.“",
+      "teaser": "Eine Händlerin über neue Kleidung, alte Geduld und den Unterschied zwischen Ankunft und Alltag.",
+      "grounding": "Spielervorgabe: verspätete Kleidungsankunft in Valmorin. Ortsakte September 1912: Kleidungsbedarf 72, gedeckt 0; die Geschichte behauptet deshalb keine gesicherte Regelversorgung. Erfunden: Händlerin Élise Vernet, Laden, Kundschaft, Lieferung im Einzelnen und Interview.",
+      "partner": {
+        "name": "Élise Vernet",
+        "rolle": "Bekleidungshändlerin in Valmorin (erfundene Figur)"
+      },
+      "fragen": [
+        {
+          "frage": "Was war Ihr erster Gedanke beim Auspacken?",
+          "antwort": "Dass ich jetzt endlich etwas ins Schaufenster legen kann, das keine Entschuldigung ist. Danach habe ich nach Größen sortiert. Freude hilft im Laden, Ordnung auch."
+        },
+        {
+          "frage": "Waren die Kunden nach der langen Wartezeit verärgert?",
+          "antwort": "Manche haben gescherzt. Manche haben gar nichts gesagt und sehr genau hingesehen. Wenn Menschen lange sparen, wollen sie nicht auch noch dankbar dafür sein müssen, dass sie endlich etwas kaufen dürfen."
+        },
+        {
+          "frage": "Die Société spricht von Fortschritten beim Transport. Spüren Sie die?",
+          "antwort": "Diesmal hatte ich Ware in der Hand. Das zählt. Wie schnell sie unterwegs war, kann ich Ihnen nicht sagen. Ich sehe die Tür meines Ladens, nicht jede Station ihrer Reise."
+        },
+        {
+          "frage": "Wann würden Sie von einer guten Versorgung sprechen?",
+          "antwort": "Wenn ich einer Kundin sagen kann, wann ihre Größe wiederkommt, und mich nicht dafür schämen muss, dass ich es bloß hoffe. Ich brauche keinen Festzug. Ich brauche die nächste Lieferung."
+        },
+        {
+          "frage": "Und heute Abend?",
+          "antwort": "Heute Abend gehe ich bei Mathurin vorbei. Lucie sagt, er müsse noch eine Runde bezahlen. Ich möchte einen historischen Augenblick nicht verpassen."
+        }
+      ],
+      "refs": {
+        "staedte": [
+          174607
+        ],
+        "linien": [],
+        "personen": [],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1912-09-reclame-turm",
+      "typ": "anzeige",
+      "art": "fiktion",
+      "date": "1912-09",
+      "rubrik": "Réclame",
+      "titel": "Hut festhalten, Zukunft betrachten",
+      "teaser": null,
+      "grounding": "Spielervorgabe: Turmbau in Port des Alizés. Erfunden: Café des Curieux, Angebot und Werbetext; kein gemessener Betrieb und kein zugesagter Zugang zur Baustelle.",
+      "anzeige": {
+        "kopf": "Café des Curieux · Port des Alizés",
+        "zeilen": [
+          "Hut festhalten, Zukunft betrachten!",
+          "Vor dem Spaziergang zum Turmbau: Kaffee & Gebäck",
+          "Für Befürworter und Gegner dieselben Preise",
+          "Ferngläser bitte selbst mitbringen"
+        ],
+        "fuss": "Wir schenken Kaffee aus. Eröffnungstermine schenken wir uns."
+      },
+      "refs": {
+        "staedte": [
+          174632
+        ],
+        "linien": [],
+        "personen": [],
+        "betriebe": []
+      }
     }
   ]
 }
