@@ -1244,6 +1244,181 @@
       }
     },
     {
+      "id": "1913-03-bekanntmachung-valmorin",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1913-03",
+      "rubrik": "Amtliche Bekanntmachung",
+      "titel": "Bekanntmachung der Stadt Valmorin: Schutz vor dem Lärm der Straßen",
+      "teaser": "Der Gemeinderat beschließt Lärmschutzwände an den Hauptstraßen. Wer dort wohnt, muss vorübergehend weichen.",
+      "body": [
+        "Der Gemeinderat der Stadt Valmorin gibt bekannt:",
+        "Erstens. Entlang der stark befahrenen Straßen der Stadt werden Lärmschutzwände errichtet. Der Lärm in Valmorin hat ein Maß erreicht, das den Bürgern nicht länger zuzumuten ist.",
+        "Zweitens. Für den Bau der Wände müssen Häuser an den betroffenen Straßen niedergelegt werden. Die Arbeiten beginnen Ende März 1913. Den Bewohnern wird empfohlen, sich rechtzeitig nach einer Unterkunft umzusehen.",
+        "Drittens. Neue Häuser werden hinter den Wänden errichtet, sobald diese stehen. Die Stadt bittet um Geduld. Wer bis dahin bei Verwandten unterkommt, möge dies dem Rathaus mitteilen, damit die Post ihn findet.",
+        "Viertens. Wetten über die Höhe der Wände sind im öffentlichen Raum untersagt. Der Gemeinderat weiß, wo das „Au Quai des Collines“ ist.",
+        "Valmorin, im März 1913. Für den Gemeinderat: der Bürgermeister."
+      ],
+      "grounding": "Spielervorgabe vom 13.10.2026: Der Einwohnerrückgang in Valmorin erklärt sich durch Lärmschutzwände an Straßen; für sie mussten Häuser weichen, die danach neu gebaut werden mussten. Lärmschutzwände und Abrisse selbst erfasst der Monitor nicht. Gemessen: Lärmwert Valmorin 72,6 dB am 12.01.1913, 78,5 dB am 14.03.1913; Wohnkapazität 890 am 14.03.1913, danach Rückgang ab 29.03.1913. Erfunden: Bekanntmachung, Gemeinderat, Bürgermeister, Beschluss, Wortlaut, Wettverbot; ein Gemeinderat existiert im Spiel nicht.",
+      "refs": {
+        "staedte": [
+          174607
+        ],
+        "linien": [],
+        "personen": [],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1913-04-mauern-valmorin",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1913-04",
+      "lead": true,
+      "rubrik": "Titelseite",
+      "titel": "Valmorin baut sich Mauern gegen den Lärm",
+      "teaser": "In drei Wochen verschwinden Wohnungen für 185 Menschen. Dann wachsen hinter den neuen Lärmschutzwänden die Häuser wieder.",
+      "body": [
+        "Valmorin war eine laute Stadt geworden. Straßenbahn, Omnibusse, Lastwagen mit Kleidung, Fleisch und Brettern, dazu der Güterzug: Mitte März 1913 zeigt der Lärmmesser 78,5 Dezibel. Die Stadt hat sich entschieden, etwas dagegen zu tun, und an ihren großen Straßen Lärmschutzwände hochzuziehen.",
+        "Der Preis ist hoch. Wo die Wände stehen sollen, stehen Häuser, und die Häuser müssen weichen. Am 14. März wohnen in Valmorin 890 Menschen, jede Wohnung ist belegt. Am 5. April sind es nur noch 705. In drei Wochen ist Wohnraum für 185 Menschen verschwunden, mehr als jeder fünfte.",
+        "Dann beginnt das Bauen. Hinter den frischen Wänden ziehen Maurer neue Häuser hoch, Woche für Woche: 726 Einwohner am 9. April, 766 eine Woche später, 784 Ende April, im Mai zeitweise 805. Leer bleibt keine einzige Wohnung; wer ein Dach findet, zieht sofort ein.",
+        "Und der Lärm? Ende April misst Valmorin 73,5 Dezibel, fünf weniger als im März. Arbeit gibt es weiterhin genug, rund 2.300 Stellen. Und die Valmorinois, die geblieben sind, fahren mehr mit der Société als zu Jahresbeginn: Fast zwei von drei Wegen führen jetzt über das Netz, im Januar waren es 55 von hundert."
+      ],
+      "grounding": "Spielervorgabe vom 13.10.2026: Der Einwohnerrückgang in Valmorin erklärt sich durch Lärmschutzwände an Straßen; für sie mussten Häuser weichen, die danach neu gebaut werden mussten. Lärmschutzwände und Abrisse selbst erfasst der Monitor nicht. Gemessen (Valmorin, belegter Wohnraum = Wohnkapazität, alle Wohnungen belegt): 890 am 14.03.1913, 857 am 29.03., 814 am 01.04., 705 am 05.04., 726 am 09.04., 766 am 16.04., 784 am 29.04., 805 am 20.05., 785 am 07.06.1913. Lärmwert 78,5 dB (14.03.1913), 73,5 dB (29.04.1913); Arbeitsplätze 2.367 (14.03.), 2.229 (05.04.), 2.352 (07.06.1913); Arbeitsplätze 2.274 am 29.04.1913; Netzanteil der Wege 55 % (Januar), 56 % (März), 64 % (29.04.), 66 % (07.06.1913). Erfunden: Maurer, Entscheidung der Stadt, Szenen; ob der Lärmrückgang auf die Wände zurückgeht, ist nicht gemessen.",
+      "refs": {
+        "staedte": [
+          174607
+        ],
+        "linien": [],
+        "personen": [],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1913-04-isidore-fort",
+      "typ": "portraet",
+      "art": "fiktion",
+      "date": "1913-04",
+      "rubrik": "Menschen im Archipel",
+      "titel": "Isidore Lubin ist fort",
+      "teaser": "Im Januar hatte er endlich wieder Arbeit. Am 9. April 1913 verzeichnen ihn die Bücher zum letzten Mal.",
+      "body": [
+        "Diese Zeitung hat Isidore Lubin seit Jahren begleitet. Wir haben über seine verlorenen und wiedergefundenen Stellen berichtet, über die Morgen an der Haltestelle und über die Wetten, die er im „Au Quai des Collines“ mit Kreide an den Balken schrieb. Am 2. Januar 1913 stand neben seinem Namen wieder ein Arbeitsplatz. Er ging seitdem jeden Weg zu Fuß, und sein Zufriedenheitswert stand auf dem Höchstwert.",
+        "Am 9. April 1913 verzeichnen ihn die Messbücher zum letzten Mal. Danach gehört er nicht mehr zu den Beobachteten. Es sind die Tage, in denen Valmorin für seine neuen Lärmschutzwände Häuser niederlegt; vier Tage zuvor war der Wohnraum der Stadt auf seinen tiefsten Stand gefallen. Am selben 9. April verschwindet auch ein zweiter Valmorinois aus den Büchern, im Mai ein dritter.",
+        "Ob Isidores Haus an einer der Straßen stand, wo jetzt die Wände sind, wissen wir nicht. Die Redaktion stellt sich vor, dass er seine Kreide auf den Tresen legte, Mathurin die Hand gab und mit dem Zug nach Pointe des Pêcheurs fuhr, wo man Leute braucht, die anpacken. Im „Au Quai des Collines“ ist sein Hocker frei. Keiner setzt sich drauf."
+      ],
+      "grounding": "Gemessen: Person 54586 der Beobachtungsgruppe, Wohnort Valmorin; Arbeitsplatz ab 02.01.1913; 1913 in 24 von 24 Messungen zu Fuß und mit Arbeitsplatz, Zufriedenheitsrohwert 1 (Skala nicht validiert); letzte Messung 09.04.1913, danach nicht mehr in der Gruppe. Person 69181 (Valmorin) ebenfalls zuletzt am 09.04.1913, Person 61169 (Valmorin) zuletzt am 24.05.1913. Wohnkapazität Valmorin Tiefstand 705 am 05.04.1913. Spielervorgabe vom 13.10.2026: Der Einwohnerrückgang in Valmorin erklärt sich durch Lärmschutzwände an Straßen; für sie mussten Häuser weichen, die danach neu gebaut werden mussten. Lärmschutzwände und Abrisse selbst erfasst der Monitor nicht. Erfunden: Name, Abschied, Kreide, Zugfahrt, Hocker; warum Personen die Gruppe verlassen und ob ein Zusammenhang mit den Abrissen besteht, ist nicht gemessen.",
+      "refs": {
+        "staedte": [
+          174607
+        ],
+        "linien": [],
+        "personen": [
+          54586,
+          69181,
+          61169
+        ],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1913-05-tresen-wand",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1913-05",
+      "rubrik": "Am Tresen",
+      "venue": {
+        "name": "Au Quai des Collines",
+        "place": "Valmorin"
+      },
+      "titel": "Valmorin: Eine Wand vor dem Fenster",
+      "teaser": "Seit Ende April steht vor dem Wirtshaus eine Lärmschutzwand. Es ist ruhiger geworden. Mathurin weiß nicht, ob ihm das gefällt.",
+      "body": [
+        "Früher sah man vom Fenstertisch des „Au Quai des Collines“ die Straße, die Busse und am Abend die Lichter der Lastwagen. Jetzt sieht man eine Wand. Sie ist ordentlich gemauert, ein Stück höher als ein Mann, und sie hat etwas geschafft, das kein Wirt je geschafft hat: Es ist leise im Lokal.",
+        "„Man hört sich selbst trinken“, beschwert sich der alte Anselme. Lucie vom Bahnhof findet es herrlich. Zum ersten Mal seit Jahren kann sie am Tresen erzählen, ohne gegen die Straßenbahn anzuschreien. Mathurin poliert dieselbe Gläser wie immer und sagt, ein Wirtshaus ohne Lärm sei wie eine Suppe ohne Salz.",
+        "Am Deckenbalken ist die Wette vom vergangenen Herbst aufgelöst: Die nächste Lieferung kam vor Mathurins neuem Hemd. Kleidung wird in Valmorin inzwischen regelmäßig verkauft, 31 von 74 verlangten Einheiten. Mathurins Frau hat gewonnen, verrät aber nicht, worauf sie gesetzt hatte.",
+        "Eine neue Wette gibt es auch. Sie steht nicht am Balken, sondern draußen, mit Kreide an der Lärmschutzwand: „Wann sind wir wieder neunhundert?“ Und ganz unten, in einer Handschrift, die alle kennen, hat jemand vor Wochen geschrieben: „I. L. setzt auf Weihnachten.“ Niemand wischt es weg."
+      ],
+      "grounding": "Spielervorgabe vom 13.10.2026: Der Einwohnerrückgang in Valmorin erklärt sich durch Lärmschutzwände an Straßen; für sie mussten Häuser weichen, die danach neu gebaut werden mussten. Lärmschutzwände und Abrisse selbst erfasst der Monitor nicht. Gemessen: Valmorin Lärmwert 73,5 dB am 29.04.1913; Kleidung 31 von 74 gedeckt (Juni 1913, Januar 1913: 11 von 73); Höchststand der Einwohner 890 (14.03.1913), seitdem unter 900; Person 54586 zuletzt am 09.04.1913 gemessen. Erfunden: Wirtshausszene, Wand vor dem Fenster, Personen, Wetten und ihre Auflösung, Kreideinschrift; Mathurins Frau stammt aus einer früheren Kolumne.",
+      "refs": {
+        "staedte": [
+          174607
+        ],
+        "linien": [],
+        "personen": [
+          54586
+        ],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1913-05-reclame-neubau",
+      "typ": "anzeige",
+      "art": "fiktion",
+      "date": "1913-05",
+      "rubrik": "Réclame",
+      "titel": "Neubauten in Valmorin",
+      "anzeige": {
+        "kopf": "Neubauten in Valmorin",
+        "zeilen": [
+          "Ruhig wohnen hinter der neuen Wand!",
+          "Bezugsfertig ab sofort",
+          "Straßenbahn und Omnibus vor der Tür",
+          "Schnell sein lohnt sich: Jede Wohnung ist vermietet, bevor das Dach drauf ist."
+        ],
+        "fuss": "Auskunft im Rathaus Valmorin · Société des Routes et des Rails empfiehlt sich für den Umzug"
+      },
+      "grounding": "Spielervorgabe vom 13.10.2026: Der Einwohnerrückgang in Valmorin erklärt sich durch Lärmschutzwände an Straßen; für sie mussten Häuser weichen, die danach neu gebaut werden mussten. Lärmschutzwände und Abrisse selbst erfasst der Monitor nicht. Gemessen (Valmorin, belegter Wohnraum = Wohnkapazität, alle Wohnungen belegt): 890 am 14.03.1913, 857 am 29.03., 814 am 01.04., 705 am 05.04., 726 am 09.04., 766 am 16.04., 784 am 29.04., 805 am 20.05., 785 am 07.06.1913. Straßenbahn Tram Passagiere-Val-LO-1 und Buslinie Bus Passagiere-Val-LO-1 (seit 24.02.1913, ab 04.03.1913 mit 4 Fahrzeugen). Erfunden: Werbetext, Vermietung, Rathaus.",
+      "refs": {
+        "staedte": [
+          174607
+        ],
+        "linien": [],
+        "personen": [],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1913-06-interview-maurer",
+      "typ": "interview",
+      "art": "fiktion",
+      "date": "1913-06",
+      "rubrik": "Gespräch",
+      "titel": "„Erst die Wand, dann das Haus“",
+      "teaser": "Ein Maurermeister aus Valmorin über drei Monate Mauern, Mörtel und Menschen, die vor seiner Baustelle Schlange stehen.",
+      "partner": {
+        "name": "Barnabé Lacroix",
+        "rolle": "Maurermeister in Valmorin"
+      },
+      "fragen": [
+        {
+          "frage": "Monsieur Lacroix, wie viele Wände haben Sie dieses Jahr gebaut?",
+          "antwort": "Fragen Sie lieber, wie viele Häuser ich vorher abreißen musste. Ende März ging es los, Anfang April stand die halbe Hauptstraße leer. Das tut man nicht gern."
+        },
+        {
+          "frage": "Und danach?",
+          "antwort": "Danach haben wir gebaut wie verrückt. Hinter jeder Wand ein neues Haus. Die Leute standen schon vor der Baustelle, als der Mörtel noch nass war. In Valmorin bleibt keine Wohnung eine Nacht leer."
+        },
+        {
+          "frage": "Hat sich der Aufwand gelohnt?",
+          "antwort": "Ende April war es so ruhig wie seit Jahren nicht. Jetzt im Juni wird es schon wieder lauter, die Stadt füllt sich, die Straßenbahn fährt. Gegen den Fortschritt hilft keine Mauer. Aber die Leute schlafen besser, sagen sie."
+        },
+        {
+          "frage": "Wird Valmorin wieder so groß wie vorher?",
+          "antwort": "Wir sind bei rund achthundert. Neunhundert schaffen wir, wenn man mich lässt. Ich habe gehört, im Wirtshaus wetten sie schon darauf."
+        }
+      ],
+      "grounding": "Spielervorgabe vom 13.10.2026: Der Einwohnerrückgang in Valmorin erklärt sich durch Lärmschutzwände an Straßen; für sie mussten Häuser weichen, die danach neu gebaut werden mussten. Lärmschutzwände und Abrisse selbst erfasst der Monitor nicht. Gemessen (Valmorin, belegter Wohnraum = Wohnkapazität, alle Wohnungen belegt): 890 am 14.03.1913, 857 am 29.03., 814 am 01.04., 705 am 05.04., 726 am 09.04., 766 am 16.04., 784 am 29.04., 805 am 20.05., 785 am 07.06.1913. Lärmwert 73,5 dB (29.04.1913), 76,5 dB (07.06.1913). Erfunden: Maurermeister, Name, alle Antworten, Baustellenszenen; dass der Lärmanstieg im Juni auf mehr Verkehr zurückgeht, ist nicht gemessen.",
+      "refs": {
+        "staedte": [
+          174607
+        ],
+        "linien": [],
+        "personen": [],
+        "betriebe": []
+      }
+    },
+    {
       "id": "fuhrpark-einordnung",
       "typ": "einordnung",
       "art": "einordnung",
