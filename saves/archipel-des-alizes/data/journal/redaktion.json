@@ -2173,6 +2173,60 @@
         "personen": [],
         "betriebe": []
       }
+    },
+    {
+      "id": "1914-04-interview-direktor",
+      "typ": "interview",
+      "art": "einordnung",
+      "date": "1914-04",
+      "rubrik": "Im Gespräch mit dem Direktor",
+      "titel": "„Volle Läden, Arbeit in anderen Städten – und Stolz auf das Geschaffene“",
+      "teaser": "Der Direktor der Société des Routes et des Rails über die Möbelverbindung nach Sin-le-Noble, die Grenzen der Schifffahrt und einen Fortschritt, den sich die Gesellschaft leisten können muss. Ein Interview mit dem Spieler; Antworten sprachlich redigiert.",
+      "partner": {
+        "name": "Der Direktor",
+        "rolle": "Leiter der Société des Routes et des Rails · Antworten des Spielers"
+      },
+      "fragen": [
+        {
+          "frage": "Monsieur le Directeur, weshalb haben Sie gerade Sin-le-Noble für die Möbelversorgung ins Auge gefasst?",
+          "antwort": "Die Bewohner unserer Kohlestadt Roche-Noire und unserer größten Stadt, Bourg-l’Écorce, verlangen nach Möbeln. Sin-le-Noble liegt nicht allzu weit entfernt. Damit bot sich eine Gelegenheit, beide Städte mit ein wenig Luxus zu versorgen. Durch die vergleichsweise kurze Route hoffen wir außerdem, die Preise erschwinglich halten zu können. Bei der Kleidung ist das derzeit schwieriger."
+        },
+        {
+          "frage": "Was unterscheidet den Möbeltransport von der Versorgung mit Kleidung?",
+          "antwort": "Bei der Kleidung sind die Entfernungen groß. Unsere Schiffe können die Lieferungen momentan nicht in der gewünschten Zeit bewältigen. Bei den Möbeln passen die Wege besser zu den Transportmitteln, die uns heute zur Verfügung stehen."
+        },
+        {
+          "frage": "Können Sie die langen Wege der Kleidung durch andere Produktionsstätten vermeiden, oder brauchen Sie schnellere Schiffe?",
+          "antwort": "Wir hoffen auf neue Technologien, mit denen wir schneller transportieren können. Bei den Straßenfahrzeugen und auf der Schiene haben wir in den vergangenen Jahren große Fortschritte gemacht. Wenn uns ein ähnlicher Schritt auf dem Wasser gelingt, wäre viel gewonnen. Die Schifffahrt ist derzeit unser Flaschenhals. Im Archipel gibt es außerdem nur diese eine Farbenfabrik. Deshalb sind wir gezwungen, lange Entfernungen zu überwinden."
+        },
+        {
+          "frage": "Wenn schnellere Schiffe verfügbar werden: Verbessern Sie zuerst die bestehenden Verbindungen oder erschließen Sie neue Inseln und Waren?",
+          "antwort": "Wir wollen nach Möglichkeit beides tun, dort, wo es sich anbietet. Die Bewohner gewöhnen sich an die Versorgung. Zugleich müssen wir darauf achten, dass der Ausbau uns wirtschaftlich nicht ruiniert."
+        },
+        {
+          "frage": "Woran erkennen Sie, ob eine zunächst schwierige Verbindung eine wirtschaftliche Perspektive hat?",
+          "antwort": "Wir schauen vor allem darauf, welche Möglichkeiten es gibt, Verbindungen miteinander zu kombinieren. Unsere Fahrzeuge sollen möglichst wenige Leerfahrten machen. Entscheidend ist deshalb auch, ob wir auf dem Rückweg eine weitere Ladung mitnehmen können."
+        },
+        {
+          "frage": "Wie setzen Sie diesen Gedanken bei Sin-le-Noble um?",
+          "antwort": "Wir bringen Holz von der Hauptinsel nach Sin-le-Noble. Die Möbel gehen anschließend zurück. So lassen sich Hin- und Rückweg sinnvoll nutzen – ein Gewinn für beide Seiten."
+        },
+        {
+          "frage": "Zum Abschluss: Wenn die Bewohner in fünf Jahren auf die heutige Zeit zurückblicken, welche Verbesserung sollen sie in ihrem Alltag am deutlichsten spüren?",
+          "antwort": "Ich wünsche mir volle Läden und die Möglichkeit, auch in anderen Städten zu arbeiten. Und ich möchte, dass wir stolz darauf sein können, was wir in dieser Zeit gemeinsam geschaffen haben."
+        }
+      ],
+      "grounding": "Spielervorgabe: tatsächlich im Chat am 13.10.2026 geführtes Interview mit dem Spieler in der Rolle des Direktors. Die Antworten wurden sprachlich geglättet und behutsam zusammengeführt, ohne zusätzliche Zusagen oder Kennzahlen einzufügen. Roche-Noire und Bourg-l’Écorce konkretisieren die im Gespräch genannten Orte „Kohlestadt“ und „größte Stadt“. Redaktionell der Ausgabe April 1914 zugeordnet, entsprechend dem aktuellen Journalstand vom 23.04.1914. Aussagen zur einzigen Farbenfabrik, zu Transportgrenzen und zur Möbelroute sind Erklärungen des Spielers; erschwingliche Preise, kürzere Lieferzeiten und die Entwicklung in fünf Jahren sind Erwartungen bzw. Ziele, keine gemessenen Ergebnisse. Die Holz-Hinfahrt und Möbel-Rückfahrt beschreiben das vom Spieler erläuterte Konzept und bestätigen keine bereits gesicherte Produktion oder Versorgung. Fragen und Überschrift redaktionell bearbeitet; keine erfundenen Antworten.",
+      "refs": {
+        "staedte": [
+          174617,
+          174601,
+          174605
+        ],
+        "personen": [],
+        "linien": [],
+        "betriebe": []
+      }
     }
   ]
 }
