@@ -124,3 +124,11 @@
 
 @media(max-width:980px){.j-une{grid-template-columns:1fr}.j-side{grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}}
 @media(max-width:650px){.j-mast{padding-top:22px}.j-mast-top{justify-content:center;font-size:10px}.j-title{font-size:38px}.j-dateline{gap:10px}.j-ed-fr{flex-basis:100%;order:3}.j-cols{columns:1}.j-cohort-row{grid-template-columns:44px 1fr 70px}.j-month .j-mlist{columns:1}.j .tabs .tab{font-size:14px}}
+
+/* Freigegebene Bildreportagen: Bild vollständig und unverfärbt zeigen. */
+.j-photo{margin:18px 0 24px;break-inside:avoid}
+.j-photo a{display:block;line-height:0}
+.j-photo img{display:block;width:100%;height:auto;border:1px solid var(--line-strong);box-sizing:border-box}
+.j-photo figcaption{font-family:var(--serif);font-style:italic;font-size:14px;line-height:1.5;color:var(--muted);margin-top:8px}
+.j-photo-preview{margin:12px 0}
+.j-photo-preview figcaption{font-size:12px}

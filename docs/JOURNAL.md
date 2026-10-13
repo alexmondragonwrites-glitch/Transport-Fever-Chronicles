@@ -51,3 +51,7 @@ Neue Beiträge kommen als Eintrag in `redaktion.json` hinzu. Pflicht für jeden 
 Ideen liefert die Zeitung selbst. Der Kasten „Stoff für Geschichten“ auf jeder Titelseite und „Noch unerzählt“ unter Geschichten leiten offene Fragen aus den Meldungen ab. Wiederkehrende Figuren: Wirt Mathurin vom „Au Quai des Collines“ (Valmorin), der alte Anselme, Lucie vom Bahnhof; aus der Beobachtungsgruppe Marceline Clément (84185), Isidore Lubin (54586), Edmond Philogène (144145).
 
 Prüfen: `node scripts/validate-journal.mjs [ORDNER]` (läuft auch in CI und vor jedem Upload). `python scripts/test-build-journal.py` baut synthetische Messungen mit und ohne Modelldaten in einen Temp-Ordner und prüft Meldungen, Fuhrpark und Validator (CI).
+
+## Bildreportagen
+
+Optionales Feld `image` pro Redaktionsbeitrag: `{src, alt, caption, source}`. `src` verweist relativ zur Zeitung auf `../../assets/photos/<name>.webp`. Nur lokale WebP-Dateien in diesem Verzeichnis werden eingebunden. Vorschau und Vollartikel zeigen das vollständige Bild; Anklicken öffnet die Großansicht. `alt` beschreibt das Motiv, `caption` nennt die Bearbeitung und `source` die ursprüngliche Aufnahme. Fotos werden erst nach Freigabe des Spielers veröffentlicht; das redaktionelle Ausgabedatum ist nicht automatisch das Aufnahmedatum im Spiel.

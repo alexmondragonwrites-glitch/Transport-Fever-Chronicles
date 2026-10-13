@@ -64,15 +64,22 @@ function meldung(e, compact){
   return `<li class="j-m"><div class="j-m-head">${typeTag(e)}<time datetime="${E(e.date)}">${E(when(e))}</time></div><strong>${E(e.titel)}</strong>${compact?'':`<p>${E(e.text)}</p>`}${town&&!compact?`<a class="mini-link" href="#staedte/${town.id}">Ortsakte ${E(town.name)} →</a>`:''}</li>`;
 }
 
+
+function storyImage(s, compact=false){
+  const im = s.image;
+  if(!im || !/^\.\.\/\.\.\/assets\/photos\/[a-z0-9-]+\.webp$/.test(im.src)) return '';
+  return `<figure class="j-photo${compact?' j-photo-preview':''}"><a href="${E(im.src)}" target="_blank" rel="noopener" aria-label="${E(im.alt)} – Großansicht öffnen"><img src="${E(im.src)}" alt="${E(im.alt)}" loading="lazy" decoding="async"></a><figcaption>${E(im.caption)}</figcaption></figure>`;
+}
+
 function storyCard(s, big){
   const ad = s.typ==='anzeige';
   if(ad) return reclame(s);
   return `<article class="j-story${big?' j-lead':''}" id="s-${E(s.id)}"><div class="j-story-meta"><span class="kicker">${E(s.rubrik||STORY_TYPES[s.typ])}</span>${prov(s.art)}<span class="small">${E(monthName(s.date))}</span></div>
-  <h${big?2:3}>${E(s.titel)}</h${big?2:3}>${s.teaser?`<p class="j-teaser">${E(s.teaser)}</p>`:''}${big?storyBody(s, true):`<button class="mini-link j-open" data-story="${E(s.id)}">Weiterlesen →</button>`}</article>`;
+  <h${big?2:3}>${E(s.titel)}</h${big?2:3}>${s.teaser?`<p class="j-teaser">${E(s.teaser)}</p>`:''}${!big?storyImage(s,true):''}${big?storyBody(s, true):`<button class="mini-link j-open" data-story="${E(s.id)}">Weiterlesen →</button>`}</article>`;
 }
 
 function storyBody(s, inline){
-  let html = '';
+  let html = storyImage(s);
   if(s.venue) html += `<p class="small j-venue">${E(s.venue.name)} · ${E(s.venue.place)}</p>`;
   if(s.typ==='interview'){
     const p = s.partner||{};

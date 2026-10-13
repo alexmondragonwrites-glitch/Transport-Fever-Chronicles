@@ -1705,6 +1705,198 @@
         "personen": [],
         "betriebe": []
       }
+    },
+    {
+      "id": "1913-06-bildreportage-port-tour",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1913-06",
+      "rubrik": "Bildreportage · Ansichten des Archipels",
+      "titel": "Unter dem unfertigen Himmel",
+      "teaser": "Port des Alizés hat noch keinen fertigen Turm. Eine neue Gewohnheit hat es schon: nach oben zu schauen.",
+      "body": [
+        "Über der Bucht liegt Regen, und zwischen den niedrigen Dächern steht das eiserne Versprechen der Stadt. Die Aufnahme zeigt den Eiffelturm in einem Zustand, den spätere Ansichtskarten vermutlich lieber überspringen werden: unten bereits gewaltig, oben noch offen. Gerade darin liegt sein Reiz. Hier lässt sich einer Zukunft beim Entstehen zusehen.",
+        "Am Bauzaun hat ein Junge eine einfache Frage: „Wo hört er auf?“ Der Mann neben ihm deutet in den grauen Himmel. Das genügt dem Jungen nicht. Er möchte eine Stelle sehen, einen Balken, wenigstens einen Fingerbreit Gewissheit. Die Erwachsenen geben ihm stattdessen ein Wort: später.",
+        "Émile Vautrin, unser Nieter aus der Septemberreportage, findet diesen Blick von außen verständlich. „Die Leute sehen immer das Stück, das noch fehlt. Wir sehen das, was heute halten muss.“ In unserer erzählten Mittagspause sitzt er mit nassen Stiefeln auf einer Kiste und wickelt Brot aus Papier. Neben ihm trocknet nichts.",
+        "Von oben wirkt die Baustelle fast ordentlich: Straßen rahmen sie ein, die Wohnhäuser halten Abstand, hinter allem liegt das Wasser. Unten aber besteht ein solcher Bau aus einzelnen Handgriffen, schweren Teilen und der Frage, wer als Nächster worauf wartet. Der Turm ist deshalb auch eine Geschichte über Transport. Lange bevor jemand hinaufsteigen kann, muss alles herangeschafft werden.",
+        "Madame de Bellombre soll inzwischen behaupten, ein unvollendeter Turm sei gesellschaftlich ergiebiger als ein fertiger. Über einen fertigen könne jeder urteilen; für den unfertigen brauche man Vorstellungskraft. Ihr Schneider, heißt es, wünscht sich diese Großzügigkeit auch bei unbezahlten Rechnungen.",
+        "Wir bewahren diesen Blick auf. Eines Tages wird man am Kai den Kopf heben und die Spitze selbstverständlich finden. Dann erinnert das Bild daran, dass selbst das Selbstverständliche einmal mitten im Regen aufgehört hat."
+      ],
+      "image": {
+        "src": "../../assets/photos/port-tour.webp",
+        "alt": "Der Eiffelturm im Bau über den Straßen und der Bucht von Port des Alizés.",
+        "caption": "Der Eiffelturm im Bau über den Straßen und der Bucht von Port des Alizés. KI-bearbeitete Spielaufnahme im Stil einer kolorierten historischen Fotografie.",
+        "source": "grafik(20261013-051815).png"
+      },
+      "grounding": "Bildgrundlage: vom Spieler am 13.10.2026 bereitgestellter Screenshot grafik(20261013-051815).png; die historische Bearbeitung wurde vom Spieler freigegeben. Sichtbare Küsten, Stadtanlage und Infrastruktur dienen als Motiv, einzelne Bilddetails sind künstlerisch rekonstruiert. Redaktionell der Ausgabe Juni 1913 zugeordnet; das genaue Spieldatum ist im Screenshot nicht sichtbar. Erfunden: Personenauftritte, Gespräche, Beobachtungsszenen und innere Perspektiven. Wiederkehrende Figuren knüpfen an frühere Journalartikel an. Die Aufnahme belegt keine Transportzeiten oder Betriebsabläufe.",
+      "refs": {
+        "staedte": [
+          174632
+        ],
+        "personen": [],
+        "linien": [],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1913-06-bildreportage-port-hafen",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1913-06",
+      "rubrik": "Bildreportage · Ansichten des Archipels",
+      "titel": "Vier Stege und tausend Angelegenheiten",
+      "teaser": "Am Hafen von Port begegnen sich Reisende, Ladungen und Menschen, die auf beides warten.",
+      "body": [
+        "Die Stege greifen wie Finger ins Wasser. Dahinter liegt das Empfangsgebäude, weiter landeinwärts das Oval der Arena und schließlich die Dächer von Port. Vom Meer aus scheint sich die Stadt in einer einzigen Bewegung zu öffnen. Wer tatsächlich ankommt, hat zunächst eine bescheidenere Aufgabe: den richtigen Weg vom Schiff zu finden.",
+        "Unsere Hafenreporterin folgt einem Koffer, dessen Besitzer ihn mit beiden Händen trägt. Darin, versichert er, befinde sich nichts Zerbrechliches. Trotzdem stellt er ihn vorsichtiger ab als der Mann neben ihm seine Fracht. Eine Dame wartet unter einem Schirm auf einen Angehörigen. Sie beschreibt ihn als groß, ungeduldig und mit Hut. Der Gepäckträger blickt über den Kai. Diese Beschreibung ist heute wenig hilfreich.",
+        "Zwischen den Schiffen liegt viel Wasser, zwischen Ankunft und Weiterreise manchmal viel Arbeit. Ein Hafen verbindet nicht schon dadurch, dass ein Dampfer anlegt. Jemand muss wissen, wohin die Kisten gehören, welches Fahrzeug sie übernimmt und an welcher Ecke ein Reisender seinen Anschluss findet. Auf der schönen Ansicht verschwindet diese Mühe hinter den Fassaden.",
+        "Bei Honorine wird sie wieder sichtbar. Dort legt ein Schreiber seinen Bleistift neben die Tasse und erklärt, das schwierigste Gut im Archipel sei eine eindeutige Auskunft. Ein Matrose widerspricht: schwieriger sei nur ein Passagier, der bereits vor der Ankunft wissen wolle, ob er zu spät sei.",
+        "Die Arena hinter den Kaianlagen gibt dem Bild eine zweite Bühne. Dort wird man sich zum Vergnügen versammeln; am Wasser geschieht das aus Notwendigkeit. Beide Orte brauchen Menschen, die kommen können. Port verdankt seinen Rang auch den unscheinbaren Wegen zwischen solchen großen Gebäuden.",
+        "Am Abend nimmt der Mann seinen Koffer wieder auf. Ob er seinen Anschluss erreicht, erzählt unsere Aufnahme nicht. Sie hält nur den Ort fest, an dem aus einer Seereise viele verschiedene Geschichten an Land werden."
+      ],
+      "image": {
+        "src": "../../assets/photos/port-hafen.webp",
+        "alt": "Die Hafenanlagen von Port des Alizés mit Stegen, Empfangsgebäude und Arena im Hintergrund.",
+        "caption": "Die Hafenanlagen von Port des Alizés mit Stegen, Empfangsgebäude und Arena im Hintergrund. KI-bearbeitete Spielaufnahme im Stil einer kolorierten historischen Fotografie.",
+        "source": "grafik(20261013-051835).png"
+      },
+      "grounding": "Bildgrundlage: vom Spieler am 13.10.2026 bereitgestellter Screenshot grafik(20261013-051835).png; die historische Bearbeitung wurde vom Spieler freigegeben. Sichtbare Küsten, Stadtanlage und Infrastruktur dienen als Motiv, einzelne Bilddetails sind künstlerisch rekonstruiert. Redaktionell der Ausgabe Juni 1913 zugeordnet; das genaue Spieldatum ist im Screenshot nicht sichtbar. Erfunden: Personenauftritte, Gespräche, Beobachtungsszenen und innere Perspektiven. Wiederkehrende Figuren knüpfen an frühere Journalartikel an. Die Aufnahme belegt keine Transportzeiten oder Betriebsabläufe.",
+      "refs": {
+        "staedte": [
+          174632
+        ],
+        "personen": [],
+        "linien": [],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1913-06-bildreportage-pointe-des-pecheurs",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1913-06",
+      "rubrik": "Bildreportage · Ansichten des Archipels",
+      "titel": "Pointe des Pêcheurs: Das Meer vor der Haustür",
+      "teaser": "Zwischen Küstensaum und Eisenbahn bewahrt die Stadt ihren eigenen Blick auf den Fortschritt.",
+      "body": [
+        "Pointe des Pêcheurs legt sich an die Küste, als wolle kein Haus weiter vom Wasser entfernt sein als unbedingt nötig. Hinter den Dächern zieht die Eisenbahn vorbei. Am rechten Bildrand liegen die kleinen Hafenanlagen; davor weitet sich die Bucht. Der Ort trägt das Meer im Namen und die Verbindung ins Hinterland im Rücken.",
+        "Am Fenster ihrer Küche zählt in unserer Geschichte die Näherin Adèle Fournier die vorbeiziehenden Wagen. Ihr Mann zählt Schiffe. Beide sind überzeugt, den zuverlässigeren Kalender zu besitzen. Wenn sie sich nicht einigen, richtet sich das Mittagessen nach Adèle.",
+        "Die Stadt ist mehr als ein hübscher Streifen Häuser am Strand. Auf den Verbindungen nach Valmorin reisen auch Kleidung und Konserven; in den Geschichten der nördlichen Nachbarn taucht Pointe des Pêcheurs deshalb häufig als der Ort auf, von dem endlich etwas losgeschickt werden soll. Hier erinnert man höflich daran, dass eine Abfahrt noch keine Ankunft ist.",
+        "Ein Lagergehilfe zeigt unserem Reporter seine Hände. „Wenn die Ware hier weg ist, fehlt sie uns nicht mehr“, sagt er. „Aber irgendwo wartet dann einer darauf, dass sie endlich da ist.“ Zwischen diesen beiden Sätzen liegt die ganze Aufgabe der Société: ein Netz so zu betreiben, dass ein abgefertigter Auftrag nicht nur auf dem Papier erledigt ist.",
+        "Am Ufer wird derweil über wichtigere Dinge gesprochen. Ein Fischer behauptet, die Eisenbahn verscheuche die Fische. Ein anderer fragt, warum er dann ausgerechnet an Tagen ohne guten Fang besonders viele Züge gehört habe. Adèle, die auf dem Heimweg stehen geblieben ist, findet beide Beobachtungsmethoden verbesserungsfähig.",
+        "Das Bild zeigt eine Stadt zwischen zwei Bewegungen: draußen die Schiffe, hinten die Bahn. Dazwischen liegen Wohnungen, Läden und Esstische. Dort entscheidet sich, ob aus Verkehr auch ein besserer Alltag wird."
+      ],
+      "image": {
+        "src": "../../assets/photos/pointe-des-pecheurs.webp",
+        "alt": "Pointe des Pêcheurs zwischen Bucht, Wohnvierteln, Eisenbahn und kleinem Hafen.",
+        "caption": "Pointe des Pêcheurs zwischen Bucht, Wohnvierteln, Eisenbahn und kleinem Hafen. KI-bearbeitete Spielaufnahme im Stil einer kolorierten historischen Fotografie.",
+        "source": "grafik(20261013-051849).png"
+      },
+      "grounding": "Bildgrundlage: vom Spieler am 13.10.2026 bereitgestellter Screenshot grafik(20261013-051849).png; die historische Bearbeitung wurde vom Spieler freigegeben. Sichtbare Küsten, Stadtanlage und Infrastruktur dienen als Motiv, einzelne Bilddetails sind künstlerisch rekonstruiert. Redaktionell der Ausgabe Juni 1913 zugeordnet; das genaue Spieldatum ist im Screenshot nicht sichtbar. Erfunden: Personenauftritte, Gespräche, Beobachtungsszenen und innere Perspektiven. Wiederkehrende Figuren knüpfen an frühere Journalartikel an. Die Aufnahme belegt keine Transportzeiten oder Betriebsabläufe.",
+      "refs": {
+        "staedte": [
+          174602
+        ],
+        "personen": [],
+        "linien": [],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1913-06-bildreportage-bourg-lecorce",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1913-06",
+      "rubrik": "Bildreportage · Ansichten des Archipels",
+      "titel": "Bourg-l’Écorce wächst bis ans Wasser",
+      "teaser": "Ein Stadtporträt zwischen dicht gedrängten Dächern und den kleinen Entfernungen des Alltags.",
+      "body": [
+        "Über Bourg-l’Écorce gleitet der Blick lange von Dach zu Dach, ehe er wieder freies Land findet. Die Straßen teilen die Stadt in Viertel, die Küste begrenzt sie nur auf einer Seite. Rechts liegt der Hafen. Auf dieser Ansicht ist zu erkennen, weshalb ein Ort irgendwann aufhört, sich wie ein großes Dorf anzufühlen.",
+        "Im Café de la Gare erinnert sich die Wirtin an Gäste, die früher lediglich sagten, sie gingen „in die Stadt“. Nun nennen sie eine Straße, einen Halt, manchmal sogar eine Ecke. „Wenn man den Treffpunkt erklären muss, sind wir wohl groß geworden“, sagt sie.",
+        "Unsere Reporterin begleitet einen Boten mit einem kleinen Paket. Es ist nicht schwer; schwierig ist die Adresse. Der Empfänger wohne beim neuen Haus, habe der Absender gesagt. Der Bote bleibt stehen und zeigt auf die Dächer. Welche Vorstellung von Eindeutigkeit in diesem Satz stecke, möchte er lieber nicht beurteilen.",
+        "Wachstum verlangt von einer Verkehrsgesellschaft mehr als eine Verbindung auf der Karte. Menschen müssen vom Viertel zum Bahnhof gelangen, Waren vom Hafen in die richtigen Straßen. Eine volle Stadt hat viele letzte Wegstücke. Man sieht sie schlecht aus der Ferne, aber wer ein Paket trägt, kennt jedes davon.",
+        "Im Café ist die Frage nach dem Rum noch immer geeignet, ein Gespräch zu eröffnen. Unsere Wirtin weigert sich allerdings, jeden Fortschritt an einer Flasche zu messen. Neue Kundschaft bringe auch neue Geschichten, sagt sie. Dann stellt sie zwei leere Gläser auf den Tresen und fügt hinzu, Geschichten ließen sich bedauerlicherweise schlechter ausschenken.",
+        "Die Aufnahme bewahrt die Stadt als Ganzes. Ihr eigentliches Leben spielt sich in den Zwischenräumen ab: an einer Haltestelle, vor einer Ladentür, dort, wo jemand endlich die richtige Adresse nennt. Größe beginnt mit vielen Häusern. Stadtleben beginnt damit, dass man einander darin findet."
+      ],
+      "image": {
+        "src": "../../assets/photos/bourg-lecorce.webp",
+        "alt": "Das dichte Straßennetz von Bourg-l’Écorce entlang der Küste; rechts die Hafenanlagen.",
+        "caption": "Das dichte Straßennetz von Bourg-l’Écorce entlang der Küste; rechts die Hafenanlagen. KI-bearbeitete Spielaufnahme im Stil einer kolorierten historischen Fotografie.",
+        "source": "grafik(20261013-051900).png"
+      },
+      "grounding": "Bildgrundlage: vom Spieler am 13.10.2026 bereitgestellter Screenshot grafik(20261013-051900).png; die historische Bearbeitung wurde vom Spieler freigegeben. Sichtbare Küsten, Stadtanlage und Infrastruktur dienen als Motiv, einzelne Bilddetails sind künstlerisch rekonstruiert. Redaktionell der Ausgabe Juni 1913 zugeordnet; das genaue Spieldatum ist im Screenshot nicht sichtbar. Erfunden: Personenauftritte, Gespräche, Beobachtungsszenen und innere Perspektiven. Wiederkehrende Figuren knüpfen an frühere Journalartikel an. Die Aufnahme belegt keine Transportzeiten oder Betriebsabläufe.",
+      "refs": {
+        "staedte": [
+          174605
+        ],
+        "personen": [],
+        "linien": [],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1913-06-bildreportage-valmorin",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1913-06",
+      "rubrik": "Bildreportage · Ansichten des Archipels",
+      "titel": "Valmorin: Zwischen Haustür und Hafen",
+      "teaser": "Die weite Ansicht erklärt, warum der letzte Abschnitt einer Reise für einen kleinen Ort so viel bedeutet.",
+      "body": [
+        "Valmorin liegt auf diesem Bild links am Wasser. Der Hafen liegt weiter rechts, jenseits der bewaldeten Landzunge. Dazwischen ziehen sich Wege; oberhalb des Ortes treffen die Gleise zusammen. Wer die Ansicht betrachtet, versteht sofort, weshalb die Nachricht „Die Ware ist angekommen“ in Valmorin eine Rückfrage verdient: Wo genau?",
+        "Lucie vom Bahnhof hat darauf eine Antwort, die Mathurin nicht gefällt. „Am richtigen Ort ist sie erst, wenn du sie nicht mehr suchen musst.“ Der Wirt findet, das gelte ebenso für Gäste, die ihre Rechnung vergessen hätten. Seit seine Kleiderwette erledigt ist, legt er Wert auf andere Formen pünktlicher Lieferung.",
+        "Hinter dem Scherz steht eine alltägliche Schwierigkeit. Schiff, Bahn und örtliche Verteilung müssen zusammenarbeiten. Eine Kiste am Kai kleidet noch niemanden ein; ein gefüllter Wagen ist noch kein gefülltes Ladenregal. Aus der Vogelperspektive sind diese Wege klare Linien. Unten bestehen sie aus Abzweigungen, Übergaben und Menschen, die den nächsten Schritt kennen müssen.",
+        "Zugleich baut Valmorin an seinem Wohnalltag. Die jüngsten Berichte erzählten von Häusern, die für Lärmschutzwände weichen mussten, und von neuen Wohnungen hinter den Mauern. Barnabé Lacroix, der Maurermeister aus unserem Gespräch, betrachtet die Hafenansicht deshalb mit einem eigenen Interesse: „Schön viel Platz auf so einem Bild“, sagt er. „Versuchen Sie einmal, darin ein Wohnzimmer unterzubringen.“",
+        "Wir fragen Mathurin, ob er lieber näher am Hafen wohnen würde. Nur, wenn der Hafen zu ihm komme, erklärt er. Anselme hält das für einen brauchbaren Vorschlag, solange dabei die Aussicht aus dem Wirtshausfenster besser werde.",
+        "Die Landschaft bleibt weit, der Alltag bleibt genau. Valmorin braucht Verbindungen nach draußen und brauchbare Wege nach Hause. Beides gehört zum Fortschritt, auch wenn sich nur eines davon auf einer großen Netzkarte besonders eindrucksvoll einzeichnen lässt."
+      ],
+      "image": {
+        "src": "../../assets/photos/valmorin.webp",
+        "alt": "Valmorin links, Bahnverbindungen im Hinterland und der Hafen an der bewaldeten Landzunge rechts.",
+        "caption": "Valmorin links, Bahnverbindungen im Hinterland und der Hafen an der bewaldeten Landzunge rechts. KI-bearbeitete Spielaufnahme im Stil einer kolorierten historischen Fotografie.",
+        "source": "grafik(20261013-051911).png"
+      },
+      "grounding": "Bildgrundlage: vom Spieler am 13.10.2026 bereitgestellter Screenshot grafik(20261013-051911).png; die historische Bearbeitung wurde vom Spieler freigegeben. Sichtbare Küsten, Stadtanlage und Infrastruktur dienen als Motiv, einzelne Bilddetails sind künstlerisch rekonstruiert. Redaktionell der Ausgabe Juni 1913 zugeordnet; das genaue Spieldatum ist im Screenshot nicht sichtbar. Erfunden: Personenauftritte, Gespräche, Beobachtungsszenen und innere Perspektiven. Wiederkehrende Figuren knüpfen an frühere Journalartikel an. Die Aufnahme belegt keine Transportzeiten oder Betriebsabläufe.",
+      "refs": {
+        "staedte": [
+          174607
+        ],
+        "personen": [],
+        "linien": [],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1913-06-bildreportage-anse-doree",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1913-06",
+      "rubrik": "Bildreportage · Ansichten des Archipels",
+      "titel": "Anse Dorée: Wo die Schienen enden, beginnt der Besuch",
+      "teaser": "Eine Bucht, ein Kopfbahnhof und die Kunst, aus einer Ankunft einen Aufenthalt zu machen.",
+      "body": [
+        "Die Bucht öffnet sich links, die Häuser folgen dem Ufer, und im Hinterland läuft die Bahn auf ihren Endpunkt zu. Anse Dorée zeigt sich als ein Ort, an dem eine Fahrt aufhören darf. Für die Reisenden beginnt damit die angenehmere Frage: Wohin jetzt?",
+        "Ein Vater steigt in unserer kleinen Reportage mit seiner Tochter aus. Sie möchte zuerst ans Wasser. Er möchte zuerst wissen, wann der Zug zurückfährt. Beide haben vernünftige Gründe; die Tochter findet ihre schöner. Ein Gepäckträger schlägt vor, zunächst vom Bahnsteig herunterzugehen.",
+        "Ein Kopfbahnhof ist ein Versprechen mit zwei Seiten. Er bringt Menschen bis an ein Ziel und muss sie später wieder aufnehmen. Dazwischen brauchen sie Wege, Auskünfte und einen Ort für den Koffer. Das große Netz der Société wird hier zu einer Reihe sehr kleiner Fragen: Ist das der Weg zum Hafen? Liegt die Unterkunft links? Wie weit ist es noch?",
+        "Am Strand verkauft in unserer Erzählung Madame Rosalie Postkarten. Auf die Frage, ob die Bucht darauf immer so ruhig sei, erwidert sie: „Auf meinen Karten schon.“ Ihr meistverkauftes Motiv zeigt Wasser ohne Gepäck. Den Erfolg hält sie für leicht erklärbar.",
+        "Die Stadt ist trotzdem kein bloßes Ausflugsbild. Hinter den Wohnhäusern und entlang der Wege wird gearbeitet, gefahren und versorgt. Wer die letzte Strecke vom Bahnhof zum Laden übernimmt, trägt ebenso zum Gelingen der Reise bei wie der Zug, der weit her sichtbar einläuft.",
+        "Schließlich erreicht die Familie das Ufer. Der Vater hat die Rückfahrt geklärt, die Tochter die Schuhe ausgezogen. Für einen Augenblick ist alles dort, wo es hingehört. Anse Dorée braucht für diesen Erfolg weder eine große Rede noch eine neue Statistik. Ein trockener Platz für den Koffer wäre allerdings willkommen."
+      ],
+      "image": {
+        "src": "../../assets/photos/anse-doree.webp",
+        "alt": "Anse Dorée mit Bucht, Uferbebauung, Hafen und Bahnterminus im Hinterland.",
+        "caption": "Anse Dorée mit Bucht, Uferbebauung, Hafen und Bahnterminus im Hinterland. KI-bearbeitete Spielaufnahme im Stil einer kolorierten historischen Fotografie.",
+        "source": "grafik(20261013-051919).png"
+      },
+      "grounding": "Bildgrundlage: vom Spieler am 13.10.2026 bereitgestellter Screenshot grafik(20261013-051919).png; die historische Bearbeitung wurde vom Spieler freigegeben. Sichtbare Küsten, Stadtanlage und Infrastruktur dienen als Motiv, einzelne Bilddetails sind künstlerisch rekonstruiert. Redaktionell der Ausgabe Juni 1913 zugeordnet; das genaue Spieldatum ist im Screenshot nicht sichtbar. Erfunden: Personenauftritte, Gespräche, Beobachtungsszenen und innere Perspektiven. Wiederkehrende Figuren knüpfen an frühere Journalartikel an. Die Aufnahme belegt keine Transportzeiten oder Betriebsabläufe.",
+      "refs": {
+        "staedte": [
+          174645
+        ],
+        "personen": [],
+        "linien": [],
+        "betriebe": []
+      }
     }
   ]
 }
