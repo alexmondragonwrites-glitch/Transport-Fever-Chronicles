@@ -8,6 +8,7 @@ Die Zeitung `saves/archipel-des-alizes/journal.html` ist die Startseite der Welt
 | Meldungen | Ereignisse aus den Messbüchern, filterbar nach Rubrik, Jahr und Suche | `meldungen.json` (automatisch) |
 | Menschen | Beobachtungsgruppe des Monitors mit Verkehrsmitteln je Jahr, Arbeitsplatz, Zufriedenheitsrohwert und Lebensmomenten | `menschen.json` (automatisch) |
 | Städte | Ortsakten aller Städte mit Einwohnerverlauf, Waren, Linien und Betrieben | `staedte.json` (automatisch) |
+| Karte | Seekarte des Archipels: Städte nach Einwohnern, Linien nach Art, Betriebe nach Status, Zeitreise, Waren unterwegs (ab Monitor-Revision 16) | `karte.json` (automatisch, nur mit Positionsdaten) |
 | Fuhrpark | Fahrzeuge je Art, Modelle je Art (ab Monitor-Revision 15), Premieren, größte Flotten, Kasse | `fuhrpark.json` (automatisch) |
 | Geschichten | Artikel, Gespräche, Porträts, Réclame, „Am Tresen“ | `redaktion.json` (von Hand), `gazette.json` |
 | Notizbuch | „Aus dem Notizbuch des Direktors“: Absichten und Erklärungen des Spielers, nach Monaten | `notizen.json` (aus dem Spielmonitor) |
@@ -38,6 +39,18 @@ Regeln:
 
 Von Hand: `python scripts/build-journal.py [--monitor PFAD] [--out ORDNER] [--notebook DATEI]` (`--out` schreibt woandershin, z. B. für Tests; `--notebook` liest ein anderes Notizbuch).
 
+## Seekarte „Carte marine de l’Archipel“
+
+Die Rubrik „Karte“ (hinter „Städte“) zeichnet den Archipel als SVG-Seekarte im Papier-Design: Städte als Kreise nach Einwohnern, Linien in der Farbe ihrer Art (Schiffslinien gestrichelt), Betriebe als Rauten nach Status (produziert, steht still, wird geprüft), Halte, Wahrzeichen und auf Wunsch „Waren unterwegs“. Klick auf ein Objekt zeigt Einzelheiten (Haltefolge einer Linie, Linien an einem Halt, Erzeugnisse eines Betriebs, Link zur Ortsakte); die Ortsakte verlinkt zurück („Auf der Seekarte zeigen“, `#karte/town-<id>`). Zoom über Knöpfe oder Doppelklick, Verschieben per Ziehen im vergrößerten Zustand.
+
+- **Quelle:** `karte.json`, geschrieben von `build-journal.py` mit `scripts/journal_karte.py`, sobald Detailmessungen den Block `geo` tragen (Spielmonitor-Revision 16, `Spielmonitor/CHANGELOG_MOD16.md`). Ohne Positionsdaten entsteht keine Datei, die Rubrik fehlt und alle anderen Dateien bleiben byte-identisch (Test).
+- **Positionen:** Mittelpunkt der Begrenzungsbox wie in den Stadt- und Industriefenstern des Spiels, in Weltmetern. Je Objekt gilt die neueste Messung; ältere Sitzungen füllen nur Objekte auf, die der neueste Stand nicht kennt. `fehlend` zählt Orte, Betriebe, Halte und Wahrzeichen ohne Position.
+- **Linien:** Luftlinie zwischen den Halten in Haltefolge (`station_group_ids` jeder Detailmessung), als Rundkurs geschlossen. Kein Gleis- oder Straßenverlauf.
+- **Küsten und Tiefen:** grobes Höhenraster `terrain` (etwa stündlich gemessen) relativ zum Wasserspiegel; die Seite zieht daraus Küstenlinie (0 m), Flachwasser bis 5 m, Isobathe 20 m und Höhenlinien. Fehlt das Raster, bleibt die Karte offenes Meer mit Symbolen.
+- **Zeitreise:** Einwohner je Spielmonat aus `staedte.json`; Linien und Betriebe erscheinen ab ihrer ersten Meldung (`linie`/`premiere` bzw. `industrie`). Eingestellte Linien und geschlossene Betriebe fehlen, weil die Karte nur den letzten Stand verortet. Ein gestrichelter Ring zeigt die heutige Größe.
+- **Waren unterwegs:** Stichprobe der Ladung an Bord aus der letzten Detailmessung (`logistics.cargo`, höchstens 240 Stücke): vom erzeugenden Betrieb zum Halt, an dem sie das Fahrzeug verlässt, mit der Linienkette der Reise. Nur beim heutigen Stand sichtbar, keine vollständige Verkehrsstatistik.
+- **Nordrichtung:** Annahme „Welt-y wächst nach Norden“ (`y_nach_oben` in `karte.json`). Bis ein Livebild mit der Spielkarte verglichen ist, steht `nord_geprueft: false` und die Seite sagt das. Umstellen in `journal_karte.py` (`Y_NACH_OBEN`, `NORD_GEPRUEFT`).
+
 ## Notizbuch des Direktors
 
 Der Spieler, Direktor der Société, notiert beim Spielen im Spielmonitor kurze Absichten und Erklärungen (Zeile „Notizbuch“, Strg+N; Bedienung in `Spielmonitor/README.md`). Beispiel: „Lärmschutzwände in Valmorin gebaut, dafür Häuser abgerissen“. Bisher kamen solche Erklärungen per Chat, jetzt stehen sie mit Spieldatum im Notizbuch.
@@ -62,7 +75,7 @@ Neue Beiträge kommen als Eintrag in `redaktion.json` hinzu. Pflicht für jeden 
 
 Ideen liefert die Zeitung selbst. Der Kasten „Stoff für Geschichten“ auf jeder Titelseite und „Noch unerzählt“ unter Geschichten leiten offene Fragen aus den Meldungen ab. Wiederkehrende Figuren: Wirt Mathurin vom „Au Quai des Collines“ (Valmorin), der alte Anselme, Lucie vom Bahnhof; aus der Beobachtungsgruppe Marceline Clément (84185), Isidore Lubin (54586), Edmond Philogène (144145).
 
-Prüfen: `node scripts/validate-journal.mjs [ORDNER]` (läuft auch in CI und vor jedem Upload). `python scripts/test-build-journal.py` baut synthetische Messungen mit und ohne Modelldaten sowie ein Test-Notizbuch in einen Temp-Ordner und prüft Meldungen, Fuhrpark, Notizen und Validator (CI).
+Prüfen: `node scripts/validate-journal.mjs [ORDNER]` (läuft auch in CI und vor jedem Upload). `python scripts/test-build-journal.py` baut synthetische Messungen mit und ohne Modelldaten bzw. Positionen sowie ein Test-Notizbuch in einen Temp-Ordner und prüft Meldungen, Fuhrpark, Notizen, Seekarte und Validator (CI).
 
 ## Bildreportagen
 

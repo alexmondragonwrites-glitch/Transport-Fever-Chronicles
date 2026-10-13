@@ -1,0 +1,90 @@
+/* Carte marine de l’Archipel: sea chart in the paper design of styles.css (Le Journal des Alizés, Rubrik „Karte“). */
+.k-controls{display:flex;flex-wrap:wrap;gap:12px 26px;align-items:center;justify-content:space-between;margin-bottom:14px}
+.k-layers{margin:0}
+.k-time{display:flex;align-items:center;gap:12px;font-size:14px;color:var(--muted);flex:1 1 280px;max-width:460px}
+.k-time span{white-space:nowrap}
+.k-time strong{font-family:var(--serif);font-style:italic;font-weight:600;color:var(--ink)}
+.k-time input{flex:1;min-width:120px;accent-color:var(--red)}
+
+/* The frame keeps the chart's proportions and at most 78% of the screen height, so the furniture stays on the chart. */
+.k-frame{position:relative;background:var(--panel);border:1px solid var(--line-strong);padding:10px;box-shadow:var(--shadow);max-width:calc(78vh * var(--k-ratio,1.33) + 22px);margin:0 auto}
+.k-frame:before{content:"";position:absolute;inset:4px;border:1px solid var(--line);pointer-events:none}
+.k-map{display:block;width:100%;height:auto;user-select:none;-webkit-user-select:none;touch-action:auto}
+.k-map.k-zoomed{cursor:grab;touch-action:none}
+.k-map.k-zoomed:active{cursor:grabbing}
+
+/* Sea, depth and land: pale paper tints, the coast inked like an engraved chart */
+.k-sea{fill:#b9cdc5}
+.k-mid{fill:#c7d8cf}
+.k-shallow{fill:#d8e3d4}
+.k-surf2,.k-surf1{fill:none;stroke:var(--blue);vector-effect:non-scaling-stroke;stroke-linejoin:round;stroke-linecap:round}
+.k-surf2{stroke-width:11px;stroke-opacity:.08}
+.k-surf1{stroke-width:5px;stroke-opacity:.14}
+.k-land{fill:#f1e6c8}
+.k-tint0{fill:#e9d9b2}
+.k-tint1{fill:#dfc999}
+.k-contour{fill:none;stroke:#b49a6a;stroke-width:.7px;stroke-opacity:.75;vector-effect:non-scaling-stroke}
+.k-isobath{fill:none;stroke:var(--blue);stroke-width:.7px;stroke-opacity:.35;vector-effect:non-scaling-stroke}
+.k-coast{fill:none;stroke:var(--ink);stroke-width:1.2px;stroke-linejoin:round;vector-effect:non-scaling-stroke}
+.k-grid{fill:none;stroke:var(--blue);stroke-width:.6px;stroke-opacity:.18;vector-effect:non-scaling-stroke}
+.k-border{fill:none;stroke:var(--ink);stroke-width:1.5px;vector-effect:non-scaling-stroke}
+
+/* Network and places */
+.k-line{fill:none;stroke-linejoin:round;stroke-linecap:round;stroke-opacity:.85;cursor:pointer}
+.k-line.k-dim{stroke-opacity:.22}
+.k-stop{fill:var(--panel);stroke:var(--ink);cursor:pointer}
+.k-ind{stroke:var(--panel);cursor:pointer}
+.k-ind.k-hit{stroke:var(--ink)}
+.k-town{fill:var(--gold-bright);fill-opacity:.32;stroke:var(--ink);cursor:pointer}
+.k-town.k-hit{fill-opacity:.55;stroke:var(--red)}
+.k-town-now{fill:none;stroke:var(--gold);stroke-opacity:.8}
+.k-mark{fill:var(--red);stroke:var(--panel);cursor:pointer}
+.k-flow{fill:none;stroke:var(--gold);stroke-opacity:.75;stroke-linecap:round;cursor:pointer}
+.k-arrowhead{fill:var(--gold)}
+.k-label-town,.k-label-stop,.k-label-ind{paint-order:stroke;stroke:var(--panel);stroke-linejoin:round;fill:var(--ink);pointer-events:none}
+.k-label-town{font-family:var(--serif);font-style:italic;font-weight:600}
+.k-label-stop,.k-label-ind{font-family:var(--sans);fill:var(--muted)}
+
+/* Furniture fixed to the frame: cartouche, compass rose, scale, zoom */
+.k-cartouche{position:absolute;left:22px;top:22px;max-width:46%;background:#fbf6eae6;border:1px solid var(--ink);box-shadow:0 0 0 3px #fbf6eae6,0 0 0 4px var(--line-strong);padding:6px 12px;text-align:center;pointer-events:none}
+.k-cartouche strong{display:block;font-family:var(--serif);font-size:17px;letter-spacing:.08em;text-transform:uppercase}
+.k-cartouche span{display:block;font-family:var(--serif);font-style:italic;font-size:12px;color:var(--muted)}
+.k-rose{position:absolute;right:22px;top:20px;width:34px;pointer-events:none}
+.k-rose svg{display:block;width:100%;overflow:visible}
+.k-rose-n{fill:var(--ink)}
+.k-rose-s{fill:var(--panel);stroke:var(--ink);stroke-width:1}
+.k-rose text{font-family:var(--serif);font-size:11px;font-weight:700;text-anchor:middle;fill:var(--ink)}
+.k-scale{position:absolute;left:22px;bottom:20px;font-size:12px;color:var(--ink);background:#fbf6eacc;padding:2px 6px;pointer-events:none}
+.k-scale i{display:block;height:5px;border:1px solid var(--ink);border-top:0;background:linear-gradient(90deg,var(--ink) 50%,transparent 50%)}
+.k-zoom{position:absolute;right:20px;bottom:20px;display:flex;flex-direction:column;gap:4px}
+.k-zoom button{width:34px;height:34px;border:1px solid var(--ink);background:var(--panel);color:var(--ink);font-size:18px;line-height:1;border-radius:3px}
+.k-zoom button:hover{background:var(--panel2)}
+
+/* Below the chart: details of the selection and the legend */
+.k-below{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:18px;margin:18px 0}
+.k-info{padding:18px 20px}
+.k-info h3{margin:0 0 6px;font-size:24px}
+.k-info h4{margin:14px 0 6px;font-family:var(--serif)}
+.k-info p{margin:0 0 6px}
+.k-stops{margin:0;padding-left:24px;columns:2 200px;font-size:14px}
+.k-legend{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:12px 20px;align-content:start;font-size:13px;color:var(--muted)}
+.k-legend h4{margin:0 0 6px;font-family:var(--serif);font-size:15px;color:var(--ink)}
+.k-legend span{display:flex;align-items:center;gap:8px;margin-bottom:4px}
+.k-legend span svg{width:16px;height:16px;flex:none;overflow:visible}
+.k-legend span svg[viewBox="0 0 24 12"]{width:26px}
+.k-legend-towns{width:170px;height:64px;display:block}
+.k-legend-towns text{font-size:11px;fill:var(--muted);font-family:var(--sans)}
+.k-legend-towns .k-town{stroke-width:1}
+.k-legend .k-stop{stroke-width:1}
+.k-legend .k-flow{stroke-width:1.6}
+.k-legend .k-mark{stroke-width:.6}
+.k-kind{display:flex;align-items:center;gap:8px;width:100%;background:none;border:0;padding:2px 0;font-size:13px;color:var(--ink);text-align:left}
+.k-kind i{display:inline-block;width:26px;height:4px;border-radius:2px;flex:none}
+.k-kind[aria-pressed=false]{color:var(--muted);text-decoration:line-through}
+.k-kind[aria-pressed=false] i{opacity:.25}
+.k-sw{display:inline-block;width:16px;height:12px;border:1px solid var(--line-strong);flex:none}
+.k-sw-land{background:#f1e6c8}
+.k-sw-shallow{background:#d8e3d4}
+
+@media(max-width:800px){.k-below{grid-template-columns:1fr}}
+@media(max-width:650px){.k-frame{padding:6px}.k-cartouche{display:none}.k-rose{right:12px;top:12px;width:26px}.k-scale{left:12px;bottom:12px}.k-zoom{right:12px;bottom:12px}.k-zoom button{width:30px;height:30px}.k-time{max-width:none}}

@@ -1,6 +1,6 @@
 // Le Journal des Alizés: consistency of measured journal data and the house rules for editorial pieces.
 import assert from 'node:assert/strict';
-import {readFileSync} from 'node:fs';
+import {existsSync, readFileSync} from 'node:fs';
 import {join} from 'node:path';
 // Optional argument: another journal folder, e.g. from scripts/test-build-journal.py.
 const base = process.argv[2] || 'saves/archipel-des-alizes/data/journal';
@@ -54,6 +54,35 @@ if(!models){
   for(const e of modelEvents) assert(e.date > models.erfasst_seit, 'model event at or before the baseline: '+e.id);
 }
 
+// Sea chart: karte.json exists only once the Spielmonitor measures positions (revision 16); before that nothing to check.
+let chart = null;
+if(existsSync(join(base, 'karte.json'))){
+  chart = read('karte.json');
+  assert.equal(chart.schema_version, 1);
+  const g = chart.grenze, num = v => typeof v === 'number' && Number.isFinite(v);
+  assert(num(g.min_x) && num(g.max_x) && num(g.min_y) && num(g.max_y) && g.max_x > g.min_x && g.max_y > g.min_y, 'chart bounds');
+  assert.match(chart.stand.positionen, day);
+  const placed = (list, what) => { const ids = unique(list, what); for(const o of list) assert(num(o.x) && num(o.y), what+' without position '+o.id); return ids; };
+  placed(chart.staedte, 'chart town'); placed(chart.wahrzeichen, 'chart landmark');
+  placed(chart.betriebe, 'chart industry');
+  const chartStops = placed(chart.stationen, 'chart stop');
+  for(const t of chart.staedte) assert(townIds.has(t.id), 'chart town missing in staedte.json: '+t.id);
+  for(const i of chart.betriebe) assert(['aktiv','gestoppt','ungeprueft'].includes(i.status), 'industry status '+i.id);
+  unique(chart.linien, 'chart line');
+  const kinds = new Set(fleet.arten.map(a => a.art));
+  for(const l of chart.linien) assert(Array.isArray(l.halte) && kinds.has(l.art), 'chart line '+l.id);
+  const unplaced = new Set(chart.linien.flatMap(l => l.halte).filter(id => !chartStops.has(id)));
+  assert.equal(unplaced.size, chart.fehlend.stationen, 'stops without position must be counted');
+  if(chart.gelaende){
+    const G = chart.gelaende;
+    assert(G.zelle_m > 0 && G.hoehen.length === G.zeilen && G.hoehen.every(r => r.length === G.spalten && r.every(Number.isInteger)), 'height grid shape');
+  }
+  for(const w of chart.warenwege?.wege || []){
+    assert([w.stadt, w.betrieb, w.halt].filter(v => v != null).length === 1 && w.anzahl >= 1 && w.ware, 'goods way from '+w.von);
+    if(w.betrieb != null) assert(Number.isInteger(w.betrieb));
+  }
+}
+
 // The player's notebook: statements of intent from the Spielmonitor, labelled as such and never measurements.
 assert.equal(notes.schema_version, 1);
 assert(/Spielervorgabe/.test(notes.hinweis) && /nicht als Messwert/.test(notes.hinweis), 'notes must be labelled as player statements');
@@ -84,4 +113,4 @@ for(const s of red.items){
 }
 assert(red.items.filter(s => s.lead).every((s, i, all) => all.findIndex(x => x.date === s.date) === i), 'one lead per edition');
 for(const w of warnings) console.warn('Hinweis: '+w);
-console.log(`OK: ${meld.meldungen.length} Meldungen, ${people.size} Personen, ${townIds.size} Orte, ${models ? models.anzahl+' Fahrzeugmodelle, ' : ''}${noteIds.size} Notizen, ${red.items.length} Redaktionsbeiträge geprüft.`);
+console.log(`OK: ${meld.meldungen.length} Meldungen, ${people.size} Personen, ${townIds.size} Orte, ${models ? models.anzahl+' Fahrzeugmodelle, ' : ''}${chart ? 'Seekarte mit '+chart.stationen.length+' Halten, ' : ''}${noteIds.size} Notizen, ${red.items.length} Redaktionsbeiträge geprüft.`);

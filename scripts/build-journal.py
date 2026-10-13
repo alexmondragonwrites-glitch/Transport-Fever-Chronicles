@@ -2,7 +2,8 @@
 
 Usage: python scripts/build-journal.py [--monitor PATH] [--save ID] [--out DIR] [--notebook FILE]
 
-Writes saves/<save>/data/journal/{meldungen,menschen,staedte,fuhrpark,notizen}.json, only when the content changed.
+Writes saves/<save>/data/journal/{meldungen,menschen,staedte,fuhrpark,notizen}.json, only when the content changed,
+and karte.json once the monitor measures positions (Spielmonitor revision 16, see journal_karte.py).
 Everything here is derived from detail measurements of the configured world on the canonical timeline:
 after a game-time rollback the replayed course replaces the abandoned branch, as in build-decade.mjs.
 Names of the observed residents are invented by the editors and marked as such; all other values are measured.
@@ -17,6 +18,10 @@ import hashlib
 import json
 import re
 from pathlib import Path
+import sys
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import journal_karte  # noqa: E402  sea chart from the monitor's positions
 
 ROOT = Path(__file__).resolve().parents[1]
 CACHE = ROOT/'.publish-cache/journal'
@@ -94,18 +99,18 @@ def compact(row):
 
 
 def session_rows(path, world_id, cache_dir=CACHE):
-    """Compact detail rows of one session, cached by file size, mtime and this script's version."""
+    """Compact detail rows of one session plus its newest positions, cached by file size, mtime and the scripts' version."""
     stat = path.stat()
     key = {'size':stat.st_size, 'mtime_ns':stat.st_mtime_ns,
-           'script':hashlib.sha256(Path(__file__).read_bytes()).hexdigest()}
+           'script':hashlib.sha256(Path(__file__).read_bytes()+Path(journal_karte.__file__).read_bytes()).hexdigest()}
     cache = cache_dir/(path.parent.name+'.json')
     try:
         cached = json.loads(cache.read_text(encoding='utf-8'))
         if cached['key'] == key:
-            return cached['rows'], cached['last_towns']
+            return cached['rows'], cached['last_towns'], cached['karte']
     except (OSError, ValueError, KeyError):
         pass
-    rows, last_towns = [], None
+    rows, last_towns, chart = [], None, {}
     needle = world_id.encode()
     with path.open('rb') as stream:
         remaining = stat.st_size
@@ -121,13 +126,15 @@ def session_rows(path, world_id, cache_dir=CACHE):
             if row.get('world_id') != world_id or row.get('sample_mode') != 'detail':
                 continue
             rows.append(compact(row))
+            journal_karte.collect(chart, row)
             if row.get('towns'):
                 last_towns = {'d':date(row.get('towns_game_date')), 'r':row.get('towns_recorded_at'), 'towns':row['towns'],
                               'lines':[{k:l.get(k) for k in ('id','name','places','vehicles')} for l in row.get('lines', [])],
-                              'industries':[{k:i.get(k) for k in ('id','name','level','producing','production_year','shipped_year')} for i in row.get('industries', [])]}
+                              'industries':[{k:i.get(k) for k in ('id','name','level','producing','production_year','shipped_year')} for i in row.get('industries', [])],
+                              'karte':journal_karte.latest(row)}
     cache_dir.mkdir(parents=True, exist_ok=True)
-    cache.write_text(json.dumps({'key':key, 'rows':rows, 'last_towns':last_towns}, ensure_ascii=False), encoding='utf-8')
-    return rows, last_towns
+    cache.write_text(json.dumps({'key':key, 'rows':rows, 'last_towns':last_towns, 'karte':chart}, ensure_ascii=False), encoding='utf-8')
+    return rows, last_towns, chart
 
 
 def canonical(sessions):
@@ -545,9 +552,10 @@ def write(path, obj):
 def build(monitor, save, out=None, cache_dir=CACHE, notes_path=None):
     config = json.loads((ROOT/'data/monitor-sources.json').read_text(encoding='utf-8'))['saves'][save]
     world_id = config['world']['world_id']
-    sessions, last_towns = [], None
+    sessions, last_towns, charts = [], None, []
     for path in sorted((monitor/'sessions').glob('*/daten.jsonl')):
-        rows, last = session_rows(path, world_id, cache_dir)
+        rows, last, chart = session_rows(path, world_id, cache_dir)
+        charts.append(chart)
         if rows:
             sessions.append((path.parent.name, rows))
             last_towns = last or last_towns
@@ -579,8 +587,12 @@ def build(monitor, save, out=None, cache_dir=CACHE, notes_path=None):
                                   'Sie gelten als Spielervorgabe, nicht als Messwert. Datum = Spieldatum der letzten Messung beim Schreiben.',
                         'notizen':notebook(Path(notes_path) if notes_path else monitor/'history/notizbuch.jsonl', world_id)},
     }
-    changed = [name for name, obj in files.items() if write(out/name, obj)]
     lists = {'meldungen.json':'meldungen', 'menschen.json':'personen', 'staedte.json':'staedte', 'fuhrpark.json':'verlauf', 'notizen.json':'notizen'}
+    # The sea chart exists only once the monitor measured positions; before that nothing changes here.
+    chart = journal_karte.chart(charts, last_towns, stand, line_kind, line_goods)
+    if chart:
+        files['karte.json'], lists['karte.json'] = chart, 'staedte'
+    changed = [name for name, obj in files.items() if write(out/name, obj)]
     return changed, stand, {k:len(files[k][key]) for k, key in lists.items()}
 
 

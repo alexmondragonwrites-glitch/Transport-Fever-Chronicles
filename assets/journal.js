@@ -1,6 +1,7 @@
 /* Le Journal des Alizés: monthly newspaper editions built from measured events (data/journal/*.json),
  * the player's own notes (notizen.json) and hand-written editorial pieces (redaktion.json, gazette.json).
  * Measured, stated by the player and invented content stay labelled. */
+import {karteView, mountKarte} from './journal-karte.js?v=20261013-karte';
 const APP = document.getElementById('app');
 const E = v => String(v ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const N = (v, d=0) => Number.isFinite(v) ? new Intl.NumberFormat('de-DE', {maximumFractionDigits:d}).format(v) : '–';
@@ -42,6 +43,8 @@ let D, state = {tab:'une', month:null, filter:{}};
 function header(){
   return `<header class="topbar"><div class="shell topbar-inner"><a class="brand" href="../../index.html"><span class="brand-mark">✦</span>Transport Fever <span class="strong">Chronicles</span></a><nav class="toplinks" aria-label="Hauptnavigation"><a href="../../index.html">Alle Welten</a><a href="weihnachten-1911.html">Weihnachten 1911</a><a href="index.html?view=monitor#overview">Monitor</a><a href="jahrzehnt.html">Dossier 1900–1910</a></nav></div></header>`;
 }
+// The sea chart appears behind „Städte“ only once karte.json exists (Spielmonitor revision 16 positions).
+const tabs = () => TABS.flatMap(t=>t[0]==='staedte'&&D.karte?[t,['karte','Karte']]:[t]);
 const TABS = [['une','Titelseite'],['meldungen','Meldungen'],['menschen','Menschen'],['staedte','Städte'],['fuhrpark','Fuhrpark'],['geschichten','Geschichten'],['notizbuch','Notizbuch']];
 
 function masthead(){
@@ -53,7 +56,7 @@ function masthead(){
   <label class="j-ed-label">Ausgabe <select class="select" id="j-month" aria-label="Ausgabe wählen">${[...months].reverse().map(x=>`<option value="${x}" ${x===m?'selected':''}>${monthName(x)}</option>`).join('')}</select></label>
   <span class="j-ed-fr">Édition de ${MOIS[+m.slice(5,7)-1]} ${m.slice(0,4)} · Nº ${i+1}</span>
   <button class="j-ed" data-ed="${E(months[i+1]||'')}" ${i<months.length-1?'':'disabled'} aria-label="Nächste Ausgabe">›</button></div></div></section>
-  <nav class="tabs" aria-label="Rubriken"><div class="shell tab-inner" role="tablist">${TABS.map(([id,l])=>`<button type="button" class="tab" role="tab" data-tab="${id}" aria-selected="${id===state.tab}">${l}</button>`).join('')}</div></nav>`;
+  <nav class="tabs" aria-label="Rubriken"><div class="shell tab-inner" role="tablist">${tabs().map(([id,l])=>`<button type="button" class="tab" role="tab" data-tab="${id}" aria-selected="${id===state.tab}">${l}</button>`).join('')}</div></nav>`;
 }
 
 const prov = art => art==='einordnung' ? '<span class="j-prov j-prov-ein">Einordnung</span>' : art==='beleg' ? '<span class="j-prov j-prov-fakt">Belegt</span>' : art==='vorgabe' ? '<span class="j-prov j-prov-vorgabe">Spielervorgabe</span>' : '<span class="j-prov j-prov-fik">Fiktion</span>';
@@ -244,6 +247,7 @@ function townDetail(t){
   const events = D.events.filter(e=>e.refs?.town===t.id || (e.refs?.line && t.linien.some(l=>l.id===e.refs.line)) || (e.refs?.industry && t.betriebe.some(b=>b.id===e.refs.industry)));
   const stories = D.storyByTown.get(t.id)||[];
   return `<article class="card j-town-detail" id="town-detail"><div class="detail-head"><h3>${E(t.name)}</h3><span class="tag">Ort ${t.id}</span></div>
+  ${D.karte?.staedte.some(x=>x.id===t.id)?`<p><a class="mini-link" href="#karte/town-${t.id}">Auf der Seekarte zeigen →</a></p>`:''}
   ${t.frueher.length?`<p class="small">Frühere Namen: ${t.frueher.map(x=>`${E(x.name)} (bis ${E(dayName(x.bis))})`).join(', ')}</p>`:''}
   ${cardsHTML([[N(t.einwohner),'Einwohner'],[N(t.wohnkapazitaet),'Wohnkapazität'],[N(t.arbeitsplaetze),'Arbeitsplätze'],[N(t.geschaefte),'Geschäfte'],[`${N(t.netzanteil_prozent)} %`,'Wege über das Netz']])}
   ${lineChart([{label:'Einwohner (belegter Wohnraum)', color:'var(--mint)', points:t.verlauf.map(p=>({x:p.monat,y:p.einwohner}))}],{title:'Einwohner von '+t.name,h:220})}
@@ -294,7 +298,10 @@ function notizbuch(){
   :'<p class="empty">Noch keine Notizen. Was der Direktor im Spielmonitor notiert (Zeile „Notizbuch“, Strg+N), erscheint hier nach dem nächsten Website-Upload.</p>'}`;
 }
 
-const VIEWS = {une, meldungen, menschen, staedte, fuhrpark, geschichten, notizbuch};
+// A drawing error of the chart must never take the newspaper down with it.
+const karte = () => { try{ return karteView(D, {E, N, monthName, dayName, KIND_COLORS, kindLabel:k=>D.fleet.arten.find(a=>a.art===k)?.bezeichnung||k}); }
+  catch(error){ console.error(error); return `<p class="empty">Die Seekarte kann gerade nicht gezeichnet werden (${E(error.message)}).</p>`; } };
+const VIEWS = {une, meldungen, menschen, staedte, karte, fuhrpark, geschichten, notizbuch};
 
 function render(scroll){
   APP.innerHTML = header()+`<main id="main" class="j">${masthead()}<div class="shell j-page">${VIEWS[state.tab]()}</div></main><footer class="footer"><div class="shell footer-inner"><span>Le Journal des Alizés · Messstand ${E(dayName(D.meta.stand.date))}</span><span>Belegtes aus dem Spielmonitor, Erfundenes ausdrücklich gekennzeichnet</span></div></footer>`;
@@ -324,18 +331,20 @@ function bind(){
   $('[data-close-story]') && ($('[data-close-story]').onclick=()=>go('geschichten',{type:state.filter.type}));
   $('#j-clear-month') && ($('#j-clear-month').onclick=()=>go('meldungen',{...state.filter, month:''}));
   const live = (sel, key, ev='input') => { const el=$(sel); if(el) el.addEventListener(ev, ()=>{ const pos=el.selectionStart; state.filter={...state.filter,[key]:el.type==='checkbox'?el.checked:el.value}; render(); const again=$(sel); if(again&&again.type==='search'){ again.focus(); again.setSelectionRange(pos,pos); } }); };
+  if(state.tab==='karte') try{ mountKarte(state.filter.sel); }catch(error){ console.error(error); }
   live('#j-q','q'); live('#j-group','group','change'); live('#j-year','year','change'); live('#j-town','town','change'); live('#j-mode','mode','change'); live('#j-alle','alle','change'); live('#j-sort','sort','change');
 }
 
 function fromHash(){
   const [tab, key] = location.hash.slice(1).split('/');
-  if(!VIEWS[tab]) return false;
+  if(!VIEWS[tab] || (tab==='karte' && !D.karte)) return false;
   state.tab = tab; state.filter = {};
   if(tab==='une' && D.months.includes(key)) state.month = key;
   if(tab==='menschen' && key) state.filter = {person:key};
   if(tab==='staedte' && key) state.filter = {town:key};
   if(tab==='geschichten' && key) state.filter = {story:decodeURIComponent(key)};
   if(tab==='notizbuch' && key) state.filter = {note:decodeURIComponent(key)};
+  if(tab==='karte' && key){ const [k, id] = key.split('-'); state.filter = {sel:{k, id:+id}}; }
   return true;
 }
 const detailTarget = () => state.filter.person?'#person-detail':state.filter.town?'#town-detail':state.filter.story?'#reader':state.filter.note?'#note-'+CSS.escape(state.filter.note):'.tabs';
@@ -345,8 +354,9 @@ window.addEventListener('hashchange', ()=>{ if(D && fromHash()) render(detailTar
 async function start(){
   try{
     const base = 'data/journal/';
-    const [meld, ppl, towns, fleet, red, gaz, notes] = await Promise.all(['meldungen','menschen','staedte','fuhrpark','redaktion'].map(n=>fetchJSON(base+n+'.json'))
-      .concat(fetchJSON('data/gazette.json').catch(()=>({articles:[]})), fetchJSON(base+'notizen.json').catch(()=>({notizen:[], hinweis:''}))));
+    const [meld, ppl, towns, fleet, red, gaz, notes, chart] = await Promise.all(['meldungen','menschen','staedte','fuhrpark','redaktion'].map(n=>fetchJSON(base+n+'.json'))
+      .concat(fetchJSON('data/gazette.json').catch(()=>({articles:[]})), fetchJSON(base+'notizen.json').catch(()=>({notizen:[], hinweis:''})),
+        fetchJSON(base+'karte.json').catch(()=>null)));
     const events = meld.meldungen;
     const byMonth = new Map(); events.forEach(e=>{ const k=e.date.slice(0,7); if(!byMonth.has(k)) byMonth.set(k,[]); byMonth.get(k).push(e); });
     const gazette = (gaz.articles||[]).map(a=>({id:'gazette-'+a.id, typ:'artikel', art:a.type==='fiktion'?'fiktion':'einordnung', date:a.date, rubrik:a.rubric, titel:a.title, teaser:a.teaser, body:a.body, grounding:a.grounding, venue:a.venue, refs:{}}));
@@ -360,7 +370,7 @@ async function start(){
     D = {meta:meld, events, byMonth, months, stories, gazette, policy:red.editorial_policy, people:ppl.personen, cohort:ppl,
       personById:new Map(ppl.personen.map(p=>[p.id,p])), towns:towns.staedte, townsMeta:towns.stand, townById:new Map(towns.staedte.map(t=>[t.id,t])),
       fleet, fleetByMonth:new Map(fleet.verlauf.map(v=>[v.monat,v])), residentsByMonth, storyByPerson, storyByTown,
-      notesMeta:notes, notesByMonth, noteById:new Map(notes.notizen.map(n=>[n.id,n])), storiesByNote};
+      notesMeta:notes, notesByMonth, noteById:new Map(notes.notizen.map(n=>[n.id,n])), storiesByNote, karte:chart};
     state.month = months.at(-1);
     fromHash();
     render(location.hash.split('/')[1] && state.tab!=='une' ? detailTarget() : null);

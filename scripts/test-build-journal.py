@@ -1,4 +1,5 @@
-"""Journal build from synthetic monitor sessions: vehicle models (Spielmonitor revision 15) and the player's notebook.
+"""Journal build from synthetic monitor sessions: vehicle models (Spielmonitor revision 15), the player's notebook
+and the sea chart from measured positions (revision 16).
 
 Usage: python scripts/test-build-journal.py
 Builds into a temporary folder and never touches the published journal or the real publish cache.
@@ -194,6 +195,100 @@ class JournalNotebookTests(JournalCase):
         result = validate(self.out)
         self.assertNotEqual(result.returncode, 0)
         self.assertIn('Spielervorgabe', result.stderr)
+
+
+
+def charted(day, t, geo=None, terrain=None, logistics=None):
+    """Revision-16 detail row with stop order, cargo and industries; positions and height grid only when given."""
+    row = detail(day, t, BASE, revision=16)
+    stops = {1:[701, 702], 2:[701, 703], 3:[702]}
+    for line in row['lines']:
+        line['station_group_ids'] = stops[line['id']]
+        line['station_names'] = [f'Halt {g}' for g in stops[line['id']]]
+        line['cargo'] = ([{'id':0, 'name':'Passagiere', 'passenger':True}] if line['id'] == 1
+                         else [{'id':7, 'name':'Holz' if line['id'] == 2 else 'Fisch', 'passenger':False}, {'id':8, 'name':'Bretter', 'passenger':False}])
+    row['towns'].append({'id':11, 'name':'Roc', 'housing_occupied':200, 'housing_capacity':260})
+    row['industries'] = [{'id':401, 'name':'Valmorin Sägewerk', 'level':2, 'producing':True, 'production_year':80, 'shipped_year':60,
+                          'inputs':[{'id':7, 'name':'Holz'}], 'outputs':[{'id':8, 'name':'Bretter'}]},
+                         {'id':402, 'name':'Roc Fischerei', 'level':1, 'producing':False, 'inputs':[], 'outputs':[]}]
+    if geo is not None:
+        row['geo'], row['geo_recorded_at'] = geo, row['recorded_at']
+    if terrain is not None:
+        row['terrain'] = terrain
+    if logistics is not None:
+        row['logistics'] = logistics
+    return row
+
+
+def geo(towns, day=(2, 1), **extra):
+    return {'game_date':{'year':1912, 'month':day[0], 'day':day[1]}, 'complete':True, 'positions_missing':0,
+            'map':{'min_x':-2000, 'min_y':-1000, 'max_x':2000, 'max_y':1000, 'water_level':0}, 'towns':towns,
+            'industries':[{'id':401, 'x':300, 'y':250, 'source':'bounding_volume'}],
+            'station_groups':[{'id':701, 'x':120, 'y':210, 'name':'Valmorin Bahnhof', 'source':'bounding_volume'},
+                              {'id':702, 'x':900, 'y':-300, 'name':'Roc Hafen', 'source':'stations', 'stations':2}],
+            'landmarks':{}} | extra  # {}: an empty Lua table
+
+
+TERRAIN = {'complete':True, 'min_x':-2000, 'min_y':-1000, 'max_x':2000, 'max_y':1000, 'cell_m':1000, 'cols':4, 'rows':2,
+           'water_level':0, 'height_reference':'water_level', 'row_order':'min_y_first', 'heights':[[-20, -3, 5, 40], [-8, 2, 12, 90]]}
+# While on board, the cargo's target is the stop where it leaves the vehicle (as measured live).
+LOGISTICS = {'cargo_truncated':False, 'stations':[], 'cargo':[{'source_industry_id':401, 'target_id':702, 'cargo_id':8,
+             'hops':[{'line_id':2}, {'line_id':2}, {'line_id':1}]}]*3 + [{'source_industry_id':401, 'target_id':999, 'cargo_id':8}]}
+
+
+class JournalChartTests(JournalCase):
+    def build_into(self, name, sessions):
+        monitor = self.tmp/name/'monitor'
+        for session, rows in sessions.items():
+            folder = monitor/'sessions'/session
+            folder.mkdir(parents=True)
+            (folder/'daten.jsonl').write_text(''.join(json.dumps(r, ensure_ascii=False)+'\n' for r in rows), encoding='utf-8')
+        out = self.tmp/name/'out'
+        out.mkdir()
+        (out/'redaktion.json').write_text(json.dumps(REDAKTION, ensure_ascii=False), encoding='utf-8')
+        journal.build(monitor, SAVE, out, self.tmp/name/'cache')
+        result = validate(out)
+        if result:
+            self.assertEqual(result.returncode, 0, result.stderr or result.stdout)
+        return out
+
+    def test_without_positions_there_is_no_chart_and_the_other_files_stay_identical(self):
+        plain = self.build_into('ohne', {'a':[charted((1, 1), 100), charted((2, 1), 200)]})
+        placed = self.build_into('mit', {'a':[charted((1, 1), 100), charted((2, 1), 200, geo([{'id':10, 'x':1, 'y':2}]), TERRAIN, LOGISTICS)]})
+        self.assertFalse((plain/'karte.json').exists())
+        self.assertTrue((placed/'karte.json').exists())
+        for name in ('meldungen', 'menschen', 'staedte', 'fuhrpark', 'notizen'):
+            self.assertEqual((plain/f'{name}.json').read_bytes(), (placed/f'{name}.json').read_bytes(), name)
+
+    def test_chart_places_towns_stops_and_industries_and_counts_what_is_missing(self):
+        old = geo([{'id':10, 'x':5, 'y':5}, {'id':11, 'x':880, 'y':-280}], day=(1, 1))
+        new = geo([{'id':10, 'x':100, 'y':200, 'min_x':0, 'min_y':100, 'max_x':200, 'max_y':300}], complete=False, positions_missing=1)
+        self.build({'a':[charted((1, 1), 100, old)], 'b':[charted((2, 1), 200, new, TERRAIN, LOGISTICS)]})
+        chart = json.loads((self.out/'karte.json').read_text(encoding='utf-8'))
+        self.assertEqual((chart['stand']['positionen'], chart['stand']['vollstaendig']), ('1912-02-01', False))
+        towns = {t['id']:t for t in chart['staedte']}
+        # The newest measurement of an object wins; older positions fill in what the newest one lacks.
+        self.assertEqual((towns[10]['x'], towns[10]['y'], towns[10]['ausdehnung'], towns[10]['einwohner']), (100, 200, [0, 100, 200, 300], 500))
+        self.assertEqual((towns[11]['x'], towns[11]['ausdehnung']), (880, None))
+        self.assertEqual([(i['id'], i['status'], i['erzeugnisse'], i['rohstoffe']) for i in chart['betriebe']], [(401, 'aktiv', ['Bretter'], ['Holz'])])
+        self.assertEqual([(s['id'], s['name']) for s in chart['stationen']], [(701, 'Valmorin Bahnhof'), (702, 'Roc Hafen')])
+        self.assertEqual(chart['fehlend'], {'staedte':0, 'betriebe':1, 'stationen':1, 'wahrzeichen':0})
+        lines = {l['id']:l for l in chart['linien']}
+        self.assertEqual((lines[2]['art'], lines[2]['halte'], lines[2]['waren']), ('gueterzug', [701, 703], ['Holz', 'Bretter']))
+        self.assertEqual((lines[1]['art'], lines[1]['waren']), ('bus', ['Passagiere']))  # no goods measured: from the name
+        self.assertEqual((chart['gelaende']['spalten'], chart['gelaende']['zeilen'], chart['gelaende']['bezug']), (4, 2, 'wasserspiegel'))
+        ways = chart['warenwege']
+        self.assertEqual((ways['stichprobe'], ways['stand']), (4, '1912-02-01'))
+        self.assertEqual(ways['wege'], [{'von':401, 'stadt':None, 'betrieb':None, 'halt':702, 'ware':'Bretter', 'anzahl':3, 'linien':[2, 1]}])
+        self.assertEqual(chart['grenze'], {'min_x':-2000, 'min_y':-1000, 'max_x':2000, 'max_y':1000})
+        self.assertIn('karte.json', self.changed)
+
+    def test_misshaped_height_grid_is_left_out(self):
+        broken = TERRAIN | {'rows':3}
+        self.build({'a':[charted((2, 1), 200, geo([{'id':10, 'x':1, 'y':2}]), broken)]})
+        chart = json.loads((self.out/'karte.json').read_text(encoding='utf-8'))
+        self.assertIsNone(chart['gelaende'])
+        self.assertEqual(chart['fehlend']['staedte'], 1)
 
 
 if __name__ == '__main__':
