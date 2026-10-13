@@ -1897,6 +1897,282 @@
         "linien": [],
         "betriebe": []
       }
+    },
+    {
+      "id": "1913-07-logbuch-faehre",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1913-07",
+      "lead": true,
+      "rubrik": "Logbuch",
+      "titel": "Logbuch der Fähre Valmorin–Montfougère",
+      "teaser": "Seit dem 17. Juli fährt ein Passagierschiff nach Montfougère. Ein einziges. Sein Kapitän führt Buch – wir dürfen hineinsehen.",
+      "body": [
+        "17. Juli 1913. Erste Fahrt. Ein Boot, ein Kapitän, ein Fahrgast mit Korb. Der Fahrgast sagt, er sei der Fischer aus Montfougère, der im Januar der Zeitung geschrieben hat, von 213 Einwohnern fahre keiner mit der Société irgendwohin. „Jetzt schon“, sagt er. Der Korb ist leer. „Für den Rückweg.“",
+        "21. Juli. Wir haben einen richtigen Namen bekommen: Val–Mon. Am selben Tag legt in Montfougère zum ersten Mal ein Frachtschiff für Fisch und Passagiere ab. Der Fischer winkt ihm nach, als wäre es seins.",
+        "25. Juli. An Land zwei Lastwagen für Fisch. 26. Juli: zwei Busse. Montfougère hat jetzt Stadtverkehr. Der Kapitän notiert, er komme sich überholt vor.",
+        "29. August. Die Holzschiffe der Société auf unserer Strecke sind jetzt fünf. Wir sind eins.",
+        "23. Oktober. Holzschiffe: neun. Wir: eins. Wir grüßen jedes, sie grüßen meistens zurück.",
+        "Dezember. Montfougère zählt 226 Einwohner. Im Juni waren es 213. Der Kapitän trägt die Zahl mit Rotstift ein, ohne zu behaupten, dass er etwas damit zu tun hat.",
+        "April 1914. 241 Einwohner. Fisch kommt an, 28 von 92 verlangten Einheiten. Der Fischer sagt, das sei nicht viel, aber nicht mehr null. Von allen Wegen in Montfougère führt gut einer von hundert über die Société. Der Fischer sagt, das sei er.",
+        "Nachtrag. Die neue Seekarte hat die Überfahrt vermessen: 5,2 Kilometer, Ortsmitte zu Ortsmitte. Der Kapitän findet, allein fühle es sich weiter an. Sein Betriebsjahr endet mit einem kleinen Minus, rund 32.000. Er hat es unterstrichen und daneben geschrieben: „Noch.“"
+      ],
+      "grounding": "Gemessen: neue Linie WP Passagiere-Val-LO-1 am 17.07.1913 mit 1 Fahrzeug, ab 21.07.1913 WP Passagiere-Val-Mon-IC-1, im April 1914 weiterhin 1 Fahrzeug, rollierende Jahresbilanz −31.671. In Montfougère neue Linien WC Passagiere,Fisch-Mon-LO-1 (21.07.1913), RC Fisch-Mon-LO-1 (25.07.1913, 2 Fahrzeuge), Bus Passagiere-Mon-LO-1 (26.07.1913, 2 Fahrzeuge); WC Passagiere,Holz,Bretter-Mon-Val-IC-1 von 2 auf 5 (29.08.1913) und 9 Fahrzeuge (23.10.1913). Einwohner (belegter Wohnraum) 213 (Juni 1913), 226 (Dezember 1913), 241 (April 1914); Fisch 28 von 92 gedeckt, Netzanteil 1,3 % (April 1914). Entfernung 5,2 km zwischen den Mitten der Begrenzungsboxen beider Orte (Seekarte, Positionen ab Monitor-Revision 16). Erfunden: Logbuch, Kapitän, der Fischer (aus den Leserbriefen vom Januar 1913), Korb, Winken, Rotstift; ein Zusammenhang zwischen Fähre und Einwohnerzahl ist nicht belegt.",
+      "refs": {
+        "staedte": [
+          174646,
+          174607
+        ],
+        "linien": [],
+        "personen": [],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1913-10-tresen-neunhundert",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1913-10",
+      "rubrik": "Am Tresen",
+      "venue": {
+        "name": "Au Quai des Collines",
+        "place": "Valmorin"
+      },
+      "titel": "Neunhundert. Ohne „wieder“.",
+      "teaser": "Seit dem Frühjahr stand an der Lärmschutzwand: „Wann sind wir wieder neunhundert?“ Am 16. Oktober hat Mathurin die Antwort angeschrieben – und ein Wort gestrichen.",
+      "body": [
+        "Mathurin hat die gute Kreide genommen, die sonst für die Tageskarte reserviert ist, und unter die Frage an der Wand geschrieben: „16. Oktober. 902.“ Dann hat er nachgedacht, ist noch einmal hinaus und hat das „wieder“ durchgestrichen.",
+        "Lucie vom Bahnhof hatte nämlich nachgeschlagen, sie hat eine Schwäche für alte Zeitungen. Valmorin war nie neunhundert. Mitte März 1913 waren es einmal 890, dann mussten für die Wände Häuser weichen, und im April waren es keine achthundert mehr. Danach ging es Monat für Monat aufwärts: 845 im Juli, 874 im August, 891 im September, 897 am 12. Oktober. Und am 16. Oktober zum ersten Mal überhaupt: 902.",
+        "Gewonnen hat trotzdem Lucie. Sie hatte „Herbst“ gesagt, als alle anderen noch über die Wand schimpften. Der alte Anselme hatte auf „nie“ gesetzt, aus Prinzip, und zahlt die Runde mit der Miene eines Mannes, der grundsätzlich recht hat und nur diesmal nicht. Ganz unten an der Wand steht noch immer, in der Handschrift, die alle kennen: „I. L. setzt auf Weihnachten.“ Zwei Monate zu spät. Mathurin hat bestimmt, dass es stehen bleibt. „Er hätte verloren“, sagt er. „Aber er hätte am lautesten gelacht.“",
+        "Die nächste Frage ist schon angeschrieben, gleich daneben und diesmal ohne „wieder“: „Wann tausend?“ Lucie sagt „in einem Jahr“. Anselme sagt „nie“. Mathurin sagt, er wette nicht mehr, er schreibe nur noch an."
+      ],
+      "grounding": "Spielervorgabe vom 13.10.2026 (siehe Beiträge April bis Juni 1913): Für Lärmschutzwände mussten in Valmorin Häuser weichen und neu gebaut werden; Wände und Abrisse selbst misst der Monitor nicht. Gemessen: Valmorin belegter Wohnraum am 16.10.1913 erstmals über 900 (902); vorher höchstens 890 (14.03.1913) und 897 (12.10.1913); Monatsstände 1913: 784 (April), 845 (Juli), 874 (August), 891 (September), 910 (Oktober). Erfunden: Kreideschrift, Wetten und Einsätze, Wirtshausszene, Lucie, Anselme, Mathurin; „I. L.“ verweist auf die Figur Isidore Lubin (Person 54586, zuletzt am 09.04.1913 gemessen). Die frühere Kreidefrage mit „wieder“ war eine Erfindung der Redaktion und ist durch die Messungen widerlegt.",
+      "refs": {
+        "staedte": [
+          174607
+        ],
+        "linien": [],
+        "personen": [
+          54586
+        ],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1914-01-reise-sin-le-noble",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1914-01",
+      "lead": true,
+      "rubrik": "Reisebericht",
+      "titel": "Hundertzwei Einwohner und ein Dutzend Lastwagen",
+      "teaser": "Unsere Reporterin ist nach Sin-le-Noble gefahren, ins kleinste Industriezentrum des Archipels. Eine Möbelfabrik gibt es dort schon. Möbel noch nicht.",
+      "body": [
+        "Wer nach Sin-le-Noble will, muss es wirklich wollen. Am Ende der Reise steht ein Dorf, das seit Monaten nicht gewachsen ist: 102 Einwohner im März 1913, 102 im Januar 1914, die Messbücher zeigen dazwischen keine einzige Veränderung. Ich hatte ein verschlafenes Nest erwartet. Ich kam in eine Baustelle.",
+        "Am 4. Oktober 1913 ist hier eine Möbelfabrik ins Register eingetragen worden. Einen Tag später fuhren die ersten zwei Lastwagen der Société, für Sand und Passagiere. Am 5. November tauchten zwölf Fahrzeuge auf einmal auf, drei Tage lang als Bus ohne Ziel verbucht, danach als Lastwagenlinie für Möbel, Bretter und Glas. Am 14. Dezember kam auf der Sandlinie auch Glas dazu. Und seit dem 16. Januar hat das Dorf zwei Buslinien mit je zwei Wagen. Für hundertzwei Menschen.",
+        "Die Idee erklärt mir der Bürgermeister an seinem Fenster, ohne dass ich gefragt hätte. Vor der Küste baggert ein Schiff Sand. Die Glashütte macht aus Sand Glas, die Fabrik aus Glas und Brettern Möbel, „und Möbel fehlen im ganzen Archipel“. Sin-le-Noble, sagt er, werde die Werkstatt der Inseln. Ob die Société das auch so sieht, hat sie mir nicht verraten. Die Fabrik steht auf Stufe 1 und hat noch nichts gebaut. Die zwölf Möbellaster haben bisher keine Möbel zu fahren.",
+        "Im „Café du Sablier“ am Ortseingang, dem einzigen Lokal, hängt seit Oktober ein Schild: „Möbelbestellungen hier.“ Eingegangen sind drei. Alle vom Wirt. Er will einen Tisch, einen Schrank und einen zweiten Tisch, „falls der erste schief wird“. Beim Abschied gibt er mir einen Rat für die Rückfahrt mit: „Setzen Sie sich ans Fenster. Das Glas ist von uns.“ Ich habe nicht nachgefragt, ob das stimmt."
+      ],
+      "grounding": "Gemessen: Sin-le-Noble belegter Wohnraum 102 in allen Monatsständen von März 1913 bis Januar 1914 (auch noch April 1914). Neugründung Möbelfabrik 04.10.1913, Stufe 1, Rohstoffe Bretter und Glas, ohne Produktion; Glashütte und Sandbaggerschiff im Ort. Neue Linien: RC Sand,Passagiere-Sin-LO-1 (05.10.1913, 2 Fahrzeuge, ab 14.12.1913 auch Glas), Bus -Sin-LO-2 mit 12 Fahrzeugen (05.11.1913), daraus ab 08.11.1913 RC Möbel,Bretter,Glas-Sin-LO-1 (12 Fahrzeuge), Bus Passagiere-Sin-LO-1 und -LO-2 (16.01.1914, je 2 Fahrzeuge). Erfunden: Reporterin und Reise, Bürgermeister, die Absicht „Werkstatt der Inseln“ (Absichten der Société sind nicht belegt), „Café du Sablier“, Wirt, Schild, Bestellungen, Fensterglas.",
+      "refs": {
+        "staedte": [
+          174617
+        ],
+        "linien": [],
+        "personen": [],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1914-02-versteigerung-peronne",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1914-02",
+      "rubrik": "Versteigerung",
+      "titel": "Zu versteigern: der Nachlass der Fahrzeugfabrik Péronne",
+      "teaser": "Fast drei Jahre stand sie im Register, ein Automobil hat sie nie gebaut. Am 8. Februar 1914 ist die Fahrzeugfabrik von Péronne verschwunden. Die Gemeinde räumt auf.",
+      "body": [
+        "Öffentliche Versteigerung auf dem Platz vor dem Bauernhof von Péronne, nächsten Sonntag nach der Messe. Zum Aufruf kommen:",
+        "Los 1: Ein Werkstor, breit genug für zwei Automobile nebeneinander, nie geöffnet. Los 2: Ein Firmenschild „Automobiles de Péronne“, Emaille, wie neu (vgl. die Réclame dieser Zeitung vom Dezember 1911). Los 3: Ein Wandkalender 1911, aufgeschlagen beim April. Los 4: Ein Platz für einen Ausstellungsraum, abgeschritten 1911, derzeit mit Kartoffeln bestellt. Ausrufpreis: ein Sack Kartoffeln.",
+        "Zur Sache: Die Fahrzeugfabrik Péronne wurde am 6. April 1911 gegründet, am selben Tag wie die Gummiplantage in Cournon-d’Auvergne und die Reifenfabrik in Le Malesherbois. Bei der letzten Messung am 3. Februar 1914 stand sie auf Stufe 1 und hatte im zurückliegenden Jahr nichts hergestellt. Ihr fehlten Blech, Maschinen und Reifen. Péronne selbst, 191 Einwohner, hat bis heute keine einzige Linie der Société. Von den Geschwistern arbeitet nur die Gummiplantage, Stufe 4. Die Reifenfabrik verschwand im April 1913, kam im August unter demselben Namen zurück und wartet seitdem auf Gummi. In Port des Alizés verlangt man 96 Einheiten Fahrzeuge. Gedeckt sind keine.",
+        "Ebenfalls aus dem Register gestrichen: Lardy Ölplattform #1 (14. August 1913) und Lardy Ölplattform Nord (seit Mai 1907 im Register, gestrichen am 29. August 1913), dazu das Sägewerk in Le Malesherbois und die Fischzucht in Beuvrages (seit 1908), beide zum 1. Januar 1914.",
+        "Wieder eingetragen: das Holzfällerlager #1 in Cournon-d’Auvergne (gestrichen im Juni, zurück am 19. November 1913, Stufe 5) und die Ölplattform von Châteauroux (gestrichen im November, zurück am 18. Februar 1914, Stufe 2). Für diese beiden findet keine Versteigerung statt. Die Gemeinde Péronne lässt ausrichten, sie hoffe auf dasselbe Glück, und behält das Schild vorsichtshalber im Keller."
+      ],
+      "grounding": "Gemessen: Péronne Fahrzeugfabrik Neugründung 06.04.1911, zuletzt gemessen 03.02.1914 (Stufe 1, nicht aktiv, Jahresproduktion 0, Rohstoffe Blech, Maschinen, Reifen), fehlt ab 08.02.1914. Péronne 191 Einwohner, keine Linie, Bauernhof Stufe 6 (April 1914). Am 06.04.1911 auch Neugründung Cournon-d’Auvergne Gummiplantage (April 1914 Stufe 4, aktiv) und Le Malesherbois Reifenfabrik (fehlt ab 16.04.1913, Neugründung 18.08.1913, Stufe 1, nicht aktiv, Rohstoff Gummi). Port des Alizés Fahrzeuge 0 von 96 gedeckt (April 1914). Lardy Ölplattform #1 fehlt ab 14.08.1913; Lardy Ölplattform Nord Neugründung 22.05.1907, fehlt ab 29.08.1913; Le Malesherbois Sägewerk und Beuvrages Fischzucht (Neugründung 04.07.1908) fehlen ab 01.01.1914. Cournon-d’Auvergne Holzfällerlager #1 fehlt ab 18.06.1913, Neugründung 19.11.1913 (Stufe 5); Châteauroux Ölplattform fehlt ab 01.11.1913, Neugründung 18.02.1914 (Stufe 2). Erfunden: Versteigerung, Lose, Tor, Schild, Kalender, Kartoffeln, Keller; ob Neugründungen dieselben Betriebe sind, ist nicht belegt (neue Kennungen).",
+      "refs": {
+        "staedte": [
+          174636,
+          174626,
+          174642,
+          174632,
+          174612,
+          174610,
+          174613
+        ],
+        "linien": [],
+        "personen": [],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1914-03-tagebuch-desire",
+      "typ": "portraet",
+      "art": "fiktion",
+      "date": "1914-03",
+      "rubrik": "Aus einem Tagebuch",
+      "titel": "Neun Jahre zu Fuß",
+      "teaser": "Désiré Séverin aus Lamballe-Armor steht seit Ende 1904 in unseren Messbüchern. Am 23. März 1914 ist er zum ersten Mal eingestiegen. Sein Tagebuch ist kurz.",
+      "body": [
+        "30. Dezember 1904. Zu Fuß.",
+        "1905. Arbeit. Zu Fuß.",
+        "1906 bis 1909. Zu Fuß.",
+        "3. Januar 1910. Durch den Ort fährt jetzt ein Lastwagen der Société, auf dem auch Passagiere stehen dürfen. Zu Fuß.",
+        "15. Juni 1911. Ein Stadtbus. Er hält fast vor der Tür. Zu Fuß.",
+        "1912. Zu Fuß.",
+        "12. November 1913. Stelle weg.",
+        "19. November 1913. Neue Stelle. Zu Fuß.",
+        "23. März 1914. Eingestiegen.",
+        "Die Redaktion ergänzt: 781 Mal hat der Monitor Désiré Séverin bis Ende 1913 angetroffen, und 781 Mal war er zu Fuß unterwegs, nie mit Bus, Bahn, Schiff oder Automobil. Seit dem 23. März 1914 sieht er ihn im öffentlichen Verkehr, neunmal bis Ende April. Mit welcher Linie, sagt die Messung nicht. In Lamballe-Armor erzählt man sich zwei Fassungen. Die eine: Der Schuster habe ihm gesagt, ein drittes Paar Stiefel mache er nicht. Die andere: Désiré habe eine Frau in Pointe des Pêcheurs kennengelernt, und nach Pointe des Pêcheurs geht man nicht zu Fuß, dahin fährt das Schiff. Désiré sagt dazu nichts. Er zieht beim Einsteigen den Hut."
+      ],
+      "grounding": "Gemessen (Person 90377 der Beobachtungsgruppe): Wohnort Lamballe-Armor, erste Messung 30.12.1904; 1904–1913 insgesamt 781 Messungen, alle zu Fuß, keine mit öffentlichem Verkehr oder Auto; in den meisten Messungen mit Arbeitsplatz; ohne Arbeitsplatz ab 12.11.1913, wieder mit Arbeitsplatz ab 19.11.1913; erste beobachtete Fahrt mit dem öffentlichen Verkehr am 23.03.1914, 1914 bis 23.04. neun Messungen im öffentlichen Verkehr, Linie nicht erfasst. Lamballe-Armor: Lkw-Linie mit Passagieren im Namen seit 03.01.1910, Stadtbus seit 15.06.1911, Schifflinie mit Passagieren nach Pointe des Pêcheurs (April 1914). Erfunden: Name (von der Redaktion vergeben), Tagebuch und Wortlaut, Nähe der Haltestelle, Schuster, Frau in Pointe des Pêcheurs, Gerede, Hut; welches Fahrzeug er nimmt, ist nicht belegt.",
+      "refs": {
+        "staedte": [
+          174614,
+          174602
+        ],
+        "linien": [],
+        "personen": [
+          90377
+        ],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1914-04-seekarte",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1914-04",
+      "lead": true,
+      "rubrik": "Titelseite",
+      "titel": "Der Archipel auf einem Blatt",
+      "teaser": "Zum ersten Mal ist das Reich der Société vermessen. Ergebnis: mehr Wasser, als man denkt, und eine Hauptinsel, die fast alles trägt.",
+      "body": [
+        "Seit diesem Frühjahr hängt im Kontor der Société eine Karte, wie es sie im Archipel noch nicht gab. Jede Stadt, jeder Betrieb und jeder Halt der Gesellschaft ist darauf eingetragen, dazu Küsten, Untiefen und Höhenlinien. Gezeichnet hat sie der Ingénieur-hydrographe Aristide Vauquelin, der dafür nach eigener Aussage „ein Jahr lang in jedes Boot gestiegen ist, das nicht schnell genug ablegte“. Die Leser dieser Zeitung finden sie ab sofort unter „Karte“.",
+        "Was das Blatt zeigt, überrascht selbst Alteingesessene. Es ist gut 20 mal 41 Kilometer groß, und fast die Hälfte davon ist Wasser. Mehr als dreißig Inseln messen wenigstens einen Dreiviertel Quadratkilometer. Die höchste Stelle liegt 339 Meter über dem Meer, die tiefste gelotete 79 Meter darunter. Auf einer einzigen Insel von rund 50 Quadratkilometern leben die fünf größten Städte: Bourg-l’Écorce, Port des Alizés, Pointe des Pêcheurs, Anse Dorée und Valmorin, zusammen 7.861 Menschen. Die größte Insel dagegen ist mehr als doppelt so groß und trägt elf Dörfer. Das größte davon, Beuvrages, zählt 252 Einwohner.",
+        "Manche Wege werden auf dem Papier plötzlich kurz. Von Port des Alizés nach Bourg-l’Écorce sind es 7,0 Kilometer Luftlinie, nach Valmorin 8,2. Von Valmorin nach Montfougère, wo seit dem vergangenen Sommer die kleine Fähre fährt, 5,2. Roche-Noire teilt seine Insel nur mit Val de Briey. Garches liegt allein auf seiner, 12,4 Kilometer von Valmorin. „Kein Wunder“, sagt Vauquelin, „dass man die Leute aus Garches so selten sieht.“",
+        "Eine Schwäche hat die Karte, und Vauquelin verschweigt sie nicht: Ob ihr oberer Rand wirklich nach Norden zeigt, ist noch nicht geprüft. „Ich habe die Inseln so gezeichnet, wie die Zahlen es sagen. Ob die Sonne mir recht gibt, sehe ich, wenn mir jemand die alte Admiralitätskarte leiht.“ Bis dahin trägt das Blatt keinen Nordpfeil, sondern eine Fußnote.",
+        "Ganz nebenbei verrät die Karte, was gerade unterwegs ist. Am 23. April 1914 hat Vauquelin 240 Ladungen auf ihrem Weg erwischt. Ein Stapel Bretter aus der Scierie de l’Écorce wechselt auf dem Weg nach Roche-Noire viermal das Fahrzeug: Güterzug, Lastwagen, Schiff, Lastwagen. Fisch aus Divatte-sur-Loire nimmt drei Linien bis zur Station Ost in Valmorin. Zucker aus Cormontreuil fährt mit zwei Schiffen nach Montceau-les-Mines. Vauquelin nennt das „die Adern des Archipels“. Der Kontorvorsteher nennt es Fracht."
+      ],
+      "grounding": "Gemessen (Spielmonitor ab Revision 16; Positionen vom 23.04.1914, Höhenraster vom 16.01.1914): Kartenausschnitt 20,48 × 40,96 km; im Höhenraster (Zellen 427 m) liegen 44 % der Zellen unter dem Wasserspiegel; 33 zusammenhängende Landflächen mit mindestens vier Zellen (≈ 0,73 km²); höchste Zelle 339 m über, tiefste 79 m unter dem Wasserspiegel. Flächen aus Zellenzahl: Hauptinsel ≈ 50 km² mit Bourg-l’Écorce (2.769), Port des Alizés (1.932), Pointe des Pêcheurs (1.231), Anse Dorée (971) und Valmorin (958), zusammen 7.861 Einwohner (belegter Wohnraum, April 1914); größte Landfläche ≈ 108 km² mit elf Orten, größter Beuvrages (252); Roche-Noire mit Val de Briey ≈ 16 km²; Garches allein ≈ 10 km². Entfernungen als Luftlinie zwischen den Mitten der Begrenzungsboxen. Nordrichtung nicht abgeglichen (Annahme der Karte). Warenstichprobe 23.04.1914: 240 Ladungsstücke an Bord, darunter Bretter Scierie de l’Écorce → Roche-Noire Station über vier Linien (Güterzug, Lkw, Frachtschiff, Lkw), Fisch Divatte-sur-Loire Fischzucht → Valmorin Station Ost über drei Linien, Zucker Cormontreuil Sugar Mill → Montceau-les-Mines Hafen über zwei Schiffslinien. Raster, Inselgrenzen und Flächen sind Näherungen. Erfunden: Aristide Vauquelin, seine Vermessung und Zitate, Kontor, Admiralitätskarte, Kontorvorsteher.",
+      "refs": {
+        "staedte": [
+          174605,
+          174632,
+          174602,
+          174645,
+          174607,
+          174646,
+          174601,
+          174629,
+          174644,
+          174610
+        ],
+        "linien": [],
+        "personen": [],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1914-04-on-dit",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1914-04",
+      "rubrik": "On dit …",
+      "titel": "On dit … Was man sich im Archipel erzählt",
+      "teaser": "Von Tresen, Kais und Bahnsteigen im April 1914. Die Redaktion hat zugehört und, wo es ging, nachgezählt.",
+      "body": [
+        "Im „Chez Honorine“ am Hafen von Port des Alizés zählt man die Monate am Eiffelturm. Seit dem 25. August 1913 steht er auf drei von vier Stufen, acht Monate ohne neue Etage. Honorine nimmt keine Wetten mehr an. Stattdessen hat sie versprochen, am Tag der Fertigstellung eine Runde Rum auszugeben, und alle wissen, was das heißt: Rum hat sie nicht. Am Fenstertisch sitzt seit dem Herbst oft Joséphine Séverin. Früher fuhr sie jeden Morgen mit der Société zur Arbeit. Seit sie am 21. September ihre Stelle verloren hat, geht sie zu Fuß, in diesem Jahr ausnahmslos. Vom Fenstertisch aus sieht man den Turm.",
+        "Im „Café de la Gare“ in Bourg-l’Écorce erzählt Clémence Bonheur, Neujahr sei ihr Glückstag. Am 12. November 1913 war ihre Arbeit weg, am 1. Januar 1914 hatte sie eine neue. Es war das zweite Mal in einem Jahr, schon von Februar bis Mai 1913 war sie ohne Stelle. „Aber gefahren bin ich immer“, sagt sie, und der Monitor gibt ihr recht: In jeder Messung seit August 1911 war sie mit dem öffentlichen Verkehr unterwegs, auch in den Wochen ohne Arbeit.",
+        "Am Kai von Pointe des Pêcheurs fragt man nach Angèle Philogène. Am 8. Oktober 1913 bekam sie Arbeit und fuhr am selben Tag zum ersten Mal mit dem öffentlichen Verkehr, zwei Premieren an einem Tag. Am 14. April 1914 war die Stelle wieder weg. Gefahren wird trotzdem: Bei der letzten Messung saß sie in der Straßenbahn von Pointe des Pêcheurs. Wohin, weiß niemand. Man tippt auf ein Vorstellungsgespräch.",
+        "In Valmorin steht unter der Kreidefrage „Wann tausend?“ inzwischen eine Zahl: 958, Stand April. Leiser ist es nicht geworden, der Monitor misst 75,7 Dezibel, gut zwei mehr als kurz nach dem Bau der Wände. Dafür hat Mathurin endlich Auswahl beim Hemdenkauf: 73 von 79 verlangten Einheiten Kleidung kommen in Valmorin an. Konserven dagegen keine einzige, und Mathurin kocht wieder selbst ein.",
+        "Und in Garches wundert man sich über die schönsten Schiffe des Archipels. Acht Frachter fahren seit November nach Valmorin, „Möbel“ steht auf ihnen, an Bord hatten sie bei der letzten Messung Bretter und Farbstoffe. Das Sägewerk von Garches steht still, und von den Garchois fährt keiner mit, der Monitor zählt null Prozent. „Wir winken“, sagt man in Garches. „Das ist auch eine Art Verkehr.“"
+      ],
+      "grounding": "Gemessen: Port des Alizés Eiffelturm Stufe 3 von 4 seit 25.08.1913, bis 23.04.1914 nicht fertig; Rum 0 von 190 gedeckt. Person 98887 (Port des Alizés): ohne Arbeitsplatz ab 21.09.1913, 1913 überwiegend im öffentlichen Verkehr gemessen, 1914 in allen 25 Messungen zu Fuß. Person 48725 (Bourg-l’Écorce): ohne Arbeitsplatz 01.02.–30.05.1913 und ab 12.11.1913, wieder mit Arbeitsplatz ab 01.01.1914; seit 27.08.1911 in jeder Messung im öffentlichen Verkehr. Person 82141 (Pointe des Pêcheurs): erste Fahrt im öffentlichen Verkehr und Arbeitsplatz am 08.10.1913, ohne Arbeitsplatz ab 14.04.1914, am 23.04.1914 im Fahrzeug der Linie Tram Passagiere-PoidesPêc-LO-1. Valmorin (April 1914): 958 Einwohner, Lärm 75,7 dB (29.04.1913: 73,5 dB), Kleidung 73 von 79, Konserven 0 von 79 gedeckt. Garches: WC Passagiere,Möbel,Bretter-Gar-Val-RE-1 mit 8 Fahrzeugen seit 19.11.1913, Ladung laut Messung vom 23.04.1914 Farbstoffe und Bretter; Sägewerk Stufe 1 nicht aktiv; Netzanteil 0 %. Erfunden: Namen der Personen (von der Redaktion vergeben), Lokale und Gespräche, Honorines Versprechen, Fenstertisch, Vorstellungsgespräch, Einkochen, Zitate.",
+      "refs": {
+        "staedte": [
+          174632,
+          174605,
+          174602,
+          174607,
+          174644
+        ],
+        "linien": [],
+        "personen": [
+          98887,
+          48725,
+          82141
+        ],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1914-04-kleinanzeigen",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1914-04",
+      "rubrik": "Kleinanzeigen",
+      "titel": "Kleinanzeigen",
+      "teaser": "Gesucht, gefunden, abzugeben: Was der Archipel im Frühjahr 1914 braucht. Vor allem Möbel.",
+      "body": [
+        "SUCHE STUHL, gern mit vier Beinen. Sitze seit November auf einer Kiste, seit auf dem Valmorin-Schiff „Möbel“ steht. Zahle in Gemüse. Gast im „Le Puits“, Roche-Noire.",
+        "JUNGES PAAR sucht Tisch, Sofa, Bett, in dieser Reihenfolge. Wir wissen, dass wir nicht die Einzigen sind. Zuschriften an den Bahnhof Bourg-l’Écorce.",
+        "MÖBELBESTELLUNGEN nimmt entgegen: Café du Sablier, Sin-le-Noble. Lieferung, sobald die Fabrik arbeitet. Glas haben wir schon: 40 Einheiten aus unserer Hütte sind verschickt.",
+        "RUM gesucht, gleich welcher Brennerei. Abnahme garantiert. Honorine, am Hafen, Port des Alizés.",
+        "ABZUGEBEN: Ausstellungsraum für Automobile, nie benutzt, derzeit Kartoffelacker. Gemeinde Péronne.",
+        "VERLOREN: Fahrplan der Fähre Valmorin–Montfougère, ein Blatt, viel benutzt. Der Finder darf ihn behalten. Es fährt ohnehin nur ein Boot.",
+        "NEU IM KONTOR DER SOCIÉTÉ: Carte marine de l’Archipel, erste Ausgabe. 33 Inseln, 50 Städte, 152 Halte, 112 Betriebe, Küsten und Tiefen. Der Nordpfeil folgt mit der zweiten Auflage."
+      ],
+      "grounding": "Gemessen (April 1914): Möbel 0 von 169 in Roche-Noire und 0 von 311 in Bourg-l’Écorce gedeckt; Linie WC …-Val-Roc befördert seit 26.11.1913 laut Name Möbel; Sin-le-Noble Möbelfabrik Stufe 1 ohne Produktion, Glashütte mit 40 Einheiten Produktion und Versand im rollierenden Jahr; Rum 0 von 190 in Port des Alizés; Péronne Fahrzeugfabrik fehlt ab 08.02.1914; WP Passagiere-Val-Mon-IC-1 mit 1 Fahrzeug; Seekarte mit 50 Orten, 152 Halten, 112 Betrieben und 33 Landflächen ab ≈ 0,73 km², Nordrichtung nicht abgeglichen. Erfunden: alle Anzeigen, Inserenten, Kiste, Paar, Café du Sablier, Fahrplan, Kontor.",
+      "refs": {
+        "staedte": [
+          174601,
+          174605,
+          174617,
+          174632,
+          174636,
+          174607,
+          174646
+        ],
+        "linien": [],
+        "personen": [],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1914-04-telegramm-sarrians",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1914-04",
+      "rubrik": "Telegramm",
+      "titel": "Telegramm aus Sarrians",
+      "teaser": "Sechzehn Lastwagen in einem Dorf mit 217 Einwohnern. Unser Korrespondent hat telegrafiert. Viermal.",
+      "body": [
+        "SARRIANS 14 AVRIL STOP SECHZEHN LASTWAGEN DER SOCIETE AUF DEM DORFPLATZ STOP 217 EINWOHNER STOP GANZES DORF AUF DER STRASSE STOP FAHREN GETREIDE UND PASSAGIERE NACH CHATEAUBOURG STOP",
+        "SARRIANS 17 AVRIL STOP JETZT AUCH FLEISCH STOP METZGER BEGEISTERT STOP",
+        "SARRIANS 21 AVRIL STOP LINIE FAEHRT JETZT WEITER BIS SIN-LE-NOBLE STOP DREIKOMMASIEBEN KILOMETER LUFTLINIE LAUT NEUER SEEKARTE STOP DORT MOEBELFABRIK STOP MOEBEL NOCH KEINE STOP",
+        "SARRIANS 23 AVRIL STOP ERZBERGWERK FOERDERT WEITER STUFE ZWEI STOP ERZ STEHT NICHT AUF DEN LASTERN STOP VON UNS FAEHRT NOCH KEINER MIT STOP STEIGER SAGT ABWARTEN STOP ENDE"
+      ],
+      "grounding": "Gemessen: neue Linie RC Passagiere,Getreide-Sar-Châ-IC-1 am 14.04.1914 mit 16 Fahrzeugen zwischen Sarrians und Châteaubourg; ab 17.04.1914 auch Fleisch; ab 21.04.1914 RC Getreide,Passagiere,Fleisch-Sar-Sin-RE-1 (Halte Sarrians, Châteaubourg, Sin-le-Noble). Sarrians 217 Einwohner, Netzanteil 0 %, Eisenerzbergwerk Stufe 2 mit 48 Einheiten im rollierenden Jahr (April 1914). Sarrians–Sin-le-Noble 3,7 km zwischen den Mitten der Begrenzungsboxen (Seekarte). Sin-le-Noble Möbelfabrik ohne Produktion. Erfunden: Korrespondent, Telegramme und Wortlaut, Dorfplatz, Metzger, Steiger.",
+      "refs": {
+        "staedte": [
+          174634,
+          174640,
+          174617
+        ],
+        "linien": [],
+        "personen": [],
+        "betriebe": []
+      }
     }
   ]
 }
