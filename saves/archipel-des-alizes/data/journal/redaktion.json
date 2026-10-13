@@ -1135,34 +1135,6 @@
       }
     },
     {
-      "id": "1913-01-zweimal-gelebt",
-      "typ": "artikel",
-      "art": "fiktion",
-      "date": "1913-01",
-      "rubrik": "Merkwürdiges",
-      "titel": "Die Wochen, die es zweimal gab",
-      "teaser": "Zweimal hat das Archipel ein Stück seiner Geschichte noch einmal erlebt. Einmal ging alles genauso aus. Beim zweiten Mal fuhr in einer der beiden Welten ein Bus, den es nie gegeben hat.",
-      "body": [
-        "Die Messbücher des Archipels kennen zwei merkwürdige Stellen. Am 25. November 1905 und am 22. März 1908 springt die Zeit zurück. Ein früherer Stand wird geladen, und die Wochen danach werden ein zweites Mal gelebt. Die Chronik folgt seitdem der zweiten Fassung. Die erste aber ist nicht ganz verschwunden: Der Monitor hat sie mitgeschrieben.",
-        "Der erste Sprung ist ein Déjà-vu. Vom 28. November bis zum 13. Dezember 1905 lief die Welt schon einmal, und als sie ein zweites Mal dort ankommt, steht alles genau so da wie beim ersten Mal: 225 Fahrzeuge, 44 Linien, auf die Münze dieselbe Kasse von 25.112.281. Kein Mensch mehr oder weniger in irgendeiner Stadt.",
-        "Der zweite Sprung ist eine Weggabelung. In der verworfenen Fassung, die vom 25. März bis zum 6. Juni 1908 lief, fuhr ein Bus von Montfougère nach Roche-Noire. In der Geschichte, die blieb, hat es diesen Bus nie gegeben; dort verbindet stattdessen ein Schiff Valmorin mit Montfougère. Die verworfene Welt hatte am Ende 8,5 Millionen mehr in der Kasse, aber acht Fahrzeuge weniger. In Anse Dorée lebten vier Menschen weniger, in Pointe des Pêcheurs drei mehr.",
-        "Was aus den vier Menschen wurde, die es in Anse Dorée nur in einer Welt gab, erzählt niemand. Im „Le Puits“ auf Roche-Noire behauptet ein alter Bergmann seitdem, er sei damals mit einem Bus nach Montfougère gefahren. Man lacht ihn aus. Die Messbücher geben ihm, ein bisschen, recht."
-      ],
-      "grounding": "Gemessen: Spielzeit-Rücksprünge am 25.11.1905 und 22.03.1908. Verworfene Zeitlinie 1: 28.11.–13.12.1905 (5 Detailmessungen), Endstand identisch mit dem Nachspiel (Kasse 25.112.281, 225 Fahrzeuge, 44 Linien, gleiche Einwohnerzahlen). Verworfene Zeitlinie 2: 25.03.–06.06.1908 (22 Detailmessungen); nur dort Linie Bus Passagiere-Mon-Roc-IC-1, im Nachspiel stattdessen WC Passagiere,Werkzeuge,Fisch-Val-Mon-IC-1; Kasse 37.283.414 gegenüber 28.749.280, Fahrzeuge 330 gegenüber 338; Einwohner Anse Dorée 613 gegenüber 617, Pointe des Pêcheurs 788 gegenüber 785. Ein Bus Montfougère–Roche-Noire kommt im kanonischen Verlauf nie vor. Vergleich am Ende der verworfenen Fassung (06.06.1908) mit der nächsten kanonischen Messung (07.06.1908). Erfunden: Bergmann, Kneipengespräch, Deutung als zwei Welten; Ursache der Rücksprünge (Laden eines früheren Spielstands) ist nur aus den Spielzeiten erschlossen.",
-      "refs": {
-        "staedte": [
-          174646,
-          174601,
-          174607,
-          174645,
-          174602
-        ],
-        "linien": [],
-        "personen": [],
-        "betriebe": []
-      }
-    },
-    {
       "id": "1913-01-leserbriefe",
       "typ": "artikel",
       "art": "fiktion",

@@ -45,6 +45,7 @@ Neue Beiträge kommen als Eintrag in `redaktion.json` hinzu. Pflicht für jeden 
 - Inhalt je Typ: `body` (Liste von Absätzen); Interviews `partner` {`name`, `rolle`, optional `person`} und `fragen` [{`frage`, `antwort`}]; Anzeigen `anzeige` {`kopf`, `zeilen`, `fuss`}.
 - `grounding`: welche Werte gemessen sind und **was erfunden ist** (Fiktion muss „erfunden“ enthalten). Nur behaupten, was die Daten hergeben; Ursachen, Einheiten und Antriebsarten sind meist nicht gemessen.
 - `refs`: `personen` und `staedte` (IDs aus `menschen.json` und `staedte.json`), dazu `linien` und `betriebe`. Verweise erzeugen Links zwischen Geschichte, Person und Ortsakte.
+- **Kein Stoff für Geschichten:** das Laden früherer Spielstände, Spielzeit-Rücksprünge und verworfene Zeitlinien (Wunsch des Spielers). Sie bleiben reine Datenhinweise im Monitor und in den Meldungen.
 - `lead: true` macht einen Artikel zum Aufmacher seiner Ausgabe (höchstens einer je Monat). Ohne Aufmacher baut die Titelseite ihren Kopf aus der wichtigsten Meldung.
 
 Ideen liefert die Zeitung selbst. Der Kasten „Stoff für Geschichten“ auf jeder Titelseite und „Noch unerzählt“ unter Geschichten leiten offene Fragen aus den Meldungen ab. Wiederkehrende Figuren: Wirt Mathurin vom „Au Quai des Collines“ (Valmorin), der alte Anselme, Lucie vom Bahnhof; aus der Beobachtungsgruppe Marceline Clément (84185), Isidore Lubin (54586), Edmond Philogène (144145).
