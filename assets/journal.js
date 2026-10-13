@@ -141,7 +141,7 @@ function meldungen(){
   const rows = D.events.filter(e=>(!f.group||TYPES[e.typ]?.group===f.group)&&(!f.year||e.date.startsWith(f.year))&&(!f.month||e.date.startsWith(f.month))&&(!q||(e.titel+' '+e.text).toLocaleLowerCase('de').includes(q)));
   const byMonth = new Map();
   for(const e of [...rows].reverse()){ const k=e.date.slice(0,7); if(!byMonth.has(k)) byMonth.set(k,[]); byMonth.get(k).push(e); }
-  return `<div class="section-header"><div><div class="eyebrow">Belegt · automatisch aus den Detailmessungen</div><h2>Aus den Messbüchern</h2><p class="section-lede">Jede Meldung beruht auf einer Veränderung zwischen zwei Messungen. Nach Spielzeit-Rücksprüngen gilt der neu gespielte Verlauf. Stand: ${E(dayName(D.meta.stand.date))}.</p></div></div>
+  return `<div class="section-header"><div><div class="eyebrow">Belegt · automatisch aus den Detailmessungen</div><h2>Aus den Messbüchern</h2><p class="section-lede">Jede Meldung beruht auf einer Veränderung zwischen zwei Messungen. Stand: ${E(dayName(D.meta.stand.date))}.</p></div></div>
   <div class="filters"><input class="input" type="search" id="j-q" placeholder="Linie, Ort oder Betrieb suchen …" value="${E(f.q||'')}" aria-label="Meldungen durchsuchen">
   <select class="select" id="j-group" aria-label="Rubrik"><option value="">Alle Rubriken</option>${Object.entries(GROUPS).map(([k,l])=>`<option value="${k}" ${f.group===k?'selected':''}>${l}</option>`).join('')}</select>
   <select class="select" id="j-year" aria-label="Jahr"><option value="">Alle Jahre</option>${years.map(y=>`<option ${f.year===y?'selected':''}>${y}</option>`).join('')}</select>

@@ -175,12 +175,8 @@ def detect(rows, jumps, latest_places):
         f"Die erste Detailmessung verzeichnet {first['lc']} Linien mit {first['vc']} Fahrzeugen, "
         f"{len(first['inds'])} Industriebetriebe und {len(first['towns'])} Orte.",
         values={'linien':first['lc'], 'fahrzeuge':first['vc'], 'betriebe':len(first['inds']), 'orte':len(first['towns'])}, key='start')
-    for jump in jumps:
-        events.append({'id':f"zeitsprung-{jump['game_time']}", 'typ':'aufzeichnung', 'date':jump['date'], 'game_time':jump['game_time'],
-                       'recorded_at':jump['recorded_at'], 'titel':'Zeitsprung im Spielstand',
-                       'text':f"Ein früherer Spielstand wurde geladen. Messungen der verworfenen Zeitlinie ({de(jump['dropped_from'])} bis {de(jump['dropped_to'])}) "
-                              f"zählen nicht mehr; die Chronik folgt dem neu gespielten Verlauf ab {de(jump['date'])}.",
-                       'refs':{}, 'werte':{}})
+    # Reloaded save states are a playing technique, not world history: the player does not want them in the newspaper.
+    # The canonical course above still drops the abandoned branch; it is just not announced.
 
     lines, line_vehicles, line_missing, gone_since = {}, {}, collections.Counter(), {}
     kinds_seen = set()
