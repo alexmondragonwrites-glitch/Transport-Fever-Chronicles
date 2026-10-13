@@ -5,7 +5,7 @@ import {join} from 'node:path';
 // Optional argument: another journal folder, e.g. from scripts/test-build-journal.py.
 const base = process.argv[2] || 'saves/archipel-des-alizes/data/journal';
 const read = name => JSON.parse(readFileSync(join(base, name), 'utf8'));
-const [meld, ppl, towns, fleet, red] = ['meldungen', 'menschen', 'staedte', 'fuhrpark', 'redaktion'].map(n => read(n+'.json'));
+const [meld, ppl, towns, fleet, red, notes] = ['meldungen', 'menschen', 'staedte', 'fuhrpark', 'redaktion', 'notizen'].map(n => read(n+'.json'));
 const day = /^\d{4}-\d{2}-\d{2}$/, month = /^\d{4}-\d{2}$/;
 const unique = (list, what) => { const ids = list.map(x => x.id); assert.equal(new Set(ids).size, ids.length, 'duplicate '+what); return new Set(ids); };
 const sortedMonths = (list, key, what) => { for(let i=1;i<list.length;i++) assert(list[i][key] > list[i-1][key], what+' not strictly ordered'); };
@@ -54,6 +54,16 @@ if(!models){
   for(const e of modelEvents) assert(e.date > models.erfasst_seit, 'model event at or before the baseline: '+e.id);
 }
 
+// The player's notebook: statements of intent from the Spielmonitor, labelled as such and never measurements.
+assert.equal(notes.schema_version, 1);
+assert(/Spielervorgabe/.test(notes.hinweis) && /nicht als Messwert/.test(notes.hinweis), 'notes must be labelled as player statements');
+const noteIds = unique(notes.notizen, 'note');
+for(const [i, n] of notes.notizen.entries()){
+  assert.match(n.date, day); assert(typeof n.text === 'string' && n.text.trim() && n.text.length <= 1000, 'empty or overlong note '+n.id);
+  if(i) assert((n.game_time ?? -1) >= (notes.notizen[i-1].game_time ?? -1), 'notes not in game-time order');
+}
+const warnings = [];
+
 // Editorial pieces: every invented story names its data basis and what is invented.
 const STORY = new Set(['artikel','interview','portraet','anzeige','einordnung']);
 unique(red.items, 'story');
@@ -68,6 +78,10 @@ for(const s of red.items){
   for(const id of s.refs?.personen || []) assert(people.has(id), `unknown person ${id} in ${s.id}`);
   for(const id of s.refs?.staedte || []) assert(townIds.has(id), `unknown town ${id} in ${s.id}`);
   if(s.partner?.person) assert(people.has(s.partner.person), 'unknown interview partner in '+s.id);
+  // A cited note is a player statement; the player may delete it later, so a missing note only warns.
+  if(s.refs?.notizen?.length) assert(/Spielervorgabe/.test(s.grounding), 'story citing notes must call them Spielervorgabe: '+s.id);
+  for(const id of s.refs?.notizen || []) if(!noteIds.has(id)) warnings.push(`Notiz ${id} aus ${s.id} fehlt im Notizbuch (gelöscht oder nicht freigegeben).`);
 }
 assert(red.items.filter(s => s.lead).every((s, i, all) => all.findIndex(x => x.date === s.date) === i), 'one lead per edition');
-console.log(`OK: ${meld.meldungen.length} Meldungen, ${people.size} Personen, ${townIds.size} Orte, ${models ? models.anzahl+' Fahrzeugmodelle, ' : ''}${red.items.length} Redaktionsbeiträge geprüft.`);
+for(const w of warnings) console.warn('Hinweis: '+w);
+console.log(`OK: ${meld.meldungen.length} Meldungen, ${people.size} Personen, ${townIds.size} Orte, ${models ? models.anzahl+' Fahrzeugmodelle, ' : ''}${noteIds.size} Notizen, ${red.items.length} Redaktionsbeiträge geprüft.`);

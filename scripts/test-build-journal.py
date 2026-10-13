@@ -1,4 +1,4 @@
-"""Vehicle models in the journal: synthetic monitor sessions with and without model data (Spielmonitor revision 15).
+"""Journal build from synthetic monitor sessions: vehicle models (Spielmonitor revision 15) and the player's notebook.
 
 Usage: python scripts/test-build-journal.py
 Builds into a temporary folder and never touches the published journal or the real publish cache.
@@ -52,6 +52,12 @@ BASE = {1:[model(11, 'Stadtbus A', 4, bought=(1905, 3, 1))], 2:[model(21, 'Dampf
         3:[model(31, 'Lastwagen D', 3, bought=(1909, 5, 1))]}
 
 
+def validate(out):
+    """validate-journal.mjs on a built folder; None without Node.js."""
+    node = shutil.which('node')
+    return node and subprocess.run([node, 'scripts/validate-journal.mjs', str(out)], cwd=ROOT, capture_output=True, text=True, encoding='utf-8')
+
+
 def with_models(extra):
     out = {k:list(v) for k, v in BASE.items()}
     for line, models in extra.items():
@@ -59,27 +65,31 @@ def with_models(extra):
     return out
 
 
-class JournalModelTests(unittest.TestCase):
+class JournalCase(unittest.TestCase):
     def setUp(self):
         self.tmp = Path(tempfile.mkdtemp(prefix='journal-test-'))
         self.addCleanup(shutil.rmtree, self.tmp, True)
 
-    def build(self, sessions):
+    def build(self, sessions, notebook=None, redaktion=REDAKTION):
         monitor = self.tmp/'monitor'
         for name, rows in sessions.items():
             folder = monitor/'sessions'/name
             folder.mkdir(parents=True)
             (folder/'daten.jsonl').write_text(''.join(json.dumps(r, ensure_ascii=False)+'\n' for r in rows), encoding='utf-8')
-        out = self.tmp/'out'
+        if notebook is not None:
+            (monitor/'history').mkdir()
+            (monitor/'history/notizbuch.jsonl').write_text(notebook, encoding='utf-8')
+        out = self.out = self.tmp/'out'
         out.mkdir()
-        (out/'redaktion.json').write_text(json.dumps(REDAKTION, ensure_ascii=False), encoding='utf-8')
-        journal.build(monitor, SAVE, out, self.tmp/'cache')
-        node = shutil.which('node')
-        if node:
-            result = subprocess.run([node, 'scripts/validate-journal.mjs', str(out)], cwd=ROOT, capture_output=True, text=True, encoding='utf-8')
-            self.assertEqual(result.returncode, 0, result.stderr or result.stdout)
+        (out/'redaktion.json').write_text(json.dumps(redaktion, ensure_ascii=False), encoding='utf-8')
+        self.changed = journal.build(monitor, SAVE, out, self.tmp/'cache')[0]
+        self.validation = validate(out)
+        if self.validation:
+            self.assertEqual(self.validation.returncode, 0, self.validation.stderr or self.validation.stdout)
         return [json.loads((out/f'{n}.json').read_text(encoding='utf-8')) for n in ('meldungen', 'fuhrpark')]
 
+
+class JournalModelTests(JournalCase):
     def test_old_recordings_without_models_keep_previous_fleet(self):
         meld, fleet = self.build({'a_alt':[detail((1, 1), 100, revision=14), detail((1, 20), 200, revision=14)]})
         self.assertNotIn('modelle', fleet)
@@ -136,6 +146,54 @@ class JournalModelTests(unittest.TestCase):
         events = [e for e in meld['meldungen'] if e['typ'] == 'modell']
         self.assertEqual([e['werte']['datei'] for e in events], ['id:41'])
         self.assertEqual(fleet['modelle']['anzahl'], 1)
+
+
+class JournalNotebookTests(JournalCase):
+    """The player's notes from history/notizbuch.jsonl (Spielmonitor notebook)."""
+    def note(self, nid, day, t, text, **extra):
+        return {'id':nid, 'recorded_at':f'2026-10-13T08:{t % 60:02}:30+02:00', 'world_id':WORLD, 'world_name':'Archipel',
+                'game_time':t, 'game_date':day, 'measured_at':'2026-10-13T08:00:00+02:00', 'source':'Live-Messung', 'text':text, 'public':True} | extra
+
+    def notes(self):
+        return json.loads((self.out/'notizen.json').read_text(encoding='utf-8'))
+
+    def test_without_notebook_the_list_is_empty_and_labelled(self):
+        self.build({'a':[detail((1, 1), 100)]})
+        notes = self.notes()
+        self.assertEqual(notes['notizen'], [])
+        self.assertIn('Spielervorgabe', notes['hinweis'])
+        self.assertNotIn('stand', notes)
+
+    def test_only_released_notes_of_this_world_in_game_order(self):
+        rows = [self.note('n2', '1912-02-05', 300, '  Lärmschutzwände in Valmorin gebaut, dafür Häuser abgerissen \n'),
+                self.note('n1', '1912-02-01', 200, 'Straßenbahn statt Omnibus', edited_at='2026-10-13T09:00:00+02:00'),
+                self.note('privat', '1912-02-02', 250, 'Nur für mich', public=False),
+                self.note('fremd', '1912-02-02', 250, 'Andere Karte', world_id='andere-welt'),
+                self.note('ohne-datum', None, 250, 'Kein Spieldatum'),
+                self.note('leer', '1912-02-02', 250, '   ')]
+        notebook = ''.join(json.dumps(r, ensure_ascii=False)+'\n' for r in rows)+'kein JSON\n'
+        self.build({'a':[detail((2, 1), 200), detail((2, 9), 300)]}, notebook)
+        notes = self.notes()['notizen']
+        self.assertEqual([n['id'] for n in notes], ['n1', 'n2'])
+        self.assertEqual(notes[1], {'id':'n2', 'date':'1912-02-05', 'game_time':300, 'text':'Lärmschutzwände in Valmorin gebaut, dafür Häuser abgerissen'})
+        self.assertIn('notizen.json', self.changed)
+        # Unchanged notes leave the file untouched on the next build.
+        self.assertNotIn('notizen.json', journal.build(self.tmp/'monitor', SAVE, self.out, self.tmp/'cache')[0])
+
+    def test_stories_cite_notes_as_player_statements(self):
+        notebook = json.dumps(self.note('n1', '1912-02-01', 200, 'Lärmschutzwände gebaut'), ensure_ascii=False)+'\n'
+        story = {'id':'zitat', 'typ':'artikel', 'art':'fiktion', 'date':'1912-02', 'rubrik':'Valmorin', 'titel':'Mauern', 'body':['Text.'],
+                 'grounding':'Spielervorgabe (Notizbuch des Direktors, 1. Februar 1912): Wände gebaut. Erfunden sind alle Personen.',
+                 'refs':{'notizen':['n1', 'geloescht']}}
+        self.build({'a':[detail((2, 1), 200)]}, notebook, {'schema_version':1, 'items':[story]})
+        if not self.validation:
+            self.skipTest('Node.js fehlt')
+        self.assertIn('Notiz geloescht aus zitat fehlt', self.validation.stderr)
+        unlabelled = {**story, 'grounding':'Laut Notiz wurden Wände gebaut. Erfunden sind alle Personen und Gespräche hier.'}
+        (self.out/'redaktion.json').write_text(json.dumps({'schema_version':1, 'items':[unlabelled]}, ensure_ascii=False), encoding='utf-8')
+        result = validate(self.out)
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn('Spielervorgabe', result.stderr)
 
 
 if __name__ == '__main__':

@@ -149,7 +149,8 @@ def main():
         print(f"Hinweis: {stats['unreadable']} unlesbare Zeile(n) übersprungen.")
     print('Aktualisiere Le Journal des Alizés …')
     journal_changed, _, journal_sizes = journal.build(Path(args.monitor).resolve(), args.save)
-    print(f"Journal: {journal_sizes['meldungen.json']} Meldungen, {journal_sizes['menschen.json']} Personen"
+    print(f"Journal: {journal_sizes['meldungen.json']} Meldungen, {journal_sizes['menschen.json']} Personen, "
+          f"{journal_sizes['notizen.json']} Notizen aus dem Notizbuch"
           + (f" · geändert: {', '.join(journal_changed)}" if journal_changed else ' · unverändert'))
 
     git('add', '-A', '--', *paths)
@@ -181,7 +182,9 @@ def main():
             print('Abgebrochen. Dateien bleiben lokal aktualisiert; der nächste Lauf nimmt sie mit.')
             return
     if has_changes:
-        message = f"Monitorstand Spiel {latest['last_game_date']} (+{new_measurements} Messungen)"
+        # Staged rather than just rebuilt: an aborted earlier run may already have written the notes.
+        notes = git('diff', '--cached', '--name-only', '--', f'saves/{args.save}/data/journal/notizen.json').stdout.strip()
+        message = f"Monitorstand Spiel {latest['last_game_date']} (+{new_measurements} Messungen{', Notizbuch aktualisiert' if notes else ''})"
         git('commit', '--quiet', '-m', message)
         print(f'Commit: {message}')
     push = git('push', 'origin', f'HEAD:{BRANCH}', check=False)

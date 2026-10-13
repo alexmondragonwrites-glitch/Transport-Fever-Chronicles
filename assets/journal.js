@@ -1,5 +1,6 @@
-/* Le Journal des Alizés: monthly newspaper editions built from measured events (data/journal/*.json)
- * and hand-written editorial pieces (redaktion.json, gazette.json). Measured and invented content stay labelled. */
+/* Le Journal des Alizés: monthly newspaper editions built from measured events (data/journal/*.json),
+ * the player's own notes (notizen.json) and hand-written editorial pieces (redaktion.json, gazette.json).
+ * Measured, stated by the player and invented content stay labelled. */
 const APP = document.getElementById('app');
 const E = v => String(v ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const N = (v, d=0) => Number.isFinite(v) ? new Intl.NumberFormat('de-DE', {maximumFractionDigits:d}).format(v) : '–';
@@ -41,7 +42,7 @@ let D, state = {tab:'une', month:null, filter:{}};
 function header(){
   return `<header class="topbar"><div class="shell topbar-inner"><a class="brand" href="../../index.html"><span class="brand-mark">✦</span>Transport Fever <span class="strong">Chronicles</span></a><nav class="toplinks" aria-label="Hauptnavigation"><a href="../../index.html">Alle Welten</a><a href="weihnachten-1911.html">Weihnachten 1911</a><a href="index.html?view=monitor#overview">Monitor</a><a href="jahrzehnt.html">Dossier 1900–1910</a></nav></div></header>`;
 }
-const TABS = [['une','Titelseite'],['meldungen','Meldungen'],['menschen','Menschen'],['staedte','Städte'],['fuhrpark','Fuhrpark'],['geschichten','Geschichten']];
+const TABS = [['une','Titelseite'],['meldungen','Meldungen'],['menschen','Menschen'],['staedte','Städte'],['fuhrpark','Fuhrpark'],['geschichten','Geschichten'],['notizbuch','Notizbuch']];
 
 function masthead(){
   const months = D.months, i = months.indexOf(state.month), m = state.month;
@@ -55,7 +56,10 @@ function masthead(){
   <nav class="tabs" aria-label="Rubriken"><div class="shell tab-inner" role="tablist">${TABS.map(([id,l])=>`<button type="button" class="tab" role="tab" data-tab="${id}" aria-selected="${id===state.tab}">${l}</button>`).join('')}</div></nav>`;
 }
 
-const prov = art => art==='einordnung' ? '<span class="j-prov j-prov-ein">Einordnung</span>' : art==='beleg' ? '<span class="j-prov j-prov-fakt">Belegt</span>' : '<span class="j-prov j-prov-fik">Fiktion</span>';
+const prov = art => art==='einordnung' ? '<span class="j-prov j-prov-ein">Einordnung</span>' : art==='beleg' ? '<span class="j-prov j-prov-fakt">Belegt</span>' : art==='vorgabe' ? '<span class="j-prov j-prov-vorgabe">Spielervorgabe</span>' : '<span class="j-prov j-prov-fik">Fiktion</span>';
+const clip = (t, n=90) => t.length>n ? t.slice(0,n).replace(/\s+\S*$/,'')+' …' : t;
+// One note of the player, printed as written; the quote marks set it apart from editorial text.
+const note = (n, cites) => `<li class="j-note${state.filter.note===n.id?' j-note-focus':''}" id="note-${E(n.id)}"><time datetime="${E(n.date)}">${E(dayName(n.date))}</time><q>${E(n.text)}</q>${cites&&D.storiesByNote.has(n.id)?`<span class="j-note-cited">Zitiert in: ${D.storiesByNote.get(n.id).map(s=>`<button class="mini-link j-open" data-story="${E(s.id)}">${E(s.titel)}</button>`).join(' · ')}</span>`:''}</li>`;
 const typeTag = e => `<span class="j-typ j-typ-${E(TYPES[e.typ]?.group||'netz')}">${E(TYPES[e.typ]?.label||e.typ)}</span>`;
 const when = e => e.fruehestens ? `zwischen ${dayName(e.fruehestens)} und ${dayName(e.date)}` : dayName(e.date);
 
@@ -87,6 +91,8 @@ function storyBody(s, inline){
     html += (s.fragen||[]).map(q=>`<p class="j-q">${E(q.frage)}</p><p class="j-a">${E(q.antwort)}</p>`).join('');
   } else html += `<div class="j-body${inline?' j-cols':''}">${paras(s.body).map(p=>`<p>${E(p)}</p>`).join('')}</div>`;
   html += `<aside class="j-bezug"><strong>${s.art==='einordnung'?'Grundlage':'Bezug zu den Daten'}.</strong> ${E(s.grounding)}</aside>`;
+  const cited = (s.refs?.notizen||[]).map(id=>D.noteById.get(id)).filter(Boolean);
+  if(cited.length) html += `<aside class="j-bezug j-bezug-vorgabe"><strong>Spielervorgabe aus dem Notizbuch des Direktors.</strong>${cited.map(n=>` <a href="#notizbuch/${E(n.id)}">${E(dayName(n.date))}</a>: „${E(n.text)}“`).join(' ·')}</aside>`;
   return html + refLinks(s.refs);
 }
 
@@ -95,6 +101,7 @@ function refLinks(refs){
   const links = [
     ...(refs.personen||[]).map(id=>D.personById.get(id)).filter(Boolean).map(p=>`<a href="#menschen/${p.id}">${E(p.name)}</a>`),
     ...(refs.staedte||[]).map(id=>D.townById.get(id)).filter(Boolean).map(t=>`<a href="#staedte/${t.id}">${E(t.name)}</a>`)];
+  links.push(...(refs.notizen||[]).map(id=>D.noteById.get(id)).filter(Boolean).map(n=>`<a href="#notizbuch/${E(n.id)}">Notiz vom ${E(dayName(n.date))}</a>`));
   return links.length ? `<p class="j-refs">Mehr dazu: ${links.join(' · ')}</p>` : '';
 }
 
@@ -125,7 +132,8 @@ function une(){
   const stats = D.fleetByMonth.get(m), prevStats = D.fleetByMonth.get(D.months[D.months.indexOf(m)-1]);
   const residents = D.residentsByMonth.get(m);
   const faces = D.people.filter(p=>p.moments.some(x=>x.date.slice(0,7)===m && x.typ!=='arbeit' && x.typ!=='ohne-arbeit')).slice(0,4);
-  const hooks = hooksFor(events);
+  const notes = D.notesByMonth.get(m)||[];
+  const hooks = [...notes.slice(0,2).map(n=>({text:`Aus dem Notizbuch: „${clip(n.text)}“ – Was bedeutet das für die Menschen vor Ort?`, e:n})), ...hooksFor(events)].slice(0,5);
   const delta = (a,b) => Number.isFinite(a)&&Number.isFinite(b)&&a!==b ? ` <span class="j-delta">${a>b?'+':'−'}${N(Math.abs(a-b))}</span>` : '';
   return `<div class="j-une">
     <div class="j-main">${lead?storyCard(lead,true):autoLead?`<article class="j-story j-lead"><div class="j-story-meta"><span class="kicker">Aus den Messbüchern</span>${prov('beleg')}<span class="small">${E(when(autoLead))}</span></div><h2>${E(autoLead.titel)}</h2><p class="j-teaser">${E(autoLead.text)}</p><p class="small">Für diese Ausgabe hat die Redaktion noch keinen Artikel geschrieben. Die Messbücher sprechen für sich.</p></article>`:'<p class="empty">In diesem Monat verzeichnen die Messbücher nichts Neues.</p>'}
@@ -134,6 +142,7 @@ function une(){
     </div>
     <aside class="j-side">
       <section class="j-box"><h3>Aus den Messbüchern</h3>${events.length?`<ul class="j-mlist">${top.slice(0,9).map(e=>meldung(e,true)).join('')}</ul><button class="mini-link" data-goto="meldungen" data-month="${m}">Alle ${events.length} Meldungen dieses Monats →</button>`:'<p class="small">Keine Meldungen in diesem Monat.</p>'}</section>
+      ${notes.length?`<section class="j-box j-notebook"><h3>Aus dem Notizbuch des Direktors</h3><ul class="j-notes">${notes.map(n=>note(n)).join('')}</ul><p class="small">${prov('vorgabe')} Notizen des Spielers beim Spielen, unverändert abgedruckt: Absichten und Erklärungen, keine Messwerte.</p><button class="mini-link" data-goto="notizbuch">Das ganze Notizbuch →</button></section>`:''}
       ${stats?`<section class="j-box j-numbers"><h3>Zahlen der Ausgabe</h3><dl><div><dt>Fahrzeuge</dt><dd>${N(stats.gesamt_fahrzeuge)}${delta(stats.gesamt_fahrzeuge,prevStats?.gesamt_fahrzeuge)}</dd></div><div><dt>Linien</dt><dd>${N(stats.gesamt_linien)}${delta(stats.gesamt_linien,prevStats?.gesamt_linien)}</dd></div>${stats.modelle?`<div><dt>Fahrzeugmodelle</dt><dd>${N(stats.modelle)}${prevStats?.modelle?delta(stats.modelle,prevStats.modelle):''}</dd></div>`:''}${residents?`<div><dt>Einwohner, alle Orte</dt><dd>${N(residents)}</dd></div>`:''}<div><dt>Kasse der Société</dt><dd>${N(stats.kasse/1e6,1)} Mio.</dd></div></dl><p class="small">Letzte Detailmessung des Monats.</p></section>`:''}
       ${adPool.map(reclame).join('')}
       ${faces.length?`<section class="j-box"><h3>Gesichter des Monats</h3>${faces.map(p=>{const mo=p.moments.find(x=>x.date.slice(0,7)===m && x.typ!=='arbeit' && x.typ!=='ohne-arbeit');return `<p class="j-face"><a href="#menschen/${p.id}">${E(p.name)}</a> <span class="small">(${E(p.home_town||'unbekannt')})</span><br><span class="small">${E(dayName(mo.date))}: ${E(mo.text)}</span></p>`;}).join('')}<p class="small">Namen von der Redaktion vergeben.</p></section>`:''}
@@ -278,7 +287,14 @@ function geschichten(){
   ${missing.length?`<section class="j-hooks"><h3>Noch unerzählt</h3><p class="small">Ausgaben mit Ereignissen, aber ohne Geschichte. Jede davon wartet auf eine Feder.</p><ul>${missing.map(m=>`<li><button class="mini-link" data-ed="${m}" data-goto="une">${E(monthName(m))}</button>: ${E(hooksFor(D.byMonth.get(m))[0]?.text||'')}</li>`).join('')}</ul></section>`:''}`;
 }
 
-const VIEWS = {une, meldungen, menschen, staedte, fuhrpark, geschichten};
+function notizbuch(){
+  const byMonth = [...D.notesByMonth].reverse();
+  return `<div class="section-header"><div><div class="eyebrow">Spielervorgabe · aus dem Spielmonitor</div><h2>Aus dem Notizbuch des Direktors</h2><p class="section-lede">${E(D.notesMeta.hinweis)} Die Redaktion zitiert sie in Beiträgen ausdrücklich als Spielervorgabe.</p></div></div>
+  ${byMonth.length?byMonth.map(([k,list])=>`<section class="j-month j-notebook-month"><h3>${E(monthName(k))} <button class="mini-link" data-ed="${E(k)}" data-goto="une">Zur Ausgabe →</button></h3><ul class="j-notes">${list.map(n=>note(n,true)).join('')}</ul></section>`).join('')
+  :'<p class="empty">Noch keine Notizen. Was der Direktor im Spielmonitor notiert (Zeile „Notizbuch“, Strg+N), erscheint hier nach dem nächsten Website-Upload.</p>'}`;
+}
+
+const VIEWS = {une, meldungen, menschen, staedte, fuhrpark, geschichten, notizbuch};
 
 function render(scroll){
   APP.innerHTML = header()+`<main id="main" class="j">${masthead()}<div class="shell j-page">${VIEWS[state.tab]()}</div></main><footer class="footer"><div class="shell footer-inner"><span>Le Journal des Alizés · Messstand ${E(dayName(D.meta.stand.date))}</span><span>Belegtes aus dem Spielmonitor, Erfundenes ausdrücklich gekennzeichnet</span></div></footer>`;
@@ -300,6 +316,7 @@ function bind(){
   document.querySelectorAll('[data-ed]').forEach(b=>b.onclick=()=>{ if(!b.dataset.ed) return; state.month=b.dataset.ed; go(b.dataset.goto||'une'); });
   $('#j-month') && ($('#j-month').onchange=e=>{ state.month=e.target.value; go('une'); });
   document.querySelectorAll('[data-goto="meldungen"]').forEach(b=>b.onclick=()=>go('meldungen',{month:b.dataset.month}));
+  document.querySelectorAll('button[data-goto="notizbuch"]').forEach(b=>b.onclick=()=>go('notizbuch'));
   document.querySelectorAll('[data-story]').forEach(b=>b.onclick=()=>go('geschichten',{story:b.dataset.story}));
   document.querySelectorAll('[data-person]').forEach(b=>b.onclick=()=>go('menschen',{...state.filter, person:b.dataset.person}));
   document.querySelectorAll('[data-town]').forEach(b=>b.onclick=()=>go('staedte',{...state.filter, town:b.dataset.town}));
@@ -318,28 +335,32 @@ function fromHash(){
   if(tab==='menschen' && key) state.filter = {person:key};
   if(tab==='staedte' && key) state.filter = {town:key};
   if(tab==='geschichten' && key) state.filter = {story:decodeURIComponent(key)};
+  if(tab==='notizbuch' && key) state.filter = {note:decodeURIComponent(key)};
   return true;
 }
-const detailTarget = () => state.filter.person?'#person-detail':state.filter.town?'#town-detail':state.filter.story?'#reader':'.tabs';
+const detailTarget = () => state.filter.person?'#person-detail':state.filter.town?'#town-detail':state.filter.story?'#reader':state.filter.note?'#note-'+CSS.escape(state.filter.note):'.tabs';
 // Links inside stories and lists point to #rubrik/id; back and forward use the same route.
 window.addEventListener('hashchange', ()=>{ if(D && fromHash()) render(detailTarget()); });
 
 async function start(){
   try{
     const base = 'data/journal/';
-    const [meld, ppl, towns, fleet, red, gaz] = await Promise.all(['meldungen','menschen','staedte','fuhrpark','redaktion'].map(n=>fetchJSON(base+n+'.json')).concat(fetchJSON('data/gazette.json').catch(()=>({articles:[]}))));
+    const [meld, ppl, towns, fleet, red, gaz, notes] = await Promise.all(['meldungen','menschen','staedte','fuhrpark','redaktion'].map(n=>fetchJSON(base+n+'.json'))
+      .concat(fetchJSON('data/gazette.json').catch(()=>({articles:[]})), fetchJSON(base+'notizen.json').catch(()=>({notizen:[], hinweis:''}))));
     const events = meld.meldungen;
     const byMonth = new Map(); events.forEach(e=>{ const k=e.date.slice(0,7); if(!byMonth.has(k)) byMonth.set(k,[]); byMonth.get(k).push(e); });
     const gazette = (gaz.articles||[]).map(a=>({id:'gazette-'+a.id, typ:'artikel', art:a.type==='fiktion'?'fiktion':'einordnung', date:a.date, rubrik:a.rubric, titel:a.title, teaser:a.teaser, body:a.body, grounding:a.grounding, venue:a.venue, refs:{}}));
     const stories = red.items;
-    const months = [...new Set([...byMonth.keys(), ...stories.map(s=>s.date)])].sort();
+    const notesByMonth = new Map(); notes.notizen.forEach(n=>{ const k=n.date.slice(0,7); if(!notesByMonth.has(k)) notesByMonth.set(k,[]); notesByMonth.get(k).push(n); });
+    const months = [...new Set([...byMonth.keys(), ...stories.map(s=>s.date), ...notesByMonth.keys()])].sort();
     const residentsByMonth = new Map();
     towns.staedte.forEach(t=>t.verlauf.forEach(p=>residentsByMonth.set(p.monat,(residentsByMonth.get(p.monat)||0)+p.einwohner)));
-    const storyByPerson = new Map(), storyByTown = new Map();
-    stories.forEach(s=>{ (s.refs?.personen||[]).forEach(id=>storyByPerson.set(id,[...(storyByPerson.get(id)||[]),s])); (s.refs?.staedte||[]).forEach(id=>storyByTown.set(id,[...(storyByTown.get(id)||[]),s])); });
+    const storyByPerson = new Map(), storyByTown = new Map(), storiesByNote = new Map();
+    stories.forEach(s=>{ (s.refs?.personen||[]).forEach(id=>storyByPerson.set(id,[...(storyByPerson.get(id)||[]),s])); (s.refs?.staedte||[]).forEach(id=>storyByTown.set(id,[...(storyByTown.get(id)||[]),s])); (s.refs?.notizen||[]).forEach(id=>storiesByNote.set(id,[...(storiesByNote.get(id)||[]),s])); });
     D = {meta:meld, events, byMonth, months, stories, gazette, policy:red.editorial_policy, people:ppl.personen, cohort:ppl,
       personById:new Map(ppl.personen.map(p=>[p.id,p])), towns:towns.staedte, townsMeta:towns.stand, townById:new Map(towns.staedte.map(t=>[t.id,t])),
-      fleet, fleetByMonth:new Map(fleet.verlauf.map(v=>[v.monat,v])), residentsByMonth, storyByPerson, storyByTown};
+      fleet, fleetByMonth:new Map(fleet.verlauf.map(v=>[v.monat,v])), residentsByMonth, storyByPerson, storyByTown,
+      notesMeta:notes, notesByMonth, noteById:new Map(notes.notizen.map(n=>[n.id,n])), storiesByNote};
     state.month = months.at(-1);
     fromHash();
     render(location.hash.split('/')[1] && state.tab!=='une' ? detailTarget() : null);

@@ -53,6 +53,19 @@
 .j-specials{display:grid;gap:6px}
 .j-specials a{color:var(--mint);font-size:15px}
 
+/* Notizbuch des Direktors: Spielervorgabe, als Zitat gesetzt */
+.j-prov-vorgabe{color:var(--gold)}
+.j-notebook{border-top-color:var(--gold)}
+.j-notes{list-style:none;margin:0 0 10px;padding:0}
+.j-note{margin:0 0 10px;padding:2px 0 2px 14px;border-left:2px solid var(--gold-bright);scroll-margin-top:150px}
+.j-note time{display:block;font-size:13px;font-style:italic;color:var(--muted)}
+.j-note q{display:block;font-family:var(--serif);font-style:italic;font-size:17px;line-height:1.45;white-space:pre-line;quotes:"„" "“"}
+.j-note-focus{background:var(--note-bg)}
+.j-note-cited{display:block;margin-top:4px;font-size:14px;color:var(--muted)}
+.j-notebook-month .j-notes{max-width:76ch}
+.j-notebook-month h3 .mini-link{font-family:var(--sans);font-size:14px;margin-left:8px}
+.j-bezug-vorgabe{border-left-color:var(--gold)}
+
 /* Réclame */
 .j-reclame{position:relative;text-align:center;background:var(--panel);border:3px double var(--ink);outline:1px solid var(--line);outline-offset:-9px;padding:24px 20px 16px;font-family:var(--serif)}
 .j-reclame-tag{position:absolute;top:-11px;left:50%;transform:translateX(-50%);background:var(--bg);padding:0 10px;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);font-family:var(--sans)}

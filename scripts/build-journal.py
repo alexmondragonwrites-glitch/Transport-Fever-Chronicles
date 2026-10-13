@@ -1,11 +1,12 @@
 """Build the fact data of „Le Journal des Alizés“ from the local Spielmonitor sessions.
 
-Usage: python scripts/build-journal.py [--monitor PATH] [--save ID] [--out DIR]
+Usage: python scripts/build-journal.py [--monitor PATH] [--save ID] [--out DIR] [--notebook FILE]
 
-Writes saves/<save>/data/journal/{meldungen,menschen,staedte,fuhrpark}.json, only when the content changed.
+Writes saves/<save>/data/journal/{meldungen,menschen,staedte,fuhrpark,notizen}.json, only when the content changed.
 Everything here is derived from detail measurements of the configured world on the canonical timeline:
 after a game-time rollback the replayed course replaces the abandoned branch, as in build-decade.mjs.
 Names of the observed residents are invented by the editors and marked as such; all other values are measured.
+notizen.json carries the player's own notes from the Spielmonitor notebook: statements of intent, not measurements.
 Editorial texts (articles, interviews, portraits, advertisements) live in redaktion.json and are written by hand.
 Only uses the Python standard library.
 """
@@ -507,6 +508,32 @@ def fleet_models(rows):
                       for k in sorted(kinds, key=order.index)]}
 
 
+def notebook(path, world_id):
+    """Notes of the player for this world from the Spielmonitor notebook (history/notizbuch.jsonl).
+    Only notes released for the newspaper; text and game date stay exactly as the player wrote them."""
+    try:
+        raw = path.read_text(encoding='utf-8-sig')
+    except FileNotFoundError:
+        return []
+    notes = []
+    for line in raw.splitlines():
+        try:
+            n = json.loads(line)
+        except ValueError:
+            continue
+        if not isinstance(n, dict) or n.get('world_id') != world_id or n.get('public') is False or not n.get('id'):
+            continue
+        text, day = n.get('text'), n.get('game_date')
+        if not isinstance(text, str) or not text.strip() or not isinstance(day, str) or not re.fullmatch(r'\d{4}-\d{2}-\d{2}', day):
+            continue
+        game_time = n.get('game_time') if isinstance(n.get('game_time'), (int, float)) else None
+        notes.append({'id':str(n['id']), 'date':day, 'game_time':game_time, 'text':text.strip(), '_order':n.get('recorded_at') or ''})
+    notes.sort(key=lambda n:(n['game_time'] if n['game_time'] is not None else -1, n['_order'], n['id']))
+    for n in notes:
+        del n['_order']
+    return notes
+
+
 def write(path, obj):
     content = dumps(obj)
     if path.exists() and path.read_text(encoding='utf-8') == content:
@@ -515,7 +542,7 @@ def write(path, obj):
     return True
 
 
-def build(monitor, save, out=None, cache_dir=CACHE):
+def build(monitor, save, out=None, cache_dir=CACHE, notes_path=None):
     config = json.loads((ROOT/'data/monitor-sources.json').read_text(encoding='utf-8'))['saves'][save]
     world_id = config['world']['world_id']
     sessions, last_towns = [], None
@@ -546,9 +573,15 @@ def build(monitor, save, out=None, cache_dir=CACHE):
                          'jahre':cohort, 'personen':persons},
         'staedte.json':{'schema_version':1, 'stand':stand | {'staedtestand':last_towns['d']}, 'staedte':towns_data(rows, last_towns, last_towns['lines'], last_towns['industries'])},
         'fuhrpark.json':{'schema_version':1, 'stand':stand} | fleet(rows, last_towns['lines']),
+        # No measurement stand here: the file changes only when the notes change.
+        'notizen.json':{'schema_version':1, 'quelle':'Notizbuch des Spielmonitors, für die Zeitung freigegebene Notizen dieser Welt',
+                        'hinweis':'Notizen des Spielers, des Direktors der Société, beim Spielen: Absichten und Erklärungen. '
+                                  'Sie gelten als Spielervorgabe, nicht als Messwert. Datum = Spieldatum der letzten Messung beim Schreiben.',
+                        'notizen':notebook(Path(notes_path) if notes_path else monitor/'history/notizbuch.jsonl', world_id)},
     }
     changed = [name for name, obj in files.items() if write(out/name, obj)]
-    return changed, stand, {k:len(v.get('meldungen', v.get('personen', v.get('staedte', v.get('verlauf', []))))) for k, v in files.items()}
+    lists = {'meldungen.json':'meldungen', 'menschen.json':'personen', 'staedte.json':'staedte', 'fuhrpark.json':'verlauf', 'notizen.json':'notizen'}
+    return changed, stand, {k:len(files[k][key]) for k, key in lists.items()}
 
 
 if __name__ == '__main__':
@@ -556,6 +589,7 @@ if __name__ == '__main__':
     parser.add_argument('--monitor', default=str(ROOT.parent/'Spielmonitor'))
     parser.add_argument('--save', default='archipel-des-alizes')
     parser.add_argument('--out', help='anderer Zielordner, z. B. für Tests (Standard: saves/<save>/data/journal)')
+    parser.add_argument('--notebook', help='anderes Notizbuch (Standard: <monitor>/history/notizbuch.jsonl)')
     args = parser.parse_args()
-    changed, stand, sizes = build(Path(args.monitor).resolve(), args.save, args.out)
+    changed, stand, sizes = build(Path(args.monitor).resolve(), args.save, args.out, notes_path=args.notebook)
     print(json.dumps({'stand':stand, 'eintraege':sizes, 'geaendert':changed}, ensure_ascii=False))
