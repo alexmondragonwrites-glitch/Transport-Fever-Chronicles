@@ -1016,6 +1016,262 @@
       }
     },
     {
+      "id": "1912-10-valmorin-tram",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1912-10",
+      "lead": true,
+      "rubrik": "Verkehr",
+      "titel": "Abschied von den Omnibussen",
+      "teaser": "Drei Monate nach ihrer großen Verstärkung verschwinden Valmorins 22 Omnibusse. An ihre Stelle tritt eine Straßenbahn, und die Stadt muss sich erst an sie gewöhnen.",
+      "body": [
+        "Am Morgen des 16. Oktober 1912 fährt in Valmorin kein Omnibus der Stadtlinie mehr. Die 22 Wagen, die noch im Juli unter großem Hallo verstärkt worden waren, sind aus dem Fahrplan verschwunden. Stattdessen rollen sechs nagelneue AEG-Triebwagen durch die Stadt, vier Tage später sind es zwölf. Valmorin hat seine Straßenbahn.",
+        "Ganz sicher war man sich in der Direktion offenbar nicht. Eine Woche später taucht doch wieder eine Buslinie mit neun Wagen auf, und mit ihr zählt das Netz der Société am 23. Oktober zum ersten Mal hundert Linien. Im Dezember ist auch dieser Bus wieder verschwunden.",
+        "Die Bewohner haben sich noch nicht entschieden, was sie von der Neuen halten. Im September führten 73 von hundert Wegen über das Netz, im Januar 1913 sind es 55. Bei der letzten Zählung sind in den großen Wagen nur 85 von 528 Plätzen besetzt, während an den Haltestellen 126 Menschen warten. Der alte Schaffner der Omnibusse, so heißt es, steht jetzt am Bahnhof und erklärt jedem, der es hören will, wer früher wo eingestiegen ist.",
+        "Eine gute Nachricht hat der Winter trotzdem: In Valmorins Läden sind im Januar 11 von 73 verlangten Einheiten Kleidung gedeckt. Es ist der erste gemessene Erfolg nach anderthalb Jahren Warten."
+      ],
+      "grounding": "Modelle und Kaufdaten laut Spielmonitor-Revision 15 (Kaufdatum laut Spiel). Gemessen: Tram Passagiere-Val-LO-1 erstmals am 16.10.1912 mit 6 Fahrzeugen, ab 20.10.1912 mit 12 (AEG Triebwagen, gekauft ab 16.10.1912); Bus Passagiere-Val-LO-1 mit zuletzt 22 Fahrzeugen fehlt ab 16.10.1912; neue Bus Passagiere-Val-LO-1 mit 9 Fahrzeugen ab 23.10.1912, fehlt ab 11.12.1912; 100 Linien am 23.10.1912. Valmorin Netzanteil der Wege 73 % (September 1912), 55 % (Januar 1913); Tram im Januar 1913: 85 von 528 Plätzen belegt, 126 Wartende, Takt 130 s, rollierende Jahresbilanz −1.718.891; Kleidung 11 von 73 gedeckt (Januar 1913). Erfunden: Schaffner, Stimmung der Bewohner, Unsicherheit der Direktion. Warum der Netzanteil sank, ist nicht gemessen.",
+      "refs": {
+        "staedte": [
+          174607
+        ],
+        "linien": [
+          212152
+        ],
+        "personen": [],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1913-01-postkutsche-postbus",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1913-01",
+      "lead": true,
+      "rubrik": "Titelseite",
+      "titel": "Postkutsche trifft Postbus",
+      "teaser": "In Port des Alizés und Bourg-l’Écorce rollen seit Januar die ersten Postbusse mit Motor. In Anse Dorée fahren die Postkutschen von 1900 einfach weiter.",
+      "body": [
+        "Das neue Jahr beginnt mit einem Geräusch, das es im Archipel noch nie gab. Am 4. Januar 1913 kauft die Société ihre ersten Postbusse vom Typ ET 13, ein Modell, das der Katalog erst seit diesem Jahr anbietet. Acht Tage später sind es 39 Wagen. Sie fahren auf sechs Buslinien in Port des Alizés und Bourg-l’Écorce und auf einer Lastwagenlinie im Hafen. Mehr Busse hat die Gesellschaft dadurch nicht: Die Neuen ersetzen ältere Wagen.",
+        "Eine Fahrstunde weiter scheint die Zeit stehengeblieben. Auf drei Stadtlinien in Anse Dorée fahren zehn Postkutschen. Die ältesten wurden am 30. April 1900 gekauft, als es die Société kaum gab. Sie haben die Straßenbahn kommen sehen, die Dampflaster und die Benz-Kipper. Der Katalog führt ihr Modell nur noch bis 1925. Die Kutscher scheint das nicht zu kümmern.",
+        "Ganz allein sind sie nicht. Draußen auf dem Wasser fahren Frachtschiffe vom Typ Dunara Castle und Sydfart, die ebenfalls seit dem 2. Januar 1900 im Dienst sind, länger als jedes andere Fahrzeug der Gesellschaft. Wer im Januar 1913 von Anse Dorée nach Port des Alizés reist, kann an einem einzigen Tag mit der Postkutsche von 1900, dem Dampfer von 1900 und dem Postbus von 1913 fahren. Dreizehn Jahre in einem Fahrschein."
+      ],
+      "grounding": "Modelle und Kaufdaten laut Spielmonitor-Revision 15 (Kaufdatum laut Spiel). Gemessen: Postbus ET 13 im Katalog 1913–1945, erstmals gekauft 04.01.1913, bis 12.01.1913 39 Fahrzeuge (37 auf 6 Buslinien in Port des Alizés und Bourg-l’Écorce, 2 auf RC Passagiere,Treibstoff-PordesAli-LO-1); Zahl der Busse im Dezember 1912 und Januar 1913 jeweils 95. Anse Dorée: Bus Passagiere-AnsDor-LO-1, -LO-2, -LO-3 mit 3, 4 und 3 Postkutschen, älteste Käufe 30.04.1900, 19.12.1900, 03.01.1903; Modell im Katalog 1896–1925. Dunara Castle und Sydfart: älteste noch fahrende Exemplare gekauft 02.01.1900. Erfunden: Geräusch, Kutscher, Reisebeschreibung; Pferde sind eine Annahme aus dem Modellnamen, eine solche Reisekette ist nicht als Fahrt belegt.",
+      "refs": {
+        "staedte": [
+          174645,
+          174632,
+          174605
+        ],
+        "linien": [],
+        "personen": [],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1913-01-eine-minute",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1913-01",
+      "rubrik": "Momentaufnahme",
+      "titel": "Eine Minute im Archipel",
+      "teaser": "Was die achtzig Beobachteten in einem einzigen Augenblick des 12. Januar 1913 tun. Eine Momentaufnahme aus den Messbüchern.",
+      "body": [
+        "Es ist der 12. Januar 1913. Der Monitor hält für einen Augenblick fest, was die achtzig Menschen tun, die er seit Jahren begleitet. Dreiundsechzig von ihnen gehen gerade zu Fuß. Zwölf sitzen in einem Automobil. Nur fünf sind mit der Société unterwegs.",
+        "Marceline Clément aus Pointe des Pêcheurs sitzt im Zug RE-1, wie so oft. Seit September 1912 verzeichnen die Bücher für sie keine Arbeit mehr; wohin sie fährt, verraten sie nicht. In Anse Dorée sitzt Solange Laurent im Bus, ausgerechnet sie, die im Frühjahr das Autofahren entdeckt hatte. Ihr Bus ist fast voll, an der Grande Rue warten 83 Menschen auf den nächsten. Ein paar Straßen weiter wartet auch Célestin Hilaire an einer Haltestelle.",
+        "In Bourg-l’Écorce sitzt Octave Nicolas in einem der nagelneuen Postbusse, die erst seit einer Woche fahren. In Valmorin geht Isidore Lubin zu Fuß. Seit dem 2. Januar steht neben seinem Namen wieder ein Arbeitsplatz, zum dritten Mal in diesem Jahrzehnt. Sein Zufriedenheitswert steht auf dem Höchstwert.",
+        "Und an den Haltestellen? Die meisten Menschen warten in diesem Augenblick an der Rue Lavoisier in Pointe des Pêcheurs: 114. Am Bahnhof Gare Centrale in Bourg-l’Écorce sind es 101, an der Gare de la Pointe des Pêcheurs 100. Dann ist die Minute vorbei, und der Monitor misst die nächste."
+      ],
+      "grounding": "Gemessen (Detailmessung zum Spieldatum 12.01.1913): Beobachtungsgruppe 80 Personen, davon 63 zu Fuß, 12 Auto, 3 im Fahrzeug, 1 wartend, 1 sonst mit ÖV unterwegs. Im Fahrzeug: Person 84185 (TP Passagiere-PordesAli-AnsDor-RE-1; kein Arbeitsplatz ab 15.09.1912), Person 63194 (Bus Passagiere-AnsDor-LO-4, 26 von 30 Plätzen; Arbeitsplatz wieder ab 23.11.1912), Person 89546 (Bus Passagiere-Bou-LO-6 mit 6 Postbussen ET 13). Wartend: Person 94977 (Anse Dorée). Person 54586 zu Fuß, Arbeitsplatz ab 02.01.1913, Zufriedenheitsrohwert 1 (Skala nicht validiert). Wartende Fahrgäste je Haltestelle: Rue Lavoisier 114, Bourg-l’Écorce – Gare Centrale 101, Gare de la Pointe des Pêcheurs 100, Grande Rue 83. Erfunden: Namen der Personen, Formulierungen; „zum dritten Mal“ meint die erfassten Arbeitsplatzwechsel seit 1907.",
+      "refs": {
+        "staedte": [
+          174602,
+          174645,
+          174605,
+          174607
+        ],
+        "linien": [
+          322356
+        ],
+        "personen": [
+          84185,
+          63194,
+          89546,
+          94977,
+          54586
+        ],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1913-01-reise-hemd",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1913-01",
+      "rubrik": "Unterwegs",
+      "titel": "Das Hemd, das zehn Monate reiste",
+      "teaser": "Eine Lieferung Kleidung aus Lamballe-Armor ist seit dem März 1912 unterwegs. Vier Fahrzeuge hat sie gesehen. Angekommen ist sie noch nicht.",
+      "body": [
+        "Nennen wir es ein Hemd. Genau genommen ist es eine Einheit Kleidung, Nummer 387142 in den Büchern des Monitors, und sie beginnt ihr Leben um den 19. März 1912 in der Textilfabrik von Lamballe-Armor. Dann wartet sie. Vierundzwanzig Tage liegt sie an der Rampe, bis um den 13. April ein Fahrzeug sie mitnimmt. Es sind genau die Tage, in denen die neue Kleidungslinie von Anse Dorée nach Valmorin den Betrieb aufnimmt.",
+        "Was folgt, ist eine Reise durch das halbe Archipel und durch drei Jahrzehnte Technik. Ein Dampfkraftwagen bringt das Hemd durch Lamballe-Armor. Ein Kanadischer Kutter trägt es über das Meer nach Pointe des Pêcheurs. Dort steigt es in einen gedeckten Güterwagen, Mathurins berühmten Wagen mit Dach, und fährt hinter einer amerikanischen Atlantic-Lokomotive nach Valmorin. Zuletzt übernimmt ein Benz-Kastenwagen.",
+        "Am 12. Januar 1913, fast zehn Monate nach seiner Herstellung, ist das Hemd noch immer unterwegs. Sein Ziel trägt in den Büchern nur eine Nummer, 296734. Ob dort jemand auf ein Hemd wartet, wissen wir nicht. Zwei weitere Lieferungen aus derselben Fabrik sind auf demselben Weg unterwegs, seit 276 und 272 Tagen. Im „Au Quai des Collines“ hat man die Geschichte gehört. Lucie meint, das Hemd sei inzwischen weitgereister als jeder Mensch in Valmorin."
+      ],
+      "grounding": "Modelle und Kaufdaten laut Spielmonitor-Revision 15 (Kaufdatum laut Spiel). Gemessen (Warenstichprobe der Detailmessung vom 12.01.1913, 240 Objekte): Ladung 387142, Ware Kleidung, Herkunft Lamballe-Armor Textilfabrik, Ziel-ID 296734; Startzeit entspricht etwa dem Spieldatum 19.03.1912, Abholzeit etwa dem 13.04.1912 (nächstgelegene Messung, Abweichung rund ein Tag; Wartezeit bis zur Abholung 24 Tage). Stationen der Reise (Hops): RC Farbstoffe,Stoff,Kleidung-Lam-LO-1 (Dampfkraftwagen), WC Passagiere,Wolle,Kleidung-PoidesPêc-Lam-IC-1 (Kanadischer Kutter), TC Kleidung,Konserven,Wolle-PoidesPêc-Val-RE-1 (Amerikanische 4-4-2 Atlantic, Gedeckter Güterwagen 1910), RC Kleidung-AnsDor-Val-IC-1 (Benz Dreitonner Kasten, Linie seit 13.04.1912). Zwei weitere Kleidungsladungen mit gleichem Weg, rund 276 und 272 Tage seit Start. Erfunden: „Hemd“, Rampe, Lucies Bemerkung. Was das Ziel 296734 ist und ob die Ladung je ankommt, ist nicht gemessen; die Hop-Reihenfolge ist die gespeicherte Reihenfolge.",
+      "refs": {
+        "staedte": [
+          174614,
+          174602,
+          174607,
+          174645
+        ],
+        "linien": [
+          201442,
+          340428,
+          176305,
+          380855
+        ],
+        "personen": [],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1913-01-zweimal-gelebt",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1913-01",
+      "rubrik": "Merkwürdiges",
+      "titel": "Die Wochen, die es zweimal gab",
+      "teaser": "Zweimal hat das Archipel ein Stück seiner Geschichte noch einmal erlebt. Einmal ging alles genauso aus. Beim zweiten Mal fuhr in einer der beiden Welten ein Bus, den es nie gegeben hat.",
+      "body": [
+        "Die Messbücher des Archipels kennen zwei merkwürdige Stellen. Am 25. November 1905 und am 22. März 1908 springt die Zeit zurück. Ein früherer Stand wird geladen, und die Wochen danach werden ein zweites Mal gelebt. Die Chronik folgt seitdem der zweiten Fassung. Die erste aber ist nicht ganz verschwunden: Der Monitor hat sie mitgeschrieben.",
+        "Der erste Sprung ist ein Déjà-vu. Vom 28. November bis zum 13. Dezember 1905 lief die Welt schon einmal, und als sie ein zweites Mal dort ankommt, steht alles genau so da wie beim ersten Mal: 225 Fahrzeuge, 44 Linien, auf die Münze dieselbe Kasse von 25.112.281. Kein Mensch mehr oder weniger in irgendeiner Stadt.",
+        "Der zweite Sprung ist eine Weggabelung. In der verworfenen Fassung, die vom 25. März bis zum 6. Juni 1908 lief, fuhr ein Bus von Montfougère nach Roche-Noire. In der Geschichte, die blieb, hat es diesen Bus nie gegeben; dort verbindet stattdessen ein Schiff Valmorin mit Montfougère. Die verworfene Welt hatte am Ende 8,5 Millionen mehr in der Kasse, aber acht Fahrzeuge weniger. In Anse Dorée lebten vier Menschen weniger, in Pointe des Pêcheurs drei mehr.",
+        "Was aus den vier Menschen wurde, die es in Anse Dorée nur in einer Welt gab, erzählt niemand. Im „Le Puits“ auf Roche-Noire behauptet ein alter Bergmann seitdem, er sei damals mit einem Bus nach Montfougère gefahren. Man lacht ihn aus. Die Messbücher geben ihm, ein bisschen, recht."
+      ],
+      "grounding": "Gemessen: Spielzeit-Rücksprünge am 25.11.1905 und 22.03.1908. Verworfene Zeitlinie 1: 28.11.–13.12.1905 (5 Detailmessungen), Endstand identisch mit dem Nachspiel (Kasse 25.112.281, 225 Fahrzeuge, 44 Linien, gleiche Einwohnerzahlen). Verworfene Zeitlinie 2: 25.03.–06.06.1908 (22 Detailmessungen); nur dort Linie Bus Passagiere-Mon-Roc-IC-1, im Nachspiel stattdessen WC Passagiere,Werkzeuge,Fisch-Val-Mon-IC-1; Kasse 37.283.414 gegenüber 28.749.280, Fahrzeuge 330 gegenüber 338; Einwohner Anse Dorée 613 gegenüber 617, Pointe des Pêcheurs 788 gegenüber 785. Ein Bus Montfougère–Roche-Noire kommt im kanonischen Verlauf nie vor. Vergleich am Ende der verworfenen Fassung (06.06.1908) mit der nächsten kanonischen Messung (07.06.1908). Erfunden: Bergmann, Kneipengespräch, Deutung als zwei Welten; Ursache der Rücksprünge (Laden eines früheren Spielstands) ist nur aus den Spielzeiten erschlossen.",
+      "refs": {
+        "staedte": [
+          174646,
+          174601,
+          174607,
+          174645,
+          174602
+        ],
+        "linien": [],
+        "personen": [],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1913-01-leserbriefe",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1913-01",
+      "rubrik": "Leserbriefe",
+      "titel": "Briefe an die Redaktion: „Haben Sie uns vergessen?“",
+      "teaser": "Drei Orte schreiben, in denen die Société kaum oder gar nicht ankommt. Die Redaktion druckt sie ungekürzt.",
+      "body": [
+        "Aus Reichshoffen. „Wir sind 301 Seelen und haben keine einzige Linie. Dabei haben wir einiges zu bieten: eine Ölplattform, die fördert, und eine Möbelfabrik und ein Sägewerk, die nur deshalb stillstehen, weil niemand Holz bringt. In Bourg-l’Écorce, lesen wir, fehlen 283 Einheiten Möbel. Wir hätten da eine Idee. Uns selbst fehlen übrigens Fisch und Bretter, zusammen 243 Einheiten. Hochachtungsvoll, der Gemeinderat.“",
+        "Aus Montfougère. „Vier Linien der Société halten bei uns. Zwei Schiffe, zwei Lastwagen. Holz, Bretter, Werkzeuge und sogar Fisch tragen sie im Namen. Wir sehen sie jeden Tag kommen und gehen. Aber wenn Ihre Messbücher stimmen, fährt von uns 213 Einwohnern keiner damit irgendwohin. Und Fisch bekommen wir keinen, keine einzige von 73 Einheiten, obwohl ein Schiff mit Fisch im Namen bei uns anlegt. Ein Fischer aus Montfougère, der das Meer nur noch von hinten sieht.“",
+        "Aus Romagnat. „Hier ist Adolphe Saint-Cyr, Sie haben mich schon einmal befragt. Ich wollte nur berichten, dass unser Bauernhof inzwischen 112 Einheiten im Jahr erntet. Gemüse auf unserem eigenen Markt: null von 87. Das Gemüse wächst vor unserer Tür und fährt dann weg, oder es bleibt auf dem Feld, wer weiß das schon. Ich gehe weiterhin zu Fuß. Zufrieden bin ich trotzdem. Ihr ergebener Leser.“"
+      ],
+      "grounding": "Gemessen (Januar 1913): Reichshoffen 301 Einwohner, keine Linie, Netzanteil 0 %; Reichshoffen Ölplattform Stufe 3 mit Produktion, Möbelfabrik und Sägewerk Stufe 1 ohne Produktion; Bedarf Fisch 102 und Bretter 141, je gedeckt 0; Bourg-l’Écorce Möbel 283, gedeckt 0. Montfougère 213 Einwohner, vier Linien (WC Passagiere,Holz,Bretter-Mon-Val-IC-1, WC Passagiere,Werkzeuge,Fisch-Val-Mon-IC-1, RC Passagiere,Holz-Mon-Roc-IC-1, RC Bretter-Mon-LO-1), Netzanteil der Wege 0 %, Fisch 73 gedeckt 0, Bretter 147 gedeckt 51. Romagnat 257 Einwohner, keine Linie; Romagnat Bauernhof Stufe 8, Produktion 112/Jahr; Gemüse 87, gedeckt 0; Person 192991 weiterhin nur Fußwege, Zufriedenheitsrohwert 1. Erfunden: Briefe, Absender, Formulierungen; ob die Möbelfabrik Holz oder Bretter braucht und wohin das Gemüse geht, ist nicht gemessen.",
+      "refs": {
+        "staedte": [
+          174605,
+          174646,
+          174598
+        ],
+        "linien": [],
+        "personen": [
+          192991
+        ],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1913-01-nachrufe",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1913-01",
+      "rubrik": "Nachrufe",
+      "titel": "Nachrufe – und eine Auferstehung",
+      "teaser": "Das Jahr 1912 hat dem Archipel einige alte Betriebe genommen. Einer davon ist schon wieder da.",
+      "body": [
+        "Port des Alizés Ölplattform West, gegründet vor aller Aufzeichnung, geschlossen am 21. Februar 1912. Sie stand schon im Register, als der Monitor im Dezember 1904 zum ersten Mal hinsah. Im Hafen sagt man, sie habe Port des Alizés mit groß gemacht. Ihre Schwestern, die Plattform und die Plattform #1, führen das Werk weiter, beide auf Stufe 6. Sie wird im Hafen vermisst, vor allem von den Möwen.",
+        "Anse Dorée Ölplattform, gegründet am 8. Januar 1906, geschlossen am 25. August 1912. Sechseinhalb Jahre wurde vor Anse Dorée Öl gefördert. Die Plattform hinterlässt eine Küste, die jetzt ruhiger ist, und ein paar Fischer, die behaupten, sie hätten sich an den Anblick gewöhnt.",
+        "Neuilly-Plaisance Ölraffinerie, gegründet am 18. Februar 1909, geschlossen am 1. Mai 1912 – und am 5. Januar 1913 unter demselben Namen neu im Register. Totgesagte leben länger. Noch steht sie auf Stufe 1 und hat nichts produziert. Die Redaktion zieht ihren Nachruf vorsorglich zurück und schickt Glückwünsche. Ähnlich erging es übrigens der Glashütte in Lardy: geschlossen im Januar 1911, wiedergeboren im Februar 1912."
+      ],
+      "grounding": "Gemessen: Port des Alizés Ölplattform West seit erster Messung (30.12.1904) im Register, fehlt ab 21.02.1912; Port des Alizés Ölplattform und Ölplattform #1 Stufe 6 (September 1912). Anse Dorée Ölplattform Neugründung 08.01.1906, fehlt ab 25.08.1912. Neuilly-Plaisance Ölraffinerie Neugründung 18.02.1909, fehlt ab 01.05.1912, Neugründung gleichen Namens 05.01.1913, Stufe 1 ohne Produktion. Lardy Glashütte Neugründung 17.06.1906, fehlt ab 05.01.1911, Neugründung 17.02.1912. Erfunden: Würdigungen, Möwen, Fischer, Glückwünsche, die Rolle der Plattform für die Stadt; ob die Neugründungen dieselben Betriebe sind, ist nicht belegt (neue Kennungen).",
+      "refs": {
+        "staedte": [
+          174632,
+          174645,
+          174612
+        ],
+        "linien": [],
+        "personen": [],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1913-01-almanach",
+      "typ": "einordnung",
+      "art": "einordnung",
+      "date": "1913-01",
+      "rubrik": "Almanach",
+      "titel": "Almanach: Das Jahr 1912 in Zahlen",
+      "teaser": "Was die Messbücher über das Jahr 1912 sagen. Ohne Erfundenes, nur gezählt.",
+      "body": [
+        "Menschen. Im Archipel leben im Dezember 1912 16.905 Menschen, 660 mehr als ein Jahr zuvor. Am stärksten gewachsen sind Roche-Noire (plus 201), Bourg-l’Écorce (plus 160), Port des Alizés (plus 106) und Pointe des Pêcheurs (plus 65). Bourg-l’Écorce überschritt im Juni als erste Stadt 2.500 Einwohner, Roche-Noire im Februar 500.",
+        "Verkehr. Das Netz wuchs von 95 auf 99 Linien, im Oktober waren es kurz 100. Die Flotte zählt 638 Fahrzeuge statt 606. Mehr wurden vor allem Frachtschiffe (219 auf 238), Lastwagen (194 auf 207) und Straßenbahnen (27 auf 39). Busse wurden weniger (107 auf 95), weil Valmorin auf die Straßenbahn umstieg. Von den beobachteten Wegen der Bewohner führten 8,4 von hundert über das Netz, nach 7,1 im Jahr 1911.",
+        "Fahrzeuge. 1912 kamen die Benz Dreitonner ins Archipel, im Februar als Kipper, im März als Kastenwagen. Im Januar 1913 folgte der Postbus ET 13.",
+        "Wirtschaft. Die Kasse der Société stieg von 63,7 auf 153,8 Millionen. Acht Betriebe wurden neu gegründet, fünf geschlossen."
+      ],
+      "grounding": "Zusammenstellung der Redaktion aus den Messdaten: Summe belegter Wohnraum aller 50 Orte Dezember 1911 16.245, Dezember 1912 16.905; Zuwachs je Ort Dezember 1911 bis Dezember 1912; Fuhrpark und Linien laut letzter Detailmessung im Dezember 1911 bzw. Dezember 1912; 100 Linien am 23.10.1912; ÖV-Anteil der Beobachtungsgruppe 502 von 6.000 beobachteten Wegen 1912 (1911: 509 von 7.200); Kassenstand Dezember 1911 63.659.069, Dezember 1912 153.839.917; Meldungen 1912: 8 Neugründungen, 5 Schließungen; Modellkäufe laut Spielmonitor-Revision 15. Keine Fiktion.",
+      "refs": {
+        "staedte": [
+          174601,
+          174605,
+          174632,
+          174602,
+          174607
+        ],
+        "linien": [],
+        "personen": [],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1913-01-reclame-postbus",
+      "typ": "anzeige",
+      "art": "fiktion",
+      "date": "1913-01",
+      "rubrik": "Réclame",
+      "titel": "Postbus ET 13",
+      "anzeige": {
+        "kopf": "Postbus ET 13",
+        "zeilen": [
+          "Das Modell des Jahres 1913!",
+          "Schon 39 Wagen in Port des Alizés und Bourg-l’Écorce",
+          "Steigen Sie um in die neue Zeit",
+          "(Die Postkutsche in Anse Dorée grüßt freundlich zurück.)"
+        ],
+        "fuss": "Société des Routes et des Rails · Neu seit Januar 1913"
+      },
+      "grounding": "Modelle und Kaufdaten laut Spielmonitor-Revision 15 (Kaufdatum laut Spiel). Gemessen: Postbus ET 13 im Katalog ab 1913, erstmals gekauft 04.01.1913, 39 Fahrzeuge bis 12.01.1913 in Port des Alizés und Bourg-l’Écorce; Postkutschen auf drei Linien in Anse Dorée. Erfunden: Werbetext.",
+      "refs": {
+        "staedte": [
+          174632,
+          174605,
+          174645
+        ],
+        "linien": [],
+        "personen": [],
+        "betriebe": []
+      }
+    },
+    {
       "id": "fuhrpark-einordnung",
       "typ": "einordnung",
       "art": "einordnung",
