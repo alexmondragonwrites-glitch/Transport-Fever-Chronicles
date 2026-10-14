@@ -2227,6 +2227,237 @@
         "linien": [],
         "betriebe": []
       }
+    },
+    {
+      "id": "1914-05-festprogramm-turm",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1914-05",
+      "lead": true,
+      "rubrik": "Festprogramm",
+      "titel": "Programm zur Einweihung des Eiffelturms von Port des Alizés",
+      "teaser": "Neun Monate stand er auf drei von vier Stufen. Am 27. Mai 1914 ist er fertig. Die Stadt feiert, und Honorine muss ein Versprechen einlösen.",
+      "body": [
+        "Die Stadtverwaltung von Port des Alizés gibt bekannt: Der Eiffelturm am Hafen ist vollendet. Seit dem 25. August 1913 stand er auf drei von vier Stufen. Am 27. Mai 1914 verzeichnen die Messbücher zum ersten Mal vier von vier, fertig. Mit dem Amphitheater hat die Stadt damit ihr zweites vollendetes Wahrzeichen. Zur Feier ist folgendes Programm angesetzt:",
+        "9 Uhr. Glockenläuten. Zur selben Stunde lässt die Société ihre Schiffe im Hafen tuten, so viele gerade da sind.",
+        "10 Uhr. Ansprache des Bürgermeisters vor dem Turm. Er wird, wie man hört, die Zahl 1.946 nennen: So viele Menschen leben im Mai 1914 in Port des Alizés. Die Zweitausend, verspricht er, feiere man bei der nächsten Gelegenheit.",
+        "11 Uhr. Erster öffentlicher Aufstieg, Schwindelfreie zuerst. Lucie vom Bahnhof in Valmorin hat sich angemeldet. Der alte Anselme hat sich ausdrücklich nicht angemeldet und kommt trotzdem, um von unten zu sagen, dass er es gleich gewusst habe.",
+        "15 Uhr. Konzert im Amphitheater.",
+        "18 Uhr. Honorine löst am Hafen ihr Versprechen ein, am Tag der Fertigstellung eine Runde Rum auszugeben. Da im ganzen Archipel kein Rum zu bekommen ist, wird Limonade ausgeschenkt. Der Rum wird nachgereicht. Honorine bittet, die Gläser aufzuheben.",
+        "21 Uhr. Beleuchtung des Turms, sofern das Wetter mitspielt und die Société genug Lampen gefunden hat."
+      ],
+      "grounding": "Gemessen: Port des Alizés Eiffelturm (Bauwerk 385436) Stufe 3 von 4 seit 25.08.1913, erstmals Stufe 4 von 4 und vollendet in der Detailmessung vom 27.05.1914 (Wechsel zwischen 25. und 27.05.1914); Amphitheater Port des Alizés 4 von 4, vollendet. Port des Alizés belegter Wohnraum 1.946 (Monatsstand Mai 1914). Rum: Port des Alizés 0 von 190 (April 1914) bzw. 0 von 199 (Januar 1915) gedeckt, ebenso 0 in Bourg-l’Écorce und Pointe des Pêcheurs. Erfunden: Programm, Glocken, Schiffstuten, Ansprache, Aufstieg, Konzert, Beleuchtung, Limonade; Honorines Versprechen stammt aus „On dit …“ (April 1914).",
+      "refs": {
+        "staedte": [
+          174632,
+          174607
+        ],
+        "linien": [],
+        "personen": [],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1914-06-offener-brief-lardy",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1914-06",
+      "rubrik": "Offener Brief",
+      "titel": "Offener Brief der Gemeinde Péronne an die Gemeinde Lardy",
+      "teaser": "Lardy hat seit dem 22. Mai eine Fahrzeugfabrik. Péronne hatte auch einmal eine. Der Gemeinderat greift zur Feder.",
+      "body": [
+        "Liebe Nachbarn in Lardy, wie wir der Zeitung entnehmen, ist am 22. Mai 1914 in Ihrer Gemeinde eine Fahrzeugfabrik ins Register eingetragen worden. Wir gratulieren von Herzen. Wir wissen, wie sich das anfühlt. Wir hatten auch eine.",
+        "Unsere stand fast drei Jahre im Register, vom 6. April 1911 bis zum 8. Februar 1914, und hat in dieser Zeit kein Automobil gebaut, von dem die Messbücher wüssten. Ihr fehlten Blech, Maschinen und Reifen. Ihre Fabrik, lesen wir, braucht genau dasselbe. Wir wollen Ihnen den Mut nicht nehmen. Aber erlauben Sie uns drei Ratschläge.",
+        "Erstens: Warten Sie nicht auf Reifen. Die Reifenfabrik in Le Malesherbois steht still, weil sie keinen Gummi bekommt, obwohl die Plantage in Cournon-d’Auvergne welchen erntet. Zweitens: Bauen Sie keinen Ausstellungsraum, bevor das erste Automobil fertig ist. Auf unserem wachsen inzwischen Kartoffeln.",
+        "Drittens, und das ist uns das Wichtigste: Sie haben in Lardy auch eine Rumbrennerei, eine Zuckermühle und eine Glashütte, und alle drei stehen so still wie Ihre neue Fabrik. Der ganze Archipel wartet auf Rum. In Port des Alizés, Bourg-l’Écorce und Pointe des Pêcheurs fehlen zusammen mehr als sechshundert Einheiten. Wenn Sie sich entscheiden müssen: Machen Sie zuerst Rum. Dann stoßen wir gemeinsam auf Ihre Automobile an.",
+        "Unser Firmenschild „Automobiles de Péronne“ liegt übrigens im Keller und ist wie neu. Wir überlassen es Ihnen gern. Den Ortsnamen müssten Sie überpinseln, die Emaille hält das aus. Mit nachbarschaftlichen Grüßen, der Gemeinderat von Péronne, 191 Einwohner, noch immer ohne eine Linie der Société."
+      ],
+      "grounding": "Gemessen: Lardy Fahrzeugfabrik Neugründung 22.05.1914, Stufe 1, ohne Produktion bis Januar 1915, Rohstoffe Blech, Maschinen, Reifen; Lardy Rum Distillery (Rohstoffe Molasses, Glas), Sugar Mill und Glashütte jeweils Stufe 1 ohne Produktion (Januar 1915); Lardy 214 Einwohner. Péronne Fahrzeugfabrik Neugründung 06.04.1911, fehlt ab 08.02.1914, in der letzten Messung ohne Jahresproduktion, gleiche Rohstoffe; Péronne 191 Einwohner, keine Linie. Le Malesherbois Reifenfabrik Stufe 1 nicht aktiv (Rohstoff Gummi); Cournon-d’Auvergne Gummiplantage aktiv. Rum gedeckt 0 bei Bedarf 190 (Port des Alizés), 324 (Bourg-l’Écorce) und 143 (Pointe des Pêcheurs) im April 1914. Erfunden: Brief und Gemeinderat, Ratschläge, Kartoffeln, Schild im Keller (aus „Versteigerung“, Februar 1914).",
+      "refs": {
+        "staedte": [
+          174636,
+          174612,
+          174642,
+          174626,
+          174632,
+          174605,
+          174602
+        ],
+        "linien": [],
+        "personen": [],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1914-08-lieferschein-moebel",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1914-08",
+      "rubrik": "Lieferschein",
+      "titel": "Lieferschein Nr. 1",
+      "teaser": "Im Sommer 1914 gelingt in Sin-le-Noble, was im Archipel noch niemandem gelungen ist: Möbel. Wir drucken das Dokument.",
+      "body": [
+        "LIEFERSCHEIN Nr. 1. Absender: Möbelfabrik Sin-le-Noble, ab 31. August firmierend als „Les Ateliers du Noble“. Empfänger: Station Süd, Sin-le-Noble, 1,1 Kilometer vom Ortskern. Beförderung: Lastwagenlinie der Société für Möbel, Bretter und Glas.",
+        "Inhalt: Ein Stuhl, vierbeinig (Besteller: Café du Sablier). Ein Tisch (Besteller: Café du Sablier). Ein zweiter Tisch, falls der erste schief wird (Besteller: Café du Sablier). Ein Fensterrahmen für das Rathaus, passend zur grünen Scheibe. Rest: auf Lager.",
+        "Vermerk der Redaktion: Die Messbücher bestätigen den Lieferschein, nur nicht seinen Inhalt. Ende Juni 1914 hat die Fabrik zum ersten Mal etwas hergestellt. Im August stehen übers Jahr gerechnet 40 Einheiten Möbel in den Büchern, alle verschickt. Zwischen Ende Juli und dem 20. August hat der Monitor Möbel auf den Lastwagen der Société erwischt, unterwegs zur Station Süd. Und Ende August bekommt die Fabrik einen neuen Namen: Les Ateliers du Noble.",
+        "Um die Werkstatt herum wächst, was sie braucht. Am 6. Juli wird in Sin-le-Noble ein Sägewerk eingetragen, am 2. August ein Holzfällerlager, gleich auf Stufe 6. Im August und September kommen Lastwagenlinien für Holz und Bretter dazu. Bis zum Januar 1915 hat das Sägewerk übers Jahr 104 Einheiten Bretter geschnitten. Sand kommt mit dem Schiff aus Vichy und dann mit dem Lastwagen zur Glashütte. Im Herbst ruhte die Werkstatt eine Weile, im Januar 1915 stehen wieder 30 Einheiten zu Buche.",
+        "Nur der letzte Schritt fehlt. In Bourg-l’Écorce, 5,0 Kilometer entfernt, sind im Januar 1915 noch immer 0 von 327 verlangten Einheiten Möbel gedeckt, auf Roche-Noire 0 von 175. Seit Ende Oktober trägt eine Lastwagenlinie in Bourg-l’Écorce „Möbel“ im Namen. Der Direktor hatte im April angekündigt, Holz nach Sin-le-Noble zu bringen und Möbel zurück. Wohin die Möbel von der Station Süd aus gehen, zeigen die Messungen noch nicht."
+      ],
+      "grounding": "Spielervorgabe (Interview mit dem Direktor, Ausgabe April 1914): Möbel aus Sin-le-Noble für Roche-Noire und Bourg-l’Écorce, Holz hin, Möbel zurück. Gemessen: Industrie 386416 (Neugründung 04.10.1913 als Sin-le-Noble Möbelfabrik) mit erster Jahresproduktion in der Messung vom 24.06.1914; Jahresproduktion und Versand je 40 im August/September 1914, 0 am 30.11.1914, Produktion 30 und Versand 28 am 23.01.1915; Name „Les Ateliers du Noble“ ab der Messung vom 31.08.1914 (am 27.08.1914 noch Sin-le-Noble Möbelfabrik). Warenstichproben 25.07. bis 20.08.1914: 17 Möbelladungen dieser Fabrik an Bord der Linie RC Möbel,Bretter,Glas-Sin-LO-1 mit Ziel Sin-le-Noble Station Süd. Entfernungen (Seekarte, Mitten der Begrenzungsboxen): Station Süd 1,1 km, Bourg-l’Écorce 5,0 km von Sin-le-Noble. Neugründungen Sin-le-Noble Sägewerk 06.07.1914 (Januar 1915: Jahresproduktion 104, Versand 26) und Holzfällerlager 02.08.1914 (Stufe 6, Dezember 1914 Stufe 8); neue Linien RC Maschinen,Passagiere,Holz-Sin-LO-1 (10.08.1914), RC Bretter-Sin-LO-1 (13.08.1914), RC Bretter-Sin-LO-2 (04.09.1914). Stichprobe 23.01.1915: Sand aus dem Vichy Sandbaggerschiff über WC Passagiere,Sand-Gar-Vic-IC-1 und RC Sand,Passagiere,Glas-Sin-LO-1 zur Sin-le-Noble Station. Januar 1915: Möbel Bourg-l’Écorce 0 von 327, Roche-Noire 0 von 175; RC Fisch,Konserven-Bou-LO-1 befördert seit 29.10.1914 laut Name auch Möbel. Erfunden: Lieferschein, Inhalt und Besteller, Fensterrahmen; der Weg der Möbel nach der Station Süd ist nicht gemessen.",
+      "refs": {
+        "staedte": [
+          174617,
+          174605,
+          174601,
+          174638
+        ],
+        "linien": [],
+        "personen": [],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1914-11-die-wand-erzaehlt",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1914-11",
+      "lead": true,
+      "rubrik": "Ich, die Wand",
+      "titel": "Tausend. Erzählt von einer Wand in Valmorin",
+      "teaser": "Seit dem Frühjahr 1913 steht sie vor dem „Au Quai des Collines“. Sie hat den Lärm abgehalten, die Kreide getragen und die Wetten gelesen. Am 7. November 1914 hat sie etwas zu sagen.",
+      "body": [
+        "Ich bin die Wand vor dem „Au Quai des Collines“. Man hat mich im Frühjahr 1913 gebaut, gegen den Lärm der Straße, und für mich mussten Häuser weichen. Das hat man mir eine Weile übelgenommen. Ich nehme niemandem etwas übel. Ich bin eine Wand.",
+        "Im ersten Frühjahr schrieb mir jemand eine Frage auf den Bauch: „Wann sind wir wieder neunhundert?“ Ganz unten stand eine Handschrift, die ich seither nicht mehr gesehen habe: „I. L. setzt auf Weihnachten.“ Im Oktober 1913 strich der Wirt das „wieder“ durch und schrieb 902 darunter. Es kitzelte. Dann kam die nächste Frage: „Wann tausend?“",
+        "Ich habe mitgezählt. Im Dezember 1913 wohnten in Valmorin 925 Menschen, im Mai 962, im August 983, im Oktober 998. Zwei fehlen noch, sagte Lucie vom Bahnhof, und zählte die Fenster. Am 7. November 1914 waren es 1.001.",
+        "Lucie hatte „in einem Jahr“ gesagt. Es wurden dreizehn Monate. Der Wirt hat entschieden, dass das zählt. Anselme hatte „nie“ gesagt. Er stand am Abend lange vor mir und schwieg. Dann wischte er mit dem Daumen über die Tausend, ganz vorsichtig, als wollte er prüfen, ob sie echt ist. Sie ist echt.",
+        "Leiser ist es nicht geworden. Die Messbücher zeigen fast 76 Dezibel, mehr als bei meiner Einweihung, und seit September fahren vier Kohlelaster der Société durch die Stadt. Ich halte ab, was ich kann. Den Rest übertönt der Wirt mit seinem Lachen. Die Kreide von Isidore hat er stehen lassen. Ich auch. Eine neue Frage hat mir noch niemand aufgeschrieben. Lucie trägt aber schon wieder ein Stück Kreide in der Schürze."
+      ],
+      "grounding": "Spielervorgabe vom 13.10.2026: Für Lärmschutzwände mussten in Valmorin Häuser weichen und neu gebaut werden; Wände und Abrisse misst der Monitor nicht. Gemessen: Valmorin belegter Wohnraum am 16.10.1913 erstmals über 900 (902) und am 07.11.1914 erstmals über 1.000 (1.001); Monatsstände Dezember 1913 925, Mai 1914 962, August 983, Oktober 998, November 1.013; Lärm 73,5 dB (29.04.1913), 75,9 dB (Januar 1915); neue Linie RC Kohle-Val-LO-1 am 22.09.1914 mit 4 Fahrzeugen. Erfunden: die erzählende Wand, Kreideschrift, Wetten, Lucie, Anselme, der Wirt; „I. L.“ verweist auf die Figur Isidore Lubin (Person 54586, zuletzt am 09.04.1913 gemessen).",
+      "refs": {
+        "staedte": [
+          174607
+        ],
+        "linien": [],
+        "personen": [
+          54586
+        ],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1914-12-glueckwuensche",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1914-12",
+      "rubrik": "Glückwünsche",
+      "titel": "Glückwünsche, Grüße und ein Abschied",
+      "teaser": "Zum Jahresende gratuliert die Redaktion. Die Messbücher haben diesmal erstaunlich viel Gutes zu melden.",
+      "body": [
+        "JOSÉPHINE SÉVERIN, Port des Alizés. Nach elf Monaten ohne Stelle hat sie seit dem 24. August 1914 wieder Arbeit, und in allen Messungen des neuen Jahres fährt sie mit der Société. Den Fenstertisch bei Honorine hat sie freigegeben. Honorine hat ihn trotzdem noch nicht neu vergeben.",
+        "ANGÈLE PHILOGÈNE, Pointe des Pêcheurs. Das Vorstellungsgespräch hat geklappt, wenn auch nicht gleich: Seit dem 3. Dezember 1914 hat sie wieder Arbeit, nach siebeneinhalb Monaten. Wir hatten im April auf ein Vorstellungsgespräch getippt. Wir lagen nur mit der Geduld daneben.",
+        "THÉODORE DÉSIR, Meyzieu. 781 Mal hat ihn der Monitor bis Ende 1913 angetroffen, jedes Mal zu Fuß. Am 15. Dezember 1914 ist er zum ersten Mal eingestiegen, im Januar sitzt er im Bus zwischen Roche-Noire und Meyzieu. Désiré Séverin aus Lamballe-Armor lässt grüßen. Er weiß, wie das ist.",
+        "ÉMILE ÉDOUARD, Roche-Noire. Erste Fahrt mit dem öffentlichen Verkehr am 18. Juni 1914. Ende September fünf Tage ohne Arbeit, seit dem 4. Oktober wieder in Lohn und Brot.",
+        "PORT DES ALIZÉS. 2.005 Einwohner am 20. Dezember 1914, die zweite Stadt des Archipels über zweitausend. Der Bürgermeister hatte es bei der Turmeinweihung versprochen. Seit September fährt außerdem eine achte Buslinie.",
+        "ROCHE-NOIRE. Über neunhundert seit November 1914. Der Wirt vom „Le Puits“ wollte die Zahl an eine Wand schreiben. Er hat keine Wand. Er hat Kisten.",
+        "ABSCHIED. Siméon Alexandre aus Montfougère stand seit Dezember 1904 in unseren Messbüchern, meist zu Fuß, manchmal im Automobil, fast immer mit Arbeit. Seit dem 15. Juli 1914 ist er nicht mehr dabei. Wohin er gegangen ist, wissen wir nicht. Vier Tage später kam ein neuer Montfougèrois in unsere Beobachtungsgruppe, Siméon Thélus. Die Redaktion hat seinen Namen vergeben und versichert, dass der Vorname Zufall ist."
+      ],
+      "grounding": "Gemessen: Person 98887 (Port des Alizés) ohne Arbeitsplatz ab 21.09.1913, wieder mit Arbeitsplatz ab 24.08.1914, 1915 in allen 7 Messungen im öffentlichen Verkehr. Person 82141 (Pointe des Pêcheurs) ohne Arbeitsplatz ab 14.04.1914, wieder mit Arbeitsplatz ab 03.12.1914. Person 72703 (Meyzieu) seit 30.12.1904 gemessen, bis Ende 1913 781 Messungen alle zu Fuß, erste Fahrt im öffentlichen Verkehr 15.12.1914, am 23.01.1915 im Fahrzeug der Linie Bus Passagiere-Roc-Mey-IC-1. Person 42281 (Roche-Noire) erste Fahrt im öffentlichen Verkehr 18.06.1914, ohne Arbeitsplatz 29.09.–04.10.1914. Port des Alizés 2.005 Einwohner am 20.12.1914 (Bourg-l’Écorce bereits darüber); neue Buslinie Bus Passagiere-PordesAli-LO-8 (08.09.1914, ab 11.09.1914 4 Fahrzeuge). Roche-Noire Monatsstand November 1914 905 (Oktober 892). Person 120396 (Montfougère) seit 30.12.1904 gemessen, bis Ende 1913 732 Messungen zu Fuß und 49 im Auto, zuletzt 15.07.1914, danach nicht mehr in der Beobachtungsgruppe; Person 36791 (Montfougère) erstmals am 19.07.1914. Erfunden: Namen (von der Redaktion deterministisch vergeben), Fenstertisch, Grüße, Kisten, Versprechen des Bürgermeisters (aus „Festprogramm“, Mai 1914); warum Person 120396 nicht mehr gemessen wird, ist unbekannt.",
+      "refs": {
+        "staedte": [
+          174632,
+          174602,
+          174616,
+          174601,
+          174646,
+          174614
+        ],
+        "linien": [],
+        "personen": [
+          98887,
+          82141,
+          72703,
+          42281,
+          120396,
+          36791
+        ],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1915-01-schiffsmeldungen",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1915-01",
+      "lead": true,
+      "rubrik": "Schiffsmeldungen",
+      "titel": "Zwölf Tage im Januar: 169 Schaufelraddampfer",
+      "teaser": "Zwischen dem 4. und dem 16. Januar 1915 wechselt die Société auf sieben Linien ihre Schiffe. Danach ist mehr als jedes zweite ihrer Schiffe ein Schaufelraddampfer.",
+      "body": [
+        "Aus den Häfen des Archipels wird gemeldet:",
+        "4. Januar, Valmorin. Linie nach Rambervillers (Werkzeuge, Bretter, Passagiere): 24 Schaufelraddampfer nehmen den Dienst auf und lösen die bisherigen Schiffe ab. Es ist das erste Mal, dass dieser Typ im Archipel fährt.",
+        "7. Januar, Port des Alizés. Zuckerlinie von Cormontreuil (Zucker, Dünger): 20 Schaufelraddampfer statt 20 Kanadischer Kutter.",
+        "8. Januar, Port des Alizés. Chemikalien aus Lamballe-Armor: 55 Schaufelraddampfer statt 55 Sydfart. Die größte Schiffsflotte der Société wechselt an einem einzigen Tag.",
+        "10. Januar, Aniche. Farbstoffe, Kunststoff und Chemikalien von Le Rove: 44 Schaufelraddampfer statt 44 Sydfart.",
+        "13. Januar, Anse Dorée. Rohöl und Treibstoff nach Port des Alizés: 9 statt 9 Sydfart.",
+        "14. Januar, Anse Dorée. Passagierlinie nach Port des Alizés: 5 Schaufelraddampfer statt 5 Waimarie.",
+        "16. Januar, Pointe des Pêcheurs. Wolle, Kleidung und Passagiere nach Lamballe-Armor: 12 statt 12 Kanadischer Kutter. Auf dieser Linie reist die Kleidung, die der Archipel so dringend braucht.",
+        "Bilanz der zwölf Tage: 169 Schaufelraddampfer auf sieben Linien. Von den 296 Schiffen der Société sind damit 169 Schaufelraddampfer. Die Sydfart, im April 1914 noch 164 an der Zahl, sind auf 60 geschrumpft, die Kanadischen Kutter von 45 auf 13.",
+        "Im April hatte der Direktor dieser Zeitung gesagt, die Schifffahrt sei der Flaschenhals der Gesellschaft. Er hoffe auf einen ähnlichen Fortschritt auf dem Wasser, wie ihn Straße und Schiene schon erlebt hätten. Ob die neuen Schiffe schneller sind, steht nicht in den Messbüchern. Dort steht etwas anderes: Ende Dezember zeigte die Kasse der Société 498 Millionen, am 23. Januar 355. Im Hafen von Port des Alizés zählen die Kinder derweil die Schaufelräder und kommen jedes Mal auf eine andere Zahl."
+      ],
+      "grounding": "Spielervorgabe (Interview mit dem Direktor, Ausgabe April 1914): Schifffahrt als Flaschenhals, Hoffnung auf neue Technik auf dem Wasser, lange Wege bei der Kleidung. Gemessen (Fahrzeugmodelle je Linie, Monitor-Revision 15/16; erstes Kaufdatum laut Spiel): Schaufelraddampfer (sternwheeler.mdl) erstmals gekauft 04.01.1915 auf WC Passagiere,Werkzeuge,Bretter-Ram-Val-IC-1 (24 Fahrzeuge; April 1914 dort 12 × Sydfart, ab 24.06.1914 24 Fahrzeuge); weiter 07.01.1915 WC Sugar,Dünger-Cor-PordesAli-IC-1 (20, vorher 20 × Kanadischer Kutter), 08.01.1915 WC Chemikalien-Lam-PordesAli-IC-1 (55, vorher 55 × Sydfart), 10.01.1915 WC Farbstoffe,Kunststoff,Chemikalien-LeRov-Ani-IC-1 (44, vorher 44 × Sydfart), 13.01.1915 WC Rohöl,Treibstoff-AnsDor-PordesAli-IC-1 (9, vorher 9 × Sydfart), 14.01.1915 WP Passagiere-AnsDor-PordesAli-IC-1 (5, vorher 5 × Waimarie), 16.01.1915 WC Passagiere,Wolle,Kleidung-PoidesPêc-Lam-IC-1 (12, vorher 12 × Kanadischer Kutter). Schiffe nach Modell: April 1914 268 (Sydfart 164, Kanadischer Kutter 45, Dunara Castle 45, Waimarie 11, PS Trillium 3); 23.01.1915 296 (Schaufelraddampfer 169, Sydfart 60, Dunara Castle 45, Kanadischer Kutter 13, Waimarie 6, PS Trillium 3). Kassenstand Dezember 1914 497.999.050, 23.01.1915 355.492.088; ein Zusammenhang mit den Käufen ist naheliegend, aber nicht einzeln gemessen. Geschwindigkeiten und Antriebsarten sind nicht gemessen. Erfunden: Meldungston, Kinder am Hafen.",
+      "refs": {
+        "staedte": [
+          174607,
+          174630,
+          174632,
+          174622,
+          174614,
+          174600,
+          174618,
+          174645,
+          174602
+        ],
+        "linien": [],
+        "personen": [],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1915-01-almanach-1914",
+      "typ": "einordnung",
+      "art": "einordnung",
+      "date": "1915-01",
+      "rubrik": "Almanach",
+      "titel": "Almanach: Das Jahr 1914 in Zahlen",
+      "teaser": "Nur gezählt, nichts erfunden: das Jahr 1914 in den Messbüchern.",
+      "body": [
+        "Menschen. Im Dezember 1914 leben im Archipel 17.994 Menschen, 589 mehr als ein Jahr zuvor. Am stärksten gewachsen sind Bourg-l’Écorce (plus 152), Port des Alizés (plus 115), Valmorin (plus 97) und Roche-Noire (plus 95). Valmorin überschritt am 7. November 1.000 Einwohner, Port des Alizés am 20. Dezember 2.000, Montfougère im Juli 250. Von den beobachteten Wegen der Bewohner führten 7,8 von hundert über das Netz, nach 6,5 im Jahr 1913.",
+        "Verkehr. Das Netz wuchs von 110 auf 125 Linien, die Flotte von 701 auf 788 Fahrzeuge. Mehr wurden vor allem Lastwagen (244 auf 287), Frachtschiffe (256 auf 284) und Busse (101 auf 113). Neu im Linienbetrieb ist seit Mai die Badische VI c auf dem Güterzug zwischen Lamballe-Armor und Aniche. Im Januar 1915 folgte der Schaufelraddampfer, siehe die Schiffsmeldungen dieser Ausgabe.",
+        "Betriebe. Neun Neugründungen und zehn Schließungen. Neu sind unter anderem eine Fahrzeugfabrik in Lardy (Mai), ein Sägewerk und ein Holzfällerlager in Sin-le-Noble (Juli und August) und eine Ölplattform bei Auch (Oktober). Die Fischzucht in Beuvrages, am Neujahrstag geschlossen, kam im August zurück. Geschlossen wurden unter anderem die Fahrzeugfabrik Péronne (Februar), die Ölraffinerie in Grenay (September) und die Fischzucht in Cassis (November). Die Möbelfabrik in Sin-le-Noble stellte im Juni ihre ersten Möbel her und heißt seit Ende August Les Ateliers du Noble.",
+        "Bauwerke. Der Eiffelturm von Port des Alizés ist seit dem 27. Mai vollendet, nach neun Monaten auf drei von vier Stufen.",
+        "Versorgung. Im Januar 1915 sind weiterhin weder Rum (Port des Alizés, Bourg-l’Écorce, Pointe des Pêcheurs: zusammen 0 von 687) noch Möbel (Bourg-l’Écorce und Roche-Noire: 0 von 502) noch Fahrzeuge (Port des Alizés: 0 von 100) gedeckt. Valmorin erhielt 60 von 88 Einheiten Kleidung, im April 1914 waren es 73 von 79.",
+        "Kasse. Ende 1913 standen 284,6 Millionen in den Büchern, Ende 1914 498,0 Millionen. Am 23. Januar 1915 sind es 355,5 Millionen."
+      ],
+      "grounding": "Zusammenstellung der Redaktion aus den Messdaten, nichts erfunden: Summe belegter Wohnraum aller 50 Orte Dezember 1913 17.405, Dezember 1914 17.994; Zuwachs je Ort aus den Monatsständen Dezember 1913 und Dezember 1914; Schwellen laut Meldungen (Valmorin 1.001 am 07.11.1914, Port des Alizés 2.005 am 20.12.1914, Montfougère 253 am 25.07.1914); ÖV-Anteil der Beobachtungsgruppe 486 von 6.240 Messungen 1914 (1913: 476 von 7.360). Linien und Fahrzeuge laut letzter Detailmessung im Dezember 1913 bzw. Dezember 1914, Fahrzeugarten nach Linienpräfix. Neue Fahrzeugmodelle laut Monitor-Revision 15 (Badische VI c erstmals gekauft 15.05.1914; Schaufelraddampfer 04.01.1915). Neugründungen und Schließungen 1914 laut Industrieregister (je 9 bzw. 10 Meldungen); Les Ateliers du Noble = Industrie 386416. Eiffelturm 4/4 ab 27.05.1914. Versorgung laut Stadtständen Januar 1915 bzw. April 1914. Kassenstand Dezember 1913 284.594.432, Dezember 1914 497.999.050, 23.01.1915 355.492.088.",
+      "refs": {
+        "staedte": [
+          174605,
+          174632,
+          174607,
+          174601,
+          174646,
+          174612,
+          174617,
+          174624,
+          174610,
+          174636,
+          174625,
+          174633
+        ],
+        "linien": [],
+        "personen": [],
+        "betriebe": []
+      }
     }
   ]
 }
