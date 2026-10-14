@@ -8,9 +8,9 @@ between their stops, not along tracks or roads. Only uses the Python standard li
 """
 import collections
 
-# Assumption until compared with the game's map: world y grows to the north, so it is drawn upwards.
+# World y grows to the north, so it is drawn upwards (checked against the game's map, see NORD_GEPRUEFT).
 Y_NACH_OBEN = True
-NORD_GEPRUEFT = False  # set True once a live chart has been compared with the game's map
+NORD_GEPRUEFT = True  # compared with the game's map by the player on 2026-10-14: world y grows to the north
 GEO_LISTS = ('towns', 'industries', 'station_groups', 'landmarks')
 
 

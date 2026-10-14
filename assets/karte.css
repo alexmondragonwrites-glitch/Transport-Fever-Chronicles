@@ -111,3 +111,9 @@
 .k-atlas-motto{font:italic 14px/1.4 var(--serif);max-width:220px}.k-scale{position:static;padding:0;background:none;flex:none}.k-zoom{position:static;flex-direction:row;gap:5px}.k-zoom button{border-radius:0;background:#ecdfc5;color:#41392f;border-color:#8a795e}
 .k-controls{border-block:3px double var(--line-strong);padding:12px 0}.k-time input{accent-color:#607e87}.k-legend{padding:18px;border:3px double var(--line-strong);background:var(--panel)}.k-sw-land{background:#eee0b9}.k-sw-shallow{background:#d2d9c9}
 @media(max-width:650px){.k-frame{padding:9px}.k-atlas-heading{grid-template-columns:1fr 68px;gap:14px;padding:12px 8px 20px}.k-edition{display:none}.k-cartouche{display:block}.k-cartouche strong{font-size:23px}.k-cartouche span{font-size:13px}.k-atlas-footer{flex-wrap:wrap;gap:12px}.k-atlas-motto{flex-basis:100%;max-width:none;text-align:center}.k-zoom{margin-left:auto}.k-atlas-compass{width:65px}}
+
+/* Whole archipelago on one screen: the frame's width follows the viewport height minus the sticky bar and tabs
+   (about 160px), so the chart fits; heading and footer adapt to the frame's own width, not the window's. */
+.k-frame{container-type:inline-size;max-width:clamp(320px,calc((100vh - 160px) * var(--k-ratio,1) + 44px),760px)}
+.k-cartouche strong{font-size:clamp(21px,5.6cqw,34px)}
+@container (max-width:440px){.k-atlas-heading{grid-template-columns:1fr 64px;gap:12px;padding:12px 6px 18px}.k-edition{display:none}.k-cartouche{padding:8px 10px}.k-cartouche span{font-size:13px}.k-atlas-compass{width:60px}.k-atlas-footer{flex-wrap:wrap;gap:10px}.k-atlas-motto{flex-basis:100%;max-width:none;text-align:center}.k-zoom{margin-left:auto}}

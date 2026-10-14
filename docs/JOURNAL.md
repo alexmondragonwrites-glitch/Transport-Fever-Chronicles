@@ -49,7 +49,8 @@ Die Rubrik „Karte“ (hinter „Städte“) zeichnet den Archipel als SVG-Seek
 - **Küsten und Tiefen:** grobes Höhenraster `terrain` (etwa stündlich gemessen) relativ zum Wasserspiegel; die Seite zieht daraus Küstenlinie (0 m), Flachwasser bis 5 m, Isobathe 20 m und Höhenlinien. Fehlt das Raster, bleibt die Karte offenes Meer mit Symbolen.
 - **Zeitreise:** Einwohner je Spielmonat aus `staedte.json`; Linien und Betriebe erscheinen ab ihrer ersten Meldung (`linie`/`premiere` bzw. `industrie`). Eingestellte Linien und geschlossene Betriebe fehlen, weil die Karte nur den letzten Stand verortet. Ein gestrichelter Ring zeigt die heutige Größe.
 - **Waren unterwegs:** Stichprobe der Ladung an Bord aus der letzten Detailmessung (`logistics.cargo`, höchstens 240 Stücke): vom erzeugenden Betrieb zum Halt, an dem sie das Fahrzeug verlässt, mit der Linienkette der Reise. Nur beim heutigen Stand sichtbar, keine vollständige Verkehrsstatistik.
-- **Nordrichtung:** Annahme „Welt-y wächst nach Norden“ (`y_nach_oben` in `karte.json`). Bis ein Livebild mit der Spielkarte verglichen ist, steht `nord_geprueft: false` und die Seite sagt das. Umstellen in `journal_karte.py` (`Y_NACH_OBEN`, `NORD_GEPRUEFT`).
+- **Nordrichtung:** „Welt-y wächst nach Norden“ (`y_nach_oben` in `karte.json`), vom Spieler am 14.10.2026 mit der Spielkarte abgeglichen (`nord_geprueft: true`); Kompass und Fußnote sagen das. Für eine neue Welt erneut prüfen und in `journal_karte.py` umstellen (`Y_NACH_OBEN`, `NORD_GEPRUEFT`); ohne Abgleich nennt die Seite die Nordrichtung eine Annahme.
+- **Gestaltung:** Illustrierte Kartenbeilage (Pergamentrahmen, Kartusche, Kompass, gedeckte Stichfarben je Linienart). Die Rahmenbreite richtet sich nach der Fensterhöhe, damit der ganze Archipel auf einen Bildschirm passt; Kopf und Fuß des Rahmens passen sich per Container-Query an seine Breite an. Die Kopfzeile trägt wie jede gemessene Rubrik „Belegt“.
 
 ## Notizbuch des Direktors
 

@@ -5,7 +5,8 @@
 const LAYERS = [['gelaende','Küsten & Tiefen'],['linien','Linien'],['halte','Halte'],['staedte','Städte'],['betriebe','Betriebe'],
   ['warenwege','Waren unterwegs'],['wahrzeichen','Wahrzeichen']];
 const STATUS = {aktiv:['produziert','var(--palm)'], gestoppt:['steht still','var(--red)'], ungeprueft:['wird geprüft','var(--muted)']};
-const ATLAS_COLORS = {personenzug:'#303331', gueterzug:'#685441', tram:'#876a4c', bus:'#967342', lkw:'#92604b', passagierschiff:'#426576', frachtschiff:'#607e87', unbekannt:'#81796c'};
+// Muted engraving inks, still far enough apart to tell the kinds of line apart (CIE76 distance at least 19 between land kinds).
+const ATLAS_COLORS = {personenzug:'#303331', gueterzug:'#5e4a3a', tram:'#7d4a63', bus:'#9b7520', lkw:'#a4532f', passagierschiff:'#3d6478', frachtschiff:'#5f8389', unbekannt:'#81796c'};
 const SHIPS = new Set(['frachtschiff','passagierschiff']);
 const KIND_ORDER = ['personenzug','gueterzug','tram','bus','lkw','passagierschiff','frachtschiff','unbekannt'];
 
@@ -224,12 +225,12 @@ export function karteView(D, ctx){
   const {E, N, dayName} = C, K = M.K, f = K.fehlend||{}, missing = Object.values(f).reduce((a,b)=>a+b, 0);
   const active = K.betriebe.filter(i=>i.status==='aktiv').length, stopped = K.betriebe.filter(i=>i.status==='gestoppt').length;
   const ways = K.warenwege;
-  return `<div class="section-header"><div><div class="eyebrow">Le Journal des Alizés · Illustrierte Kartenbeilage</div><h2>Carte illustrée de l’Archipel</h2>
+  return `<div class="section-header"><div><div class="eyebrow">Belegt · Illustrierte Kartenbeilage</div><h2>Carte illustrée de l’Archipel</h2>
     <p class="section-lede">Städte nach Einwohnern, Linien nach Art, Betriebe nach Status. Positionen vom ${E(dayName(K.stand.positionen))}${K.gelaende?`, Küsten und Tiefen vom ${E(dayName(K.gelaende.stand))}`:''}.</p></div></div>
   <div class="k-controls"><div class="filters k-layers" role="group" aria-label="Ebenen">${LAYERS.filter(([id])=>id!=='gelaende'||K.gelaende).filter(([id])=>id!=='warenwege'||ways?.wege.length).filter(([id])=>id!=='wahrzeichen'||K.wahrzeichen.length).map(([id,l])=>`<button class="j-chip" data-layer="${id}" aria-pressed="${S.layers.has(id)}">${l}</button>`).join('')}</div>
     <label class="k-time"><span>Zeitreise <strong id="k-month">${E(C.monthName(S.month))}</strong></span><input type="range" id="k-slider" min="0" max="${M.months.length-1}" value="${M.months.indexOf(S.month)}" aria-label="Spielmonat der Karte"></label></div>
   <div class="k-frame" style="--k-ratio:${(M.frame.w/M.frame.h).toFixed(4)}">
-    <header class="k-atlas-heading"><span class="k-edition">Supplément illustré<br>Le Journal des Alizés</span><div class="k-cartouche"><span class="k-flourish" aria-hidden="true">❦</span><strong>Archipel<br>des Alizés</strong><span id="k-atlas-date">${E(C.monthName(S.month))}</span></div><div class="k-atlas-compass" aria-label="Norden ist oben"><svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="30"/><circle cx="50" cy="50" r="27"/><path d="M50 15L56 44L85 50L56 56L50 85L44 56L15 50L44 44Z"/><path class="k-compass-light" d="M50 15V50H85L56 56L50 85V50H15L44 44Z"/><text x="50" y="10">N</text><text x="50" y="98">S</text><text x="4" y="54">O</text><text x="96" y="54">E</text></svg></div></header>
+    <header class="k-atlas-heading"><span class="k-edition">Supplément illustré<br>Le Journal des Alizés</span><div class="k-cartouche"><span class="k-flourish" aria-hidden="true">❦</span><strong>Archipel<br>des Alizés</strong><span id="k-atlas-date">${E(C.monthName(S.month))}</span></div><div class="k-atlas-compass" role="img" aria-label="${K.nord_geprueft?'Norden ist oben, mit der Spielkarte abgeglichen':'Nordrichtung noch nicht mit der Spielkarte abgeglichen'}"><svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="30"/><circle cx="50" cy="50" r="27"/><path d="M50 15L56 44L85 50L56 56L50 85L44 56L15 50L44 44Z"/><path class="k-compass-light" d="M50 15V50H85L56 56L50 85V50H15L44 44Z"/><text x="50" y="10">N</text><text x="50" y="98">S</text><text x="4" y="54">O</text><text x="96" y="54">E</text></svg></div></header>
     <div class="k-chart-window"><svg class="k-map" id="k-map" role="img" aria-label="Seekarte des Archipels mit Städten, Linien und Betrieben" preserveAspectRatio="xMidYMid meet" style="aspect-ratio:${M.frame.w}/${M.frame.h}">
       <defs><pattern id="k-engraving" width="180" height="180" patternUnits="userSpaceOnUse"><path d="M0 180L180 0M-45 45L45 -45M135 225L225 135" fill="none" stroke="#655d45" stroke-width="12" opacity=".2"/></pattern><clipPath id="k-clip"><rect x="${M.frame.x}" y="${M.frame.y}" width="${M.frame.w}" height="${M.frame.h}"/></clipPath>
       <marker id="k-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="4" markerHeight="4" orient="auto"><path d="M0 0L10 5L0 10Z" class="k-arrowhead"/></marker></defs>
@@ -242,7 +243,7 @@ export function karteView(D, ctx){
   </div>
   <div class="k-below"><section class="k-info card" id="k-info" aria-live="polite">${info()}</section>${legend()}</div>
   <p class="small">${E(K.hinweis)} Zeitreise: Einwohner je Spielmonat aus den Ortsakten; Linien und Betriebe erscheinen ab ihrer ersten Meldung, eingestellte Linien und geschlossene Betriebe fehlen. „Waren unterwegs“ ist eine Stichprobe der Ladung an Bord${ways?` am ${E(dayName(ways.stand))} (${N(ways.stichprobe)} Stücke${ways.gekappt?', gekappt':''})`:''} und nur beim heutigen Stand sichtbar.
-  ${K.nord_geprueft?'':' Die Nordrichtung ist eine Annahme und wird mit der Spielkarte abgeglichen.'}
+  ${K.nord_geprueft?' Norden ist oben, vom Spieler mit der Spielkarte abgeglichen.':' Die Nordrichtung ist eine Annahme und wird mit der Spielkarte abgeglichen.'}
   Auf der Karte: ${N(K.staedte.length)} Orte, ${N(K.linien.length)} Linien, ${N(K.stationen.length)} Halte, ${N(K.betriebe.length)} Betriebe (${N(active)} produzieren, ${N(stopped)} stehen still).${missing?` Ohne Position: ${['staedte','betriebe','stationen','wahrzeichen'].filter(k=>f[k]).map(k=>`${N(f[k])} ${({staedte:'Orte',betriebe:'Betriebe',stationen:'Halte',wahrzeichen:'Wahrzeichen'})[k]}`).join(', ')}.`:''}</p>`;
 }
 
