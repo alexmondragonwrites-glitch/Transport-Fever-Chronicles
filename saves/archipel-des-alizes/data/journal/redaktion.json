@@ -2458,6 +2458,231 @@
         "personen": [],
         "betriebe": []
       }
+    },
+    {
+      "id": "1915-08-buehne-erster-stuhl",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1915-08",
+      "lead": true,
+      "rubrik": "Bühne",
+      "titel": "Der erste Stuhl. Ein Akt im „Le Puits“",
+      "teaser": "Seit November 1913 steht „Möbel“ auf dem Schiff nach Roche-Noire. Im August 1915 kommt der erste Stuhl an. Die Redaktion hat den Abend aufgeschrieben, wie er gewesen sein könnte.",
+      "body": [
+        "Personen: Der Wirt des „Le Puits“. Ein Gast, der seit anderthalb Jahren auf einer Kiste sitzt. Die Stammgäste. Ein Fuhrmann der Société. Ort: Roche-Noire, die Gaststube. Statt Stühlen Kisten. Über dem Tresen eine Tafel: „Erster Stuhl aus Sin-le-Noble – eine Runde aufs Haus.“ Die Kreide ist fast verblasst.",
+        "DER GAST (auf seiner Kiste, ohne aufzusehen): Wieder nichts?",
+        "DER WIRT: Bretter. Bretter kommen immer.",
+        "DER GAST: Auf Brettern kann man auch sitzen. Wenn man sie zu einem Stuhl zusammennagelt. Dazu gibt es eine Fabrik in Sin-le-Noble. Seit 1913.",
+        "DER WIRT: Sie macht inzwischen welche. Vierzig im Jahr, fünfzig. Sie fahren mit dem Lastwagen zur Station Süd. Und dann …",
+        "DER GAST: Und dann?",
+        "DER WIRT (zuckt die Achseln): Dann weiß es keiner.",
+        "(Die Tür geht auf. Der FUHRMANN trägt etwas herein, das in Sackleinen gewickelt ist. Stille. Er stellt es ab und wickelt es aus. Es ist ein Stuhl. Vier Beine, eine Lehne, das Holz noch hell.)",
+        "DER FUHRMANN: Lieferung für Roche-Noire. Mit Gruß von den Ateliers du Noble. Es kommen noch acht.",
+        "(Niemand rührt sich. Dann steht DER GAST langsam von seiner Kiste auf, geht um den Stuhl herum, prüft jedes Bein, setzt sich. Der Stuhl hält.)",
+        "DER GAST: Wirt. Die Tafel.",
+        "DER WIRT (wischt die Kreide weg, schenkt ein): Eine Runde aufs Haus. Nur keinen Rum. Rum gibt es immer noch nicht.",
+        "DER GAST (hebt das Glas): Auf Sin-le-Noble. Und auf die Kiste. Sie hat ihren Dienst getan.",
+        "(Vorhang.)",
+        "Nachbemerkung der Redaktion: Ob es ein Stuhl war, wissen wir nicht. Gemessen ist dies: Bis Mitte Mai 1915 waren auf Roche-Noire 0 von 178 verlangten Einheiten Möbel gedeckt. Am 7. August 1915 sind es 9 von 179, eine Woche später 14. Im April 1916 sind es 25 von 182. Auch in Bourg-l’Écorce kommen am 7. August die ersten Möbel an, 2 von 346."
+      ],
+      "grounding": "Spielervorgabe (Interview mit dem Direktor, April 1914): Möbel aus Sin-le-Noble für Roche-Noire und Bourg-l’Écorce. Gemessen (gültiger Spielverlauf): Roche-Noire Möbel 0 von 178 bis zur Messung vom 14.05.1915, 9 von 179 am 07.08.1915, 14 von 179 am 12.08.1915, 25 von 182 am 03.04.1916; Bourg-l’Écorce 0 von 333 bzw. 2 von 346 am 07.08.1915. Les Ateliers du Noble (Industrie 386416): Jahresproduktion 44 (Mai 1915), 50 (September), 70 bei Versand 86 (Oktober 1915). Warenstichproben: Möbel dieser Fabrik an Bord der Linie RC Möbel,Bretter,Glas-Sin-LO-1 mit Ziel Sin-le-Noble Station Süd; den weiteren Weg zeigt die Stichprobe nicht. WC …-Val-Roc befördert laut Name Möbel seit 26.11.1913, RC Bretter,Möbel-Roc-LO-1 seit 27.04.1915 (9 Fahrzeuge im April 1916). Rum in Roche-Noire nicht verlangt, auf der Hauptinsel 0 gedeckt. Erfunden: die Szene, Personen, Dialog, Stuhl, Fuhrmann, Tafel (aus „Kleinanzeigen“, April 1914, und „Glückwünsche“, Dezember 1914).",
+      "refs": {
+        "staedte": [
+          174601,
+          174617,
+          174605
+        ],
+        "linien": [],
+        "personen": [],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1915-11-fragebogen-bourg",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1915-11",
+      "lead": true,
+      "rubrik": "Fragebogen",
+      "titel": "Fragebogen: Bourg-l’Écorce, 3.007 Einwohner",
+      "teaser": "Am 3. November 1915 überschreitet Bourg-l’Écorce als erste Stadt des Archipels die Dreitausend. Wir haben der Stadt unseren Fragebogen geschickt. Sie hat geantwortet.",
+      "body": [
+        "Wie alt fühlen Sie sich? Jünger als ich bin. Als man mich im Dezember 1904 zum ersten Mal gezählt hat, waren es 673 Menschen. Heute sind es 3.007. Ich bin in elf Jahren viermal so groß geworden.",
+        "Ihr schönster Tag? Der 3. November 1915. Dreitausend und sieben. Die sieben habe ich mir für die Statistik aufgehoben.",
+        "Was fehlt Ihnen am meisten? Fisch. Ich verlange 702 Einheiten und bekomme 93. Danach Rum: 351 verlangt, kein einziger Tropfen. Danach Konserven, 51 von 351.",
+        "Und was haben Sie bekommen, das Sie nicht mehr erwartet hatten? Möbel. Sechs Stück, nach Jahren mit null. Ich habe sie in die Schaufenster gestellt, damit alle sie sehen.",
+        "Wie bewegen sich Ihre Bürger? Fast jeder zweite Weg führt über das Netz der Société, 44,6 von hundert, mit dreizehn Straßenbahnen und vielen Bussen. Im November hat die Buslinie 6 von sechs auf elf Wagen aufgestockt. Den Rest erledigen die Füße.",
+        "Was stört Sie? Der Lärm. 75 Dezibel. Valmorin hat sich Mauern gebaut. Ich denke darüber nach.",
+        "Ihr Lieblingsgeräusch? Das Bergwerk am Ortsrand, wenn es läuft. Und die Straßenbahn um sechs Uhr früh.",
+        "Was möchten Sie in zehn Jahren sein? Viertausend. Mit Fisch."
+      ],
+      "grounding": "Gemessen: Bourg-l’Écorce belegter Wohnraum 673 (erste Messung, Dezember 1904) und 3.007 am 03.11.1915 (erste Stadt des Archipels über 3.000); am 03.11.1915 Fisch 93 von 702, Rum 0 von 351, Konserven 51 von 351, Möbel 6 von 349 gedeckt, Netzanteil 44,6 %, Lärm 75,4 dB; Bus Passagiere-Bou-LO-6 von 6 auf 11 Fahrzeuge am 11.11.1915; Eisenerzbergwerk Stufe 8 im Ort, Straßenbahnlinie Tram Passagiere-Bou-LO-1 mit 13 Fahrzeugen (April 1916). Erste Möbel in Bourg-l’Écorce am 07.08.1915 gemessen. Erfunden: die antwortende Stadt, Fragen und Antworten, Schaufenster, Lieblingsgeräusch, Wünsche.",
+      "refs": {
+        "staedte": [
+          174605,
+          174607
+        ],
+        "linien": [],
+        "personen": [],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1915-12-schulaufsatz-vauclaire",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1915-12",
+      "lead": true,
+      "rubrik": "Schulaufsatz",
+      "titel": "„Mein Dorf heißt jetzt Vauclaire“",
+      "teaser": "Seit dem 28. November 1915 gibt es Sarrians nicht mehr. Es gibt Vauclaire. Die Dorfschule hat einen Aufsatz schreiben lassen. Wir drucken den besten, mit freundlicher Genehmigung der Lehrerin.",
+      "body": [
+        "Aufsatz. Thema: Was sich in unserem Dorf verändert hat. Von Marthe, 11 Jahre.",
+        "Mein Dorf hieß Sarrians. Jetzt heißt es Vauclaire. Das ist seit dem 28. November so. Mein Großvater sagt, er bleibt in Sarrians wohnen, auch wenn er dafür nicht umziehen muss. Meine Mutter sagt, Vauclaire klingt nach hellem Wasser. Warum es so heißt, hat uns niemand gesagt. Unsere Lehrerin meint, das hat die Société entschieden. Die Société sagt nichts.",
+        "In unserem Dorf haben immer 217 Menschen gewohnt. Mein Großvater sagt, seit es Zahlen gibt. Im November waren es auf einmal nur 195. Papa sagt, wegen der Gleise, weil Häuser weg mussten. Das weiß aber keiner genau. Jetzt sind wir wieder 224, also mehr als vorher.",
+        "Am 12. Dezember kam die Straßenbahn. Sie hat zwei Wagen und fährt durch das ganze Dorf. Am selben Tag kam auch ein Schiff nach Bourg-l’Écorce. Bourg ist nur vier Kilometer weg, aber das Wasser ist dazwischen. Früher sind die Lastwagen der Société nur an uns vorbeigefahren. Mein Onkel hat einmal ein Telegramm an die Zeitung geschickt: „Von uns fährt noch keiner mit.“ Das stimmt jetzt nicht mehr. Am ersten Tag sind zehn von hundert Wegen mit der Société gefahren, sagt die Zeitung, und im Frühjahr fast vierzig.",
+        "Ich fahre jeden Samstag mit dem Schiff nach Bourg und schaue mir die Möbel in den Schaufenstern an. Wenn ich groß bin, möchte ich Straßenbahnfahrerin werden, oder Kapitänin, oder die Person, die bei der Société die Namen aussucht.",
+        "Bemerkung der Lehrerin: Inhaltlich sehr gut, die Zahlen hast du sorgfältig nachgeschlagen. „Sarrians“ bitte nicht mehr verwenden, auch nicht in Klammern. Note: gut."
+      ],
+      "grounding": "Gemessen: Umbenennung Sarrians → Vauclaire ab der Messung vom 28.11.1915 (Grund nicht gemessen; ein Spiel-Ortsname kann vom Spieler geändert werden). Belegter Wohnraum 217 von der ersten Messung (Dezember 1904) bis Oktober 1915, 195 im Monatsstand November 1915, 219 im Dezember, 224 im April 1916 (Ursache des Rückgangs nicht gemessen). Neue Buslinie Bus Passagiere-Vau-LO-1 (05.12.1915, 0 Fahrzeuge), ab 12.12.1915 Straßenbahn Tram Passagiere-Vau-LO-1 (2 Fahrzeuge im April 1916); neue Passagierschifflinie WP Passagiere-Vau-Bou-IC-1 am 12.12.1915 (1 Fahrzeug, April 1916 2). Netzanteil 0 % am 28.11.1915, 10 % am 12.12.1915, 39,1 % im April 1916. Entfernung Vauclaire–Bourg-l’Écorce 3,9 km (Seekarte). Lkw-Linie nach Sin-le-Noble seit April 1914, Passagiere ab 21.10.1914 nicht mehr im Namen. Erfunden: Marthe, Familie, Lehrerin, Aufsatz, Samstagsfahrten, Schaufenster; der Onkel verweist auf das „Telegramm aus Sarrians“ (April 1914).",
+      "refs": {
+        "staedte": [
+          174634,
+          174605,
+          174617
+        ],
+        "linien": [],
+        "personen": [],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1916-01-reclame-mack",
+      "typ": "anzeige",
+      "art": "fiktion",
+      "date": "1916-01",
+      "rubrik": "Réclame",
+      "titel": "Mack AC Rungen",
+      "anzeige": {
+        "kopf": "Mack AC Rungen",
+        "zeilen": [
+          "Der Lastwagen für Langholz, neu im Katalog 1916",
+          "Sieben Wagen fahren schon für Bourg-l’Écorce",
+          "Rungen links, Rungen rechts – und kein Stamm rollt davon",
+          "Für Sin-le-Noble, wo die Holzfäller jetzt auf Stufe 16 schlagen"
+        ],
+        "fuss": "Société des Routes et des Rails · im Dienst seit 6. Januar 1916"
+      },
+      "grounding": "Gemessen: Fahrzeugmodell Mack AC Rungen (verfügbar ab 1916) erstmals gekauft am 06.01.1916, 7 Fahrzeuge auf RC Passagiere,Holz-Bou-LO-1 in Bourg-l’Écorce (erstmals erfasst 08.01.1916). Sin-le-Noble Holzfällerlager Stufe 16 seit 24.12.1915 (Februar 1916 Stufe 17). Erfunden: Werbetext; dass die Mack-Wagen Holz aus Sin-le-Noble fahren, ist nicht belegt.",
+      "refs": {
+        "staedte": [
+          174605,
+          174617
+        ],
+        "linien": [],
+        "personen": [],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1916-03-ratgeber-honorine",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1916-03",
+      "rubrik": "Fragen Sie Honorine",
+      "titel": "Fragen Sie Honorine",
+      "teaser": "Honorine vom Hafen in Port des Alizés beantwortet Leserbriefe. Rum hat sie immer noch nicht, Rat dafür reichlich.",
+      "body": [
+        "Liebe Honorine, ich bin seit 1911 fast jeden Tag mit der Société gefahren, die Zeitung hat es sogar gedruckt. Am 27. Februar habe ich eine neue Stelle bekommen und am selben Tag ein Automobil. Seitdem fahre ich selbst. Bin ich eine Verräterin? Clémence B., Bourg-l’Écorce.",
+        "Liebe Clémence, viereinhalb Jahre lang hat der Monitor dich in 329 von 339 Messungen im öffentlichen Verkehr gesehen und kein einziges Mal im Automobil. Wer so treu war, darf einmal fremdgehen. Grüß die Straßenbahn, wenn du sie überholst. Und nimm sonntags trotzdem den Wagen der Société, damit sie dich nicht vergisst.",
+        "Liebe Honorine, im April 1914 habe ich meine Stelle verloren, im Dezember eine neue gefunden, und seit dem 14. Mai 1915 suche ich wieder. Ich fahre trotzdem jeden Tag mit der Straßenbahn durch die Stadt. Ist das Verschwendung? Angèle P., Pointe des Pêcheurs.",
+        "Liebe Angèle, wer fährt, wird gesehen. Wer zu Hause sitzt, nicht. Fahr weiter. Und wenn dir jemand eine Stelle am Hafen anbietet: Ich suche jemanden, der Rum besorgen kann.",
+        "Liebe Honorine, wir in Garches haben seit Februar 1915 eine Viehzucht, aber sie läuft noch nicht. Unser Sägewerk ist im Januar geschlossen worden. Acht Schiffe der Société mit „Möbel“ im Namen fahren an uns vorbei, und keiner von uns fährt mit. Was sollen wir tun? Der Gemeinderat von Garches.",
+        "Liebe Garchois, ihr seid 399, und das schon so lange, wie ich denken kann. Schreibt an die Société. Schreibt an diese Zeitung. Und wenn alles nichts hilft: Winkt weiter. Die Leute in Vauclaire haben auch gewunken, und jetzt haben sie eine Straßenbahn.",
+        "Liebe Honorine, ich habe zehn Jahre lang alles zu Fuß gemacht, dann bin ich Bus gefahren, und seit dem 30. März habe ich keine Stelle mehr. Jetzt gehe ich wieder zu Fuß. War der Bus schuld? Théodore D., Meyzieu.",
+        "Lieber Théodore, der Bus ist an gar nichts schuld. Er fährt weiter, wenn du ihn wieder brauchst. Und zu Fuß, das hast du zehn Jahre lang bewiesen, kommst du überall hin."
+      ],
+      "grounding": "Gemessen (Beobachtungsgruppe, Namen von der Redaktion vergeben): Person 48725 (Bourg-l’Écorce) 1911–1915 in 329 von 339 Messungen im öffentlichen Verkehr (10 zu Fuß, nie im Auto), am 27.02.1916 erste Fahrt im Auto und wieder Arbeitsplatz, am 03.04.1916 im Auto unterwegs. Person 82141 (Pointe des Pêcheurs) ohne Arbeitsplatz ab 14.04.1914, wieder mit Arbeitsplatz 03.12.1914, ohne ab 14.05.1915 (bis April 1916), am 03.04.1916 im öffentlichen Verkehr. Person 72703 (Meyzieu) bis Ende 1913 nur zu Fuß, erste ÖV-Fahrt 15.12.1914, ohne Arbeitsplatz ab 30.03.1916, am 03.04.1916 zu Fuß. Garches: Viehzuchtbetrieb Neugründung 20.02.1915 (Stufe 8, ohne Produktion im April 1916), Sägewerk fehlt ab 15.01.1916, 399 Einwohner in jedem Monatsstand seit Dezember 1904, Netzanteil 0 %, WC Passagiere,Möbel,Bretter-Gar-Val-RE-1 mit 8 Fahrzeugen. Vauclaire Netzanteil 39,1 % (April 1916). Rum Port des Alizés 0 von 204. Erfunden: Briefe, Antworten, Honorines Ratschläge.",
+      "refs": {
+        "staedte": [
+          174605,
+          174602,
+          174644,
+          174616,
+          174632,
+          174634
+        ],
+        "linien": [],
+        "personen": [
+          48725,
+          82141,
+          72703
+        ],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1916-04-marktbericht",
+      "typ": "einordnung",
+      "art": "einordnung",
+      "date": "1916-04",
+      "lead": true,
+      "rubrik": "Marktbericht",
+      "titel": "Marktbericht: Was im Frühjahr 1916 ankommt und was nicht",
+      "teaser": "Nur gemessen, nichts erfunden: die Versorgung der Städte im April 1916 im Vergleich zum Januar 1915.",
+      "body": [
+        "Neu am Markt. Möbel werden zum ersten Mal notiert: Roche-Noire 25 von 182 verlangten Einheiten (Januar 1915: 0 von 175), Bourg-l’Écorce 7 von 360 (0 von 327). Die Ateliers du Noble in Sin-le-Noble haben im Oktober 1915 übers Jahr 70 Einheiten hergestellt, im April 1916 sind es 30. Werkzeuge erreichen erstmals Port des Alizés: 39 von 207 (0 von 200).",
+        "Gestiegen. Zucker in Port des Alizés 136 von 409 (74 von 398). Bretter in Sin-le-Noble 53 von 62 (8 von 37); das Sägewerk dort hat übers Jahr 192 Einheiten geschnitten, das Holzfällerlager steht inzwischen auf Stufe 17. Treibstoff in Pointe des Pêcheurs 68 von 242 (38 von 220).",
+        "Gefallen. Bretter auf Roche-Noire 31 von 365 (131 von 350), seit die Lastwagenlinie auf der Insel neben Brettern auch Möbel führt. Bretter in Montfougère 72 von 225 (152 von 196). Kleidung in Valmorin 52 von 98 (60 von 88).",
+        "Unverändert ohne Ware. Rum in Bourg-l’Écorce (0 von 359), Port des Alizés (0 von 204) und Pointe des Pêcheurs (0 von 165). Konserven in Valmorin (0 von 98). Fahrzeuge in Port des Alizés (0 von 103), und neu verlangt Bourg-l’Écorce 180. Die Fahrzeugfabrik in Lardy steht weiter still.",
+        "Betriebe. Konserven: In Méru wird eine Konservenfabrik eingetragen, in Gleizé verschwindet eine (beide zwischen Mitte Mai und Anfang August 1915); die neue steht im April 1916 noch still. Kohle: In Pointe des Pêcheurs entsteht am 11. März 1915 ein Kohlebergwerk, im Sommer auf Stufe 4. Erz: Péronne bekommt am 3. April 1916 ein Eisenerzbergwerk, Le Malesherbois am 18. Februar ein Stahlwerk.",
+        "Kasse. Januar 1915: 359,0 Millionen. Dezember 1915: 505,0 Millionen. April 1916: 555,5 Millionen."
+      ],
+      "grounding": "Zusammenstellung der Redaktion aus den Messdaten des gültigen Spielverlaufs, nichts erfunden: Versorgung (gedeckt von verlangt) laut Stadtstand 03.04.1916 bzw. 23.01.1915; Les Ateliers du Noble Jahresproduktion 70 (19.10.1915) und 30 (03.04.1916); Sin-le-Noble Sägewerk Jahresproduktion 192, Holzfällerlager Stufe 17 (seit 07.02.1916); RC Bretter-Roc-LO-1 befördert ab 27.04.1915 auch Möbel; Neugründung Méru Konservenfabrik und Schließung Gleizé Konservenfabrik zwischen 15.05. und 07.08.1915 (unscharfer Zeitpunkt), Pointe des Pêcheurs Kohlebergwerk 11.03.1915 (Stufe 4 ab Sommer 1915), Le Malesherbois Stahlwerk 18.02.1916, Péronne Eisenerzbergwerk 03.04.1916; Lardy Fahrzeugfabrik Stufe 1 ohne Produktion. Kassenstand 359.006.966 (Januar 1915), 504.954.643 (Dezember 1915), 555.519.177 (April 1916). Die Verbindung „seit die Linie auch Möbel führt“ ist zeitlich, nicht ursächlich belegt.",
+      "refs": {
+        "staedte": [
+          174601,
+          174605,
+          174617,
+          174632,
+          174602,
+          174646,
+          174607,
+          174612,
+          174620,
+          174623,
+          174636
+        ],
+        "linien": [],
+        "personen": [],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1916-04-postkarte-peronne",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1916-04",
+      "rubrik": "Postkarte",
+      "titel": "Postkarte aus Péronne",
+      "teaser": "Péronne hat wieder einen Betrieb im Register. Der Gemeinderat schreibt nach Lardy, diesmal kurz.",
+      "body": [
+        "Vorderseite: Ansicht von Péronne. Ein Bauernhof, ein Acker mit Kartoffeln, im Hintergrund ein frisch gegrabenes Loch. Aufdruck: „Grüße aus Péronne – jetzt mit Bergwerk!“",
+        "Rückseite: Liebe Nachbarn in Lardy, seit dem 3. April 1916 haben wir ein Eisenerzbergwerk, Stufe 2. Es braucht keine Reifen, kein Blech und keine Maschinen, nur Leute mit Schaufeln. Davon haben wir 191. Eine Linie der Société haben wir immer noch nicht. Wie geht es Ihrer Fahrzeugfabrik? Bourg-l’Écorce verlangt jetzt auch Fahrzeuge, 180 Stück, Port des Alizés 103. Das wären 283 gute Gründe, anzufangen. Ihre Glashütte, lesen wir, war im Februar 1915 kurz verschwunden und ist wieder da. Herzlichen Glückwunsch, das kennen wir. Das Schild aus unserem Keller ist noch zu haben. Ihr Gemeinderat von Péronne.",
+        "Poststempel: Péronne, April 1916. Porto: 10 Centimes. Entfernung nach Lardy laut neuer Seekarte 8,7 Kilometer Luftlinie. Die Karte war, wie der Postbote betont, schneller als jedes Automobil aus Lardy."
+      ],
+      "grounding": "Gemessen: Péronne Eisenerzbergwerk Neugründung 03.04.1916 (Stufe 2); Péronne 191 Einwohner, keine Linie, Bauernhof Stufe 6. Lardy Fahrzeugfabrik Stufe 1 ohne Produktion (Rohstoffe Blech, Maschinen, Reifen), Lardy Glashütte fehlt ab 06.02.1915, Neugründung gemessen am 07.08.1915. Fahrzeuge verlangt: Bourg-l’Écorce 180, Port des Alizés 103, jeweils 0 gedeckt (April 1916). Entfernung Péronne–Lardy 8,7 km zwischen den Mitten der Begrenzungsboxen (Seekarte). Erfunden: Postkarte, Ansicht, Text, Schild (aus „Versteigerung“, Februar 1914, und „Offener Brief“, Juni 1914), Postbote.",
+      "refs": {
+        "staedte": [
+          174636,
+          174612,
+          174605,
+          174632
+        ],
+        "linien": [],
+        "personen": [],
+        "betriebe": []
+      }
     }
   ]
 }
