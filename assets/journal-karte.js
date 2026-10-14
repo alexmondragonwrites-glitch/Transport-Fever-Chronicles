@@ -5,6 +5,7 @@
 const LAYERS = [['gelaende','Küsten & Tiefen'],['linien','Linien'],['halte','Halte'],['staedte','Städte'],['betriebe','Betriebe'],
   ['warenwege','Waren unterwegs'],['wahrzeichen','Wahrzeichen']];
 const STATUS = {aktiv:['produziert','var(--palm)'], gestoppt:['steht still','var(--red)'], ungeprueft:['wird geprüft','var(--muted)']};
+const ATLAS_COLORS = {personenzug:'#303331', gueterzug:'#685441', tram:'#876a4c', bus:'#967342', lkw:'#92604b', passagierschiff:'#426576', frachtschiff:'#607e87', unbekannt:'#81796c'};
 const SHIPS = new Set(['frachtschiff','passagierschiff']);
 const KIND_ORDER = ['personenzug','gueterzug','tram','bus','lkw','passagierschiff','frachtschiff','unbekannt'];
 
@@ -88,7 +89,7 @@ function terrainSVG(){
   const T = M.terrain; if(!T) return '';
   const path = (d, cls) => d ? `<path class="${cls}" d="${d}"/>` : '';
   return `<g class="k-terrain">${path(T.mid?.fill,'k-mid')}${path(T.shallow?.fill,'k-shallow')}${path(T.coast.line,'k-surf2')}${path(T.coast.line,'k-surf1')}
-    ${path(T.coast.fill,'k-land')}${T.tints.map((d,i)=>path(d,'k-tint k-tint'+i)).join('')}${T.contours.map(d=>path(d,'k-contour')).join('')}
+    ${path(T.coast.fill,'k-land')}${T.tints.map((d,i)=>path(d,'k-tint k-tint'+i)).join('')}${T.tints.map(d=>`<path d="${d}" fill="url(#k-engraving)"/>`).join('')}${T.contours.map(d=>path(d,'k-contour')).join('')}
     ${path(T.mid?.line,'k-isobath')}${path(T.shallow?.line,'k-isobath')}${path(T.coast.line,'k-coast')}</g>`;
 }
 
@@ -121,6 +122,7 @@ function symbols(k, f=1){
     const d = 'M'+pts.map(p=>P(p.x,p.y).join(' ')).join('L');
     const w = 1.2+Math.min(3.5, Math.sqrt(l.fahrzeuge||1)*0.5), dim = selLine && selLine!==l;
     out.push(`<path class="k-line${dim?' k-dim':''}" d="${d}" style="stroke:${KIND_COLORS[l.art]||'var(--muted)'};stroke-width:${px(selLine===l?w+2.5:w)}${SHIPS.has(l.art)?`;stroke-dasharray:${px(7)} ${px(4)}`:''}" data-k="line" data-id="${l.id}"><title>${E(l.name)} · ${N(l.fahrzeuge)} Fahrzeuge · ${l.halte.length} Halte</title></path>`);
+    if(l.art==='personenzug'||l.art==='gueterzug') out.push(`<path class="k-rail-inset${dim?' k-dim':''}" d="${d}" style="stroke-width:${px(Math.max(.6,w*.32))};stroke-dasharray:${px(6)} ${px(3)}"/>`);
   }
   if(S.layers.has('halte') || selLine){
     const shown = selLine ? new Set(selLine.halte) : null;
@@ -217,26 +219,26 @@ function info(){
 }
 
 export function karteView(D, ctx){
-  C = ctx;
+  C = {...ctx, KIND_COLORS:ATLAS_COLORS};
   if(!M || M.K!==D.karte){ M = prepare(D.karte, D); S.kinds = new Set(M.kinds); S.month = M.latest; S.view = null; }
   const {E, N, dayName} = C, K = M.K, f = K.fehlend||{}, missing = Object.values(f).reduce((a,b)=>a+b, 0);
   const active = K.betriebe.filter(i=>i.status==='aktiv').length, stopped = K.betriebe.filter(i=>i.status==='gestoppt').length;
   const ways = K.warenwege;
-  return `<div class="section-header"><div><div class="eyebrow">Belegt · Positionen aus dem Spielmonitor</div><h2>Carte marine de l’Archipel</h2>
+  return `<div class="section-header"><div><div class="eyebrow">Le Journal des Alizés · Illustrierte Kartenbeilage</div><h2>Carte illustrée de l’Archipel</h2>
     <p class="section-lede">Städte nach Einwohnern, Linien nach Art, Betriebe nach Status. Positionen vom ${E(dayName(K.stand.positionen))}${K.gelaende?`, Küsten und Tiefen vom ${E(dayName(K.gelaende.stand))}`:''}.</p></div></div>
   <div class="k-controls"><div class="filters k-layers" role="group" aria-label="Ebenen">${LAYERS.filter(([id])=>id!=='gelaende'||K.gelaende).filter(([id])=>id!=='warenwege'||ways?.wege.length).filter(([id])=>id!=='wahrzeichen'||K.wahrzeichen.length).map(([id,l])=>`<button class="j-chip" data-layer="${id}" aria-pressed="${S.layers.has(id)}">${l}</button>`).join('')}</div>
     <label class="k-time"><span>Zeitreise <strong id="k-month">${E(C.monthName(S.month))}</strong></span><input type="range" id="k-slider" min="0" max="${M.months.length-1}" value="${M.months.indexOf(S.month)}" aria-label="Spielmonat der Karte"></label></div>
   <div class="k-frame" style="--k-ratio:${(M.frame.w/M.frame.h).toFixed(4)}">
-    <svg class="k-map" id="k-map" role="img" aria-label="Seekarte des Archipels mit Städten, Linien und Betrieben" preserveAspectRatio="xMidYMid meet" style="aspect-ratio:${M.frame.w}/${M.frame.h}">
-      <defs><clipPath id="k-clip"><rect x="${M.frame.x}" y="${M.frame.y}" width="${M.frame.w}" height="${M.frame.h}"/></clipPath>
+    <header class="k-atlas-heading"><span class="k-edition">Supplément illustré<br>Le Journal des Alizés</span><div class="k-cartouche"><span class="k-flourish" aria-hidden="true">❦</span><strong>Archipel<br>des Alizés</strong><span id="k-atlas-date">${E(C.monthName(S.month))}</span></div><div class="k-atlas-compass" aria-label="Norden ist oben"><svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="30"/><circle cx="50" cy="50" r="27"/><path d="M50 15L56 44L85 50L56 56L50 85L44 56L15 50L44 44Z"/><path class="k-compass-light" d="M50 15V50H85L56 56L50 85V50H15L44 44Z"/><text x="50" y="10">N</text><text x="50" y="98">S</text><text x="4" y="54">O</text><text x="96" y="54">E</text></svg></div></header>
+    <div class="k-chart-window"><svg class="k-map" id="k-map" role="img" aria-label="Seekarte des Archipels mit Städten, Linien und Betrieben" preserveAspectRatio="xMidYMid meet" style="aspect-ratio:${M.frame.w}/${M.frame.h}">
+      <defs><pattern id="k-engraving" width="180" height="180" patternUnits="userSpaceOnUse"><path d="M0 180L180 0M-45 45L45 -45M135 225L225 135" fill="none" stroke="#655d45" stroke-width="12" opacity=".2"/></pattern><clipPath id="k-clip"><rect x="${M.frame.x}" y="${M.frame.y}" width="${M.frame.w}" height="${M.frame.h}"/></clipPath>
       <marker id="k-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="4" markerHeight="4" orient="auto"><path d="M0 0L10 5L0 10Z" class="k-arrowhead"/></marker></defs>
       <rect class="k-sea" x="${M.frame.x}" y="${M.frame.y}" width="${M.frame.w}" height="${M.frame.h}"/>
       <g clip-path="url(#k-clip)">${terrainSVG()}${graticule()}<g id="k-sym"></g></g>
       <rect class="k-border" x="${M.frame.x}" y="${M.frame.y}" width="${M.frame.w}" height="${M.frame.h}"/></svg>
-    <div class="k-cartouche" aria-hidden="true"><strong>Archipel des Alizés</strong><span>dressée d’après les relevés du Spielmonitor</span></div>
-    <div class="k-rose" aria-hidden="true"><svg viewBox="0 0 40 52"><path d="M20 4L26 30L20 26L14 30Z" class="k-rose-n"/><path d="M20 48L14 22L20 26L26 22Z" class="k-rose-s"/><text x="20" y="4">N</text></svg></div>
+    </div><footer class="k-atlas-footer"><span class="k-atlas-motto">Un archipel, des hommes, des horizons.</span>
     <div class="k-scale" id="k-scale" aria-hidden="true"></div>
-    <div class="k-zoom"><button type="button" data-zoom="1.6" aria-label="Hineinzoomen">+</button><button type="button" data-zoom="0.625" aria-label="Herauszoomen">−</button><button type="button" data-zoom="0" aria-label="Ganze Karte">⤢</button></div>
+    <div class="k-zoom"><button type="button" data-zoom="1.6" aria-label="Hineinzoomen">+</button><button type="button" data-zoom="0.625" aria-label="Herauszoomen">−</button><button type="button" data-zoom="0" aria-label="Ganze Karte">⤢</button></div></footer>
   </div>
   <div class="k-below"><section class="k-info card" id="k-info" aria-live="polite">${info()}</section>${legend()}</div>
   <p class="small">${E(K.hinweis)} Zeitreise: Einwohner je Spielmonat aus den Ortsakten; Linien und Betriebe erscheinen ab ihrer ersten Meldung, eingestellte Linien und geschlossene Betriebe fehlen. „Waren unterwegs“ ist eine Stichprobe der Ladung an Bord${ways?` am ${E(dayName(ways.stand))} (${N(ways.stichprobe)} Stücke${ways.gekappt?', gekappt':''})`:''} und nur beim heutigen Stand sichtbar.
@@ -250,6 +252,7 @@ const scale = svg => Math.max(S.view.w/Math.max(1, svg.clientWidth), S.view.h/Ma
 function draw(){
   const svg = document.getElementById('k-map'); if(!svg) return;
   const v = S.view, k = scale(svg);
+  const date = document.getElementById('k-atlas-date'); if(date) date.textContent = C.monthName(S.month);
   svg.setAttribute('viewBox', `${v.x} ${v.y} ${v.w} ${v.h}`);
   document.getElementById('k-sym').innerHTML = symbols(k, Math.min(1, Math.max(0.55, svg.clientWidth/900)));
   svg.classList.toggle('k-zoomed', v.w < M.frame.w*0.999);
@@ -305,7 +308,7 @@ export function mountKarte(sel){
   };
   svg.onpointerup = e => {
     const was = drag; drag = null;
-    if(was?.moved) return;
+    if(was?.moved){ draw(); return; }
     const hit = e.target.closest('[data-k]');
     select(hit ? {k:hit.dataset.k, id:+hit.dataset.id} : null);
   };
@@ -314,3 +317,4 @@ export function mountKarte(sel){
   observer = new ResizeObserver(()=>draw());
   observer.observe(svg);
 }
+

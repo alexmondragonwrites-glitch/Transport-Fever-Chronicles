@@ -1,7 +1,7 @@
 /* Le Journal des Alizés: monthly newspaper editions built from measured events (data/journal/*.json),
  * the player's own notes (notizen.json) and hand-written editorial pieces (redaktion.json, gazette.json).
  * Measured, stated by the player and invented content stay labelled. */
-import {karteView, mountKarte} from './journal-karte.js?v=20261013-karte';
+import {karteView, mountKarte} from './journal-karte.js?v=20261014-illustrierte-karte';
 const APP = document.getElementById('app');
 const E = v => String(v ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const N = (v, d=0) => Number.isFinite(v) ? new Intl.NumberFormat('de-DE', {maximumFractionDigits:d}).format(v) : '–';
@@ -379,3 +379,4 @@ async function start(){
   }
 }
 start();
+

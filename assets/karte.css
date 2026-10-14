@@ -88,3 +88,26 @@
 
 @media(max-width:800px){.k-below{grid-template-columns:1fr}}
 @media(max-width:650px){.k-frame{padding:6px}.k-cartouche{display:none}.k-rose{right:12px;top:12px;width:26px}.k-scale{left:12px;bottom:12px}.k-zoom{right:12px;bottom:12px}.k-zoom button{width:30px;height:30px}.k-time{max-width:none}}
+
+
+/* Illustrated newspaper supplement. All geography remains data-driven. */
+.k-frame{--ink:#332f29;--panel:#f4e8cf;--muted:#716653;--palm:#697252;--red:#9b5039;--gold:#9a7644;--gold-bright:#c19758;max-width:760px;padding:15px;background:#eee0c3;background-image:repeating-linear-gradient(4deg,transparent 0 3px,#70513206 3px 4px);border:4px double #625542;box-shadow:0 8px 30px #30251a20}
+.k-frame:before{inset:5px;border:1px solid #988468}
+.k-atlas-heading{display:grid;grid-template-columns:1fr 2fr 1fr;align-items:center;gap:18px;padding:18px 10px 24px;color:#332f29}
+.k-edition{font:italic 13px/1.6 var(--serif);text-align:center}
+.k-cartouche{position:relative;left:auto;top:auto;max-width:none;background:#f4e8cf;border:3px double #79694f;border-radius:35% / 12%;box-shadow:0 0 0 4px #eee0c3,0 0 0 5px #a28c69;padding:10px 16px}
+.k-cartouche strong{font-size:clamp(20px,3.4vw,34px);line-height:1.12;letter-spacing:.07em}
+.k-cartouche span{font-size:16px;color:#65543f;margin-top:6px}
+.k-cartouche .k-flourish{font-size:24px;line-height:16px;margin:0 0 8px}
+.k-atlas-compass{width:min(100%,85px);margin:auto}
+.k-atlas-compass svg{display:block;width:100%;fill:#554a38;stroke:#554a38;stroke-width:1}
+.k-atlas-compass circle{fill:none}.k-atlas-compass text{font:12px Georgia,serif;stroke:none;text-anchor:middle}.k-atlas-compass .k-compass-light{fill:#eddec1;stroke-width:.6}
+.k-chart-window{position:relative;border:3px double #726751;background:#9eafb0}
+.k-chart-window:after{content:"";position:absolute;inset:0;pointer-events:none;background:repeating-linear-gradient(0deg,#3f443610 0 1px,transparent 1px 3px),radial-gradient(ellipse at center,transparent 45%,#eee1c140 100%);opacity:.45}
+.k-sea{fill:#9eafb0}.k-mid{fill:#b5c2bd}.k-shallow{fill:#d2d9c9}.k-land{fill:#eee0b9}.k-tint0{fill:#c8c49c}.k-tint1{fill:#a3a184}.k-contour{stroke:#756b4d;stroke-opacity:.65}.k-coast{stroke:#655c47;stroke-width:1}.k-surf1,.k-surf2{stroke:#f7efdc}.k-surf1{stroke-opacity:.65}.k-surf2{stroke-opacity:.3}.k-grid{stroke:#536f73;stroke-opacity:.14}.k-isobath{stroke:#607c81;stroke-opacity:.25}.k-border{stroke:#71644e}
+.k-label-town{font-family:var(--serif);font-style:normal;font-weight:700;stroke:#f6ebd4;fill:#302c25}.k-label-stop,.k-label-ind{stroke:#f6ebd4;fill:#514b3f}
+.k-town{fill:#ab6246;fill-opacity:.65;stroke:#3c3329}.k-town.k-hit{fill-opacity:1}.k-line{stroke-opacity:.9}.k-rail-inset{fill:none;stroke:#f6ebd4;pointer-events:none;stroke-linejoin:round}.k-rail-inset.k-dim{opacity:.22}
+.k-atlas-footer{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:18px 4px 4px;min-height:56px;color:#554a38}
+.k-atlas-motto{font:italic 14px/1.4 var(--serif);max-width:220px}.k-scale{position:static;padding:0;background:none;flex:none}.k-zoom{position:static;flex-direction:row;gap:5px}.k-zoom button{border-radius:0;background:#ecdfc5;color:#41392f;border-color:#8a795e}
+.k-controls{border-block:3px double var(--line-strong);padding:12px 0}.k-time input{accent-color:#607e87}.k-legend{padding:18px;border:3px double var(--line-strong);background:var(--panel)}.k-sw-land{background:#eee0b9}.k-sw-shallow{background:#d2d9c9}
+@media(max-width:650px){.k-frame{padding:9px}.k-atlas-heading{grid-template-columns:1fr 68px;gap:14px;padding:12px 8px 20px}.k-edition{display:none}.k-cartouche{display:block}.k-cartouche strong{font-size:23px}.k-cartouche span{font-size:13px}.k-atlas-footer{flex-wrap:wrap;gap:12px}.k-atlas-motto{flex-basis:100%;max-width:none;text-align:center}.k-zoom{margin-left:auto}.k-atlas-compass{width:65px}}
