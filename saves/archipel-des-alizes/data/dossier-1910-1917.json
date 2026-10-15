@@ -1,0 +1,898 @@
+{
+  "schema_version": 1,
+  "title": "Ein Archipel wächst zusammen",
+  "period": "1910–1917",
+  "baseline": {
+    "generated_by": "scripts/build-decade.mjs",
+    "source": {
+      "monitor_index": "monitor-20261011/index.json",
+      "exported_at": "2026-10-11T18:00:52+02:00",
+      "source_sha256": "b2c76387f5569d83d7bc0ff90d7f7b9e7cd1bc315d6553dba6ab52d0b0dd92a1",
+      "rule": "Nach Rücksprüngen gilt der neu gespielte Verlauf. Einwohner = belegter Wohnraum, letzter Stand je Spielmonat."
+    },
+    "range": {
+      "first_game_date": "1904-12-30",
+      "last_game_date": "1910-07-11",
+      "first_month": "1904-12",
+      "last_month": "1910-07",
+      "first_snapshot": "1905-01-10",
+      "last_snapshot": "1910-07-11"
+    },
+    "gaps": [
+      {
+        "from": "1906-10-01",
+        "to": "1907-03-13"
+      }
+    ],
+    "network": {
+      "first": {
+        "date": "1904-12-30",
+        "lines": 41,
+        "vehicles": 198
+      },
+      "last": {
+        "date": "1910-07-11",
+        "lines": 82,
+        "vehicles": 474,
+        "stations": 146
+      }
+    },
+    "population": {
+      "periods": [
+        "1904-12",
+        "1905-03",
+        "1905-06",
+        "1905-09",
+        "1905-12",
+        "1906-03",
+        "1906-06",
+        "1906-09",
+        "1907-03",
+        "1907-06",
+        "1907-09",
+        "1907-12",
+        "1908-03",
+        "1908-06",
+        "1908-09",
+        "1908-12",
+        "1909-03",
+        "1909-06",
+        "1909-09",
+        "1909-12",
+        "1910-03",
+        "1910-06",
+        "1910-07"
+      ],
+      "groups": {
+        "kueste": [
+          2256,
+          2471,
+          2686,
+          2889,
+          3069,
+          3271,
+          3435,
+          3654,
+          3962,
+          4207,
+          4412,
+          4624,
+          4850,
+          5046,
+          5233,
+          5404,
+          5551,
+          5688,
+          5812,
+          5971,
+          6094,
+          6215,
+          6225
+        ],
+        "inseln": [
+          486,
+          486,
+          486,
+          486,
+          486,
+          486,
+          486,
+          486,
+          486,
+          486,
+          486,
+          487,
+          487,
+          494,
+          497,
+          505,
+          511,
+          517,
+          526,
+          534,
+          537,
+          543,
+          543
+        ],
+        "hinterland": [
+          8657,
+          8657,
+          8657,
+          8657,
+          8657,
+          8657,
+          8657,
+          8657,
+          8657,
+          8657,
+          8657,
+          8657,
+          8657,
+          8657,
+          8657,
+          8657,
+          8657,
+          8657,
+          8657,
+          8657,
+          8657,
+          8657,
+          8657
+        ],
+        "gesamt": [
+          11399,
+          11614,
+          11829,
+          12032,
+          12212,
+          12414,
+          12578,
+          12797,
+          13105,
+          13350,
+          13555,
+          13768,
+          13994,
+          14197,
+          14387,
+          14566,
+          14719,
+          14862,
+          14995,
+          15162,
+          15288,
+          15415,
+          15425
+        ]
+      }
+    },
+    "kueste": {
+      "first": 2256,
+      "last": 6225,
+      "change": 3969,
+      "factor": 2.8,
+      "line_usage_min": 45,
+      "line_usage_max": 65,
+      "noise_max": 75
+    },
+    "inseln": {
+      "first": 486,
+      "last": 543,
+      "change": 57,
+      "factor": 1.1
+    },
+    "gesamt": {
+      "first": 11399,
+      "last": 15425,
+      "change": 4026,
+      "factor": 1.4
+    },
+    "hinterland": {
+      "count": 43,
+      "residents_first": 8657,
+      "residents_last": 8657,
+      "unchanged_count": 43,
+      "line_usage_max_last": 0,
+      "noise_avg_last": 64
+    },
+    "pollution_scale_max": 20043,
+    "towns": {
+      "port": {
+        "name": "Port des Alizés",
+        "former_name": null,
+        "group": "kueste",
+        "residents_first": 728,
+        "residents_first_date": "1904-12",
+        "residents_last": 1468,
+        "residents_last_date": "1910-07",
+        "factor": 2,
+        "line_usage_first": 46,
+        "line_usage_last": 61,
+        "noise_first": 70,
+        "noise_last": 72,
+        "pollution_first": 16146,
+        "pollution_last": 16451,
+        "coverage_first": 31,
+        "coverage_last": 29,
+        "unsupplied_goods": [
+          "Rum",
+          "Werkzeuge"
+        ]
+      },
+      "pointe": {
+        "name": "Pointe des Pêcheurs",
+        "former_name": null,
+        "group": "kueste",
+        "residents_first": 261,
+        "residents_first_date": "1904-12",
+        "residents_last": 1006,
+        "residents_last_date": "1910-07",
+        "factor": 3.9,
+        "line_usage_first": 62,
+        "line_usage_last": 65,
+        "noise_first": 70,
+        "noise_last": 74,
+        "pollution_first": 9815,
+        "pollution_last": 18184,
+        "coverage_first": 48,
+        "coverage_last": 25,
+        "unsupplied_goods": [
+          "Werkzeuge"
+        ]
+      },
+      "bourg": {
+        "name": "Bourg-l’Écorce",
+        "former_name": null,
+        "group": "kueste",
+        "residents_first": 673,
+        "residents_first_date": "1904-12",
+        "residents_last": 2225,
+        "residents_last_date": "1910-07",
+        "factor": 3.3,
+        "line_usage_first": 16,
+        "line_usage_last": 45,
+        "noise_first": 67,
+        "noise_last": 75,
+        "pollution_first": 7022,
+        "pollution_last": 20043,
+        "coverage_first": 22,
+        "coverage_last": 16,
+        "unsupplied_goods": [
+          "Rum",
+          "Möbel"
+        ]
+      },
+      "valmorin": {
+        "name": "Valmorin",
+        "former_name": "Bry-sur-Marne",
+        "group": "kueste",
+        "residents_first": 228,
+        "residents_first_date": "1904-12",
+        "residents_last": 725,
+        "residents_last_date": "1910-07",
+        "factor": 3.2,
+        "line_usage_first": 0,
+        "line_usage_last": 64,
+        "noise_first": 63,
+        "noise_last": 72,
+        "pollution_first": 40,
+        "pollution_last": 17656,
+        "coverage_first": 0,
+        "coverage_last": 20,
+        "unsupplied_goods": [
+          "Kleidung",
+          "Maschinen"
+        ]
+      },
+      "anse": {
+        "name": "Anse Dorée",
+        "former_name": null,
+        "group": "kueste",
+        "residents_first": 366,
+        "residents_first_date": "1904-12",
+        "residents_last": 801,
+        "residents_last_date": "1910-07",
+        "factor": 2.2,
+        "line_usage_first": 27,
+        "line_usage_last": 47,
+        "noise_first": 69,
+        "noise_last": 72,
+        "pollution_first": 9388,
+        "pollution_last": 17833,
+        "coverage_first": 54,
+        "coverage_last": 28,
+        "unsupplied_goods": [
+          "Sugar",
+          "Kleidung",
+          "Maschinen"
+        ]
+      },
+      "roche": {
+        "name": "Roche-Noire",
+        "former_name": "Pont-Saint-Martin",
+        "group": "inseln",
+        "residents_first": 355,
+        "residents_first_date": "1904-12",
+        "residents_last": 368,
+        "residents_last_date": "1910-07",
+        "factor": 1,
+        "line_usage_first": 0,
+        "line_usage_last": 0,
+        "noise_first": 63,
+        "noise_last": 64,
+        "pollution_first": 171,
+        "pollution_last": 4771,
+        "coverage_first": 0,
+        "coverage_last": 17,
+        "unsupplied_goods": [
+          "Gemüse"
+        ]
+      },
+      "mont": {
+        "name": "Montfougère",
+        "former_name": "Divatte-sur-Loire",
+        "group": "inseln",
+        "residents_first": 131,
+        "residents_first_date": "1904-12",
+        "residents_last": 175,
+        "residents_last_date": "1910-07",
+        "factor": 1.3,
+        "line_usage_first": 0,
+        "line_usage_last": 0,
+        "noise_first": 64,
+        "noise_last": 63,
+        "pollution_first": 163,
+        "pollution_last": 4653,
+        "coverage_first": 0,
+        "coverage_last": 25,
+        "unsupplied_goods": [
+          "Fisch"
+        ]
+      }
+    },
+    "lines": {
+      "hauptbahn": {
+        "name": "TP Passagiere-PordesAli-AnsDor-RE-1",
+        "first_seen": "1904-12-30",
+        "existed_at_start": true,
+        "after_gap": false,
+        "vehicles_first": 1,
+        "vehicles_last": 10
+      },
+      "tram_port": {
+        "name": "Tram Passagiere-PordesAli-LO-1",
+        "first_seen": "1905-01-28",
+        "existed_at_start": false,
+        "after_gap": false,
+        "vehicles_first": 3,
+        "vehicles_last": 3
+      },
+      "tram_bourg": {
+        "name": "Tram Passagiere-Bou-LO-1",
+        "first_seen": "1905-06-10",
+        "existed_at_start": false,
+        "after_gap": false,
+        "vehicles_first": 0,
+        "vehicles_last": 13
+      },
+      "bus_valmorin": {
+        "name": "Bus Passagiere-Val-LO-1",
+        "first_seen": "1905-12-21",
+        "existed_at_start": false,
+        "after_gap": false,
+        "vehicles_first": 4,
+        "vehicles_last": 16
+      },
+      "tram_pointe": {
+        "name": "Tram Passagiere-PoidesPêc-LO-1",
+        "first_seen": "1907-03-13",
+        "existed_at_start": false,
+        "after_gap": true,
+        "vehicles_first": 4,
+        "vehicles_last": 4
+      },
+      "ship_roche": {
+        "name": "WC Passagiere,Bretter,Kohle-Val-Roc-IC-1",
+        "first_seen": "1907-05-29",
+        "existed_at_start": false,
+        "after_gap": false,
+        "vehicles_first": 1,
+        "vehicles_last": 5
+      },
+      "ship_mont": {
+        "name": "WC Passagiere,Holz,Bretter-Mon-Val-IC-1",
+        "first_seen": "1907-08-02",
+        "existed_at_start": false,
+        "after_gap": false,
+        "vehicles_first": 2,
+        "vehicles_last": 3
+      }
+    }
+  },
+  "stand": {
+    "date": "1917-10-15",
+    "recorded_at": "2026-10-15T18:19:03+02:00",
+    "messungen": 1093,
+    "zeitspruenge": 5,
+    "staedtestand": "1917-10-15"
+  },
+  "fleet_stand": {
+    "date": "1917-10-15",
+    "recorded_at": "2026-10-15T18:19:03+02:00",
+    "messungen": 1093,
+    "zeitspruenge": 5
+  },
+  "fleet": {
+    "monat": "1917-10",
+    "fahrzeuge": {
+      "personenzug": 13,
+      "bus": 145,
+      "frachtschiff": 308,
+      "passagierschiff": 18,
+      "tram": 45,
+      "lkw": 303,
+      "gueterzug": 22
+    },
+    "linien": {
+      "personenzug": 2,
+      "bus": 41,
+      "frachtschiff": 34,
+      "passagierschiff": 11,
+      "tram": 7,
+      "lkw": 47,
+      "gueterzug": 12
+    },
+    "gesamt_fahrzeuge": 882,
+    "gesamt_linien": 154,
+    "kasse": 751911890,
+    "modelle": 21
+  },
+  "fleet_1910_07": {
+    "monat": "1910-07",
+    "fahrzeuge": {
+      "frachtschiff": 153,
+      "lkw": 165,
+      "bus": 84,
+      "passagierschiff": 7,
+      "gueterzug": 10,
+      "tram": 25,
+      "personenzug": 10
+    },
+    "linien": {
+      "frachtschiff": 18,
+      "lkw": 28,
+      "bus": 20,
+      "passagierschiff": 3,
+      "gueterzug": 8,
+      "tram": 4,
+      "personenzug": 1
+    },
+    "gesamt_fahrzeuge": 474,
+    "gesamt_linien": 82,
+    "kasse": 113828756
+  },
+  "towns": [
+    {
+      "id": 174605,
+      "name": "Bourg-l’Écorce",
+      "frueher": [],
+      "einwohner": 3252,
+      "netzanteil_prozent": 42.911556363106,
+      "waren": [
+        {
+          "bereich": "Gewerbe",
+          "ware": "Fisch",
+          "bedarf": 769,
+          "gedeckt": 186
+        },
+        {
+          "bereich": "Gewerbe",
+          "ware": "Rum",
+          "bedarf": 384,
+          "gedeckt": 0
+        },
+        {
+          "bereich": "Gewerbe",
+          "ware": "Konserven",
+          "bedarf": 384,
+          "gedeckt": 51
+        },
+        {
+          "bereich": "Industrie",
+          "ware": "Bretter",
+          "bedarf": 781,
+          "gedeckt": 273
+        },
+        {
+          "bereich": "Industrie",
+          "ware": "Fahrzeuge",
+          "bedarf": 195,
+          "gedeckt": 0
+        },
+        {
+          "bereich": "Industrie",
+          "ware": "Möbel",
+          "bedarf": 390,
+          "gedeckt": 41
+        }
+      ],
+      "juli_1910": {
+        "monat": "1910-07",
+        "einwohner": 2223
+      }
+    },
+    {
+      "id": 174632,
+      "name": "Port des Alizés",
+      "frueher": [],
+      "einwohner": 2178,
+      "netzanteil_prozent": 56.115806102753,
+      "waren": [
+        {
+          "bereich": "Gewerbe",
+          "ware": "Sugar",
+          "bedarf": 431,
+          "gedeckt": 126
+        },
+        {
+          "bereich": "Gewerbe",
+          "ware": "Rum",
+          "bedarf": 215,
+          "gedeckt": 0
+        },
+        {
+          "bereich": "Gewerbe",
+          "ware": "Gemüse",
+          "bedarf": 431,
+          "gedeckt": 111
+        },
+        {
+          "bereich": "Industrie",
+          "ware": "Fahrzeuge",
+          "bedarf": 109,
+          "gedeckt": 0
+        },
+        {
+          "bereich": "Industrie",
+          "ware": "Treibstoff",
+          "bedarf": 438,
+          "gedeckt": 196
+        },
+        {
+          "bereich": "Industrie",
+          "ware": "Werkzeuge",
+          "bedarf": 219,
+          "gedeckt": 22
+        }
+      ],
+      "juli_1910": {
+        "monat": "1910-07",
+        "einwohner": 1480
+      }
+    },
+    {
+      "id": 174602,
+      "name": "Pointe des Pêcheurs",
+      "frueher": [],
+      "einwohner": 1486,
+      "netzanteil_prozent": 52.571427822113,
+      "waren": [
+        {
+          "bereich": "Gewerbe",
+          "ware": "Fisch",
+          "bedarf": 347,
+          "gedeckt": 97
+        },
+        {
+          "bereich": "Gewerbe",
+          "ware": "Rum",
+          "bedarf": 173,
+          "gedeckt": 0
+        },
+        {
+          "bereich": "Gewerbe",
+          "ware": "Konserven",
+          "bedarf": 173,
+          "gedeckt": 55
+        },
+        {
+          "bereich": "Industrie",
+          "ware": "Treibstoff",
+          "bedarf": 254,
+          "gedeckt": 59
+        },
+        {
+          "bereich": "Industrie",
+          "ware": "Werkzeuge",
+          "bedarf": 127,
+          "gedeckt": 0
+        }
+      ],
+      "juli_1910": {
+        "monat": "1910-07",
+        "einwohner": 1009
+      }
+    },
+    {
+      "id": 174607,
+      "name": "Valmorin",
+      "frueher": [
+        {
+          "name": "Bry-sur-Marne",
+          "bis": "1905-12-13"
+        }
+      ],
+      "einwohner": 1278,
+      "netzanteil_prozent": 50.167065858841,
+      "waren": [
+        {
+          "bereich": "Gewerbe",
+          "ware": "Fleisch",
+          "bedarf": 227,
+          "gedeckt": 67
+        },
+        {
+          "bereich": "Gewerbe",
+          "ware": "Kleidung",
+          "bedarf": 113,
+          "gedeckt": 50
+        },
+        {
+          "bereich": "Gewerbe",
+          "ware": "Konserven",
+          "bedarf": 113,
+          "gedeckt": 66
+        },
+        {
+          "bereich": "Industrie",
+          "ware": "Bretter",
+          "bedarf": 262,
+          "gedeckt": 100
+        },
+        {
+          "bereich": "Industrie",
+          "ware": "Maschinen",
+          "bedarf": 131,
+          "gedeckt": 79
+        }
+      ],
+      "juli_1910": {
+        "monat": "1910-07",
+        "einwohner": 729
+      }
+    },
+    {
+      "id": 174645,
+      "name": "Anse Dorée",
+      "frueher": [],
+      "einwohner": 1126,
+      "netzanteil_prozent": 54.269975423813,
+      "waren": [
+        {
+          "bereich": "Gewerbe",
+          "ware": "Sugar",
+          "bedarf": 309,
+          "gedeckt": 0
+        },
+        {
+          "bereich": "Gewerbe",
+          "ware": "Gemüse",
+          "bedarf": 309,
+          "gedeckt": 170
+        },
+        {
+          "bereich": "Gewerbe",
+          "ware": "Kleidung",
+          "bedarf": 154,
+          "gedeckt": 18
+        },
+        {
+          "bereich": "Industrie",
+          "ware": "Maschinen",
+          "bedarf": 122,
+          "gedeckt": 0
+        },
+        {
+          "bereich": "Industrie",
+          "ware": "Treibstoff",
+          "bedarf": 245,
+          "gedeckt": 140
+        }
+      ],
+      "juli_1910": {
+        "monat": "1910-07",
+        "einwohner": 803
+      }
+    },
+    {
+      "id": 174601,
+      "name": "Roche-Noire",
+      "frueher": [
+        {
+          "name": "Pont-Saint-Martin",
+          "bis": "1907-05-07"
+        }
+      ],
+      "einwohner": 1086,
+      "netzanteil_prozent": 14.64354544878,
+      "waren": [
+        {
+          "bereich": "Gewerbe",
+          "ware": "Sugar",
+          "bedarf": 188,
+          "gedeckt": 58
+        },
+        {
+          "bereich": "Gewerbe",
+          "ware": "Gemüse",
+          "bedarf": 188,
+          "gedeckt": 123
+        },
+        {
+          "bereich": "Industrie",
+          "ware": "Bretter",
+          "bedarf": 380,
+          "gedeckt": 44
+        },
+        {
+          "bereich": "Industrie",
+          "ware": "Möbel",
+          "bedarf": 190,
+          "gedeckt": 47
+        }
+      ],
+      "juli_1910": {
+        "monat": "1910-07",
+        "einwohner": 368
+      }
+    },
+    {
+      "id": 174634,
+      "name": "Vauclaire",
+      "frueher": [
+        {
+          "name": "Sarrians",
+          "bis": "1915-11-28"
+        }
+      ],
+      "einwohner": 312,
+      "netzanteil_prozent": 49.885234236717,
+      "waren": [
+        {
+          "bereich": "Gewerbe",
+          "ware": "Fisch",
+          "bedarf": 96,
+          "gedeckt": 26
+        },
+        {
+          "bereich": "Industrie",
+          "ware": "Bretter",
+          "bedarf": 84,
+          "gedeckt": 23
+        }
+      ],
+      "juli_1910": {
+        "monat": "1910-07",
+        "einwohner": 217
+      }
+    },
+    {
+      "id": 174646,
+      "name": "Montfougère",
+      "frueher": [
+        {
+          "name": "Divatte-sur-Loire",
+          "bis": "1907-07-27"
+        }
+      ],
+      "einwohner": 300,
+      "netzanteil_prozent": 0.93348892405629,
+      "waren": [
+        {
+          "bereich": "Gewerbe",
+          "ware": "Fisch",
+          "bedarf": 127,
+          "gedeckt": 28
+        },
+        {
+          "bereich": "Gewerbe",
+          "ware": "Kleidung",
+          "bedarf": 63,
+          "gedeckt": 0
+        },
+        {
+          "bereich": "Industrie",
+          "ware": "Bretter",
+          "bedarf": 229,
+          "gedeckt": 84
+        }
+      ],
+      "juli_1910": {
+        "monat": "1910-07",
+        "einwohner": 175
+      }
+    },
+    {
+      "id": 174617,
+      "name": "Sin-le-Noble",
+      "frueher": [],
+      "einwohner": 199,
+      "netzanteil_prozent": 76.146787405014,
+      "waren": [
+        {
+          "bereich": "Gewerbe",
+          "ware": "Fleisch",
+          "bedarf": 76,
+          "gedeckt": 20
+        },
+        {
+          "bereich": "Industrie",
+          "ware": "Bretter",
+          "bedarf": 94,
+          "gedeckt": 80
+        }
+      ],
+      "juli_1910": {
+        "monat": "1910-07",
+        "einwohner": 102
+      }
+    }
+  ],
+  "interview": {
+    "id": "1914-04-interview-direktor",
+    "typ": "interview",
+    "art": "einordnung",
+    "date": "1914-04",
+    "rubrik": "Im Gespräch mit dem Direktor",
+    "titel": "„Volle Läden, Arbeit in anderen Städten – und Stolz auf das Geschaffene“",
+    "teaser": "Der Direktor der Société des Routes et des Rails über die Möbelverbindung nach Sin-le-Noble, die Grenzen der Schifffahrt und einen Fortschritt, den sich die Gesellschaft leisten können muss. Ein Interview mit dem Spieler; Antworten sprachlich redigiert.",
+    "partner": {
+      "name": "Der Direktor",
+      "rolle": "Leiter der Société des Routes et des Rails · Antworten des Spielers"
+    },
+    "fragen": [
+      {
+        "frage": "Monsieur le Directeur, weshalb haben Sie gerade Sin-le-Noble für die Möbelversorgung ins Auge gefasst?",
+        "antwort": "Die Bewohner unserer Kohlestadt Roche-Noire und unserer größten Stadt, Bourg-l’Écorce, verlangen nach Möbeln. Sin-le-Noble liegt nicht allzu weit entfernt. Damit bot sich eine Gelegenheit, beide Städte mit ein wenig Luxus zu versorgen. Durch die vergleichsweise kurze Route hoffen wir außerdem, die Preise erschwinglich halten zu können. Bei der Kleidung ist das derzeit schwieriger."
+      },
+      {
+        "frage": "Was unterscheidet den Möbeltransport von der Versorgung mit Kleidung?",
+        "antwort": "Bei der Kleidung sind die Entfernungen groß. Unsere Schiffe können die Lieferungen momentan nicht in der gewünschten Zeit bewältigen. Bei den Möbeln passen die Wege besser zu den Transportmitteln, die uns heute zur Verfügung stehen."
+      },
+      {
+        "frage": "Können Sie die langen Wege der Kleidung durch andere Produktionsstätten vermeiden, oder brauchen Sie schnellere Schiffe?",
+        "antwort": "Wir hoffen auf neue Technologien, mit denen wir schneller transportieren können. Bei den Straßenfahrzeugen und auf der Schiene haben wir in den vergangenen Jahren große Fortschritte gemacht. Wenn uns ein ähnlicher Schritt auf dem Wasser gelingt, wäre viel gewonnen. Die Schifffahrt ist derzeit unser Flaschenhals. Im Archipel gibt es außerdem nur diese eine Farbenfabrik. Deshalb sind wir gezwungen, lange Entfernungen zu überwinden."
+      },
+      {
+        "frage": "Wenn schnellere Schiffe verfügbar werden: Verbessern Sie zuerst die bestehenden Verbindungen oder erschließen Sie neue Inseln und Waren?",
+        "antwort": "Wir wollen nach Möglichkeit beides tun, dort, wo es sich anbietet. Die Bewohner gewöhnen sich an die Versorgung. Zugleich müssen wir darauf achten, dass der Ausbau uns wirtschaftlich nicht ruiniert."
+      },
+      {
+        "frage": "Woran erkennen Sie, ob eine zunächst schwierige Verbindung eine wirtschaftliche Perspektive hat?",
+        "antwort": "Wir schauen vor allem darauf, welche Möglichkeiten es gibt, Verbindungen miteinander zu kombinieren. Unsere Fahrzeuge sollen möglichst wenige Leerfahrten machen. Entscheidend ist deshalb auch, ob wir auf dem Rückweg eine weitere Ladung mitnehmen können."
+      },
+      {
+        "frage": "Wie setzen Sie diesen Gedanken bei Sin-le-Noble um?",
+        "antwort": "Wir bringen Holz von der Hauptinsel nach Sin-le-Noble. Die Möbel gehen anschließend zurück. So lassen sich Hin- und Rückweg sinnvoll nutzen – ein Gewinn für beide Seiten."
+      },
+      {
+        "frage": "Zum Abschluss: Wenn die Bewohner in fünf Jahren auf die heutige Zeit zurückblicken, welche Verbesserung sollen sie in ihrem Alltag am deutlichsten spüren?",
+        "antwort": "Ich wünsche mir volle Läden und die Möglichkeit, auch in anderen Städten zu arbeiten. Und ich möchte, dass wir stolz darauf sein können, was wir in dieser Zeit gemeinsam geschaffen haben."
+      }
+    ],
+    "grounding": "Spielervorgabe: tatsächlich im Chat am 13.10.2026 geführtes Interview mit dem Spieler in der Rolle des Direktors. Die Antworten wurden sprachlich geglättet und behutsam zusammengeführt, ohne zusätzliche Zusagen oder Kennzahlen einzufügen. Roche-Noire und Bourg-l’Écorce konkretisieren die im Gespräch genannten Orte „Kohlestadt“ und „größte Stadt“. Redaktionell der Ausgabe April 1914 zugeordnet, entsprechend dem aktuellen Journalstand vom 23.04.1914. Aussagen zur einzigen Farbenfabrik, zu Transportgrenzen und zur Möbelroute sind Erklärungen des Spielers; erschwingliche Preise, kürzere Lieferzeiten und die Entwicklung in fünf Jahren sind Erwartungen bzw. Ziele, keine gemessenen Ergebnisse. Die Holz-Hinfahrt und Möbel-Rückfahrt beschreiben das vom Spieler erläuterte Konzept und bestätigen keine bereits gesicherte Produktion oder Versorgung. Fragen und Überschrift redaktionell bearbeitet; keine erfundenen Antworten.",
+    "refs": {
+      "staedte": [
+        174617,
+        174601,
+        174605
+      ],
+      "personen": [],
+      "linien": [],
+      "betriebe": []
+    }
+  },
+  "source_commit": "2961f4df3603a6b6fd7569a62a71df771dcd7e85",
+  "note": "Abgeschlossene Ausgabe. Vergleichsbasis des ersten Dossiers: 11.07.1910. Aktueller Detailstand: 15.10.1917. Monatsstände für Sin-le-Noble und Vauclaire separat als Juli 1910 gekennzeichnet. Neuere Monitor-Kurzwerte bis 17.10.1917 werden nicht mit diesem Detailstand vermischt.",
+  "quality_note": "Summen der Fahrzeugarten weichen von gesamt_fahrzeuge ab; Differenz 20 im Juli 1910, 28 im Oktober 1917. Ursache hier nicht geklärt."
+}

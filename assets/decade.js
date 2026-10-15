@@ -198,7 +198,7 @@ function townEntry(t, role, pollutionMax) {
 
 function header() {
   return '<header class="topbar"><div class="shell topbar-inner"><a class="brand" href="../../index.html"><span class="brand-mark" aria-hidden="true">✦</span><span>Transport Fever <span class="strong">Chronicles</span></span></a>' +
-    '<nav class="toplinks" aria-label="Hauptnavigation"><a href="../../index.html">Alle Welten</a><a href="journal.html">Le Journal</a><a href="index.html?view=monitor#overview">Monitor</a><a href="index.html?view=archive#chronicle">Chronik</a></nav></div></header>';
+    '<nav class="toplinks" aria-label="Hauptnavigation"><a href="../../index.html">Alle Welten</a><a href="journal.html">Le Journal</a><a href="dossier-1910-1917.html">Dossier 1910–1917 →</a><a href="index.html?view=monitor#overview">Monitor</a><a href="index.html?view=archive#chronicle">Chronik</a></nav></div></header>';
 }
 
 function render(d, gazette) {
@@ -275,3 +275,4 @@ async function start() {
   }
 }
 if (typeof document !== "undefined" && APP) start();
+

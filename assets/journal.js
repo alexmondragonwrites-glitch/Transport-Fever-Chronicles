@@ -41,7 +41,7 @@ const HOOKS = {
 let D, state = {tab:'une', month:null, filter:{}};
 
 function header(){
-  return `<header class="topbar"><div class="shell topbar-inner"><a class="brand" href="../../index.html"><span class="brand-mark">✦</span>Transport Fever <span class="strong">Chronicles</span></a><nav class="toplinks" aria-label="Hauptnavigation"><a href="../../index.html">Alle Welten</a><a href="weihnachten-1911.html">Weihnachten 1911</a><a href="index.html?view=monitor#overview">Monitor</a><a href="jahrzehnt.html">Dossier 1900–1910</a></nav></div></header>`;
+  return `<header class="topbar"><div class="shell topbar-inner"><a class="brand" href="../../index.html"><span class="brand-mark">✦</span>Transport Fever <span class="strong">Chronicles</span></a><nav class="toplinks" aria-label="Hauptnavigation"><a href="../../index.html">Alle Welten</a><a href="weihnachten-1911.html">Weihnachten 1911</a><a href="index.html?view=monitor#overview">Monitor</a><a href="jahrzehnt.html">Dossier 1900–1910</a><a href="dossier-1910-1917.html">Dossier 1910–1917</a></nav></div></header>`;
 }
 // The sea chart appears behind „Städte“ only once karte.json exists (Spielmonitor revision 16 positions).
 const tabs = () => TABS.flatMap(t=>t[0]==='staedte'&&D.karte?[t,['karte','Karte']]:[t]);
@@ -149,7 +149,7 @@ function une(){
       ${stats?`<section class="j-box j-numbers"><h3>Zahlen der Ausgabe</h3><dl><div><dt>Fahrzeuge</dt><dd>${N(stats.gesamt_fahrzeuge)}${delta(stats.gesamt_fahrzeuge,prevStats?.gesamt_fahrzeuge)}</dd></div><div><dt>Linien</dt><dd>${N(stats.gesamt_linien)}${delta(stats.gesamt_linien,prevStats?.gesamt_linien)}</dd></div>${stats.modelle?`<div><dt>Fahrzeugmodelle</dt><dd>${N(stats.modelle)}${prevStats?.modelle?delta(stats.modelle,prevStats.modelle):''}</dd></div>`:''}${residents?`<div><dt>Einwohner, alle Orte</dt><dd>${N(residents)}</dd></div>`:''}<div><dt>Kasse der Société</dt><dd>${N(stats.kasse/1e6,1)} Mio.</dd></div></dl><p class="small">Letzte Detailmessung des Monats.</p></section>`:''}
       ${adPool.map(reclame).join('')}
       ${faces.length?`<section class="j-box"><h3>Gesichter des Monats</h3>${faces.map(p=>{const mo=p.moments.find(x=>x.date.slice(0,7)===m && x.typ!=='arbeit' && x.typ!=='ohne-arbeit');return `<p class="j-face"><a href="#menschen/${p.id}">${E(p.name)}</a> <span class="small">(${E(p.home_town||'unbekannt')})</span><br><span class="small">${E(dayName(mo.date))}: ${E(mo.text)}</span></p>`;}).join('')}<p class="small">Namen von der Redaktion vergeben.</p></section>`:''}
-      <section class="j-box j-specials"><h3>Sonderausgaben</h3><a href="weihnachten-1911.html">Weihnachtsbericht 1911</a><a href="1911.html">Wirtschaftsbericht April 1911</a><a href="jahrzehnt.html">Zehn Jahre Archipel 1900–1910</a><a href="index.html?view=monitor#overview">Langzeitmonitor</a></section>
+      <section class="j-box j-specials"><h3>Sonderausgaben</h3><a href="dossier-1910-1917.html">Ein Archipel wächst zusammen · 1910–1917</a><a href="weihnachten-1911.html">Weihnachtsbericht 1911</a><a href="1911.html">Wirtschaftsbericht April 1911</a><a href="jahrzehnt.html">Zehn Jahre Archipel 1900–1910</a><a href="index.html?view=monitor#overview">Langzeitmonitor</a></section>
     </aside></div>`;
 }
 
@@ -379,4 +379,5 @@ async function start(){
   }
 }
 start();
+
 
