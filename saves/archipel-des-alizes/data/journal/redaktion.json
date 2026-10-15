@@ -2683,6 +2683,276 @@
         "personen": [],
         "betriebe": []
       }
+    },
+    {
+      "id": "1916-05-speisekarte-valmorin",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1916-05",
+      "lead": true,
+      "rubrik": "Speisekarte",
+      "venue": {
+        "name": "Au Quai des Collines",
+        "place": "Valmorin"
+      },
+      "titel": "Speisekarte ab Mai 1916: Zum ersten Mal aus der Dose",
+      "teaser": "Mathurin hat eine neue Karte geschrieben. Der Grund steht ganz oben: In Valmorin kommen Konserven an.",
+      "body": [
+        "AU QUAI DES COLLINES · Valmorin · Speisekarte, gültig ab Mai 1916 · Wirt: Mathurin",
+        "VORSPEISE. Sardinen aus der Dose. NEU! Zum ersten Mal kommen Konserven in Valmorin an, 11 Einheiten von 98, die die Stadt verlangt. Bitte nicht alle auf einmal bestellen.",
+        "HAUPTGERICHT. Ragout vom Rind. Fleisch kommt, 113 von 197 verlangten Einheiten. Die Portionen bleiben trotzdem bescheiden.",
+        "BEILAGE. Eingemachte Bohnen aus der eigenen Küche. Werden gestrichen, sobald die Dosen reichen. Bis dahin weiter mit Liebe eingekocht.",
+        "GETRÄNKE. Wein, Wasser, Limonade. Rum: nicht vorrätig. Es gibt im ganzen Archipel keinen. Bitte nicht nachfragen, die Wirtin wird sonst traurig.",
+        "NACHTISCH. Heute keiner. Der Koch hat gerade zu viel mit den Dosen zu tun.",
+        "KLEIDERORDNUNG. Hemd erwünscht. 57 von 98 Einheiten Kleidung kommen in Valmorin an, es sollte also reichen. Seit der Wette von 1912 legt Mathurin Wert darauf.",
+        "HINWEIS DER KÜCHE. Die Dosen kommen mit dem Lastwagen der Société, der seit dem 6. April 1916 „Konserven“ im Namen trägt. Das Haus zählt jetzt 1.135 Gäste. Die Wand vor dem Fenster lässt grüßen."
+      ],
+      "grounding": "Gemessen: Valmorin am 02.05.1916: Konserven erstmals gedeckt (11 von 98; zuvor 0 in allen notierten Ständen), Fleisch 113 von 197, Kleidung 57 von 98, belegter Wohnraum 1.135. Linie RC Fleisch,Kleidung-Val-LO-1 befördert ab 06.04.1916 auch Konserven (neuer Name RC Fleisch,Kleidung,Konserven-Val-LO-1). Rum im Archipel 0 gedeckt (Port des Alizés, Bourg-l’Écorce, Pointe des Pêcheurs). Erfunden: Speisekarte, Gerichte, Hinweise, Mathurin und Wirtin; „Wette von 1912“ und „Wand“ aus früheren Beiträgen.",
+      "refs": {
+        "staedte": [
+          174607
+        ],
+        "linien": [],
+        "personen": [],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1917-04-fahrplan-vauclaire",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1917-04",
+      "lead": true,
+      "rubrik": "Fahrplan-Aushang",
+      "titel": "Aushang am Dorfplatz: Alle Verbindungen ab Vauclaire",
+      "teaser": "Vor drei Jahren standen in Vauclaire, das damals noch Sarrians hieß, sechzehn Lastwagen auf dem Dorfplatz, und niemand fuhr mit. Heute hängt dort ein Fahrplan, so lang wie die Tür des Rathauses.",
+      "body": [
+        "SOCIÉTÉ DES ROUTES ET DES RAILS · Verbindungen ab Vauclaire · gültig ab April 1917",
+        "STRASSENBAHN im Ort. 4 Wagen, seit August 1916. Halt vor der Schule. Kinder bitte nicht auf dem Trittbrett mitfahren, auch nicht Marthe.",
+        "PERSONENZUG nach Sin-le-Noble. 3,7 Kilometer. Ein Zug, gezogen mit dem Salonwagen Heavyweight 28-1 Parlor, sechs Wagen lang, seit Juli 1916. Erste Klasse für alle, auch für Großvater, der noch „Sarrians“ sagt.",
+        "SCHIFF nach Bourg-l’Écorce. 4 Schiffe, seit August 1916. Samstags voll.",
+        "BUS im Ort. 2 Wagen, seit Januar 1917.",
+        "GÜTERZUG für Getreide und Fleisch über Châteaubourg nach Sin-le-Noble, seit 12. März 1917. Er ersetzt die sechzehn Lastwagen, die am 14. April 1914 auf dem Dorfplatz standen.",
+        "NEU: FISCH. Frachtschiff nach Montfougère seit dem 18. April 1917, Lastwagen im Ort seit dem 22. April.",
+        "ABFAHRTSZEITEN. Siehe Glocke am Bahnhof. Wenn sie läutet, fährt etwas.",
+        "Nachtrag der Redaktion, Oktober 1917: Vauclaire zählt 312 Einwohner, im April 1916 waren es 230. Fast jeder zweite Weg im Dorf führt jetzt über die Société, 49,9 von hundert. Fisch kommt an, 26 von 96 verlangten Einheiten."
+      ],
+      "grounding": "Gemessen: Tram Passagiere-Vau-LO-1 ab 23.08.1916 mit 4 Fahrzeugen; TP Passagiere-Vau-Sin-IC-1 neu am 17.07.1916, Fahrzeugmodell Heavyweight 28-1 Parlor (1 Fahrzeug mit 6 Einheiten, erstmals gekauft 18.07.1916); WP Passagiere-Vau-Bou-IC-1 ab 26.08.1916 mit 4 Fahrzeugen; Bus Passagiere-Vau-LO-1 neu am 18.01.1917 (2 Fahrzeuge im Oktober 1917); TC Getreide,Fleisch-Vau-Sin-RE-1 (Halte Vauclaire, Châteaubourg, Sin-le-Noble) neu am 12.03.1917, am selben Tag RC Getreide,Fleisch-Vau-Sin-RE-1 (zuletzt 16 Fahrzeuge) eingestellt; WC Fisch-Vau-Mon-IC-1 neu 18.04.1917, RC Fisch-Vau-LO-1 neu 22.04.1917. Vauclaire belegter Wohnraum 230 (April 1916), 289 (April 1917), 312 (Oktober 1917); Netzanteil 49,9 %, Fisch 26 von 96 (Oktober 1917). Entfernung Vauclaire–Sin-le-Noble 3,7 km (Seekarte). Erfunden: Aushang, Glocke, Marthe und Großvater (aus dem „Schulaufsatz“, Dezember 1915), „Samstags voll“, Wortlaut.",
+      "refs": {
+        "staedte": [
+          174634,
+          174617,
+          174605,
+          174640,
+          174646
+        ],
+        "linien": [],
+        "personen": [],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1917-06-kalenderblatt-roche-noire",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1917-06",
+      "lead": true,
+      "rubrik": "Kalenderblatt",
+      "titel": "Kalenderblatt: Roche-Noire, die Insel der späten Premieren",
+      "teaser": "Am 23. Juni 1917 kommt auf Roche-Noire zum ersten Mal Zucker an. Ein guter Anlass, die Tage der Insel aufzuschreiben, an denen etwas zum ersten Mal geschah.",
+      "body": [
+        "7. Mai 1907. Pont-Saint-Martin heißt fortan Roche-Noire. Nur das Holzfällerlager behält den alten Namen, bis heute. Es steht seit November 1916 auf Stufe 19.",
+        "1. Juni 1911. Die erste Stadtbuslinie fährt. Drei Tage später eine zweite, eine Woche später ein Passagierschiff nach Valmorin.",
+        "Dezember 1911. 462 Menschen leben auf der Insel. Zucker kommt keiner an. Das wird lange so bleiben.",
+        "17. Juli 1913. 750 Einwohner.",
+        "7. August 1915. Die ersten Möbel kommen an. Ein Gast im „Le Puits“ steht von seiner Kiste auf.",
+        "18. Mai 1916. Roche-Noire zählt 1.004 Einwohner, als sechste Stadt des Archipels mit vierstelliger Zahl.",
+        "3. Mai 1917. Aus einer vorläufigen Buslinie wird ein Lastwagen für Zucker.",
+        "23. Juni 1917. Zucker. Drei Einheiten von 184. Der Wirt vom „Le Puits“ hat sie nicht gesehen, aber er hat sofort Kaffee gekocht, für den Fall. Im Oktober sind es 58 von 188.",
+        "Was noch fehlt: Bretter (44 von 380) und noch immer die meisten Möbel (47 von 190). Und eine Gelegenheit, mit der Société zu fahren: Nur 14,6 von hundert Wegen auf der Insel führen über ihr Netz, weniger als in jeder anderen Stadt über tausend."
+      ],
+      "grounding": "Gemessen: Roche-Noire hieß bis 07.05.1907 Pont-Saint-Martin (Ortsakte); Pont-Saint-Martin Holzfällerlager Stufe 19 seit 16.11.1916 (Zuordnung zum Ort über den Namen, nicht über Positionen geprüft). Juni 1911: Stadtbuslinien am 01. und 04.06., Passagierschiff nach Valmorin am 08.06.1911 (laut Beitrag Juni 1911). Dezember 1911: 462 Einwohner, Zucker nicht gedeckt; Zucker 0 gedeckt in allen danach notierten Ständen bis April 1917. 750 am 17.07.1913, erste Möbel 07.08.1915, 1.004 am 18.05.1916. Die Tausend überschritten vorher Bourg-l’Écorce, Port des Alizés, Pointe des Pêcheurs, Valmorin (07.11.1914) und Anse Dorée (09.08.1915). Vorläufige Linie Bus -Roc-LO-1 (29.04.1917) wird am 03.05.1917 RC Sugar-Roc-LO-1. Zucker erstmals gedeckt am 23.06.1917 (3 von 184), Oktober 1917 58 von 188; Bretter 44 von 380, Möbel 47 von 190, Netzanteil 14,6 %. Erfunden: Kaffee, Wirt, Gast, Kommentare.",
+      "refs": {
+        "staedte": [
+          174601,
+          174605,
+          174632,
+          174602,
+          174607,
+          174645
+        ],
+        "linien": [],
+        "personen": [],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1917-08-baedeker-sin",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1917-08",
+      "lead": true,
+      "rubrik": "Reiseführer",
+      "titel": "Sin-le-Noble. Aus dem „Führer durch den Archipel“, Ausgabe 1917",
+      "teaser": "Der neue Reiseführer über den Archipel ist erschienen. Der Eintrag über Sin-le-Noble ist länger als der über manche Stadt mit dreitausend Einwohnern. Wir drucken ihn ab.",
+      "body": [
+        "SIN-LE-NOBLE (187 Einw.). Werkstättenort, gegründet als Bauerndorf, seit 1914 Mittelpunkt der Holz-, Glas- und Möbelherstellung des Archipels. Bis 1916 lange gleichbleibend bei rund hundert Einwohnern, seither rasch wachsend.",
+        "ANKUNFT. Mit dem Personenzug aus Vauclaire (3,7 km), mit dem Frachtschiff aus Garches oder auf den Lastwagen der Société, die man hier überall trifft. Drei von vier Wegen im Ort führen über das Netz der Société, mehr als in jeder Stadt des Archipels. Allein die Buslinie 5 hat zwölf Wagen.",
+        "★ LES ATELIERS DU NOBLE. Die Möbelwerkstatt, im Oktober 1913 eingetragen und seit 1914 in Betrieb. Im letzten Jahr 106 Einheiten Möbel. Ihre Möbel stehen heute in Roche-Noire und in den Schaufenstern von Bourg-l’Écorce.",
+        "★ DIE GLASHÜTTE. Im letzten Jahr 116 Einheiten Glas. Sand und Glas bewegt seit Juli eine Güterstraßenbahn mit zwei Triebwagen vom Typ Sydney 24s, eine Seltenheit, die Eisenbahnfreunde eigens anreisen lässt.",
+        "SÄGEWERK UND HOLZFÄLLERLAGER. Stufe 17 und 248 Einheiten Bretter im Jahr. Der Geruch frischen Holzes liegt über dem ganzen Ort.",
+        "GASTHÖFE. Café du Sablier, am Ortseingang. Einfach, freundlich, nimmt Möbelbestellungen entgegen. Das Rathausfenster gegenüber ist aus grünem Glas der ersten Schmelze.",
+        "PRAKTISCHE HINWEISE. Fleisch ist knapp (20 von 76 verlangten Einheiten), Bretter reichlich. Wer in Sin-le-Noble nach Rum fragt, bekommt eine Wegbeschreibung nach Lardy."
+      ],
+      "grounding": "Gemessen (Sin-le-Noble): belegter Wohnraum 102 bis Januar 1915 unverändert, 120 im April 1916, 187 am 19.08.1917, 199 im Oktober 1917; Netzanteil 5 % (April 1916), 75 % (19.08.1917), 76,1 % (Oktober 1917, höchster Wert aller Orte); Bus Passagiere-Sin-LO-5 ab 26.11.1916 mit 12 Fahrzeugen. Am 19.08.1917: Les Ateliers du Noble Jahresproduktion 106 (Versand 86), Glashütte 116 (Versand 112), Sägewerk 248, Holzfällerlager Stufe 17. TrC Sand,Glas-Sin-LO-1 ab 20.07.1917 als Straßenbahn für Güter, Fahrzeugmodell Sydney 24s Triebwagen (2 Fahrzeuge mit 10 Einheiten, erstmals gekauft 11.07.1917); TP Passagiere-Vau-Sin-IC-1 seit Juli 1916; WC Passagiere,Sand-Gar-Sin-IC-1 seit 22.09.1917. Fleisch 20 von 76, Bretter 80 von 94 (Oktober 1917). Möbel in Roche-Noire und Bourg-l’Écorce gedeckt seit August 1915. Erfunden: Reiseführer und Wortlaut, Sterne, Geruch, Eisenbahnfreunde, Café du Sablier und Rathausfenster (aus früheren Beiträgen).",
+      "refs": {
+        "staedte": [
+          174617,
+          174634,
+          174644,
+          174601,
+          174605,
+          174612
+        ],
+        "linien": [],
+        "personen": [],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1917-09-ballade-garches",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1917-09",
+      "lead": true,
+      "rubrik": "Gedicht",
+      "titel": "Die Ballade von Garches",
+      "teaser": "Vierunddreißig Schiffe legen in Garches an, mit Rum, Glas, Sand und Möbeln. Mit fährt niemand. Am Kai singt man darüber ein Lied.",
+      "body": [
+        "Dreihundertneunundneunzig Seelen, / so zählt man uns seit Anbeginn. / Wir müssen keinem was erzählen, / es kommt ja keiner zu uns hin.",
+        "Da kamen im April drei Segel, / vier Tage drauf dreizehn, Mast an Mast, / mit Rum und Glas – so ist die Regel: / Wer Lardy liebt, der liebt die Last.",
+        "Seitdem steht Rum in unsren Hallen / und wartet auf das Schiff nach Port. / Wir hören nachts die Fässer schallen – / er ist schon da und doch schon fort.",
+        "Der Sand aus Vichy, acht Fregatten, / zieht weiter nach Sin-le-Noble hin. / Wir hatten, was die andern hatten, / ein Sägewerk – das ist dahin.",
+        "Die Rinder stehn im neuen Stalle, / noch hat kein einz’ges was gebracht. / Vierunddreißig Schiffe zählen alle, / und null vom Hundert, Tag und Nacht.",
+        "Drum, Seemann, legst du an in Garches, / so bleib ein Stündchen hier an Land. / Wir zählen nur bis Dreihundert- / neunundneunzig. Doch mit Verstand.",
+        "Anmerkung der Redaktion: „Null vom Hundert“ ist kein Reim, sondern ein Messwert. Kein einziger Weg der Garchois führt über das Netz der Société."
+      ],
+      "grounding": "Gemessen: Garches belegter Wohnraum 399 in jedem Monatsstand seit Dezember 1904; Netzanteil 0 %. WC Passagiere,Rum,Glas-Lar-Gar-IC-1 neu am 25.04.1916 mit 3 Fahrzeugen, ab 29.04.1916 13; Rum laut Linienmessung März bis Oktober 1917 an Bord; WC Passagiere,Rum-Gar-PordesAli-IC-1 neu am 22.08.1917 (4); WC Passagiere,Sand-Gar-Vic-IC-1 ab 08.09.1917 mit 8 Fahrzeugen (Oktober 1917: 6); WC Passagiere,Sand-Gar-Sin-IC-1 neu 22.09.1917 (2); WP Passagiere-Gar-Vic-IC-1 seit 19.04.1916 (1); WC Passagiere,Möbel,Bretter-Gar-Val-RE-1 (8); zusammen 34 Schiffe auf Linien mit Halt in Garches (Oktober 1917). Viehzuchtbetrieb seit 20.02.1915 ohne Produktion; Sägewerk fehlt ab 15.01.1916. Rum in Port des Alizés 0 gedeckt. Erfunden: Lied, Hallen, Fässer, Wortlaut; ob Rum in Garches gelagert wird, ist nicht gemessen.",
+      "refs": {
+        "staedte": [
+          174644,
+          174612,
+          174638,
+          174617,
+          174632
+        ],
+        "linien": [],
+        "personen": [],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1917-09-autoclub",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1917-09",
+      "rubrik": "Vereinsnachrichten",
+      "titel": "Automobil-Club des Alizés: Fünf Neue und ein Abschied",
+      "teaser": "Der Automobil-Club hat zur Herbstversammlung geladen. Er wächst, und eine seiner ersten Fahrerinnen verabschiedet sich.",
+      "body": [
+        "Der Vorsitzende eröffnet die Versammlung mit einer Zahl, die er seit Jahren mitbringt. In unserer Beobachtungsgruppe war 1912 noch nicht einmal jeder achte Weg eine Automobilfahrt, 11,9 von hundert. 1916 und 1917 ist es jeder sechste, 16,5 von hundert. Mit der Société fahren nur 7,3 von hundert. Der Vertreter der Société, als Gast geladen, applaudiert höflich.",
+        "Neu im Club. Clémence Bonheur aus Bourg-l’Écorce, seit dem 27. Februar 1916, nach viereinhalb Jahren fast nur mit der Société. Émile Gaspard aus Port des Alizés, den wir seit Januar 1917 kennen und nie anders als im Automobil. Adolphe Saint-Cyr aus Romagnat, seit 1904 in unseren Messbüchern, zum ersten Mal am Steuer am 9. Februar 1917. Ulysse Joseph aus Port des Alizés, Automobil seit Juli 1917, aber im September auch zum ersten Mal mit der Société: Der Club nimmt ihn trotzdem auf. Und Angèle Philogène aus Pointe des Pêcheurs, erste Automobilfahrt am 6. September 1917, mit Arbeit, wie sie betont.",
+        "Abschied. Solange Laurent aus Anse Dorée, seit dem 5. April 1912 mit dem Automobil unterwegs und damit eine der ersten im Club, erscheint seit dem 11. Juli 1917 nicht mehr in unseren Messbüchern. Wohin sie gefahren ist, wissen wir nicht. Der Club hat ihr den Ehrenplatz am Kamin freigehalten.",
+        "Verschiedenes. Ein Antrag, die Société möge mehr Straßen statt Schienen bauen, wird vertagt. Der Gast der Société hat ihn mitgeschrieben."
+      ],
+      "grounding": "Gemessen (Beobachtungsgruppe, Namen von der Redaktion vergeben): Anteil der Messungen im Auto 714 von 6.000 (1912, 11,9 %), 1.277 von 7.760 (1916, 16,5 %), 887 von 5.360 (1917 bis Oktober, 16,5 %); im öffentlichen Verkehr 389 von 5.360 (1917, 7,3 %). Erste Autofahrten: Person 48725 (Bourg-l’Écorce) 27.02.1916; Person 40436 (Port des Alizés) erstmals gemessen 21.01.1917, gleich im Auto; Person 192991 (Romagnat, seit 30.12.1904) 09.02.1917; Person 69001 (Port des Alizés) erstmals gemessen 20.07.1917 im Auto, erste ÖV-Fahrt 12.09.1917; Person 82141 (Pointe des Pêcheurs) 06.09.1917, 1917 mit Arbeitsplatz. Person 63194 (Anse Dorée) erste Autofahrt 05.04.1912, zuletzt gemessen 11.07.1917, danach nicht mehr in der Beobachtungsgruppe (Grund unbekannt). Erfunden: Club, Versammlung, Vorsitzender, Gast der Société, Antrag, Kamin.",
+      "refs": {
+        "staedte": [
+          174605,
+          174632,
+          174602,
+          174645
+        ],
+        "linien": [],
+        "personen": [
+          48725,
+          40436,
+          192991,
+          69001,
+          82141,
+          63194
+        ],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1917-10-krimi-rum",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1917-10",
+      "lead": true,
+      "rubrik": "Kriminalfall",
+      "titel": "Die Spur des Rums. Ein Fall für Inspecteur Lebrun",
+      "teaser": "Seit 1912 fehlt dem Archipel der Rum. Seit Februar 1917 wird welcher gebrannt. Und trotzdem hat Honorine in Port des Alizés noch keinen Tropfen. Inspecteur Lebrun nimmt die Ermittlungen auf.",
+      "body": [
+        "Port des Alizés, Oktober 1917. Die Anzeige kam von Honorine persönlich, am Hafen, auf einer Serviette: „Rum gestohlen, bevor er ankam.“ Inspecteur Lebrun steckte die Serviette ein und fuhr los, rückwärts die Kette entlang, wie er es gelernt hatte.",
+        "Erste Station: Cormontreuil. Die Zuckermühle dort mahlt, und die Melasse, die dabei abfällt, verlädt sie auf die Schiffe der Société, die seit April 1916 zwischen Cormontreuil und Lardy fahren. Lebrun zählte vier Schiffe. „Melasse und Rum“ steht auf jedem. Die Melasse fährt tatsächlich, das bestätigen die Messbücher spätestens seit Januar 1917 Woche für Woche.",
+        "Zweite Station: Lardy. Hier stand eine Rumbrennerei jahrelang still. Die Zeitung hat 1912 darüber geschrieben, Péronne 1914 einen Brief. Am 9. Februar 1917 brennt sie zum ersten Mal: acht Einheiten. Im Mai sind es übers Jahr 128, im Juli 144. „Der Rum existiert“, notierte Lebrun. „Das ist mehr, als man bisher sagen konnte.“",
+        "Dritte Station: das Schiff nach Garches. Dreizehn Schiffe mit „Rum und Glas“ im Namen, seit April 1916. Von März bis Oktober 1917 meldet die Linie jeden Monat Rum an Bord. Lebrun fuhr mit. Es roch, sagt er, nach Zuckerrohr und nach Hoffnung.",
+        "Vierte Station: Garches. Seit dem 22. August 1917 fährt von hier ein Schiff mit „Rum“ im Namen nach Port des Alizés, vier Stück. Seit dem 26. August trägt in Port ein Lastwagen „Rum“ im Namen. Die Kette ist geschlossen, auf dem Papier.",
+        "Und doch: Am 15. Oktober 1917 sind in Port des Alizés 0 von 215 verlangten Einheiten Rum gedeckt, in Bourg-l’Écorce 0 von 384, in Pointe des Pêcheurs 0 von 173. In den Stichproben der Ladung an Bord taucht Rum bisher nur zwischen Cormontreuil, Lardy und Garches auf, nie auf dem Weg nach Port.",
+        "Lebruns Bericht endet mit drei Sätzen: „Der Rum ist gebrannt. Der Rum ist unterwegs. Der Rum ist noch nicht da.“ Honorine hat die Serviette zurückverlangt und eine neue Anzeige darauf geschrieben: „Rum erwartet.“ Der Fall bleibt offen."
+      ],
+      "grounding": "Gemessen (gültiger Spielverlauf): WC Passagiere,Molasses,Rum-Cor-Lar-IC-1 neu am 25.04.1916 mit 4 Fahrzeugen; Warenstichproben spätestens ab 03.01.1917: Melasse aus der Cormontreuil Sugar Mill an Bord dieser Linie, Rum aus der Lardy Rum Distillery ebenfalls (Februar bis September 1917). Lardy Rum Distillery: Jahresproduktion 0 bis Januar 1917, erstmals 8 am 09.02.1917, 128 (Mai 1917), 144 (09.07.1917), 64 bei Versand 88 (15.10.1917). WC Passagiere,Rum,Glas-Lar-Gar-IC-1 seit 25.04.1916 (ab 29.04.1916 13 Fahrzeuge), Rum laut Linienmessung März bis Oktober 1917 an Bord. WC Passagiere,Rum-Gar-PordesAli-IC-1 neu am 22.08.1917 (4); RC Sugar,Gemüse-PordesAli-LO-2 befördert ab 26.08.1917 auch Rum. Am 15.10.1917 Rum gedeckt: Port des Alizés 0 von 215, Bourg-l’Écorce 0 von 384, Pointe des Pêcheurs 0 von 173. Die Brennereien Lardy und Melle standen laut Beitrag „Rum-Kette“ (1912) still; Melle weiterhin ohne Produktion. Erfunden: Inspecteur Lebrun, Ermittlung, Serviette, Gerüche, Zitate; warum der Rum nicht in Port ankommt, ist nicht gemessen.",
+      "refs": {
+        "staedte": [
+          174632,
+          174622,
+          174612,
+          174644,
+          174605,
+          174602
+        ],
+        "linien": [],
+        "personen": [],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1917-10-vermischtes",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1917-10",
+      "rubrik": "Vermischtes",
+      "titel": "Vermischtes aus anderthalb Jahren",
+      "teaser": "Kohle, Erz, ein verschwundener Bauernhof und die runde Zahl 150: was sonst noch geschah.",
+      "body": [
+        "Bergbaufieber. Seit Juli 1916 öffnen im Archipel Gruben, als hätte jemand eine Schatzkarte gefunden. Kohle in Châteaubourg (Juli 1916), Meyzieu (Oktober 1916), Cournon-d’Auvergne (Januar 1917) und Le Malesherbois (Mai 1917). Eisenerz in Aniche (August 1916), Le Malesherbois (November 1916), Valmorin (Februar 1917) und ein zweites Mal in Péronne (August 1917). In Lardy steht seit April 1917 ein Stahlwerk, das noch auf Erz wartet.",
+        "Péronne. Am 11. Juli 1917 verschwindet der Bauernhof, der seit November 1911 im Register stand. Péronne hat damit keinen einzigen Betrieb mehr aus seiner Zeit vor dem Bergbau. Dafür zwei Eisenerzgruben, die zusammen 76 Einheiten im Jahr fördern, und noch immer keine Linie, die sie abholt. Der Gemeinderat soll die Kartoffeln vom Ausstellungsplatz zu den Bergleuten gebracht haben.",
+        "Zahlen. Das Netz zählt seit dem 22. April 1917 150 Linien und seit Juli 1916 mehr als 850 Fahrzeuge. Die Kasse der Société steht im Oktober 1917 bei 752 Millionen, im April 1916 waren es 546.",
+        "Valmorin. Seit dem 19. Dezember 1916 kommen Maschinen an, im Oktober 1917 sind es 79 von 131. Konserven: 66 von 113. Fleisch dagegen wird knapper, 67 von 227. Mathurin hat die Bohnen wieder auf die Karte gesetzt.",
+        "Kurz notiert. Die Chemikalienflotte zwischen Lamballe-Armor und Port des Alizés schrumpft im September 1916 von 55 auf 48 Schiffe. Zwischen Montfougère und Roche-Noire fährt seit Oktober 1916 ein Bus. In Grenay wächst seit Mai 1916 eine zweite Gummiplantage. Die Reifenfabrik in Le Malesherbois steht trotzdem still."
+      ],
+      "grounding": "Gemessen: Neugründungen Châteaubourg Kohlebergwerk 06.07.1916, Aniche Eisenerzbergwerk 19.08.1916, Meyzieu Kohlebergwerk 05.10.1916, Le Malesherbois Eisenerzbergwerk 26.11.1916, Cournon-d’Auvergne Kohlebergwerk 03.01.1917, Valmorin Eisenerzbergwerk 20.02.1917, Lardy Stahlwerk 04.04.1917 (ohne Produktion), Le Malesherbois Kohlebergwerk 21.05.1917, Péronne Eisenerzbergwerk Süd 19.08.1917, Grenay Gummiplantage 18.05.1916. Péronne Bauernhof (Neugründung 20.11.1911) fehlt ab 11.07.1917; Péronne Eisenerzbergwerk und Eisenerzbergwerk Süd mit 48 und 28 Jahresproduktion, keine Linie. 150 Linien am 22.04.1917, 850 Fahrzeuge am 28.07.1916; Kassenstand 545.818.025 (April 1916), 751.911.890 (Oktober 1917). Valmorin: Maschinen erstmals gedeckt 19.12.1916, Oktober 1917 Maschinen 79 von 131, Konserven 66 von 113, Fleisch 67 von 227. WC Chemikalien-Lam-PordesAli-IC-1 55 → 48 am 25.09.1916; Bus Passagiere-Mon-Roc-IC-1 seit 08./11.10.1916; Le Malesherbois Reifenfabrik ohne Produktion. Erfunden: Schatzkarte, Kartoffeln (aus früheren Beiträgen), Mathurins Bohnen.",
+      "refs": {
+        "staedte": [
+          174640,
+          174616,
+          174626,
+          174642,
+          174600,
+          174607,
+          174636,
+          174612,
+          174646,
+          174601,
+          174614,
+          174632
+        ],
+        "linien": [],
+        "personen": [],
+        "betriebe": []
+      }
     }
   ]
 }
