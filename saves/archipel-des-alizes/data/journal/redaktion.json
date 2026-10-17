@@ -2953,6 +2953,332 @@
         "personen": [],
         "betriebe": []
       }
+    },
+    {
+      "id": "1918-02-urkunde-roquemer",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1918-02",
+      "lead": true,
+      "rubrik": "Urkunde",
+      "titel": "Urkunde zur Grundsteinlegung des Bahnhofs Roquemer",
+      "teaser": "Dreizehn Jahre lang hatte La Talaudière 192 Einwohner und keine einzige Linie. Seit dem 3. Januar 1918 heißt der Ort Roquemer, seit dem 2. Februar hält hier ein Zug. Wir drucken die Urkunde, die in den Grundstein des Bahnhofs kam.",
+      "body": [
+        "Im Jahre 1918, am zweiten Tag des Februar, legt die Stadt Roquemer, vormals La Talaudière, den Grundstein ihres Bahnhofs. Für alle, die diesen Stein einmal öffnen, halten wir fest, wie es heute um unsere Stadt steht.",
+        "Erstens. Wir sind 192. So viele waren wir schon im Dezember 1904, als die Société anfing, uns zu zählen, und so viele waren wir in jedem Monat seither. Dreizehn Jahre lang ist keiner dazugekommen und keiner gegangen, jedenfalls nicht so, dass es die Zählung bemerkt hätte.",
+        "Zweitens. Wir heißen seit dem 3. Januar 1918 Roquemer. Wer uns den neuen Namen gegeben hat, steht in keinem Messbuch. Der Gemeinderat sagt, es seien der Fels und das Meer gewesen. Damit der alte Name nicht ganz verloren geht, steht er hier: La Talaudière.",
+        "Drittens. Heute fährt zum ersten Mal ein Zug nach Roquemer. Die Linie, die bisher Vauclaire mit Sin-le-Noble verband, heißt ab heute „TP Passagiere-Vau-Roq-RE-1“ und hält in Vauclaire Station West, Ober-Sin-le-Noble Station und Roquemer Station. Zwei Züge, jeder mit einer Lokomotive Badische VI c und sechs Salonwagen, zusammen 264 Plätze. Das sind mehr Plätze, als Roquemer Einwohner hat. Am selben Tag fahren sechs Omnibusse durch die Stadt: Roquemer Station Haltepunkt, Rue des Dames, Pont Royal, Rue Mirabeau. Bis gestern hatte Roquemer keine einzige Linie.",
+        "Viertens. Was uns fehlt: Fisch. Die Stadt verlangt 81 Einheiten und bekommt keine. Treibstoff: 54 verlangt, keiner da.",
+        "Nachtrag des Stadtschreibers vom 20. Februar, eingefügt, bevor der Stein geschlossen wurde. Seit dem 12. Februar fährt ein Schiff vom Roquemer Hafen zur Fischzucht von Combs-la-Ville, seit dem 16. Februar sind es sechs Frachtschiffe. Dazu drei Lastwagen für Fisch und eine zweite Omnibuslinie von der Rue des Frères Lumière zur Rue Mirabeau. Von hundert Wegen in der Stadt führen heute zwölf über die Société, am 3. Januar war es keiner. Arbeitsplätze zählte die Stadt am 3. Januar 257, heute 471. Einwohner: immer noch 192.",
+        "In den Stein kommen: ein Fahrschein der ersten Fahrt nach Vauclaire, die Januarausgabe dieser Zeitung, ein leerer Fischkorb und diese Urkunde.",
+        "An die, die diesen Stein öffnen: Zählt bitte nach, wie viele wir geworden sind. Unterzeichnet: der Bürgermeister, der Stationsvorsteher, die Lehrerin und, mit Kreide, ein Kind, das zum Anfang „193“ auf den Stein geschrieben hat."
+      ],
+      "grounding": "Gemessen: belegter Wohnraum La Talaudière/Roquemer 192 in jedem Monatsstand von Dezember 1904 bis Februar 1918, keine Linie und 0 % Netzanteil bis Januar 1918. Umbenennung La Talaudière → Roquemer ab der Messung vom 03.01.1918 (wer umbenannt hat, ist nicht gemessen; ein Ortsname kann im Spiel vom Spieler geändert werden). 02.02.1918: „TP Passagiere-Vau-Sin-IC-1“ heißt „TP Passagiere-Vau-Roq-RE-1“ (Halte Vauclaire Station West, Ober-Sin-le-Noble Station, Roquemer Station, Ober-Sin-le-Noble Station), 2 Fahrzeuge mit zusammen 2 × Badische VI c und 12 × Heavyweight 28-1 Parlor, Kapazität 264; neue Buslinie Bus Passagiere-Roq-LO-1 mit 6 Fahrzeugen (Roquemer Station Haltepunkt, Rue des Dames, Pont Royal, Rue Mirabeau). 12.02.1918 Passagierschifflinie Roquemer Hafen – Combs-la-Ville Fischzucht (1 Fahrzeug), ab 16.02.1918 als WC Passagiere,Werkzeuge,Fisch-Roq-Com-IC-1 mit 6 Fahrzeugen; 16.02.1918 RC Fisch-Roq-LO-1 (3) und Bus Passagiere-Roq-LO-2 (Rue des Frères Lumière, Rue Mirabeau). Netzanteil 0 % (03.01.), 4 % (06.02.), 12 % (20.02.1918); Arbeitsplätze 257 (03.01.) und 471 (20.02.1918); Fisch 81 verlangt, 0 gedeckt, Treibstoff 54 verlangt, 0 gedeckt (06.02.1918). Erfunden: Grundsteinlegung, Urkunde, Gemeinderat und Namensdeutung, Stadtschreiber, Inhalt des Steins, Unterschriften, Kreidezahl.",
+      "refs": {
+        "staedte": [
+          174606,
+          174634,
+          174617,
+          174643
+        ],
+        "linien": [
+          406127,
+          210399,
+          426504,
+          427868,
+          297612
+        ],
+        "personen": [],
+        "betriebe": [
+          302000
+        ]
+      }
+    },
+    {
+      "id": "1918-04-akte-rum",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1918-04",
+      "lead": true,
+      "rubrik": "Polizeiakte",
+      "titel": "Akte Rum, Abschlussbericht: Der erste Tropfen",
+      "teaser": "Im Oktober 1917 hat Inspecteur Lebrun die Ermittlungen aufgenommen. Am 10. April 1918 kommt in Port des Alizés zum ersten Mal Rum an, eine einzige Einheit. Hier ist sein Abschlussbericht.",
+      "body": [
+        "Aktenzeichen: Rum/1917/Honorine. Betreff: Ausbleiben des Rums in Port des Alizés. Ermittelnder Beamter: Inspecteur Lebrun. Stand: Ende April 1918.",
+        "Sachverhalt. Port des Alizés verlangt seit Jahren Rum und hat bis in den April 1918 hinein keine einzige Einheit bekommen. Die Brennerei in Lardy brennt seit Februar 1917, der Rum fuhr nachweislich bis Garches. Dort verlor sich die Spur (siehe Bericht vom Oktober 1917).",
+        "Ergebnis, Punkt 1. Am 12. Dezember 1917 liegt zum ersten Mal Rum im Laderaum der vier Schiffe zwischen Garches und Port des Alizés. Der Hafen, in dem sie laden, heißt übrigens „Sin-le-Noble Hafen“, obwohl er zu Garches gehört. Der Unterzeichnete hat dort zwei Tage am falschen Kai gewartet.",
+        "Punkt 2. Am 10. April 1918 ist in Port des Alizés 1 von 218 verlangten Einheiten Rum gedeckt. Es ist die erste seit Beginn der Aufzeichnungen. Am 13. April fährt auch der Lastwagen in der Stadt, der seit August 1917 „Rum“ im Namen trägt, zum ersten Mal Rum. Am 29. April sind es 6.",
+        "Punkt 3, der unangenehme. In den Frachtpapieren der Garches-Schiffe steht am 10. April jede einzelne der 103 Einheiten Rum an Bord als minderwertig. Im Mittel liegt der Rum 5.533 Sekunden im Laderaum, seit er eingeladen wurde. Auf dem Melasseschiff zwischen Cormontreuil und Lardy liegt die Ware im Februar im Mittel 392 Sekunden an Bord, und kein Stück ist beanstandet. Ob der lange Weg dem Rum schadet, kann der Unterzeichnete nicht beweisen. Er hat einen Verdacht.",
+        "Offene Punkte. Bourg-l’Écorce: Mitte April 0 von 391. Pointe des Pêcheurs: 0 von 176. In Bourg fährt seit dem 29. April ein Lastwagen mit „Rum“ im Namen. Rum hat er noch keinen gesehen.",
+        "Abschluss. Der Fall „Rum gestohlen, bevor er ankam“ ist hiermit geschlossen. Gestohlen wurde nichts. Es hat nur gedauert. Honorine hat die Serviette ein drittes Mal beschrieben: „Rum erhalten: 1. Weitere erwartet.“ Sie hängt jetzt gerahmt über dem Tresen. Gezeichnet: Lebrun."
+      ],
+      "grounding": "Gemessen (gültiger Spielverlauf): WC Passagiere,Rum-Gar-PordesAli-IC-1 (4 Fahrzeuge, Halte „Sin-le-Noble Hafen“ und Port des Alizés Hafen; der erste Halt liegt laut Spiel in Garches) hat Rum erstmals am 12.12.1917 an Bord. Rum gedeckt in Port des Alizés: 0 bis 06.04.1918, 1 von 218 am 10.04.1918 (erstmals seit Beginn der Messungen), 6 von 219 am 29.04.1918; die Lardy Rum Distillery meldet am 10.04.1918 erstmals 1 gelieferte Einheit im Jahr. RC Sugar,Rum,Gemüse-PordesAli-LO-1 (8 Fahrzeuge, Rum seit 26.08.1917 im Namen) hat Rum erstmals am 13.04.1918 an Bord. Warenqualität laut Spiel (Rohwert, Skala nicht bestätigt): am 10.04.1918 103 Einheiten Rum an Bord der Garches-Schiffe, alle 103 als schlecht gezählt, Mittelwert 0, mittlere Zeit seit dem Einladen 5.533 s (höchstens 6.388 s); am 27.02.1918 auf WC Passagiere,Molasses,Rum-Cor-Lar-IC-1 Melasse 58 und Rum 46 an Bord, keine Einheit schlecht, mittlere Zeit 392 s. Ob die Fahrzeit die Qualität bestimmt, ist nicht gemessen. Rum gedeckt am 13.04.1918: Bourg-l’Écorce 0 von 391, Pointe des Pêcheurs 0 von 176. RC Fisch,Rum,Konserven-Bou-LO-1 neu am 29.04.1918 (2 Fahrzeuge), ohne Rum an Bord. Erfunden: Inspecteur Lebrun, Akte, Wartezeit am Kai, Frachtpapiere als Bild für die Qualitätswerte, Honorines Serviette und Rahmen.",
+      "refs": {
+        "staedte": [
+          174632,
+          174644,
+          174612,
+          174622,
+          174605,
+          174602
+        ],
+        "linien": [
+          380520,
+          289759,
+          370948,
+          410782
+        ],
+        "personen": [],
+        "betriebe": [
+          339463
+        ]
+      }
+    },
+    {
+      "id": "1918-12-generalversammlung",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1918-12",
+      "lead": true,
+      "rubrik": "Sitzungsprotokoll",
+      "titel": "Protokoll der Generalversammlung: Die erste Milliarde",
+      "teaser": "Am 13. Dezember 1918 hat die Société zum ersten Mal mehr als eine Milliarde in der Kasse. Die Generalversammlung hat getagt. Wir veröffentlichen das Protokoll, leicht gekürzt.",
+      "body": [
+        "Ort: Saal des Hafenamts, Port des Alizés. Beginn: 10 Uhr. Anwesend: der Direktor, der Kassenwart, Vertreter der Inseln, Frau Honorine, ein Herr aus Garches, der seinen Namen nicht nennen wollte. Protokoll: die Redaktion.",
+        "TOP 1, Kassenbericht. Der Kassenwart verliest eine einzige Zahl: 1.004.084.955. So viel liegt am 13. Dezember 1918 in der Kasse, zum ersten Mal mehr als eine Milliarde. Im Oktober 1917 waren es 752 Millionen, im April 1916 546. Die Versammlung erhebt sich. Der Kassenwart bittet, sich wieder zu setzen, er sei noch nicht fertig. Er ist dann aber doch fertig.",
+        "TOP 2, Bericht über das Netz. 912 Fahrzeuge und 165 Linien. Die Marke von 900 Fahrzeugen fiel am 20. März, die von 160 Linien am 28. März. Neu im Jahr 1918: Roquemer mit eigenem Zug, Omnibussen, Fischschiffen und Lastwagen. Die Ölplattform vor Vauclaire, seit dem 18. März im Register und inzwischen auf Stufe 7, deren Rohöl neun Schiffe über Roquemer nach Port des Alizés bringen. Ein Getreideschiff zwischen Châteaubourg und Le Cannet. In Sin-le-Noble seit dem 25. August eine Straßenbahn statt eines Omnibusses.",
+        "TOP 3, Anfragen. Frau Honorine fragt nach dem Rum. Der Direktor: Er kommt an. Im August waren es 61 von 221 verlangten Einheiten, im Dezember sind es 22 von 224. Honorine: „Also kommt er an und geht wieder.“ Die Antwort wird vertagt.",
+        "Der Herr aus Garches fragt, warum seine Stadt seit 1904 in jedem Monat genau 399 Einwohner hat. Der Direktor bittet um schriftliche Einreichung.",
+        "Ein Vertreter aus Vauclaire überbringt eine Frage der Schulkinder: Wo bleibt das Spielzeug? Vauclaire verlangt seit Februar Spielzeug, inzwischen 115 Stück, Sin-le-Noble 81, Roche-Noire 191. Bekommen hat niemand eines. Der Direktor notiert sich das Wort „Tournus“.",
+        "TOP 4, Verschiedenes. Der Antrag, die Milliarde in Münzen auszuzahlen und im Hafen aufzuschichten, wird abgelehnt, weil kein Schiff der Société dafür ausgelegt ist. Schluss der Versammlung: 10 Uhr 40."
+      ],
+      "grounding": "Gemessen: Kassenstand 1.004.084.955 am 13.12.1918, erstmals über einer Milliarde (751.911.890 am 15.10.1917, 545.818.025 im April 1916). Netz am 13.12.1918: 912 Fahrzeuge, 165 Linien; 900 Fahrzeuge erstmals am 20.03.1918 (908), 160 Linien am 28.03.1918. Roquemer-Linien seit Februar 1918 (siehe Urkunde, Februar 1918). Vauclaire Ölplattform neu am 18.03.1918 (Stufe 4), Stufe 7 am 28.11.1918; WC Passagiere,Rohöl,Treibstoff-Roq-PordesAli-RE-1 ab 20.03.1918 mit 9 Fahrzeugen (Roquemer Hafen, Vauclaire Ölplattform, Port des Alizés Hafen #1), Rohöl erstmals an Bord 27.07.1918; WC Passagiere,Getreide-Châ-LeCan-IC-1 seit 06.04.1918, Getreide an Bord ab 14.05.1918; Tram Passagiere-Sin-LO-1 (vorher Bus Passagiere-Sin-LO-5) seit 25.08.1918. Rum gedeckt in Port des Alizés: 61 von 221 (09. bis 17.08.1918), 22 von 224 (13.12.1918). Garches: belegter Wohnraum 399 in jedem Monatsstand seit Dezember 1904. Toys verlangt, nichts gedeckt (13.12.1918): Vauclaire 115 (verlangt seit 06.02.1918), Sin-le-Noble 81 (seit 14.01.1918), Roche-Noire 191 (seit 27.02.1918); Tournus Toy Factory seit 14.01.1918 ohne Produktion. Erfunden: Versammlung, Saal, Anwesende, Kassenwart, Wortbeiträge, Anträge, Uhrzeiten.",
+      "refs": {
+        "staedte": [
+          174632,
+          174606,
+          174634,
+          174640,
+          174609,
+          174617,
+          174644,
+          174601,
+          174637
+        ],
+        "linien": [
+          312066,
+          385414
+        ],
+        "personen": [],
+        "betriebe": [
+          351427,
+          426809
+        ]
+      }
+    },
+    {
+      "id": "1918-12-poesiealbum-marceline",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1918-12",
+      "rubrik": "Poesiealbum",
+      "titel": "Für Marceline. Einträge in ein Poesiealbum",
+      "teaser": "Marceline Clément aus Pointe des Pêcheurs stand seit 1906 in unseren Messbüchern, länger als fast alle anderen. Am 28. Dezember 1918 sehen wir sie zum letzten Mal. Ihre Bekannten haben ihr ins Album geschrieben.",
+      "body": [
+        "Vorbemerkung der Redaktion. Marceline Clément haben wir am 13. April 1906 zum ersten Mal gesehen, zu Fuß, wie damals alle in Pointe des Pêcheurs. Im April 1907 stieg sie zum ersten Mal in die Straßenbahn und, wie sie uns 1911 erzählte, „seitdem kaum noch aus“. Von 1907 bis 1918 haben wir sie 1.006-mal mit der Société gesehen, 1917 bei jeder einzigen unserer 91 Beobachtungen. Im Mai 1918 fand sie eine neue Arbeit, im Juni saß sie zum ersten Mal in einem Automobil. Am 20. Dezember war die Arbeit fort. Am 28. Dezember sahen wir sie ein letztes Mal, im Automobil, unterwegs. Wohin, wissen wir nicht.",
+        "„Wer täglich mitfährt, kennt jeden Stein am Gleis, / wer selber lenkt, fährt manchmal ganz allein. / Steig ab und zu noch bei uns ein.“ — Lucie, vom Bahnhof",
+        "„Ein Glas steht hinterm Tresen, mit dem Rum, der seit April endlich ankommt. Kommst du wieder, trinken wir es zusammen. Kommst du nicht, trinke ich es auf dich.“ — Honorine, Chez Honorine, Port des Alizés",
+        "„Zwölf Jahre lang fast jeden Tag bei uns im Wagen. Das war uns eine Ehre, Madame.“ — Hippolyte Rosemond, Lokführer",
+        "„Aufgenommen am 27. Juni 1918. Ausgetreten: unbekannt. Die Mitgliedsnummer bleibt vergeben.“ — Der Vorsitzende des Automobil-Clubs des Alizés",
+        "„Du wolltest, dass ich in Romagnat eine Haltestelle bekomme. Wir haben immer noch keine Linie. Vielleicht bist du jetzt mit dem Automobil zu mir unterwegs. Ich stelle die Lampe ins Fenster.“ — Deine Schwester"
+      ],
+      "grounding": "Gemessen (Person 84185 der Beobachtungsgruppe, Name von der Redaktion vergeben): Wohnort Pointe des Pêcheurs, erstmals gemessen 13.04.1906; 1906 45 von 45 Messungen zu Fuß; erste ÖV-Fahrt 18.04.1907; Messungen im öffentlichen Verkehr 1907 bis 1918 zusammen 1.006 (1917: 91 von 91); wieder mit Arbeitsplatz ab 27.05.1918, erster Weg im Auto 27.06.1918 (1918: 14 von 99 Messungen im Auto, 85 im ÖV); kein Arbeitsplatz ab 20.12.1918; letzte Messung 28.12.1918 (im Auto, unterwegs), danach nicht mehr in der Beobachtungsgruppe (Grund unbekannt). Romagnat ohne Linie. Rum in Port des Alizés gedeckt seit 10.04.1918. Erfunden: Poesiealbum, alle Einträge, Verse und Verfasser (Lucie, Honorine, Lokführer Hippolyte Rosemond, Schwester, Automobil-Club und Mitgliedsnummer); das Zitat „seitdem kaum noch aus“ stammt aus dem erfundenen Gespräch vom Dezember 1911.",
+      "refs": {
+        "staedte": [
+          174602,
+          174598,
+          174632
+        ],
+        "linien": [],
+        "personen": [
+          84185
+        ],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1919-01-fahrgastordnung",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1919-01",
+      "lead": true,
+      "rubrik": "Fahrgastordnung",
+      "titel": "Ordnung für die Fahrgäste des Oberdecks",
+      "teaser": "Seit dem 6. Januar 1919 fahren in Bourg-l’Écorce Omnibusse mit zwei Stockwerken. Die Société hat dazu eine Ordnung erlassen. Wir drucken sie ab, wie sie in jedem Wagen hängt.",
+      "body": [
+        "Ordnung für die Benutzung der Daimler-Decksitzwagen der Société des Alizés. Gültig ab 6. Januar 1919, zunächst auf der Linie Bus Passagiere-Bou-LO-1 in Bourg-l’Écorce.",
+        "§ 1. Der Decksitzwagen hat zwei Stockwerke und zwölf Plätze. Der Postbus ET 13, den er ersetzt, hatte acht. Wer nachrechnen will: Bisher fuhren auf der Linie sieben Postbusse mit zusammen 56 Plätzen, jetzt vier Decksitzwagen mit 48.",
+        "§ 2. Weniger Wagen heißt nicht weniger Fahrgäste. Am 2. Januar waren 29 von 56 Plätzen besetzt, am 28. Januar 38 von 48. Wer unten stehen muss, möge oben nachsehen.",
+        "§ 3. Das Oberdeck ist kein Aussichtsturm. Winken nach unten ist gestattet, Rufen nach unten nicht.",
+        "§ 4. Hüte sind auf dem Oberdeck festzuhalten. Für Hüte, die Bourg-l’Écorce verlassen, übernimmt die Société keine Haftung.",
+        "§ 5. Diese Ordnung gilt auf jeder Linie, die umgestellt wird. Bourg-l’Écorce, Linie 6: ab 10. Januar fünf Decksitzwagen statt elf Postbusse. Port des Alizés, Linie 1: ab 21. Januar fünf statt acht. Port des Alizés, Linie 2: ab 25. Januar drei statt sechs. Die Société zählt im Januar 1919 noch 125 Omnibusse, im Oktober 1917 waren es 145.",
+        "§ 6. Der Postbus ET 13 wird mit Dank verabschiedet. Er kam im Januar 1913 und hat die Postkutsche von Anse Dorée nicht verdrängt. Die Postkutsche fährt weiter. Für sie gilt diese Ordnung nicht.",
+        "Die Direktion, Abteilung Omnibusse."
+      ],
+      "grounding": "Gemessen: neues Fahrzeugmodell Daimler Decksitzwagen, erstmals gekauft am 05.01.1919, erstmals im Linienbetrieb am 06.01.1919 auf Bus Passagiere-Bou-LO-1 (4 Fahrzeuge). Bou-LO-1: am 02.01.1919 7 × Postbus ET 13, Kapazität 56, 29 belegt; am 06.01.1919 4 × Decksitzwagen, Kapazität 48; am 28.01.1919 38 von 48 belegt. Bus Passagiere-Bou-LO-6: 11 Postbusse mit Kapazität 88, am 10.01.1919 5 Decksitzwagen mit 60. Bus Passagiere-PordesAli-LO-1: 8 Postbusse mit 64, am 21.01.1919 5 Decksitzwagen mit 60. Bus Passagiere-PordesAli-LO-2: 6 Postbusse mit 48, laut Meldung ab 25.01.1919 3 Fahrzeuge, am 28.01.1919 3 Decksitzwagen mit 36. Plätze je Wagen = Linienkapazität geteilt durch Fahrzeuge (12 bzw. 8); ob es Sitz- oder Stehplätze sind, ist nicht gemessen. Busse insgesamt 145 (Oktober 1917) und 125 (Januar 1919). Postbus ET 13 seit Januar 1913 im Netz; Postkutsche (gekauft 1900) weiter auf Bus Passagiere-AnsDor-LO-1. Erfunden: Ordnung, Paragrafen, Hut- und Winkregeln, Wortlaut.",
+      "refs": {
+        "staedte": [
+          174605,
+          174632,
+          174645
+        ],
+        "linien": [
+          301918
+        ],
+        "personen": [],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1919-08-adressbuch-roquemer",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1919-08",
+      "lead": true,
+      "rubrik": "Adressbuch",
+      "titel": "Adressbuch der Stadt Roquemer, Ausgabe 1919",
+      "teaser": "Am 24. August 1919 zählt Roquemer 502 Einwohner. Vor achtzehn Monaten waren es 192, und das seit 1904. Höchste Zeit für ein Adressbuch.",
+      "body": [
+        "Vorwort. Diese erste Ausgabe erscheint, weil der Briefträger sich beschwert hat. Roquemer zählte von Dezember 1904 bis Februar 1918 jeden Monat 192 Einwohner. Im Juli 1918 waren es 249, im Januar 1919 399, am 24. August 1919 sind es 502. Die Stadt hat 1.083 Arbeitsplätze, mehr als doppelt so viele, wie sie Einwohner hat. Von hundert Wegen führen 44 über die Société.",
+        "Bahnhof (Roquemer Station). Züge nach Vauclaire über Ober-Sin-le-Noble, zwei Züge. Fahrkartenschalter, Wartesaal, Gepäckaufbewahrung.",
+        "Hafen (Roquemer Hafen). Sechs Frachtschiffe zur Fischzucht von Combs-la-Ville. Neun Schiffe mit Rohöl und Treibstoff über die Ölplattform vor Vauclaire nach Port des Alizés.",
+        "Pont Royal. Haltestelle der Omnibuslinie 1 (sechs Wagen) zwischen Roquemer Station Haltepunkt, Rue des Dames und Rue Mirabeau.",
+        "Rue des Dames. Haltestelle der Linie 1. Hier wohnt Madame Odile, siehe „Fisch“.",
+        "Rue des Frères Lumière. Endstation der Linie 2, ein Wagen, nach Rue Mirabeau.",
+        "Rue Mirabeau. Umsteigeplatz für Linie 1, Linie 2 und den Omnibus nach Châteaubourg, der dort am Viehzuchtbetrieb hält (zwei Wagen).",
+        "Fisch. 178 Einheiten verlangt, 134 kommen an: von der Fischzucht in Combs-la-Ville über den Hafen, dann mit drei Lastwagen von Roquemer Station Süd nach Unter-Roquemer. Madame Odile verkauft seit Sommer 1918 Fisch, der nicht aus dem eigenen Netz stammt. Sie sagt, man schmecke das nicht.",
+        "Treibstoff. 109 verlangt, 42 da. Zwei Lastwagen zwischen Roquemer Station Süd und Roquemer Station Transfer.",
+        "Spielwaren. Keine. 178 verlangt. Anfragen bitte an die Société, nicht an den Briefträger.",
+        "Nicht verzeichnet: La Talaudière. Unter diesem Namen ist seit dem 3. Januar 1918 niemand mehr gemeldet."
+      ],
+      "grounding": "Gemessen: Roquemer (bis 03.01.1918 La Talaudière) belegter Wohnraum 192 in jedem Monatsstand von Dezember 1904 bis Februar 1918, 249 (Juli 1918), 399 (Januar 1919), 502 am 24.08.1919 (Meldung „500 Einwohner“). Am 24.08.1919: Arbeitsplätze 1.083, Netzanteil 43,7 %, Fisch 178 verlangt und 134 gedeckt, Treibstoff 109/42, Toys 178/0 (Toys verlangt seit 12.02.1919). Linien mit Halt in Roquemer am 24.08.1919: TP Passagiere-Vau-Roq-RE-1 (2 Fahrzeuge; Vauclaire Station West, Ober-Sin-le-Noble Station, Roquemer Station), Bus Passagiere-Roq-LO-1 (6; Roquemer Station Haltepunkt, Rue des Dames, Pont Royal, Rue Mirabeau), Bus Passagiere-Roq-LO-2 (1; Rue des Frères Lumière, Rue Mirabeau), Bus Passagiere-Châ-Roq-IC-1 (2; Châteaubourg Viehzuchtbetrieb, Rue Mirabeau), WC Passagiere,Werkzeuge,Fisch-Roq-Com-IC-1 (6; Roquemer Hafen, Combs-la-Ville Fischzucht), WC Passagiere,Rohöl,Treibstoff-Roq-PordesAli-RE-1 (9; Roquemer Hafen, Vauclaire Ölplattform, Port des Alizés Hafen #1), RC Fisch-Roq-LO-1 (3; Roquemer Station Süd, Unter-Roquemer Station; Fisch an Bord seit 01.06.1918), RC Treibstoff-Roq-LO-1 (2; Roquemer Station Süd, Roquemer Station Transfer). Warenstichprobe vom 19.11.1919: Fisch aus der Combs-la-Ville Fischzucht über Schiff und Lastwagen. Erfunden: Adressbuch, Vorwort, Briefträger, Schalter, Wartesaal und Gepäckaufbewahrung, Madame Odile, Hinweise.",
+      "refs": {
+        "staedte": [
+          174606,
+          174634,
+          174617,
+          174640,
+          174643,
+          174632
+        ],
+        "linien": [
+          406127,
+          210399,
+          297612,
+          342497,
+          426504,
+          312066,
+          427868,
+          397926
+        ],
+        "personen": [],
+        "betriebe": [
+          302000,
+          351427
+        ]
+      }
+    },
+    {
+      "id": "1919-09-raetselecke",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1919-09",
+      "rubrik": "Rätselecke",
+      "titel": "Preisrätsel: Fünf Fragen an den Archipel",
+      "teaser": "Die Redaktion hat in den Messbüchern geblättert und fünf Rätsel gefunden. Die Lösungen stehen unten. Bitte nicht vorher nachsehen.",
+      "body": [
+        "Erstes Rätsel. Ich zähle seit Dezember 1904 in jedem Monat genau 399 Einwohner. Drei Viehzuchtbetriebe stehen bei mir, der älteste seit Februar 1915, der jüngste seit April 1919. Keiner hat je ein Stück Fleisch gemacht, und meine Bürger verlangen 132. Wer bin ich? Zusatzfrage: Welche Stadt hatte im Januar 1919 genau so viele Einwohner wie ich, wenn auch nur für einen Monat?",
+        "Zweites Rätsel. Ich bin ein Hafen. Ich gehöre zu Garches, und bei mir legen die Schiffe nach Lardy, nach Vichy, nach Valmorin und nach Port des Alizés an. Und doch trage ich den Namen eines anderen Ortes. Wie heiße ich?",
+        "Drittes Rätsel. Seit 1905 stand ich auf Stufe 7, und im Oktober 1917 habe ich nichts verschickt. Seit Mai 1918 wachse ich, meistens alle sechs Wochen um eine Stufe, am 20. September 1919 auf Stufe 18. Mein Fang fährt per Schiff in eine Stadt, die es unter ihrem Namen erst seit 1918 gibt. Wer bin ich?",
+        "Viertes Rätsel. Ich wurde im Jahr 1900 gekauft. Drei von uns sind noch im Dienst, zwischen Grande Rue und Domaine des Alizés, sechs Plätze in jedem Wagen. Der Postbus kam und ging, der Decksitzwagen kam. Ich bleibe. Was bin ich?",
+        "Fünftes Rätsel. Ich bin ein Lastwagen in Sin-le-Noble. Seit März 1919 steht „Toys“ auf meiner Seite. Gefahren habe ich bisher nur Wolle. Warum?",
+        "Auflösung. 1. Garches. Zusatzfrage: Roquemer, im Januar 1919. 2. „Sin-le-Noble Hafen“. 3. Die Fischzucht von Combs-la-Ville. Seit April 1918 holt ein Schiff ihren Fisch nach Roquemer. 4. Die Postkutsche von Anse Dorée. 5. Weil im ganzen Archipel noch niemand Spielzeug herstellt. Die Spielzeugfabriken in Tournus (seit Januar 1918) und Cassis (seit Februar 1919) haben bis heute kein Stück gemacht.",
+        "Unter allen richtigen Einsendungen verlost die Redaktion eine Fahrt auf dem Oberdeck."
+      ],
+      "grounding": "Gemessen: Garches belegter Wohnraum 399 in jedem Monatsstand von Dezember 1904 bis September 1919; Garches Viehzuchtbetrieb (seit 20.02.1915, Stufe 8), Viehzuchtbetrieb Nord (05.07.1918, Stufe 8) und Viehzuchtbetrieb Süd (05.04.1919, Stufe 10), alle ohne Produktion, Eingang laut Spiel Getreide; Fleisch in Garches 132 verlangt, 0 gedeckt. Roquemer Monatsstand Januar 1919: 399. Halt „Sin-le-Noble Hafen“ auf WC Passagiere,Rum,Glas-Lar-Gar-IC-1, WC Passagiere,Rum-Gar-PordesAli-IC-1, WC Passagiere,Sand-Gar-Vic-IC-1 und WC Passagiere,Möbel,Bretter-Gar-Val-RE-1, die laut Spiel in Garches halten. Combs-la-Ville Fischzucht: Neugründung 04.04.1905 mit Stufe 7, im Oktober 1917 Stufe 7 und Versand 0; Ausbau auf 8 (08.05.1918), 9 (20.06.), 10 (06.08.), 11 (20.09.), 12 (05.11.), 13 (20.12.1918), 14 (04.02.1919), 15 (23.03.), 16 (08.05.), 17 (05.08.), 18 (20.09.1919); Fisch an Bord von WC Passagiere,Werkzeuge,Fisch-Roq-Com-IC-1 seit 06.04.1918. Postkutsche: gekauft 30.04. bis 28.10.1900, 3 Fahrzeuge mit Kapazität 18 auf Bus Passagiere-AnsDor-LO-1 (Grande Rue, Domaine des Alizés), Stand 20.09.1919. RC Toys,Wolle-Sin-LO-1 seit 16.03.1919, an Bord bisher nur Wolle (ab 01.06.1919); Tournus Toy Factory (14.01.1918) und Cassis Toy Factory (18.02.1919) ohne Produktion, kein Ort mit gedecktem Toys-Bedarf. Erfunden: Rätselform, Ich-Perspektive, Preis.",
+      "refs": {
+        "staedte": [
+          174644,
+          174606,
+          174617,
+          174643,
+          174645,
+          174637,
+          174633
+        ],
+        "linien": [
+          347329,
+          380520,
+          397636,
+          181596,
+          426504,
+          362262
+        ],
+        "personen": [],
+        "betriebe": [
+          301479,
+          429919,
+          321618,
+          302000,
+          426809,
+          349292
+        ]
+      }
+    },
+    {
+      "id": "1919-11-wunschzettel",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1919-11",
+      "lead": true,
+      "rubrik": "Wunschzettel",
+      "titel": "Ein Wunschzettel aus Vauclaire",
+      "teaser": "Seit Februar 1918 verlangt Vauclaire Spielzeug und hat bis heute keines bekommen. Marthe, die uns 1915 ihren Schulaufsatz geschickt hat, schreibt der Société im Namen ihres kleinen Bruders.",
+      "body": [
+        "An die Société des Alizés, Abteilung Spielzeug (falls es die gibt). Vauclaire, im November 1919.",
+        "Sehr geehrter Herr Direktor, ich bin Marthe, ich bin jetzt fünfzehn und schreibe für meinen Bruder Paul. Er ist sieben und kann noch nicht so schön schreiben. Er wünscht sich zu Weihnachten ein Holzpferd, eine Eisenbahn mit Schienen und ein Schiff, das schwimmt. Ich habe ihm gesagt, dass das schwierig wird.",
+        "Ich habe nämlich nachgesehen. Vauclaire verlangt seit dem 6. Februar 1918 Spielzeug, inzwischen 129 Stück, und hat noch keines bekommen. In Sin-le-Noble ist es genauso (81), in Roche-Noire auch (193) und seit Februar 1919 in Roquemer (190). Im ganzen Archipel ist noch nirgends ein Spielzeug angekommen, weil noch keines gemacht wurde.",
+        "Es gibt zwei Spielzeugfabriken, eine in Tournus seit Januar 1918 und eine in Cassis seit Februar 1919. Sie brauchen Bretter. Seit Juli fahren Bretter mit dem Schiff von Sin-le-Noble nach Tournus, heute sind 180 an Bord. Und am 9. November, das hat mir ein Matrose erzählt, lagen zum ersten Mal Bretter auf dem Lastwagen, der vom Bahnhof Tournus zur Spielzeugfabrik fährt. Siebzehn Stück. Gemacht hat die Fabrik aber noch nichts.",
+        "In Sin-le-Noble fahren seit März Lastwagen von zwei Linien mit „Toys“ im Namen. Paul hat einen gesehen und ist hinterhergerannt. Drin war Wolle.",
+        "Deshalb unsere Bitte: Wenn die Bretter angekommen sind, könnten die ersten Spielzeuge nach Vauclaire kommen? Wir haben eine Straßenbahn, einen Zug nach Roquemer und Schiffe nach Bourg-l’Écorce. Mein Vater arbeitet auf der Ölplattform, die seit Oktober Stufe 8 hat. Er könnte auch etwas mitbringen, wenn es passt. Großvater sagt, zu Sarrians-Zeiten habe es auch kein Spielzeug gegeben, und trotzdem sei aus allen etwas geworden.",
+        "Wenn es dieses Jahr nicht klappt, warten wir. In Port des Alizés haben sie auf den Rum auch von 1912 bis 1918 gewartet. Mit freundlichen Grüßen, Marthe (und Paul, er hat unten ein Pferd gemalt).",
+        "Eine Antwort der Société lag bei Redaktionsschluss nicht vor."
+      ],
+      "grounding": "Gemessen: Toys verlangt und 0 gedeckt am 19.11.1919: Vauclaire 129 (verlangt seit 06.02.1918), Sin-le-Noble 81 (seit 14.01.1918), Roche-Noire 193 (seit 27.02.1918), Roquemer 190 (seit 12.02.1919); kein Ort mit gedecktem Toys-Bedarf. Tournus Toy Factory (seit 14.01.1918) und Cassis Toy Factory (seit 18.02.1919): Stufe 1, Jahresproduktion 0, Eingang laut Spiel Bretter. WC Passagiere,Bretter-Sin-Tou-IC-1 (14 Fahrzeuge, Sin-le-Noble Hafen West, Tournus Hafen): Bretter erstmals an Bord 07.07.1919, am 19.11.1919 180 von 240. RC Bretter,Werkzeuge,Passagiere,+1-Tou-LO-1 (11 Fahrzeuge, Tournus Station, Tournus Toy Factory): Bretter erstmals an Bord 09.11.1919, am 19.11.1919 17 von 20. RC Toys,Wolle-Sin-LO-1 (seit 16.03.1919) fährt Wolle, RC Fleisch,Toys-Sin-LO-1 (Toys im Namen seit 20.03.1919) Fleisch, beide ohne Toys an Bord. Vauclaire: Tram Passagiere-Vau-LO-1, TP Passagiere-Vau-Roq-RE-1, WP Passagiere-Vau-Bou-IC-1 (4 Schiffe); Vauclaire Ölplattform Stufe 8 seit 14.10.1919. Rum in Port des Alizés erstmals gedeckt am 10.04.1918 (zum Warten seit 1912 siehe „Die Spur des Rums“, Oktober 1917). Erfunden: Marthe und Großvater (aus dem „Schulaufsatz“, Dezember 1915), Paul, Wünsche, Matrose, Vater auf der Ölplattform, Brief.",
+      "refs": {
+        "staedte": [
+          174634,
+          174617,
+          174601,
+          174606,
+          174637,
+          174633,
+          174632
+        ],
+        "linien": [
+          353774,
+          428067,
+          362262,
+          390765,
+          406127
+        ],
+        "personen": [],
+        "betriebe": [
+          426809,
+          349292,
+          351427
+        ]
+      }
     }
   ]
 }
