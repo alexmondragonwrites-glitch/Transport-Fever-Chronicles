@@ -3279,6 +3279,371 @@
           351427
         ]
       }
+    },
+    {
+      "id": "1919-12-bauanleitung-holzpferd",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1919-12",
+      "lead": true,
+      "rubrik": "Bauanleitung",
+      "titel": "Bauanleitung: Ein Holzpferd aus Tournus in sechs Schritten",
+      "teaser": "Im Dezember 1919 hat die Spielzeugfabrik in Tournus ihre ersten Stücke gemacht. Für alle, die nicht warten wollen, druckt die Redaktion nach, wie der Archipel ein Holzpferd baut.",
+      "body": [
+        "Schwierigkeit: hoch. Bauzeit: ein Jahr und elf Monate, wenn man im Januar 1918 anfängt. Material: Bretter aus dem Sägewerk von Sin-le-Noble, vierzehn Schiffe, elf Lastwagen, Geduld. Werkzeug: eine Spielzeugfabrik, Stufe 1.",
+        "Schritt 1. Man baue eine Spielzeugfabrik. In Tournus steht sie seit dem 14. Januar 1918, in Cassis seit Februar 1919. Dann warte man. Eine Spielzeugfabrik ohne Bretter macht nichts. Das ist der wichtigste Satz dieser Anleitung.",
+        "Schritt 2. Man hole die Bretter. Sie entstehen im Sägewerk von Sin-le-Noble und fahren seit Juli mit dem Schiff vom Hafen West nach Tournus Hafen. Anfang Dezember liegen 120 an Bord.",
+        "Schritt 3. Man bringe die Bretter vom Bahnhof zur Fabrik. In Tournus erledigt das seit dem 9. November ein Lastwagen. Am 11. Dezember ist er fast voll: 57 Bretter auf 60 Plätzen.",
+        "Schritt 4. Man lasse die Fabrik arbeiten. Zwischen dem 15. und dem 18. Dezember 1919 ist es so weit: Tournus meldet das erste Spielzeug, das je im Archipel gemacht wurde. Am 30. Dezember steht die Jahresproduktion laut Spiel bei acht Stück. Ob Pferde dabei sind, sagt die Statistik nicht. Sie sagt nur „Toys“.",
+        "Schritt 5. Man lade das Pferd auf. Ab dem 22. Dezember fahren die ersten vier Spielzeuge auf dem Lastwagen von der Fabrik zum Bahnhof Tournus. Weiter ist noch kein Spielzeug im Archipel gekommen.",
+        "Schritt 6. Man bringe das Pferd nach Vauclaire. An dieser Stelle endet die Anleitung vorerst, denn das Schiff von Tournus nach Sin-le-Noble nimmt Passagiere und Bretter mit, aber kein Spielzeug. Vauclaire verlangt 129 Stück, Sin-le-Noble 81, Roquemer und Roche-Noire je 193. Bis Neujahr ist nirgends eines angekommen.",
+        "Für Paul in Vauclaire, der sich auf seinem Wunschzettel ein Holzpferd gewünscht hat, legt die Redaktion eine vereinfachte Fassung bei: zwei Bretter, eine Schnur, ein Großvater. Bauzeit: ein Nachmittag. Der Großvater lässt ausrichten, das habe zu Sarrians-Zeiten auch gereicht."
+      ],
+      "grounding": "Gemessen: Tournus Toy Factory (seit 14.01.1918, Stufe 1, Eingang laut Spiel Bretter): Jahresproduktion laut Spiel 0 am 15.12.1919, 4 am 18.12.1919, 8 am 30.12.1919; das früheste Stück der Ladungsstichprobe entstand zwischen dem 15. und 18.12.1919; kein früheres Spielzeug im Archipel gemessen. Cassis Toy Factory (seit 18.02.1919) ohne Produktion. WC Passagiere,Bretter-Sin-Tou-IC-1 (14 Schiffe, Sin-le-Noble Hafen West – Tournus Hafen): Bretter an Bord seit 07.07.1919, 120 am 04.12.1919, in der Ladungsstichprobe vom Dezember 1919 alle vom Sin-le-Noble Sägewerk; im Dezember 1919 ohne Toys. RC Bretter,Werkzeuge,Passagiere,+1-Tou-LO-1 (11 Lastwagen, Tournus Station – Tournus Toy Factory): Bretter an Bord seit 09.11.1919, 57 von 60 am 11.12.1919, Toys erstmals an Bord am 22.12.1919 (4 von 10). Toys verlangt und 0 gedeckt am 04.12.1919: Vauclaire 129, Sin-le-Noble 81, Roquemer 193, Roche-Noire 193; am 01.01.1920 weiterhin nirgends gedeckt. Erfunden: Anleitungsform, Holzpferd (das Spiel kennt nur „Toys“), Bauzeit-Rechnung als Scherz, vereinfachte Fassung, Großvater (aus dem Schulaufsatz, Dezember 1915), Paul (aus dem Wunschzettel, November 1919).",
+      "refs": {
+        "staedte": [
+          174637,
+          174633,
+          174617,
+          174634,
+          174606,
+          174601
+        ],
+        "linien": [
+          353774,
+          428067
+        ],
+        "personen": [],
+        "betriebe": [
+          426809,
+          349292,
+          356980
+        ]
+      }
+    },
+    {
+      "id": "1920-01-taufanzeige-valombre",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1920-01",
+      "lead": true,
+      "rubrik": "Taufanzeige",
+      "titel": "Taufanzeige: Valombre, vormals Melle",
+      "teaser": "Fünfzehn Jahre lang hatte Melle 265 Einwohner und keinen Anschluss. Im Januar 1920 bekommt der Ort einen Zug, einen Omnibus und einen neuen Namen. Die Gemeinde zeigt an.",
+      "body": [
+        "In großer Freude zeigen wir die Taufe unseres Ortes an. Er heißt ab sofort VALOMBRE. Bisher hieß er Melle.",
+        "Geboren: im Dezember 1904 oder früher, mit 265 Einwohnern. Gewachsen: seitdem nicht. In jedem Monatsstand der Messbücher, fünfzehn Jahre lang, stehen 265 Einwohner, und keine Linie der Société hielt bei uns.",
+        "Taufpaten: der Personenzug aus Vauclaire, der seit dem 14. Januar über Ober-Sin-le-Noble und Roquemer bis zu uns fährt, mit vier Zügen statt bisher zwei. Dazu der Omnibus mit sieben Decksitzwagen durch die Rue Boris-Vian, die Rue de Bourgogne, die Rue du Jura und die Allée des Hortensias.",
+        "Der Bahnhof heißt noch „Melle Station West“. Wir bitten um Nachsicht, das Schild ist älter als der Name. Auch die Rum-Brennerei am Ort heißt weiter Melle Rum Distillery. Gebrannt hat sie in all den Jahren nichts, und im Januar auch nicht.",
+        "Erste Lebenszeichen: Ende Januar liegt der Netzanteil bei 18 Prozent. Vorher lag er bei null. Die Einwohnerzahl liegt weiter bei 265. Wir sind geduldig, wir haben Übung.",
+        "Von Glückwünschen in Form von Bargeld bitten wir abzusehen. Die Société hat genug, im Januar allerdings etwas weniger als im Dezember.",
+        "In Dankbarkeit: die Bürgerinnen und Bürger von Valombre, vormals Melle, und der Bahnhofsvorsteher, der das neue Schild bestellt hat."
+      ],
+      "grounding": "Gemessen: Ort 174621 heißt bis in die Messungen vom 14.01.1920 Melle, danach Valombre (Meldung zur Umbenennung vom 18.01.1920). Belegter Wohnraum 265 in jedem Monatsstand von Dezember 1904 bis Januar 1920 (29.01.1920: 265). Netzanteil 0 % und keine Linie mit Halt im Ort in der ersten Detailmessung jeder Monitorsitzung von 1904 bis November 1919 sowie in allen Messungen November und Dezember 1919; 17,9 % am 29.01.1920. Am 14.01.1920 wird TP Passagiere-Vau-Roq-RE-1 (2 Züge Badische VI c mit Heavyweight 28-1 Parlor; Vauclaire Station West, Ober-Sin-le-Noble Station, Roquemer Station) zu TP Passagiere-Vau-Val-RE-1 mit 4 Zügen und Halt „Melle Station West“; neue Linie Bus Passagiere-Val-LO-5 mit 7 Daimler Decksitzwagen (Rue Boris-Vian, Rue de Bourgogne, Rue du Jura, Allée des Hortensias). Melle Rum Distillery (Stufe 1) heißt weiter so, Jahresproduktion 0 (ohne Produktion auch 1912 und 1917, siehe frühere Rum-Beiträge). Kasse 1.235,4 Mio. am 07.12.1919, 1.057,1 Mio. am 29.01.1920. Erfunden: Anzeigenform, Taufe und Taufpaten, Schild, Bahnhofsvorsteher, Bitte um Nachsicht. Wer den Namen gewählt hat, misst der Monitor nicht.",
+      "refs": {
+        "staedte": [
+          174621,
+          174634,
+          174606,
+          174617
+        ],
+        "linien": [
+          406127,
+          234744
+        ],
+        "personen": [],
+        "betriebe": [
+          271347
+        ]
+      }
+    },
+    {
+      "id": "1920-03-inventur-tausend",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1920-03",
+      "lead": true,
+      "rubrik": "Inventur",
+      "titel": "Inventur beim tausendsten Fahrzeug",
+      "teaser": "Am 22. März 1920 zählt das Netz der Société 1.002 Fahrzeuge und 180 Linien. Die Redaktion hat nachgezählt, Posten für Posten.",
+      "body": [
+        "Inventurliste der Société des Alizés, aufgenommen am 22. März 1920. Prüfer: die Redaktion. Zählweise: Ein Zug mit allen Wagen zählt als ein Fahrzeug.",
+        "Bestand gesamt: 1.002 Fahrzeuge. Am 19. März waren es 994. Auf den 180 Linien verzeichnet die Messung 973 davon. Die übrigen 29 tauchen in keiner Linienliste auf. Wo sie stehen, sagt die Messung nicht.",
+        "Posten 1, Frachtschiffe: 372 auf 41 Linien. Darin der größte Einzelposten des Archipels: 48 Schiffe auf der Chemikalienlinie von Lamballe-Armor nach Port des Alizés. Es folgen 44 Schiffe zwischen Le Rove und Aniche.",
+        "Posten 2, Lastwagen: 352 auf 56 Linien. Posten 3, Omnibusse: 145 auf 50 Linien. Posten 4, Straßenbahnen: 46 auf 7 Linien, dazu 2 Güter-Straßenbahnen in Sin-le-Noble. Posten 5, Güterzüge: 22 auf 12 Linien. Posten 6, Passagierschiffe: 18 auf 11 Linien. Posten 7, Personenzüge: 16 auf 2 Linien. Summe: 973. Die Redaktion hat dreimal nachgerechnet.",
+        "Nach Bauart: 329 der Frachtschiffe sind Schaufelraddampfer. Es folgen 167 Dampfkraftwagen, 94 Daimler-Decksitzwagen, 74 Benz-Dreitonner mit Kasten, 58 Mack AC mit Rungen, 51 Benz-Kipper und 45 Dampfer der Bauart Dunara Castle. Auf 42 Straßenbahnen steht seit Januar „Nürnberg F“. Von den alten AEG-Triebwagen fahren nur noch vier, in Pointe des Pêcheurs. Insgesamt 23 Modelle.",
+        "Ältester Posten: drei Postkutschen, gekauft im Jahr 1900, im Dienst zwischen Grande Rue und Domaine des Alizés in Anse Dorée. Sie stehen nicht zum Verkauf.",
+        "Posten Nummer 1.000: Er fiel am 22. März auf eine neue Lastwagenlinie in Sin-le-Noble, die zwischen dem Bahnhof West und dem Sägewerk verkehrt, laut Name für Holz, Bretter und Fahrgäste. Sie begann mit acht Dampfkraftwagen. Am 26. März fuhren auf ihr acht Mack AC mit Rungen. Wo das tausendste Fahrzeug heute ist, kann die Redaktion daher nicht sagen.",
+        "Gegenposten: 21.296 Einwohner in 50 Orten, auf jedes Fahrzeug kommen gut 21. Kasse am Stichtag: 1.100,8 Millionen. Fehlbestände: keine. Überzählig: ein Kassenwart, der jetzt Urlaub möchte."
+      ],
+      "grounding": "Gemessen am 22.03.1920: 1.002 Fahrzeuge (994 am 19.03.1920), 180 Linien (Meldungen „Das Netz zählt 1000 Fahrzeuge“ und „180 Linien“). Fahrzeuge auf Linien nach Präfix: WC 372 (41 Linien), RC 352 (56), Bus 145 (50), Tram 46 (7), TrC 2 (1, TrC Sand,Glas-Sin-LO-1), TC 22 (12), WP 18 (11), TP 16 (2); Summe 973. Größte Linien: WC Chemikalien-Lam-PordesAli-IC-1 (48, Lamballe-Armor Hafen – Port des Alizés Hafen #1), WC Farbstoffe,Kunststoff,Chemikalien-LeRov-Ani-IC-1 (44). Fahrzeuge je Modell laut Linienmessung: Schaufelraddampfer 329, Dampfkraftwagen 167, Daimler Decksitzwagen 94, Benz Dreitonner Kasten 74, Mack AC Rungen 58, Benz Dreitonner Kipper 51, Dunara Castle 45, Nürnberg F Triebwagen 42 auf 6 Straßenbahnlinien (erstmals 08.01.1920), AEG Triebwagen 4 (Tram Passagiere-PoidesPêc-LO-1), Postkutsche 3 (Bus Passagiere-AnsDor-LO-1, Grande Rue – Domaine des Alizés, gekauft 1900); 23 Modelle. Neue Linie RC Holz,Passagiere,Bretter-Sin-LO-1 am 22.03.1920 mit 8 Dampfkraftwagen (Sin-le-Noble Station West – Sin-le-Noble Sägewerk), am 26.03.1920 mit 8 Mack AC Rungen. Belegter Wohnraum aller 50 Orte: 21.296. Kasse 1.100.753.361. Erfunden: Inventurform, Prüfer, Nachrechnen, Verkaufsverbot, Kassenwart.",
+      "refs": {
+        "staedte": [
+          174617,
+          174614,
+          174632,
+          174618,
+          174600,
+          174602,
+          174645
+        ],
+        "linien": [
+          423089,
+          370124,
+          277398,
+          288188,
+          337678,
+          227950
+        ],
+        "personen": [],
+        "betriebe": [
+          356980
+        ]
+      }
+    },
+    {
+      "id": "1920-06-rede-gruppe-1904",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1920-06",
+      "lead": true,
+      "rubrik": "Rede",
+      "titel": "Rede zum Abschied der Gruppe von 1904",
+      "teaser": "Achtzig Menschen beobachtet der Monitor, fast alle seit dem 30. Dezember 1904. Zwischen Neujahr und Juni 1920 sind 67 von ihnen aus der Gruppe ausgeschieden. Die Redaktion hat ein paar Worte vorbereitet.",
+      "body": [
+        "Liebe Gruppe von 1904, verehrte Neue, meine Damen und Herren. Ich halte mich kurz, denn die meisten, an die sich diese Rede richtet, sind nicht mehr da.",
+        "Achtzig waren Sie, als die Messbücher am 30. Dezember 1904 aufgeschlagen wurden. Fünfzehn Jahre lang sind Sie gegangen und gefahren, haben Arbeit gefunden und verloren, und wir haben mitgeschrieben. Elf von Ihnen sind vor 1920 gegangen. In der ersten Hälfte dieses Jahres gingen 67 fast auf einmal. Die ersten zwei, aus Enghien-les-Bains, sahen wir am 1. Januar zum letzten Mal. Neun waren es am 22. Januar, zehn am 17. April. Zuletzt, am 3. Juni, Berthe Zébina aus Le Cannet.",
+        "Romagnat hat achtzehn verloren, alle, die wir dort kannten. Garches hat drei verloren, Vichy ebenfalls drei, darunter Edmond Philogène: 1919 jeder beobachtete Weg im Auto, 97 von 97, zuletzt unterwegs am 26. Februar, natürlich im Auto.",
+        "Lamballe-Armor verliert Désiré Séverin. Wir haben 1914 das Tagebuch „Neun Jahre zu Fuß“ gedruckt, und auch 1918 und 1919 führte jeder beobachtete Weg zu Fuß. Am 6. Februar gab es wieder Arbeit, am 8. März nicht mehr, und am selben Tag war Désiré Séverin aus der Gruppe fort. Wir hoffen, der letzte Weg war ein Spaziergang.",
+        "Geblieben sind zwei: Isidore Valère aus Fontenay-aux-Roses und Marceline Philogène aus La Mulatière. Sie sitzen heute in der ersten Reihe, falls es eine gibt.",
+        "Und dann die Neuen: 67 bis Ende Juni, die Gruppe zählt wieder achtzig. Sie wohnen anders. Im Dezember 1919 lebten zwölf von achtzig Beobachteten in einem Ort mit mindestens zehn Prozent Netzanteil. Ende Juni sind es 44. Bourg-l’Écorce stellt neun, Vauclaire und Roquemer je sechs.",
+        "Man sieht es an den Wegen. Im Dezember 1919 legte die Gruppe gut 10 von 100 beobachteten Wegen mit der Société zurück, im Juni 1920 gut 25. Zu Fuß gingen erst 71 von 100, jetzt 55. Das ist kein Sinneswandel, sondern eine neue Besetzung, und ich bitte die Statistik, das zu berücksichtigen.",
+        "Liebe Gruppe von 1904: Sie waren nicht repräsentativ, das stand immer dabei. Aber Sie waren die Unsrigen. Die Redaktion erhebt das Glas. Honorine hat es gefüllt, mit Rum, denn den gibt es in Port des Alizés inzwischen."
+      ],
+      "grounding": "Gemessen (feste, nicht repräsentative Beobachtungsgruppe von 80 Personen): 80 Personen seit der ersten Messung am 30.12.1904; 11 davon vor 1920 ausgeschieden, 67 zwischen 01.01. und 03.06.1920 (Datum der letzten Messung mit der Person), darunter 2 aus Enghien-les-Bains am 01.01., 9 am 22.01., 10 am 17.04., zuletzt Berthe Zébina (62024, Le Cannet) am 03.06.1920; nach Wohnort u. a. Romagnat 18 (danach niemand mehr aus Romagnat in der Gruppe), Garches 3, Vichy 3. Edmond Philogène (144145, Vichy): 1919 97 von 97 beobachteten Wegen mit dem Auto, zuletzt am 26.02.1920 (Auto). Désiré Séverin (90377, Lamballe-Armor): 1918 und 1919 alle beobachteten Wege zu Fuß, wieder Arbeit am 06.02.1920, ohne Arbeit und ausgeschieden am 08.03.1920. Aus der Gruppe von 1904 noch dabei: Isidore Valère (45714), Marceline Philogène (126758). Neu von Januar bis Juni 1920: 67; die Gruppe zählt in jeder Messung 80. In Orten mit Netzanteil ≥ 10 %: 12 von 80 am 04.12.1919, 44 von 80 am 29.06.1920; größte Wohnorte am 29.06.1920 Bourg-l’Écorce 9, Vauclaire 6, Roquemer 6. Letztes Verkehrsmittel aller beobachteten Personen je Messung: Dezember 1919 70,9 % zu Fuß, 18,8 % Auto, 10,3 % Société; Juni 1920 55,2 %, 19,4 %, 25,5 %. Rum in Port des Alizés gedeckt seit 10.04.1918 (03.06.1920: 67 von 238). Warum Personen nicht mehr gemessen werden, sagt der Monitor nicht. Erfunden: Rede und Redner, erste Reihe, Glas, Honorine; die Namen der Personen sind von der Redaktion vergeben.",
+      "refs": {
+        "staedte": [
+          174598,
+          174644,
+          174638,
+          174614,
+          174615,
+          174631,
+          174647,
+          174609,
+          174605,
+          174634,
+          174606
+        ],
+        "linien": [],
+        "personen": [
+          144145,
+          90377,
+          45714,
+          126758,
+          62024
+        ],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1920-09-wettbuch-fluggast",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1920-09",
+      "lead": true,
+      "rubrik": "Wettbuch",
+      "titel": "Aus dem Wettbuch von Chez Honorine: Der erste Fluggast",
+      "teaser": "Seit dem 14. Juni 1920 fliegen vier Flugzeuge der Société zwischen Port des Alizés und Sin-le-Noble. Drei Monate lang flogen sie leer. Am Tresen von Chez Honorine wurde gewettet, wann der erste Gast einsteigt. Wir drucken die Seite aus dem Wettbuch.",
+      "body": [
+        "Wettbuch, Seite 41. Geführt von Honorine, Chez Honorine, am Hafen von Port des Alizés. Einsatz: ein Glas. Schiedsrichter: die Messbücher.",
+        "14. Juni 1920. Die Société hat vier Junkers F 13 Herta gekauft, die erste laut Spiel am 11. Juni, und lässt sie zwischen dem Flughafen Port des Alizés und dem Flughafen Sin-le-Noble hin- und herfliegen. Sechzehn Plätze. Frage des Tages: Wann sitzt der erste Gast drin?",
+        "Wette 1, Hippolyte, Lokführer: „Vor dem 14. Juli. Die Leute wollen fliegen.“ Wette 2, Inspecteur Lebrun: „Nicht vor dem Herbst. Ich habe die Sitze gezählt, es sind sechzehn, und heute saß auf keinem jemand.“ Wette 3, ein Herr vom Automobil-Club: „Nie. Wer fliegt, wenn er fahren kann?“ Wette 4, Honorine: „Wenn das erste Spielzeug in Vauclaire ankommt, fliege ich mit.“",
+        "13. Juli 1920. Leer. Hippolyte zahlt. Die Linie steht laut Spiel bei minus 66.708. Hippolyte sagt, das sei Werbung.",
+        "31. August 1920. Immer noch leer, in jeder Messung seit dem 14. Juni. Minus 163.160. In Sin-le-Noble hat derweil der Lastwagen mit „Toys“ auf der Seite zum ersten Mal Spielzeug geladen, zwölf Stück. Das fünfte Rätsel aus der Rätselecke vom September 1919 ist damit gelöst. Das Wettbuch nicht.",
+        "3. September 1920. Nebenwette erledigt: Valombre, das alte Melle, hat 399 Einwohner, genau so viele wie Garches. Wer auf „Garches wird nie eingeholt“ gesetzt hatte, zahlt. Der Herr aus Garches zahlt nicht, er war nicht da.",
+        "16. September 1920. Ein Fluggast! Einer, auf sechzehn Plätzen, an Bord in der Messung vom 16. September, 94 Tage nach dem Start der Linie. Lebrun gewinnt, sagt, er habe es gewusst, und bestellt sein Glas. Auch am 19., 23., 26. und 29. September sitzt je ein Gast an Bord. Ob es immer derselbe ist, wissen wir nicht. Lebrun ermittelt.",
+        "Offen bleiben: Wette 3, denn der Herr vom Automobil-Club sagt, ein einzelner Gast zähle nicht. Wette 4, denn Vauclaire verlangt 138 Spielzeuge und hat keines. Und die Dauerwette von der Tafel: Rum in Bourg-l’Écorce. Stand: 436 verlangt, 0 gedeckt. Die Seite ist voll. Fortsetzung auf Seite 42."
+      ],
+      "grounding": "Gemessen: AP Passagiere-PordesAli-LO-1 erstmals am 10.06.1920 (0 Fahrzeuge), ab 14.06.1920 AP Passagiere-PordesAli-Sin-IC-1 mit 4 Junkers F 13 Herta (erstes Exemplar laut Spiel gekauft am 11.06.1920), Halte Port des Alizés Flughafen und Sin-le-Noble Flughafen, Kapazität 16. Passagiere an Bord: 0 in jeder Messung vom 14.06. bis 13.09.1920, 1 am 16., 19., 23., 26. und 29.09.1920. Jahresbilanz der Linie laut Spiel: −7.848 (14.06.), −66.708 (13.07.), −163.160 (31.08.), −183.801 (26.09.1920). RC Toys,Wolle-Sin-LO-1 erstmals mit Toys an Bord am 31.08.1920 (12). Valombre 399 Einwohner am 03.09.1920, Garches 399. Am 03.09.1920: Toys in Vauclaire 138 verlangt, 0 gedeckt; Rum in Bourg-l’Écorce 436 verlangt, 0 gedeckt. Wer an Bord war, misst der Monitor nicht. Erfunden: Wettbuch, Wetten, Einsätze und Seitenzahlen, Hippolyte Rosemond, Inspecteur Lebrun, Herr vom Automobil-Club, Herr aus Garches.",
+      "refs": {
+        "staedte": [
+          174632,
+          174617,
+          174621,
+          174644,
+          174634,
+          174605
+        ],
+        "linien": [
+          220049,
+          362262
+        ],
+        "personen": [],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1920-09-sportbericht-schlaeferliga",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1920-09",
+      "rubrik": "Sportbericht",
+      "titel": "Schläferliga: Valombre holt Garches ein, 399 zu 399",
+      "teaser": "Fünfzehn Jahre lang standen zwei Orte des Archipels regungslos in der Tabelle, Garches mit 399, Melle mit 265. Seit Januar läuft Melle, das jetzt Valombre heißt. Am 3. September war Gleichstand.",
+      "body": [
+        "Die Ausgangslage: Seit Dezember 1904 hat Garches in jedem Monatsstand 399 Einwohner, Melle 265. Fünfzehn Jahre ohne eine einzige Bewegung auf der Anzeigetafel. Kenner nannten das Duell das ruhigste der Welt.",
+        "Der Anpfiff: Im Januar 1920 wechselt Melle den Namen und bekommt einen Personenzug und einen Omnibus. Ende Januar: 265. Die Kenner nicken. Dann: 270 im März, 279 im Mai, 309 im Juni, 360 im August.",
+        "Die Schlussphase: 379 am 16. August, 387 am 19., 391 am 23., 397 am 27. August. Dann, am 3. September 1920: 399. Gleichstand. Garches hat in der ganzen Zeit keinen Einwohner gewonnen oder verloren und steht weiter bei 399. Am 6. September: 403. Valombre führt.",
+        "Spielanalyse: Beide Mannschaften verlangen dasselbe, Fleisch und Bretter, und beide bekamen am Tag des Gleichstands davon nichts. Valombre wollte 134 Fleisch und 112 Bretter, Garches 132 und 128. Der Unterschied liegt im Spielaufbau: Valombre hat 56 Prozent Netzanteil, Garches null. Seit dem 12. August fährt außerdem ein Güterzug mit Brettern und Fleisch von Sin-le-Noble über Châteaubourg nach Valombre, gezogen von einer Chinesischen Baureihe JF1. Die erste Lieferung ist bis Monatsende nicht angekommen.",
+        "Stimmen nach dem Spiel. Garches: „Wir spielen auf Halten.“ Valombre: „Wir haben fünfzehn Jahre trainiert.“",
+        "Tabelle der Saison 1920 (Einwohner vom 1. Januar bis 29. September): 1. Valombre 265 → 411 (+146). 2. Bourg-l’Écorce 3.539 → 3.670 (+131). 3. Roquemer 562 → 666 (+104), das schon im Januar 1919 einmal genau 399 zählte. 4. Port des Alizés 2.303 → 2.388 (+85). 5. Pointe des Pêcheurs 1.625 → 1.706 (+81). Danach Sin-le-Noble (+44), Valmorin (+41), Vauclaire (+38), Roche-Noire (+35), Anse Dorée (+29), Montfougère (+23) und Montceau-les-Mines (+1). Die übrigen 38 Orte, darunter Garches, teilen sich den letzten Platz mit ±0."
+      ],
+      "grounding": "Gemessen: Garches belegter Wohnraum 399 in jedem Monatsstand Dezember 1904 bis September 1920, Netzanteil 0 %. Melle/Valombre 265 in jedem Monatsstand Dezember 1904 bis Januar 1920, umbenannt im Januar 1920, TP Passagiere-Vau-Val-RE-1 und Bus Passagiere-Val-LO-5 seit 14.01.1920. Valombre: 265 (29.01.), 270 (04.03.), 279 (02.05.), 309 (03.06.), 360 (01.08.), 379 (16.08.), 387 (19.08.), 391 (23.08.), 397 (27.08.), 399 (03.09.), 403 (06.09.), 411 (29.09.1920); Netzanteil 56,3 % am 03.09.1920. Bedarf am 03.09.1920: Valombre Fleisch 134, Bretter 112; Garches Fleisch 132, Bretter 128; jeweils 0 gedeckt, in Valombre auch am 29.09.1920. TC Bretter,Fleisch-Sin-Val-RE-1 seit 12.08.1920 (Chinesische Baureihe JF1; Sin-le-Noble Station Abzweigung, Châteaubourg Station Abzweigung, Valombre Station). Roquemer 399 im Monatsstand Januar 1919. Tabelle: Einwohner aller 50 Orte am 01.01.1920 und 29.09.1920, 38 Orte unverändert. Erfunden: Sportbericht, Liga, Anzeigetafel, Kenner, Stimmen.",
+      "refs": {
+        "staedte": [
+          174621,
+          174644,
+          174605,
+          174606,
+          174632,
+          174602,
+          174617
+        ],
+        "linien": [
+          406127,
+          234744,
+          443021
+        ],
+        "personen": [],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1920-11-maerchen-holzpferd",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1920-11",
+      "lead": true,
+      "rubrik": "Märchen",
+      "titel": "Das Märchen vom Holzpferd, das elf Monate reiste",
+      "teaser": "Im November 1920 kommt im Archipel zum ersten Mal Spielzeug bei den Menschen an, in Sin-le-Noble. Wie die ersten Stücke dorthin kamen, erzählen wir so, wie man es Kindern erzählt.",
+      "body": [
+        "Es war einmal, Mitte Dezember 1919, in einer Fabrik in Tournus, ein Holzpferd. Es war eines der ersten vier Spielzeuge, die je im Archipel gemacht wurden, und es wusste genau, wohin es wollte: nach Vauclaire, zu einem Jungen namens Paul, der es sich gewünscht hatte.",
+        "Am 18. Dezember hob man es auf einen Lastwagen. Der fuhr es zum Bahnhof von Tournus, und dort sagte man ihm: Warte. Das Schiff nach Sin-le-Noble nimmt keine Spielzeuge mit, nur Leute und Bretter.",
+        "Das Pferd wartete. Es wartete über Weihnachten und Neujahr, und als der Frühling kam, wartete es noch immer. Am 17. April 1920 aber schrieb jemand „Toys“ auf das Schiff, und am selben Tag fuhren dreißig Spielzeuge über das Wasser. Das Pferd war dabei.",
+        "In Sin-le-Noble sah es Lastwagen vorbeifahren. Auf einem stand sogar „Toys“, aber er fuhr Wolle. So verging der Sommer. Am letzten Augusttag lud der Wolle-Lastwagen zum ersten Mal Spielzeug, zwölf Stück, und das Pferd fuhr vom Bahnhof West zum Bahnhof Zentrum.",
+        "Am Bahnhof Zentrum sagte man ihm: Du bist fast da. Am 18. Oktober nahm es ein dritter Lastwagen mit, einer, auf dem „Fleisch, Toys“ stand und auf dem nun auch wirklich Spielzeug lag. Es war sein viertes Fahrzeug.",
+        "Und dann, am 1. November 1920, geschah es: In Sin-le-Noble kamen die ersten sieben Spielzeuge bei den Menschen an. Ende November waren es sechzehn, von 90, die die Stadt verlangt. Unser Pferd sahen wir zum letzten Mal am 23. November, an Bord des Fleischlasters. Danach stand es in keiner Ladeliste mehr. Wir glauben, es ist angekommen. Nur eben in Sin-le-Noble.",
+        "Und Paul? Vauclaire hat seit dem 29. Oktober 500 Einwohner, so viele wie nie, und verlangt 139 Spielzeuge. Bekommen hat es keines. In Roquemer warten 227, in Roche-Noire 200. Die Fabrik in Cassis hat noch nichts gemacht. Seit Mai steht dort ein Sägewerk, das ebenfalls noch nichts gemacht hat.",
+        "Mit dem Pferd reisten andere aus den letzten Dezembertagen 1919. Zwei davon sahen wir am 20. und 23. November noch auf dem Fleischlaster. Und wenn sie nicht angekommen sind, dann fahren sie noch heute."
+      ],
+      "grounding": "Gemessen (Ladungsstichprobe, höchstens 240 Stücke je Messung): Ladung 369139, Toys aus der Tournus Toy Factory mit Ziel Sin-le-Noble Station Zentrum, entstanden zwischen dem 15. und 18.12.1919, aufgenommen am 18.12.1919, Fahrzeugwechsel über RC Bretter,Werkzeuge,Passagiere,+1-Tou-LO-1 (Tournus Station – Tournus Toy Factory), WC Passagiere,Bretter,Toys-Sin-Tou-IC-1, RC Toys,Wolle-Sin-LO-1 (Sin-le-Noble Station West – Station Zentrum) und RC Fleisch,Toys-Sin-LO-1 (Station Zentrum – Station Transfer), an Bord gesehen vom 09. bis 23.11.1920, danach nicht mehr; ebenso 348146 (entstanden um den 26.12.1919, zuletzt an Bord 23.11.1920) und 434802 (um den 28.12.1919, zuletzt 20.11.1920). Tournus Toy Factory Jahresproduktion laut Spiel 4 am 18.12.1919. Das Schiff Sin–Tou führt Toys seit 17.04.1920 (30 an Bord), RC Toys,Wolle-Sin-LO-1 erstmals mit Toys am 31.08.1920 (12), RC Fleisch,Toys-Sin-LO-1 am 18.10.1920 (12). Toys gedeckt in Sin-le-Noble: 0 am 29.10., 7 von 90 am 01.11., 16 von 90 am 30.11.1920. Am 01.11.1920 Toys 0 gedeckt in Vauclaire (139 verlangt), Roquemer (227), Roche-Noire (200). Vauclaire 500 Einwohner am 29.10.1920. Cassis Toy Factory und Cassis Sägewerk (seit 19.05.1920) ohne Produktion. Erfunden: Märchenform, dass das Stück ein Holzpferd ist und nach Vauclaire wollte, Warten und Gefühle, dass es unter den ersten dreißig auf dem Schiff war, Paul (aus dem Wunschzettel, November 1919).",
+      "refs": {
+        "staedte": [
+          174637,
+          174617,
+          174634,
+          174606,
+          174601,
+          174633
+        ],
+        "linien": [
+          428067,
+          353774,
+          362262,
+          390765
+        ],
+        "personen": [],
+        "betriebe": [
+          426809,
+          349292,
+          444607
+        ]
+      }
+    },
+    {
+      "id": "1920-12-predigt-garches",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1920-12",
+      "lead": true,
+      "rubrik": "Predigt",
+      "titel": "Predigt zum Christfest 1920 in Garches",
+      "teaser": "Sechzehn Jahre lang hatte Garches 399 Einwohner und Viehzuchtbetriebe, die nie etwas hervorgebracht haben. Im Dezember 1920 kommt das erste Getreide und kurz vor Weihnachten das erste Fleisch. Der Pfarrer von Garches hat darüber gepredigt.",
+      "body": [
+        "Liebe Gemeinde von Garches. Wir sind 399. Wir waren 399, als die Messbücher im Dezember 1904 begannen, und wir sind es an diesem Weihnachtsfest. In sechzehn Jahren hat keine Zahl bemerkt, dass jemand dazugekommen oder gegangen wäre. Man hat über uns Balladen geschrieben und Rätsel. Heute rede ich selbst.",
+        "Wir haben einen Hafen, der den Namen eines anderen Ortes trägt. In ihm legen Schiffe nach Port des Alizés an, nach Lardy, nach Vichy und nach Valmorin, mit Rum, Glas, Sand und Möbeln. Durch unseren Hafen ist viel gegangen, was andere brauchten. Und wir haben drei Viehzuchtbetriebe, seit 1915, 1918 und 1919. Keiner hat je etwas hervorgebracht, denn es kam kein Getreide.",
+        "Am 26. November kam ein neuer Weg zu uns. Zwei Kipper der Société fahren seitdem vom Bauernhof in Sin-le-Noble bis vor den Südstall. Am 6. Dezember lag das erste Getreide darauf, zwei Ladungen auf vierundzwanzig Plätzen. Am 8. Dezember war der Wagen voll.",
+        "Und dann, liebe Gemeinde, in der Woche vor dem Fest, zwischen dem 20. und dem 24. Dezember, hat der Viehzuchtbetrieb Süd zum ersten Mal etwas hervorgebracht: zwei Fleisch und drei Wolle. Am 28. Dezember sind es sechs und neun. Es ist nicht viel. Es ist mehr, als unsere Ställe je gegeben haben.",
+        "Ich will euch nichts vormachen. Das Fleisch bleibt im Stall, kein Wagen holt es ab. In unseren Läden verlangen wir 132 Stück Fleisch und bekommen keines, dazu 128 Bretter und bekommen keine. Wir haben das erste Fleisch des Ortes, und wir essen es nicht. Das ist eine Geschichte, wie sie nur der Archipel schreibt.",
+        "Schaut nach Valombre, das früher Melle hieß und fünfzehn Jahre lang 265 Einwohner hatte. Es verlangt dasselbe wie wir, Fleisch und Bretter. Seit Januar fährt dort ein Zug, seit Oktober kommt Fleisch an, seit dem 30. November auch Bretter. Am 28. Dezember zählt Valombre 469 Menschen. Im September waren wir gleich. Ich sage das ohne Neid. Fast ohne.",
+        "Drei aus unserer Gemeinde, die seit 1904 in der Beobachtungsgruppe standen, sind in diesem Jahr daraus ausgeschieden. Neu dazugekommen ist Narcisse Petit-Frère. Auch das ist Garches: Es gehen welche, es kommt jemand, und die Zahl bleibt.",
+        "Darum lasst uns heute für das Getreide danken, das gekommen ist, und für den Wagen beten, der das Fleisch eines Tages abholt. Und wer im neuen Jahr nach Valombre fährt: Grüßt Melle von uns. Amen."
+      ],
+      "grounding": "Gemessen: Garches belegter Wohnraum 399 in jedem Monatsstand Dezember 1904 bis Dezember 1920, Netzanteil 0 %. Halt „Sin-le-Noble Hafen“, laut Spiel in Garches, auf WC Passagiere,Rum-Gar-PordesAli-IC-1, WC Passagiere,Rum,Glas-Lar-Gar-IC-1, WC Passagiere,Sand-Gar-Vic-IC-1 und WC Passagiere,Möbel,Bretter-Gar-Val-RE-1. Garches Viehzuchtbetrieb (seit 20.02.1915, Stufe 8), Viehzuchtbetrieb Nord (05.07.1918, Stufe 8) und Viehzuchtbetrieb Süd (05.04.1919, Stufe 10), Eingang laut Spiel Getreide, bis 20.12.1920 ohne Produktion. Neue Linie Bus Passagiere-Sin-LO-8 am 26.11.1920 (2 Benz Dreitonner Kipper, Sin-le-Noble Bauernhof – Garches Viehzuchtbetrieb Süd), seit 30.11.1920 RC Passagiere,Getreide-Sin-Gar-IC-1; Getreide an Bord erstmals am 06.12.1920 (2 von 24), 24 von 24 am 08.12.1920. Viehzuchtbetrieb Süd, Jahresproduktion laut Spiel: 0 am 20.12., 5 am 24.12. (Fleisch 2, Wolle 3), 15 am 28.12.1920 (Fleisch 6, Wolle 9); Versand 0; die beiden anderen weiter 0. Bedarf in Garches am 28.12.1920: Fleisch 132, Bretter 128, beides 0 gedeckt. Valombre (bis Januar 1920 Melle, 265 Einwohner seit 1904): TP Passagiere-Vau-Val-RE-1 seit 14.01.1920, Fleisch erstmals gedeckt am 21.10.1920, Bretter am 30.11.1920, 469 Einwohner am 28.12.1920; am 03.09.1920 wie Garches 399. Beobachtungsgruppe: Amélie Laurent (105518), Marceline Dacalor (144986) und Eugénie Zébina (144993) aus Garches, seit 1904 dabei, 1920 ausgeschieden; Narcisse Petit-Frère (35326) seit 26.03.1920 neu. Erfunden: Pfarrer, Predigt, Gemeinde, Ställe, Gebet und Gruß; Namen der Personen von der Redaktion vergeben.",
+      "refs": {
+        "staedte": [
+          174644,
+          174621,
+          174617
+        ],
+        "linien": [
+          301899,
+          380520,
+          347329,
+          397636,
+          181596,
+          406127
+        ],
+        "personen": [
+          105518,
+          144986,
+          144993,
+          35326
+        ],
+        "betriebe": [
+          321618,
+          429919,
+          301479,
+          191033
+        ]
+      }
+    },
+    {
+      "id": "1921-01-steckbrief-krokodil",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1921-01",
+      "lead": true,
+      "rubrik": "Steckbrief",
+      "titel": "Steckbrief: Das Krokodil",
+      "teaser": "Seit dem 13. Januar 1921 zieht auf der Blech- und Stahlstrecke von Port des Alizés nach Pointe des Pêcheurs ein neues Tier. Die Redaktion hat einen Steckbrief angelegt, wie man ihn aus dem Naturkundeunterricht kennt.",
+      "body": [
+        "Name: Ce 6/8 II Krokodil. Gattung: Lokomotive. Familie: Güterzug. Im Archipel gesichtet seit: 13. Januar 1921, angeschafft laut Spiel am 9. Januar.",
+        "Lebensraum: genau eine Strecke, von Port des Alizés Station Ost nach Pointe des Pêcheurs Station Umstieg und zurück. Weitere Vorkommen: keine. Das Krokodil ist das einzige seiner Art im Archipel.",
+        "Nahrung: Blech und Stahl. Am 1. Februar 1921 trägt es 70 Blech und 56 Stahl, so viel, wie hineinpasst.",
+        "Begleiter: neun Güterwagen der Bauart 1913, so viele wie vorher. Das Krokodil hat sie übernommen, ohne zu fragen.",
+        "Vorgänger im Revier: eine Amerikanische 4-4-2 Atlantic, die diese Strecke mindestens seit November 1919 zog. Ihre Art ist nicht bedroht. 28 Atlantic ziehen weiter Züge auf acht Linien, zwölf allein den Personenzug nach Anse Dorée.",
+        "Ausgestorben im Archipel: der AEG-Triebwagen. Im November 1919 fuhren noch 47 auf sieben Straßenbahnlinien. Im Januar 1920 wichen fast alle dem Nürnberg F, die letzten vier sah man Mitte Mai 1920 in Pointe des Pêcheurs.",
+        "Verwandtschaft: Das Krokodil ist das fünfte neue Modell seit Januar 1920, nach dem Nürnberg-F-Triebwagen (Januar 1920), der Junkers F 13 Herta (Juni), der Chinesischen Baureihe JF1 und dem Rungenwagen 1920 (beide August). Die Sammlung der Société umfasst damit 26 Modelle.",
+        "Besondere Kennzeichen: zieht ruhig, frisst viel, beißt nicht. Wer es sieht, soll es nicht füttern. Es bekommt genug."
+      ],
+      "grounding": "Gemessen: Neues Fahrzeugmodell „Ce 6/8 II Krokodil“ erstmals im Linienbetrieb am 13.01.1921, erstes Exemplar laut Spiel gekauft am 09.01.1921, 1 Fahrzeug auf TC Blech,Stahl-PordesAli-PoidesPêc-IC-1 (Port des Alizés Station Ost, Pointe des Pêcheurs Station Umstieg) mit 9 Güterwagen 1913; auf dieser Linie vorher 1 Amerikanische 4-4-2 Atlantic mit 9 Güterwagen 1913 (in allen Messungen ab 02.11.1919). An Bord am 01.02.1921: Blech 70 von 70, Stahl 56 von 56. Amerikanische 4-4-2 Atlantic am 01.02.1921: 28 Züge auf 8 Linien, davon 12 auf TP Passagiere-PordesAli-AnsDor-RE-1. AEG Triebwagen: 47 Fahrzeuge auf 7 Straßenbahnlinien am 02.11.1919, ab 08.01.1920 auf den meisten durch Nürnberg F Triebwagen ersetzt, zuletzt 4 auf Tram Passagiere-PoidesPêc-LO-1 am 15.05.1920, ab 19.05.1920 nicht mehr gemessen. Neue Modelle seit Januar 1920: Nürnberg F Triebwagen (08.01.1920), Junkers F 13 Herta (14.06.1920), Chinesische Baureihe JF1 und Rungenwagen 1920 (12.08.1920), Ce 6/8 II Krokodil (13.01.1921); 26 Modelle im Linienbetrieb am 01.02.1921. Erfunden: Steckbriefform, Tiervergleich, Verhalten, Fütterungsverbot. Antrieb und Herkunft der Lokomotive misst der Monitor nicht.",
+      "refs": {
+        "staedte": [
+          174632,
+          174602,
+          174645
+        ],
+        "linien": [
+          302675,
+          322356,
+          337678
+        ],
+        "personen": [],
+        "betriebe": []
+      }
     }
   ]
 }
