@@ -1,6 +1,6 @@
 # Epochen: Die Zeitung altert mit dem Spiel
 
-**Konzept, noch nicht umgesetzt.** Mit dem Spieler besprochen am 18.10.2026. Ziel ist, dass „Le Journal des Alizés“ so aussieht wie eine Zeitung ihrer Zeit: um 1905 anders als in den 1920ern, den 1940ern oder als Website der 1990er. Das Spiel soll bis 2050 oder länger laufen.
+**Konzept, abgestimmt, noch nicht umgesetzt.** Mit dem Spieler besprochen am 18.10.2026. Ziel ist, dass „Le Journal des Alizés“ so aussieht wie eine Zeitung ihrer Zeit: um 1905 anders als in den 1920ern, den 1940ern oder als Website der 1990er. Das Spiel soll bis 2050 oder länger laufen.
 
 ## Festgelegt
 
@@ -15,7 +15,7 @@
 9. **Der Name darf sich ändern:** Mit den Stufen darf die Zeitung umbenannt werden. „Alizés“ bleibt im Namen immer erkennbar (siehe „Namen“).
 10. **Schalter „im heutigen Stil lesen“:** Alte Ausgaben lassen sich auch im aktuellen Stil und mit dem aktuellen Namen lesen.
 
-Annahme, noch zu bestätigen: Nur das Journal verändert sich, nicht die übrige Chronicles-Seite.
+11. **Nur das Journal verändert sich**, nicht die übrige Chronicles-Seite (bestätigt 18.10.2026).
 
 ## Was immer gleich bleibt
 
@@ -122,7 +122,7 @@ Der Look der Dreißiger/Vierziger (6) braucht keine Kriegsthemen. Er zeigt nur, 
 
 ## Namen
 
-Vorschläge, noch abzustimmen. Der Name ist ein eigenes Merkmal und wechselt zusammen mit einer Stufe. Jeder Namenswechsel bekommt eine Notiz „In eigener Sache“, und der alte Name steht noch einige Ausgaben klein unter dem neuen („vormals Le Journal des Alizés“).
+Vom Spieler bestätigt (18.10.2026). Der Name ist ein eigenes Merkmal und wechselt zusammen mit einer Stufe. Jeder Namenswechsel bekommt eine Notiz „In eigener Sache“, und der alte Name steht noch einige Ausgaben klein unter dem neuen („vormals Le Journal des Alizés“).
 
 | ab Stufe | Name | Gedanke |
 |---|---|---|
@@ -148,11 +148,9 @@ Die Zeitung nimmt im Juni 1920 Abschied von der Kutschenzeit, die Kutschen selbs
 
 ## Offene Fragen
 
-- Bestätigen: Ändert sich nur das Journal (Annahme) oder auch die übrige Chronicles-Seite?
-- Namen je Stufe (Vorschläge unter „Namen“).
 - Wie viele Stufen vorab bauen? Vorschlag: Mechanik, Zustand `krisenpapier` und Stufen 1 bis 5 jetzt, jede weitere Stufe kurz bevor das Spiel sie erreichen kann.
 
-Geklärt am 18.10.2026: Auslöser der Stufen 6, 9, 11, 13 und 14 (Technik-Jahrgänge), Krise als Zustand, Name darf sich ändern, Schalter „im heutigen Stil lesen“ kommt.
+Geklärt am 18.10.2026: Auslöser der Stufen 6, 9, 11, 13 und 14 (Technik-Jahrgänge), Krise als Zustand, Namen je Stufe, Schalter „im heutigen Stil lesen“ kommt, nur das Journal verändert sich.
 
 ## Umsetzung in Schritten (wenn freigegeben)
 
