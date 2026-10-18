@@ -95,6 +95,7 @@ const warnings = [];
 
 // Editorial pieces: every invented story names its data basis and what is invented.
 const STORY = new Set(['artikel','interview','portraet','anzeige','einordnung']);
+const FICTION_META = /\b(?:erfunden|fiktiv|fiktional)\w*|\bunser\w* (?:\w+ )?(?:Szene|Erzählung)\b/i;
 unique(red.items, 'story');
 for(const s of red.items){
   assert(STORY.has(s.typ), 'unknown story type '+s.typ); assert(['fiktion','einordnung'].includes(s.art), 'unknown provenance '+s.id);
@@ -110,6 +111,12 @@ for(const s of red.items){
   // A cited note is a player statement; the player may delete it later, so a missing note only warns.
   if(s.refs?.notizen?.length) assert(/Spielervorgabe/.test(s.grounding), 'story citing notes must call them Spielervorgabe: '+s.id);
   for(const id of s.refs?.notizen || []) if(!noteIds.has(id)) warnings.push(`Notiz ${id} aus ${s.id} fehlt im Notizbuch (gelöscht oder nicht freigegeben).`);
+  // Fiction is labelled by art and grounding; the text itself tells the story without "our invented scene".
+  if(s.art === 'fiktion'){
+    const texts = [s.titel, s.teaser, ...(s.body || []), s.partner?.name, s.partner?.rolle, ...(s.fragen || []).flatMap(f => [f.frage, f.antwort]), s.anzeige?.kopf, ...(s.anzeige?.zeilen || []), s.anzeige?.fuss];
+    const meta = texts.map(t => typeof t === 'string' && t.match(FICTION_META)).find(Boolean);
+    if(meta) warnings.push(`${s.id}: Fiktions-Metasprache im Text („${meta[0]}“); Kennzeichnung gehört in art und grounding.`);
+  }
 }
 assert(red.items.filter(s => s.lead).every((s, i, all) => all.findIndex(x => x.date === s.date) === i), 'one lead per edition');
 for(const w of warnings) console.warn('Hinweis: '+w);
