@@ -1,5 +1,6 @@
 """Journal build from synthetic monitor sessions: vehicle models (Spielmonitor revision 15), the player's notebook,
-the sea chart from measured positions (revision 16) and the kinds of vehicle, air lines included.
+the sea chart from measured positions (revision 16), the kinds of vehicle, air lines included, and the epochs
+(zeitleiste.json from epoch rules: earliest and latest year, triggers, the crisis paper, rollbacks, no rules file).
 
 Usage: python scripts/test-build-journal.py
 Builds into a temporary folder and never touches the published journal or the real publish cache.
@@ -348,6 +349,211 @@ class JournalKindTests(JournalCase):
         self.assertEqual({l['id']:l['art'] for l in chart['linien']}[4], 'flugzeug')
         # Air cargo is a kind of its own; without a known prefix the carrier alone still says aircraft.
         self.assertEqual((journal.line_kind('AC Post-Val-Roc-IC-1', 'AIR'), journal.line_kind('Linie 1', 'AIR')), ('frachtflugzeug', 'flugzeug'))
+
+
+EPOCH_RULES = {'schema_version':1,
+    'stufen':[{'nr':1, 'name':'Anfang'},
+              {'nr':2, 'name':'Reiche Kasse', 'fruehestens':1913, 'spaetestens':1916, 'ausloeser':{'art':'kasse', 'ab':5000000}, 'notiz':'Schlichter.'},
+              {'nr':3, 'name':'Große Stadt', 'fruehestens':1913, 'spaetestens':1915, 'ausloeser':{'art':'stadt', 'einwohner_ab':4000}, 'notiz':'Rundfunk.'}],
+    'merkmale':{'kopf':{'bezeichnung':'Kopf', 'stufen':[{'wert':'alt'}, {'wert':'neu', 'stufe':2}]},
+                'name':{'bezeichnung':'Name', 'text':True, 'stufen':[{'wert':'Alte Zeitung'}, {'wert':'Neue Zeitung', 'stufe':3, 'vormals_ausgaben':2}]}},
+    'rubriken':{'radioprogramm':{'titel':'Radioprogramm', 'stufe':3, 'form':'programm', 'fuellung':'fiktion', 'datei':'radioprogramm.json'}},
+    'zustaende':{'krisenpapier':{'bezeichnung':'Krisenpapier', 'fruehestens':1913,
+                                 'beginn':{'art':'kasse_einbruch', 'rueckgang_prozent':20, 'binnen_monaten':12}, 'ende':{'wachstum_monate':12},
+                                 'notiz_beginn':'Einfacheres Papier.', 'notiz_ende':'Wieder gewohntes Papier.'}}}
+
+
+def monthly(start, cash, t0=1000, town=500):
+    """One detail row on the first of every month from start=(year, month); cash and town size per month or constant."""
+    rows, (y, m) = [], start
+    for i, money in enumerate(cash):
+        row = detail((m, 1), t0+100*i)
+        row['game_date'] = row['towns_game_date'] = {'year':y, 'month':m, 'day':1}
+        row['money'] = money
+        row['towns'][0]['housing_occupied'] = town[i] if isinstance(town, list) else town
+        rows.append(row)
+        y, m = (y+1, 1) if m == 12 else (y, m+1)
+    return rows
+
+
+def programme(pid, month):
+    return {'id':pid, 'date':month, 'art':'fiktion', 'sender':'Radio Test', 'titel':'Das Programm der Woche',
+            'grounding':'Erfunden sind Sender, Sendungen und Zeiten; gemessen ist nur, dass die Rundfunkzeit erreicht ist.',
+            'tage':[{'tag':'Sonntag', 'sendungen':[{'zeit':'20.30', 'titel':'Konzert', 'text':'Musik vom Kai.'}]}]}
+
+
+class JournalEpochTests(JournalCase):
+    """Epochs: data/epochen.json rules evaluated on the canonical course into zeitleiste.json (journal_epochen.py)."""
+    def epochs(self, sessions, rules=EPOCH_RULES, world=None, name='e', extra=None):
+        folder = self.tmp/name
+        for session, rows in sessions.items():
+            (folder/'monitor/sessions'/session).mkdir(parents=True)
+            (folder/'monitor/sessions'/session/'daten.jsonl').write_text(''.join(json.dumps(r, ensure_ascii=False)+'\n' for r in rows), encoding='utf-8')
+        out = folder/'out'
+        out.mkdir()
+        (out/'redaktion.json').write_text(json.dumps(REDAKTION, ensure_ascii=False), encoding='utf-8')
+        for file, content in (extra or {}).items():
+            (out/file).write_text(json.dumps(content, ensure_ascii=False), encoding='utf-8')
+        paths = ()
+        if rules is not None:
+            (folder/'epochen.json').write_text(json.dumps(rules, ensure_ascii=False), encoding='utf-8')
+            paths = (folder/'epochen.json',)
+            if world is not None:
+                (folder/'welt.json').write_text(json.dumps(world, ensure_ascii=False), encoding='utf-8')
+                paths += (folder/'welt.json',)
+        self.changed = journal.build(folder/'monitor', SAVE, out, folder/'cache', epochen=paths)[0]
+        self.validation = validate(out)
+        if self.validation:
+            self.assertEqual(self.validation.returncode, 0, self.validation.stderr or self.validation.stdout)
+        path = out/'zeitleiste.json'
+        return (json.loads(path.read_text(encoding='utf-8')) if path.exists() else None), out
+
+    def test_trigger_after_earliest_year_changes_in_its_month(self):
+        z, _ = self.epochs({'a':monthly((1913, 1), [1e6]*4+[6e6]*4)})
+        stage = z['stufen'][1]
+        self.assertEqual((stage['monat'], stage['grund']), ('1913-05', 'ausloeser'))
+        self.assertEqual((stage['anlass']['art'], stage['anlass']['date'], stage['anlass']['wert']), ('kasse', '1913-05-01', 6e6))
+        self.assertIn('1. Mai 1913', stage['begruendung'])
+        self.assertEqual([(s['wert'], s['ab']) for s in z['merkmale']['kopf']['stufen']], [('alt', '1913-01'), ('neu', '1913-05')])
+        # The town never reaches 4,000 and 1915 is still ahead: stage 3, its name and its section stay open.
+        self.assertEqual((z['stufen'][2]['monat'], z['stufen'][2]['grund']), (None, 'offen'))
+        self.assertEqual([s['ab'] for s in z['merkmale']['name']['stufen']], ['1913-01', None])
+        self.assertIsNone(z['rubriken']['radioprogramm']['ab'])
+
+    def test_trigger_before_earliest_year_waits_for_january_and_keeps_its_occasion(self):
+        z, _ = self.epochs({'a':monthly((1912, 3), [1e6, 1e6]+[6e6]*11)})
+        stage = z['stufen'][1]
+        self.assertEqual((stage['monat'], stage['grund'], stage['anlass']['date']), ('1913-01', 'fruehestens', '1912-05-01'))
+        self.assertIn('Vor 1913 wechselt die Zeitung nicht', stage['begruendung'])
+        self.assertEqual(z['beginn'], '1912-03')
+
+    def test_latest_year_without_trigger_and_stages_in_order(self):
+        z, _ = self.epochs({'a':monthly((1914, 9), [1e6, 1e6, 6e6, 6e6, 6e6, 6e6])}, name='spaet')
+        self.assertEqual((z['stufen'][1]['monat'], z['stufen'][1]['grund']), ('1914-11', 'ausloeser'))
+        late = z['stufen'][2]
+        self.assertEqual((late['monat'], late['grund']), ('1915-01', 'spaetestens'))
+        self.assertNotIn('anlass', late)
+        self.assertIn('spätestens 1915', late['begruendung'])
+        self.assertEqual(z['merkmale']['name']['stufen'][1]['ab'], '1915-01')
+        self.assertEqual(z['rubriken']['radioprogramm']['ab'], '1915-01')
+        # Without any trigger stage 2 comes at its latest year, and stage 3 never comes before stage 2.
+        z, _ = self.epochs({'a':monthly((1914, 10), [1e6]*17)}, name='ohne')
+        self.assertEqual([(s['monat'], s['grund']) for s in z['stufen'][1:]], [('1916-01', 'spaetestens'), ('1916-01', 'vorgaenger')])
+        # Before the latest year the stage waits.
+        z, _ = self.epochs({'a':monthly((1914, 10), [1e6]*3)}, name='frueh')
+        self.assertEqual([s['monat'] for s in z['stufen']], ['1914-10', None, None])
+
+    def test_crisis_paper_begins_and_ends(self):
+        cash = ([10e6]*5+[6e6]+[10e6]*6                    # 1912: a dip before the earliest year counts for nothing
+                +[10e6, 10.5e6, 11e6, 12e6, 9.5e6, 9e6, 10e6, 11e6, 12.5e6]  # 1913-05: minus 20.8 %, back at the old level in 1913-09
+                +[10.6e6, 12.5e6, 9.5e6]                    # minus 15 % is no crisis; 1913-12 is the next one
+                +[9.6e6+0.1e6*i for i in range(12)]+[10.8e6])  # twelve months of growth in 1914 end it below the old level
+        z, _ = self.epochs({'a':monthly((1912, 1), cash)}, name='krise')
+        phases = z['zustaende']['krisenpapier']['phasen']
+        self.assertEqual([(p['beginn'], p['ende']) for p in phases], [('1913-05', '1913-09'), ('1913-12', '1914-12')])
+        first, second = phases
+        self.assertEqual((first['anlass']['hoechststand_monat'], first['anlass']['rueckgang_prozent']), ('1913-04', 20.8))
+        self.assertEqual((first['ende_anlass']['art'], second['ende_anlass']['art']), ('kasse_erholung', 'kasse_wachstum'))
+        self.assertIn('12 Monaten', second['ende_begruendung'])
+        self.assertEqual(z['zustaende']['krisenpapier']['notiz_beginn'], 'Einfacheres Papier.')
+        # Still in the crisis at the end of the recording: the phase stays open.
+        z, _ = self.epochs({'a':monthly((1913, 1), [10e6, 12e6, 9e6, 9.1e6])}, name='offen')
+        self.assertEqual([(p['beginn'], p['ende']) for p in z['zustaende']['krisenpapier']['phasen']], [('1913-03', None)])
+
+    def test_rollback_changes_nothing(self):
+        played = monthly((1913, 1), [1e6]*4+[6e6]*2)       # cash crosses the threshold in May …
+        replay = monthly((1913, 3), [1e6]*6, t0=1200)      # … but that branch was abandoned by loading the March save
+        z, _ = self.epochs({'a':played, 'b':replay}, name='sprung')
+        canon, _ = self.epochs({'a':played[:3], 'b':replay}, name='kanon')
+        self.assertEqual((z['stufen'][1]['monat'], z['stand']['zeitspruenge']), (None, 1))
+        self.assertEqual({k:v for k, v in z.items() if k != 'stand'}, {k:v for k, v in canon.items() if k != 'stand'})
+
+    def test_same_measurements_same_timeline(self):
+        sessions = {'a':monthly((1912, 11), [1e6, 1e6, 6e6, 7e6, 5e6])}
+        _, one = self.epochs(sessions, name='eins')
+        _, two = self.epochs(sessions, name='zwei')
+        self.assertEqual((one/'zeitleiste.json').read_bytes(), (two/'zeitleiste.json').read_bytes())
+        again = journal.build(self.tmp/'eins/monitor', SAVE, one, self.tmp/'eins/cache', epochen=(self.tmp/'eins/epochen.json',))[0]
+        self.assertNotIn('zeitleiste.json', again)
+
+    def test_without_rules_file_every_other_file_stays_identical(self):
+        sessions = {'a':monthly((1913, 1), [1e6]*4+[6e6]*4)}
+        z, plain = self.epochs(sessions, rules=None, name='ohne')
+        self.assertIsNone(z)
+        _, ruled = self.epochs(sessions, name='mit')
+        self.assertTrue((ruled/'zeitleiste.json').exists())
+        for name in ('meldungen', 'menschen', 'staedte', 'fuhrpark', 'notizen'):
+            self.assertEqual((plain/f'{name}.json').read_bytes(), (ruled/f'{name}.json').read_bytes(), name)
+        missing = journal.build(self.tmp/'ohne/monitor', SAVE, plain, self.tmp/'ohne/cache', epochen=(self.tmp/'fehlt.json',))[0]
+        self.assertEqual(missing, [])
+        # Rules removed later: the old timeline goes, nothing else changes.
+        gone = journal.build(self.tmp/'mit/monitor', SAVE, ruled, self.tmp/'mit/cache', epochen=())[0]
+        self.assertEqual((gone, (ruled/'zeitleiste.json').exists()), (['zeitleiste.json'], False))
+
+    def test_world_file_overrides_single_stages_features_and_sections(self):
+        world = {'schema_version':1, 'stufen':[{'nr':2, 'ausloeser':{'art':'stadt', 'einwohner_ab':600, 'stadt':10}}],
+                 'merkmale':{'kopf':{'stufen':[{'wert':'alt'}, {'wert':'anders', 'stufe':2}]}}, 'rubriken':{'radioprogramm':None}}
+        z, _ = self.epochs({'a':monthly((1913, 1), [1e6]*6, town=[500, 550, 610, 620, 630, 640])}, world=world)
+        stage = z['stufen'][1]
+        # Two town measurements above the threshold, as the town milestones of the events.
+        self.assertEqual((stage['monat'], stage['anlass']['art'], stage['anlass']['wert'], stage['fruehestens']), ('1913-04', 'stadt', 620, 1913))
+        self.assertEqual(z['merkmale']['kopf']['stufen'][1], {'wert':'anders', 'ab':'1913-04', 'stufe':2})
+        self.assertEqual((z['rubriken'], z['regeln']['welt']), ({}, 'welt.json'))
+
+    def test_trigger_kinds_name_their_measured_occasion(self):
+        plane = model(51, 'Junkers F 13', 4, bought=(1912, 2, 8)) | {'available_from':1912}
+        rows = [detail((1, 20), 100, BASE), air(detail((2, 1), 200, BASE), 0, 'AP Passagiere-Val-LO-1', None, []),
+                air(detail((2, 10), 300, BASE), 4, 'AP Passagiere-Val-Roc-IC-1', 'AIR', [plane]),
+                air(detail((3, 1), 400, BASE), 4, 'AP Passagiere-Val-Roc-IC-1', 'AIR', [plane]), detail((3, 15), 500, BASE)]
+        rows[3]['landmarks'] = [{'id':9, 'name':'Valmorin Turm', 'completed':True}]
+        for row in rows[3:]:
+            row['towns'][0]['noise_db'] = 75.25
+        def own(art, **kw):
+            return {'bezeichnung':art, 'stufen':[{'wert':'vorher'}, {'wert':'nachher', 'spaetestens':1930, 'ausloeser':{'art':art, **kw}}]}
+        rules = {'schema_version':1, 'stufen':[{'nr':1, 'name':'Anfang'}],
+                 'merkmale':{'a':own('premiere', fahrzeugart='flugzeug'), 'b':own('modell', baujahr_ab=1912), 'c':own('netz', fahrzeuge_ab=9),
+                             'd':own('wahrzeichen'), 'e':own('umwelt', laerm_ab=70), 'f':own('meldung', typ='linie', muster='Fluglinie'),
+                             'g':own('stadt', einwohner_ab=500, stadt=10)}}
+        z, out = self.epochs({'a':rows}, rules=rules)
+        events = {e['id']:e for e in json.loads((out/'meldungen.json').read_text(encoding='utf-8'))['meldungen']}
+        got = {k:m['stufen'][1] for k, m in z['merkmale'].items()}
+        self.assertEqual({k:(s['ab'], s['grund'], s['anlass']['date']) for k, s in got.items()},
+                         {'a':('1912-02', 'ausloeser', '1912-02-10'), 'b':('1912-02', 'ausloeser', '1912-02-10'), 'c':('1912-01', 'ausloeser', '1912-01-20'),
+                          'd':('1912-03', 'ausloeser', '1912-03-01'), 'e':('1912-03', 'ausloeser', '1912-03-15'), 'f':('1912-02', 'ausloeser', '1912-02-01'),
+                          'g':('1912-02', 'ausloeser', '1912-02-01')})
+        for key, kind in (('a', 'premiere'), ('b', 'modell'), ('f', 'linie')):
+            self.assertEqual(events[got[key]['anlass']['meldung']]['typ'], kind)
+        self.assertIn('„Junkers F 13“', got['b']['anlass']['text'])
+        self.assertIn('Valmorin Turm', got['d']['anlass']['text'])
+        self.assertIn('75,2 dB', got['e']['anlass']['text'])
+
+    def test_broken_rules_stop_the_build_with_a_message(self):
+        broken = [{**EPOCH_RULES, 'stufen':[EPOCH_RULES['stufen'][0], {**EPOCH_RULES['stufen'][1], 'ausloeser':{'art':'mondphase'}}]},
+                  {**EPOCH_RULES, 'stufen':[EPOCH_RULES['stufen'][0], {**EPOCH_RULES['stufen'][1], 'fruehestens':1917}]},
+                  {**EPOCH_RULES, 'merkmale':{'kopf':{'stufen':[{'wert':'Alt'}]}}},
+                  {**EPOCH_RULES, 'merkmale':{'kopf':{'stufen':[{'wert':'a'}, {'wert':'b', 'stufe':3}, {'wert':'c', 'stufe':2}]}}},
+                  {**EPOCH_RULES, 'stufen':[{**EPOCH_RULES['stufen'][0], 'spaetestens':1913}]}]
+        for i, rules in enumerate(broken):
+            with self.subTest(i), self.assertRaises(journal.journal_epochen.RulesError):
+                self.epochs({'a':monthly((1913, 1), [1e6])}, rules=rules, name=f'kaputt{i}')
+
+    def test_validator_rejects_wrong_months_and_early_programmes(self):
+        if not shutil.which('node'):
+            self.skipTest('Node.js fehlt')
+        sessions = {'a':monthly((1914, 9), [1e6, 1e6, 6e6, 6e6, 6e6, 6e6])}
+        z, out = self.epochs(sessions, extra={'radioprogramm.json':{'schema_version':1, 'hinweis':'Von Hand, erfunden.', 'programme':[programme('r1', '1915-02')]}})
+        self.assertIn('1 Programme', self.validation.stdout)
+        early = {'schema_version':1, 'hinweis':'Von Hand, erfunden.', 'programme':[programme('r0', '1914-12')]}
+        (out/'radioprogramm.json').write_text(json.dumps(early, ensure_ascii=False), encoding='utf-8')
+        result = validate(out)
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn('before its section', result.stderr)
+        (out/'radioprogramm.json').unlink()
+        z['stufen'][1]['monat'] = '1912-12'
+        (out/'zeitleiste.json').write_text(json.dumps(z, ensure_ascii=False), encoding='utf-8')
+        result = validate(out)
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn('Stufe 2', result.stderr)
 
 
 if __name__ == '__main__':

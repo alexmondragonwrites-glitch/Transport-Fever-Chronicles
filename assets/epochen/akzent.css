@@ -1,0 +1,7 @@
+/* Merkmal „akzent“ (data-akzent am Journal): Akzentfarbe je Stufe, Regeln in data/epochen.json.
+ * rot  Stufe 1, Kutschenzeit: Rot der Initialen, Grundgestaltung aus journal.css.
+ * gold Stufe 4, Ende der Kutschenzeit: Gold für Initialen, Ausgabezeile, Gesprächsstriche und Réclame-Köpfe.
+ * Die Kennzeichnung „Fiktion“ bleibt rot: Sie ist ein Etikett, kein Schmuck. */
+
+.j[data-akzent=gold]{--j-accent:var(--gold);--j-gold:var(--gold-bright)}
+.j[data-akzent=gold] .j-reclame{border-color:var(--gold)}

@@ -1,6 +1,6 @@
 # Epochen: Die Zeitung altert mit dem Spiel
 
-**Konzept, abgestimmt, noch nicht umgesetzt.** Mit dem Spieler besprochen am 18.10.2026. Ziel ist, dass „Le Journal des Alizés“ so aussieht wie eine Zeitung ihrer Zeit: um 1905 anders als in den 1920ern, den 1940ern oder als Website der 1990er. Das Spiel soll bis 2050 oder länger laufen.
+**Konzept abgestimmt, teilweise umgesetzt (18.10.2026):** Mechanik, Zustand `krisenpapier` und die Stufen 1 bis 5 sind gebaut (siehe „Umsetzung“). Die Stufen 6 bis 14 kommen jeweils kurz bevor das Spiel sie erreichen kann. Mit dem Spieler besprochen am 18.10.2026. Ziel ist, dass „Le Journal des Alizés“ so aussieht wie eine Zeitung ihrer Zeit: um 1905 anders als in den 1920ern, den 1940ern oder als Website der 1990er. Das Spiel soll bis 2050 oder länger laufen.
 
 ## Festgelegt
 
@@ -97,6 +97,57 @@ Auch ein Zustand bekommt beim Beginn eine Notiz „In eigener Sache“ mit dem b
 
 Die erste Ausgabe nach einem sichtbaren Wechsel trägt automatisch eine kurze Notiz mit dem **belegten Anlass**, etwa „Seit am 14. Juni 1920 das erste Flugzeug der Société abhob, erscheint diese Zeitung in neuem Gewand.“ Ausführlichere Stücke, in denen Figuren auf das neue Layout reagieren, kommen von Hand in `redaktion.json` (Fiktion, mit Bezug).
 
+## Umsetzung (Stand 18.10.2026)
+
+| Teil | Datei |
+|---|---|
+| Regeln, Vorlage für alle Welten | `data/epochen.json` (Stufen 1–5, Merkmale, Rubrik Radioprogramm, Zustand Krisenpapier) |
+| Regeln dieser Welt | `saves/archipel-des-alizes/data/epochen.json` (Name, Kopfzeile, Preis; Ortsnamen und Namen der Zeitung nur hier) |
+| Auswertung | `scripts/journal_epochen.py`, aufgerufen von `build-journal.py` auf dem kanonischen Verlauf |
+| Ergebnis | `saves/<welt>/data/journal/zeitleiste.json` (ohne Vorlage keine Datei, alle anderen Dateien byte-identisch) |
+| Anzeige | `assets/journal-epochen.js` (gültige Stufe je Ausgabe, „In eigener Sache“), Stile je Merkmal in `assets/epochen/*.css` |
+| Rubrik Radioprogramm | `saves/<welt>/data/journal/radioprogramm.json`, von Hand (Fiktion), Struktur unten |
+| Prüfung | `validate-journal.mjs` (Zeitleiste, Programme), `test-build-journal.py` (11 Epochen-Tests) |
+
+### Regeldatei
+
+- `stufen`: Liste mit `nr`, `name`, optional `notiz` (Text für „In eigener Sache“), dazu `fruehestens`, `spaetestens` (Jahre) und `ausloeser`. Die erste Stufe gilt ab Beginn der Aufzeichnung und hat keinen Auslöser.
+- `merkmale`: je Merkmal `bezeichnung` und `stufen` [{`wert`}, {`wert`, `stufe`: 2}, …]. Der erste Wert gilt von Anfang an, jeder weitere wechselt mit einer Stufe oder mit eigenem `fruehestens`/`ausloeser`/`spaetestens` (dann schleichend unabhängig von den Stufen). Stilmerkmale haben Werte aus Kleinbuchstaben (`didone`, `artdeco` …) und werden zu data-Attributen; Textmerkmale (`"text": true`, z. B. `name`, `kopfzeile`, `preis`) stehen im Zeitungskopf. Beim Namen sagt `vormals_ausgaben`, wie viele Ausgaben der alte Name klein darunter steht.
+- `rubriken`: je Rubrik `titel`, `stufe` (oder eigener Auslöser), `form` (bisher `programm`), `fuellung` (`fiktion` oder `messdaten`), `datei`.
+- `zustaende`: bisher `krisenpapier` mit `fruehestens`, `beginn` {`art`: `kasse_einbruch`, `rueckgang_prozent`, `binnen_monaten`}, `ende` {`wachstum_monate`}, `notiz_beginn`, `notiz_ende`.
+- Die Datei einer Welt überschreibt Stufen nach `nr` und Merkmale, Rubriken und Zustände nach Namen, Feld für Feld; `null` entfernt einen Eintrag. Beispiel „Radio erst mit der ersten Straßenbahn in Roquemer“: `{"schema_version": 1, "stufen": [{"nr": 5, "ausloeser": {"art": "meldung", "typ": "premiere", "muster": "Straßenbahn.*Roquemer"}}]}`.
+- Eine fehlerhafte Regeldatei (unbekannte Auslöser-Art, frühestens nach spätestens, Stufen außer der Reihe …) bricht den Bau mit einer Meldung ab.
+
+Auslöser und ihre Angaben: `premiere` {`fahrzeugart`}, `modell` {`baujahr_ab`, optional `fahrzeugart`}, `stadt` {`einwohner_ab`, optional `stadt` = Orts-ID}, `netz` {`fahrzeuge_ab` oder `linien_ab`}, `kasse` {`ab`}, `wahrzeichen` {optional `id`}, `umwelt` {`laerm_ab` oder `verschmutzung_ab`, optional `stadt`}, `meldung` {`typ`, optional `muster` als regulärer Ausdruck über Titel und Text}. Einwohner- und Umweltschwellen brauchen wie die Meilensteine der Meldungen zwei Stadtstände nacheinander. Eine Premiere zählt auch, wenn die Fahrzeugart schon bei Beginn der Aufzeichnung fuhr; ein Modell auch, wenn es schon im Ausgangsbestand der Modellerfassung war.
+
+### Wann eine Stufe erreicht ist
+
+- **Auslöser** im Monat des Ereignisses (`grund: ausloeser`), frühestens im **Januar** von `fruehestens` (`grund: fruehestens`, der frühere Anlass wird genannt), spätestens im **Januar** von `spaetestens` (`grund: spaetestens`, ohne Anlass).
+- Stufen folgen ihrer Reihenfolge: Eine Stufe kommt nie vor der vorigen (`grund: vorgaenger`, gleicher Monat). Was schon bei Beginn der Aufzeichnung galt, hat `grund: beginn` und wird nicht angekündigt.
+- Monate nach dem letzten Messstand bleiben offen (`monat: null`, `grund: offen`). Rücksprünge ändern nichts, weil nur der kanonische Verlauf zählt; dieselben Messungen ergeben dieselbe Datei (Tests).
+- **Krisenpapier** rechnet mit dem Kassenstand der letzten Detailmessung jedes Spielmonats (wie die Kassenkurve im Fuhrpark): Beginn, wenn dieser Stand höchstens 80 % des höchsten Stands der zwölf Monate davor beträgt (frühestens 1925); Ende im ersten Monat, in dem die Kasse diesen Höchststand wieder erreicht oder zwölf Monate in Folge gewachsen ist (eine Lücke in der Aufzeichnung unterbricht die Folge). Das Krisenpapier gilt vom Beginn bis vor das Ende und kann später wiederkommen.
+
+### Anzeige
+
+- `journal.js` setzt am Journal `data-ueberschrift`, `data-kopf`, `data-bilder`, `data-papier`, `data-akzent`, `data-stufe` und während eines Zustands `data-zustand="krisenpapier"`. Topbar, Fußleiste und alle anderen Seiten der Chronicles bleiben unverändert; der Titel des Browserfensters folgt dem Namen der Ausgabe.
+- Stufe 1 ist das bisherige Design (im Browser verglichen: gleiche berechnete Stile). Stufe 2: Überschriften in Source Serif 4 statt Playfair, einfache statt doppelte Linien. Stufe 3: Kopfzeile „Quotidien illustré de l’Archipel“, Fotos mit schwarzer Haarlinie, weißem Rand und „Photo.“ (die Bilder selbst bleiben unverfärbt). Stufe 4: Art-déco-Kopf mit Strahlenfächer und goldenen Doppellinien, Versaltitel und Überschriften in geometrischer Grotesk, Gold statt Rot als Akzent (das Etikett „Fiktion“ bleibt rot), Name „Journal des Alizés“, sechs Ausgaben lang „vormals Le Journal des Alizés“. Stufe 5: wie 4, dazu die Rubrik „Radioprogramm“.
+- **Krisenpapier:** graues, leicht faseriges Papier, nur eine Druckfarbe, Artikel einspaltig, weniger Spalten in Meldungen und Geschichten, auf der Titelseite der Kasten „Bekanntmachungen“ mit Schließungen, eingestellten Linien und Ausdünnungen des Monats (Belegt). Alle Texte behalten mindestens 4,5 : 1 Kontrast.
+- **In eigener Sache:** In der ersten Ausgabe ab dem Monat eines sichtbaren Wechsels steht oben auf der Titelseite die `notiz` der Stufe, ein Satz zum neuen Namen und zu neuen Rubriken sowie die Begründung mit dem belegten Anlass (Etikett „Belegt“) oder dem Hinweis auf „spätestens“ (Etikett „Einordnung“). Beginn und Ende des Krisenpapiers bekommen ebenfalls eine Notiz.
+- **Schalter „Im heutigen Stil lesen“** unter der Datumszeile, nur bei Ausgaben, die anders aussehen als die neueste. Er zeigt Stil, Name und Kopfzeile der neuesten Ausgabe (Zustände wie das Krisenpapier gehören zu ihrer Ausgabe und bleiben weg), nennt den Originalnamen und die Stufe und blendet die Notiz aus. Gemerkt wird er nur als Komfort im Browser (`localStorage`); ohne Speicher startet die Seite im Stil der Zeit.
+- **Rubriken** erscheinen in der Navigation hinter „Geschichten“ erst ab ihrem Monat. Das Radioprogramm zeigt das Programm der Ausgabe, sonst das jüngste davor, dazu frühere Programme; auf der Titelseite steht ein Kasten mit den ersten Sendungen, wenn es für den Monat ein Programm gibt.
+- **Schriften:** Playfair Display und Source Serif 4 liegen lokal im Repository. Für die geometrische Schrift der Stufe 4 liegt noch keine freie Schrift im Repository; die Seite nimmt die Systemschrift (Futura, Century Gothic, Avenir …, sonst die Grotesk des Geräts) und fragt keinen fremden Server an. Eine freie Schrift wie Jost (SIL Open Font License) kann später nach `assets/fonts/` und an den Anfang der Schriftliste `--j-geo` in `journal.css`.
+
+### Radioprogramm schreiben
+
+`radioprogramm.json`: `schema_version` 1, `hinweis` (muss „erfunden“ enthalten), `programme` mit je `id`, `date` (Spielmonat, nicht vor dem Monat der Rubrik), `art: "fiktion"`, optional `sender`, `titel`, `grounding` (was erfunden ist, mindestens 40 Zeichen), `tage` [{`tag`, `sendungen` [{`zeit` wie „20.30“, `titel`, optional `text`}]}], optional `refs` {`personen`, `staedte`}. Für Programme gelten dieselben Schreibregeln wie für Geschichten (`JOURNAL.md`).
+
+### Eine weitere Stufe bauen
+
+1. Stufe in `data/epochen.json` eintragen (Nummer, Name, Notiz, frühestens, Auslöser, spätestens) und die Merkmale mit `"stufe": n` ergänzen; Ortsbezüge nur in der Datei der Welt.
+2. Für neue Werte eine Regel `.j[data-merkmal=wert]` in `assets/epochen/<merkmal>.css`; für neue Rubrikformen `journal.js` erweitern.
+3. Versionsparameter der geänderten Dateien in `journal.html` erhöhen (sonst liefert der Browser-Cache alte Dateien).
+4. `python scripts/test-build-journal.py`, `node scripts/validate-journal.mjs`, Browser-Vorschau der betroffenen Monate, Desktop und 375 px.
+
 ## Stufen bis 2050 (Entwurf zum Diskutieren)
 
 | # | Stufe | Aussehen | Neue Rubriken (Füllung) | frühestens · Auslöser · spätestens |
@@ -134,27 +185,30 @@ Vom Spieler bestätigt (18.10.2026). Der Name ist ein eigenes Merkmal und wechse
 
 ## In dieser Welt (Stand Spiel 13.10.1921)
 
-Mit den Vorschlägen oben wäre die Zeitung schon durch die ersten Wechsel gegangen:
+So steht es in `zeitleiste.json`, berechnet aus den Messungen:
 
 | Stufe | Wechsel | Anlass (gemessen) |
 |---|---|---|
-| 1 Kutschenzeit | bis November 1918 | – |
-| 2 Schlichtere Überschriften | Dezember 1918 | Kasse erstmals über 1 Milliarde (13.12.1918) |
-| 3 Erste Fotos | Januar 1919 | Daimler Decksitzwagen, Baujahr laut Spiel ab 1919, erstmals im Betrieb 06.01.1919 |
-| 4 Ende der Kutschenzeit | Juni 1920 | erstes Flugzeug (Junkers F 13 Herta) am 14.06.1920, Flughäfen Port des Alizés und Sin-le-Noble |
-| 5 Rundfunkzeit | noch offen | größte Stadt Bourg-l’Écorce mit 3.828 Einwohnern (Oktober 1921), 4.000 fehlen noch |
+| 1 Kutschenzeit | Dezember 1904 bis November 1918 | Beginn der Aufzeichnung |
+| 2 Schlichtere Überschriften | Dezember 1918 | Kasse erstmals über 1 Milliarde (13.12.1918, 1.004,1 Mio.) |
+| 3 Erste Fotos | Januar 1919 | Daimler Decksitzwagen, laut Spiel ab 1919 verfügbar, erstmals im Betrieb 06.01.1919 (Meldung „Neues Fahrzeugmodell“) |
+| 4 Ende der Kutschenzeit | Juni 1920 | Premiere Flugzeug am 14.06.1920 (Linie Port des Alizés – Sin-le-Noble), Name „Journal des Alizés“ |
+| 5 Rundfunkzeit | noch offen (frühestens Januar 1922, spätestens Januar 1927) | größte Stadt Bourg-l’Écorce mit 3.828 Einwohnern (Oktober 1921), 4.000 fehlen noch |
+
+Krisenpapier: bisher kein Fall (frühestens 1925).
 
 Die Zeitung nimmt im Juni 1920 Abschied von der Kutschenzeit, die Kutschen selbst aber noch nicht: Laut Fuhrpark fahren im Oktober 1921 weiter **drei Postkutschen** (gekauft 1900) auf der Buslinie in Anse Dorée. Das ist Stoff für eine Geschichte, oder eine Entscheidung im Spiel.
 
 ## Offene Fragen
 
-- Wie viele Stufen vorab bauen? Vorschlag: Mechanik, Zustand `krisenpapier` und Stufen 1 bis 5 jetzt, jede weitere Stufe kurz bevor das Spiel sie erreichen kann.
+- Freie geometrische Schrift (z. B. Jost) für Stufe 4 ins Repository holen? Bis dahin Systemschrift (siehe „Schriften“).
+- Erstes Radioprogramm schreiben, sobald Stufe 5 erreicht ist (eine Stadt mit 4.000 Einwohnern, frühestens 1922).
 
-Geklärt am 18.10.2026: Auslöser der Stufen 6, 9, 11, 13 und 14 (Technik-Jahrgänge), Krise als Zustand, Namen je Stufe, Schalter „im heutigen Stil lesen“ kommt, nur das Journal verändert sich.
+Geklärt am 18.10.2026: Auslöser der Stufen 6, 9, 11, 13 und 14 (Technik-Jahrgänge), Krise als Zustand, Namen je Stufe, Schalter „im heutigen Stil lesen“ kommt, nur das Journal verändert sich, Umfang der ersten Runde (Mechanik, Krisenpapier, Stufen 1 bis 5).
 
-## Umsetzung in Schritten (wenn freigegeben)
+## Umsetzung in Schritten
 
-1. Regeldatei `data/epochen.json`, Auswertung in `build-journal.py`, `zeitleiste.json` mit Stufen und Zuständen, Validator und Tests (frühestens, spätestens, Auslöser vor „frühestens“, Zustand beginnt und endet, Rücksprung ändert nichts).
-2. Anzeige-Gerüst in `journal.js`, Stile für die Stufen 1 bis 4 und das Krisenpapier, Name je Stufe, lokale Schriften, Notiz „In eigener Sache“, Schalter „im heutigen Stil lesen“.
-3. Rubriken-Gerüst (Rubrik erscheint ab ihrem Monat) und die Rundfunkzeit (Stufe 5).
+1. Erledigt: Regeldatei `data/epochen.json`, Auswertung in `build-journal.py`, `zeitleiste.json` mit Stufen und Zuständen, Validator und Tests (frühestens, spätestens, Auslöser vor „frühestens“, Zustand beginnt und endet, Rücksprung ändert nichts, gleiche Messungen, ohne Regeldatei byte-identisch).
+2. Erledigt: Anzeige-Gerüst in `journal.js`, Stile für die Stufen 1 bis 4 und das Krisenpapier, Name je Stufe, Notiz „In eigener Sache“, Schalter „im heutigen Stil lesen“. Offen: lokale geometrische Schrift.
+3. Erledigt: Rubriken-Gerüst (Rubrik erscheint ab ihrem Monat) und die Rundfunkzeit (Stufe 5, Radioprogramm von Hand; in dieser Welt noch nicht erreicht, im Browser mit Testdaten geprüft).
 4. Jede spätere Stufe kurz bevor das Spiel sie erreicht.

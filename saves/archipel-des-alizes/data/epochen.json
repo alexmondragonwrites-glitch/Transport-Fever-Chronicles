@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "hinweis": "Überschreibungen der Epochen-Vorlage data/epochen.json für die Welt „Archipel des Alizés“: Name und Kopfzeilen der Zeitung. Vom Spieler bestätigt am 18.10.2026 (docs/EPOCHEN.md, „Namen“).",
+  "merkmale": {
+    "name": {"bezeichnung": "Name im Zeitungskopf", "text": true, "stufen": [
+      {"wert": "Le Journal des Alizés"},
+      {"wert": "Journal des Alizés", "stufe": 4, "vormals_ausgaben": 6}
+    ]},
+    "kopfzeile": {"bezeichnung": "Kopfzeile", "text": true, "stufen": [
+      {"wert": "Quotidien de l’Archipel"},
+      {"wert": "Quotidien illustré de l’Archipel", "stufe": 3}
+    ]},
+    "preis": {"bezeichnung": "Preis", "text": true, "stufen": [{"wert": "10 centimes"}]}
+  }
+}

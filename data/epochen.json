@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "hinweis": "Vorlage für alle Welten: Stufen, Merkmale, Rubriken und Zustände von „Le Journal des Alizés“ und seinen Nachfolgern. Jede Stufe wechselt mit einem Ereignis der Welt (ausloeser), frühestens im Januar von „fruehestens“, spätestens im Januar von „spaetestens“. Überschreibungen für eine Welt stehen in saves/<welt>/data/epochen.json. Keine Ortsnamen oder Linien hier. Erklärung: docs/EPOCHEN.md.",
+  "stufen": [
+    {"nr": 1, "name": "Kutschenzeit"},
+    {"nr": 2, "name": "Schlichtere Überschriften", "fruehestens": 1915, "spaetestens": 1922,
+     "ausloeser": {"art": "kasse", "ab": 1000000000},
+     "notiz": "Die Überschriften erscheinen ab dieser Ausgabe in schlichter Antiqua, mit weniger Zierlinien."},
+    {"nr": 3, "name": "Erste Fotos", "fruehestens": 1916, "spaetestens": 1923,
+     "ausloeser": {"art": "modell", "baujahr_ab": 1918},
+     "notiz": "Die Zeitung nennt sich ab dieser Ausgabe „illustré“: Fotografien erscheinen künftig im Rasterdruck."},
+    {"nr": 4, "name": "Ende der Kutschenzeit", "fruehestens": 1919, "spaetestens": 1925,
+     "ausloeser": {"art": "premiere", "fahrzeugart": "flugzeug"},
+     "notiz": "Mit dieser Ausgabe verabschiedet sich die Zeitung von der Kutschenzeit: ein neuer Kopf im Stil des Art déco, Gold als Akzent und eine geometrische Schrift für die Überschriften."},
+    {"nr": 5, "name": "Rundfunkzeit", "fruehestens": 1922, "spaetestens": 1927,
+     "ausloeser": {"art": "stadt", "einwohner_ab": 4000},
+     "notiz": "Die Zeitung begrüßt die Rundfunkzeit."}
+  ],
+  "merkmale": {
+    "ueberschrift": {"bezeichnung": "Überschriften", "stufen": [{"wert": "didone"}, {"wert": "antiqua", "stufe": 2}, {"wert": "geometrisch", "stufe": 4}]},
+    "kopf": {"bezeichnung": "Zeitungskopf", "stufen": [{"wert": "doppellinie"}, {"wert": "artdeco", "stufe": 4}]},
+    "bilder": {"bezeichnung": "Bilder", "stufen": [{"wert": "stich"}, {"wert": "raster", "stufe": 3}]},
+    "papier": {"bezeichnung": "Papier", "stufen": [{"wert": "warm"}]},
+    "akzent": {"bezeichnung": "Akzentfarbe", "stufen": [{"wert": "rot"}, {"wert": "gold", "stufe": 4}]}
+  },
+  "rubriken": {
+    "radioprogramm": {"titel": "Radioprogramm", "stufe": 5, "form": "programm", "fuellung": "fiktion", "datei": "radioprogramm.json"}
+  },
+  "zustaende": {
+    "krisenpapier": {
+      "bezeichnung": "Krisenpapier",
+      "fruehestens": 1925,
+      "beginn": {"art": "kasse_einbruch", "rueckgang_prozent": 20, "binnen_monaten": 12},
+      "ende": {"wachstum_monate": 12},
+      "notiz_beginn": "Wegen der angespannten Lage der Société erscheint diese Ausgabe auf einfacherem Papier, mit weniger Spalten und den Bekanntmachungen des Monats.",
+      "notiz_ende": "Die Zeitung erscheint wieder auf gewohntem Papier."
+    }
+  }
+}

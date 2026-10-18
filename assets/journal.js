@@ -1,7 +1,9 @@
 /* Le Journal des Alizés: monthly newspaper editions built from measured events (data/journal/*.json),
  * the player's own notes (notizen.json) and hand-written editorial pieces (redaktion.json, gazette.json).
+ * Each edition wears the look of its month (zeitleiste.json, see journal-epochen.js and assets/epochen/).
  * Measured, stated by the player and invented content stay labelled. */
 import {karteView, mountKarte} from './journal-karte.js?v=20261018-flugzeug';
+import {epoche, gleichWieHeute, inEigenerSache} from './journal-epochen.js?v=20261018-epochen';
 const APP = document.getElementById('app');
 const E = v => String(v ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const N = (v, d=0) => Number.isFinite(v) ? new Intl.NumberFormat('de-DE', {maximumFractionDigits:d}).format(v) : '–';
@@ -38,25 +40,75 @@ const HOOKS = {
   'linie-neu-gefuehrt': e => e.werte?.neue_waren?.length ? `${e.titel}: Wer wartet auf diese Ware, und was ändert sich, wenn sie ankommt?` : null,
 };
 
-let D, state = {tab:'une', month:null, filter:{}};
+// „Im heutigen Stil lesen“ is a comfort of this browser only: without storage the page starts in the style of the time.
+const STIL_KEY = 'journal-alizes-heutiger-stil';
+const readHeute = () => { try{ return localStorage.getItem(STIL_KEY) === '1'; }catch{ return false; } };
+const saveHeute = on => { try{ if(on) localStorage.setItem(STIL_KEY, '1'); else localStorage.removeItem(STIL_KEY); }catch{ /* private window */ } };
+const TITLE_SUFFIX = document.title.split(' · ').slice(1).join(' · ');
+// Without zeitleiste.json the masthead keeps the words it always had.
+const MAST = {name:'Le Journal des Alizés', kopfzeile:'Quotidien de l’Archipel', preis:'10 centimes'};
+
+let D, EP = null, state = {tab:'une', month:null, filter:{}, heute:readHeute()};
 
 function header(){
   return `<header class="topbar"><div class="shell topbar-inner"><a class="brand" href="../../index.html"><span class="brand-mark">✦</span>Transport Fever <span class="strong">Chronicles</span></a><nav class="toplinks" aria-label="Hauptnavigation"><a href="../../index.html">Alle Welten</a><a href="weihnachten-1911.html">Weihnachten 1911</a><a href="index.html?view=monitor#overview">Monitor</a><a href="jahrzehnt.html">Dossier 1900–1910</a><a href="dossier-1910-1917.html">Dossier 1910–1917</a></nav></div></header>`;
 }
 // The sea chart appears behind „Städte“ only once karte.json exists (Spielmonitor revision 16 positions).
-const tabs = () => TABS.flatMap(t=>t[0]==='staedte'&&D.karte?[t,['karte','Karte']]:[t]);
+// Sections of an epoch such as the radio programme follow „Geschichten“ from their month on.
+const tabs = () => TABS.flatMap(t=>t[0]==='staedte'&&D.karte?[t,['karte','Karte']]:t[0]==='geschichten'?[t,...(EP?.rubriken||[]).filter(r=>D.rubriken.has(r.id)).map(r=>[r.id,r.titel])]:[t]);
 const TABS = [['une','Titelseite'],['meldungen','Meldungen'],['menschen','Menschen'],['staedte','Städte'],['fuhrpark','Fuhrpark'],['geschichten','Geschichten'],['notizbuch','Notizbuch']];
 
 function masthead(){
-  const months = D.months, i = months.indexOf(state.month), m = state.month;
-  return `<section class="j-mast"><div class="shell"><p class="j-mast-top"><span>Quotidien de l’Archipel</span><span>Deutsche Ausgabe</span><span>Prix&nbsp;: 10 centimes</span></p>
-  <h1 class="j-title">Le Journal des Alizés</h1>
+  const months = D.months, i = months.indexOf(state.month), m = state.month, t = {...MAST, ...EP?.texte};
+  return `<section class="j-mast"><div class="shell"><p class="j-mast-top"><span>${E(t.kopfzeile)}</span><span>Deutsche Ausgabe</span><span>Prix&nbsp;: ${E(t.preis)}</span></p>
+  <span class="j-mast-orn" aria-hidden="true"></span><h1 class="j-title">${E(t.name)}</h1>${EP?.vormals?`<p class="j-vormals">vormals ${E(EP.vormals)}</p>`:''}
   <p class="j-mast-sub">Nachrichten, Menschen und Messwerte aus dem Archipel · Belegtes und Erfundenes sind stets gekennzeichnet</p>
   <div class="j-dateline"><button class="j-ed" data-ed="${E(months[i-1]||'')}" ${i>0?'':'disabled'} aria-label="Vorherige Ausgabe">‹</button>
   <label class="j-ed-label">Ausgabe <select class="select" id="j-month" aria-label="Ausgabe wählen">${[...months].reverse().map(x=>`<option value="${x}" ${x===m?'selected':''}>${monthName(x)}</option>`).join('')}</select></label>
   <span class="j-ed-fr">Édition de ${MOIS[+m.slice(5,7)-1]} ${m.slice(0,4)} · Nº ${i+1}</span>
-  <button class="j-ed" data-ed="${E(months[i+1]||'')}" ${i<months.length-1?'':'disabled'} aria-label="Nächste Ausgabe">›</button></div></div></section>
+  <button class="j-ed" data-ed="${E(months[i+1]||'')}" ${i<months.length-1?'':'disabled'} aria-label="Nächste Ausgabe">›</button></div>${stilzeile()}</div></section>
   <nav class="tabs" aria-label="Rubriken"><div class="shell tab-inner" role="tablist">${tabs().map(([id,l])=>`<button type="button" class="tab" role="tab" data-tab="${id}" aria-selected="${id===state.tab}">${l}</button>`).join('')}</div></nav>`;
+}
+
+// Old editions appear in the look of their time; the switch shows them like the newest one, states such as the crisis paper excepted.
+function stilzeile(){
+  const Z = D.zeitleiste;
+  if(!Z || gleichWieHeute(Z, state.month, D.months)) return '';
+  const orig = epoche(Z, state.month, D.months);
+  const text = state.heute ? `Heutiger Stil. Im Original erschien diese Ausgabe als „${E(orig.texte.name||MAST.name)}“ im Stil „${E(orig.stufe.name)}“.` : `Archivausgabe im Stil ihrer Zeit: „${E(orig.stufe.name)}“.`;
+  return `<p class="j-stilzeile"><span>${text}</span><button type="button" class="j-stil" aria-pressed="${state.heute}">Im heutigen Stil lesen</button></p>`;
+}
+
+// „In eigener Sache“: the first edition after a visible change names it and its occasion (Belegt) or the latest year (Einordnung).
+function avis(m){
+  const notes = state.heute ? [] : inEigenerSache(D.zeitleiste, m, D.months);
+  return notes.length ? `<section class="j-avis" aria-label="In eigener Sache"><h3>In eigener Sache</h3>${notes.map(n=>`<div class="j-avis-item"><p>${E(n.text)}</p>${n.begruendung?`<p class="j-avis-grund">${prov(n.beleg?'beleg':'einordnung')} ${E(n.begruendung)}</p>`:''}</div>`).join('')}</section>` : '';
+}
+
+// Crisis paper: what closes, ends or runs with fewer vehicles this month, straight from the measurement books.
+function bekanntmachungen(events){
+  if(!EP?.zustaende.includes('krisenpapier')) return '';
+  const less = e => Number.isFinite(e.werte?.vorher) && Number.isFinite(e.werte?.nachher) && e.werte.nachher < e.werte.vorher;
+  const list = events.filter(e=>['linie-ende','industrie-ende'].includes(e.typ) || (['flotte','ausbau'].includes(e.typ) && less(e)));
+  return `<section class="j-box j-bekannt"><h3>Bekanntmachungen</h3>${list.length?`<ul class="j-mlist">${list.map(e=>meldung(e,true)).join('')}</ul>`:'<p class="small">In diesem Monat schließt nichts, keine Linie endet, keine fährt mit weniger Wagen.</p>'}<p class="small">${prov('beleg')} Schließungen, eingestellte Linien und Ausdünnungen dieses Monats.</p></section>`;
+}
+
+// Programmes (Radioprogramm …): written by hand, fiction, from the month of their section on.
+const programmes = (r, m) => (D.programme.get(r.id)?.programme||[]).filter(p=>p.date<=m).sort((a,b)=>a.date.localeCompare(b.date)||a.id.localeCompare(b.id));
+function funkBox(m){
+  return (EP?.rubriken||[]).filter(r=>r.form==='programm').map(r=>{
+    const p = programmes(r, m).filter(x=>x.date===m)[0], day = p?.tage[0];
+    return day ? `<section class="j-box j-funk"><h3>${E(r.titel)}</h3><p class="small">${prov(p.art)} ${E(p.sender||'')}${p.sender?' · ':''}${E(day.tag)}</p><dl class="j-prog-list">${day.sendungen.slice(0,4).map(b=>`<dt>${E(b.zeit)}</dt><dd>${E(b.titel)}</dd>`).join('')}</dl><button class="mini-link" data-tab="${E(r.id)}">Das ganze Programm →</button></section>` : '';
+  }).join('');
+}
+const progCard = (p, earlier) => `<article class="j-prog-card" id="prog-${E(p.id)}"><div class="j-story-meta"><span class="kicker">${E(monthName(p.date))}</span>${prov(p.art)}</div>${p.sender?`<p class="j-prog-sender">${E(p.sender)}</p>`:''}<h3>${E(p.titel)}</h3>${earlier?'<p class="small">Das jüngste Programm vor dieser Ausgabe.</p>':''}
+  ${p.tage.map(t=>`<section class="j-prog-day"><h4>${E(t.tag)}</h4><dl class="j-prog-list">${t.sendungen.map(b=>`<dt>${E(b.zeit)}</dt><dd><strong>${E(b.titel)}</strong>${b.text?`<span>${E(b.text)}</span>`:''}</dd>`).join('')}</dl></section>`).join('')}
+  <aside class="j-bezug"><strong>Bezug zu den Daten.</strong> ${E(p.grounding)}</aside>${refLinks(p.refs)}</article>`;
+function programm(r){
+  const list = programmes(r, state.month), now = list.filter(p=>p.date===state.month), shown = now.length ? now : list.slice(-1), older = list.filter(p=>!shown.includes(p)).reverse();
+  return `<div class="section-header"><div><div class="eyebrow">${r.fuellung==='fiktion'?'Fiktion · von der Redaktion geschrieben':'Belegt · aus den Messdaten'}</div><h2>${E(r.titel)}</h2><p class="section-lede">${E(D.programme.get(r.id)?.hinweis||'')} Die Rubrik erscheint seit der Ausgabe ${E(monthName(r.ab))}.</p></div></div>
+  <div class="j-prog">${shown.length?shown.map(p=>progCard(p, p.date!==state.month)).join(''):`<p class="empty">Für diese Ausgabe liegt der Redaktion noch kein ${E(r.titel)} vor.</p>`}
+  ${older.length?`<p class="j-prog-older">Frühere Programme: ${older.map(p=>`<button class="mini-link" data-ed="${E(p.date)}" data-goto="${E(r.id)}">${E(monthName(p.date))}</button>`).join(' · ')}</p>`:''}</div>`;
 }
 
 const prov = art => art==='einordnung' ? '<span class="j-prov j-prov-ein">Einordnung</span>' : art==='beleg' ? '<span class="j-prov j-prov-fakt">Belegt</span>' : art==='vorgabe' ? '<span class="j-prov j-prov-vorgabe">Spielervorgabe</span>' : '<span class="j-prov j-prov-fik">Fiktion</span>';
@@ -139,15 +191,15 @@ function une(){
   const hooks = [...notes.slice(0,2).map(n=>({text:`Aus dem Notizbuch: „${clip(n.text)}“ – Was bedeutet das für die Menschen vor Ort?`, e:n})), ...hooksFor(events)].slice(0,5);
   const delta = (a,b) => Number.isFinite(a)&&Number.isFinite(b)&&a!==b ? ` <span class="j-delta">${a>b?'+':'−'}${N(Math.abs(a-b))}</span>` : '';
   return `<div class="j-une">
-    <div class="j-main">${lead?storyCard(lead,true):autoLead?`<article class="j-story j-lead"><div class="j-story-meta"><span class="kicker">Aus den Messbüchern</span>${prov('beleg')}<span class="small">${E(when(autoLead))}</span></div><h2>${E(autoLead.titel)}</h2><p class="j-teaser">${E(autoLead.text)}</p><p class="small">Für diese Ausgabe hat die Redaktion noch keinen Artikel geschrieben. Die Messbücher sprechen für sich.</p></article>`:'<p class="empty">In diesem Monat verzeichnen die Messbücher nichts Neues.</p>'}
+    <div class="j-main">${avis(m)}${lead?storyCard(lead,true):autoLead?`<article class="j-story j-lead"><div class="j-story-meta"><span class="kicker">Aus den Messbüchern</span>${prov('beleg')}<span class="small">${E(when(autoLead))}</span></div><h2>${E(autoLead.titel)}</h2><p class="j-teaser">${E(autoLead.text)}</p><p class="small">Für diese Ausgabe hat die Redaktion noch keinen Artikel geschrieben. Die Messbücher sprechen für sich.</p></article>`:'<p class="empty">In diesem Monat verzeichnen die Messbücher nichts Neues.</p>'}
       ${rest.length?`<div class="j-more">${rest.map(s=>storyCard(s)).join('')}</div>`:''}
       ${hooks.length?`<section class="j-hooks"><h3>Stoff für Geschichten</h3><p class="small">Aus den Meldungen dieser Ausgabe abgeleitete Ideen. Belegt sind nur die Ereignisse, alles Weitere wäre zu erzählen.</p><ul>${hooks.map(h=>`<li><span>${E(h.text)}</span> <small>${E(when(h.e))}</small></li>`).join('')}</ul></section>`:''}
     </div>
-    <aside class="j-side">
+    <aside class="j-side">${bekanntmachungen(events)}
       <section class="j-box"><h3>Aus den Messbüchern</h3>${events.length?`<ul class="j-mlist">${top.slice(0,9).map(e=>meldung(e,true)).join('')}</ul><button class="mini-link" data-goto="meldungen" data-month="${m}">Alle ${events.length} Meldungen dieses Monats →</button>`:'<p class="small">Keine Meldungen in diesem Monat.</p>'}</section>
       ${notes.length?`<section class="j-box j-notebook"><h3>Aus dem Notizbuch des Direktors</h3><ul class="j-notes">${notes.map(n=>note(n)).join('')}</ul><p class="small">${prov('vorgabe')} Notizen des Spielers beim Spielen, unverändert abgedruckt: Absichten und Erklärungen, keine Messwerte.</p><button class="mini-link" data-goto="notizbuch">Das ganze Notizbuch →</button></section>`:''}
       ${stats?`<section class="j-box j-numbers"><h3>Zahlen der Ausgabe</h3><dl><div><dt>Fahrzeuge</dt><dd>${N(stats.gesamt_fahrzeuge)}${delta(stats.gesamt_fahrzeuge,prevStats?.gesamt_fahrzeuge)}</dd></div><div><dt>Linien</dt><dd>${N(stats.gesamt_linien)}${delta(stats.gesamt_linien,prevStats?.gesamt_linien)}</dd></div>${stats.modelle?`<div><dt>Fahrzeugmodelle</dt><dd>${N(stats.modelle)}${prevStats?.modelle?delta(stats.modelle,prevStats.modelle):''}</dd></div>`:''}${residents?`<div><dt>Einwohner, alle Orte</dt><dd>${N(residents)}</dd></div>`:''}<div><dt>Kasse der Société</dt><dd>${N(stats.kasse/1e6,1)} Mio.</dd></div></dl><p class="small">Letzte Detailmessung des Monats.</p></section>`:''}
-      ${adPool.map(reclame).join('')}
+      ${funkBox(m)}${adPool.map(reclame).join('')}
       ${faces.length?`<section class="j-box"><h3>Gesichter des Monats</h3>${faces.map(p=>{const mo=p.moments.find(x=>x.date.slice(0,7)===m && x.typ!=='arbeit' && x.typ!=='ohne-arbeit');return `<p class="j-face"><a href="#menschen/${p.id}">${E(p.name)}</a> <span class="small">(${E(p.home_town||'unbekannt')})</span><br><span class="small">${E(dayName(mo.date))}: ${E(mo.text)}</span></p>`;}).join('')}<p class="small">Namen von der Redaktion vergeben.</p></section>`:''}
       <section class="j-box j-specials"><h3>Sonderausgaben</h3><a href="dossier-1910-1917.html">Ein Archipel wächst zusammen · 1910–1917</a><a href="weihnachten-1911.html">Weihnachtsbericht 1911</a><a href="1911.html">Wirtschaftsbericht April 1911</a><a href="jahrzehnt.html">Zehn Jahre Archipel 1900–1910</a><a href="index.html?view=monitor#overview">Langzeitmonitor</a></section>
     </aside></div>`;
@@ -303,8 +355,15 @@ const karte = () => { try{ return karteView(D, {E, N, monthName, dayName, KIND_C
   catch(error){ console.error(error); return `<p class="empty">Die Seekarte kann gerade nicht gezeichnet werden (${E(error.message)}).</p>`; } };
 const VIEWS = {une, meldungen, menschen, staedte, karte, fuhrpark, geschichten, notizbuch};
 
+// The look of the edition as attributes on the journal only: the rest of the Chronicles site stays as it is.
+const epochAttrs = () => EP ? Object.entries(EP.attrs).map(([k,v])=>` data-${k}="${E(v)}"`).join('')+` data-stufe="${E(EP.stufe.nr)}"`+(EP.zustaende.length?` data-zustand="${E(EP.zustaende.join(' '))}"`:'') : '';
+const view = () => VIEWS[state.tab] ? VIEWS[state.tab]() : programm(D.rubriken.get(state.tab));
+
 function render(scroll){
-  APP.innerHTML = header()+`<main id="main" class="j">${masthead()}<div class="shell j-page">${VIEWS[state.tab]()}</div></main><footer class="footer"><div class="shell footer-inner"><span>Le Journal des Alizés · Messstand ${E(dayName(D.meta.stand.date))}</span><span>Belegtes aus dem Spielmonitor, Erfundenes ausdrücklich gekennzeichnet</span></div></footer>`;
+  EP = epoche(D.zeitleiste, state.month, D.months, state.heute);
+  const name = EP?.texte.name || MAST.name;
+  document.title = TITLE_SUFFIX ? `${name} · ${TITLE_SUFFIX}` : name;
+  APP.innerHTML = header()+`<main id="main" class="j"${epochAttrs()}>${masthead()}<div class="shell j-page">${view()}</div></main><footer class="footer"><div class="shell footer-inner"><span>${E(name)} · Messstand ${E(dayName(D.meta.stand.date))}</span><span>Belegtes aus dem Spielmonitor, Erfundenes ausdrücklich gekennzeichnet</span></div></footer>`;
   bind();
   if(scroll) document.querySelector(scroll)?.scrollIntoView({block:'start'});
 }
@@ -330,6 +389,7 @@ function bind(){
   document.querySelectorAll('[data-type]').forEach(b=>b.onclick=()=>go('geschichten',{type:b.dataset.type}));
   $('[data-close-story]') && ($('[data-close-story]').onclick=()=>go('geschichten',{type:state.filter.type}));
   $('#j-clear-month') && ($('#j-clear-month').onclick=()=>go('meldungen',{...state.filter, month:''}));
+  $('.j-stil') && ($('.j-stil').onclick=()=>{ state.heute=!state.heute; saveHeute(state.heute); render(); document.querySelector('.j-stil')?.focus(); });
   const live = (sel, key, ev='input') => { const el=$(sel); if(el) el.addEventListener(ev, ()=>{ const pos=el.selectionStart; state.filter={...state.filter,[key]:el.type==='checkbox'?el.checked:el.value}; render(); const again=$(sel); if(again&&again.type==='search'){ again.focus(); again.setSelectionRange(pos,pos); } }); };
   if(state.tab==='karte') try{ mountKarte(state.filter.sel); }catch(error){ console.error(error); }
   live('#j-q','q'); live('#j-group','group','change'); live('#j-year','year','change'); live('#j-town','town','change'); live('#j-mode','mode','change'); live('#j-alle','alle','change'); live('#j-sort','sort','change');
@@ -337,7 +397,7 @@ function bind(){
 
 function fromHash(){
   const [tab, key] = location.hash.slice(1).split('/');
-  if(!VIEWS[tab] || (tab==='karte' && !D.karte)) return false;
+  if(!(VIEWS[tab] || D.rubriken.get(tab)?.ab) || (tab==='karte' && !D.karte)) return false;
   state.tab = tab; state.filter = {};
   if(tab==='une' && D.months.includes(key)) state.month = key;
   if(tab==='menschen' && key) state.filter = {person:key};
@@ -354,15 +414,18 @@ window.addEventListener('hashchange', ()=>{ if(D && fromHash()) render(detailTar
 async function start(){
   try{
     const base = 'data/journal/';
-    const [meld, ppl, towns, fleet, red, gaz, notes, chart] = await Promise.all(['meldungen','menschen','staedte','fuhrpark','redaktion'].map(n=>fetchJSON(base+n+'.json'))
+    const [meld, ppl, towns, fleet, red, gaz, notes, chart, zeitleiste] = await Promise.all(['meldungen','menschen','staedte','fuhrpark','redaktion'].map(n=>fetchJSON(base+n+'.json'))
       .concat(fetchJSON('data/gazette.json').catch(()=>({articles:[]})), fetchJSON(base+'notizen.json').catch(()=>({notizen:[], hinweis:''})),
-        fetchJSON(base+'karte.json').catch(()=>null)));
+        fetchJSON(base+'karte.json').catch(()=>null), fetchJSON(base+'zeitleiste.json').catch(()=>null)));
+    // Only sections already reached load their file; a missing file just leaves the section empty.
+    const rubriken = new Map(Object.entries(zeitleiste?.rubriken||{}).filter(([, r])=>r.ab && r.form==='programm' && /^[a-z0-9-]+\.json$/.test(r.datei)).map(([id, r])=>[id, {id, ...r}]));
+    const programme = new Map(await Promise.all([...rubriken.values()].map(async r=>[r.id, await fetchJSON(base+r.datei).catch(()=>({programme:[]}))])));
     const events = meld.meldungen;
     const byMonth = new Map(); events.forEach(e=>{ const k=e.date.slice(0,7); if(!byMonth.has(k)) byMonth.set(k,[]); byMonth.get(k).push(e); });
     const gazette = (gaz.articles||[]).map(a=>({id:'gazette-'+a.id, typ:'artikel', art:a.type==='fiktion'?'fiktion':'einordnung', date:a.date, rubrik:a.rubric, titel:a.title, teaser:a.teaser, body:a.body, grounding:a.grounding, venue:a.venue, refs:{}}));
     const stories = red.items;
     const notesByMonth = new Map(); notes.notizen.forEach(n=>{ const k=n.date.slice(0,7); if(!notesByMonth.has(k)) notesByMonth.set(k,[]); notesByMonth.get(k).push(n); });
-    const months = [...new Set([...byMonth.keys(), ...stories.map(s=>s.date), ...notesByMonth.keys()])].sort();
+    const months = [...new Set([...byMonth.keys(), ...stories.map(s=>s.date), ...notesByMonth.keys(), ...[...programme.values()].flatMap(p=>(p.programme||[]).map(x=>x.date))])].sort();
     const residentsByMonth = new Map();
     towns.staedte.forEach(t=>t.verlauf.forEach(p=>residentsByMonth.set(p.monat,(residentsByMonth.get(p.monat)||0)+p.einwohner)));
     const storyByPerson = new Map(), storyByTown = new Map(), storiesByNote = new Map();
@@ -370,7 +433,7 @@ async function start(){
     D = {meta:meld, events, byMonth, months, stories, gazette, policy:red.editorial_policy, people:ppl.personen, cohort:ppl,
       personById:new Map(ppl.personen.map(p=>[p.id,p])), towns:towns.staedte, townsMeta:towns.stand, townById:new Map(towns.staedte.map(t=>[t.id,t])),
       fleet, fleetByMonth:new Map(fleet.verlauf.map(v=>[v.monat,v])), residentsByMonth, storyByPerson, storyByTown,
-      notesMeta:notes, notesByMonth, noteById:new Map(notes.notizen.map(n=>[n.id,n])), storiesByNote, karte:chart};
+      notesMeta:notes, notesByMonth, noteById:new Map(notes.notizen.map(n=>[n.id,n])), storiesByNote, karte:chart, zeitleiste, rubriken, programme};
     state.month = months.at(-1);
     fromHash();
     render(location.hash.split('/')[1] && state.tab!=='une' ? detailTarget() : null);

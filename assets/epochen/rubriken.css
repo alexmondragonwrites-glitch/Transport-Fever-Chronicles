@@ -1,0 +1,15 @@
+/* Rubriken der Epochen (Form „programm“: Radioprogramm, später Fernsehprogramm). Sie erscheinen erst ab ihrem Monat
+ * laut zeitleiste.json und werden von Hand gefüllt (Fiktion, gekennzeichnet wie die Geschichten). */
+
+.j-prog{max-width:820px}
+.j-prog-card{background:var(--panel);border:1px solid var(--line);border-top:3px solid var(--ink);padding:18px 22px;margin:0 0 22px;box-shadow:var(--shadow)}
+.j-prog-card h3{font-family:var(--j-head);font-size:26px;line-height:1.15;margin:6px 0 4px}
+.j-prog-sender{font-family:var(--j-head);font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin:0}
+.j-prog-day h4{font-family:var(--j-head);font-size:18px;margin:18px 0 6px;padding-bottom:4px;border-bottom:1px solid var(--line)}
+.j-prog-list{margin:0;display:grid;grid-template-columns:4.2em minmax(0,1fr);gap:6px 14px}
+.j-prog-list dt{font-family:var(--j-head);font-variant-numeric:tabular-nums;font-weight:600;color:var(--j-accent)}
+.j-prog-list dd{margin:0}
+.j-prog-list dd strong{font-family:var(--j-head);font-weight:600}
+.j-prog-list dd span{display:block;font-size:15px;color:var(--read)}
+.j-prog-older{margin-top:8px;font-size:14px}
+.j-funk .j-prog-list{grid-template-columns:3.6em minmax(0,1fr);font-size:15px}

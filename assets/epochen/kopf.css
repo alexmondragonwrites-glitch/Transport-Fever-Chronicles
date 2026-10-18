@@ -1,0 +1,31 @@
+/* Merkmal „kopf“ (data-kopf am Journal): Zeitungskopf je Stufe, Regeln in data/epochen.json.
+ * doppellinie Stufe 1, Kutschenzeit: Didone-Titel zwischen Doppellinien, Grundgestaltung aus journal.css.
+ * artdeco     Stufe 4, Ende der Kutschenzeit: geometrischer Versaltitel unter einem Strahlenfächer, Goldlinien. */
+
+.j[data-kopf=artdeco] .j-mast{background:linear-gradient(180deg,#f5e7c8 0,transparent 100%);padding-top:22px}
+.j[data-kopf=artdeco] .j-mast-top{font-family:var(--j-geo);font-size:11px;letter-spacing:.26em;border-bottom:0;padding-bottom:10px;margin-bottom:4px;
+  background:linear-gradient(90deg,transparent,var(--j-gold) 15%,var(--j-gold) 85%,transparent) bottom/100% 1px no-repeat}
+/* Strahlenfächer: Halbkreis mit Strahlen um eine kleine Sonne, Ring dazwischen ausgespart */
+.j[data-kopf=artdeco] .j-mast-orn{display:block;width:132px;height:44px;margin:6px auto -2px;
+  background:radial-gradient(circle at 50% 100%,var(--j-gold) 0 11px,transparent 11.5px),
+    repeating-conic-gradient(from -90deg at 50% 100%,var(--j-gold) 0deg 2.6deg,transparent 2.6deg 11.25deg);
+  -webkit-mask:radial-gradient(circle at 50% 100%,#000 0 11px,transparent 11.5px 17px,#000 17.5px 44px,transparent 44.5px);
+  mask:radial-gradient(circle at 50% 100%,#000 0 11px,transparent 11.5px 17px,#000 17.5px 44px,transparent 44.5px)}
+.j[data-kopf=artdeco] .j-title{font-family:var(--j-geo);font-weight:500;text-transform:uppercase;letter-spacing:.16em;font-size:clamp(34px,6vw,78px);
+  line-height:1.04;margin:4px 0 6px;padding-left:.16em;text-wrap:balance}
+.j[data-kopf=artdeco] .j-vormals{font-family:var(--j-geo);font-style:normal;font-size:12px;letter-spacing:.2em;text-transform:uppercase}
+.j[data-kopf=artdeco] .j-mast-sub{font-family:var(--j-geo);font-style:normal;font-size:14px;letter-spacing:.03em;margin-top:4px;max-width:900px;text-wrap:balance}
+.j[data-kopf=artdeco] .j-dateline{border-top:0;border-bottom:0;padding:14px 0;
+  background:linear-gradient(var(--j-gold),var(--j-gold)) top/100% 2px no-repeat,linear-gradient(var(--j-gold),var(--j-gold)) 0 5px/100% 1px no-repeat,
+    linear-gradient(var(--j-gold),var(--j-gold)) bottom/100% 2px no-repeat,linear-gradient(var(--j-gold),var(--j-gold)) 0 calc(100% - 5px)/100% 1px no-repeat}
+.j[data-kopf=artdeco] .j-ed{border-radius:3px;border-color:var(--j-gold)}
+.j[data-kopf=artdeco] .j-ed-fr{font-family:var(--j-geo);font-style:normal;font-size:12px;letter-spacing:.16em;text-transform:uppercase}
+@media(max-width:650px){
+  .j[data-kopf=artdeco] .j-title{font-size:27px;letter-spacing:.1em;padding-left:.1em}
+  .j[data-kopf=artdeco] .j-mast-top{letter-spacing:.14em;font-size:10px}
+  .j[data-kopf=artdeco] .j-mast-orn{width:96px;height:32px;
+    -webkit-mask:radial-gradient(circle at 50% 100%,#000 0 8px,transparent 8.5px 13px,#000 13.5px 32px,transparent 32.5px);
+    mask:radial-gradient(circle at 50% 100%,#000 0 8px,transparent 8.5px 13px,#000 13.5px 32px,transparent 32.5px);
+    background:radial-gradient(circle at 50% 100%,var(--j-gold) 0 8px,transparent 8.5px),
+      repeating-conic-gradient(from -90deg at 50% 100%,var(--j-gold) 0deg 2.6deg,transparent 2.6deg 11.25deg)}
+}

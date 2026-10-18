@@ -3,7 +3,8 @@
 Usage: python scripts/build-journal.py [--monitor PATH] [--save ID] [--out DIR] [--notebook FILE]
 
 Writes saves/<save>/data/journal/{meldungen,menschen,staedte,fuhrpark,notizen}.json, only when the content changed,
-and karte.json once the monitor measures positions (Spielmonitor revision 16, see journal_karte.py).
+karte.json once the monitor measures positions (Spielmonitor revision 16, see journal_karte.py) and zeitleiste.json,
+the look of every edition, from the rules in data/epochen.json and saves/<save>/data/epochen.json (see journal_epochen.py).
 Everything here is derived from detail measurements of the configured world on the canonical timeline:
 after a game-time rollback the replayed course replaces the abandoned branch, as in build-decade.mjs.
 Names of the observed residents are invented by the editors and marked as such; all other values are measured.
@@ -21,6 +22,7 @@ from pathlib import Path
 import sys
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+import journal_epochen  # noqa: E402  the look of each edition from the rules and the canonical course
 import journal_karte  # noqa: E402  sea chart from the monitor's positions
 import monitor_files  # noqa: E402  daten.jsonl or its lossless archive daten.jsonl.xz
 
@@ -96,9 +98,14 @@ def compact(row):
     towns = [[t['id'], t['name'], t.get('housing_occupied')] for t in row.get('towns', [])]
     people = [[p['id'], p.get('home_town_id'), p.get('home_town_name'), MODES.get(p.get('last_move_mode')), p.get('state'),
                p.get('happiness_raw'), p.get('work_id'), p.get('line_id')] for p in (row.get('people') or {}).get('rows', [])]
+    # Landmarks (revision 14 on) and noise/pollution per town feed only the epoch triggers of journal_epochen.py.
+    marks = row.get('landmarks')
+    lm = [[m.get('id'), m.get('name'), bool(m.get('completed'))] for m in marks if isinstance(m, dict)] if isinstance(marks, list) else None
+    env = [[t['id'], t.get('noise_db'), t.get('pollution_db')] for t in row.get('towns', [])]
     return {'t':row.get('game_time'), 'd':date(row.get('game_date')), 'r':row['recorded_at'], 'money':row.get('money'),
             'vc':row.get('vehicle_count'), 'lc':row.get('line_count'), 'lines':lines, 'inds':inds,
-            'towns':towns, 'td':date(row.get('towns_game_date')), 'people':people}
+            'towns':towns, 'td':date(row.get('towns_game_date')), 'people':people,
+            'lm':lm, 'lmd':date(row.get('landmarks_game_date')), 'env':env}
 
 
 def session_rows(path, world_id, cache_dir=CACHE):
@@ -554,7 +561,9 @@ def write(path, obj):
     return True
 
 
-def build(monitor, save, out=None, cache_dir=CACHE, notes_path=None):
+def build(monitor, save, out=None, cache_dir=CACHE, notes_path=None, epochen=None):
+    """epochen: (template, world file) of the epoch rules; None reads data/epochen.json and saves/<save>/data/epochen.json,
+    () builds without rules (no zeitleiste.json)."""
     config = json.loads((ROOT/'data/monitor-sources.json').read_text(encoding='utf-8'))['saves'][save]
     world_id = config['world']['world_id']
     sessions, last_towns, charts = [], None, []
@@ -597,7 +606,18 @@ def build(monitor, save, out=None, cache_dir=CACHE, notes_path=None):
     chart = journal_karte.chart(charts, last_towns, stand, line_kind, line_goods)
     if chart:
         files['karte.json'], lists['karte.json'] = chart, 'staedte'
-    changed = [name for name, obj in files.items() if write(out/name, obj)]
+    # The epochs exist only with a rules file; without one every other file stays exactly as before.
+    paths = (ROOT/'data/epochen.json', ROOT/'saves'/save/'data/epochen.json') if epochen is None else tuple(epochen)
+    rules = journal_epochen.load(*paths) if paths else None
+    stale = []
+    if rules:
+        files['zeitleiste.json'] = journal_epochen.zeitleiste(rules, rows, files['meldungen.json']['meldungen'], stand, line_kind, KIND_LABEL)
+        lists['zeitleiste.json'] = 'stufen'
+    elif (out/'zeitleiste.json').exists():
+        # Rules removed: the journal returns to its first look, so an old timeline must not linger.
+        (out/'zeitleiste.json').unlink()
+        stale.append('zeitleiste.json')
+    changed = [name for name, obj in files.items() if write(out/name, obj)]+stale
     return changed, stand, {k:len(files[k][key]) for k, key in lists.items()}
 
 

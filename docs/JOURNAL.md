@@ -1,10 +1,10 @@
 # Le Journal des Alizés
 
-Die Zeitung `saves/archipel-des-alizes/journal.html` ist die Startseite der Welt. Sie erscheint in monatlichen Ausgaben: Jeder Spielmonat mit Meldungen, Notizen oder Geschichten ist eine eigene Ausgabe. Belegtes, Spielervorgaben und Erfundenes bleiben überall gekennzeichnet.
+Die Zeitung `saves/archipel-des-alizes/journal.html` ist die Startseite der Welt. Sie erscheint in monatlichen Ausgaben: Jeder Spielmonat mit Meldungen, Notizen oder Geschichten ist eine eigene Ausgabe. Belegtes, Spielervorgaben und Erfundenes bleiben überall gekennzeichnet. Jede Ausgabe erscheint im Stil ihres Spielmonats und wechselt Schrift, Kopf, Bilder, Akzent und Namen mit Ereignissen der Welt (seit Juni 1920 „Journal des Alizés“); Regeln und Anzeige siehe `docs/EPOCHEN.md`.
 
 | Rubrik | Inhalt | Quelle |
 |---|---|---|
-| Titelseite | Leitartikel der Ausgabe, Meldungen, Notizen des Direktors, Zahlen, Réclame, Gesichter des Monats, „Stoff für Geschichten“ | alles unten |
+| Titelseite | Leitartikel der Ausgabe, Meldungen, Notizen des Direktors, Zahlen, Réclame, Gesichter des Monats, „Stoff für Geschichten“; nach einem Stilwechsel „In eigener Sache“, auf Krisenpapier „Bekanntmachungen“ | alles unten, `zeitleiste.json` |
 | Meldungen | Ereignisse aus den Messbüchern, filterbar nach Rubrik, Jahr und Suche | `meldungen.json` (automatisch) |
 | Menschen | Beobachtungsgruppe des Monitors mit Verkehrsmitteln je Jahr, Arbeitsplatz, Zufriedenheitsrohwert und Lebensmomenten | `menschen.json` (automatisch) |
 | Städte | Ortsakten aller Städte mit Einwohnerverlauf, Waren, Linien und Betrieben | `staedte.json` (automatisch) |
@@ -12,12 +12,13 @@ Die Zeitung `saves/archipel-des-alizes/journal.html` ist die Startseite der Welt
 | Fuhrpark | Fahrzeuge je Art, Modelle je Art (ab Monitor-Revision 15), Premieren, größte Flotten, Kasse | `fuhrpark.json` (automatisch) |
 | Geschichten | Artikel, Gespräche, Porträts, Réclame, „Am Tresen“ | `redaktion.json` (von Hand), `gazette.json` |
 | Notizbuch | „Aus dem Notizbuch des Direktors“: Absichten und Erklärungen des Spielers, nach Monaten | `notizen.json` (aus dem Spielmonitor) |
+| Radioprogramm | erst ab der Rundfunkzeit (Stufe 5, in dieser Welt noch nicht erreicht): Sendungen der Woche, erfunden | `radioprogramm.json` (von Hand), Monat aus `zeitleiste.json` |
 
 Alle Dateien liegen in `saves/archipel-des-alizes/data/journal/`.
 
 ## Automatische Daten
 
-`scripts/build-journal.py` liest die Detailmessungen aus `../Spielmonitor/sessions/*/daten.jsonl` (archivierte Sitzungen: `daten.jsonl.xz`, gleiche Bytes) und schreibt die vier automatischen Dateien, dazu `notizen.json` aus dem Notizbuch (siehe unten). Es läuft bei jedem Upload über `WEBSITE_AKTUALISIEREN.bat` bzw. `publish-monitor.py` mit. Neue Ereignisse erscheinen also ohne weiteres Zutun in der nächsten Ausgabe.
+`scripts/build-journal.py` liest die Detailmessungen aus `../Spielmonitor/sessions/*/daten.jsonl` (archivierte Sitzungen: `daten.jsonl.xz`, gleiche Bytes) und schreibt die vier automatischen Dateien, dazu `notizen.json` aus dem Notizbuch (siehe unten), `karte.json` (Seekarte) und `zeitleiste.json` (Epochen: welcher Stil ab welchem Monat gilt, mit belegtem Anlass, aus `data/epochen.json` und `saves/<welt>/data/epochen.json` über `scripts/journal_epochen.py`). Es läuft bei jedem Upload über `WEBSITE_AKTUALISIEREN.bat` bzw. `publish-monitor.py` mit. Neue Ereignisse erscheinen also ohne weiteres Zutun in der nächsten Ausgabe.
 
 Regeln:
 
@@ -37,7 +38,7 @@ Regeln:
 - **Beobachtungsgruppe:** Die Namen sind deterministisch aus der Personen-ID erfunden und stets als erfunden markiert. Wohnort, Verkehrsmittel, Arbeitsplatz und Zufriedenheitsrohwert (Skala nicht validiert) sind gemessen.
 - **Cache:** Er liegt in `.publish-cache/journal/` und wird bei jeder Änderung am Script verworfen.
 
-Von Hand: `python scripts/build-journal.py [--monitor PFAD] [--out ORDNER] [--notebook DATEI]` (`--out` schreibt woandershin, z. B. für Tests; `--notebook` liest ein anderes Notizbuch).
+Von Hand: `python scripts/build-journal.py [--monitor PFAD] [--out ORDNER] [--notebook DATEI]` (`--out` schreibt woandershin, z. B. für Tests; `--notebook` liest ein anderes Notizbuch). Ändert sich `build-journal.py`, liest der nächste Lauf alle Sitzungen neu (etwa eineinhalb Minuten); Änderungen an `journal_epochen.py` oder den Regeln brauchen das nicht.
 
 ## Seekarte „Carte marine de l’Archipel“
 
@@ -115,7 +116,9 @@ Ideen liefert die Zeitung selbst. Der Kasten „Stoff für Geschichten“ auf je
 
 **Formen abwechseln (Wunsch des Spielers):** Eine Ausgabe soll nicht aus lauter gleichen Stücken bestehen, und dieselbe Form nicht mehrmals hintereinander. Bisher genutzt: Artikel, Aufmacher, Interview/Gespräch, Porträt, Réclame, „Am Tresen“, Leserbriefe, Nachrufe, Almanach (Einordnung), Amtliche Bekanntmachung, Momentaufnahme, Unterwegs (Reise einer Ware), Bildreportage, Logbuch, Reisebericht, Versteigerung, Tagebuch, „On dit …“ (Klatsch aus mehreren Lokalen), Kleinanzeigen, Telegramm, Festprogramm, Offener Brief, Lieferschein, Ich-Erzählung eines Gegenstands („Ich, die Wand“), Glückwünsche, Schiffsmeldungen, Bühnenstück, Fragebogen (eine Stadt antwortet), Schulaufsatz, Ratgeber („Fragen Sie Honorine“), Marktbericht (Einordnung), Postkarte, Speisekarte, Fahrplan-Aushang, Kalenderblatt, Reiseführer-Eintrag, Gedicht/Ballade, Vereinsnachrichten, Kriminalfall, Vermischtes, Urkunde (Grundstein), Polizeiakte (Abschlussbericht), Sitzungsprotokoll, Poesiealbum, Fahrgastordnung, Adressbuch, Rätselecke, Wunschzettel, Bauanleitung, Taufanzeige, Inventur, Rede, Wettbuch, Sportbericht (mit Tabelle), Märchen, Predigt, Steckbrief, Umfrage, Meldeschein, Briefwechsel, Bilderbogen, Einkaufszettel, Gästebuch, Haushaltsbuch, Rezept. Neue Formen sind willkommen; `rubrik` ist frei wählbar. Familien- und Gemeindeanzeigen als `typ: artikel` anlegen, denn `typ: anzeige` erscheint als „Réclame“.
 
-Prüfen: `node scripts/validate-journal.mjs [ORDNER]` (läuft auch in CI und vor jedem Upload). `python scripts/test-build-journal.py` baut synthetische Messungen mit und ohne Modelldaten bzw. Positionen, eine erst später bestückte Fluglinie sowie ein Test-Notizbuch in einen Temp-Ordner und prüft Meldungen, Fuhrpark, Notizen, Seekarte und Validator (CI).
+Prüfen: `node scripts/validate-journal.mjs [ORDNER]` (läuft auch in CI und vor jedem Upload; prüft auch `zeitleiste.json` und `radioprogramm.json`). `python scripts/test-build-journal.py` baut synthetische Messungen mit und ohne Modelldaten bzw. Positionen, eine erst später bestückte Fluglinie, ein Test-Notizbuch und Epochen-Regeln (frühestens, spätestens, Auslöser vor frühestens, Krisenpapier, Rücksprung, ohne Regeldatei) in einen Temp-Ordner und prüft Meldungen, Fuhrpark, Notizen, Seekarte, Zeitleiste und Validator (CI).
+
+**Radioprogramm:** von Hand in `radioprogramm.json`, erst ab dem Monat der Rubrik laut `zeitleiste.json` (Validator), immer `art: fiktion` mit `grounding`. Aufbau in `docs/EPOCHEN.md` („Radioprogramm schreiben“). Die Schreibregeln oben gelten auch hier.
 
 ## Bildreportagen
 

@@ -1,0 +1,9 @@
+/* Merkmal „bilder“ (data-bilder am Journal): Satz der Fotografien je Stufe, Regeln in data/epochen.json.
+ * stich  Stufe 1, Kutschenzeit: Bild mit feiner Linie, kursive Unterschrift, Grundgestaltung aus journal.css.
+ * raster Stufe 3, Erste Fotos: Rasterdruck mit schwarzer Haarlinie und weißem Rand, Unterschrift „Photo.“
+ * Die Bilder selbst bleiben vollständig und unverfärbt, nur Rahmen und Unterschrift wechseln. */
+
+.j[data-bilder=raster] .j-photo img{border:1px solid #222;padding:5px;background:#fffdf6}
+.j[data-bilder=raster] .j-photo figcaption{font-family:var(--j-head);font-style:normal;font-size:13px;line-height:1.5;color:var(--read)}
+.j[data-bilder=raster] .j-photo figcaption:before{content:"Photo. ";font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--ink)}
+.j[data-bilder=raster] .j-photo-preview figcaption{font-size:12px}
