@@ -3644,6 +3644,240 @@
         "personen": [],
         "betriebe": []
       }
+    },
+    {
+      "id": "1921-02-bildreportage-flug-ueber-den-archipel",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1921-02",
+      "rubrik": "Bildreportage · Aus dem Flugzeug",
+      "titel": "Über den Dächern beginnt ein anderer Archipel",
+      "teaser": "Acht Ansichten aus den Zwanzigern: Unser Blick auf die Inseln hebt ab.",
+      "body": [
+        "Unter der Tragfläche liegen Dächer, Gleise und eine Küste, die sich bis zum Horizont in weitere Inseln auflöst. Die Maschine trägt die Kennung D-366. Vom Boden aus fällt zuerst das Flugzeug auf; von hier oben dagegen sieht man, wie viel Wasser zwischen den Orten liegt, deren Namen im Fahrplan so dicht beieinanderstehen.",
+        "Unser erfundener Reisebegleiter hält seinen Hut auf den Knien fest, obwohl die Kabine geschlossen ist. Er hat sich vorgenommen, sein Haus zu erkennen. Nun entdeckt er vor allem Wege: den Bogen einer Straße, eine Bahntrasse, die schmale Verbindung zwischen Stadt und Hinterland. „Ich wusste gar nicht, dass wir so am Rand wohnen“, sagt er.",
+        "Mit dieser Aufnahme beginnt unsere neue Bildfolge. Sie führt zu Hafenstädten, kleinen Buchten und einem Flugplatz. Achtmal derselbe Archipel, achtmal ein anderer Alltag. Wer die Bilder betrachtet, darf sich Zeit nehmen: Unten wartet ohnehin schon der nächste Anschluss."
+      ],
+      "image": {
+        "src": "../../assets/photos/1920er-flug-ueber-den-archipel.webp",
+        "alt": "Über den Dächern beginnt ein anderer Archipel – historische Sepiaansicht des Archipels.",
+        "caption": "Über den Dächern beginnt ein anderer Archipel. KI-bearbeitete Spielaufnahme im Fotostil der 1920er-Jahre.",
+        "source": "grafik(20261018-090728).png"
+      },
+      "grounding": "Bildgrundlage: vom Spieler am 18.10.2026 bereitgestellte Aufnahme grafik(20261018-090728).png; Veröffentlichung der bearbeiteten Fotostrecke vom Spieler beauftragt. Küstenform, Stadtanlage und Verkehrsflächen dienen als Motiv; einzelne Gebäude, Fahrzeuge und weitere Details sind künstlerisch verändert oder ergänzt. Redaktionell der Ausgabe Februar 1921 zugeordnet, nicht als exaktes Aufnahmedatum im Spiel belegt. Erfunden: erzählte Szenen, Figurenhandlungen, Gespräche und Brieftexte. Aus den Bildern werden keine Betriebszahlen, Reisezeiten oder gesicherten Ursachen abgeleitet.",
+      "refs": {
+        "staedte": [
+          174632,
+          174617
+        ],
+        "personen": [],
+        "linien": [],
+        "betriebe": []
+      },
+      "lead": true
+    },
+    {
+      "id": "1921-02-bildreportage-sin-le-noble",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1921-02",
+      "rubrik": "Momentaufnahme · Sin-le-Noble",
+      "titel": "Ein Flugfeld vor der Haustür",
+      "teaser": "Zwischen Stadt, Gleisen und Küste hat die Ferne einen Landeplatz bekommen.",
+      "body": [
+        "Das Flugfeld liegt offen in der Landschaft. Neben der Bahn und den Straßen wirkt seine gerade Fläche wie ein neuer Satz im vertrauten Schriftbild der Insel. Sin-le-Noble bleibt auf der Aufnahme eine kleine Stadt; die neue Nachbarschaft beansprucht bereits viel Raum.",
+        "Im erfundenen Gespräch vor dem Café du Sablier streiten zwei Gäste darüber, ob man eine Abreise ohne Schiff überhaupt richtig ernst nehmen könne. Der eine vermisst das langsame Ablegen. Der andere findet gerade das Verschwinden über den Bäumen bemerkenswert. Beide wollen am nächsten Tag wieder zum Flugfeld gehen.",
+        "Die Luftaufnahme hält diesen Gegensatz fest: die vertrauten Wege am Boden und eine Verkehrsfläche, deren Fortsetzung man nicht sehen kann. Sie liegt irgendwo hinter dem Bildrand, in der Luft."
+      ],
+      "image": {
+        "src": "../../assets/photos/1920er-sin-le-noble.webp",
+        "alt": "Ein Flugfeld vor der Haustür – historische Sepiaansicht des Archipels.",
+        "caption": "Ein Flugfeld vor der Haustür. KI-bearbeitete Spielaufnahme im Fotostil der 1920er-Jahre.",
+        "source": "grafik(20261018-090459).png"
+      },
+      "grounding": "Bildgrundlage: vom Spieler am 18.10.2026 bereitgestellte Aufnahme grafik(20261018-090459).png; Veröffentlichung der bearbeiteten Fotostrecke vom Spieler beauftragt. Küstenform, Stadtanlage und Verkehrsflächen dienen als Motiv; einzelne Gebäude, Fahrzeuge und weitere Details sind künstlerisch verändert oder ergänzt. Redaktionell der Ausgabe Februar 1921 zugeordnet, nicht als exaktes Aufnahmedatum im Spiel belegt. Erfunden: erzählte Szenen, Figurenhandlungen, Gespräche und Brieftexte. Aus den Bildern werden keine Betriebszahlen, Reisezeiten oder gesicherten Ursachen abgeleitet.",
+      "refs": {
+        "staedte": [
+          174617
+        ],
+        "personen": [],
+        "linien": [],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1921-02-bildreportage-port-des-alizes",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1921-02",
+      "rubrik": "Stadtfeuilleton · Port des Alizés",
+      "titel": "Eine Stadt mit vielen Ankünften",
+      "teaser": "Arena, Häuser und Hafen teilen sich eine Halbinsel – und die Aufmerksamkeit ihrer Bewohner.",
+      "body": [
+        "Die Arena ist aus der Luft kaum zu übersehen. Doch am unteren Rand der Aufnahme ziehen die Hafenbecken den Blick wieder zum Wasser. Dazwischen liegt die Stadt mit ihren Straßen und Häuserblöcken: ein Ort, an dem Ankunft und Aufenthalt dicht nebeneinanderliegen.",
+        "Bei Chez Honorine behauptet in unserer kleinen Szene ein Gast, jede bedeutende Stadt brauche einen Platz, an dem man gesehen werde. Honorine deutet zur Tür. „Dann stellen Sie sich dort hin. Sie stehen dem Frühstück im Weg.“ Auf dem Papier mag die Hauptstadt aus Wahrzeichen bestehen; am Tisch zählen zunächst Brot und ein freier Stuhl.",
+        "Der Blick von oben verbindet beides. Die großen Bauten geben Port des Alizés seine Silhouette, die vielen unscheinbaren Dächer seine Ausdehnung. Und vor den Kais bleibt das Wasser offen für die nächste Ankunft."
+      ],
+      "image": {
+        "src": "../../assets/photos/1920er-port-des-alizes.webp",
+        "alt": "Eine Stadt mit vielen Ankünften – historische Sepiaansicht des Archipels.",
+        "caption": "Eine Stadt mit vielen Ankünften. KI-bearbeitete Spielaufnahme im Fotostil der 1920er-Jahre.",
+        "source": "grafik(20261018-090515).png"
+      },
+      "grounding": "Bildgrundlage: vom Spieler am 18.10.2026 bereitgestellte Aufnahme grafik(20261018-090515).png; Veröffentlichung der bearbeiteten Fotostrecke vom Spieler beauftragt. Küstenform, Stadtanlage und Verkehrsflächen dienen als Motiv; einzelne Gebäude, Fahrzeuge und weitere Details sind künstlerisch verändert oder ergänzt. Redaktionell der Ausgabe Februar 1921 zugeordnet, nicht als exaktes Aufnahmedatum im Spiel belegt. Erfunden: erzählte Szenen, Figurenhandlungen, Gespräche und Brieftexte. Aus den Bildern werden keine Betriebszahlen, Reisezeiten oder gesicherten Ursachen abgeleitet.",
+      "refs": {
+        "staedte": [
+          174632
+        ],
+        "personen": [],
+        "linien": [],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1921-02-bildreportage-anse-doree",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1921-02",
+      "rubrik": "Postkarte · Anse Dorée",
+      "titel": "Wo die Stadt den Wald berührt",
+      "teaser": "Eine gedachte Nachricht von der Küste: Hier endet die Häuserzeile, dort beginnt das Grün.",
+      "body": [
+        "Liebe Freundin, auf der Ansicht, die ich dir schicke, erkennst du zuerst das Meer. Sieh dann etwas weiter nach rechts: Dort laufen die Straßen auseinander, und die Häuser werden weniger. Hinter ihnen bleibt eine weite Landschaft, als hätte jemand beim Zeichnen noch Platz für später gelassen.",
+        "Vorn schiebt sich der Wald ins Bild. Ich stelle mir vor, wie angenehm es wäre, nach einem Vormittag zwischen Häusern dort den Schatten zu suchen. Von oben liegen Stadt und Grün dicht beisammen; zu Fuß würde man gewiss wieder feststellen, dass eine Ansichtskarte keine Entfernungen kennt.",
+        "Behalte diese Karte. Vielleicht vergleichen wir sie eines Tages mit einer neuen Aufnahme und suchen gemeinsam, welche freie Ecke dann schon eine Adresse hat. Bis dahin gefällt mir gerade das Unfertige. Deine Reisende."
+      ],
+      "image": {
+        "src": "../../assets/photos/1920er-anse-doree.webp",
+        "alt": "Wo die Stadt den Wald berührt – historische Sepiaansicht des Archipels.",
+        "caption": "Wo die Stadt den Wald berührt. KI-bearbeitete Spielaufnahme im Fotostil der 1920er-Jahre.",
+        "source": "grafik(20261018-090522).png"
+      },
+      "grounding": "Bildgrundlage: vom Spieler am 18.10.2026 bereitgestellte Aufnahme grafik(20261018-090522).png; Veröffentlichung der bearbeiteten Fotostrecke vom Spieler beauftragt. Küstenform, Stadtanlage und Verkehrsflächen dienen als Motiv; einzelne Gebäude, Fahrzeuge und weitere Details sind künstlerisch verändert oder ergänzt. Redaktionell der Ausgabe Februar 1921 zugeordnet, nicht als exaktes Aufnahmedatum im Spiel belegt. Erfunden: erzählte Szenen, Figurenhandlungen, Gespräche und Brieftexte. Aus den Bildern werden keine Betriebszahlen, Reisezeiten oder gesicherten Ursachen abgeleitet.",
+      "refs": {
+        "staedte": [
+          174645
+        ],
+        "personen": [],
+        "linien": [],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1921-02-bildreportage-valmorin",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1921-02",
+      "rubrik": "Hafenstück · Valmorin",
+      "titel": "Zwischen Gleisbogen und Kai",
+      "teaser": "Die Stadt breitet sich zwischen ihren Landwegen und dem Wasser aus.",
+      "body": [
+        "Die Bahn zieht im Bogen hinter den Häusern entlang, während der Hafen auf einer vorgeschobenen Küstenfläche liegt. Dazwischen verzweigen sich Straßen. Valmorin erscheint in dieser Ansicht als Stadt mit mehreren Rändern: zum Meer, zu den Gleisen und zur offenen Landschaft.",
+        "Im Au Quai des Collines legt Mathurin in unserer erfundenen Szene die Aufnahme auf den Tresen. Anselme sucht sein gewohntes Eckhaus und findet zunächst nur Dächer. „Von oben sieht alles ordentlich aus“, murmelt er. Mathurin nickt: „Darum führen wir die Wirtschaft hier unten.“",
+        "Das Bild erklärt keine Lieferkette und verrät keine Wartezeit. Es zeigt aber, weshalb Verkehr in Valmorin so gegenwärtig wirkt: Wo immer der Blick die Stadt verlässt, stößt er auf einen Weg, ein Gleis oder das Wasser."
+      ],
+      "image": {
+        "src": "../../assets/photos/1920er-valmorin.webp",
+        "alt": "Zwischen Gleisbogen und Kai – historische Sepiaansicht des Archipels.",
+        "caption": "Zwischen Gleisbogen und Kai. KI-bearbeitete Spielaufnahme im Fotostil der 1920er-Jahre.",
+        "source": "grafik(20261018-090532).png"
+      },
+      "grounding": "Bildgrundlage: vom Spieler am 18.10.2026 bereitgestellte Aufnahme grafik(20261018-090532).png; Veröffentlichung der bearbeiteten Fotostrecke vom Spieler beauftragt. Küstenform, Stadtanlage und Verkehrsflächen dienen als Motiv; einzelne Gebäude, Fahrzeuge und weitere Details sind künstlerisch verändert oder ergänzt. Redaktionell der Ausgabe Februar 1921 zugeordnet, nicht als exaktes Aufnahmedatum im Spiel belegt. Erfunden: erzählte Szenen, Figurenhandlungen, Gespräche und Brieftexte. Aus den Bildern werden keine Betriebszahlen, Reisezeiten oder gesicherten Ursachen abgeleitet.",
+      "refs": {
+        "staedte": [
+          174607
+        ],
+        "personen": [],
+        "linien": [],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1921-02-bildreportage-bourg-lecorce",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1921-02",
+      "rubrik": "Panorama · Bourg-l’Écorce",
+      "titel": "Die lange Seite zum Meer",
+      "teaser": "Häuserreihen begleiten die Bucht; vor ihnen bleibt Platz für Schiffe und einen weiten Blick.",
+      "body": [
+        "Bourg-l’Écorce zieht sich breit am Ufer entlang. Die Hafenanlagen setzen einzelne Akzente, doch den Eindruck bestimmen die vielen Dächer. Im Hintergrund liegen offene Flächen, Verkehrswege und Hügel. Auf der Seeseite dagegen gehört der Vordergrund fast vollständig dem Wasser.",
+        "Ein erfundener Setzer unserer Zeitung schlägt vor, die Aufnahme quer über zwei Seiten zu drucken. „Sonst fehlt immer jemandem sein Viertel“, sagt er. Sein Kollege erwidert, man könne einer Stadt nicht endlos Papier geben. Darüber geraten beide in eine Debatte, die ungefähr so lang wird wie die abgebildete Uferstraße.",
+        "Wir lassen das Panorama für sich sprechen. Wer näher hinsieht, entdeckt hinter dem großen Stadtnamen eine Folge kleiner Nachbarschaften. Vom Schiff aus mögen sie zu einer einzigen Küste zusammenrücken; für ihre Bewohner beginnt hinter jeder Straßenecke eine andere Geschichte."
+      ],
+      "image": {
+        "src": "../../assets/photos/1920er-bourg-lecorce.webp",
+        "alt": "Die lange Seite zum Meer – historische Sepiaansicht des Archipels.",
+        "caption": "Die lange Seite zum Meer. KI-bearbeitete Spielaufnahme im Fotostil der 1920er-Jahre.",
+        "source": "grafik(20261018-090543).png"
+      },
+      "grounding": "Bildgrundlage: vom Spieler am 18.10.2026 bereitgestellte Aufnahme grafik(20261018-090543).png; Veröffentlichung der bearbeiteten Fotostrecke vom Spieler beauftragt. Küstenform, Stadtanlage und Verkehrsflächen dienen als Motiv; einzelne Gebäude, Fahrzeuge und weitere Details sind künstlerisch verändert oder ergänzt. Redaktionell der Ausgabe Februar 1921 zugeordnet, nicht als exaktes Aufnahmedatum im Spiel belegt. Erfunden: erzählte Szenen, Figurenhandlungen, Gespräche und Brieftexte. Aus den Bildern werden keine Betriebszahlen, Reisezeiten oder gesicherten Ursachen abgeleitet.",
+      "refs": {
+        "staedte": [
+          174605
+        ],
+        "personen": [],
+        "linien": [],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1921-02-bildreportage-roche-noire",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1921-02",
+      "rubrik": "Spaziergang · Roche-Noire",
+      "titel": "Drei Seiten Wasser",
+      "teaser": "Die Halbinsel gibt der Stadt ihren Umriss und jedem Umweg einen neuen Blick auf die Bucht.",
+      "body": [
+        "Die Häuser von Roche-Noire folgen einer gerundeten Landzunge. Straßen fächern sich durch das bebaute Gebiet; nach hinten öffnet sich die Landschaft. Das Meer bleibt an mehreren Seiten nahe und macht die Form des Ortes schon auf den ersten Blick verständlich.",
+        "Für unseren erfundenen Spaziergang empfiehlt der Wirt vom Le Puits keine Sehenswürdigkeit, sondern eine Richtung: immer dort weitergehen, wo zwischen den Häusern Wasser auftaucht. Sein Gast kehrt später zurück und berichtet, das sei als Wegbeschreibung ausgesprochen ungenau gewesen. „Aber schön?“, fragt der Wirt.",
+        "Die Luftaufnahme erspart uns diese Umwege. Gerade deshalb lohnt es sich, beim Betrachten einige hinzuzudenken: vom inneren Straßenkreuz zur Uferkante, von der letzten Häuserreihe hinaus ins offene Gelände. Roche-Noire hat einen klaren Umriss und viele mögliche Wege darin."
+      ],
+      "image": {
+        "src": "../../assets/photos/1920er-roche-noire.webp",
+        "alt": "Drei Seiten Wasser – historische Sepiaansicht des Archipels.",
+        "caption": "Drei Seiten Wasser. KI-bearbeitete Spielaufnahme im Fotostil der 1920er-Jahre.",
+        "source": "grafik(20261018-090601).png"
+      },
+      "grounding": "Bildgrundlage: vom Spieler am 18.10.2026 bereitgestellte Aufnahme grafik(20261018-090601).png; Veröffentlichung der bearbeiteten Fotostrecke vom Spieler beauftragt. Küstenform, Stadtanlage und Verkehrsflächen dienen als Motiv; einzelne Gebäude, Fahrzeuge und weitere Details sind künstlerisch verändert oder ergänzt. Redaktionell der Ausgabe Februar 1921 zugeordnet, nicht als exaktes Aufnahmedatum im Spiel belegt. Erfunden: erzählte Szenen, Figurenhandlungen, Gespräche und Brieftexte. Aus den Bildern werden keine Betriebszahlen, Reisezeiten oder gesicherten Ursachen abgeleitet.",
+      "refs": {
+        "staedte": [
+          174601
+        ],
+        "personen": [],
+        "linien": [],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1921-02-bildreportage-valombre",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1921-02",
+      "rubrik": "Ortsbild · Valombre",
+      "titel": "Eine Bucht für Valombre",
+      "teaser": "Zwischen Waldhang und Wasser findet die kleine Stadt ihre eigene Form.",
+      "body": [
+        "Valombre liegt dicht an der Küste, unterhalb bewaldeter Hänge. Links rahmt eine Landzunge die Bucht, rechts sammeln sich die Häuser entlang ihrer Straßen. Hafen und Bahnflächen liegen nicht mitten im Bild der Stadt, sondern an dessen Rändern.",
+        "In unserer erfundenen Redaktion fällt jemandem auf, wie viel Landschaft auf dieser Stadtansicht zu sehen ist. Ein anderer antwortet, gerade das sei die Nachricht. Valombre müsse noch nicht jeden freien Fleck erklären. Die Häuser hätten Nachbarn, aber auch einen Hintergrund.",
+        "Die Aufnahme schließt unsere Reise mit einem kleineren Maßstab ab. Nach den breiten Ufern von Bourg und den Hafenbecken der Hauptstadt genügt hier eine Bucht, um einen Ort wiederzuerkennen. Der Wald darüber bleibt als dunkler Saum im Gedächtnis."
+      ],
+      "image": {
+        "src": "../../assets/photos/1920er-valombre.webp",
+        "alt": "Eine Bucht für Valombre – historische Sepiaansicht des Archipels.",
+        "caption": "Eine Bucht für Valombre. KI-bearbeitete Spielaufnahme im Fotostil der 1920er-Jahre.",
+        "source": "grafik(20261018-090615).png"
+      },
+      "grounding": "Bildgrundlage: vom Spieler am 18.10.2026 bereitgestellte Aufnahme grafik(20261018-090615).png; Veröffentlichung der bearbeiteten Fotostrecke vom Spieler beauftragt. Küstenform, Stadtanlage und Verkehrsflächen dienen als Motiv; einzelne Gebäude, Fahrzeuge und weitere Details sind künstlerisch verändert oder ergänzt. Redaktionell der Ausgabe Februar 1921 zugeordnet, nicht als exaktes Aufnahmedatum im Spiel belegt. Erfunden: erzählte Szenen, Figurenhandlungen, Gespräche und Brieftexte. Aus den Bildern werden keine Betriebszahlen, Reisezeiten oder gesicherten Ursachen abgeleitet.",
+      "refs": {
+        "staedte": [
+          174621
+        ],
+        "personen": [],
+        "linien": [],
+        "betriebe": []
+      }
     }
   ]
 }
