@@ -1,8 +1,10 @@
 /* Le Journal des Alizés: Zeitungsseite auf dem Papier-Design von styles.css.
  * Epochen: journal-epochen.js setzt je Ausgabe data-Attribute am Journal (data-ueberschrift, data-kopf …); die Stile je Merkmal
  * und Stufe liegen in assets/epochen/ und ändern vor allem diese Variablen. Ohne Attribute gilt die Kutschenzeit wie bisher. */
+/* Geometrische Schrift der Stufe 4: Jost (SIL Open Font License, assets/fonts/OFL-Jost.txt), variabel, nur Latin, lokal. */
+@font-face{font-family:'Jost';font-style:normal;font-weight:100 900;font-display:swap;src:url(fonts/jost.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
 .j{--j-head:var(--serif);--j-mast:var(--serif);--j-deck:var(--serif);--j-accent:var(--red);--j-gold:var(--gold-bright);
-  --j-geo:Futura,'Futura PT','Century Gothic','URW Gothic','URW Gothic L','Avenir Next',Avenir,'Josefin Sans',Jost,sans-serif}
+  --j-geo:Jost,Futura,'Futura PT','Century Gothic','URW Gothic','URW Gothic L','Avenir Next',Avenir,'Josefin Sans',sans-serif}
 .j-mast{padding:34px 0 22px;text-align:center;background:linear-gradient(180deg,#f7e4c2 0,transparent 100%)}
 .j-mast-top{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin:0 0 10px;padding-bottom:8px;border-bottom:1px solid var(--ink);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
 .j-title{font-family:var(--j-mast);font-weight:700;font-size:clamp(40px,7.4vw,96px);line-height:1;letter-spacing:.01em;margin:6px 0 4px;text-transform:uppercase}

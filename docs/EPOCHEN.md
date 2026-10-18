@@ -135,7 +135,7 @@ Auslöser und ihre Angaben: `premiere` {`fahrzeugart`}, `modell` {`baujahr_ab`, 
 - **In eigener Sache:** In der ersten Ausgabe ab dem Monat eines sichtbaren Wechsels steht oben auf der Titelseite die `notiz` der Stufe, ein Satz zum neuen Namen und zu neuen Rubriken sowie die Begründung mit dem belegten Anlass (Etikett „Belegt“) oder dem Hinweis auf „spätestens“ (Etikett „Einordnung“). Beginn und Ende des Krisenpapiers bekommen ebenfalls eine Notiz.
 - **Schalter „Im heutigen Stil lesen“** unter der Datumszeile, nur bei Ausgaben, die anders aussehen als die neueste. Er zeigt Stil, Name und Kopfzeile der neuesten Ausgabe (Zustände wie das Krisenpapier gehören zu ihrer Ausgabe und bleiben weg), nennt den Originalnamen und die Stufe und blendet die Notiz aus. Gemerkt wird er nur als Komfort im Browser (`localStorage`); ohne Speicher startet die Seite im Stil der Zeit.
 - **Rubriken** erscheinen in der Navigation hinter „Geschichten“ erst ab ihrem Monat. Das Radioprogramm zeigt das Programm der Ausgabe, sonst das jüngste davor, dazu frühere Programme; auf der Titelseite steht ein Kasten mit den ersten Sendungen, wenn es für den Monat ein Programm gibt.
-- **Schriften:** Playfair Display und Source Serif 4 liegen lokal im Repository. Für die geometrische Schrift der Stufe 4 liegt noch keine freie Schrift im Repository; die Seite nimmt die Systemschrift (Futura, Century Gothic, Avenir …, sonst die Grotesk des Geräts) und fragt keinen fremden Server an. Eine freie Schrift wie Jost (SIL Open Font License) kann später nach `assets/fonts/` und an den Anfang der Schriftliste `--j-geo` in `journal.css`.
+- **Schriften:** Playfair Display, Source Serif 4 und Jost liegen lokal im Repository; die Seite fragt keinen fremden Server an. Die geometrische Schrift der Stufe 4 ist Jost (SIL Open Font License, `assets/fonts/OFL-Jost.txt`): variable Datei `assets/fonts/jost.woff2` (Stärken 100 bis 900, nur Latin, 26 KB, aus `@fontsource-variable/jost` 5.3.0), eingebunden per `@font-face` in `journal.css` und an erster Stelle der Schriftliste `--j-geo`. Der Browser lädt sie nur für Ausgaben ab Stufe 4; frühere Ausgaben brauchen sie nicht. Fehlt die Datei, greifen Futura, Century Gothic, Avenir …, sonst die Grotesk des Geräts. Eine Kursive gibt es nicht, Stufe 4 braucht keine.
 
 ### Radioprogramm schreiben
 
@@ -201,14 +201,13 @@ Die Zeitung nimmt im Juni 1920 Abschied von der Kutschenzeit, die Kutschen selbs
 
 ## Offene Fragen
 
-- Freie geometrische Schrift (z. B. Jost) für Stufe 4 ins Repository holen? Bis dahin Systemschrift (siehe „Schriften“).
 - Erstes Radioprogramm schreiben, sobald Stufe 5 erreicht ist (eine Stadt mit 4.000 Einwohnern, frühestens 1922).
 
-Geklärt am 18.10.2026: Auslöser der Stufen 6, 9, 11, 13 und 14 (Technik-Jahrgänge), Krise als Zustand, Namen je Stufe, Schalter „im heutigen Stil lesen“ kommt, nur das Journal verändert sich, Umfang der ersten Runde (Mechanik, Krisenpapier, Stufen 1 bis 5).
+Geklärt am 18.10.2026: Auslöser der Stufen 6, 9, 11, 13 und 14 (Technik-Jahrgänge), Krise als Zustand, Namen je Stufe, Schalter „im heutigen Stil lesen“ kommt, nur das Journal verändert sich, Umfang der ersten Runde (Mechanik, Krisenpapier, Stufen 1 bis 5). Ebenfalls am 18.10.2026: Jost liegt als freie geometrische Schrift der Stufe 4 im Repository (siehe „Schriften“).
 
 ## Umsetzung in Schritten
 
 1. Erledigt: Regeldatei `data/epochen.json`, Auswertung in `build-journal.py`, `zeitleiste.json` mit Stufen und Zuständen, Validator und Tests (frühestens, spätestens, Auslöser vor „frühestens“, Zustand beginnt und endet, Rücksprung ändert nichts, gleiche Messungen, ohne Regeldatei byte-identisch).
-2. Erledigt: Anzeige-Gerüst in `journal.js`, Stile für die Stufen 1 bis 4 und das Krisenpapier, Name je Stufe, Notiz „In eigener Sache“, Schalter „im heutigen Stil lesen“. Offen: lokale geometrische Schrift.
+2. Erledigt: Anzeige-Gerüst in `journal.js`, Stile für die Stufen 1 bis 4 und das Krisenpapier, Name je Stufe, Notiz „In eigener Sache“, Schalter „im heutigen Stil lesen“, lokale geometrische Schrift (Jost).
 3. Erledigt: Rubriken-Gerüst (Rubrik erscheint ab ihrem Monat) und die Rundfunkzeit (Stufe 5, Radioprogramm von Hand; in dieser Welt noch nicht erreicht, im Browser mit Testdaten geprüft).
 4. Jede spätere Stufe kurz bevor das Spiel sie erreicht.

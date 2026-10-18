@@ -24,7 +24,7 @@ Das Projekt überträgt bewährte Grundsätze des Finn-Harps-FM-Wikis auf einen 
 │   ├── styles.css                  # Gemeinsames Design (Farbvariablen, Komponenten)
 │   ├── affiche-alizes.svg, rivage.svg  # Reiseplakat und Küstenband
 │   ├── journal.js, journal.css     # Le Journal des Alizés (siehe docs/JOURNAL.md)
-│   └── fonts/                      # Playfair Display, Source Serif 4 (OFL, lokal)
+│   └── fonts/                      # Playfair Display, Source Serif 4, Jost (OFL, lokal)
 ├── data/
 │   └── worlds.json                 # Weltregister
 ├── saves/
