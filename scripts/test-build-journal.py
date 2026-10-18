@@ -1,5 +1,5 @@
-"""Journal build from synthetic monitor sessions: vehicle models (Spielmonitor revision 15), the player's notebook
-and the sea chart from measured positions (revision 16).
+"""Journal build from synthetic monitor sessions: vehicle models (Spielmonitor revision 15), the player's notebook,
+the sea chart from measured positions (revision 16) and the kinds of vehicle, air lines included.
 
 Usage: python scripts/test-build-journal.py
 Builds into a temporary folder and never touches the published journal or the real publish cache.
@@ -310,6 +310,44 @@ class JournalChartTests(JournalCase):
         chart = json.loads((self.out/'karte.json').read_text(encoding='utf-8'))
         self.assertIsNone(chart['gelaende'])
         self.assertEqual(chart['fehlend']['staedte'], 1)
+
+
+def air(row, vehicles, name, carrier, models):
+    """Adds the air line 4 to a detail row; the game reports no carrier while a line has no vehicle."""
+    row['lines'].append({'id':4, 'name':name, 'carrier':carrier, 'vehicles':vehicles, 'places':['Valmorin', 'Roc'],
+                         'station_group_ids':[701, 702], 'vehicle_models':models, 'vehicle_models_complete':True})
+    return row
+
+
+class JournalKindTests(JournalCase):
+    def test_air_line_premieres_with_its_first_aircraft(self):
+        plane = model(51, 'Junkers F 13', 4, bought=(1912, 2, 8))
+        meld, fleet = self.build({'a':[detail((1, 20), 100, BASE),
+                                       air(detail((2, 1), 200, BASE), 0, 'AP Passagiere-Val-LO-1', None, []),
+                                       air(detail((2, 10), 300, BASE), 4, 'AP Passagiere-Val-Roc-IC-1', 'AIR', [plane]),
+                                       air(charted((3, 1), 400, geo([{'id':10, 'x':1, 'y':2}])), 4, 'AP Passagiere-Val-Roc-IC-1', 'AIR', [plane])]})
+        events = meld['meldungen']
+        # Set up without an aircraft on 1 February, the line is news then; the premiere waits for the first aircraft.
+        premieres = [e for e in events if e['typ'] == 'premiere']
+        self.assertEqual([(e['date'], e['titel'], e['werte']) for e in premieres], [('1912-02-10', 'Premiere: Flugzeug', {'art':'flugzeug', 'fahrzeuge':4})])
+        self.assertIn('„AP Passagiere-Val-Roc-IC-1“ fährt erstmals ein Flugzeug der Gesellschaft zwischen Valmorin und Roc.', premieres[0]['text'])
+        line = next(e for e in events if e['typ'] == 'linie')
+        self.assertEqual((line['date'], line['werte']['art']), ('1912-02-01', 'flugzeug'))
+        self.assertTrue(line['text'].startswith('Fluglinie zwischen Valmorin und Roc, erstmals erfasst mit 0 Fahrzeugen'))
+        plane_event = next(e for e in events if e['typ'] == 'modell')
+        self.assertEqual((plane_event['date'], plane_event['werte']['art']), ('1912-02-10', 'flugzeug'))
+        self.assertIn('auf der Fluglinie „AP Passagiere-Val-Roc-IC-1“', plane_event['text'])
+        self.assertIn({'art':'flugzeug', 'bezeichnung':'Flugzeug'}, fleet['arten'])
+        first = {p['art']:p for p in fleet['premieren']}['flugzeug']
+        self.assertEqual((first['date'], first['linie'], first['seit_beginn']), ('1912-02-10', 'AP Passagiere-Val-Roc-IC-1', False))
+        months = {v['monat']:v for v in fleet['verlauf']}
+        self.assertEqual((months['1912-02']['fahrzeuge']['flugzeug'], months['1912-02']['linien']['flugzeug']), (4, 1))
+        self.assertNotIn('unbekannt', months['1912-02']['fahrzeuge'])
+        self.assertEqual([m['modell'] for k in fleet['modelle']['je_art'] if k['art'] == 'flugzeug' for m in k['modelle']], ['Junkers F 13'])
+        chart = json.loads((self.out/'karte.json').read_text(encoding='utf-8'))
+        self.assertEqual({l['id']:l['art'] for l in chart['linien']}[4], 'flugzeug')
+        # Air cargo is a kind of its own; without a known prefix the carrier alone still says aircraft.
+        self.assertEqual((journal.line_kind('AC Post-Val-Roc-IC-1', 'AIR'), journal.line_kind('Linie 1', 'AIR')), ('frachtflugzeug', 'flugzeug'))
 
 
 if __name__ == '__main__':

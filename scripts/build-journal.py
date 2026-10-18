@@ -30,11 +30,13 @@ CACHE = ROOT/'.publish-cache/journal'
 # Line names follow "<Typ> <Waren>-<Orte>-<Kategorie>-<Nr>", e.g. "TP Passagiere-PordesAli-Bou-RE-1".
 KINDS = {'Bus':('bus','Bus','ROAD'), 'RC':('lkw','Lastwagen','ROAD'), 'Tram':('tram','Straßenbahn','TRAM'),
          'TP':('personenzug','Personenzug','RAIL'), 'TC':('gueterzug','Güterzug','RAIL'),
-         'WP':('passagierschiff','Passagierschiff','WATER'), 'WC':('frachtschiff','Frachtschiff','WATER')}
-CARRIER_KIND = {'ROAD':'bus', 'TRAM':'tram', 'RAIL':'personenzug', 'WATER':'frachtschiff'}
+         'WP':('passagierschiff','Passagierschiff','WATER'), 'WC':('frachtschiff','Frachtschiff','WATER'),
+         'AP':('flugzeug','Flugzeug','AIR'), 'AC':('frachtflugzeug','Frachtflugzeug','AIR')}
+CARRIER_KIND = {'ROAD':'bus', 'TRAM':'tram', 'RAIL':'personenzug', 'WATER':'frachtschiff', 'AIR':'flugzeug'}
 KIND_LABEL = {v[0]:v[1] for v in KINDS.values()} | {'unbekannt':'Unbekannt'}
 LINE_LABEL = {'bus':'Buslinie', 'lkw':'Lkw-Linie', 'tram':'Straßenbahnlinie', 'personenzug':'Personenzuglinie',
-              'gueterzug':'Güterzuglinie', 'passagierschiff':'Passagierschifflinie', 'frachtschiff':'Frachtschifflinie', 'unbekannt':'Linie'}
+              'gueterzug':'Güterzuglinie', 'passagierschiff':'Passagierschifflinie', 'frachtschiff':'Frachtschifflinie',
+              'flugzeug':'Fluglinie', 'frachtflugzeug':'Luftfrachtlinie', 'unbekannt':'Linie'}
 ARTICLE = {'tram':'eine'}
 TOWN_STEPS = (100, 250, 500, 750, 1000, 1500, 2000, 2500, 3000, 4000, 5000)
 FIRST = ['Adélaïde','Amélie','Angèle','Augustine','Berthe','Céleste','Clémence','Delphine','Eugénie','Fernande','Germaine',
@@ -195,7 +197,8 @@ def detect(rows, jumps, latest_places):
     for l in first['lines']:
         lines[l[0]] = l
         line_vehicles[l[0]] = l[3]
-        kinds_seen.add(line_kind(l[1], l[2]))
+        if l[3]:
+            kinds_seen.add(line_kind(l[1], l[2]))
     for i in first['inds']:
         inds[i[0]] = i
     for t in first['towns']:
@@ -211,11 +214,6 @@ def detect(rows, jumps, latest_places):
                 kind = line_kind(l[1], l[2])
                 places = l[4] or latest_places.get(lid)
                 if lid not in lines:
-                    if kind not in kinds_seen and kind != 'unbekannt':
-                        add('premiere', row, f"Premiere: {KIND_LABEL[kind]}",
-                            f"Mit „{l[1]}“ fährt erstmals {ARTICLE.get(kind, 'ein')} {KIND_LABEL[kind]} der Gesellschaft {place_text(places)}.".replace('  ', ' ').replace(' .', '.'),
-                            {'line':lid}, {'art':kind, 'fahrzeuge':l[3]}, key=kind)
-                        kinds_seen.add(kind)
                     add('linie', row, f"Neue Linie: {l[1]}",
                         f"{LINE_LABEL[kind]} {place_text(places)}, erstmals erfasst mit {l[3]} Fahrzeug{'en' if l[3] != 1 else ''}.".replace('  ', ' ').replace(' ,', ','),
                         {'line':lid}, {'art':kind, 'fahrzeuge':l[3]}, key=lid)
@@ -229,7 +227,7 @@ def detect(rows, jumps, latest_places):
                         title, text = 'Linie eingerichtet', f"Aus der vorläufigen Linie „{old}“ wird „{l[1]}“."
                     elif old_kind != kind and kind != 'unbekannt':
                         text = f"Die Linie „{old}“ wird als {KIND_LABEL[kind]} weitergeführt und heißt jetzt „{l[1]}“."
-                        if kind not in kinds_seen:
+                        if kind not in kinds_seen and l[3]:
                             add('premiere', row, f"Premiere: {KIND_LABEL[kind]}", text, {'line':lid}, {'art':kind}, key=kind)
                             kinds_seen.add(kind)
                         title = f"Umstellung auf {KIND_LABEL[kind]}"
@@ -240,6 +238,12 @@ def detect(rows, jumps, latest_places):
                     else:
                         title, text = 'Linie neu geführt', f"„{old}“ heißt jetzt „{l[1]}“."
                     add('linie-neu-gefuehrt', row, title, text, {'line':lid}, {'alt':old, 'neu':l[1], 'neue_waren':gained, 'entfallene_waren':lost}, key=lid)
+                # A premiere needs a vehicle: a line set up before its first purchase waits for it.
+                if kind not in kinds_seen and kind != 'unbekannt' and l[3]:
+                    add('premiere', row, f"Premiere: {KIND_LABEL[kind]}",
+                        f"Mit „{l[1]}“ fährt erstmals {ARTICLE.get(kind, 'ein')} {KIND_LABEL[kind]} der Gesellschaft {place_text(places)}.".replace('  ', ' ').replace(' .', '.'),
+                        {'line':lid}, {'art':kind, 'fahrzeuge':l[3]}, key=kind)
+                    kinds_seen.add(kind)
                 line_missing[lid] = 0
                 gone_since.pop(('line', lid), None)
                 if lid in line_vehicles and l[3] is not None and line_vehicles[lid] is not None:
@@ -463,7 +467,7 @@ def fleet(rows, latest_lines):
             kind = line_kind(name, carrier)
             by[kind] += vehicles or 0
             count[kind] += 1
-            if kind != 'unbekannt':
+            if kind != 'unbekannt' and vehicles:
                 premieres.setdefault(kind, {'art':kind, 'bezeichnung':KIND_LABEL[kind], 'date':row['d'], 'linie':name, 'line':lid})
         months[row['d'][:7]] = {'monat':row['d'][:7], 'fahrzeuge':dict(by), 'linien':dict(count), 'gesamt_fahrzeuge':row['vc'],
                                 'gesamt_linien':row['lc'], 'kasse':row['money']}

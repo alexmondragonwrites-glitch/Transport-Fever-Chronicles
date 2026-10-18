@@ -5,10 +5,14 @@
 const LAYERS = [['gelaende','Küsten & Tiefen'],['linien','Linien'],['halte','Halte'],['staedte','Städte'],['betriebe','Betriebe'],
   ['warenwege','Waren unterwegs'],['wahrzeichen','Wahrzeichen']];
 const STATUS = {aktiv:['produziert','var(--palm)'], gestoppt:['steht still','var(--red)'], ungeprueft:['wird geprüft','var(--muted)']};
-// Muted engraving inks, still far enough apart to tell the kinds of line apart (CIE76 distance at least 19 between land kinds).
-const ATLAS_COLORS = {personenzug:'#303331', gueterzug:'#5e4a3a', tram:'#7d4a63', bus:'#9b7520', lkw:'#a4532f', passagierschiff:'#3d6478', frachtschiff:'#5f8389', unbekannt:'#81796c'};
-const SHIPS = new Set(['frachtschiff','passagierschiff']);
-const KIND_ORDER = ['personenzug','gueterzug','tram','bus','lkw','passagierschiff','frachtschiff','unbekannt'];
+// Muted engraving inks, still far enough apart to tell the kinds of line apart (CIE76 distance at least 19 between land kinds,
+// at least 27 between an aircraft kind and any other).
+const ATLAS_COLORS = {personenzug:'#303331', gueterzug:'#5e4a3a', tram:'#7d4a63', bus:'#9b7520', lkw:'#a4532f', passagierschiff:'#3d6478', frachtschiff:'#5f8389',
+  flugzeug:'#4b4f8c', frachtflugzeug:'#962f3f', unbekannt:'#81796c'};
+const SHIPS = new Set(['frachtschiff','passagierschiff']), AIR = new Set(['flugzeug','frachtflugzeug']);
+const KIND_ORDER = ['personenzug','gueterzug','tram','bus','lkw','passagierschiff','frachtschiff','flugzeug','frachtflugzeug','unbekannt'];
+// Ships dashed; aircraft dotted: near-zero dashes that the round caps of .k-line turn into dots one stroke wide (w in screen pixels).
+const dashes = (art, w) => SHIPS.has(art) ? [7, 4] : AIR.has(art) ? [0.1, w*2.4] : null;
 
 let M = null, C = null, observer = null;
 const S = {layers:new Set(LAYERS.map(l=>l[0]).filter(l=>l!=='halte'&&l!=='warenwege')), kinds:new Set(), month:null, view:null, sel:null};
@@ -121,8 +125,8 @@ function symbols(k, f=1){
     if(!lineVisible(l)) continue;
     const pts = legs(l); if(pts.length<2) continue;
     const d = 'M'+pts.map(p=>P(p.x,p.y).join(' ')).join('L');
-    const w = 1.2+Math.min(3.5, Math.sqrt(l.fahrzeuge||1)*0.5), dim = selLine && selLine!==l;
-    out.push(`<path class="k-line${dim?' k-dim':''}" d="${d}" style="stroke:${KIND_COLORS[l.art]||'var(--muted)'};stroke-width:${px(selLine===l?w+2.5:w)}${SHIPS.has(l.art)?`;stroke-dasharray:${px(7)} ${px(4)}`:''}" data-k="line" data-id="${l.id}"><title>${E(l.name)} · ${N(l.fahrzeuge)} Fahrzeuge · ${l.halte.length} Halte</title></path>`);
+    const w = 1.2+Math.min(3.5, Math.sqrt(l.fahrzeuge||1)*0.5), dim = selLine && selLine!==l, width = selLine===l ? w+2.5 : w, dash = dashes(l.art, width);
+    out.push(`<path class="k-line${dim?' k-dim':''}" d="${d}" style="stroke:${KIND_COLORS[l.art]||'var(--muted)'};stroke-width:${px(width)}${dash?`;stroke-dasharray:${px(dash[0])} ${px(dash[1])}`:''}" data-k="line" data-id="${l.id}"><title>${E(l.name)} · ${N(l.fahrzeuge)} Fahrzeuge · ${l.halte.length} Halte</title></path>`);
     if(l.art==='personenzug'||l.art==='gueterzug') out.push(`<path class="k-rail-inset${dim?' k-dim':''}" d="${d}" style="stroke-width:${px(Math.max(.6,w*.32))};stroke-dasharray:${px(6)} ${px(3)}"/>`);
   }
   if(S.layers.has('halte') || selLine){
@@ -174,9 +178,11 @@ function symbols(k, f=1){
 
 function legend(){
   const {E, KIND_COLORS} = C, label = k => C.kindLabel(k);
-  const T = M.terrain;
+  const T = M.terrain, ink = k => KIND_COLORS[k]||'var(--muted)';
+  const swatch = k => `background:${ink(k)}${SHIPS.has(k)?';background:repeating-linear-gradient(90deg,'+ink(k)+' 0 7px,transparent 7px 11px)'
+    :AIR.has(k)?';background:radial-gradient(circle,'+ink(k)+' 0 1.6px,transparent 2.1px) 0 50%/6px 4px repeat-x':''}`;
   return `<div class="k-legend">
-    <div><h4>Linien nach Art</h4>${M.kinds.map(k=>`<button class="k-kind" data-kind="${k}" aria-pressed="${S.kinds.has(k)}"><i style="background:${KIND_COLORS[k]||'var(--muted)'}${SHIPS.has(k)?';background:repeating-linear-gradient(90deg,'+(KIND_COLORS[k]||'var(--muted)')+' 0 7px,transparent 7px 11px)':''}"></i>${E(label(k))}</button>`).join('')}</div>
+    <div><h4>Linien nach Art</h4>${M.kinds.map(k=>`<button class="k-kind" data-kind="${k}" aria-pressed="${S.kinds.has(k)}"><i style="${swatch(k)}"></i>${E(label(k))}</button>`).join('')}</div>
     <div><h4>Städte nach Einwohnern</h4><svg class="k-legend-towns" viewBox="0 0 170 64" aria-hidden="true">${[[500,'500'],[2000,'2.000'],[5000,'5.000']].map(([n,t],i)=>{const r=radius(n), x=[14,58,120][i];return `<circle class="k-town" cx="${x}" cy="${24}" r="${r}"/><text x="${x}" y="${60}" text-anchor="middle">${t}</text>`;}).join('')}</svg></div>
     <div><h4>Betriebe nach Status</h4>${Object.values(STATUS).map(([l,c])=>`<span><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M6 1L11 6L6 11L1 6Z" style="fill:${c}"/></svg>${E(l)}</span>`).join('')}</div>
     <div><h4>Weiteres</h4><span><svg viewBox="0 0 12 12" aria-hidden="true"><rect x="3" y="3" width="6" height="6" class="k-stop"/></svg>Halt (Stationsgruppe)</span><span><svg viewBox="0 0 24 12" aria-hidden="true"><path d="M1 9Q12 0 21 7" class="k-flow" marker-end="url(#k-arrow-legend)"/><defs><marker id="k-arrow-legend" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0L10 5L0 10Z" class="k-arrowhead"/></marker></defs></svg>Ware unterwegs</span><span><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M6 0.5L7.4 4.3L11.5 4.3L8.2 6.8L9.4 10.8L6 8.4L2.6 10.8L3.8 6.8L0.5 4.3L4.6 4.3Z" class="k-mark"/></svg>Wahrzeichen</span>

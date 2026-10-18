@@ -1,7 +1,7 @@
 /* Le Journal des Alizés: monthly newspaper editions built from measured events (data/journal/*.json),
  * the player's own notes (notizen.json) and hand-written editorial pieces (redaktion.json, gazette.json).
  * Measured, stated by the player and invented content stay labelled. */
-import {karteView, mountKarte} from './journal-karte.js?v=20261014-karte-2';
+import {karteView, mountKarte} from './journal-karte.js?v=20261018-flugzeug';
 const APP = document.getElementById('app');
 const E = v => String(v ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const N = (v, d=0) => Number.isFinite(v) ? new Intl.NumberFormat('de-DE', {maximumFractionDigits:d}).format(v) : '–';
@@ -22,7 +22,7 @@ const TYPES = {
   flotte:{label:'Flotte', group:'verkehr', weight:2}, 'industrie-ende':{label:'Schließung', group:'industrie', weight:1}};
 const GROUPS = {verkehr:'Verkehr', industrie:'Industrie', staedte:'Städte', netz:'Netz & Aufzeichnung'};
 const KIND_COLORS = {frachtschiff:'var(--series-2)', lkw:'var(--series-1)', bus:'var(--series-5)', tram:'var(--series-4)',
-  gueterzug:'var(--series-6)', personenzug:'var(--series-3)', passagierschiff:'var(--series-7)'};
+  gueterzug:'var(--series-6)', personenzug:'var(--series-3)', passagierschiff:'var(--series-7)', flugzeug:'#1f8bb0', frachtflugzeug:'#a32a4a'};
 const MODE = {fuss:['Zu Fuß','var(--series-1)'], auto:['Auto','var(--series-5)'], oev:['ÖV','var(--series-2)']};
 const STORY_TYPES = {artikel:'Artikel', interview:'Gespräch', portraet:'Porträt', anzeige:'Réclame', einordnung:'Einordnung'};
 
