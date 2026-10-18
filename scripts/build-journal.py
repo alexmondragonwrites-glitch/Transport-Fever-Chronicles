@@ -22,6 +22,7 @@ import sys
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import journal_karte  # noqa: E402  sea chart from the monitor's positions
+import monitor_files  # noqa: E402  daten.jsonl or its lossless archive daten.jsonl.xz
 
 ROOT = Path(__file__).resolve().parents[1]
 CACHE = ROOT/'.publish-cache/journal'
@@ -112,8 +113,8 @@ def session_rows(path, world_id, cache_dir=CACHE):
         pass
     rows, last_towns, chart = [], None, {}
     needle = world_id.encode()
-    with path.open('rb') as stream:
-        remaining = stat.st_size
+    with monitor_files.open_data(path) as stream:
+        remaining = monitor_files.size(path)
         while remaining:
             raw = stream.readline(remaining)
             remaining -= len(raw)
@@ -553,7 +554,7 @@ def build(monitor, save, out=None, cache_dir=CACHE, notes_path=None):
     config = json.loads((ROOT/'data/monitor-sources.json').read_text(encoding='utf-8'))['saves'][save]
     world_id = config['world']['world_id']
     sessions, last_towns, charts = [], None, []
-    for path in sorted((monitor/'sessions').glob('*/daten.jsonl')):
+    for path in monitor_files.data_paths(monitor/'sessions'):
         rows, last, chart = session_rows(path, world_id, cache_dir)
         charts.append(chart)
         if rows:

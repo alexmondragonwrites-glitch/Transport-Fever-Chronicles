@@ -17,7 +17,7 @@ Alle Dateien liegen in `saves/archipel-des-alizes/data/journal/`.
 
 ## Automatische Daten
 
-`scripts/build-journal.py` liest die Detailmessungen aus `../Spielmonitor/sessions/*/daten.jsonl` und schreibt die vier automatischen Dateien, dazu `notizen.json` aus dem Notizbuch (siehe unten). Es läuft bei jedem Upload über `WEBSITE_AKTUALISIEREN.bat` bzw. `publish-monitor.py` mit. Neue Ereignisse erscheinen also ohne weiteres Zutun in der nächsten Ausgabe.
+`scripts/build-journal.py` liest die Detailmessungen aus `../Spielmonitor/sessions/*/daten.jsonl` (archivierte Sitzungen: `daten.jsonl.xz`, gleiche Bytes) und schreibt die vier automatischen Dateien, dazu `notizen.json` aus dem Notizbuch (siehe unten). Es läuft bei jedem Upload über `WEBSITE_AKTUALISIEREN.bat` bzw. `publish-monitor.py` mit. Neue Ereignisse erscheinen also ohne weiteres Zutun in der nächsten Ausgabe.
 
 Regeln:
 

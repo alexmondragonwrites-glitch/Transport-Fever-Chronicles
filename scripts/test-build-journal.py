@@ -7,6 +7,7 @@ Runs validate-journal.mjs on each result when Node.js is available. Only uses th
 """
 import importlib.util
 import json
+import lzma
 from pathlib import Path
 import shutil
 import subprocess
@@ -282,6 +283,26 @@ class JournalChartTests(JournalCase):
         self.assertEqual(ways['wege'], [{'von':401, 'stadt':None, 'betrieb':None, 'halt':702, 'ware':'Bretter', 'anzahl':3, 'linien':[2, 1]}])
         self.assertEqual(chart['grenze'], {'min_x':-2000, 'min_y':-1000, 'max_x':2000, 'max_y':1000})
         self.assertIn('karte.json', self.changed)
+
+    def test_archived_sessions_build_the_same_journal(self):
+        sessions = {'a':[charted((1, 1), 100), charted((2, 1), 200, geo([{'id':10, 'x':1, 'y':2}]), TERRAIN, LOGISTICS)],
+                    'b':[charted((3, 1), 300)]}
+        plain = self.build_into('offen', sessions)
+        # The Spielmonitor packs finished sessions as daten.jsonl.xz with archiv.json; the bytes stay the same.
+        archived = self.tmp/'archiviert'/'monitor'/'sessions'
+        for name, rows in sessions.items():
+            raw = ''.join(json.dumps(r, ensure_ascii=False)+'\n' for r in rows).encode('utf-8')
+            (archived/name).mkdir(parents=True)
+            with lzma.open(archived/name/'daten.jsonl.xz', 'wb') as stream:
+                stream.write(raw)
+            if name == 'a':
+                (archived/name/'archiv.json').write_text(json.dumps({'bytes':len(raw)}), encoding='utf-8')
+        out = self.tmp/'archiviert'/'out'
+        out.mkdir()
+        (out/'redaktion.json').write_text(json.dumps(REDAKTION, ensure_ascii=False), encoding='utf-8')
+        journal.build(archived.parent, SAVE, out, self.tmp/'archiviert'/'cache')
+        for name in ('meldungen', 'menschen', 'staedte', 'fuhrpark', 'notizen', 'karte'):
+            self.assertEqual((plain/f'{name}.json').read_bytes(), (out/f'{name}.json').read_bytes(), name)
 
     def test_misshaped_height_grid_is_left_out(self):
         broken = TERRAIN | {'rows':3}

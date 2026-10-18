@@ -2,7 +2,7 @@
 
 Usage: python scripts/publish-monitor.py [--monitor PATH] [--save ID] [--yes] [--no-push]
 
-Reads the local session files (sessions/*/daten.jsonl) of the configured world,
+Reads the local session files (sessions/*/daten.jsonl, archived ones as daten.jsonl.xz) of the configured world,
 builds the compact website view and writes only files whose content changed.
 Finished sessions stay byte-identical, so a commit normally contains the active
 session's segment and index.json. Nothing is committed without confirmation
@@ -18,6 +18,7 @@ import subprocess
 import sys
 
 from monitor_build import MonitorBuilder
+import monitor_files
 
 journal = importlib.import_module('build-journal')
 
@@ -36,7 +37,7 @@ def git(*args, check=True):
 def session_rows(path, size, world_id, stats):
     """Rows of one world up to the captured size; an unfinished last line is left for the next run."""
     needle = world_id.encode()
-    with path.open('rb') as stream:
+    with monitor_files.open_data(path) as stream:
         remaining = size
         while remaining:
             raw = stream.readline(remaining)
@@ -66,9 +67,10 @@ def build(monitor, save, config, use_cache=True):
         cache = {'identity':identity, 'sessions':{}}
     stats = {'unreadable':0, 'parsed_sessions':0}
     sessions = {}
-    for path in sorted((monitor/'sessions').glob('*/daten.jsonl')):
+    for path in monitor_files.data_paths(monitor/'sessions'):
         name = path.parent.name
         stat = path.stat()
+        # Archiving a session changes its file, so it is read once more and yields the same record.
         key = {'size':stat.st_size, 'mtime_ns':stat.st_mtime_ns, 'previous_game_time':builder.previous_game_time}
         cached = cache['sessions'].get(name)
         if cached and cached['key'] == key:
@@ -76,7 +78,7 @@ def build(monitor, save, config, use_cache=True):
                 builder.reuse_session(cached['record'])
         else:
             stats['parsed_sessions'] += 1
-            record = builder.add_session(name, session_rows(path, stat.st_size, world_id, stats))
+            record = builder.add_session(name, session_rows(path, monitor_files.size(path), world_id, stats))
             cached = {'key':key, 'record':record}
         sessions[name] = cached
     if not builder.segments:
