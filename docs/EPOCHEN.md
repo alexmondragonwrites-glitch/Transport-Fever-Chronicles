@@ -10,8 +10,12 @@
 4. **Ereignisse lösen aus, nicht der Kalender:** Jedes Merkmal wechselt, wenn in der Welt ein bestimmtes Ereignis eintritt. Ein frühestes und ein spätestes Jahr rahmen das ein (siehe Mechanik).
 5. **Der Flughafen beendet die Kutschenzeit:** Mit dem ersten Flugzeug der Société wechselt die Zeitung endgültig vom Stil der Kutschenzeit in die Moderne der 1920er (Spielerwunsch).
 6. **Offenes Ende:** Nach der letzten Stufe (News-App) ändert sich nichts mehr. Sie bleibt bis 2050 und darüber hinaus.
+7. **Die Technik treibt die Zeitung:** Ab den 1930ern lösen **Technik-Jahrgänge** die Stufen aus, also das erste neue Fahrzeugmodell der Société mit einem bestimmten Baujahr laut Spiel. Die Zeitung modernisiert sich so mit dem Fuhrpark (Spielerentscheidung 18.10.2026).
+8. **Krise ist ein Zustand, keine Epoche:** Der Spieler weiß nicht, ob es je eine Krise gibt. Deshalb kommt der Look der 30er/40er über die Technik. Das graue **Krisenpapier** erscheint nur, solange die Kasse wirklich eingebrochen ist, und verschwindet wieder (siehe „Zustände“). Ohne Krise wird die Zeitung nie grau.
+9. **Der Name darf sich ändern:** Mit den Stufen darf die Zeitung umbenannt werden. „Alizés“ bleibt im Namen immer erkennbar (siehe „Namen“).
+10. **Schalter „im heutigen Stil lesen“:** Alte Ausgaben lassen sich auch im aktuellen Stil und mit dem aktuellen Namen lesen.
 
-Vorschlag, noch nicht bestätigt: Nur das Journal verändert sich, nicht die übrige Chronicles-Seite. Der Name „Le Journal des Alizés“ bleibt.
+Annahme, noch zu bestätigen: Nur das Journal verändert sich, nicht die übrige Chronicles-Seite.
 
 ## Was immer gleich bleibt
 
@@ -34,6 +38,7 @@ Vorschlag, noch nicht bestätigt: Nur das Journal verändert sich, nicht die üb
 | `spalten` | dichte Spalten → weniger, breitere Spalten → Raster mit Weißraum → einspaltig (App) |
 | `preis` | „10 centimes“ steigt in Stufen, später „gratis online“ |
 | `medium` | Papier → Website → App (ändert Kopf, Navigation und Wortwahl der Rubriken) |
+| `name` | Name im Zeitungskopf, z. B. „Le Journal des Alizés“ → „Alizés-Soir“ → „alizes-journal.fr“ (Vorschläge unter „Namen“) |
 | `sprache` | Regel für Redaktionsbeiträge: förmlich-ausführlich → knapp-zugespitzt → Online-Ton. Steht in `JOURNAL.md` für die Geschichten, nicht im Code. |
 
 ### Frühestens, Auslöser, spätestens
@@ -60,6 +65,16 @@ Alle stammen aus Daten, die `build-journal.py` heute schon hat:
 | `wahrzeichen` | ein Wahrzeichen ist fertig | Detailmessungen (`landmarks`) |
 | `umwelt` | eine Stadt überschreitet einen Lärm- oder Verschmutzungswert | Detailmessungen (`noise_db`, `pollution_db`) |
 | `meldung` | allgemein: erste Meldung eines Typs mit Textmuster | `meldungen.json` |
+
+### Zustände (umkehrbar)
+
+Neben den Stufen, die nur vorwärts gehen, gibt es **Zustände**, die kommen und wieder gehen. Sie überlagern die gerade gültigen Stufen, ersetzen sie aber nicht.
+
+| Zustand | Beginnt | Endet | Wirkung |
+|---|---|---|---|
+| `krisenpapier` | Kassenstand fällt binnen 12 Spielmonaten um mindestens 20 % (frühestens 1925) | Kasse erreicht wieder den Stand vor dem Einbruch, oder 12 Monate durchgehend Wachstum | dünnes graues Papier, weniger Spalten, Rubrik „Bekanntmachungen“ |
+
+Auch ein Zustand bekommt beim Beginn eine Notiz „In eigener Sache“ mit dem belegten Anlass, etwa „Wegen der angespannten Lage der Société erscheint diese Ausgabe auf einfacherem Papier.“ Weitere Zustände sind denkbar, etwa ein Festtagskopf, wenn ein Wahrzeichen fertig wird.
 
 ### Wo die Regeln stehen
 
@@ -91,17 +106,31 @@ Die erste Ausgabe nach einem sichtbaren Wechsel trägt automatisch eine kurze No
 | 3 | Erste Fotos | Rasterfotos schwarzweiß | Bildreportagen häufiger | 1916 · neues Modell mit Baujahr ab 1918 · 1923 |
 | 4 | **Ende der Kutschenzeit** | Art-déco-Kopf, Goldakzent, geometrische Schrift | – | 1919 · **erstes Flugzeug** · 1925 |
 | 5 | Rundfunkzeit | wie 4 | Radioprogramm, Kino, Sport (Fiktion) | 1922 · eine Stadt erreicht 4.000 · 1927 |
-| 6 | Krisenjahre | fette Grotesk-Schlagzeilen, graues Papier, weniger Seiten | Bekanntmachungen (gemischt) | 1932 · Auslöser offen (Vorschlag: Kasse sinkt binnen 12 Monaten deutlich) · 1938 |
+| 6 | Dreißiger/Vierziger | fette Grotesk-Schlagzeilen, harte Kontraste (graues Papier nur als Zustand `krisenpapier`) | – | 1932 · erstes Modell mit Baujahr ab 1935 · 1940 |
 | 7 | Nachkriegsmoderne | moderne Grotesk, Weißraum, erste Farbe | – | 1948 · erstes Modell mit Baujahr ab 1950 · 1955 |
 | 8 | Fernsehzeit | wie 7 | Fernsehprogramm, Autoseite (Fiktion) | 1950 · eine Stadt erreicht 10.000 · 1958 |
-| 9 | Offset in Farbe | kräftige Farbflächen, Infografiken | – | 1968 · Auslöser offen (Vorschlag: Netz erreicht 1.500 Fahrzeuge) · 1975 |
+| 9 | Offset in Farbe | kräftige Farbflächen, Infografiken | – | 1965 · erstes Modell mit Baujahr ab 1965 · 1975 |
 | 10 | Umweltbewusstsein | wie 9 | Umwelt (aus Messdaten: Lärm, Verschmutzung) | 1965 · eine Stadt über 80 dB · 1975 |
-| 11 | Verkehrsfunk | wie 9 | Verkehrsfunk (aus Messdaten: Wartende, Wegprobleme) | 1970 · Auslöser offen · 1980 |
+| 11 | Verkehrsfunk | wie 9 | Verkehrsfunk (aus Messdaten: Wartende, Wegprobleme) | 1970 · erstes Modell mit Baujahr ab 1970 · 1980 |
 | 12 | Die Zeitung wird Website | Netscape-Look, Linkblau, Besucherzähler | Gästebuch, Online-Umfrage (Fiktion) | 1993 · Netz erreicht 2.000 Fahrzeuge · 2000 |
-| 13 | Nachrichtenportal | Portal mit Teasern | Liveticker (aus Meldungen) | 2004 · Auslöser offen · 2010 |
-| 14 | News-App (Endstufe) | einspaltig, App-Leiste, Push-Meldungen | Wirtschaft (aus Messdaten: Kasse, Produktion) | 2018 · Auslöser offen · 2025, bleibt bis 2050+ |
+| 13 | Nachrichtenportal | Portal mit Teasern | Liveticker (aus Meldungen) | 2004 · erstes Modell mit Baujahr ab 2000 · 2010 |
+| 14 | News-App (Endstufe) | einspaltig, App-Leiste, Push-Meldungen | Wirtschaft (aus Messdaten: Kasse, Produktion) | 2018 · erstes Modell mit Baujahr ab 2015 · 2025, bleibt bis 2050+ |
 
-Der Look der Krisenjahre (6) braucht keine Kriegsthemen. Er zeigt nur, wie Zeitungen damals aussahen. Was in der Welt geschieht, bestimmt der Spieler.
+Der Look der Dreißiger/Vierziger (6) braucht keine Kriegsthemen. Er zeigt nur, wie Zeitungen damals aussahen. Was in der Welt geschieht, bestimmt der Spieler.
+
+„Erstes Modell mit Baujahr ab …“ heißt: Die Société setzt erstmals ein Fahrzeugmodell ein, das laut Spiel ab diesem Jahr verfügbar ist (`verfuegbar_ab` im Fuhrpark, Meldung „Neues Fahrzeugmodell“). Kauft der Spieler lange nichts Neues, greift „spätestens“.
+
+## Namen
+
+Vorschläge, noch abzustimmen. Der Name ist ein eigenes Merkmal und wechselt zusammen mit einer Stufe. Jeder Namenswechsel bekommt eine Notiz „In eigener Sache“, und der alte Name steht noch einige Ausgaben klein unter dem neuen („vormals Le Journal des Alizés“).
+
+| ab Stufe | Name | Gedanke |
+|---|---|---|
+| 1 | Le Journal des Alizés | wie heute |
+| 4 | Journal des Alizés | Art déco, kürzer und moderner, ohne Artikel |
+| 7 | Alizés-Soir | Nachkriegs-Abendzeitung |
+| 12 | alizes-journal.fr | Die Zeitung geht online |
+| 14 | Alizés | App-Name, nur noch ein Wort |
 
 ## In dieser Welt (Stand Spiel 13.10.1921)
 
@@ -119,14 +148,15 @@ Die Zeitung nimmt im Juni 1920 Abschied von der Kutschenzeit, die Kutschen selbs
 
 ## Offene Fragen
 
-- Bestätigen: nur das Journal verändert sich, der Name bleibt?
-- Auslöser für die Stufen 6, 9, 11, 13 und 14.
-- Schalter „im heutigen Stil lesen“: ja oder nein?
-- Wie viele Stufen vorab bauen? Vorschlag: Mechanik und Stufen 1 bis 5 jetzt, jede weitere Stufe kurz bevor das Spiel sie erreichen kann.
+- Bestätigen: Ändert sich nur das Journal (Annahme) oder auch die übrige Chronicles-Seite?
+- Namen je Stufe (Vorschläge unter „Namen“).
+- Wie viele Stufen vorab bauen? Vorschlag: Mechanik, Zustand `krisenpapier` und Stufen 1 bis 5 jetzt, jede weitere Stufe kurz bevor das Spiel sie erreichen kann.
+
+Geklärt am 18.10.2026: Auslöser der Stufen 6, 9, 11, 13 und 14 (Technik-Jahrgänge), Krise als Zustand, Name darf sich ändern, Schalter „im heutigen Stil lesen“ kommt.
 
 ## Umsetzung in Schritten (wenn freigegeben)
 
-1. Regeldatei `data/epochen.json`, Auswertung in `build-journal.py`, `zeitleiste.json`, Validator und Tests (frühestens, spätestens, Auslöser vor „frühestens“, Rücksprung ändert nichts).
-2. Anzeige-Gerüst in `journal.js`, Stile für die Stufen 1 bis 4, lokale Schriften, Notiz „In eigener Sache“, Schalter „im heutigen Stil lesen“.
+1. Regeldatei `data/epochen.json`, Auswertung in `build-journal.py`, `zeitleiste.json` mit Stufen und Zuständen, Validator und Tests (frühestens, spätestens, Auslöser vor „frühestens“, Zustand beginnt und endet, Rücksprung ändert nichts).
+2. Anzeige-Gerüst in `journal.js`, Stile für die Stufen 1 bis 4 und das Krisenpapier, Name je Stufe, lokale Schriften, Notiz „In eigener Sache“, Schalter „im heutigen Stil lesen“.
 3. Rubriken-Gerüst (Rubrik erscheint ab ihrem Monat) und die Rundfunkzeit (Stufe 5).
 4. Jede spätere Stufe kurz bevor das Spiel sie erreicht.
