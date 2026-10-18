@@ -3878,6 +3878,325 @@
         "linien": [],
         "betriebe": []
       }
+    },
+    {
+      "id": "1921-03-umfrage-burg-valmorin",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1921-03",
+      "lead": true,
+      "rubrik": "Umfrage · Valmorin",
+      "titel": "„Was wird aus der Burg?“ Sieben Antworten aus Valmorin",
+      "teaser": "Ende März 1921 steht in Valmorin der Anfang einer Burg: die Burg des weißen Reihers, Stufe eins von vier. Wir haben herumgefragt. Einig war man sich nur darin, dass man gefragt werden wollte.",
+      "body": [
+        "Die Frage war immer dieselbe: Was halten Sie von der Burg? Gestellt haben wir sie am Tresen, auf dem Bahnsteig und vor der Schule. In den Messbüchern steht die Burg des weißen Reihers zum ersten Mal am 23. März 1921, drei Tage vorher war sie noch nicht verzeichnet. Stufe eins von vier. Valmorin zählt an diesem Tag 1.495 Menschen, und jede Wohnung ist belegt.",
+        "Mathurin, Wirt des „Au Quai des Collines“: „Eine Burg? Wir haben schon eine Wand.“ Er zeigt mit dem Daumen zum Fenster, hinter dem seit 1913 die Lärmschutzwand steht. „Für die Wand mussten Häuser weg, dafür war es danach still. Ich warte ab, was die Burg kostet. Wenn sie fertig ist, kommen Fremde und fragen nach dem Weg. Dann fragen sie mich.“ Unzufrieden klingt er nicht.",
+        "Anselme, Stammgast am Fenstertisch: „Weißer Reiher? Hier gibt es nur graue. Die stehen an der Mole und warten.“ Auf die Kreidefrage „Wann tausend?“ hat Anselme 1913 „nie“ geantwortet und im November 1914 verloren. Diesmal sagt er „vielleicht“. Er besteht darauf, dass es genau so in der Zeitung steht, damit es später niemand anders erzählt.",
+        "Lucie vom Bahnhof hat nachgeschlagen, wie immer. „In derselben Woche hat die Société ‚Stein‘ auf drei Linien geschrieben. Am 23. März auf einen neuen Lastwagen beim Steinbruch von Port des Alizés, am 26. März auf zwei Güterzüge aus Anse Dorée, und einer davon hält in Valmorin Ost. Für wen die Steine sind, steht nirgends. Ich sage nur: Es ist dieselbe Woche.“ Und weil sie schon dabei ist: „Hemden gibt es 22 von 140. Im Februar waren es 15. Ich zähle seit 1910.“",
+        "Barnabé Lacroix, Maurermeister: „Endlich etwas, wofür man nichts abreißen muss.“ Lacroix hat 1913 die halbe Hauptstraße abgetragen, bevor er die Wände bauen durfte. Seitdem baut er Häuser, und es sind nie genug. „Vier Stufen. Für die Wände habe ich drei Monate gebraucht. Bei einer Burg rechne ich in Jahren. Und wer baut in der Zeit die Wohnungen?“",
+        "Delphine Gaspard, seit Anfang Februar ohne Arbeit: „Wenn sie Leute brauchen, ich bin da.“ Sie fährt jeden Weg mit ihrem Automobil, auch den zur Baustelle, wo sie zweimal nachgefragt hat. „Man sagt mir, eine Burg baue sich nicht an einem Tag. Das weiß ich. Ich frage ja auch nur nach einem.“",
+        "Eine Schülerin, die ihren Namen nicht gedruckt sehen möchte: „Wenn sie fertig ist, ziehen wir ein.“ Wer wir sei? „Die ganze Klasse. Bei uns zu Hause ist es zu eng.“",
+        "Am Abend hat Mathurin getan, worauf die Wand seit 1914 wartet. Er hat eine neue Frage an die Wand geschrieben: „Wann Stufe zwei?“ Lucie schrieb darunter „Weihnachten“, und als Anselme sie ansah, sagte sie: „Für Isidore.“ Anselme schrieb „vielleicht“. Die dritte Antwort steht in einer Handschrift, die keiner kennt: „Wenn der Reiher kommt.“"
+      ],
+      "grounding": "Gemessen: Wahrzeichen Valmorin Burg des weissen Reihers (175155) erstmals in der Messung vom 23.03.1921, Stufe 1 von 4, nicht fertig; in der Messung vom 20.03.1921 nicht verzeichnet; bis 13.10.1921 unverändert Stufe 1. Neue Linie RC Passagiere,Stein-PordesAli-LO-1 am 23.03.1921 (Port des Alizés Station Anbau – Port des Alizés Steinbruch, 5 Lkw, ab 29.03.1921 10; Stein erstmals an Bord am 06.05.1921). Stein neu im Namen von TC Getreide,Stein,Kohle-AnsDor-Val-IC-1 (Anse Dorée Station Transfer – Valmorin Station Ost) und TC Eisenerz,Kohle,Stein-AnsDor-PordesAli-IC-1 am 26.03.1921. Wofür der Stein bestimmt ist und wie eine Burg ausgebaut wird, misst der Monitor nicht. Valmorin 1.495 Einwohner am 23.03.1921, Wohnraum voll belegt (1.495 von 1.495); Kleidung 22 von 140 gedeckt (23.03.1921), 15 von 139 am 01.02.1921. Delphine Gaspard (35840, Valmorin): ohne Arbeitsplatz ab 01.02.1921, wieder ab 12.06.1921; 1921 alle beobachteten Wege mit dem Auto. Erfunden: Umfrage, alle Antworten, Baustellenbesuche, Schülerin, neue Kreidefrage und ihre Antworten. Mathurin, Anselme, Lucie und Barnabé Lacroix sind wiederkehrende erfundene Figuren (Lacroix aus dem Gespräch vom Juni 1913, Kreidewetten seit 1913, „Wann tausend?“ bis November 1914); „Für Isidore“ verweist auf die Figur Isidore Lubin (54586, zuletzt am 09.04.1913 gemessen). Namen der Personen von der Redaktion vergeben.",
+      "refs": {
+        "staedte": [
+          174607,
+          174632,
+          174645
+        ],
+        "personen": [
+          35840
+        ],
+        "linien": [
+          447038,
+          354405,
+          361052
+        ],
+        "betriebe": [
+          319639
+        ]
+      }
+    },
+    {
+      "id": "1921-04-meldeschein-roquemer",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1921-04",
+      "lead": true,
+      "rubrik": "Meldeschein · Roquemer",
+      "titel": "Meldeschein Nr. 755, Stadt Roquemer",
+      "teaser": "Dreizehn Jahre lang hatte Roquemer 192 Einwohner und kein Formular für Zugezogene. Am 24. April 1921 sind es 755. Auf dem Rathaus kommt der Stadtschreiber kaum nach. Ein Meldeschein aus diesem Frühjahr, mit allen Randbemerkungen.",
+      "body": [
+        "STADT ROQUEMER, vormals La Talaudière. Einwohnermeldeamt. Meldeschein für Zugezogene. Bitte deutlich schreiben, das Amt ist überlastet. Laufende Nummer: 755. Randbemerkung des Stadtschreibers: Ich nummeriere nach dem Stand des Tages. Am 24. April sind wir 755.",
+        "Name: Valère, Augustin. Randbemerkung: Eine Valère gibt es in Roquemer schon, Pélagie Valère, seit Februar 1920. Die beiden kennen sich nicht. Ein Isidore Valère steht seit 1904 in den Büchern, heute in Fontenay-aux-Roses. Auch nicht verwandt, sagt der Herr, jedenfalls nicht, dass er wüsste.",
+        "Zugezogen: Anfang März 1921. Woher: leer gelassen. Randbemerkung: Der Herr sagt „von weiter weg“. Mir genügt das nicht, dem Formular schon, es hat dafür nur eine Zeile. Gemeldet: am 24. April. Sieben Wochen Wartezeit. Der Herr sagt, beim Omnibus gehe es schneller.",
+        "Wohnung: Rue des Dames, an der Haltestelle der Linie 1. Randbemerkung: Gegenüber wohnt Madame Odile. Der Herr ist gewarnt.",
+        "Verkehrsmittel: Omnibus, Linie 1. Erste Fahrt: 6. März. Randbemerkung: Die Linie fährt seit dem 3. März mit neun Wagen statt mit sechs. Der Herr glaubt, man habe sie seinetwegen verstärkt. Ich habe nicht widersprochen. Seitdem fährt er jeden Weg mit der Société, den Zug nach Vauclaire hat er auch schon genommen. Zu Fuß hat ihn in Roquemer noch niemand gesehen.",
+        "Arbeit: ja, seit dem 29. März. Randbemerkung: Arbeit ist in Roquemer das Einfachste. Die Stadt zählt 1.864 Arbeitsplätze bei 755 Einwohnern. Schwierig ist alles andere.",
+        "Mitgebracht: ein Koffer, ein Stuhl. Randbemerkung: Gut so. Roquemer verlangt 85 Möbel und hat noch keines bekommen. Spielzeug verlangt es 244 und hat auch keines. Fisch gibt es, 134 von 244, Treibstoff für knapp jeden Dritten, der welchen will.",
+        "Haushalt: allein. Randbemerkung von Madame Odile, unaufgefordert am Schalter hinzugefügt: „Kauft Fisch. Fragt nicht, woher er kommt. Gut erzogen.“",
+        "Nachtrag des Stadtschreibers, 26. April. Gestern hat sich Monsieur Valère beschwert, dass der Omnibus um sechs Uhr früh unter seinem Fenster hält. Heute hat sich die Nachbarin beschwert, dass er sich beschwert. Beide nehmen den Omnibus um sechs. Ich habe sie gebeten, sich an der Haltestelle zu einigen. Dort stehen sie ohnehin jeden Morgen zusammen.",
+        "Nachtrag, 27. April. In den Grundstein des Bahnhofs haben wir 1918 geschrieben: „Zählt bitte nach, wie viele wir geworden sind.“ Ich zähle. Ich komme nicht hinterher. Der Briefträger trägt die neuen Namen mit Bleistift in das Adressbuch von 1919 ein und sagt, er brauche bald ein zweites. Ich habe ihm ein Formular gegeben."
+      ],
+      "grounding": "Gemessen: Roquemer (bis 03.01.1918 La Talaudière) belegter Wohnraum 192 in jedem Monatsstand Dezember 1904 bis Februar 1918; 715 am 01.02.1921, 755 am 24.04.1921 (Meldung „Roquemer zählt 750 Einwohner“); 1.864 Arbeitsplätze am 24.04.1921; am 09.04.1921 Möbel 85 verlangt/0 gedeckt, Toys 244/0, Fisch 244/134, Treibstoff 170/51; Netzanteil 52 %. Bus Passagiere-Roq-LO-1 (Roquemer Station Haltepunkt, Rue des Dames, Pont Royal, Rue Mirabeau) am 03.03.1921 von 6 auf 9 Fahrzeuge verstärkt. Augustin Valère (35081): erstmals in der Beobachtungsgruppe am 06.03.1921, Wohnort Roquemer, erste beobachtete Fahrt mit der Société am selben Tag auf Bus Passagiere-Roq-LO-1, Arbeitsplatz ab 29.03.1921, 1921 alle 57 beobachteten Wege mit der Société, am 21.04.1921 auf TP Passagiere-Vau-Val-RE-1. Pélagie Valère (35917) seit 19.02.1920 mit Wohnort Roquemer in der Gruppe, Isidore Valère (45714) seit 30.12.1904; gleiche Nachnamen sind Zufall der Namensvergabe. Woher jemand zuzieht, misst der Monitor nicht. Erfunden: Meldeschein, Nummerierung, Wartezeit, Wohnung in der Rue des Dames, Koffer und Stuhl, Beschwerden, Nachträge und Uhrzeiten; Stadtschreiber und Briefträger stammen aus der Urkunde (Februar 1918) und dem Adressbuch (August 1919), Madame Odile ist eine wiederkehrende erfundene Figur. Namen der Personen von der Redaktion vergeben.",
+      "refs": {
+        "staedte": [
+          174606,
+          174615
+        ],
+        "personen": [
+          35081,
+          35917,
+          45714
+        ],
+        "linien": [
+          210399,
+          406127
+        ],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1921-05-briefwechsel-gruppe-1904",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1921-05",
+      "lead": true,
+      "rubrik": "Briefwechsel",
+      "titel": "„Sie sind also der andere.“ Briefe zwischen Fontenay-aux-Roses und La Mulatière",
+      "teaser": "Seit unserer Rede vom Juni 1920 wissen Isidore Valère und Marceline Philogène, dass sie die letzten beiden aus der Gruppe von 1904 sind. Gesehen haben sie sich nie. Im April 1921 hat er angefangen zu schreiben. Beide haben dem Abdruck zugestimmt.",
+      "body": [
+        "Fontenay-aux-Roses, 22. April 1921. Sehr geehrte Madame Philogène, in der Zeitung stand, wir beide seien von der Gruppe von 1904 übrig, und man habe uns in die erste Reihe gesetzt. Ich habe keine erste Reihe gesehen, ich war bei der Arbeit. Ich schreibe Ihnen, weil ich sonst niemanden kenne, der sich an den Dezember 1904 erinnert.",
+        "Bis zum April vorigen Jahres habe ich in Garches gewohnt, fünfzehn Jahre lang. Sie wissen, was man über Garches sagt: 399 Einwohner, immer. Ich war einer davon. Als ich ging, blieben es 399, jemand muss nachgerückt sein. Jetzt wohne ich in Fontenay. Hier fährt auch nichts. Ich gehe zu Fuß, wie seit 1904, jeden Weg, den die Bücher von mir kennen. Ich habe nie etwas anderes probiert. Es hat sich nicht ergeben.",
+        "Wie erinnern Sie sich an den Anfang? Ich weiß noch, dass ich im Februar 1905 zwei Wochen ohne Arbeit war, das erste Mal. Danach selten. Ihr ergebener Isidore Valère.",
+        "La Mulatière, 30. April 1921. Lieber Monsieur Valère, Sie sind also der andere. Ich bin die andere. Ihr Brief kam zur rechten Zeit. Am 13. April habe ich meine Arbeit verloren und am 21. eine neue gefunden. Acht Tage. Ich habe sie mit Briefeschreiben verbracht, an niemanden. Jetzt habe ich eine Adresse.",
+        "An den Anfang erinnere ich mich anders als Sie. Im Dezember 1904 hatte ich gar keine Arbeit. Meine erste fand ich am 17. Februar 1905, genau eine Woche, nachdem Sie Ihre verloren hatten. Ich habe einen Moment überlegt, ob es dieselbe war. Von Lamballe-Armor nach Garches sind es keine sieben Kilometer, das wäre zu Fuß gegangen. Aber ich glaube, Sie hätten es mir übelgenommen.",
+        "Und ich bin nicht immer zu Fuß gegangen, Monsieur. Im Juli 1907 saß ich zum ersten Mal in einem Automobil, im September 1912 zum ersten Mal in einem Wagen der Société. 1919 bin ich zwei von drei Wegen gefahren. Dann bin ich im Januar vorigen Jahres nach La Mulatière gezogen. Hier legt nur das Melasseschiff nach Lardy an, und mitgefahren ist damit, soweit ich weiß, noch keiner aus dem Ort. Seitdem gehe ich fast nur noch zu Fuß, in diesem Jahr jeden Weg, wie 1904. Man könnte sagen, ich bin zurückgekommen. Meine Schuhe sehen das anders.",
+        "In Lamballe-Armor wohnte auch Désiré Séverin, der aus dem Tagebuch, der immer zu Fuß ging. Ich kannte ihn vom Sehen. Er grüßte, als hätte er Zeit. Im März vorigen Jahres ist er aus der Gruppe gegangen, ein paar Wochen nachdem ich aus dem Ort fortgezogen war. Manchmal denke ich, wir hätten uns verabschieden sollen. Ihre Marceline Philogène.",
+        "Fontenay-aux-Roses, 14. Mai 1921. Liebe Madame Philogène, fünfzehn Jahre lang haben wir keine sieben Kilometer voneinander entfernt gewohnt und uns nicht gekannt. Ich habe auf der Seekarte der Zeitung nachgesehen: Jetzt, wo wir voneinander wissen, liegen zwischen Fontenay und La Mulatière gut 32 Kilometer Luftlinie, Sie weit im Norden, ich weit im Süden. Bei Ihnen legt das Melasseschiff an, bei mir hält gar nichts. Zu Fuß wäre ich ein paar Tage unterwegs. Ich habe es mir trotzdem ausgerechnet.",
+        "Ich schlage vor, wir schreiben weiter, bis eine Linie kommt, die einen von uns mitnimmt. Dann fährt der zum anderen. Und wenn keine kommt, haben wir wenigstens Briefe. Ihr Isidore. PS: Meine Arbeit habe ich noch. Seit dem Sommer 1919 an jedem Tag, an dem die Bücher nachgesehen haben.",
+        "La Mulatière, 20. Mai 1921. Abgemacht. Ich setze auf mich. Das Schiff ist schon da, es muss nur noch einsehen, dass ich keine Melasse bin. Sie dagegen haben fünfzehn Jahre in Garches gewohnt, wo die Schiffe am Ort vorbeifahren, als gehörten sie woandershin. Wahrscheinlich wette ich damit gegen uns beide. Das ist das Schöne an Briefen, Monsieur: Man muss nicht recht behalten, nur antworten. M."
+      ],
+      "grounding": "Gemessen (feste, nicht repräsentative Beobachtungsgruppe): Isidore Valère (45714) seit 30.12.1904 in der Gruppe, Wohnort Garches bis April 1920, Fontenay-aux-Roses ab 21.04.1920; jeder beobachtete Weg von 1904 bis 13.10.1921 zu Fuß; erstmals ohne Arbeitsplatz am 10.02.1905, wieder ab 24.02.1905; zuletzt ohne Arbeitsplatz 16.07.–23.07.1919, seitdem in jeder Messung mit Arbeitsplatz. Marceline Philogène (126758) seit 30.12.1904, Wohnort Lamballe-Armor bis Januar 1920, La Mulatière ab 29.01.1920; erster Arbeitsplatz am 17.02.1905, erster Weg mit dem Auto 27.07.1907, erste Fahrt mit der Société 11.09.1912; 1919 66 von 97 beobachteten Wegen mit dem Auto, 1920 9 von 104, 1921 alle 77 zu Fuß; ohne Arbeitsplatz 13.04.–21.04.1921. Désiré Séverin (90377, Lamballe-Armor) zuletzt gemessen am 08.03.1920. Abstand der Stadtmitten auf der Seekarte: Garches – Lamballe-Armor 6,9 km, Fontenay-aux-Roses – La Mulatière 32,2 km. Netzanteil Fontenay-aux-Roses und La Mulatière 0 %; in La Mulatière Hafen hält WC Passagiere,Molasses-LaMul-Lar-IC-1 (nach Lardy), in Fontenay-aux-Roses keine Linie. Garches 399 Einwohner in jedem Monatsstand seit 1904. Erfunden: Briefe, Daten der Briefe, Erinnerungen und Gefühle, die Bekanntschaft mit Désiré Séverin, die Absprache. Ob ein Arbeitsplatz von einer Person auf eine andere übergeht, misst der Monitor nicht. Namen der Personen von der Redaktion vergeben.",
+      "refs": {
+        "staedte": [
+          174615,
+          174631,
+          174644,
+          174614
+        ],
+        "personen": [
+          45714,
+          126758,
+          90377
+        ],
+        "linien": [],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1921-06-bilderbogen-familienbesuch",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1921-06",
+      "lead": true,
+      "rubrik": "Bilderbogen · Vauclaire – Sin-le-Noble",
+      "titel": "Paul fährt zur Tante. Ein Bilderbogen in acht Bildern",
+      "teaser": "Sonntag, 5. Juni 1921: Marthe nimmt ihren Bruder Paul mit nach Sin-le-Noble, zur Tante. Dort liegt etwas im Schaufenster, das es in Vauclaire noch nie gab. Zum Ausschneiden, Aufkleben und Weitererzählen.",
+      "body": [
+        "Bild 1. Der Aufbruch. Vauclaire, früh am Morgen. Paul ist neun und trägt sein Holzpferd unter dem Arm, das aus zwei Brettern und einer Schnur, das der Großvater gebaut hat. Marthe ist siebzehn und trägt die Fahrkarten. Die Mutter gibt einen Korb mit Fisch für die Tante mit, weil es den in Vauclaire wenigstens manchmal gibt. Der Großvater ruft hinterher: „Grüßt mir Sarrians!“ Er meint die Haltestelle. Sie heißt noch so.",
+        "Bild 2. Die Straßenbahn. Zum Bahnhof fahren sie mit der Straßenbahn, vier Wagen hat Vauclaire inzwischen. Neben ihnen sitzt Amélie Modeste, die man bisher nur zu Fuß kannte. „Seit April habe ich wieder Arbeit“, sagt sie, „und meine Füße haben sich lange genug beschwert.“ Es ist ihre erste Fahrt mit der Société. Paul findet, man merke es ihr nicht an.",
+        "Bild 3. Der Zug. Von Vauclaire Station West geht es mit dem Personenzug nach Ober-Sin-le-Noble, vorn eine Badische VI c, dahinter Salonwagen. Paul fragt, warum der Zug weiter nach „Melle“ fährt, wo Melle doch seit dem vorigen Jahr Valombre heißt. Marthe sagt: „Die Société tauft die Städte, nicht die Schilder.“ Paul beschließt, später Schildermaler zu werden. Marthe wollte früher die Person werden, die bei der Société die Namen aussucht. Sie sagt nichts.",
+        "Bild 4. Die Tante. Tante Clémentine wohnt in Sin-le-Noble an der Rue des Jardins und fährt überallhin mit der Straßenbahn. In Sin-le-Noble tun das fast alle: Von hundert Wegen führen dort zweiundsiebzig über die Société, in Vauclaire sind es keine fünfzig. Die Tante sagt, sie wisse nicht mehr, wo ihre Wanderschuhe stehen. Über dem Dach brummt eines der acht Flugzeuge, die seit April zwischen Sin-le-Noble und Port des Alizés fliegen. Paul winkt. Zurück winkt niemand. In den acht Maschinen sitzen an diesem Tag zweiundzwanzig Leute, und alle schauen nach unten.",
+        "Bild 5. Das Schaufenster. In der Rue Camille-Flammarion bleibt Paul stehen und rührt sich nicht mehr. Im Fenster stehen Spielzeuge: eine Eisenbahn, ein Kreisel, ein Holzpferd mit einer Mähne aus Wolle. Sin-le-Noble bekommt seit November Spielzeug, Anfang Juni 58 von 98 Stück. Paul hält sein Brettpferd an die Scheibe, damit es auch etwas sieht.",
+        "Bild 6. Die Frage. Paul geht hinein und fragt den Händler, warum es in Vauclaire kein einziges Spielzeug gibt. Der Händler erklärt es ihm: Die Spielzeuge kommen aus Tournus, mit dem Schiff nach Sin-le-Noble und dann mit Lastwagen durch die Stadt. Nach Vauclaire fährt keiner mit Spielzeug. „Wir haben einen Zug“, sagt Paul. Der Händler sagt, das sei ein gutes Argument, aber nicht für ihn.",
+        "Bild 7. Die Wette. Die Tante will ihm das Pferd kaufen. Paul schüttelt den Kopf. „Wenn ich es mitnehme, gilt es nicht. Honorine in Port des Alizés hat gewettet, dass sie erst fliegt, wenn das erste Spielzeug in Vauclaire ankommt. Mit der Société.“ Marthe erklärt der Tante die Wette. Die Tante sagt, in dieser Familie seien alle so. Sie kauft stattdessen Kuchen.",
+        "Bild 8. Die Heimfahrt. Im Zug schläft Paul ein, das Brettpferd im Arm. Marthe schreibt in ihr Heft: „Sin-le-Noble 58 von 98. Vauclaire 0 von 148, verlangt seit dem 6. Februar 1918.“ Darunter: „Paul hat nichts gekauft, aus Prinzip. Großvater wird stolz sein und so tun, als wäre er es nicht.“ Fortsetzung, sobald die Société will."
+      ],
+      "grounding": "Gemessen: am 05.06.1921 Toys in Sin-le-Noble 98 verlangt, 58 gedeckt (erstmals gedeckt am 01.11.1920), in Vauclaire 148 verlangt, 0 gedeckt (verlangt seit 06.02.1918); Netzanteil Sin-le-Noble 72 %, Vauclaire 47 %. Tram Passagiere-Vau-LO-1 (Sarrians Station West, Rue Rouget-de-l'Isle, Rue Alfred de Vigny, Rue Edouard Manet) mit 4 Nürnberg F Triebwagen; TP Passagiere-Vau-Val-RE-1 (Vauclaire Station West, Ober-Sin-le-Noble Station, Roquemer Station, Melle Station West) mit Badische VI c und Heavyweight 28-1 Parlor; Tram Passagiere-Sin-LO-1 u. a. mit Halten Rue Camille-Flammarion und Rue des Jardins. AP Passagiere-PordesAli-Sin-IC-1: 8 Junkers F 13 Herta seit 02.04.1921 (vorher 4), 22 von 32 Plätzen besetzt am 05.06.1921. Toys-Kette Tournus – Schiff – Lastwagen in Sin-le-Noble siehe „Märchen“ (November 1920); die drei Linien mit Toys im Namen halten nur in Sin-le-Noble und Tournus. Amélie Modeste (35243, Vauclaire): Arbeitsplatz ab 06.04.1921, erste beobachtete Fahrt mit der Société am 05.06.1921 (Linie in dieser Messung nicht erfasst), ab 08.06.1921 auf Tram Passagiere-Vau-LO-1. Erfunden: Ausflug und Wochentag (nach dem Kalender gewählt), Marthe, Paul, Mutter und Großvater (aus Schulaufsatz 1915, Wunschzettel und Bauanleitung 1919), Tante Clémentine, Händler, Schaufenster und Spielzeugarten, Gespräche; Honorines Wette stammt aus dem Wettbuch vom September 1920. Namen der Personen von der Redaktion vergeben.",
+      "refs": {
+        "staedte": [
+          174634,
+          174617,
+          174621,
+          174632
+        ],
+        "personen": [
+          35243
+        ],
+        "linien": [
+          396251,
+          406127,
+          315405,
+          220049
+        ],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1921-07-einkaufszettel-valmorin",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1921-07",
+      "lead": true,
+      "rubrik": "Einkaufszettel · Valmorin",
+      "titel": "Ein Einkaufszettel vom Markttag in Valmorin",
+      "teaser": "Mitte Juli 1921 auf dem Tresen des „Au Quai des Collines“ liegen geblieben, in der Handschrift von Mathurins Frau. Abgehakt ist, was es gab, gestrichen, was es nicht gab. Die Bemerkungen am Rand stammen von Mathurin, der einkaufen ging.",
+      "body": [
+        "Markt. Vor zehn Uhr hin, sonst ist das Fleisch weg.",
+        "✓ Hemd für M., das blaue. — Es gab drei Sorten. Im September 1912 gab es in ganz Valmorin kein einziges, heute 53 von 143, die verlangt werden. Ich habe trotzdem das blaue genommen. Lucie sagt, damit sei ihre Wette von 1910 gewonnen, nur eben elf Jahre zu spät. Meine Frau, die 1913 gewonnen hat, sagt dazu nichts und lächelt.",
+        "✓ Konserven, sechs Dosen, für Anselme, der nicht kocht. — Gab es, 86 von 143. Anselme sagt, Dosen seien das Einzige in dieser Stadt, das pünktlich ist.",
+        "✓ Fleisch, wenn es welches gibt. — Es gab. Die Metzgerin sagt, es reiche knapp für ein Viertel der Stadt. Wir waren vor zehn da.",
+        "✓ Bretter für die Laube, vier Stück. — Bekommen, 120 von 316 sind in der Stadt. Den Rest hat vermutlich Lacroix, der inzwischen auch sonntags baut. Valmorin hat seit Ende April 1.500 Einwohner und noch immer keine freie Wohnung.",
+        "Hammer. — Gestrichen. Valmorin verlangt 158 Werkzeuge und bekommt kein einziges. Die Raddampfer aus Rambervillers, die unten im Hafen anlegen, haben 271 Werkzeuge an Bord. Lucie sagt, die seien „unterwegs“. Das hat sie 1912 von den Hemden auch gesagt, und eines war damals zehn Monate unterwegs.",
+        "Nähmaschine? — Nicht gekauft. Maschinen gibt es, 48 von 158. Meine Frau sagt, für eine Nähmaschine sei es noch zu früh und fürs Hemdennähen inzwischen zu spät.",
+        "Spielzeug für Lucies Neffen. — Gestrichen, aber nicht wegen der Société: Valmorin verlangt gar keines. Lucie sagt, die Kinder hier wüssten nicht, was ihnen fehlt. Anselme sagt, das sei das Geheimnis eines glücklichen Lebens.",
+        "Nicht auf dem Zettel, trotzdem gekauft: zwei Ansichtskarten von der Burg. Madame Rosalie aus Anse Dorée ist mit dem Zug zum Markt gekommen und hatte sie am Stand. Auf den Karten ist die Burg fertig, mit Türmen und Fahne. In den Messbüchern steht sie seit März auf Stufe eins von vier. „Auf meinen Karten ist alles schon fertig“, sagt Madame Rosalie.",
+        "Rückseite. Stand an der Wand, Mitte Juli: „Wann Stufe zwei?“ Noch Stufe eins. Anselme hat sein „vielleicht“ durchgestrichen und „nie“ darübergeschrieben. Er sagt, das sei keine neue Meinung, sondern die alte, die zurückgekommen ist. Fünfzehnhundert hat übrigens niemand angeschrieben. Ich finde, man kann nicht jede Zahl feiern. Meine Frau sagt, ich hätte es vergessen."
+      ],
+      "grounding": "Gemessen (Valmorin, 14.07.1921): Kleidung 143 verlangt, 53 gedeckt (01.02.1921: 15 von 139; September 1912: 0 von 72; Juni 1913: 31 von 74); Konserven 143/86; Fleisch 287/64; Bretter 316/120; Maschinen 158/48; Werkzeuge 158/0 (in jeder Messung seit 01.02.1921 0 gedeckt); keine Nachfrage nach Toys. WC Passagiere,Werkzeuge,Bretter-Ram-Val-IC-1 (24 Schaufelraddampfer, Rambervillers Hafen – Valmorin Hafen) mit 271 Werkzeugen an Bord. Valmorin 1.501 Einwohner am 28.04.1921 (Meldung „Valmorin zählt 1.500 Einwohner“), 1.519 am 14.07.1921, Wohnraum voll belegt. Burg des weissen Reihers seit 23.03.1921 Stufe 1 von 4. TP Passagiere-PordesAli-AnsDor-RE-1 hält in Anse Dorée – Les Jardins und Valmorin – Gare des Collines. Warum Werkzeuge nicht ankommen, misst der Monitor nicht. Erfunden: Markttag, Einkaufszettel, Einkäufe und Mengen im Haushalt, Metzgerin, Ansichtskarten, Kreidestand. Mathurin, seine Frau, Lucie, Anselme, Lacroix und Madame Rosalie (aus der Bildreportage Anse Dorée, Juni 1913) sind wiederkehrende erfundene Figuren; zur Kleiderwette siehe die Beiträge 1911 bis 1913, zum Hemd, das zehn Monate reiste, den Beitrag vom Januar 1913.",
+      "refs": {
+        "staedte": [
+          174607,
+          174645
+        ],
+        "personen": [],
+        "linien": [
+          356321,
+          322356
+        ],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1921-08-gaestebuch-anse-doree",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1921-08",
+      "lead": true,
+      "rubrik": "Gästebuch · Anse Dorée",
+      "titel": "Aus dem Gästebuch der Pension „Les Jardins“, Anse Dorée, Sommer 1921",
+      "teaser": "Im Sommer kommen sie mit dem Zug aus Port des Alizés, mit dem Raddampfer oder einfach von nebenan. Die Pension gegenüber dem Bahnhof Les Jardins legt ein Buch aus. Wir drucken die Einträge vom Juli und August.",
+      "body": [
+        "3. Juli. Ein Sonntag am Meer, endlich. Mit dem Zug aus Port des Alizés über Pointe, Bourg und Valmorin. Die Kinder hatten die Schuhe schon in Valmorin ausgezogen. Wir kommen wieder. Familie Bonnaire, Port des Alizés.",
+        "10. Juli. Wir sind mit dem Raddampfer gekommen, denn ans Meer fährt man nicht, indem man ihm den Rücken zukehrt. Hippolyte ist mitgekommen. Er fährt heute nicht, er wird gefahren, und er findet das ungerecht. Für alle, die in Port nach dem Wettbuch fragen, Seite 42: Der Herr vom Automobil-Club hat bezahlt. Am 7. Juli saßen 26 Leute in den Flugzeugen der Société, auf 32 Plätzen, acht Maschinen fliegen inzwischen. Ich fliege trotzdem nicht. Ich habe gewettet: erst, wenn das erste Spielzeug in Vauclaire ankommt. Stand heute: null. Honorine, Chez Honorine, Port des Alizés.",
+        "Ohne Datum. Die Limonade ist sauer. Die Wirtin sagt, Anse Dorée verlange 351 Einheiten Zucker und habe den ganzen Sommer keine einzige bekommen. Wir haben trotzdem zwei Gläser getrunken, aus Höflichkeit. Bei uns gibt es Zucker. Ein Gast aus Roche-Noire.",
+        "17. Juli. Seit dem 11. habe ich wieder Arbeit, und heute ist mein erster freier Sonntag. Ich wohne zehn Minuten von hier und war noch nie Gast. Das Frühstück ist gut, die Aussicht kenne ich. Lucienne Sainte-Rose, Anse Dorée.",
+        "24. Juli. Madame Rosalie verkauft am Strand noch immer Ansichtskarten. Sie hat neue: die Bucht von oben, wie aus dem Flugzeug. Wir haben gefragt, ob sie geflogen sei. „Auf meinen Karten schon.“ Zwei Damen aus Bourg-l’Écorce.",
+        "31. Juli. Mit der Postkutsche zum Domaine des Alizés und zurück. Drei Wagen, Pferde, alles wie früher. Mein Großvater erzählt, er sei schon um 1900 damit gefahren, und damals habe sie mehr geschaukelt. Ich glaube, er hat geschaukelt. Ein Student aus Valmorin.",
+        "7. August. Ein Herr aus Garches. Er sagt, bei ihnen gebe es kein Meer. Ich habe ihn auf den Hafen von Garches hingewiesen. Er sagt, der heiße nach einem anderen Ort und zähle nicht. Wie er hergekommen ist, wollte er nicht sagen. Mit der Société jedenfalls nicht, die nehme in Garches niemanden mit. (Eintrag der Wirtin.)",
+        "14. August. Seit Februar komme ich fast jeden Tag hierher ans Wasser, mit dem Automobil wie immer, weil ich sonst nirgends hinmusste. Morgen fange ich wieder an. Ich trage mich ein, damit das Buch weiß, dass ich da war. C. Hilaire, Anse Dorée.",
+        "Nachtrag der Wirtin, Ende August. Gäste in diesem Sommer aus Port, Bourg, Valmorin, Roche-Noire, Garches und von nebenan. Zucker: keiner. Hemden: Vom Bahnhof fahren Lastwagen mit Kleidung nach Valmorin. Wir selbst bekommen 27 von 175. Ich sage das nicht, um mich zu beschweren. Ich schreibe es nur auf, damit es einmal jemand liest."
+      ],
+      "grounding": "Gemessen: Anse Dorée im Juli/August 1921 rund 1.285 Einwohner, Netzanteil 50 %; Sugar 351 verlangt, 0 gedeckt in jeder Messung seit 01.02.1921; Kleidung 175/27 (06.08.1921). TP Passagiere-PordesAli-AnsDor-RE-1 (12 Züge mit Amerikanischer 4-4-2 Atlantic und Heavyweight 28-1 Parlor; Gare de Port des Alizés, Gare de la Pointe des Pêcheurs, Bourg-l’Écorce – Gare Centrale, Valmorin – Gare des Collines, Anse Dorée – Les Jardins), 825 von 1.584 Plätzen besetzt am 14.07.1921; WP Passagiere-AnsDor-PordesAli-IC-1 mit 5 Schaufelraddampfern; Bus Passagiere-AnsDor-LO-1 mit 3 Postkutschen (Grande Rue – Domaine des Alizés; Postkutschen in Anse Dorée seit 1900 gekauft, siehe Januar 1913); RC Kleidung-AnsDor-Val-IC-1 (Anse Dorée Station – Unter-Valmorin Station, 3 Lkw, Kleidung an Bord). AP Passagiere-PordesAli-Sin-IC-1: 26 von 32 Plätzen am 07.07.1921, 8 Flugzeuge seit 02.04.1921. Toys in Vauclaire 0 gedeckt (Juli 1921). Roche-Noire Sugar 206/76 (14.07.1921). Garches Netzanteil 0 %. Lucienne Sainte-Rose (36242): ohne Arbeitsplatz 08.06.–11.07.1921. Célestin Hilaire (94977, seit 1910 in der Gruppe): ohne Arbeitsplatz 06.02.–15.08.1921, 1921 alle 77 beobachteten Wege mit dem Auto. Erfunden: Pension, Gästebuch und Einträge, Wochentage (nach dem Kalender gewählt), Familie Bonnaire, die Gäste aus Roche-Noire, Bourg, Valmorin und Garches, die Wirtin, Limonade, Ausflüge ans Wasser. Honorine, Hippolyte, der Herr vom Automobil-Club (Wettbuch, September 1920) und Madame Rosalie (Bildreportage Anse Dorée, Juni 1913) sind wiederkehrende erfundene Figuren. Namen der Personen von der Redaktion vergeben.",
+      "refs": {
+        "staedte": [
+          174645,
+          174632,
+          174601,
+          174644,
+          174634
+        ],
+        "personen": [
+          36242,
+          94977
+        ],
+        "linien": [
+          322356,
+          316782,
+          288188,
+          380855,
+          220049
+        ],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1921-09-haushaltsbuch-vauclaire",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1921-09",
+      "lead": true,
+      "rubrik": "Haushaltsbuch · Vauclaire",
+      "titel": "Aus dem Haushaltsbuch der Familie Saint-Cyr, Vauclaire, Januar bis September 1921",
+      "teaser": "Acht Monate lang steht in diesem Heft unter „Einnahmen“ kein Lohn. Am 21. September 1921 steht wieder einer da. Léonie Saint-Cyr hat uns das Heft geliehen, unter der Bedingung, dass wir die Beträge weglassen.",
+      "body": [
+        "Januar. Einnahmen: Lohn bis zum 23. Ausgaben: Fisch, Lampenöl, neue Sohlen für Fernand. Bemerkung: Seit dem 24. hat Fernand keine Arbeit mehr. Er sagt, er gehe morgen wieder fragen. Er geht zu Fuß, wie er immer geht, und sagt, das spare die Fahrkarte, die er nie gekauft hat.",
+        "Februar. Einnahmen: keine. Ausgaben: Fisch, zweimal, öfter gab es keinen. Bretter für den Hühnerstall: keine bekommen. Bemerkung: Clovis von nebenan ist auch ohne Arbeit, seit dem 9. Januar. Wir kochen jetzt abwechselnd, einmal bei uns, einmal bei ihm. Das spart Holz, und der Gesprächsstoff geht nicht aus.",
+        "April. Einnahmen: keine. Ausgaben: Fisch, Seife, eine Briefmarke für meine Schwester in Bourg. Bemerkung: Amélie Modeste hat seit dem 6. wieder Arbeit. Sie hat uns einen Kuchen gebracht und sich entschuldigt, als hätte sie uns etwas weggenommen.",
+        "Juni. Einnahmen: keine. Ausgaben: Fisch, Faden. Bemerkung: Adélaïde Bellance hat Arbeit, seit dem 16. Paul von gegenüber war mit Marthe in Sin-le-Noble und hat dort ein Holzpferd im Schaufenster gesehen. Gekauft hat er es nicht, es soll mit der Société kommen. Fernand sagt, der Junge habe mehr Geduld als die ganze Société.",
+        "Juli. Einnahmen: keine. Ausgaben: Fisch, Kerzen. Bemerkung: Rosalie Gaspard hat Arbeit, seit dem 1., zum ersten Mal, seit wir sie kennen. Seit dem 4. fährt ein Lastwagen der Société vom Bahnhof zum Sarrians-Hof. Marthes Großvater sagt, wenigstens der Hof heiße noch richtig. Fernand ist hingegangen und hat gefragt. Für den Lastwagen braucht man einen Fahrer, und den haben sie.",
+        "August. Einnahmen: keine. Ausgaben: Fisch. Bemerkung: Im August gab es im ganzen Dorf 24 Bretter zu kaufen, Anfang September noch eines. Ein einziges Brett für Vauclaire. Der Hühnerstall bleibt, wie er ist. Die Hühner beschweren sich nicht. Fernand schon.",
+        "September. Bemerkung zum 2.: Vauclaire verlangt jetzt Maschinen, siebzig Stück, und bekommt keine. Fernand sagt, wo Maschinen gebraucht werden, braucht man auch Leute. Am selben Tag hat Octave Baptiste seine Arbeit verloren. So ist Vauclaire: Einer geht hinein, einer kommt heraus. Bemerkung zum 13.: Der Lastwagen zum Sarrians-Hof fährt zum ersten Mal Dünger. Der Großvater sagt, der Hof habe nun, was er brauche, und Vauclaire hoffentlich bald auch.",
+        "Bemerkung zum 21. September. Fernand hat Arbeit. Er kam am Abend nach Hause, zu Fuß natürlich, setzte sich an den Tisch und sagte eine Weile nichts. Dann sagte er: „Morgen früh wieder.“ Wir haben den Fisch gegessen, den ich für Sonntag aufgehoben hatte. Clovis kam herüber, wie jeden Abend. Wir haben ihm nichts angemerkt, und er uns nichts. Später hat Fernand seine Schuhe vor die Tür gestellt, wie früher, für den Morgen. Ich habe sie stehen sehen und musste mich hinsetzen.",
+        "Einnahmen September: Lohn ab dem 21. Ausgaben: ein Brett für den Hühnerstall, wahrscheinlich das einzige im Dorf. Marthe sagt, damit seien wir jetzt eine Messung. Clovis: noch ohne Arbeit."
+      ],
+      "grounding": "Gemessen (feste, nicht repräsentative Beobachtungsgruppe, Wohnort Vauclaire): Fernand Saint-Cyr (35558) ohne Arbeitsplatz ab 24.01.1921, wieder mit Arbeitsplatz ab 21.09.1921; 1920 und 1921 alle beobachteten Wege zu Fuß. Clovis Calixte (36283) ohne Arbeitsplatz ab 09.01.1921, bis 13.10.1921 weiter ohne. Amélie Modeste (35243) Arbeitsplatz ab 06.04.1921; Adélaïde Bellance (34894) ab 16.06.1921 (ohne seit 21.10.1920); Rosalie Gaspard (35063) ab 01.07.1921 (1920 in keiner der 63 Messungen mit Arbeitsplatz); Octave Baptiste (35745) ohne Arbeitsplatz ab 02.09.1921. Vauclaire: Fisch 142/48 (01.02.1921); Bretter 133/23 (01.02.), 140/24 (10.08.) und 140/1 (02.09.1921); Maschinen 70 verlangt, 0 gedeckt ab 02.09.1921; Toys 0 gedeckt. RC Dünger,Passagiere-Vau-LO-1 (Vauclaire Station Haltepunkt – Sarrians Bauernhof, 1 Lkw) neu am 04.07.1921, Dünger erstmals an Bord am 13.09.1921; die Jahresproduktion des Sarrians Bauernhofs blieb bis 13.10.1921 bei 220. Arbeitgeber und Gründe für den Verlust eines Arbeitsplatzes misst der Monitor nicht. Erfunden: Haushaltsbuch, Léonie Saint-Cyr, Nachbarschaft, Ausgaben, Gespräche und Gefühle, dass das eine gedeckte Brett bei Familie Saint-Cyr landet. Marthe, Paul und der Großvater sind wiederkehrende erfundene Figuren (Schulaufsatz 1915, Wunschzettel 1919, Bilderbogen Juni 1921). Namen der Personen von der Redaktion vergeben.",
+      "refs": {
+        "staedte": [
+          174634,
+          174617
+        ],
+        "personen": [
+          35558,
+          36283,
+          35243,
+          34894,
+          35063,
+          35745
+        ],
+        "linien": [
+          404886
+        ],
+        "betriebe": [
+          324095
+        ]
+      }
+    },
+    {
+      "id": "1921-10-rezept-garches",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1921-10",
+      "lead": true,
+      "rubrik": "Rezept · Garches",
+      "titel": "Garcher Fleischtopf zum Erntedank, für 399 Personen",
+      "teaser": "Am 2. Oktober 1921 liegt in den Läden von Garches zum ersten Mal Fleisch: zwölf Stück für 129, die es verlangen. Mademoiselle Eulalie, Haushälterin im Pfarrhaus, hat uns ihr Rezept für das Erntedankessen geschickt. Es ist seit Jahren dasselbe. Nur eine Zutat fehlte bisher.",
+      "body": [
+        "Garcher Fleischtopf zum Erntedank. Aus dem Kochheft des Pfarrhauses von Garches, Fassung 1921.",
+        "Für: die Gemeinde. Das sind 399 Personen, wie seit 1904 in jedem Monat. Wer nachzählt, kommt auf 399. Zubereitungszeit: gut sechs Jahre, wenn man mit dem ersten Stall rechnet, gebaut im Februar 1915. Siebzehn, wenn man von Anfang an wartet.",
+        "Zutaten, Stand Erntedank 1921. Fleisch aus dem Laden: zwölf Stück, zum ersten Mal überhaupt (verlangt: 129). Gemüse, Zwiebeln und Salz aus dem Pfarrgarten. Getreide kommt seit dem vorigen Dezember mit zwei Kippern aus Sin-le-Noble, ist aber für die Tiere. Bretter für die langen Tische: keine (128 verlangt, nichts da), wir nehmen die Kirchenbänke. Geduld: reichlich, seit Jahren eingelagert.",
+        "Vorbereitung. Man nehme drei Ställe, von 1915, 1918 und 1919, die nie etwas hervorgebracht haben. Man warte auf das Getreide. Man lasse den Südstall arbeiten; seit dem Advent 1920 tut er es. Man vergesse den Nordstall nicht. Er ist am 10. August verschwunden, ohne je ein Stück Fleisch gegeben zu haben. Der Herr Pfarrer hat ihm in der Messe einen Satz gewidmet, einen kurzen.",
+        "Schritt 1. Man warte auf den Wagen. Zu Weihnachten hat der Herr Pfarrer um ihn gebetet. Am 10. August kommt er: zwei Lastwagen der Société, mit Kasten, vom Südstall bis zum Bahnhof Garches. Der Herr Pfarrer sagt, Gebete würden erhört, nur nicht nach Fahrplan.",
+        "Schritt 2. Man lasse den Wagen einen Monat lang leer fahren, damit er die Strecke kennenlernt. Am 10. September liegen zum ersten Mal drei Stück Fleisch darauf. Am 13. September ist er voll, 24 auf 24 Plätzen.",
+        "Schritt 3. Am Erntedanksonntag, dem 2. Oktober, liegt das Fleisch im Laden. Zwölf Stück. Die Gemeinde verlangt 129. Man schneide also sehr klein.",
+        "Schritt 4. Man koche langsam, den ganzen Vormittag. Wer drängelt, bekommt die Geschichte vom Nordstall erzählt. Die Ballade von 1917 singt man dabei besser nicht, sie reimt sich auf null.",
+        "Schritt 5. Man teile. Den ersten Teller bekommt Narcisse Petit-Frère, weil er der Neue ist. Er ist seit März 1920 der Neue. Meistens kommt er zu Fuß; im Frühjahr kam er eine Weile mit dem Automobil, der Herr Pfarrer hat das nicht kommentiert. Einen zweiten Teller stellen wir für Isidore Valère hin, der fünfzehn Jahre hier gewohnt hat und seit dem vorigen April in Fontenay-aux-Roses lebt. Er hat geschrieben, er komme, sobald eine Linie fährt. Der Teller wird kalt. Wir stellen ihn trotzdem hin.",
+        "Anmerkung der Köchin. Valombre, mit dem wir im September vorigen Jahres gleichauf lagen, zählt jetzt 621. Der Herr Pfarrer hat es nicht erwähnt. Ich erwähne es hier, damit es gesagt ist. Mit der Société fährt bei uns noch immer niemand, von hundert Wegen kein einziger, obwohl der neue Wagen laut seinem Namen auch Fahrgäste mitnähme. Die Leute sagen, sie hätten im Stall nichts verloren.",
+        "Für die nächste Auflage. Der Südstall macht laut Spiel auch Wolle, 45 Einheiten im Jahr, und keine Linie in Garches nimmt sie mit. Bretter fehlen weiter. Der Herr Pfarrer betet schon. Gesegnete Mahlzeit. Eulalie, Haushälterin."
+      ],
+      "grounding": "Gemessen: Garches belegter Wohnraum 399 in jedem Monatsstand von Dezember 1904 bis Oktober 1921, Netzanteil 0 %. Fleisch 129 verlangt, 12 gedeckt am 02.10.1921 (130/12 am 13.10.1921); vorher in keiner Messung eine in Garches gedeckte Ware. Bretter 128/0. Neue Linie RC Passagiere,Fleisch-Gar-LO-1 am 10.08.1921 (2 Benz Dreitonner Kasten, Garches Station – Garches Viehzuchtbetrieb Süd), Fleisch erstmals an Bord am 10.09.1921 (3), 24 von 24 am 13.09.1921; Versand des Viehzuchtbetriebs Süd laut Spiel 0 bis 06.09., 24 ab 13.09.1921; Jahresproduktion laut Spiel am 13.10.1921 Fleisch 30, Wolle 45. Keine Linie in Garches führt Wolle. Garches Viehzuchtbetrieb Nord (seit 05.07.1918, ohne Produktion) ab 10.08.1921 nicht mehr im Industrieregister; Garches Viehzuchtbetrieb (seit 20.02.1915) weiter ohne Produktion; Viehzuchtbetrieb Süd produziert seit 20.–24.12.1920. RC Passagiere,Getreide-Sin-Gar-IC-1 (Sin-le-Noble Bauernhof – Viehzuchtbetrieb Süd, 2 Benz Dreitonner Kipper), Getreide an Bord seit 06.12.1920. Woher das Fleisch im Laden stammt, zeigt die Ladungsstichprobe nicht; die einzige Linie mit Fleisch in Garches ist RC Passagiere,Fleisch-Gar-LO-1. Valombre 621 Einwohner am 13.10.1921 (am 03.09.1920 wie Garches 399). Narcisse Petit-Frère (35326) seit 26.03.1920 in der Gruppe, 1921 59 von 77 Wegen zu Fuß und 18 mit dem Auto (13.03.–21.04.1921); Isidore Valère (45714) wohnte bis April 1920 in Garches, seit 21.04.1920 in Fontenay-aux-Roses. Erfunden: Rezept, Kochheft, Erntedankessen, Wochentag (nach dem Kalender gewählt), Kirchenbänke, Haushälterin Eulalie, Messe, Teller und Brief; der Pfarrer stammt aus der Predigt vom Dezember 1920, die Ballade aus dem September 1917. Namen der Personen von der Redaktion vergeben.",
+      "refs": {
+        "staedte": [
+          174644,
+          174621,
+          174615,
+          174617
+        ],
+        "personen": [
+          35326,
+          45714
+        ],
+        "linien": [
+          423825,
+          301899
+        ],
+        "betriebe": [
+          321618,
+          301479
+        ]
+      }
     }
   ]
 }
