@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "hinweis": "Überschreibungen der Epochen-Vorlage data/epochen.json für die Welt „Archipel des Alizés“: Name und Kopfzeilen der Zeitung. Vom Spieler bestätigt am 18.10.2026 (docs/EPOCHEN.md, „Namen“).",
+  "hinweis": "Überschreibungen der Epochen-Vorlage data/epochen.json für die Welt „Archipel des Alizés“: Name und Kopfzeilen der Zeitung (vom Spieler bestätigt am 18.10.2026, docs/EPOCHEN.md, „Namen“) und Name der Gesellschaft (Spielervorgabe vom 19.10.2026, gilt ab Oktober 1921).",
   "merkmale": {
     "name": {"bezeichnung": "Name im Zeitungskopf", "text": true, "stufen": [
       {"wert": "Le Journal des Alizés"},
@@ -10,6 +10,12 @@
       {"wert": "Quotidien de l’Archipel"},
       {"wert": "Quotidien illustré de l’Archipel", "stufe": 3}
     ]},
-    "preis": {"bezeichnung": "Preis", "text": true, "stufen": [{"wert": "10 centimes"}]}
+    "preis": {"bezeichnung": "Preis", "text": true, "stufen": [{"wert": "10 centimes"}]},
+    "firma": {"bezeichnung": "Name der Gesellschaft", "text": true, "stil": false, "stufen": [
+      {"wert": "Société des Routes et des Rails"},
+      {"wert": "Société des Alizés — Routes, Voyages et Commerce", "vormals_ausgaben": 6,
+       "ausloeser": {"art": "vorgabe", "monat": "1921-10", "quelle": "Angabe des Spielers am 19.10.2026, umbenannt im Spiel im Oktober 1921"},
+       "notiz": "Die Gesellschaft, deren Netz diese Zeitung verzeichnet, trägt einen neuen Namen."}
+    ]}
   }
 }

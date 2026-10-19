@@ -1,4 +1,4 @@
-import {mountMonitor} from "./monitor.js";
+import {mountMonitor} from "./monitor.js?v=20261019-firma";
 import {mountWorldAtlas} from "./world-atlas.js";
 /* Transport Fever Chronicles: static, save-scoped, dependency-free browser UI */
 const ROOT = document.body.dataset.root || ".";

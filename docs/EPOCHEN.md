@@ -102,7 +102,7 @@ Die erste Ausgabe nach einem sichtbaren Wechsel trägt automatisch eine kurze No
 | Teil | Datei |
 |---|---|
 | Regeln, Vorlage für alle Welten | `data/epochen.json` (Stufen 1–5, Merkmale, Rubrik Radioprogramm, Zustand Krisenpapier) |
-| Regeln dieser Welt | `saves/archipel-des-alizes/data/epochen.json` (Name, Kopfzeile, Preis; Ortsnamen und Namen der Zeitung nur hier) |
+| Regeln dieser Welt | `saves/archipel-des-alizes/data/epochen.json` (Name, Kopfzeile, Preis, Name der Gesellschaft; Ortsnamen und Namen nur hier) |
 | Auswertung | `scripts/journal_epochen.py`, aufgerufen von `build-journal.py` auf dem kanonischen Verlauf |
 | Ergebnis | `saves/<welt>/data/journal/zeitleiste.json` (ohne Vorlage keine Datei, alle anderen Dateien byte-identisch) |
 | Anzeige | `assets/journal-epochen.js` (gültige Stufe je Ausgabe, „In eigener Sache“), Stile je Merkmal in `assets/epochen/*.css` |
@@ -118,7 +118,9 @@ Die erste Ausgabe nach einem sichtbaren Wechsel trägt automatisch eine kurze No
 - Die Datei einer Welt überschreibt Stufen nach `nr` und Merkmale, Rubriken und Zustände nach Namen, Feld für Feld; `null` entfernt einen Eintrag. Beispiel „Radio erst mit der ersten Straßenbahn in Roquemer“: `{"schema_version": 1, "stufen": [{"nr": 5, "ausloeser": {"art": "meldung", "typ": "premiere", "muster": "Straßenbahn.*Roquemer"}}]}`.
 - Eine fehlerhafte Regeldatei (unbekannte Auslöser-Art, frühestens nach spätestens, Stufen außer der Reihe …) bricht den Bau mit einer Meldung ab.
 
-Auslöser und ihre Angaben: `premiere` {`fahrzeugart`}, `modell` {`baujahr_ab`, optional `fahrzeugart`}, `stadt` {`einwohner_ab`, optional `stadt` = Orts-ID}, `netz` {`fahrzeuge_ab` oder `linien_ab`}, `kasse` {`ab`}, `wahrzeichen` {optional `id`}, `umwelt` {`laerm_ab` oder `verschmutzung_ab`, optional `stadt`}, `meldung` {`typ`, optional `muster` als regulärer Ausdruck über Titel und Text}. Einwohner- und Umweltschwellen brauchen wie die Meilensteine der Meldungen zwei Stadtstände nacheinander. Eine Premiere zählt auch, wenn die Fahrzeugart schon bei Beginn der Aufzeichnung fuhr; ein Modell auch, wenn es schon im Ausgangsbestand der Modellerfassung war.
+Textmerkmale, die zur Welt gehören und nicht zum Stil, tragen `"stil": false` (bisher `firma`, der Name der Gesellschaft): Sie folgen immer dem Monat der Ausgabe, auch im heutigen Stil, und zählen nicht als Stilunterschied für den Schalter.
+
+Auslöser und ihre Angaben: `premiere` {`fahrzeugart`}, `modell` {`baujahr_ab`, optional `fahrzeugart`}, `stadt` {`einwohner_ab`, optional `stadt` = Orts-ID}, `netz` {`fahrzeuge_ab` oder `linien_ab`}, `kasse` {`ab`}, `wahrzeichen` {optional `id`}, `umwelt` {`laerm_ab` oder `verschmutzung_ab`, optional `stadt`}, `meldung` {`typ`, optional `muster` als regulärer Ausdruck über Titel und Text}, `vorgabe` {`monat` wie `1921-10`, optional `quelle`}: eine Spielervorgabe für einen festen Monat, etwa eine Umbenennung, die der Monitor nicht misst. Ihr Anlass hat keinen Tag, sagt „Spielervorgabe … kein Messwert“ und trägt in der Notiz das Etikett „Spielervorgabe“; ein Monat nach dem letzten Messstand bleibt offen. Einwohner- und Umweltschwellen brauchen wie die Meilensteine der Meldungen zwei Stadtstände nacheinander. Eine Premiere zählt auch, wenn die Fahrzeugart schon bei Beginn der Aufzeichnung fuhr; ein Modell auch, wenn es schon im Ausgangsbestand der Modellerfassung war.
 
 ### Wann eine Stufe erreicht ist
 
@@ -134,6 +136,7 @@ Auslöser und ihre Angaben: `premiere` {`fahrzeugart`}, `modell` {`baujahr_ab`, 
 - **Krisenpapier:** graues, leicht faseriges Papier, nur eine Druckfarbe, Artikel einspaltig, weniger Spalten in Meldungen und Geschichten, auf der Titelseite der Kasten „Bekanntmachungen“ mit Schließungen, eingestellten Linien und Ausdünnungen des Monats (Belegt). Alle Texte behalten mindestens 4,5 : 1 Kontrast.
 - **In eigener Sache:** In der ersten Ausgabe ab dem Monat eines sichtbaren Wechsels steht oben auf der Titelseite die `notiz` der Stufe, ein Satz zum neuen Namen und zu neuen Rubriken sowie die Begründung mit dem belegten Anlass (Etikett „Belegt“) oder dem Hinweis auf „spätestens“ (Etikett „Einordnung“). Beginn und Ende des Krisenpapiers bekommen ebenfalls eine Notiz.
 - **Schalter „Im heutigen Stil lesen“** unter der Datumszeile, nur bei Ausgaben, die anders aussehen als die neueste. Er zeigt Stil, Name und Kopfzeile der neuesten Ausgabe (Zustände wie das Krisenpapier gehören zu ihrer Ausgabe und bleiben weg), nennt den Originalnamen und die Stufe und blendet die Notiz aus. Gemerkt wird er nur als Komfort im Browser (`localStorage`); ohne Speicher startet die Seite im Stil der Zeit.
+- **Name der Gesellschaft:** Unter der Unterzeile steht „Nach den Messbüchern der …“ mit dem Namen im Monat der Ausgabe, nach einer Umbenennung sechs Ausgaben lang „vormals …“ darunter. Ältere Ausgaben behalten den alten Namen, auch im heutigen Stil. Die Monitorseite (`assets/monitor.js`) zeigt im Siegel den neuesten Namen aus `zeitleiste.json`; ohne Datei kein Name statt eines festen.
 - **Rubriken** erscheinen in der Navigation hinter „Geschichten“ erst ab ihrem Monat. Das Radioprogramm zeigt das Programm der Ausgabe, sonst das jüngste davor, dazu frühere Programme; auf der Titelseite steht ein Kasten mit den ersten Sendungen, wenn es für den Monat ein Programm gibt.
 - **Schriften:** Playfair Display, Source Serif 4 und Jost liegen lokal im Repository; die Seite fragt keinen fremden Server an. Die geometrische Schrift der Stufe 4 ist Jost (SIL Open Font License, `assets/fonts/OFL-Jost.txt`): variable Datei `assets/fonts/jost.woff2` (Stärken 100 bis 900, nur Latin, 26 KB, aus `@fontsource-variable/jost` 5.3.0), eingebunden per `@font-face` in `journal.css` und an erster Stelle der Schriftliste `--j-geo`. Der Browser lädt sie nur für Ausgaben ab Stufe 4; frühere Ausgaben brauchen sie nicht. Fehlt die Datei, greifen Futura, Century Gothic, Avenir …, sonst die Grotesk des Geräts. Eine Kursive gibt es nicht, Stufe 4 braucht keine.
 
@@ -196,6 +199,8 @@ So steht es in `zeitleiste.json`, berechnet aus den Messungen:
 | 5 Rundfunkzeit | noch offen (frühestens Januar 1922, spätestens Januar 1927) | größte Stadt Bourg-l’Écorce mit 3.828 Einwohnern (Oktober 1921), 4.000 fehlen noch |
 
 Krisenpapier: bisher kein Fall (frühestens 1925).
+
+Name der Gesellschaft (Merkmal `firma`, Spielervorgabe vom 19.10.2026): bis September 1921 „Société des Routes et des Rails“, ab der Ausgabe Oktober 1921 „Société des Alizés — Routes, Voyages et Commerce“ mit Notiz „In eigener Sache“ und sechs Ausgaben lang „vormals Société des Routes et des Rails“.
 
 Die Zeitung nimmt im Juni 1920 Abschied von der Kutschenzeit, die Kutschen selbst aber noch nicht: Laut Fuhrpark fahren im Oktober 1921 weiter **drei Postkutschen** (gekauft 1900) auf der Buslinie in Anse Dorée. Das ist Stoff für eine Geschichte, oder eine Entscheidung im Spiel.
 

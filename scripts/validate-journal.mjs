@@ -96,17 +96,21 @@ if(existsSync(join(base, 'zeitleiste.json'))){
   assert.match(zl.beginn, month);
   const end = zl.stand.date.slice(0, 7), eventIds = new Set(meld.meldungen.map(e => e.id)), slug = /^[a-z][a-z0-9-]*$/;
   const REASONS = new Set(['beginn', 'ausloeser', 'fruehestens', 'spaetestens', 'vorgaenger', 'offen']);
+  // A player's statement (art „vorgabe“) names a month, never a day, and says that it is a Spielervorgabe.
   const occasion = (a, where) => {
-    assert.match(a.date, day, where+': occasion date'); assert(a.text && a.art, where+': occasion without text');
+    assert(a.text && a.art, where+': occasion without text');
+    if(a.art === 'vorgabe') assert(month.test(a.monat) && /Spielervorgabe/.test(a.text) && !a.date, where+': player statement needs its month and the word Spielervorgabe');
+    else assert.match(a.date, day, where+': occasion date');
     if(a.meldung) assert(eventIds.has(a.meldung), `${where}: unknown event ${a.meldung}`);
   };
+  const when = a => a.date || a.monat+'-01';
   const timing = (x, m, where, before) => {
     assert(REASONS.has(x.grund), `${where}: unknown reason ${x.grund}`);
     if(m === null || before === null){ assert(m === null && x.grund === 'offen', where+': reached after an open step'); if(x.anlass) occasion(x.anlass, where); return; }
     assert.match(m, month); assert(m >= zl.beginn && m <= end, where+': outside the recording');
     assert(m >= before, where+': before the step before it');
-    if(x.grund === 'ausloeser') assert(x.anlass && x.anlass.date.slice(0, 7) === m, where+': occasion not in its month');
-    if(x.grund === 'fruehestens') assert(x.anlass && x.anlass.date < `${x.fruehestens}-01-01` && m === `${x.fruehestens}-01`, where+': early occasion must wait for January of fruehestens');
+    if(x.grund === 'ausloeser') assert(x.anlass && when(x.anlass).slice(0, 7) === m, where+': occasion not in its month');
+    if(x.grund === 'fruehestens') assert(x.anlass && when(x.anlass) < `${x.fruehestens}-01-01` && m === `${x.fruehestens}-01`, where+': early occasion must wait for January of fruehestens');
     if(x.grund === 'spaetestens') assert(!x.anlass && m === `${x.spaetestens}-01`, where+': latest year without occasion');
     if(x.grund === 'vorgaenger') assert.equal(m, before, where+': waits exactly for the step before it');
     if(x.fruehestens && x.grund !== 'beginn') assert(m >= `${x.fruehestens}-01`, where+': before fruehestens');

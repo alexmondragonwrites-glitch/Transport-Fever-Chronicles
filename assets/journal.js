@@ -3,7 +3,7 @@
  * Each edition wears the look of its month (zeitleiste.json, see journal-epochen.js and assets/epochen/).
  * Measured, stated by the player and invented content stay labelled. */
 import {karteView, mountKarte} from './journal-karte.js?v=20261018-flugzeug';
-import {epoche, gleichWieHeute, inEigenerSache} from './journal-epochen.js?v=20261018-epochen';
+import {epoche, gleichWieHeute, inEigenerSache} from './journal-epochen.js?v=20261019-firma';
 const APP = document.getElementById('app');
 const E = v => String(v ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const N = (v, d=0) => Number.isFinite(v) ? new Intl.NumberFormat('de-DE', {maximumFractionDigits:d}).format(v) : '–';
@@ -61,13 +61,19 @@ const TABS = [['une','Titelseite'],['meldungen','Meldungen'],['menschen','Mensch
 function masthead(){
   const months = D.months, i = months.indexOf(state.month), m = state.month, t = {...MAST, ...EP?.texte};
   return `<section class="j-mast"><div class="shell"><p class="j-mast-top"><span>${E(t.kopfzeile)}</span><span>Deutsche Ausgabe</span><span>Prix&nbsp;: ${E(t.preis)}</span></p>
-  <span class="j-mast-orn" aria-hidden="true"></span><h1 class="j-title">${E(t.name)}</h1>${EP?.vormals?`<p class="j-vormals">vormals ${E(EP.vormals)}</p>`:''}
-  <p class="j-mast-sub">Nachrichten, Menschen und Messwerte aus dem Archipel · Belegtes und Erfundenes sind stets gekennzeichnet</p>
+  <span class="j-mast-orn" aria-hidden="true"></span><h1 class="j-title">${E(t.name)}</h1>${EP?.vormals?.name?`<p class="j-vormals">vormals ${E(EP.vormals.name)}</p>`:''}
+  <p class="j-mast-sub">Nachrichten, Menschen und Messwerte aus dem Archipel · Belegtes und Erfundenes sind stets gekennzeichnet</p>${firmaZeile()}
   <div class="j-dateline"><button class="j-ed" data-ed="${E(months[i-1]||'')}" ${i>0?'':'disabled'} aria-label="Vorherige Ausgabe">‹</button>
   <label class="j-ed-label">Ausgabe <select class="select" id="j-month" aria-label="Ausgabe wählen">${[...months].reverse().map(x=>`<option value="${x}" ${x===m?'selected':''}>${monthName(x)}</option>`).join('')}</select></label>
   <span class="j-ed-fr">Édition de ${MOIS[+m.slice(5,7)-1]} ${m.slice(0,4)} · Nº ${i+1}</span>
   <button class="j-ed" data-ed="${E(months[i+1]||'')}" ${i<months.length-1?'':'disabled'} aria-label="Nächste Ausgabe">›</button></div>${stilzeile()}</div></section>
   <nav class="tabs" aria-label="Rubriken"><div class="shell tab-inner" role="tablist">${tabs().map(([id,l])=>`<button type="button" class="tab" role="tab" data-tab="${id}" aria-selected="${id===state.tab}">${l}</button>`).join('')}</div></nav>`;
+}
+
+// The company whose network the paper records, as named in the month of the edition (zeitleiste.json, merkmal „firma“).
+function firmaZeile(){
+  const firma = EP?.texte.firma, old = EP?.vormals?.firma;
+  return firma ? `<p class="j-firma">Nach den Messbüchern der <strong>${E(firma)}</strong>${old?`<span class="j-firma-vormals">vormals ${E(old)}</span>`:''}</p>` : '';
 }
 
 // Old editions appear in the look of their time; the switch shows them like the newest one, states such as the crisis paper excepted.
@@ -82,7 +88,7 @@ function stilzeile(){
 // „In eigener Sache“: the first edition after a visible change names it and its occasion (Belegt) or the latest year (Einordnung).
 function avis(m){
   const notes = state.heute ? [] : inEigenerSache(D.zeitleiste, m, D.months);
-  return notes.length ? `<section class="j-avis" aria-label="In eigener Sache"><h3>In eigener Sache</h3>${notes.map(n=>`<div class="j-avis-item"><p>${E(n.text)}</p>${n.begruendung?`<p class="j-avis-grund">${prov(n.beleg?'beleg':'einordnung')} ${E(n.begruendung)}</p>`:''}</div>`).join('')}</section>` : '';
+  return notes.length ? `<section class="j-avis" aria-label="In eigener Sache"><h3>In eigener Sache</h3>${notes.map(n=>`<div class="j-avis-item"><p>${E(n.text)}</p>${n.begruendung?`<p class="j-avis-grund">${prov(n.art)} ${E(n.begruendung)}</p>`:''}</div>`).join('')}</section>` : '';
 }
 
 // Crisis paper: what closes, ends or runs with fewer vehicles this month, straight from the measurement books.

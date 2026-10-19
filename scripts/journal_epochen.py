@@ -22,7 +22,8 @@ SLUG = re.compile(r'[a-z][a-z0-9-]*')
 TRIGGERS = {  # trigger kind: (required numeric/text parameters, optional parameters)
     'premiere':({'fahrzeugart'}, set()), 'modell':({'baujahr_ab'}, {'fahrzeugart'}), 'stadt':({'einwohner_ab'}, {'stadt'}),
     'netz':(set(), {'fahrzeuge_ab', 'linien_ab'}), 'kasse':({'ab'}, set()), 'wahrzeichen':(set(), {'id'}),
-    'umwelt':(set(), {'laerm_ab', 'verschmutzung_ab', 'stadt'}), 'meldung':({'typ'}, {'muster'})}
+    'umwelt':(set(), {'laerm_ab', 'verschmutzung_ab', 'stadt'}), 'meldung':({'typ'}, {'muster'}),
+    'vorgabe':({'monat'}, {'quelle'})}  # a statement of the player for a fixed month, never a measurement
 FORMS = {'programm'}
 
 
@@ -132,7 +133,9 @@ def _check_timing(spec, where, need_trigger=True):
         raise RulesError(f'epochen.json: {where}: netz braucht fahrzeuge_ab oder linien_ab')
     if kind == 'umwelt' and len({'laerm_ab', 'verschmutzung_ab'} & set(trigger)) != 1:
         raise RulesError(f'epochen.json: {where}: umwelt braucht laerm_ab oder verschmutzung_ab')
-    for key in set(trigger)-{'art', 'fahrzeugart', 'typ', 'muster'}:
+    if kind == 'vorgabe' and (not re.fullmatch(r'\d{4}-(0[1-9]|1[0-2])', str(trigger['monat'])) or not isinstance(trigger.get('quelle', ''), str)):
+        raise RulesError(f'epochen.json: {where}: vorgabe braucht monat wie 1921-10 und optional quelle als Text')
+    for key in set(trigger)-{'art', 'fahrzeugart', 'typ', 'muster', 'monat', 'quelle'}:
         if not isinstance(trigger[key], (int, float)) or isinstance(trigger[key], bool):
             raise RulesError(f'epochen.json: {where}: {key} muss eine Zahl sein')
     if 'muster' in trigger:
@@ -182,6 +185,8 @@ def check(rules):
     for key, feature in (rules.get('merkmale') or {}).items():
         if not SLUG.fullmatch(key):
             raise RulesError(f'epochen.json: Merkmal {key!r}: Name aus Kleinbuchstaben')
+        if 'stil' in feature and (feature['stil'] is not False or not feature.get('text')):
+            raise RulesError(f'epochen.json: Merkmal {key}: "stil": false nur für Textmerkmale, die zur Welt und nicht zum Stil gehören')
         steps_of(f'merkmale.{key}', feature.get('stufen'), bool(feature.get('text')))
     for key, section in (rules.get('rubriken') or {}).items():
         if not SLUG.fullmatch(key) or not isinstance(section.get('titel'), str) or section.get('form') not in FORMS:
@@ -328,6 +333,11 @@ class Facts:
         e = self.event(lambda e:e['typ'] == a['typ'] and (not pattern or pattern.search(e['titel']+' '+e['text'])))
         return e and _from_event(e, 'meldung')
 
+    def vorgabe(self, a):
+        # The player's word sets the month; nothing is measured, so the occasion says so and carries no day.
+        return {'art':'vorgabe', 'monat':a['monat'], **({'quelle':a['quelle']} if a.get('quelle') else {}),
+                'text':f"Spielervorgabe ab {month_name(a['monat'])}" + (f" ({a['quelle']})" if a.get('quelle') else '') + ', kein Messwert.'}
+
     def trigger(self, a):
         return getattr(self, a['art'])(a) if a else None
 
@@ -341,7 +351,7 @@ def reach(spec, facts, start, end, prev):
     early, late = spec.get('fruehestens'), spec.get('spaetestens')
     month, reason = None, 'offen'
     if hit:
-        month, reason = hit['date'][:7], 'ausloeser'
+        month, reason = (hit.get('date') or hit['monat'])[:7], 'ausloeser'
         if early and month < jan(early):
             month, reason = jan(early), 'fruehestens'
     if late and (month is None or month > jan(late)):
@@ -469,7 +479,8 @@ def zeitleiste(loaded, rows, events, stand, kind, labels):
                     entry['notiz'] = step['notiz']
             steps.append(entry)
             before = entry['ab']
-        features[key] = {'bezeichnung':feature.get('bezeichnung') or key, **({'text':True} if feature.get('text') else {}), 'stufen':steps}
+        features[key] = {'bezeichnung':feature.get('bezeichnung') or key, **({'text':True} if feature.get('text') else {}),
+                         **({'stil':False} if feature.get('stil') is False else {}), 'stufen':steps}
 
     sections = {}
     for key, section in rules.get('rubriken', {}).items():

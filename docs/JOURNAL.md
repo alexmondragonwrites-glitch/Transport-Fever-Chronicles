@@ -89,6 +89,8 @@ Neue Beiträge kommen als Eintrag in `redaktion.json` hinzu. Pflicht für jeden 
 
 Ideen liefert die Zeitung selbst. Der Kasten „Stoff für Geschichten“ auf jeder Titelseite und „Noch unerzählt“ unter Geschichten leiten offene Fragen aus den Meldungen ab.
 
+**Die Gesellschaft:** Bis September 1921 heißt sie „Société des Routes et des Rails“, ab Oktober 1921 „Société des Alizés — Routes, Voyages et Commerce“ (Spielervorgabe vom 19.10.2026, im Spiel umbenannt im Oktober 1921; der Monitor misst den Namen nicht). Neue Beiträge ab Oktober 1921 nennen den neuen Namen, im `grounding` als Spielervorgabe; ältere Beiträge und `events.json` (Spielstart 1900) bleiben beim alten Namen. Der Kopf jeder Ausgabe zeigt den Namen ihres Monats (`zeitleiste.json`, Merkmal `firma`).
+
 **Orte und Figuren (Stand Oktober 1921; erfunden, soweit nicht aus der Beobachtungsgruppe):**
 
 - Valmorin: „Au Quai des Collines“ mit Wirt Mathurin und seiner Frau (gewann 1913 die Kleiderwette), der alte Anselme (setzt aus Prinzip auf „nie“, 1921 kurz „vielleicht“), Lucie vom Bahnhof (zählt Hemden seit 1910, setzt „Weihnachten, für Isidore“), Maurermeister Barnabé Lacroix; Kreidefragen an der Lärmschutzwand, zuletzt „Wann Stufe zwei?“ zur Burg des weißen Reihers.

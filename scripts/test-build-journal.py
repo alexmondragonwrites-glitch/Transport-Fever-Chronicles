@@ -527,6 +527,27 @@ class JournalEpochTests(JournalCase):
         self.assertIn('Valmorin Turm', got['d']['anlass']['text'])
         self.assertIn('75,2 dB', got['e']['anlass']['text'])
 
+    def test_player_statement_sets_its_month_and_is_no_measurement(self):
+        firma = {'bezeichnung':'Name der Gesellschaft', 'text':True, 'stil':False, 'stufen':[{'wert':'Alte Gesellschaft'},
+                 {'wert':'Neue Gesellschaft', 'vormals_ausgaben':3, 'notiz':'Neuer Name.',
+                  'ausloeser':{'art':'vorgabe', 'monat':'1913-03', 'quelle':'Angabe des Spielers'}}]}
+        rules = {**EPOCH_RULES, 'merkmale':{**EPOCH_RULES['merkmale'], 'firma':firma}}
+        z, _ = self.epochs({'a':monthly((1913, 1), [1e6]*5)}, rules=rules)
+        step = z['merkmale']['firma']['stufen'][1]
+        self.assertEqual((z['merkmale']['firma']['stil'], step['ab'], step['grund'], step['notiz']), (False, '1913-03', 'ausloeser', 'Neuer Name.'))
+        self.assertEqual({k:step['anlass'][k] for k in ('art', 'monat', 'quelle')}, {'art':'vorgabe', 'monat':'1913-03', 'quelle':'Angabe des Spielers'})
+        self.assertNotIn('date', step['anlass'])
+        self.assertIn('Spielervorgabe ab März 1913', step['begruendung'])
+        # A month after the last measurement stays open; nothing is invented ahead of the course.
+        z, _ = self.epochs({'a':monthly((1913, 1), [1e6]*2)}, rules=rules, name='frueh')
+        self.assertEqual((z['merkmale']['firma']['stufen'][1]['ab'], z['merkmale']['firma']['stufen'][1]['grund']), (None, 'offen'))
+        for i, bad in enumerate([{'art':'vorgabe', 'monat':'1913-3'}, {'art':'vorgabe'}, {'art':'vorgabe', 'monat':'1913-03', 'quelle':5}]):
+            broken = {**rules, 'merkmale':{'firma':{**firma, 'stufen':[firma['stufen'][0], {**firma['stufen'][1], 'ausloeser':bad}]}}}
+            with self.subTest(i), self.assertRaises(journal.journal_epochen.RulesError):
+                self.epochs({'a':monthly((1913, 1), [1e6])}, rules=broken, name=f'vorgabe{i}')
+        with self.assertRaises(journal.journal_epochen.RulesError):
+            self.epochs({'a':monthly((1913, 1), [1e6])}, rules={**rules, 'merkmale':{'kopf':{**rules['merkmale']['kopf'], 'stil':False}}}, name='stil')
+
     def test_broken_rules_stop_the_build_with_a_message(self):
         broken = [{**EPOCH_RULES, 'stufen':[EPOCH_RULES['stufen'][0], {**EPOCH_RULES['stufen'][1], 'ausloeser':{'art':'mondphase'}}]},
                   {**EPOCH_RULES, 'stufen':[EPOCH_RULES['stufen'][0], {**EPOCH_RULES['stufen'][1], 'fruehestens':1917}]},

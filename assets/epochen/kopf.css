@@ -15,6 +15,9 @@
   line-height:1.04;margin:4px 0 6px;padding-left:.16em;text-wrap:balance}
 .j[data-kopf=artdeco] .j-vormals{font-family:var(--j-geo);font-style:normal;font-size:12px;letter-spacing:.2em;text-transform:uppercase}
 .j[data-kopf=artdeco] .j-mast-sub{font-family:var(--j-geo);font-style:normal;font-size:14px;letter-spacing:.03em;margin-top:4px;max-width:900px;text-wrap:balance}
+.j[data-kopf=artdeco] .j-firma{font-family:var(--j-geo);font-size:13px;letter-spacing:.04em}
+.j[data-kopf=artdeco] .j-firma strong{font-family:var(--j-geo);font-style:normal;font-weight:600;letter-spacing:.06em}
+.j[data-kopf=artdeco] .j-firma-vormals{font-style:normal;font-size:11px;letter-spacing:.16em;text-transform:uppercase}
 .j[data-kopf=artdeco] .j-dateline{border-top:0;border-bottom:0;padding:14px 0;
   background:linear-gradient(var(--j-gold),var(--j-gold)) top/100% 2px no-repeat,linear-gradient(var(--j-gold),var(--j-gold)) 0 5px/100% 1px no-repeat,
     linear-gradient(var(--j-gold),var(--j-gold)) bottom/100% 2px no-repeat,linear-gradient(var(--j-gold),var(--j-gold)) 0 calc(100% - 5px)/100% 1px no-repeat}
