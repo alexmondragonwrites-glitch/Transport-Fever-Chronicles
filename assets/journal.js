@@ -2,7 +2,7 @@
  * the player's own notes (notizen.json) and hand-written editorial pieces (redaktion.json, gazette.json).
  * Each edition wears the look of its month (zeitleiste.json, see journal-epochen.js and assets/epochen/).
  * Measured, stated by the player and invented content stay labelled. */
-import {karteView, mountKarte} from './journal-karte.js?v=20261018-flugzeug';
+import {karteView, mountKarte} from './journal-karte.js?v=20261019-seekarte';
 import {epoche, gleichWieHeute, inEigenerSache} from './journal-epochen.js?v=20261019-firma';
 const APP = document.getElementById('app');
 const E = v => String(v ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -417,12 +417,22 @@ const detailTarget = () => state.filter.person?'#person-detail':state.filter.tow
 // Links inside stories and lists point to #rubrik/id; back and forward use the same route.
 window.addEventListener('hashchange', ()=>{ if(D && fromHash()) render(detailTarget()); });
 
+// The Blender relief (scripts/render-relief.py) only counts while it was rendered from the height grid in karte.json;
+// otherwise, or where the browser cannot hash (no crypto.subtle outside https), the chart draws its coast from the grid.
+async function reliefFor(chart, relief, base){
+  if(!relief || !chart?.gelaende || !globalThis.crypto?.subtle) return null;
+  const hash = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(JSON.stringify(chart.gelaende.hoehen)));
+  if([...new Uint8Array(hash)].map(b=>b.toString(16).padStart(2,'0')).join('') !== relief.gelaende_sha256) return null;
+  return {...relief, href:base+relief.bild+'?v='+relief.bild_version};
+}
+
 async function start(){
   try{
     const base = 'data/journal/';
-    const [meld, ppl, towns, fleet, red, gaz, notes, chart, zeitleiste] = await Promise.all(['meldungen','menschen','staedte','fuhrpark','redaktion'].map(n=>fetchJSON(base+n+'.json'))
+    const [meld, ppl, towns, fleet, red, gaz, notes, chart, zeitleiste, reliefMeta] = await Promise.all(['meldungen','menschen','staedte','fuhrpark','redaktion'].map(n=>fetchJSON(base+n+'.json'))
       .concat(fetchJSON('data/gazette.json').catch(()=>({articles:[]})), fetchJSON(base+'notizen.json').catch(()=>({notizen:[], hinweis:''})),
-        fetchJSON(base+'karte.json').catch(()=>null), fetchJSON(base+'zeitleiste.json').catch(()=>null)));
+        fetchJSON(base+'karte.json').catch(()=>null), fetchJSON(base+'zeitleiste.json').catch(()=>null), fetchJSON(base+'relief.json').catch(()=>null)));
+    const relief = await reliefFor(chart, reliefMeta, base);
     // Only sections already reached load their file; a missing file just leaves the section empty.
     const rubriken = new Map(Object.entries(zeitleiste?.rubriken||{}).filter(([, r])=>r.ab && r.form==='programm' && /^[a-z0-9-]+\.json$/.test(r.datei)).map(([id, r])=>[id, {id, ...r}]));
     const programme = new Map(await Promise.all([...rubriken.values()].map(async r=>[r.id, await fetchJSON(base+r.datei).catch(()=>({programme:[]}))])));
@@ -439,7 +449,7 @@ async function start(){
     D = {meta:meld, events, byMonth, months, stories, gazette, policy:red.editorial_policy, people:ppl.personen, cohort:ppl,
       personById:new Map(ppl.personen.map(p=>[p.id,p])), towns:towns.staedte, townsMeta:towns.stand, townById:new Map(towns.staedte.map(t=>[t.id,t])),
       fleet, fleetByMonth:new Map(fleet.verlauf.map(v=>[v.monat,v])), residentsByMonth, storyByPerson, storyByTown,
-      notesMeta:notes, notesByMonth, noteById:new Map(notes.notizen.map(n=>[n.id,n])), storiesByNote, karte:chart, zeitleiste, rubriken, programme};
+      notesMeta:notes, notesByMonth, noteById:new Map(notes.notizen.map(n=>[n.id,n])), storiesByNote, karte:chart, relief, zeitleiste, rubriken, programme};
     state.month = months.at(-1);
     fromHash();
     render(location.hash.split('/')[1] && state.tab!=='une' ? detailTarget() : null);

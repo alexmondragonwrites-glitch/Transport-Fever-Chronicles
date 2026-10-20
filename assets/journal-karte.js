@@ -1,6 +1,8 @@
 /* Carte marine de l’Archipel: the „Karte“ section of Le Journal des Alizés, drawn from data/journal/karte.json
  * (Spielmonitor revision 16 on). Measured: positions, stop order, residents, industry status, goods on board.
- * Drawn: coast and depths from a coarse height grid; lines as straight legs between their stops.
+ * Drawn: coast and depths from a coarse height grid, or as an old engraved chart from the Blender relief (relief.json/.webp,
+ * scripts/render-relief.py) of that same grid: coast, water lines, shoals and mountain marks follow the heights, parchment,
+ * waves, rose and rhumb lines are ornament. Lines as straight legs between their stops.
  * Without karte.json the journal shows no map section at all. */
 const LAYERS = [['gelaende','Küsten & Tiefen'],['linien','Linien'],['halte','Halte'],['staedte','Städte'],['betriebe','Betriebe'],
   ['warenwege','Waren unterwegs'],['wahrzeichen','Wahrzeichen']];
@@ -37,7 +39,7 @@ function prepare(K, D){
   const kinds = KIND_ORDER.filter(k=>K.linien.some(l=>l.art===k && l.halte.length>1));
   return {K, P, frame, up, months, latest, kinds, lineSince, indSince, history,
     stations:new Map(K.stationen.map(s=>[s.id,s])), towns:new Map(K.staedte.map(t=>[t.id,t])), inds:new Map(K.betriebe.map(i=>[i.id,i])),
-    lines:new Map(K.linien.map(l=>[l.id,l])), terrain:K.gelaende ? terrain(K.gelaende, P) : null};
+    lines:new Map(K.linien.map(l=>[l.id,l])), relief:D.relief||null, terrain:K.gelaende && !D.relief ? terrain(K.gelaende, P) : null};
 }
 
 // Height grid → filled bands and contour lines (marching squares; each cell clipped against the threshold).
@@ -91,12 +93,60 @@ const lineVisible = l => S.layers.has('linien') && S.kinds.has(l.art) && (M.line
 const legs = l => { const pts = l.halte.map(id=>M.stations.get(id)).filter(Boolean); if(pts.length>1 && pts[0]!==pts.at(-1)) pts.push(pts[0]); return pts; };
 
 function terrainSVG(){
-  const T = M.terrain; if(!T) return '';
+  const T = M.terrain, R = M.relief;
   const path = (d, cls) => d ? `<path class="${cls}" d="${d}"/>` : '';
+  if(R) return M.oldChart ??= oldChart(R, path);
+  if(!T) return '';
   return `<g class="k-terrain">${path(T.mid?.fill,'k-mid')}${path(T.shallow?.fill,'k-shallow')}${path(T.coast.line,'k-surf2')}${path(T.coast.line,'k-surf1')}
     ${path(T.coast.fill,'k-land')}${T.tints.map((d,i)=>path(d,'k-tint k-tint'+i)).join('')}${T.tints.map(d=>`<path d="${d}" fill="url(#k-engraving)"/>`).join('')}${T.contours.map(d=>path(d,'k-contour')).join('')}
     ${path(T.mid?.line,'k-isobath')}${path(T.shallow?.line,'k-isobath')}${path(T.coast.line,'k-coast')}</g>`;
 }
+
+// The old engraved chart, built once: parchment image, rhumb lines and waves on the sea, water lines, shoals, coast,
+// mountain marks (north first, so southern marks overlap) and the compass rose, all in chart units.
+function oldChart(R, path){
+  const r = R.rahmen, p = R.pfade, x = r.min_x, y = R.y_nach_oben !== false ? -r.max_y : r.min_y, w = r.max_x-r.min_x, h = r.max_y-r.min_y;
+  const o = R.rose, L = Math.hypot(w, h), f = v => v.toFixed(0);
+  let rhumb = '', main = '';
+  for(let a=0; a<32; a++){ const t = a*Math.PI/16, d = `M${o.x} ${o.y}L${f(o.x+L*Math.sin(t))} ${f(o.y-L*Math.cos(t))}`; if(a%4) rhumb += d; else main += d; }
+  const waves = R.wellen.map(([u, v])=>`M${u-165} ${v}q55 -100 110 0t110 0t110 0M${u-80} ${v+110}q55 -100 110 0t110 0`).join('');
+  const opacity = [.6,.45,.32,.2];
+  return `<g class="k-terrain k-old"><image class="k-relief" href="${R.href}" x="${x}" y="${y}" width="${w}" height="${h}" preserveAspectRatio="none"/>
+    <clipPath id="k-sea-clip"><path clip-rule="evenodd" d="M${x} ${y}h${w}v${h}h${-w}Z${p.kueste}"/></clipPath>
+    <g clip-path="url(#k-sea-clip)">${path(rhumb,'k-rhumb')}${path(main,'k-rhumb k-rhumb-main')}${path(waves,'k-wave')}</g>
+    ${p.wasserlinien.map((c, i)=>c.d?`<path class="k-wline" d="${c.d}" style="stroke-opacity:${opacity[i]??.15}"/>`:'').join('')}
+    ${path(p.flach,'k-shoal')}${path(p.kueste,'k-coast')}${R.berge.map(m=>`<path class="k-berg" d="${mountain(m)}"/>`).join('')}${rose(o.x, o.y, o.r)}</g>`;
+}
+
+// Mountain mark: a peak with hatching on its south-east flank, or a low hump for hills; m = [x, y, width, peak].
+function mountain([x, y, w, peak]){
+  const f = v => v.toFixed(0), q = (a, c, b, t) => (1-t)**2*a+2*(1-t)*t*c+t*t*b;
+  if(peak){
+    const h = w*0.62, tx = x+w*0.04, ty = y-h, cx = x+w*0.22, cy = y-h*0.5, fx = x+w/2;
+    let d = `M${f(x-w/2)} ${y}Q${f(x-w*0.2)} ${f(y-h*0.55)} ${f(tx)} ${f(ty)}Q${f(cx)} ${f(cy)} ${f(fx)} ${y}`;
+    for(const t of [0.25,0.45,0.65]){ const px = q(tx,cx,fx,t), py = q(ty,cy,y,t); d += `M${f(px)} ${f(py)}L${f(px-w*0.07)} ${f(py+(y-py)*0.7)}`; }
+    return d;
+  }
+  const h = w*0.34, ax = x-w/2, bx = x+w/2, cy = y-h*2;
+  let d = `M${f(ax)} ${y}Q${f(x)} ${f(cy)} ${f(bx)} ${y}`;
+  for(const t of [0.62,0.78]){ const px = q(ax,x,bx,t), py = q(y,cy,y,t); d += `M${f(px)} ${f(py)}L${f(px-w*0.06)} ${f(py+(y-py)*0.6)}`; }
+  return d;
+}
+
+// Compass rose of the old charts: rings with ticks, 16 points half dark, half light, N E S O (O for ouest).
+function rose(cx, cy, r){
+  const P = (a, l) => [cx+l*Math.sin(a*Math.PI/180), cy-l*Math.cos(a*Math.PI/180)], pt = (a, l) => P(a, l).map(v=>v.toFixed(0)).join(' ');
+  const star = (a, len, wd) => `<path class="k-rose-dark" d="M${cx} ${cy}L${pt(a, len)}L${pt(a-90, wd)}Z"/><path class="k-rose-light" d="M${cx} ${cy}L${pt(a, len)}L${pt(a+90, wd)}Z"/>`;
+  let ticks = ''; for(let a=0; a<360; a+=11.25) ticks += `M${pt(a, r*0.93)}L${pt(a, a%45 ? r : r*1.05)}`;
+  const points = [[22.5,45,0.5,0.06],[45,90,0.68,0.09],[0,90,0.92,0.12]].map(([a0, step, len, wd])=>{ let d = ''; for(let a=a0; a<360; a+=step) d += star(a, r*len, r*wd); return d; }).join('');
+  const label = (a, t, size) => { const [x, y] = P(a, r*1.22); return `<text class="k-rose-text" x="${x.toFixed(0)}" y="${(y+r*size*0.36).toFixed(0)}" text-anchor="middle" style="font-size:${(r*size).toFixed(0)}px">${t}</text>`; };
+  const ring = k => `<circle class="k-rose-ring" cx="${cx}" cy="${cy}" r="${(r*k).toFixed(0)}"/>`;
+  return `<g class="k-rose-map" aria-hidden="true">${ring(1)}${ring(0.93)}<path class="k-rose-ring" d="${ticks}"/>${ring(0.36)}${points}<circle class="k-rose-dark" cx="${cx}" cy="${cy}" r="${(r*0.05).toFixed(0)}"/>${label(0,'N',0.28)}${label(90,'E',0.2)}${label(180,'S',0.2)}${label(270,'O',0.2)}</g>`;
+}
+
+// A small steamer in screen units (s user units per pixel), bow towards the direction of the leg.
+const SHIP_HULL = 'M-9 0H9L6.5 3.5H-7Z', SHIP_RIG = 'M-4 0V-3H4V0M0.5 -3V-7.5H2.8V-3M-6.5 0V-8.5M6 0V-6M1.6 -9q-2 -2.2 -5 -1.6q-2.2 -2.4 -5 -1.2';
+const ship = (x, y, s, flip, color, title, id) => `<g class="k-ship" transform="translate(${x.toFixed(0)} ${y.toFixed(0)}) scale(${(flip?-s:s).toFixed(2)} ${s.toFixed(2)})" data-k="line" data-id="${id}"><title>${title}</title><path class="k-ship-hull" d="${SHIP_HULL}" style="fill:${color}"/><path class="k-ship-rig" d="${SHIP_RIG}"/></g>`;
 
 function graticule(){
   const f = M.frame, step = nice(f.w/7, [250,500,1000,2000,2500,5000,10000,20000]);
@@ -128,6 +178,16 @@ function symbols(k, f=1){
     const w = 1.2+Math.min(3.5, Math.sqrt(l.fahrzeuge||1)*0.5), dim = selLine && selLine!==l, width = selLine===l ? w+2.5 : w, dash = dashes(l.art, width);
     out.push(`<path class="k-line${dim?' k-dim':''}" d="${d}" style="stroke:${KIND_COLORS[l.art]||'var(--muted)'};stroke-width:${px(width)}${dash?`;stroke-dasharray:${px(dash[0])} ${px(dash[1])}`:''}" data-k="line" data-id="${l.id}"><title>${E(l.name)} · ${N(l.fahrzeuge)} Fahrzeuge · ${l.halte.length} Halte</title></path>`);
     if(l.art==='personenzug'||l.art==='gueterzug') out.push(`<path class="k-rail-inset${dim?' k-dim':''}" d="${d}" style="stroke-width:${px(Math.max(.6,w*.32))};stroke-dasharray:${px(6)} ${px(3)}"/>`);
+  }
+  // Steamers on the ship lines with the most vessels (at most ten), mid-way along each line's longest leg.
+  const ships = M.K.linien.filter(l=>SHIPS.has(l.art) && lineVisible(l)).sort((a,b)=>(b.fahrzeuge||0)-(a.fahrzeuge||0)), afloat = [];
+  for(const l of ships){
+    if(afloat.length >= 10) break;
+    const pts = legs(l).map(s=>P(s.x, s.y)); let leg = null;
+    for(let i=1; i<pts.length; i++){ const [ax, ay] = pts[i-1], [bx, by] = pts[i], len = Math.hypot(bx-ax, by-ay); if(!leg || len > leg.len) leg = {len, x:(ax+bx)/2, y:(ay+by)/2, left:bx<ax}; }
+    if(!leg || afloat.some(a=>Math.hypot(a.x-leg.x, a.y-leg.y) < px(46))) continue;
+    afloat.push(leg);
+    out.push(ship(leg.x, leg.y, px(1.05), leg.left, KIND_COLORS[l.art]||'var(--muted)', `${E(l.name)} · ${N(l.fahrzeuge)} Schiffe`, l.id));
   }
   if(S.layers.has('halte') || selLine){
     const shown = selLine ? new Set(selLine.halte) : null;
@@ -178,7 +238,7 @@ function symbols(k, f=1){
 
 function legend(){
   const {E, KIND_COLORS} = C, label = k => C.kindLabel(k);
-  const T = M.terrain, ink = k => KIND_COLORS[k]||'var(--muted)';
+  const step = M.relief?.hoehenlinien_m ?? M.terrain?.step, ink = k => KIND_COLORS[k]||'var(--muted)';
   const swatch = k => `background:${ink(k)}${SHIPS.has(k)?';background:repeating-linear-gradient(90deg,'+ink(k)+' 0 7px,transparent 7px 11px)'
     :AIR.has(k)?';background:radial-gradient(circle,'+ink(k)+' 0 1.6px,transparent 2.1px) 0 50%/6px 4px repeat-x':''}`;
   return `<div class="k-legend">
@@ -186,7 +246,11 @@ function legend(){
     <div><h4>Städte nach Einwohnern</h4><svg class="k-legend-towns" viewBox="0 0 170 64" aria-hidden="true">${[[500,'500'],[2000,'2.000'],[5000,'5.000']].map(([n,t],i)=>{const r=radius(n), x=[14,58,120][i];return `<circle class="k-town" cx="${x}" cy="${24}" r="${r}"/><text x="${x}" y="${60}" text-anchor="middle">${t}</text>`;}).join('')}</svg></div>
     <div><h4>Betriebe nach Status</h4>${Object.values(STATUS).map(([l,c])=>`<span><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M6 1L11 6L6 11L1 6Z" style="fill:${c}"/></svg>${E(l)}</span>`).join('')}</div>
     <div><h4>Weiteres</h4><span><svg viewBox="0 0 12 12" aria-hidden="true"><rect x="3" y="3" width="6" height="6" class="k-stop"/></svg>Halt (Stationsgruppe)</span><span><svg viewBox="0 0 24 12" aria-hidden="true"><path d="M1 9Q12 0 21 7" class="k-flow" marker-end="url(#k-arrow-legend)"/><defs><marker id="k-arrow-legend" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0L10 5L0 10Z" class="k-arrowhead"/></marker></defs></svg>Ware unterwegs</span><span><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M6 0.5L7.4 4.3L11.5 4.3L8.2 6.8L9.4 10.8L6 8.4L2.6 10.8L3.8 6.8L0.5 4.3L4.6 4.3Z" class="k-mark"/></svg>Wahrzeichen</span>
-      ${T?`<span><i class="k-sw k-sw-land"></i>Land, Höhenlinien alle ${C.N(T.step)} m</span><span><i class="k-sw k-sw-shallow"></i>Flachwasser bis 5 m</span>`:''}</div></div>`;
+      ${M.relief?`<span><svg viewBox="0 0 24 14" aria-hidden="true"><path class="k-berg" d="M2 13Q7 7 12.5 2Q16.5 7 22 13M16 7L14.5 10.5M18.5 9.5L17 12"/></svg>Bergzeichen: Land ab ${C.N(M.relief.berge_ab_m)} m, große ab ${C.N(M.relief.gipfel_ab_m)} m</span>
+        <span><svg viewBox="0 0 24 12" aria-hidden="true"><path class="k-coast" d="M1 3H23"/><path class="k-wline" d="M1 6.5H23M1 9.5H23"/></svg>Küste mit Wasserlinien</span>
+        <span><svg viewBox="0 0 24 12" aria-hidden="true"><path class="k-shoal" d="M2 6H22"/></svg>Untiefe bis 5 m</span>
+        <span><svg viewBox="-12 -10 24 15" aria-hidden="true"><path class="k-ship-hull" d="${SHIP_HULL}" style="fill:${ink('frachtschiff')}"/><path class="k-ship-rig" d="${SHIP_RIG}"/></svg>Dampfer: Schiffslinien mit den meisten Schiffen</span>`
+      :step!=null?`<span><i class="k-sw k-sw-land"></i>Land, Höhenlinien alle ${C.N(step)} m</span><span><i class="k-sw k-sw-shallow"></i>Flachwasser bis 5 m</span>`:''}</div></div>`;
 }
 
 function info(){
@@ -232,7 +296,7 @@ export function karteView(D, ctx){
   const active = K.betriebe.filter(i=>i.status==='aktiv').length, stopped = K.betriebe.filter(i=>i.status==='gestoppt').length;
   const ways = K.warenwege;
   return `<div class="section-header"><div><div class="eyebrow">Belegt · Illustrierte Kartenbeilage</div><h2>Carte illustrée de l’Archipel</h2>
-    <p class="section-lede">Städte nach Einwohnern, Linien nach Art, Betriebe nach Status. Positionen vom ${E(dayName(K.stand.positionen))}${K.gelaende?`, Küsten und Tiefen vom ${E(dayName(K.gelaende.stand))}`:''}.</p></div></div>
+    <p class="section-lede">Städte nach Einwohnern, Linien nach Art, Betriebe nach Status. Positionen vom ${E(dayName(K.stand.positionen))}${K.gelaende?`, Küsten und Tiefen vom ${E(dayName(M.relief?.fein?.stand || K.gelaende.stand))}${M.relief?', Relief mit Blender gerechnet':''}`:''}.</p></div></div>
   <div class="k-controls"><div class="filters k-layers" role="group" aria-label="Ebenen">${LAYERS.filter(([id])=>id!=='gelaende'||K.gelaende).filter(([id])=>id!=='warenwege'||ways?.wege.length).filter(([id])=>id!=='wahrzeichen'||K.wahrzeichen.length).map(([id,l])=>`<button class="j-chip" data-layer="${id}" aria-pressed="${S.layers.has(id)}">${l}</button>`).join('')}</div>
     <label class="k-time"><span>Zeitreise <strong id="k-month">${E(C.monthName(S.month))}</strong></span><input type="range" id="k-slider" min="0" max="${M.months.length-1}" value="${M.months.indexOf(S.month)}" aria-label="Spielmonat der Karte"></label></div>
   <div class="k-frame" style="--k-ratio:${(M.frame.w/M.frame.h).toFixed(4)}">
@@ -248,8 +312,8 @@ export function karteView(D, ctx){
     <div class="k-zoom"><button type="button" data-zoom="1.6" aria-label="Hineinzoomen">+</button><button type="button" data-zoom="0.625" aria-label="Herauszoomen">−</button><button type="button" data-zoom="0" aria-label="Ganze Karte">⤢</button></div></footer>
   </div>
   <div class="k-below"><section class="k-info card" id="k-info" aria-live="polite">${info()}</section>${legend()}</div>
-  <p class="small">${E(K.hinweis)} Zeitreise: Einwohner je Spielmonat aus den Ortsakten; Linien und Betriebe erscheinen ab ihrer ersten Meldung, eingestellte Linien und geschlossene Betriebe fehlen. „Waren unterwegs“ ist eine Stichprobe der Ladung an Bord${ways?` am ${E(dayName(ways.stand))} (${N(ways.stichprobe)} Stücke${ways.gekappt?', gekappt':''})`:''} und nur beim heutigen Stand sichtbar.
-  ${K.nord_geprueft?' Norden ist oben, vom Spieler mit der Spielkarte abgeglichen.':' Die Nordrichtung ist eine Annahme und wird mit der Spielkarte abgeglichen.'}
+  <p class="small">${E(K.hinweis)}${M.relief?' '+E(M.relief.hinweis):''} Zeitreise: Einwohner je Spielmonat aus den Ortsakten; Linien und Betriebe erscheinen ab ihrer ersten Meldung, eingestellte Linien und geschlossene Betriebe fehlen. „Waren unterwegs“ ist eine Stichprobe der Ladung an Bord${ways?` am ${E(dayName(ways.stand))} (${N(ways.stichprobe)} Stücke${ways.gekappt?', gekappt':''})`:''} und nur beim heutigen Stand sichtbar.
+  ${K.nord_geprueft?' Norden ist oben, vom Spieler mit der Spielkarte abgeglichen.':' Die Nordrichtung ist eine Annahme und wird mit der Spielkarte abgeglichen.'} Die Randleiste teilt den sichtbaren Ausschnitt in Kilometer (weit herausgezoomt in 2, 5 oder 10 km).
   Auf der Karte: ${N(K.staedte.length)} Orte, ${N(K.linien.length)} Linien, ${N(K.stationen.length)} Halte, ${N(K.betriebe.length)} Betriebe (${N(active)} produzieren, ${N(stopped)} stehen still).${missing?` Ohne Position: ${['staedte','betriebe','stationen','wahrzeichen'].filter(k=>f[k]).map(k=>`${N(f[k])} ${({staedte:'Orte',betriebe:'Betriebe',stationen:'Halte',wahrzeichen:'Wahrzeichen'})[k]}`).join(', ')}.`:''}</p>`;
 }
 
@@ -266,6 +330,14 @@ function draw(){
   const steps = [50,100,200,250,500,1000,2000,2500,5000,10000,20000], bar = document.getElementById('k-scale');
   const m = steps.filter(x=>x<=120*k).at(-1) || steps[0];
   if(bar) bar.innerHTML = `<i style="width:${Math.round(m/k)}px"></i><span>${m>=1000?C.N(m/1000)+' km':m+' m'}</span>`;
+  // Graduated border: alternating ink and paper sections of 1 km (2, 5 or 10 km when that would be too fine), on the grid.
+  const win = svg.closest('.k-chart-window');
+  if(win){
+    const T = [1000,2000,5000,10000].find(t=>t/k >= 9) || 10000;
+    win.style.setProperty('--kt', (T/k).toFixed(2)+'px');
+    win.style.setProperty('--kox', ((Math.ceil(v.x/T)*T-v.x)/k).toFixed(2)+'px');
+    win.style.setProperty('--koy', ((Math.ceil(v.y/T)*T-v.y)/k).toFixed(2)+'px');
+  }
   const t = svg.querySelector('.k-terrain'); if(t) t.style.display = S.layers.has('gelaende') ? '' : 'none';
 }
 

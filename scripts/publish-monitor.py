@@ -10,10 +10,14 @@ session's segment and index.json. Nothing is committed without confirmation
 Only uses the Python standard library; git and node must be on PATH.
 """
 import argparse
+import glob
 import hashlib
 import importlib
 import json
+import os
 from pathlib import Path
+import re
+import shutil
 import subprocess
 import sys
 
@@ -107,6 +111,71 @@ def published_index(save, folder):
     return json.loads(result.stdout) if result.returncode == 0 else None
 
 
+def grid_sha(heights):
+    return hashlib.sha256(json.dumps(heights, separators=(',', ':')).encode()).hexdigest()
+
+
+def fine_sha(F):
+    # The fine grid counts with its frame and cell, so a grid rejected for another frame is not mistaken for a known one.
+    return grid_sha([F.get(k) for k in ('min_x', 'min_y', 'max_x', 'max_y', 'cell_m', 'height_reference', 'heights')])
+
+
+def find_blender():
+    """Blender for the sea chart relief: environment variable BLENDER, PATH, or the usual install folders."""
+    drives = os.listdrives() if hasattr(os, 'listdrives') else []
+    found = [os.environ.get('BLENDER'), shutil.which('blender')]
+    found += sorted(glob.glob('C:/Program Files/Blender Foundation/Blender*/blender.exe'), reverse=True)
+    for drive in drives:
+        found += sorted(glob.glob(os.path.join(drive, 'Blender*', 'blender.exe')), reverse=True)
+        found += glob.glob(os.path.join(drive, 'SteamLibrary', 'steamapps', 'common', 'Blender', 'blender.exe'))
+    found += glob.glob('C:/Program Files (x86)/Steam/steamapps/common/Blender/blender.exe')
+    return next((f for f in found if f and os.path.isfile(f)), None)
+
+
+def refresh_relief(save, config, monitor):
+    """Render the old-chart relief again when the coarse grid in karte.json or the monitor's fine grid has changed."""
+    folder = ROOT/'saves'/save/'data/journal'
+    try:
+        grid = json.loads((folder/'karte.json').read_text(encoding='utf-8')).get('gelaende')
+    except (OSError, ValueError):
+        return
+    if not grid:
+        return
+    try:
+        relief = json.loads((folder/'relief.json').read_text(encoding='utf-8'))
+    except (OSError, ValueError):
+        relief = {}
+    fine_path = monitor/'history'/'gelaende'/(re.sub(r'[^A-Za-z0-9_.-]', '_', config['world']['world_id'])+'.json')
+    fine_hash = None
+    if fine_path.exists():
+        try:
+            fine_hash = fine_sha(json.loads(fine_path.read_text(encoding='utf-8')))
+        except (OSError, ValueError):
+            pass
+    known_fine = {(relief.get('fein') or {}).get('sha256'), (relief.get('fein_abgelehnt') or {}).get('sha256')}
+    if relief.get('gelaende_sha256') == grid_sha(grid['hoehen']) and (fine_hash is None or fine_hash in known_fine):
+        return
+    blender = find_blender()
+    if not blender:
+        print('Relief: Höhenraster neu, aber Blender nicht gefunden (Umgebungsvariable BLENDER setzen). '
+              'Die Karte zeichnet die Küste bis dahin aus dem groben Raster.')
+        return
+    print('Relief: Höhenraster neu, rechne die Seekarte mit Blender (etwa eine halbe Minute) …')
+    command = [blender, '-b', '--factory-startup', '-noaudio', '--python-exit-code', '1', '-P', str(ROOT/'scripts/render-relief.py'),
+               '--', str(folder)] + (['--fein', str(fine_path)] if fine_hash else [])
+    try:
+        result = subprocess.run(command, capture_output=True, text=True, encoding='utf-8', errors='replace', timeout=900)
+    except (OSError, subprocess.TimeoutExpired) as error:
+        print(f'Relief: Blender nicht ausführbar ({error}); die Karte bleibt beim bisherigen Stand.')
+        return
+    lines = [l for l in result.stdout.splitlines() if l.startswith('render-relief:')]
+    if result.returncode or not lines:
+        print('Relief: Blender fehlgeschlagen, die Karte bleibt beim bisherigen Stand.', (result.stderr or result.stdout)[-1500:], sep='\n')
+        return
+    for line in lines:
+        print('Relief:', line.split(':', 1)[1].strip())
+
+
 def validate():
     for command in (['node', '--check', 'assets/monitor.js'], ['node', 'scripts/validate-monitor.mjs'], ['node', 'scripts/validate-data.mjs'],
                     ['node', 'scripts/validate-journal.mjs'], ['node', 'scripts/build-decade.mjs', '--check']):
@@ -154,6 +223,7 @@ def main():
     print(f"Journal: {journal_sizes['meldungen.json']} Meldungen, {journal_sizes['menschen.json']} Personen, "
           f"{journal_sizes['notizen.json']} Notizen aus dem Notizbuch"
           + (f" · geändert: {', '.join(journal_changed)}" if journal_changed else ' · unverändert'))
+    refresh_relief(args.save, config, Path(args.monitor).resolve())
 
     git('add', '-A', '--', *paths)
     has_changes = git('diff', '--cached', '--quiet', check=False).returncode != 0

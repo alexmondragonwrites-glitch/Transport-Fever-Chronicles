@@ -117,3 +117,41 @@
 .k-frame{container-type:inline-size;max-width:clamp(320px,calc((100vh - 160px) * var(--k-ratio,1) + 44px),760px)}
 .k-cartouche strong{font-size:clamp(21px,5.6cqw,34px)}
 @container (max-width:440px){.k-atlas-heading{grid-template-columns:1fr 64px;gap:12px;padding:12px 6px 18px}.k-edition{display:none}.k-cartouche{padding:8px 10px}.k-cartouche span{font-size:13px}.k-atlas-compass{width:60px}.k-atlas-footer{flex-wrap:wrap;gap:10px}.k-atlas-motto{flex-basis:100%;max-width:none;text-align:center}.k-zoom{margin-left:auto}}
+
+/* Old engraved chart (relief.json/.webp from scripts/render-relief.py): sepia ink over Blender parchment. Coast, water lines,
+   shoals and mountain marks follow the height grid; rose, rhumb lines and waves are ornament. Without the relief the coarse
+   grid is drawn in the same parchment colours. */
+.k-sea{fill:#d9b97f}.k-mid{fill:#dfc28b}.k-shallow{fill:#e8d1a0}.k-land{fill:#f1dcaa}.k-tint0{fill:#e4c992}.k-tint1{fill:#d5b278}
+.k-contour{stroke:#6b4a2b}.k-coast{stroke:#3e2715;stroke-width:1.3px}.k-surf1,.k-surf2{stroke:#f6e7c2}.k-grid{stroke:#5b3b21;stroke-opacity:.12}.k-isobath{stroke:#5b3b21}
+.k-sw-land{background:#f1dcaa}.k-sw-shallow{background:#e8d1a0}
+.k-old .k-coast{stroke-width:1.5px}
+.k-rhumb{fill:none;stroke:#5b3b21;stroke-width:.5px;stroke-opacity:.28;vector-effect:non-scaling-stroke}
+.k-rhumb-main{stroke-width:.8px;stroke-opacity:.4}
+.k-wave{fill:none;stroke:#5b3b21;stroke-width:.9px;stroke-opacity:.5;stroke-linecap:round;vector-effect:non-scaling-stroke}
+.k-wline{fill:none;stroke:#5b3b21;stroke-width:.6px;stroke-linejoin:round;vector-effect:non-scaling-stroke}
+.k-shoal{fill:none;stroke:#5b3b21;stroke-width:1.4px;stroke-dasharray:0 3.6;stroke-linecap:round;stroke-opacity:.6;vector-effect:non-scaling-stroke}
+.k-berg{fill:#f1dcaa;stroke:#4a2f1b;stroke-width:.8px;stroke-linejoin:round;stroke-linecap:round;vector-effect:non-scaling-stroke}
+.k-rose-ring{fill:none;stroke:#4a2f1b;stroke-width:.8px;vector-effect:non-scaling-stroke}
+.k-rose-dark{fill:#4a2f1b}
+.k-rose-light{fill:#f3e0b2;stroke:#4a2f1b;stroke-width:.6px;vector-effect:non-scaling-stroke}
+.k-rose-text{font-family:var(--serif);font-weight:700;fill:#4a2f1b}
+.k-ship{cursor:pointer}
+.k-ship-hull{stroke:#3e2715;stroke-width:.8px;vector-effect:non-scaling-stroke}
+.k-ship-rig{fill:none;stroke:#3e2715;stroke-width:1px;stroke-linecap:round;stroke-linejoin:round;vector-effect:non-scaling-stroke}
+.k-label-town{font-style:italic;fill:#3a2414;stroke:#f3e0b2}.k-label-stop,.k-label-ind{stroke:#f3e0b2;fill:#5a4128}
+/* Graduated border in kilometres: journal-karte.js sets the section length (--kt) and its offset to the view (--kox/--koy). */
+.k-chart-window{--kt:30px;--kox:0px;--koy:0px;padding:7px;border:3px double #5a3d22;background-color:#e7cd96;
+  background-image:linear-gradient(90deg,#4a2f1b 50%,#f2dfb0 50%),linear-gradient(90deg,#4a2f1b 50%,#f2dfb0 50%),linear-gradient(180deg,#4a2f1b 50%,#f2dfb0 50%),linear-gradient(180deg,#4a2f1b 50%,#f2dfb0 50%);
+  background-size:calc(2 * var(--kt)) 3px,calc(2 * var(--kt)) 3px,3px calc(2 * var(--kt)),3px calc(2 * var(--kt));
+  background-repeat:repeat-x,repeat-x,repeat-y,repeat-y;
+  background-position:calc(7px + var(--kox)) 2px,calc(7px + var(--kox)) calc(100% - 2px),2px calc(7px + var(--koy)),calc(100% - 2px) calc(7px + var(--koy))}
+.k-chart-window:after{inset:7px;background:radial-gradient(ellipse at center,transparent 62%,#5a321426 100%);opacity:1}
+/* The frame around the chart in the same warm parchment and sepia ink */
+.k-frame{background:#ead5a6;background-image:radial-gradient(ellipse at 30% 18%,#f7e7c070,transparent 62%),repeating-linear-gradient(4deg,transparent 0 3px,#7051320a 3px 4px);border-color:#5a3d22}
+.k-frame:before{border-color:#8a6a43}
+.k-atlas-heading,.k-atlas-footer{color:#3a2414}
+.k-cartouche{background:#f3e2b6;border-color:#5a3d22;box-shadow:0 0 0 4px #ead5a6,0 0 0 5px #8a6a43}
+.k-cartouche span{color:#5a3d22}
+.k-atlas-compass svg{fill:#4a2f1b;stroke:#4a2f1b}.k-atlas-compass .k-compass-light{fill:#f3e2b6}
+.k-zoom button{background:#f0dcae;border-color:#6b4a2b;color:#3a2414}
+.k-berg{stroke-width:.9px}

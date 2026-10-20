@@ -1,5 +1,6 @@
 // Le Journal des Alizés: consistency of measured journal data and the house rules for editorial pieces.
 import assert from 'node:assert/strict';
+import {createHash} from 'node:crypto';
 import {existsSync, readFileSync} from 'node:fs';
 import {join} from 'node:path';
 // Optional argument: another journal folder, e.g. from scripts/test-build-journal.py.
@@ -84,6 +85,22 @@ if(existsSync(join(base, 'karte.json'))){
     assert([w.stadt, w.betrieb, w.halt].filter(v => v != null).length === 1 && w.anzahl >= 1 && w.ware, 'goods way from '+w.von);
     if(w.betrieb != null) assert(Number.isInteger(w.betrieb));
   }
+}
+
+// Relief: relief.json/.webp from scripts/render-relief.py (Blender). Stale is no error: the page then draws the coast from the grid.
+if(existsSync(join(base, 'relief.json'))){
+  const R = read('relief.json'), r = R.rahmen, num = v => typeof v === 'number' && Number.isFinite(v);
+  assert.equal(R.schema_version, 1);
+  assert(/^[0-9a-f]{64}$/.test(R.gelaende_sha256) && /^[0-9a-f]{12}$/.test(R.bild_version), 'relief hashes');
+  assert(/^[a-z0-9-]+\.webp$/.test(R.bild) && existsSync(join(base, R.bild)), 'relief image');
+  assert(num(r.min_x) && num(r.max_x) && num(r.min_y) && num(r.max_y) && r.max_x > r.min_x && r.max_y > r.min_y, 'relief frame');
+  assert(Array.isArray(R.pfade.wasserlinien) && R.pfade.wasserlinien.every(c => num(c.m) && c.m > 0), 'relief water lines');
+  for(const d of [R.pfade.kueste, R.pfade.flach, ...R.pfade.wasserlinien.map(c => c.d)]) assert(typeof d === 'string' && /^[MLZ0-9 -]*$/.test(d), 'relief path data');
+  assert(num(R.berge_ab_m) && num(R.gipfel_ab_m) && R.berge.every(m => m.length === 4 && m.slice(0, 3).every(Number.isInteger) && m[2] > 0 && [0, 1].includes(m[3])), 'relief mountain marks');
+  assert(R.wellen.every(w => w.length === 2 && w.every(Number.isInteger)), 'relief wave marks');
+  assert(Number.isInteger(R.rose.x) && Number.isInteger(R.rose.y) && R.rose.r > 0, 'relief compass rose');
+  if(!chart?.gelaende || createHash('sha256').update(JSON.stringify(chart.gelaende.hoehen)).digest('hex') !== R.gelaende_sha256)
+    warnings.push('relief.json passt nicht zum Höhenraster in karte.json: die Karte zeichnet Küsten aus dem Raster, bis scripts/render-relief.py neu läuft.');
 }
 
 // Epochs: zeitleiste.json exists only with a rules file (data/epochen.json). Every reached step names its occasion, comes
