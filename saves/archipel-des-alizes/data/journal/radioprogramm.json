@@ -1,5 +1,328 @@
 {
   "schema_version": 1,
   "hinweis": "Radioprogramm der Rundfunkzeit: von der Redaktion von Hand geschrieben und erfunden (Fiktion). Sender, Sendungen und Zeiten gibt es im Spiel nicht. Die Rubrik erscheint erst ab dem Monat, den zeitleiste.json für sie nennt (Stufe 5).",
-  "programme": []
+  "programme": [
+    {
+      "id": "1922-11-eroeffnungswoche",
+      "date": "1922-11",
+      "art": "fiktion",
+      "sender": "Radio Alizés · Sender Bourg-l’Écorce",
+      "titel": "Eröffnungswoche, 19. bis 25. November 1922",
+      "grounding": "Gemessen: Bourg-l’Écorce 4.012 Einwohner am 17.11.1922, als erste Stadt des Archipels über 4.000 (Anlass der Rundfunkzeit in zeitleiste.json); Netz 1.186 Fahrzeuge auf 210 Linien (November 1922); Rum in Bourg-l’Écorce 477 verlangt, 0 gedeckt; Vauclaire Maschinenfabrik neu im Register am 21.11.1922 (Stufe 1, Eingänge laut Spiel Stahl und Kunststoff); Valombre 765 und Garches 405 Einwohner (21.11.1922); Burg des weissen Reihers in Valmorin Stufe 1 von 4. Radio, Sender, Sendungen, Sendezeiten, Sprecher und Musik gibt es im Spiel nicht. Erfunden: Radio Alizés, Studio über der Gare Centrale, alle Sendungen, Zeiten, Musikstücke, der Bürgermeister, die Kapellen, die Filme und die Schläferliga als Sendung. Honorine, Anselme und Paul sind wiederkehrende erfundene Figuren.",
+      "tage": [
+        {
+          "tag": "Sonntag, 19. November",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Hier spricht Bourg-l’Écorce",
+              "text": "Eröffnung. Der Bürgermeister begrüßt die Hörer. Bourg zählt seit Freitag 4.012 Einwohner, als erste Stadt des Archipels mehr als viertausend."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Konzert der Stadtkapelle",
+              "text": "Märsche und Walzer aus dem Saal über der Gare Centrale."
+            },
+            {
+              "zeit": "21.15",
+              "titel": "Die Glocken des Archipels",
+              "text": "Jeden Sonntag eine andere Kirche. Heute: Bourg-l’Écorce."
+            },
+            {
+              "zeit": "22.00",
+              "titel": "Sendeschluss mit der Bahnhofsuhr"
+            }
+          ]
+        },
+        {
+          "tag": "Montag, 20. November",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Aus den Messbüchern",
+              "text": "Zahlen der Woche, ohne Kommentar gelesen: Die Société zählt 1.186 Fahrzeuge auf 210 Linien."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Fragen Sie Honorine",
+              "text": "Die Wirtin von Chez Honorine in Port des Alizés antwortet auf Hörerbriefe. Vorab der Rum-Stand: Bourg verlangt 477, gedeckt null."
+            },
+            {
+              "zeit": "20.45",
+              "titel": "Tanzmusik aus dem Hafen"
+            }
+          ]
+        },
+        {
+          "tag": "Mittwoch, 22. November",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Landfunk",
+              "text": "Neu in Vauclaire: eine Maschinenfabrik, seit gestern im Register, Stufe eins. Sie braucht Stahl und Kunststoff. Wer liefert?"
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Sportfunk: Die Schläferliga",
+              "text": "Tabelle der stillen Städte. Valombre 765, Garches 405. Garches meldet: drei mehr seit dem 26. Oktober. Der Pfarrer bittet, nicht zu jubeln."
+            },
+            {
+              "zeit": "20.30",
+              "titel": "Kinofunk",
+              "text": "Was die Lichtspielhäuser in Bourg und Port in dieser Woche zeigen. Heute: ein Lustspiel mit einer Postkutsche."
+            }
+          ]
+        },
+        {
+          "tag": "Freitag, 24. November",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Abendkonzert aus Valmorin",
+              "text": "Die Kapelle vom Quai spielt vor der Lärmschutzwand. In der Pause die Burg-Meldung, verlesen von Anselme: Stufe eins."
+            },
+            {
+              "zeit": "21.00",
+              "titel": "Musik zum Wochenende"
+            }
+          ]
+        },
+        {
+          "tag": "Samstag, 25. November",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Hörerpost",
+              "text": "Der Sender liest die ersten Briefe, aus Bourg, Vauclaire, Port, Valmorin, Garches und Roquemer. Mit einer Antwort an Paul in Vauclaire."
+            },
+            {
+              "zeit": "20.30",
+              "titel": "Tanz in den Sonntag"
+            }
+          ]
+        }
+      ],
+      "refs": {
+        "staedte": [
+          174605,
+          174632,
+          174634,
+          174621,
+          174644,
+          174607
+        ],
+        "personen": []
+      }
+    },
+    {
+      "id": "1922-12-weihnachtswoche",
+      "date": "1922-12",
+      "art": "fiktion",
+      "sender": "Radio Alizés · Sender Bourg-l’Écorce",
+      "titel": "Weihnachtswoche, 18. bis 25. Dezember 1922",
+      "grounding": "Gemessen: RC Toys-Vau-Sin-IC-1 (Unter-Vauclaire Station – Sin-le-Noble Station West) ab 10.12.1922 mit 3 Lastwagen, in jeder Messung ohne Ladung; Vauclaire Toys 164 verlangt, 0 gedeckt (Dezember 1922); Port des Alizés Rum 79 gedeckt am 19.12.1922 (254 verlangt), Bourg-l’Écorce Rum 0; Valombre 772 und Garches 405 Einwohner (21.12.1922); Roquemer 986 Einwohner am 24.12.1922. Radio, Sender, Sendungen, Sendezeiten, Sprecher und Musik gibt es im Spiel nicht. Erfunden: Radio Alizés, alle Sendungen, Zeiten, Musik, Lesungen, Christmette, Grüße und Wünsche. Das Märchen vom Holzpferd erschien im November 1920 in dieser Zeitung; Paul, Honorine und Madame Odile sind wiederkehrende erfundene Figuren.",
+      "tage": [
+        {
+          "tag": "Montag, 18. Dezember",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Aus den Messbüchern",
+              "text": "Seit dem 10. Dezember fahren drei Lastwagen mit „Toys“ im Namen zwischen Unter-Vauclaire und Sin-le-Noble. Geladen haben sie bisher nichts."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Adventsmusik",
+              "text": "Der Kinderchor von Sin-le-Noble."
+            }
+          ]
+        },
+        {
+          "tag": "Mittwoch, 20. Dezember",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Fragen Sie Honorine",
+              "text": "Heute: Was schenkt man einer Stadt ohne Rum? Port bekommt inzwischen wieder 79, Bourg weiter keinen."
+            },
+            {
+              "zeit": "20.15",
+              "titel": "Kinofunk",
+              "text": "Weihnachtsprogramm der Lichtspielhäuser."
+            }
+          ]
+        },
+        {
+          "tag": "Freitag, 22. Dezember",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Sportfunk: Die Schläferliga",
+              "text": "Letzter Spieltag des Jahres. Valombre 772, Garches 405. Roquemer steht vor der Tausend und wird nächstes Jahr aufgestellt."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Bunter Abend aus Port des Alizés"
+            }
+          ]
+        },
+        {
+          "tag": "Sonntag, 24. Dezember, Heiligabend",
+          "sendungen": [
+            {
+              "zeit": "18.00",
+              "titel": "Die Glocken des Archipels",
+              "text": "Von Garches bis Roquemer, aufgenommen in der Woche davor."
+            },
+            {
+              "zeit": "18.30",
+              "titel": "Für die Kinder: Das Märchen vom Holzpferd, das elf Monate reiste",
+              "text": "Auf Wunsch eines Hörers aus Vauclaire, zehn Jahre alt."
+            },
+            {
+              "zeit": "19.30",
+              "titel": "Weihnachtliche Musik"
+            },
+            {
+              "zeit": "23.30",
+              "titel": "Christmette aus Bourg-l’Écorce"
+            }
+          ]
+        },
+        {
+          "tag": "Montag, 25. Dezember",
+          "sendungen": [
+            {
+              "zeit": "11.00",
+              "titel": "Weihnachtskonzert"
+            },
+            {
+              "zeit": "19.30",
+              "titel": "Grüße der Hörer",
+              "text": "Nach Vauclaire, Roquemer und Sin-le-Noble, und ein Gruß aus Fontenay-aux-Roses nach La Mulatière, ohne Musikwunsch."
+            },
+            {
+              "zeit": "20.30",
+              "titel": "Tanz am Weihnachtsabend"
+            }
+          ]
+        }
+      ],
+      "refs": {
+        "staedte": [
+          174634,
+          174617,
+          174632,
+          174605,
+          174621,
+          174644,
+          174606,
+          174615,
+          174631
+        ],
+        "personen": []
+      }
+    },
+    {
+      "id": "1923-01-neujahrswoche",
+      "date": "1923-01",
+      "art": "fiktion",
+      "sender": "Radio Alizés · Sender Bourg-l’Écorce",
+      "titel": "Neujahrswoche, 31. Dezember 1922 bis 6. Januar 1923",
+      "grounding": "Gemessen: Kasse der Société 1.685,0 Mio. am 28.12.1922 und 1.690,0 Mio. am 01.01.1923 (1.376,2 Mio. am 02.09.1921); Netz 1.189 Fahrzeuge auf 211 Linien; Bourg-l’Écorce 4.035 Einwohner (Januar 1923); Garches 402 ab 09.02.1922 und 405 ab 26.10.1922; Premiere Frachtflugzeug am 09.02.1922; Nyons Holzfällerlager West neu im Register am 05.01.1923 (Stufe 3); RC Toys-Vau-Sin-IC-1 bis 05.01.1923 ohne Ladung, Vauclaire Toys 165 verlangt, 0 gedeckt (01.01.1923). Radio, Sender, Sendungen, Sendezeiten, Sprecher und Musik gibt es im Spiel nicht. Erfunden: Radio Alizés, alle Sendungen, Zeiten, Musik, Neujahrsansprache, Raketen, Rückblick als Sendung und Dreikönigsrätsel. Paul und Madame Rosalie sind wiederkehrende erfundene Figuren.",
+      "tage": [
+        {
+          "tag": "Sonntag, 31. Dezember, Silvester",
+          "sendungen": [
+            {
+              "zeit": "20.00",
+              "titel": "Das Jahr in Zahlen",
+              "text": "Rückblick 1922: Garches wächst zum ersten Mal seit 1904, die Société fliegt Fracht, Bourg zählt über viertausend. Die Kasse steht am 28. Dezember bei 1.685 Millionen."
+            },
+            {
+              "zeit": "21.00",
+              "titel": "Silvesterball aus dem Hafen"
+            },
+            {
+              "zeit": "23.55",
+              "titel": "Mitternacht über Port des Alizés",
+              "text": "Glocken und Raketen, live vom Kai."
+            }
+          ]
+        },
+        {
+          "tag": "Montag, 1. Januar, Neujahr",
+          "sendungen": [
+            {
+              "zeit": "12.00",
+              "titel": "Neujahrsansprache des Bürgermeisters von Bourg-l’Écorce",
+              "text": "4.035 Einwohner, sagt er, und für jeden ein guter Vorsatz."
+            },
+            {
+              "zeit": "19.30",
+              "titel": "Aus den Messbüchern",
+              "text": "Die Société beginnt das Jahr mit 1.189 Fahrzeugen auf 211 Linien und 1.690 Millionen in der Kasse."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Neujahrskonzert"
+            }
+          ]
+        },
+        {
+          "tag": "Mittwoch, 3. Januar",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Landfunk",
+              "text": "Wie man im Winter zu Fuß über Land kommt. Für alle Orte ohne Haltestelle."
+            },
+            {
+              "zeit": "20.15",
+              "titel": "Kinofunk"
+            }
+          ]
+        },
+        {
+          "tag": "Freitag, 5. Januar",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Aus den Messbüchern",
+              "text": "Neu in Nyons: ein Holzfällerlager West, Stufe drei. In Vauclaire fahren die Spielzeug-Lastwagen weiter leer, 165 Spielzeuge werden verlangt."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Musik zum Wochenende"
+            }
+          ]
+        },
+        {
+          "tag": "Samstag, 6. Januar, Dreikönig",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Hörerpost",
+              "text": "Mit einer Meldung von Paul aus Vauclaire: Lastwagen noch leer, Pferd noch vor der Tür."
+            },
+            {
+              "zeit": "20.15",
+              "titel": "Das Dreikönigsrätsel",
+              "text": "Eine Stadt, drei Zahlen: 399, 402, 405. Wer sie errät, bekommt eine Postkarte von Madame Rosalie."
+            }
+          ]
+        }
+      ],
+      "refs": {
+        "staedte": [
+          174605,
+          174632,
+          174644,
+          174604,
+          174634
+        ],
+        "personen": []
+      }
+    }
+  ]
 }

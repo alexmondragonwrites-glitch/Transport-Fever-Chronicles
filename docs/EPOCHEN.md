@@ -186,7 +186,7 @@ Vom Spieler bestätigt (18.10.2026). Der Name ist ein eigenes Merkmal und wechse
 | 12 | alizes-journal.fr | Die Zeitung geht online |
 | 14 | Alizés | App-Name, nur noch ein Wort |
 
-## In dieser Welt (Stand Spiel 13.10.1921)
+## In dieser Welt (Stand Spiel 05.01.1923)
 
 So steht es in `zeitleiste.json`, berechnet aus den Messungen:
 
@@ -196,17 +196,18 @@ So steht es in `zeitleiste.json`, berechnet aus den Messungen:
 | 2 Schlichtere Überschriften | Dezember 1918 | Kasse erstmals über 1 Milliarde (13.12.1918, 1.004,1 Mio.) |
 | 3 Erste Fotos | Januar 1919 | Daimler Decksitzwagen, laut Spiel ab 1919 verfügbar, erstmals im Betrieb 06.01.1919 (Meldung „Neues Fahrzeugmodell“) |
 | 4 Ende der Kutschenzeit | Juni 1920 | Premiere Flugzeug am 14.06.1920 (Linie Port des Alizés – Sin-le-Noble), Name „Journal des Alizés“ |
-| 5 Rundfunkzeit | noch offen (frühestens Januar 1922, spätestens Januar 1927) | größte Stadt Bourg-l’Écorce mit 3.828 Einwohnern (Oktober 1921), 4.000 fehlen noch |
+| 5 Rundfunkzeit | November 1922 | Bourg-l’Écorce zählt am 17.11.1922 als erste Stadt 4.012 Einwohner (Meldung „Bourg-l’Écorce zählt 4.000 Einwohner“), Rubrik „Radioprogramm“ ab dieser Ausgabe |
 
 Krisenpapier: bisher kein Fall (frühestens 1925).
 
 Name der Gesellschaft (Merkmal `firma`, Spielervorgabe vom 19.10.2026): bis September 1921 „Société des Routes et des Rails“, ab der Ausgabe Oktober 1921 „Société des Alizés — Routes, Voyages et Commerce“ mit Notiz „In eigener Sache“ und sechs Ausgaben lang „vormals Société des Routes et des Rails“.
 
-Die Zeitung nimmt im Juni 1920 Abschied von der Kutschenzeit, die Kutschen selbst aber noch nicht: Laut Fuhrpark fahren im Oktober 1921 weiter **drei Postkutschen** (gekauft 1900) auf der Buslinie in Anse Dorée. Das ist Stoff für eine Geschichte, oder eine Entscheidung im Spiel.
+Die Zeitung nimmt im Juni 1920 Abschied von der Kutschenzeit, die Kutschen selbst aber noch nicht: Laut Fuhrpark fahren im Januar 1923 weiter **drei Postkutschen** (gekauft 1900) auf der Buslinie in Anse Dorée (Grande Rue – Domaine des Alizés); im August 1922 fuhr in den Geschichten ein Brautpaar damit („Tischordnung“). Das ist Stoff für eine Geschichte, oder eine Entscheidung im Spiel.
 
 ## Offene Fragen
 
-- Erstes Radioprogramm schreiben, sobald Stufe 5 erreicht ist (eine Stadt mit 4.000 Einwohnern, frühestens 1922).
+- Stufe 6 (Dreißiger/Vierziger) bauen, kurz bevor das Spiel sie erreichen kann (frühestens 1932).
+- Radioprogramm Monat für Monat weiterschreiben (bisher November 1922 bis Januar 1923, Sender „Radio Alizés · Sender Bourg-l’Écorce“; wiederkehrende Sendungen in `JOURNAL.md` unter „Rundfunkzeit“).
 
 Geklärt am 18.10.2026: Auslöser der Stufen 6, 9, 11, 13 und 14 (Technik-Jahrgänge), Krise als Zustand, Namen je Stufe, Schalter „im heutigen Stil lesen“ kommt, nur das Journal verändert sich, Umfang der ersten Runde (Mechanik, Krisenpapier, Stufen 1 bis 5). Ebenfalls am 18.10.2026: Jost liegt als freie geometrische Schrift der Stufe 4 im Repository (siehe „Schriften“).
 
@@ -214,5 +215,5 @@ Geklärt am 18.10.2026: Auslöser der Stufen 6, 9, 11, 13 und 14 (Technik-Jahrg�
 
 1. Erledigt: Regeldatei `data/epochen.json`, Auswertung in `build-journal.py`, `zeitleiste.json` mit Stufen und Zuständen, Validator und Tests (frühestens, spätestens, Auslöser vor „frühestens“, Zustand beginnt und endet, Rücksprung ändert nichts, gleiche Messungen, ohne Regeldatei byte-identisch).
 2. Erledigt: Anzeige-Gerüst in `journal.js`, Stile für die Stufen 1 bis 4 und das Krisenpapier, Name je Stufe, Notiz „In eigener Sache“, Schalter „im heutigen Stil lesen“, lokale geometrische Schrift (Jost).
-3. Erledigt: Rubriken-Gerüst (Rubrik erscheint ab ihrem Monat) und die Rundfunkzeit (Stufe 5, Radioprogramm von Hand; in dieser Welt noch nicht erreicht, im Browser mit Testdaten geprüft).
+3. Erledigt: Rubriken-Gerüst (Rubrik erscheint ab ihrem Monat) und die Rundfunkzeit (Stufe 5, Radioprogramm von Hand; in dieser Welt seit November 1922, erste Programme November 1922 bis Januar 1923).
 4. Jede spätere Stufe kurz bevor das Spiel sie erreicht.
