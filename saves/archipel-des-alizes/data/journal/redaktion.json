@@ -4580,6 +4580,549 @@
         ],
         "betriebe": []
       }
+    },
+    {
+      "id": "1923-02-zwei-fassungen-garches",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1923-02",
+      "lead": true,
+      "rubrik": "Zwei Fassungen · Garches",
+      "titel": "„Sind Sie der andere?“ Der 14. Januar 1923 in Garches, zweimal erzählt",
+      "teaser": "Am Sonntag, dem 14. Januar 1923, wollten sich Isidore Valère und Marceline Philogène vor der Kirche von Garches treffen, die letzten beiden aus der Gruppe von 1904. Hinterher hat jeder aufgeschrieben, wie es war. Die beiden Fassungen stimmen nicht überein. Wir drucken beide, dazu eine dritte vom Rand des Kirchenbuchs.",
+      "body": [
+        "Fassung Isidore Valère, Fontenay-aux-Roses, geschrieben am Dienstag danach. Ich bin um sechs losgegangen, im Dunkeln, damit ich nicht zu spät komme, und war natürlich zu früh. 23,6 Kilometer, sagt die Seekarte. Meine Füße sagen etwas anderes, aber sie haben keine Seekarte. Kurz vor Garches kam ich an Sin-le-Noble vorbei, wie angekündigt. Ein Lastwagen mit „Toys“ an der Tür überholte mich, leer bis unters Dach. Ich habe ihm zugenickt. Wir waren beide nicht zum Vergnügen unterwegs.",
+        "Garches sah aus wie immer, nur mit sechs Leuten mehr als zu meiner Zeit. Vor der Kirche stand eine Frau mit einem Korb und sah zum Turm hinauf, als warte sie, dass er etwas sagt. Ich habe gefragt: „Sind Sie die andere?“ Sie hat geantwortet: „Ich habe zuerst gefragt.“ Das stimmt nicht. Ich war zuerst. Ich hatte seit Neujahr geübt, sie erst seit dem 4. Januar, so steht es in ihrem eigenen Brief.",
+        "Mademoiselle Eulalie hatte den Teller vom Erntedank 1921 aufgedeckt und einen zweiten daneben. Es gab Fleischtopf. In den Läden lagen 27 Stück Fleisch für 168, die es verlangen, und der Herr Pfarrer sagte, für zwei Gäste reiche das, für eine Gemeinde nicht. Er hat das Tischgebet kurz gehalten. Ich glaube, aus Rücksicht auf die Gäste, nicht auf das Fleisch.",
+        "Wir haben bis in den Nachmittag geredet. Über den Dezember 1904, an den sie sich anders erinnert als ich. Über Lamballe-Armor, wo sie gewohnt hat, keine sieben Kilometer von meinem Bett. Sie sagt, sie sei 1907 zum ersten Mal Automobil gefahren und 1912 mit der Société. Ich bin nie gefahren. Sie sagt, das sei keine Tugend. Ich sage, es sei auch kein Laster. Wir haben uns auf „Gewohnheit“ geeinigt.",
+        "Den Rückweg kennen Sie. Die Bücher der Société haben mich an diesem Sonntag übrigens erwischt: zu Fuß, unterwegs, auf dem Weg zu meinen Einkäufen, schreiben sie. Das ist nicht ganz falsch. Ich hatte etwas besorgt. Einen Sonntag.",
+        "Fassung Marceline Philogène, La Mulatière, geschrieben am Montag danach. Ich war um zehn da, er nicht. Er kam um Viertel nach und behauptet, er habe seit neun hinter der Kirche gestanden, weil er nicht wusste, wo vorn ist. Ich habe gefragt: „Sind Sie der andere?“ Er hat sofort gesagt: „Ich habe zuerst gefragt.“ Das war nicht wahr, aber es war schön, wie schnell es ihm einfiel. Nach achtzehn Jahren in denselben Büchern muss man sich nicht mit Höflichkeiten aufhalten.",
+        "Den Hut hat er nicht getragen, er hat ihn in der Hand gehalten. Als ich fragte, warum, sagte er, damit ich ihn erkenne. Erkannt habe ich ihn an etwas anderem: Er wusste nicht, wohin mit dem Hut. So sieht einer aus, der seit achtzehn Jahren nur zu Fuß geht. Er hat nie eine Hand für einen Haltegriff gebraucht.",
+        "Lamballe-Armor habe ich gegrüßt, wie versprochen. Hineingesehen habe ich doch, ganz kurz. Es hat sich nichts verändert, 241 Einwohner, sagt die Zeitung, und die Straße hat mich nicht erkannt. Ich sie schon.",
+        "Über das Essen schreibe ich nur, dass Mademoiselle Eulalie mir den Teller hingestellt hat, der für ihn gedacht war, und ihm einen neuen. Er hat es nicht bemerkt. Sie hat mir zugezwinkert. Ich glaube, in diesem Pfarrhaus wird mehr gewettet als bei Honorine.",
+        "Ich bin den kürzeren Teil zurückgegangen, 9,1 Kilometer, und war vor dem Dunkeln zu Hause. Die Bücher haben mich unterwegs gesehen, auf dem Weg nach Hause. Das stimmt. Ich bin lange nicht mehr so gern nach Hause gegangen.",
+        "Abgemacht haben wir: Wir schreiben weiter, und wir treffen uns, wenn es etwas zu feiern gibt. Er sagt, dann sehe man sich selten. Ich sage, dann müsse man eben mehr feiern.",
+        "Fassung Eulalie, Pfarrhaus Garches, am Rand des Kirchenbuchs, 14. Januar 1923: Beide haben gleichzeitig gefragt. Ich stand in der Tür und habe es gehört. Der Herr Pfarrer sagt, wenn zwei gleichzeitig fragen und beide antworten, sei es unerheblich, wer zuerst war. Eingetragen: zwei Gäste, keine Seelen. Die Zahl bleibt 405. Der Teller ist gespült und steht wieder im Schrank, diesmal vorn.",
+        "Nachtrag, Anfang Februar, aus einem Brief von Isidore Valère: In Fontenay steht seit dem 8. Januar eine Lebensmittelfabrik im Register, Stufe eins. Sie tut noch nichts, und eine Linie gibt es weiterhin nicht. Ich gehe trotzdem jeden Tag an der Stelle vorbei, wo eine Haltestelle hinpassen würde. Man soll vorbereitet sein. M. schreibt, das sei das Romantischste, was ich je gesagt habe. Ich habe es nicht so gemeint. Vielleicht doch."
+      ],
+      "grounding": "Gemessen (feste, nicht repräsentative Beobachtungsgruppe): Isidore Valère (45714) und Marceline Philogène (126758) seit 30.12.1904 in der Gruppe. In der Messung vom 14.01.1923 sind beide zu Fuß und unterwegs; Ziel von Isidore Valère ist das Gebäude, das das Spiel als seinen Einkaufsort führt, Ziel von Marceline Philogène ihre eigene Wohnung. Wo die beiden dabei waren, misst der Monitor nicht. 1923 gehen beide jeden ihrer 100 beobachteten Wege zu Fuß; Marceline Philogène fuhr laut Messung erstmals am 27.07.1907 Automobil und am 11.09.1912 mit der Société. Garches 405 Einwohner seit 26.10.1922 (399 bis Januar 1922, Isidore Valère wohnte dort bis April 1920), Fleisch 27 von 168 am 14.01.1923. RC Toys-Vau-Sin-IC-1 fährt bis zum 24.02.1923 in jeder Messung ohne Ladung. Lamballe-Armor 241 Einwohner (Januar 1923). Fontenay-aux-Roses Lebensmittelfabrik neu im Register am 08.01.1923, Stufe 1, ohne Produktion; in Fontenay-aux-Roses und La Mulatière liegt der Anteil der Société an den Wegen in jeder Messung seit 1904 bei null. Abstände der Stadtmitten auf der Seekarte: Fontenay-aux-Roses – Garches 23,6 km, La Mulatière – Garches 9,1 km. Erfunden: Treffen, Uhrzeiten, Gespräch, Essen, Hut, Korb, Briefe und ihre Daten, Gefühle. Der Teller und Mademoiselle Eulalie stammen aus dem Rezept (Oktober 1921) und dem Kirchenbuch (Februar 1922), die Verabredung aus der Wegbeschreibung (Januar 1923). Namen der Personen von der Redaktion vergeben.",
+      "refs": {
+        "staedte": [
+          174644,
+          174615,
+          174631,
+          174614,
+          174617
+        ],
+        "personen": [
+          45714,
+          126758
+        ],
+        "linien": [
+          389477
+        ],
+        "betriebe": [
+          37008
+        ]
+      }
+    },
+    {
+      "id": "1923-03-schiedsspruch-wette-vier",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1923-03",
+      "lead": true,
+      "rubrik": "Schiedsspruch · Port des Alizés – Vauclaire",
+      "titel": "In Sachen Honorine gegen das Spielzeug. Der Schiedsspruch zu Wette 4",
+      "teaser": "Im Juni 1920 hat Honorine gewettet: Wenn das erste Spielzeug in Vauclaire ankommt, fliegt sie mit. Ende Februar 1923 fährt der Spielzeug-Lastwagen zum ersten Mal voll, am 25. März liegen in Vauclaire zwölf Stück in den Läden. Inspecteur Lebrun, Schiedsrichter des Wettbuchs, hat entschieden. Der Spruch hängt bei Chez Honorine über der Kasse.",
+      "body": [
+        "Schiedsgericht des Wettbuchs von Chez Honorine, am Hafen von Port des Alizés. Schiedsrichter: Inspecteur Lebrun. Beisitzer: die Messbücher der Société. Sache: Wettbuch, Seite 41, Wette 4, eingetragen am 14. Juni 1920, Wortlaut: „Wenn das erste Spielzeug in Vauclaire ankommt, fliege ich mit.“ Ergänzt durch ein Telegramm der Wettenden an Paul in Vauclaire, Dezember 1922: „Lastwagen zählt nicht. Ankunft zählt.“",
+        "Spruch. Die Wette ist fällig. Die Wettende fliegt, und zwar mit der Linie der Société von Port des Alizés nach Sin-le-Noble. Den Rest bis Vauclaire, keine vier Kilometer, regelt sie selbst. Die Kosten des Glases trägt, wer es bestellt.",
+        "Tatbestand, erstens. Vauclaire verlangt Spielzeug seit dem 6. Februar 1918. In keiner Messung seither lag dort ein einziges in den Läden. Am 10. Dezember 1922 hat die Société drei Lastwagen in Dienst gestellt, Linie RC Toys-Vau-Sin-IC-1, zwischen Unter-Vauclaire Station und Sin-le-Noble Station West. Sie sind bis zum 24. Februar 1923 in jeder Messung leer gefahren.",
+        "Tatbestand, zweitens. Am 28. Februar 1923 sind alle 36 Plätze mit Spielzeug belegt. Die Wettende hat dazu erklärt, ein voller Lastwagen sei immer noch ein Lastwagen und zähle nach ihrem eigenen Telegramm nicht. Das Gericht folgt ihr darin, mit Bedauern und unter Hinweis darauf, dass sie an diesem Abend drei Runden ausgegeben hat, ohne zu sagen, wofür.",
+        "Tatbestand, drittens. Am 18. März 1923 verlangt Vauclaire 169 Spielzeuge und hat keines. Am 25. März hat es zwölf, am 29. März siebzehn. Damit ist das Spielzeug angekommen, und zwar im Laden, wo man es kaufen kann. Weiter kann ein Spielzeug nicht ankommen, es sei denn bei einem Kind, und darüber führt die Société keine Bücher.",
+        "Zeugenaussage Paul, Vauclaire, zehn Jahre, nach eigener Angabe fast elf, schriftlich eingereicht, mit Zeichnung: „Ich habe es gesehen. Es war ein Kreisel. Er war rot. Er hat sich gedreht.“ Auf die Rückfrage des Gerichts, ob er das auch in den Messbüchern gesehen habe: „Nein, im Laden. Marthe hat es aufgeschrieben, damit es eine Messung ist.“ Das Gericht lässt die Aussage zu. Die Zeichnung zeigt das Brettpferd des Großvaters neben dem Kreisel. Das Pferd schaut weg, aus Höflichkeit, schreibt Paul.",
+        "Zeugenaussage des Großvaters, Vauclaire, schriftlich: „Erst kommt das Schild, dann der Ort. Diesmal kam erst der Lastwagen, dann das Spielzeug. Es ist dasselbe.“ Das Gericht hat die Aussage nicht ganz verstanden und lässt sie gerade deshalb zu.",
+        "Gründe. Die Wettende hat eingewandt, zwölf Spielzeuge bei 169 seien keine Ankunft, sondern ein Anfang. Das Gericht hält dagegen: Ein Anfang ist eine Ankunft, von der anderen Seite gesehen. Sie hat weiter eingewandt, sie habe Angst vor dem Fliegen. Das Gericht weist darauf hin, dass in den acht Flugzeugen nach Sin-le-Noble im März in jeder Messung zwischen 21 und 26 der 32 Plätze besetzt waren und bisher niemand beim Schiedsgericht über Angst geklagt hat.",
+        "Nebenentscheidung zu Seite 43, Wette 1. Hippolyte: „Bis Weihnachten bekommt Port wieder mehr Rum als im November“, gemeint die 95 vom November 1921. Verloren: Im Dezember 1922 waren es höchstens 81. Am 25. Januar 1923 waren es 97. Hippolyte hält das für ein verspätetes Weihnachten. Das Gericht hält es für Januar.",
+        "Nebenentscheidung zu Seite 43, Wette 2. Lebrun: „Nicht vor dem nächsten Herbst.“ Der Schiedsrichter erklärt sich für befangen. Er stellt aber fest, dass die 95 erst am 25. Januar 1923 übertroffen wurden, also nach dem Herbst, und überlässt die Entscheidung den Messbüchern. Die Messbücher geben ihm recht. Er nimmt das Glas an, unter Protest gegen sich selbst.",
+        "Nicht entscheidungsreif: Seite 43, Honorine gegen Anselme, ob Firmin 1932 noch studiert. Ebenso die Dauerwette von der Tafel, Rum in Bourg-l’Écorce. Stand am 25. März 1923: 417 verlangt, nichts gedeckt. Unter „Rum in Bourg?“ steht jetzt der dreißigste Strich.",
+        "Rechtsmittel: keine. Die Wettende hat den Spruch am Tresen entgegengenommen, eine Runde ausgegeben und gefragt, ob man im Flugzeug den Hut aufbehalten darf. Gezeichnet: Lebrun. Gegengezeichnet, nach längerem Zögern: Honorine."
+      ],
+      "grounding": "Gemessen: Vauclaire verlangt seit dem 06.02.1918 Spielzeug (Toys); in keiner Messung bis zum 18.03.1923 lag dort eines in den Läden (18.03.1923: 0 von 169), am 25.03.1923 12 von 169, am 29.03.1923 17 (geprüft über alle Sitzungen seit 1904). RC Toys-Vau-Sin-IC-1 (3 Benz Dreitonner Kasten, Unter-Vauclaire Station – Sin-le-Noble Station West) seit 10.12.1922, bis 24.02.1923 in jeder Messung ohne Ladung, am 28.02.1923 36 von 36 Plätzen mit Spielzeug belegt. AP Passagiere-PordesAli-Sin-IC-1: 8 Junkers F 13 Herta, 32 Plätze, im März 1923 21 bis 26 Fahrgäste je Messung. Port des Alizés Rum: 95 im November 1921, im Dezember 1922 höchstens 81, am 25.01.1923 97. Bourg-l’Écorce Rum 417 verlangt, 0 gedeckt (25.03.1923); in keiner Messung seit Beginn der Aufzeichnung lag dort Rum in den Läden. Abstand Sin-le-Noble – Vauclaire 3,7 km. Erfunden: Schiedsgericht, Spruch, Aussagen, Kreisel, Zeichnung, Runden und Glas. Das Wettbuch mit Wette 4 und Seite 43 stammt aus dem Wettbuch (September 1920), dem Rum-ABC (Mai 1922) und der Tischordnung (August 1922), das Telegramm aus dem Adventskalender (Dezember 1922); Honorine, Lebrun, Hippolyte, Anselme, Firmin, Paul, Marthe und der Großvater sind wiederkehrende erfundene Figuren.",
+      "refs": {
+        "staedte": [
+          174634,
+          174632,
+          174617,
+          174605
+        ],
+        "personen": [],
+        "linien": [
+          389477,
+          220049
+        ],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1923-04-merkblatt-roquemer",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1923-04",
+      "lead": true,
+      "rubrik": "Merkblatt · Roquemer",
+      "titel": "Willkommen in Roquemer. Merkblatt für Zugezogene, Ausgabe Tausend",
+      "teaser": "Am 15. April 1923 zählen die Bücher in Roquemer zum ersten Mal mehr als tausend Bewohner, 1.008. Der Stadtschreiber, der 1921 mit den Meldescheinen nicht nachkam, hat für alle, die noch kommen, ein Merkblatt drucken lassen. Madame Odile hat es vor dem Aushang ergänzt, mit Bleistift.",
+      "body": [
+        "STADT ROQUEMER, vormals La Talaudière. Merkblatt für Zugezogene, Ausgabe Tausend. Wer dieses Blatt in der Hand hält, ist vermutlich Nummer 1.001 oder später. Nummer 1.000 hat sich nicht gemeldet. Bleistift, Madame Odile: Ich weiß, wer es ist. Ich sage es nicht.",
+        "1. Wo Sie sind. In Roquemer, knapp sechs Kilometer ostnordöstlich von Vauclaire, am Wasser. Bis 1918 hieß die Stadt La Talaudière und hatte dreizehn Jahre lang 192 Einwohner. Im April 1921 waren es 755, am 12. April 1923 999, am 15. April 1.008. Der Grundstein unter dem Bahnhof bittet: „Zählt bitte nach, wie viele wir geworden sind.“ Wir haben nachgezählt. Bitte nicht ausgraben, um es ihm zu sagen.",
+        "2. Wie man sich bewegt. Mit der Société, wie fast jeder Zweite: Von hundert Wegen in Roquemer führen 44 über ihre Linien. Der Omnibus, Linie 1, fährt mit neun Wagen und hält in der Rue des Dames. Der Zug nach Vauclaire und Valombre hält auch hier, und wer nach Port des Alizés will, fährt mit den Ölschiffen, die nehmen Fahrgäste mit. Bleistift: Monsieur Valère von gegenüber fährt dieses Jahr jeden Weg mit der Société und beschwert sich bei jedem. Es geht ihm gut.",
+        "3. Was es gibt. Arbeit, reichlich. Fisch, 128 Stück für 308, die ihn verlangen. Treibstoff für knapp jeden Vierten, der welchen will. Bleistift: Fisch bei mir, Rue des Dames, ab sechs. Fragen Sie nicht, woher er kommt. Er kommt mit dem Lastwagen.",
+        "4. Was es nicht gibt. Spielzeug: 308 verlangt, keines. In Vauclaire sind seit März welche angekommen; das ist nicht hier, auch wenn man es von hier aus fast sehen kann. Möbel: 114 verlangt, keine. Bringen Sie einen Stuhl mit, wie Monsieur Valère 1921. Lebensmittel: Seit dem 8. Januar verlangt die Stadt Lebensmittel, inzwischen 308, und hat keine. Bleistift: Was sind Lebensmittel, wenn nicht Fisch? Darunter der Stadtschreiber: Das steht nicht im Formular.",
+        "5. Wen man kennen sollte. Den Stadtschreiber, der Akzente prüft; Roquemer schreibt sich ohne. Den Briefträger, der das Adressbuch von 1919 mit Bleistift bis zur letzten Seite ergänzt hat; das zweite ist bestellt. Bleistift: Mich. Zuerst.",
+        "6. Was man vermeiden sollte. Den Omnibus um sechs Uhr früh zu loben, wenn Monsieur Valère in Hörweite ist. Den Satz „Bei uns in Vauclaire …“. Und die Frage, ob Roquemer jetzt eine Großstadt sei. Bourg-l’Écorce hat fast viertausend. Wir haben tausend und Fisch.",
+        "7. Sport. Ab Mai wird Roquemer im Sportfunk von Radio Alizés aufgestellt. In welcher Liga, weiß der Sender noch nicht. Die Schläferliga ist es nicht. Wir schlafen nicht, wir wachsen.",
+        "Schlussbemerkung des Stadtschreibers. Am 25. April hat die Stadt wieder genau 1.000 gezählt. Ein paar sind also gleich wieder gegangen, oder sie waren nur zu Besuch. Für dieses Merkblatt ändert das nichts. Es gilt für alle, die bleiben. Bleistift, Madame Odile: Und für die, die wiederkommen. Fisch gibt es auch für die."
+      ],
+      "grounding": "Gemessen: Roquemer 192 Einwohner in jedem Monatsstand von Dezember 1904 bis Februar 1918, bis 03.01.1918 als La Talaudière in den Büchern; 755 am 24.04.1921; 999 am 12.04.1923, 1.008 am 15.04. und 19.04.1923 (Meldung „Roquemer zählt 1.000 Einwohner“, belegter Wohnraum), 1.000 am 25.04.1923. Am 19.04.1923: Fisch 128 von 308, Treibstoff 55 von 229, Spielzeug 0 von 308, Möbel 0 von 114, Lebensmittel 0 von 308 (Lebensmittel verlangt seit der Messung vom 08.01.1923); Anteil der Société an den Wegen 44,6 %. Linien in Roquemer u. a. Bus Passagiere-Roq-LO-1 (9 Wagen), TP Passagiere-Vau-Val-RE-1, WC Passagiere,Rohöl,Treibstoff-Roq-PordesAli-RE-1 (17 Schiffe), RC Fisch-Roq-LO-1. Augustin Valère (35081, Roquemer) 1923 jeden beobachteten Weg mit der Société. Vauclaire erste Spielzeuge in den Läden am 25.03.1923. Bourg-l’Écorce rund 3.900 Einwohner im April 1923. Abstand Roquemer – Vauclaire 5,8 km. Erfunden: Merkblatt, Bleistiftnotizen, Nummer 1.000, Stuhl, Aufstellung im Sportfunk, alle Aussagen. Stadtschreiber, Briefträger, Madame Odile, Grundstein und Adressbuch stammen aus früheren Geschichten (Grundsteinurkunde 1918, Adressbuch 1919, Meldeschein 1921, Hörerpost 1922). Namen der Personen von der Redaktion vergeben.",
+      "refs": {
+        "staedte": [
+          174606,
+          174634,
+          174605
+        ],
+        "personen": [
+          35081
+        ],
+        "linien": [
+          210399,
+          406127,
+          312066,
+          427868
+        ],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1923-04-passagierliste-honorine",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1923-04",
+      "rubrik": "Passagierliste · Port des Alizés – Sin-le-Noble",
+      "titel": "Platz 3, Fensterplatz. Die Passagierliste von Honorines erstem Flug",
+      "teaser": "Der Schiedsspruch zu Wette 4 ließ keinen Ausweg. Am Sonntag, dem 15. April 1923, ist Honorine geflogen, mit der Junkers von Port des Alizés nach Sin-le-Noble. Am Flughafen führt man Listen. Diese hier hat der Flugzeugführer mit Anmerkungen zurückgegeben.",
+      "body": [
+        "Société des Alizés, Luftdienst Port des Alizés – Sin-le-Noble. Flugzeug: Junkers F 13 Herta, eines von acht, vier Plätze in der Kabine. Abflug Port des Alizés, Sonntag, 15. April 1923, vormittags. Ankunft Sin-le-Noble nach gut elf Kilometern Luftlinie.",
+        "Platz 1: Hippolyte, Lokführer, Port des Alizés. Zweck der Reise: Begleitung. Anmerkung des Flugzeugführers: Hat beim Start gesagt, eine Lokomotive sei lauter. Hat bei der Landung nichts gesagt.",
+        "Platz 2: Inspecteur Lebrun. Zweck der Reise: Vollstreckung des Schiedsspruchs. Anmerkung: Hat während des Fluges zweimal auf die Uhr gesehen und einmal aus dem Fenster. Hat notiert, dass an diesem Tag 21 der 32 Plätze in den acht Flugzeugen besetzt sind, und gefragt, ob die Société das auch weiß. Sie weiß es.",
+        "Platz 3, Fensterplatz: Honorine, Chez Honorine, am Hafen. Zweck der Reise: Wettbuch, Seite 41, Wette 4. Gepäck: ein Korb, darin eine Flasche Rum für den Großvater in Vauclaire, ein Stück Kuchen für Paul, ein Bleistift. Port hatte an diesem Tag 97 Rum in den Läden, bei 254, die ihn verlangen; die Flasche ist also gut angelegt. Anmerkung: Hat den Hut aufbehalten. Hat beim Start die Augen geschlossen und über dem Hafen wieder geöffnet, um nachzusehen, ob jemand die Bar übernommen hat. Es hatte jemand.",
+        "Platz 4: frei. Anmerkung: Die Dame auf Platz 3 hat den Korb daraufgestellt und gesagt, er habe den Platz bezahlt. Er hatte nicht.",
+        "Bemerkungen zum Flug: Ruhig. Wind aus Osten, wie meistens. In der Ferne lag Vauclaire, und auf einem Feld davor stand ein Junge und winkte mit etwas Rotem. Die Dame auf Platz 3 hat zurückgewinkt, obwohl man das von unten nicht sehen kann. Sie sagt, man kann.",
+        "Ankunft Flughafen Sin-le-Noble. Die Dame auf Platz 3 ist ausgestiegen, hat sich umgedreht, das Flugzeug angesehen und gesagt: „So. Das war das.“ Den Rest nach Vauclaire ist sie zu Fuß gegangen, keine vier Kilometer, mit Korb und Hut. Hippolyte und Lebrun sind mitgegangen. In Vauclaire lagen an diesem Tag 20 Spielzeuge in den Läden. Paul hat ihr jedes einzeln gezeigt.",
+        "Rückflug am Abend, dieselbe Maschine. Platz 3: Honorine. Anmerkung: Hat diesmal die Augen offen gelassen. Hat gefragt, ob man auch nach Bourg-l’Écorce fliegen kann, mit Rum. Antwort des Flugzeugführers: Nach Bourg fliegt die Société nicht. Antwort der Dame: Dann eben noch nicht.",
+        "Eintrag im Wettbuch, Seite 41, unter Wette 4, in Honorines Schrift: „Eingelöst am 15. April 1923. Es ist nicht so schlimm. Sagt es keinem.“"
+      ],
+      "grounding": "Gemessen: AP Passagiere-PordesAli-Sin-IC-1 (Flughafen Port des Alizés – Flughafen Sin-le-Noble) mit 8 Junkers F 13 Herta (laut Spiel ab 1920), zusammen 32 Plätze, also vier je Flugzeug; am 15.04.1923 21 Fahrgäste an Bord. Port des Alizés Rum 97 von 254 am 15.04.1923; Vauclaire Spielzeug 20 von 169 am 15.04.1923. Keine Fluglinie der Société fliegt nach Bourg-l’Écorce. Abstände der Stadtmitten: Port des Alizés – Sin-le-Noble 11,2 km, Sin-le-Noble – Vauclaire 3,7 km. Wind, Flugweg und Uhrzeiten misst der Monitor nicht. Erfunden: Flug, Passagierliste, Sitzordnung, Anmerkungen, Gepäck, Flugzeugführer, Winken und Wettbucheintrag. Honorine, Hippolyte, Lebrun, Paul und der Großvater sind wiederkehrende erfundene Figuren; Wette 4 stammt aus dem Wettbuch (September 1920), der Schiedsspruch aus der Ausgabe März 1923.",
+      "refs": {
+        "staedte": [
+          174632,
+          174617,
+          174634,
+          174605
+        ],
+        "personen": [],
+        "linien": [
+          220049
+        ],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1923-05-gebrauchsanweisung-garches",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1923-05",
+      "lead": true,
+      "rubrik": "Gebrauchsanweisung · Garches",
+      "titel": "Wie man in Garches den Omnibus benutzt. Eine Anleitung aus dem Pfarrhaus",
+      "teaser": "Seit dem 25. April 1923 fahren zwei Decksitzwagen der Société von der Rue André Gide in Garches zum Bauernhof von Sin-le-Noble. Zum ersten Mal, seit es die Bücher gibt, führt ein Teil der Garcher Wege über die Société. Mademoiselle Eulalie hat für die Gemeinde aufgeschrieben, wie das geht.",
+      "body": [
+        "Vorbemerkung. Garches hat 405 Seelen und seit dem 25. April einen Omnibus. Er hat zwei Wagen, jeder mit einem Dach, auf dem man sitzen darf, und fährt von der Rue André Gide bis zum Bauernhof vor Sin-le-Noble. Das sind keine vier Kilometer. Man hätte sie bisher gehen können. Man ist sie bisher gegangen.",
+        "1. Die Haltestelle. Sie steht in der Rue André Gide. Man erkennt sie daran, dass dort jemand steht, der nicht wartet, sondern sich die Straße ansieht. So wartet man in Garches. Bitte beibehalten.",
+        "2. Das Einsteigen. Vorn. Oben sitzen ist erlaubt, auch für den Herrn Pfarrer. Die Wagen sind Daimler Decksitzwagen, laut Spiel ein Modell von 1919, also jünger als unser Stall von 1915 und älter als unser Fleisch im Laden. Narcisse Petit-Frère sagt, man merke ihnen das Alter nicht an. Er muss es wissen. Er ist am 25. April mitgefahren, als Erster aus der Gemeinde, von dem die Bücher es wissen, und seitdem oft.",
+        "3. Wie viele mitfahren. Am 6. Mai saßen zum ersten Mal Fahrgäste in den Wagen, zehn auf 24 Plätzen. Von hundert Wegen in Garches führt jetzt knapp einer über die Société. Bis zum 21. April war es in jeder Messung seit 1904 keiner. Der Herr Pfarrer sagt, einer von hundert sei noch kein Aufbruch. Ich sage: Aber auch kein Stillstand mehr.",
+        "4. Das Ziel. Die Linie endet am Bauernhof vor Sin-le-Noble. Die Stadt beginnt dahinter, bitte zu Fuß weiter. Dort gibt es, was es in Garches nicht gibt: Spielzeug in den Läden, eine Straßenbahn, Flugzeuge, und seit dem 13. Mai mehr als 500 Einwohner. Das sind fast hundert mehr als wir. Man sage es dort nicht laut, die Leute in Sin-le-Noble sind stolz darauf.",
+        "5. Was man nicht erwarten soll. Dass der Lastwagen vom Südstall einen mitnimmt. Er heißt zwar „Passagiere, Fleisch“, hat aber in diesem Jahr in keiner Messung einen Fahrgast an Bord gehabt, nur Fleisch, und davon zu wenig: In den Läden von Garches liegen 23 Stück, 172 werden verlangt.",
+        "6. Die Rückfahrt. Der Omnibus fährt auch zurück. Das wurde im Pfarrhaus mehrmals gefragt und ist hiermit beantwortet.",
+        "7. Für Besuch aus Fontenay-aux-Roses. Die Linie fährt nicht nach Fontenay. Wer von dort kommt, kommt weiter zu Fuß und wird an der Kirchentür abgeholt. Monsieur Valère hat geschrieben, er habe sich den Fahrplan angesehen und sei erleichtert, dass er ihn nicht betrifft. Madame Philogène aus La Mulatière schreibt, sie gehe gern, solange sie nicht muss.",
+        "8. Für den Herrn Pfarrer. Man soll den Omnibus nicht für die Ursache von irgendetwas halten, hat er an den Rand geschrieben. Nachwort der Verfasserin: Am Sonntag nach der Messe ist er mitgefahren, bis Sin-le-Noble und zurück. Oben. Er sagt, der Ausblick sei für die Predigt gewesen."
+      ],
+      "grounding": "Gemessen: Bus Passagiere-Gar-Sin-IC-1 (Halte Rue André Gide in Garches und Sin-le-Noble Bauernhof), angelegt am 21.04.1923 ohne Fahrzeug, ab 25.04.1923 mit zwei Daimler Decksitzwagen (laut Spiel ab 1919), 24 Plätze; erstmals Fahrgäste an Bord am 06.05.1923 (10). Anteil der Société an den Wegen in Garches ab 25.04.1923 0,8 %, in jeder Messung davor seit 1904 null (geprüft über alle Sitzungen). Narcisse Petit-Frère (35326, Garches): 1920 bis 1922 zu Fuß und teils mit dem Automobil, erste beobachtete Fahrt mit der Société am 25.04.1923; im Jahr 1923 47 von 100 Wegen mit der Société, in 17 Messungen in diesem Bus. Garches 405 Einwohner, Fleisch 23 von 172 (21.05.1923); RC Passagiere,Fleisch-Gar-LO-1 führt 1923 nur Fleisch. Sin-le-Noble 502 Einwohner am 13.05.1923 (Meldung 500), mit Straßenbahn, Flughafen und Spielzeug in den Läden (80 von 141 am 02.05.1923). Abstand Garches – Sin-le-Noble 3,7 km. Erfunden: Anleitung, Haltestellenszene, Aussagen, Briefe, Fahrt des Pfarrers. Mademoiselle Eulalie, der Pfarrer, der Stall von 1915 und die Briefschreiber Isidore Valère und Marceline Philogène stammen aus früheren Geschichten. Namen der Personen von der Redaktion vergeben.",
+      "refs": {
+        "staedte": [
+          174644,
+          174617,
+          174615,
+          174631
+        ],
+        "personen": [
+          35326
+        ],
+        "linien": [
+          465920,
+          423825
+        ],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1923-06-ortslexikon-bellegreve",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1923-06",
+      "lead": true,
+      "rubrik": "Ortslexikon · Bellegrève",
+      "titel": "Bellegrève. Ein neuer Eintrag im Ortslexikon des Archipels",
+      "teaser": "Seit dem 20. Juni 1923 heißt Vichy in den Büchern Bellegrève. Der Kartograf Aristide Vauquelin führt seit Jahren ein Ortslexikon des Archipels und hat den Eintrag neu gesetzt. Es sei der kürzeste im ganzen Band, sagt er, und einer der geduldigsten.",
+      "body": [
+        "Bellegrève. Aussprache: Bel-gräw, das erste e verschluckt man, das zweite dehnt man. Bis zum 19. Juni 1923 Vichy. Kleiner Ort am Wasser, 3,2 Kilometer ostsüdöstlich von Garches und 4,1 Kilometer nordöstlich von Sin-le-Noble. Fläche knapp zwölf Quadratkilometer, davon bewohnt: wenig.",
+        "Einwohner: 131. Und zwar in jedem Monat, seit es die Bücher gibt, vom Dezember 1904 bis heute, ohne Ausnahme. Damit gehört Bellegrève zu den 31 von 50 Orten des Archipels, deren Zahl sich nie bewegt hat, darunter Tournus (240), Fontenay-aux-Roses (139) und La Mulatière (117). Garches hat es mit 399 auf gut siebzehn Jahre gebracht und gilt seitdem als die stillste Stadt. Das liegt nur daran, dass dort jemand gezählt hat.",
+        "Name. „Belle grève“, schönes Ufer, Kiesstrand. Woher der neue Name kommt, sagen die Bücher nicht, nur seit wann. Der Herausgeber vermutet den Sand: Vor dem Ort arbeitet ein Sandbaggerschiff, und die beiden Linien der Société, die dort anlegen, heißen seit dem 20. Juni „Gar-Bel“ statt „Gar-Vic“. Das Sandbaggerschiff selbst und sein Anleger heißen weiter „Vichy Sandbaggerschiff“. So ist das mit Namen auf dem Archipel: In Vauclaire gibt es bis heute eine Station Sarrians, in Valombre fährt der Zug in Melle Station West ab.",
+        "Verkehr. Zwei Linien der Société legen an, beide vom Hafen Sin-le-Noble: ein Passagierdampfer vom Typ Waimarie, laut Spiel ein Modell von 1889, mit zwanzig Plätzen, und sechs Schaufelraddampfer, die Sand holen und laut Namen auch Fahrgäste nehmen. Anteil der Société an den Wegen der Bellegrever: null, in jeder Messung seit 1904. Der Dampfer fährt trotzdem. Er ist, sagt der Herausgeber, das Höflichste, was die Société besitzt.",
+        "Versorgung. Gemüse: 39 verlangt, nichts bekommen. Treibstoff: 42 verlangt, nichts. Arbeitsplätze: 266, also zwei für jeden Einwohner. Wer in Bellegrève keine Arbeit hat, hat sie nicht gesucht.",
+        "Bekannte Bewohner. Léandre Jean-Louis, seit Februar 1920 in den Büchern der Société, jeden beobachteten Weg zu Fuß, seit Februar 1922 mit Arbeit. Er hat den neuen Namen zur Kenntnis genommen und ist weiter zu Fuß gegangen. Auf die Frage des Herausgebers, ob sich etwas geändert habe: „Die Briefe kommen mit dem anderen Namen. Sonst nichts.“",
+        "Betriebe. Ein Viehzuchtbetrieb, der Vichy Viehzuchtbetrieb hieß, steht seit dem 4. April 1923 nicht mehr im Register. Den neuen Namen hat er nicht mehr erlebt. Das Sandbaggerschiff arbeitet, auf Stufe sechs, unter dem alten.",
+        "Siehe auch: Sarrians (seit 1915 Vauclaire), La Talaudière (seit 1918 Roquemer), Melle (seit 1920 Valombre). Alle drei sind mit ihrem neuen Namen gewachsen. Ob Bellegrève das vorhat, steht in keinem Buch. Vauquelin: „Die anderen haben einen neuen Namen bekommen und dann Leute. Bellegrève hat erst einmal nur den Namen. Das ist auch etwas.“",
+        "Urteil des Herausgebers: Lohnt einen Besuch für alle, die einmal etwas sehen wollen, das sich nicht verändert. Anreise mit dem Dampfer ab Sin-le-Noble Hafen. Die Rückfahrt wird empfohlen; Zimmer gibt es keine, alle 131 Betten sind belegt, seit 1904."
+      ],
+      "grounding": "Gemessen: Umbenennung Vichy → Bellegrève in den Messungen ab 20.06.1923 (Meldung); Einwohner 131 in jedem Monatsstand seit Dezember 1904, Wohnkapazität 131 (Ortsakte); 31 der 50 Orte haben seit 1904 in jedem Monatsstand dieselbe Einwohnerzahl, darunter Tournus 240, Fontenay-aux-Roses 139, La Mulatière 117; Garches 399 bis Januar 1922. Fläche 11,8 km², Arbeitsplätze 266, Gemüse 39 und Treibstoff 42 verlangt, 0 gedeckt; Anteil der Société an den Wegen 0 in jeder Messung seit 1904 (geprüft über alle Sitzungen). Linien WP Passagiere-Gar-Bel-IC-1 (1 Waimarie, laut Spiel ab 1889, 20 Plätze) und WC Passagiere,Sand-Gar-Bel-IC-1 (6 Schaufelraddampfer), beide zwischen Sin-le-Noble Hafen und dem Halt „Vichy Sandbaggerschiff“, bis 20.06.1923 „…-Gar-Vic-IC-1“; Betrieb „Vichy Sandbaggerschiff“ (Stufe 6) behält im Juni 1923 seinen Namen; Vichy Viehzuchtbetrieb geschlossen 04.04.1923. Léandre Jean-Louis (34966) seit 02.02.1920 in der Gruppe, Wohnort Bellegrève, 1920 bis 1923 alle beobachteten Wege zu Fuß, Arbeit seit 09.02.1922. Haltestellen mit alten Ortsnamen (Sarrians Station West, Melle Station West). Abstände auf der Seekarte: Bellegrève – Garches 3,2 km, Bellegrève – Sin-le-Noble 4,1 km. Erfunden: Ortslexikon, Aussprache, Deutung des Namens, Bemerkungen des Herausgebers, die Antwort von Léandre Jean-Louis, Bewertungen. Der Kartograf Aristide Vauquelin ist eine wiederkehrende erfundene Figur. Namen der Personen von der Redaktion vergeben.",
+      "refs": {
+        "staedte": [
+          174638,
+          174644,
+          174617,
+          174634,
+          174606,
+          174621
+        ],
+        "personen": [
+          34966
+        ],
+        "linien": [
+          351507,
+          397636
+        ],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1923-07-selbstgespraech-montfougere",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1923-07",
+      "lead": true,
+      "rubrik": "Selbstgespräch · Montfougère",
+      "titel": "Neun Jahre zu Fuß. Siméon Thélus an der Haltestelle",
+      "teaser": "Siméon Thélus aus Montfougère steht seit Juli 1914 in den Büchern der Société. Neun Jahre lang ist er jeden beobachteten Weg zu Fuß gegangen. Am 11. Juli 1923 verzeichnen die Bücher ihn zum ersten Mal in einem Wagen der Société, auf dem Heimweg. Was ihm dabei durch den Kopf ging, sagen die Bücher nicht. Die Redaktion stellt es sich so vor.",
+      "body": [
+        "Neun Jahre. Am 19. Juli 1914 haben sie mich zum ersten Mal aufgeschrieben, da war ich auf dem Weg zur Arbeit, zu Fuß, wie sonst. Montfougère hatte damals 253 Einwohner und keinen einzigen Wagen der Société, und ich dachte, das bleibt so. Es ist nicht so geblieben. Ich bin trotzdem gegangen.",
+        "Seit Mittwoch voriger Woche sind wir fünfhundert. Fünfhundertdrei, hat die Frau vom Laden gesagt, sie hat es aus dem Radio. Fünfhundert ist eine Zahl, bei der man anfängt, an Haltestellen zu stehen. Bei zweihundertfünfzig steht man nirgends, da geht man vorbei und grüßt.",
+        "Die Arbeit von früher ist seit April weg. Zwei Wochen war nichts, dann kam die neue, am zehnten Mai, am anderen Ende. Am anderen Ende von Montfougère ist nicht weit, aber es ist ein anderer Weg, und auf dem anderen Weg steht diese Haltestelle. Neun Jahre bin ich an keiner vorbeigekommen, die mich etwas angegangen ist.",
+        "Augustine Baptiste fährt seit Februar. Sie hat gesagt, man steigt vorn ein und sagt guten Tag, und der Fahrer sagt nichts, weil er fahren muss. Sie hat gesagt, es sei nicht schlimm. Das sagt man, wenn es ein bisschen schlimm ist.",
+        "Im Laden gab es heute Hemden. Hemden, in Montfougère. Seit Juni liegen welche da, zum ersten Mal überhaupt, zwölf Stück, und neunundachtzig werden verlangt. Man steht davor und weiß nicht, ob man eins nehmen darf, weil man es so lange nicht konnte. Dafür ist der Fisch fast weg: acht Stück, wo es im März fünfunddreißig waren. Der Kapitän von der Fähre sagt, das Meer sei voll davon, nur nicht bis zum Laden. Ich sage, so ist das mit vielem.",
+        "Wenn ich jetzt einsteige, habe ich neun Jahre lang recht gehabt und ab heute nicht mehr. Oder ich habe neun Jahre lang gewartet, und heute ist es so weit. Es kommt darauf an, wer es erzählt. Ich erzähle es niemandem.",
+        "Da kommt er. Drei Wagen hat die Linie, sagt Augustine, und dieser ist der mittlere. Man sieht es ihm an. Er ist nicht der erste und nicht der letzte. Das gefällt mir.",
+        "Ich steige ein. Nur heute. Nach Hause ist es nicht weit, aber es ist Abend, und man muss nicht alles beweisen.",
+        "Nachbemerkung der Redaktion: Die Messung vom 11. Juli 1923 verzeichnet Siméon Thélus als Fahrgast der Société, das Ziel seines Weges ist seine eigene Wohnung. Auch in allen übrigen Messungen des Juli steht er als Fahrgast in den Büchern. „Nur heute“ hat also etwas länger gedauert."
+      ],
+      "grounding": "Gemessen (feste, nicht repräsentative Beobachtungsgruppe): Siméon Thélus (36791) seit 19.07.1914 in der Gruppe, Wohnort Montfougère; von 1914 bis 1922 alle beobachteten Wege zu Fuß; ohne Arbeitsplatz zwischen 25.04. und 10.05.1923, danach ein anderer Arbeitsplatz als vorher; erste beobachtete Fahrt mit der Société am 11.07.1923, Ziel des Weges die eigene Wohnung, in allen weiteren Messungen des Juli als Fahrgast; 1923 in 10 Messungen im Bus Passagiere-Mon-LO-3 (3 Wagen). Augustine Baptiste (36203, Montfougère) erste beobachtete Fahrt mit der Société am 09.02.1923. Montfougère 253 Einwohner im Juli 1914, 503 am 04.07.1923 (Meldung 500, ein Mittwoch); Kleidung erstmals in den Läden am 12.06.1923 (5 Stück; geprüft über alle Sitzungen), am 11.07.1923 12 von 89; Fisch 35 von 176 am 03.03.1923, 8 von 179 am 11.07.1923. Erfunden: Gedanken, Gespräch mit Augustine Baptiste, Frau vom Laden, Radio-Erwähnung, Wagenwahl und Uhrzeit. Der Kapitän der Fähre nach Montfougère ist eine wiederkehrende erfundene Figur. Namen der Personen von der Redaktion vergeben.",
+      "refs": {
+        "staedte": [
+          174646
+        ],
+        "personen": [
+          36791,
+          36203
+        ],
+        "linien": [
+          416775,
+          396997
+        ],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1923-08-spielregeln-vauclaire",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1923-08",
+      "lead": true,
+      "rubrik": "Spielregeln · Vauclaire",
+      "titel": "Von Tournus nach Vauclaire. Ein Würfelspiel für zwei bis vier Kinder, von Paul",
+      "teaser": "In den Sommerferien 1923 hat Paul aus Vauclaire, der vor einem Jahr noch leere Lastwagen in seinen Adventskalender malte, ein Brettspiel gebaut. Gespielt wird mit Kreiseln, denn davon gibt es in Vauclaire jetzt welche. Seine Schwester Marthe hat die Regeln abgeschrieben, Paul hat sie nachgesehen.",
+      "body": [
+        "Spielbrett: der Deckel des Schuhkartons vom Adventskalender, innen bemalt. Darauf ein Weg aus zwanzig Feldern, von der Spielzeugfabrik in Tournus bis zum Laden in Vauclaire. Figuren: Kreisel, einer für jeden. Würfel: einer, geliehen vom Großvater, der sagt, er habe ihn 1900 in Anse Dorée gewonnen.",
+        "Ziel des Spiels: als Erster mit seinem Spielzeug im Laden von Vauclaire ankommen. Wer ankommt, hat gewonnen. Wer nicht ankommt, hat Übung. Marthe: Das ist von Rosalie Gaspard. Paul hat sie gefragt, ob er es benutzen darf.",
+        "Feld 1, Tournus. Hier macht die Fabrik Spielzeug, ungefähr 130 Stück im Jahr. Losfahren darf nur, wer eine Sechs würfelt. Alle anderen warten. Marthe: So ist es auch in echt. Paul: In echt würfelt keiner.",
+        "Felder 2 bis 8, das Schiff. Vierzehn Schiffe fahren von Tournus über gut zwanzig Kilometer Wasser nach Sin-le-Noble, mit Fahrgästen, Brettern und Spielzeug. Wer auf Feld 5 kommt, findet das Schiff voll, alle Plätze belegt, wie am 1. August, und muss auf das nächste warten: einmal aussetzen.",
+        "Feld 9, Sin-le-Noble Hafen. Umladen. Einmal aussetzen. Paul: Hier ist Honorine im April gelandet. Marthe: Nicht am Hafen, am Flughafen. Paul: Von oben ist das dasselbe.",
+        "Felder 10 bis 12, Sin-le-Noble. Die Stadt will selbst Spielzeug, 146 Stück, und hat ungefähr die Hälfte. Wer auf Feld 11 landet, wird von einem Kind aus Sin-le-Noble gekauft und muss zurück nach Tournus. Paul findet das gerecht: Sin-le-Noble hatte zuerst welche, schon 1920.",
+        "Feld 13, Sin-le-Noble Station West. Hier wartet der Lastwagen mit dem schiefen T. Einsteigen darf man nur, wenn er nicht voll ist, er hat 36 Plätze. Ob er da ist, wird gewürfelt: gerade Zahl ja, ungerade nein. Am 5. August war er leer, am 19. August hatte er 24 geladen. Paul: Man weiß es eben nie.",
+        "Felder 14 bis 18, die Strecke nach Unter-Vauclaire. Keine vier Kilometer. Paul hat jeden Kilometer als Feld gemalt und eins dazu, weil es sich länger anfühlt.",
+        "Das Feld zwischen 17 und 18, das Rosalie-Feld. Rosalie Gaspard aus der Nachbarschaft hat am 19. August nach acht Monaten wieder Arbeit gefunden. Paul hat für sie ein Feld eingebaut, auf dem man nichts tun muss, nur da sein. Wer dorthin kommt, setzt nicht aus, er ruht sich aus. Paul sagt, das sei ein Unterschied. Rosalie sagt, das sei der wichtigste.",
+        "Feld 19, Unter-Vauclaire Station. Hier steht das Brettpferd. Es zählt nicht, es ist vom Großvater. Wer darauf landet, muss es trotzdem grüßen.",
+        "Feld 20, der Laden. Ziel. Im August liegen dort zwischen 47 und 54 Spielzeuge, 175 werden verlangt. Wer ankommt, legt seinen Kreisel in die Mitte. Wer zuletzt ankommt, darf den Großvater fragen, wie es früher war. Das dauert länger als das ganze Spiel.",
+        "Sonderregel Honorine. Wer eine Eins würfelt, muss fliegen, egal wo er steht, und von vorn anfangen. Honorine hat aus Port des Alizés geschrieben, das sei die gerechteste Regel des Spiels. Sie sei inzwischen zweimal geflogen und fange jedes Mal von vorn an, mit dem Fürchten.",
+        "Marthe, unter den Regeln: Wir haben elfmal gespielt. Ich habe zweimal gewonnen, Paul neunmal. Er sagt, er kenne den Weg besser. Das stimmt. Er hat fünf Jahre lang zugesehen, wie nichts darauf ankam."
+      ],
+      "grounding": "Gemessen: Tournus Toy Factory (Stufe 1) erzeugt 1923 laut Spiel zwischen 126 und 146 Spielzeugen im Jahr; WC Passagiere,Bretter,Toys-Sin-Tou-IC-1 (14 Schiffe, Tournus Hafen – Sin-le-Noble Hafen West) am 01.08.1923 mit 150 von 150 Plätzen belegt; RC Toys-Vau-Sin-IC-1 (Sin-le-Noble Station West – Unter-Vauclaire Station, 36 Plätze) am 05.08.1923 leer, am 19.08.1923 24 Spielzeuge an Bord. Sin-le-Noble Spielzeug 72 bis 74 von 146 (August 1923); Spielzeug kam dort erstmals 1920 an. Vauclaire Spielzeug 47 bis 54 von 175 (August 1923), das erste am 25.03.1923. Rosalie Gaspard (35063, Vauclaire) ohne Arbeitsplatz vom 14.12.1922 bis 19.08.1923. Abstände: Tournus – Sin-le-Noble 20,4 km, Sin-le-Noble – Vauclaire 3,7 km. Erfunden: Spiel, Regeln, Felder, Würfel, Partien, Briefe und Aussagen, Honorines zweiter Flug. Paul, Marthe, der Großvater, das Brettpferd und Honorine sind wiederkehrende erfundene Figuren (Adventskalender Dezember 1922, Schiedsspruch März 1923, Passagierliste April 1923). Namen der Personen von der Redaktion vergeben.",
+      "refs": {
+        "staedte": [
+          174634,
+          174617,
+          174637,
+          174632
+        ],
+        "personen": [
+          35063
+        ],
+        "linien": [
+          353774,
+          389477
+        ],
+        "betriebe": [
+          426809
+        ]
+      }
+    },
+    {
+      "id": "1923-09-fabel-reiher-valmorin",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1923-09",
+      "lead": true,
+      "rubrik": "Fabel · Valmorin",
+      "titel": "Der Reiher und das Wort „nie“. Eine Fabel vom Quai",
+      "teaser": "Zweieinhalb Jahre stand die Burg des weißen Reihers in Valmorin auf Stufe eins von vier. Am 2. September 1923 verzeichnen die Messbücher Stufe zwei. Am Quai erzählt man sich seitdem eine Fabel. Wer sie zuerst erzählt hat, weiß keiner. Mathurin schwört, er war es nicht.",
+      "body": [
+        "Es war einmal ein weißer Reiher, der wohnte im Schilf unterhalb von Valmorin und hatte eine Burg, die nach ihm hieß. Bestellt hatte er sie nicht. Die Menschen hatten im März 1921 angefangen, sie für ihn zu bauen, die erste Stufe von vieren, und dann gewartet, dass er einzieht. Der Reiher wartete, dass sie fertig wird. So warteten beide, jeder auf seiner Seite des Bauzauns.",
+        "Jeden Abend flog er über die Lärmschutzwand am Quai, um zu lesen, was die Menschen mit Kreide daraufschrieben. Reiher lesen langsam, aber gründlich. Oben stand: „Wann Stufe zwei?“ Darunter „Weihnachten“, durchgestrichen, „Weihnachten 1922“, auch durchgestrichen, und daneben, in einer alten, festen Hand: „nie“.",
+        "„Nie“, sagte der Reiher zu der Krähe, die auf dem Bauzaun saß. „Ein langes Wort für drei Buchstaben.“ „Das bequemste Wort, das es gibt“, sagte die Krähe. „Wer nie sagt, behält recht bis zum letzten Tag, und am letzten Tag redet keiner mehr davon.“",
+        "Im Frühjahr 1923 schrieb die Frau vom Bahnhof, die seit 1910 Hemden zählt, eine neue Zahl an die Wand: „1.600“. So groß war Valmorin am 15. April geworden, genau so groß, wie sie es sich gewünscht hatte. Darunter schrieb sie: „Hemden: 77“. Den Sommer über wischte sie die Zahl immer wieder weg und schrieb eine kleinere hin, bis Anfang September „Hemden: 9“ dastand. Sie zählte trotzdem weiter. Der Reiher bewunderte sie dafür. Wer kleiner werdende Zahlen aufschreibt, hat mehr Mut als einer, der „nie“ schreibt.",
+        "Beim Fleisch war es umgekehrt. Im Januar lagen in den Läden 32 Stück, im Sommer um die 50, Anfang September 75. Ein Kind schrieb an die Wand: „Da ist das Fleisch.“ Es war dasselbe Kind, das ein Jahr vorher gefragt hatte, wo es sei, und es hatte jetzt eine sicherere Hand.",
+        "Ein Mann, der früher nur mit dem Automobil fuhr und im Februar 1922 an die Wand geschrieben hatte „Suche Arbeit. Habe Automobil.“, hatte seit April Arbeit und fuhr jetzt öfter mit Straßenbahn, Omnibus und Zug als mit dem Automobil. Die Krähe fand das verdächtig. Der Reiher fand es vernünftig. Sie stritten bis in den August.",
+        "In einer Nacht Ende August, als am Quai nur noch die Laterne wach war, ging der Reiher zum Bauzaun. Er hatte nachgedacht. Wer wartet, bis man ihn ruft, wartet manchmal auf jemanden, der wartet, dass er kommt. Also setzte er einen Fuß auf die erste Stufe und den zweiten auf die zweite. Mehr wollte er nicht. Zwei von vier ist die Hälfte, und die Hälfte ist mehr als nie.",
+        "Am Morgen des 2. September stand die Burg auf Stufe zwei, so steht es in den Messbüchern; am 27. August war sie es noch nicht. An der Wand, unter dem „nie“, stand in der Hand, die keiner kennt: „Er hat sich getraut.“ Mathurin schwört, er war es nicht. Lucie schwört, sie war es nicht. Anselme schwört nichts. Aber er hat sein „nie“ an diesem Tag nicht nachgezogen, und der nächste Regen hat es zur Hälfte abgewaschen. „Ni“ steht jetzt da. Lucie sagt, das sei Fortschritt.",
+        "Delphine Gaspard, die im Juli 1922 versprochen hatte, Bescheid zu sagen, wenn sich an der Burg etwas tut, sagte Bescheid. Sie kam mit der Straßenbahn.",
+        "Moral: Wer „nie“ sagt, muss den Regen nicht fürchten. Er kann sich aber auch nicht über die Sonne freuen. Und: Stufe drei kommt, wenn sie kommt. Der Reiher hat es nicht eilig. Er ist ein Reiher."
+      ],
+      "grounding": "Gemessen: Wahrzeichen „Valmorin Burg des weissen Reihers“ seit 23.03.1921 auf Stufe 1 von 4, zuletzt am 27.08.1923; Stufe 2 von 4 (nicht fertig) erstmals in der Messung vom 02.09.1923. Wann genau dazwischen ausgebaut wurde und warum, misst der Monitor nicht. Valmorin 1.600 Einwohner am 15.04.1923 (1.599 am 12.04.); Kleidung 77 von 154 (14.03.1923), 9 von 156 (02.09.1923); Fleisch 32 von 303 (01.01.1923), zwischen 45 und 61 von Mai bis August, 75 von 313 (08.09.1923). Prosper Petit-Frère (35029, Valmorin): ohne Arbeitsplatz seit 16.02.1922, wieder mit Arbeit ab 25.04.1923; 1922 alle beobachteten Wege mit dem Automobil, 1923 54 von 100 mit der Société (u. a. Tram Passagiere-Val-LO-1, Bus Passagiere-Val-LO-3, TP Passagiere-PordesAli-AnsDor-RE-1) und 7 mit dem Automobil. Delphine Gaspard (35840, Valmorin): 1921 und 1922 alle Wege mit dem Automobil, 1923 77 von 100 mit der Société, darunter Tram Passagiere-Val-LO-1. Erfunden: Fabel, Reiher, Krähe, Kreideanschriften, Kind, Laterne und Schwüre. Wand, Kreidefragen, Mathurin, Lucie, Anselme und die unbekannte Hand stammen aus der Kreidetafel (Juli 1922). Namen der Personen von der Redaktion vergeben.",
+      "refs": {
+        "staedte": [
+          174607
+        ],
+        "personen": [
+          35029,
+          35840
+        ],
+        "linien": [
+          331321
+        ],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1923-10-ferngespraech-vauclaire-bourg",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1923-10",
+      "lead": true,
+      "rubrik": "Ferngespräch · Vauclaire – Bourg-l’Écorce",
+      "titel": "„Sind wir noch Rundfunkstadt?“ Ein Ferngespräch zwischen Vauclaire und der Rue de Genève",
+      "teaser": "Am letzten Dienstag im Oktober 1923 ruft Léonie Saint-Cyr aus Vauclaire vom Postamt aus ihre Schwester Hortense in Bourg-l’Écorce an. Die Leitung war so schlecht, dass das Fräulein vom Amt mitschrieb, um den beiden hinterher vorzulesen, was sie gesagt hatten. Beide haben dem Abdruck zugestimmt.",
+      "body": [
+        "Amt: Vauclaire für Bourg-l’Écorce, Rue de Genève. Bitte sprechen.",
+        "Léonie: Hortense? Hier ist Léonie. Hörst du mich?",
+        "Hortense: Schlechter als das Radio. Was ist passiert? Ihr ruft nie an.",
+        "Léonie: Fernand hat seit dem 24. September wieder keine Arbeit.",
+        "Hortense: Oh. Wieder.",
+        "Léonie: Wieder. Und er macht es diesmal andersherum. Voriges Jahr ist er zum Suchen gefahren, mit der Straßenbahn und dem Schiff zu dir, und zur Arbeit ist er dann gegangen. Dieses Jahr ist er zur Arbeit gefahren, Straßenbahn, Zug nach Valmorin, das ganze Frühjahr und den ganzen Sommer. Und seit er keine mehr hat, geht er jeden Weg zu Fuß. Er sagt, zur Arbeit fahre man. Zum Suchen gehe man, da sehe man mehr.",
+        "Hortense: Und was sagst du?",
+        "Léonie: Ich sage, er soll sich die Schuhe nicht ganz ablaufen. Die braucht er für die nächste Arbeit.",
+        "Hortense: Hier sucht keiner mehr. Hier geht man. Bei uns sind wieder Häuser weg.",
+        "Léonie: Wie im Februar?",
+        "Hortense: Wie im Februar. Am 12. Oktober waren wir 4.053, sagt der Briefträger, am 17. 3.989, und heute früh 3.888. Im Februar ging es von 4.050 hinunter bis 3.771, und erst im Juni waren wir wieder über viertausend. Die Häuser verschwinden, und die Leute verschwinden mit. Warum, sagt keiner.",
+        "Léonie: Und das Radio? Ihr seid doch Rundfunkstadt geworden, weil ihr viertausend wart.",
+        "Hortense: Das habe ich den Sender gefragt, mit Briefmarke. Sind wir noch Rundfunkstadt? Sie antworten am Samstag in der Hörerpost.",
+        "Léonie: Und der Omnibus? Fährt der noch, wenn keiner mehr da ist?",
+        "Hortense: Das ist das Seltsame. Am Anfang des Monats haben sie die Linie an der Rue des Alpes von drei auf sechs Wagen gebracht. Weniger Leute, doppelt so viele Wagen. Clémence Bonheur sagt, die Société denke weiter als der Briefträger. Bei Clémence steht das Radio übrigens noch auf der Kiste. Möbel haben wir sechzehn, für 521, die welche wollen.",
+        "Léonie: Bei uns ist es umgekehrt. Mehr Leute, gleich viele Wagen. 655 sind wir. Und Spielzeug, Hortense. 55 Stück im Laden. Paul hat ein Brettspiel gebaut, in dem man nach Vauclaire würfelt. Er gewinnt immer.",
+        "Hortense: Und Rosalie?",
+        "Léonie: Hat seit August Arbeit. Amélie Modeste nicht, seit März. Clovis noch, der mit dem Radio. Bei Clovis hören wir jeden Abend, ob Bourg wieder mehr wird. Wenn ihr kleiner werdet, ist es bei Clovis ganz still im Zimmer.",
+        "Amt: Ihre drei Minuten sind um.",
+        "Léonie: Sag … nein, ich sag es Fernand selbst. Er ist ja zu Hause.",
+        "Hortense: Grüß Paul. Sag ihm, in Bourg würfeln wir auch. Mit Häusern.",
+        "Amt: Getrennt. Vermerk des Fräuleins vom Amt: Gesprächsdauer drei Minuten und elf Sekunden. Die elf Sekunden habe ich nicht berechnet."
+      ],
+      "grounding": "Gemessen: Fernand Saint-Cyr (35558, Vauclaire) ohne Arbeitsplatz 22.02.–06.11.1922 und wieder seit 24.09.1923; 1922 erste beobachtete Fahrt mit der Société am 09.03.1922, ohne Arbeit, nach dem 06.11.1922 zu Fuß; 1923 bis zum 24.09. 64 von 73 Wegen mit der Société (u. a. Tram Passagiere-Vau-LO-1, TP Passagiere-Vau-Val-RE-1, Tram Passagiere-Sin-LO-1), seit dem 24.09.1923 jeder beobachtete Weg zu Fuß. Bourg-l’Écorce: 4.050 Einwohner am 13.02., 3.771 am 20.02., 4.007 am 09.06., 4.053 am 12.10., 3.989 am 17.10. und 3.888 am 30.10.1923; die Wohnkapazität sank jeweils mit, die Ursache misst der Monitor nicht. Bus Passagiere-Bou-LO-9 (Rue de l’Ermitage – Rue des Alpes – Bourg-l’Écorce Station Anbau) ab 04.10.1923 mit 6 statt 3 Daimler Decksitzwagen. Möbel 16 von 521 (22.10.1923). Vauclaire 655 Einwohner, Spielzeug 55 von 178 (22.10.1923). Rosalie Gaspard (35063) Arbeit seit 19.08.1923, Amélie Modeste (35243) ohne Arbeitsplatz seit 03.03.1923, Clovis Calixte (36283) 1923 in jeder Messung mit Arbeit; Clémence Bonheur (48725) wohnt in Bourg-l’Écorce. Telefon, Postamt und Gespräch gibt es im Monitor nicht. Erfunden: Ferngespräch, Name und Brief von Hortense (der Schwester aus dem Haushaltsbuch 1921), Fräulein vom Amt, Briefträger, alle Aussagen. Léonie Saint-Cyr, Paul, das Brettspiel, Clovis' Radio und Clémence Bonheurs Kiste stammen aus früheren Geschichten. Namen der Personen von der Redaktion vergeben.",
+      "refs": {
+        "staedte": [
+          174634,
+          174605,
+          174607,
+          174617
+        ],
+        "personen": [
+          35558,
+          35063,
+          35243,
+          36283,
+          48725
+        ],
+        "linien": [
+          342944,
+          396251,
+          406127
+        ],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1923-11-bittschrift-anse-doree",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1923-11",
+      "lead": true,
+      "rubrik": "Bittschrift · Anse Dorée",
+      "titel": "Bitte um Zucker. Eine Bittschrift aus Anse Dorée an die Société",
+      "teaser": "Anse Dorée verlangt Zucker und hat in den Büchern der Société noch nie welchen bekommen. Ende November 1923 hört die Stadt im Radio, dass bei La Mulatière eine neue Zuckerrohrplantage im Register steht. In der Pension „Les Jardins“ hat man daraufhin eine Bittschrift aufgesetzt. Wir drucken sie mit allen Unterschriften.",
+      "body": [
+        "An die Société des Alizés — Routes, Voyages et Commerce, Port des Alizés. Betrifft: Zucker für Anse Dorée. Anse Dorée, am 26. November 1923.",
+        "Hochverehrte Société, wir, die Unterzeichneten, Bürgerinnen und Bürger von Anse Dorée, erlauben uns, Folgendes vorzubringen.",
+        "Erstens. Anse Dorée verlangt Zucker, derzeit 369 Einheiten. In keiner Messung Ihrer Bücher hat die Stadt je ein einziges Stück davon bekommen. Unsere Limonade ist entsprechend. Ein Gast aus Roche-Noire hat das schon im Sommer 1921 ins Gästebuch der Pension „Les Jardins“ geschrieben, und zur Hochzeit im August 1922 hat er den Zucker für die Torte im Korb mitgebracht. Wir sind ihm dankbar. Wir möchten aber nicht für jede Torte heiraten.",
+        "Zweitens. Zucker gibt es auf dem Archipel. Die Mühle in Montceau-les-Mines macht ihn. Port des Alizés bekommt ihn mit Schiff und Flugzeug, 205 Stück für 509. Roche-Noire hat 71 von 219. Und seit dem 22. November steht bei La Mulatière eine neue Zuckerrohrplantage im Register, die gleich auf der elften Stufe angefangen hat. Wir wissen, dass Zuckerrohr noch kein Zucker ist. Wir wissen aber auch, dass die Mühle von Montceau-les-Mines keine zweieinhalb Kilometer von der Plantage steht. Von uns liegt La Mulatière sechzehn Kilometer weit. Wir können die Plantage nicht sehen. Wir glauben aber an sie.",
+        "Drittens. Wir verlangen auch Maschinen und Fahrzeuge und haben von beidem nichts. Das wollen wir heute nicht vorbringen, um nicht unbescheiden zu erscheinen. Gemüse haben wir gut die Hälfte, Kleidung etwa jedes siebte Stück. Wir sind nicht undankbar. Wir sind nur durstig.",
+        "Viertens. Wir verweisen auf unsere Postkutschen. Drei fahren seit 1900 die Grande Rue hinauf zum Domaine des Alizés, und die Société hat sie nie ersetzt. Wir schließen daraus, dass sie Geduld schätzt. Wir haben auch welche.",
+        "Wir bitten daher die Société, einen Wagen, ein Schiff oder notfalls eines ihrer Flugzeuge mit Zucker nach Anse Dorée zu schicken, gern auch nur einmal, damit wir wissen, wie es ist. Mit vorzüglicher Hochachtung, die Unterzeichneten:",
+        "Madame Rosalie, Ansichtskarten, Grande Rue: „Ich habe Karten mit Zuckerdose schon gedruckt. Auf meinen Karten ist er da.“",
+        "Die Wirtin der Pension „Les Jardins“, am Bahnhof: „Für die Limonade. Und für meine Tochter, die ihren Kaffee seit der Hochzeit süß trinken möchte.“",
+        "Héloïse und Firmin, verheiratet seit August 1922: „Firmin unterschreibt als Student. Ich unterschreibe als Ehefrau eines Studenten. Honorine sagt, das sei bis 1932 dasselbe.“",
+        "Gaston Bellance: „Ich fahre jeden Weg mit der Société, dieses Jahr hundert von hundert. Ich finde, ich darf um etwas bitten.“",
+        "Lucienne Sainte-Rose: „Seit Juli ohne Arbeit, also mit Zeit. Ich habe die Unterschriften gesammelt, auch die im Zug nach Port.“",
+        "Célestin Hilaire, im eigenen Automobil vorgefahren: „Im Automobil brauche ich keinen Zucker. Ich unterschreibe trotzdem. Seit fast einem Jahr habe ich keine Arbeit, aber eine Meinung.“",
+        "Der Kutscher der Linie Grande Rue – Domaine des Alizés: drei Kreuze, weil er die Zügel nicht loslassen wollte.",
+        "Der Herr aus Roche-Noire, als Gast und Zeuge: „Es gibt Zucker. Ich habe welchen gesehen. Er ist weiß.“",
+        "Beigeheftet, per Post aus La Mulatière, wohin Lucienne Sainte-Rose geschrieben hatte, weil man dort aus der Zeitung genau eine Bewohnerin kennt: „Ich unterschreibe gern, auch wenn ich nicht aus Anse Dorée bin. Die neuen Felder sind grün und sehr groß und wissen noch nicht, wohin. Fahren kann ich Ihnen nichts davon, bei uns legt nur das Melasseschiff an. Beschreiben kann ich es. Marceline Philogène.“",
+        "Eingangsvermerk, Port des Alizés: „Eingegangen am 28. November 1923.“ Mehr steht nicht darauf. Ob und wann Zucker nach Anse Dorée kommt, entscheidet die Société. Die Bücher werden es zeigen."
+      ],
+      "grounding": "Gemessen: Anse Dorée Zucker (Sugar) 369 verlangt, 0 gedeckt (November 1923); in keiner Messung seit Beginn der Aufzeichnung lag dort Zucker in den Läden (geprüft über alle Sitzungen). Am 03.11.1923 außerdem Maschinen 0 von 145, Fahrzeuge 0 von 72, Gemüse 208 von 369, Kleidung 28 von 184. La Mulatière Sugar Cane Farm neu im Register am 22.11.1923, gleich auf Stufe 11, erzeugt Zuckerrohr; die Montceau-les-Mines Sugar Mill (Zucker und Melasse) liegt 2,0 km von ihr entfernt. Port des Alizés Zucker 205 von 509 (26.11.1923), beliefert u. a. über die Luftfrachtlinie AC Sugar,Rum,Dünger-Mon-PordesAli-IC-1; Roche-Noire Zucker 71 von 219 (November 1923). Bus Passagiere-AnsDor-LO-1 mit 3 Postkutschen (laut Spiel ab 1896, im Einsatz seit 1900). Gaston Bellance (35085, Anse Dorée) 1923 alle 100 Wege mit der Société; Lucienne Sainte-Rose (36242) ohne Arbeitsplatz 21.07.–01.12.1923; Célestin Hilaire (94977) ohne Arbeitsplatz seit 06.12.1922, 1923 alle Wege mit dem Automobil; Marceline Philogène (126758) wohnt in La Mulatière, wo nur WC Passagiere,Molasses-LaMul-Lar-IC-1 anlegt. Abstand La Mulatière – Anse Dorée 16,0 km. Erfunden: Bittschrift, Unterschriften, Zitate, Brief, Radio-Erwähnung und Eingangsvermerk. Madame Rosalie, die Wirtin von „Les Jardins“, Héloïse, Firmin, der Kutscher und der Herr aus Roche-Noire sind wiederkehrende erfundene Figuren (Gästebuch 1921, Tischordnung 1922). Namen der Personen von der Redaktion vergeben.",
+      "refs": {
+        "staedte": [
+          174645,
+          174631,
+          174635,
+          174632,
+          174601
+        ],
+        "personen": [
+          35085,
+          36242,
+          94977,
+          126758
+        ],
+        "linien": [
+          288188,
+          458215
+        ],
+        "betriebe": [
+          418234,
+          253260
+        ]
+      }
+    },
+    {
+      "id": "1923-12-zeitkapsel-vauclaire",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1923-12",
+      "lead": true,
+      "rubrik": "Zeitkapsel · Vauclaire",
+      "titel": "Was in der Keksdose liegt. Eine Zeitkapsel aus Vauclaire, zu öffnen Weihnachten 1950",
+      "teaser": "Am letzten Tag des Jahres 1923 haben Marthe und Paul aus Vauclaire eine Keksdose mit Dingen gefüllt, die man 1950 nicht mehr glauben wird, und sie hinter dem Haus vergraben. Marthe hat ein Verzeichnis angelegt. Eine Abschrift hängt im Laden neben den Kreiseln.",
+      "body": [
+        "Zeitkapsel Vauclaire, Dose Nr. 1, vorher Kekse. Zu öffnen Weihnachten 1950. Verzeichnis von Marthe, neunzehn, Zeichnungen von Paul, elf.",
+        "1. Ein roter Kreisel, der erste. Er hat sich im März zum ersten Mal gedreht und, sagt Paul, seitdem nicht aufgehört. Vauclaire hatte damals zwölf Spielzeuge bei 169, die es verlangte. Am 28. Dezember sind es 49 bei 181. Es sind also mehr geworden, aber auch mehr, die welche wollen. Paul sagt, das sei das Gute an Spielzeug.",
+        "2. Ein Telegramm von Honorine vom Dezember 1922: „Lastwagen zählt nicht. Ankunft zählt.“ Dazu ihre Bordkarte vom April, Platz 3, Fensterplatz. Sie hat danach geschrieben, sie fliege nie wieder, und ist im Juli noch einmal geflogen, „nur um es zu überprüfen“.",
+        "3. Ein Stück Kreide von der Wand in Valmorin, mit der Post gekommen, von Lucie: „Stufe zwei. Damit ihr seht, dass man warten kann und trotzdem etwas passiert.“",
+        "4. Ein Fahrschein des Omnibus von Garches nach Sin-le-Noble, entwertet, geschickt von Mademoiselle Eulalie. Auf der Rückseite: „Oben gesessen. Der Herr Pfarrer auch.“",
+        "5. Pauls Spielregeln vom August, mit dem Rosalie-Feld. Rosalie Gaspard arbeitet seit dem 19. August. Herr Saint-Cyr von gegenüber hat seit dem 24. September keine Arbeit und geht seitdem jeden Weg zu Fuß, um zu suchen. Madame Bellance zwei Häuser weiter hat heute, am 31. Dezember, wieder Arbeit gefunden, nach viereinhalb Monaten. Marthe: Ich habe es noch dazugeschrieben, bevor der Deckel zuging.",
+        "6. Ein Programmzettel von Radio Alizés, Weihnachtswoche 1923, aus der Zeitung geschnitten. Paul hat das Märchen angestrichen.",
+        "7. Ein Zettel mit einer Zahl: 667. So viele sind wir am 28. Dezember. Am Neujahrstag 1923 waren es 612. Der Großvater sagt, er kenne trotzdem jeden. Er kennt nicht jeden. Er grüßt aber jeden, das ist fast dasselbe.",
+        "8. Ein Brief von Marthe an die Leute von 1950: „Bei uns steht seit November 1922 eine Maschinenfabrik, die noch keine einzige Maschine gemacht hat. Wenn Ihr das lest, hat sie hoffentlich eine gemacht. Falls nicht: Geduld haben wir Euch hiermit vererbt. Bitte gut verwahren, man bekommt sie nicht im Laden.“",
+        "9. Ein leeres Blatt, wie Türchen 23 im Adventskalender: „Für das, was noch nicht angekommen ist.“ Paul hat es gefaltet, damit es weniger Platz braucht. Marthe sagt, in der Dose werde es trotzdem das Größte sein.",
+        "Nicht in der Dose: das Brettpferd. Es steht obendrauf. Als Grabstein, sagt Paul. Als Wegweiser, sagt Marthe. Als Pferd, sagt der Großvater.",
+        "Auch nicht in der Dose: das Schild „Sarrians“ von der Station. Der Großvater wollte es dazulegen. Es ist zu groß und hängt noch. Die Stationen heißen weiter so, acht Jahre nachdem die Stadt Vauclaire geworden ist."
+      ],
+      "grounding": "Gemessen: Vauclaire Spielzeug erstmals am 25.03.1923 in den Läden (12 von 169), am 28.12.1923 49 von 181; Einwohner 612 (01.01.1923) und 667 (28.12.1923). Vauclaire Maschinenfabrik seit 21.11.1922 auf Stufe 1, in keiner Messung mit Produktion (Maschinen 0 von 79 im Dezember 1923). Burg des weissen Reihers in Valmorin seit 02.09.1923 auf Stufe 2; Bus Passagiere-Gar-Sin-IC-1 seit 25.04.1923. Rosalie Gaspard (35063) Arbeit seit 19.08.1923; Fernand Saint-Cyr (35558) ohne Arbeitsplatz seit 24.09.1923, seitdem jeder beobachtete Weg zu Fuß; Adélaïde Bellance (34894) ohne Arbeitsplatz vom 19.08. bis 31.12.1923 (alle Vauclaire). Stationen „Sarrians Station West“, „Sarrians Hafen“ und „Sarrians Bauernhof“; der Ort heißt seit 28.11.1915 Vauclaire. Erfunden: Zeitkapsel, Dose und Inhalt, Briefe, Fahrschein, Bordkarte, Honorines zweiter Flug, Wohnlage der Nachbarn. Marthe, Paul, der Großvater, das Brettpferd, Honorine, Lucie und Mademoiselle Eulalie sind wiederkehrende erfundene Figuren. Namen der Personen von der Redaktion vergeben.",
+      "refs": {
+        "staedte": [
+          174634,
+          174607,
+          174644,
+          174632
+        ],
+        "personen": [
+          35063,
+          35558,
+          34894
+        ],
+        "linien": [
+          389477,
+          465920
+        ],
+        "betriebe": [
+          460014
+        ]
+      }
+    },
+    {
+      "id": "1924-01-arbeitszeugnis-valmorin",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1924-01",
+      "lead": true,
+      "rubrik": "Arbeitszeugnis · Valmorin",
+      "titel": "Zeugnis für 45 Dampfkraftwagen. Ausgestellt in Valmorin, Januar 1924",
+      "teaser": "In der ersten Januarwoche 1924 hat die Société in Valmorin 45 Dampfkraftwagen aus dem Dienst genommen, 29 zwischen Unter- und Ober-Valmorin und 16 auf der Strecke zum Bahnhof Süd. An ihrer Stelle fahren Lastwagen vom Typ AMO F-15. Lucie vom Bahnhof hat den Alten ein Zeugnis geschrieben. Es hängt im „Au Quai des Collines“ über dem Tresen.",
+      "body": [
+        "ARBEITSZEUGNIS. Die Dampfkraftwagen der Linie RC Getreide,Fleisch,Wolle-Val-LO-1, 29 an der Zahl, und der Linie RC Bretter,Kleidung,Fisch,+2-Val-LO-1, 16 an der Zahl, waren bei der Société des Alizés — Routes, Voyages et Commerce, vormals Société des Routes et des Rails, in Valmorin beschäftigt. Die ersten der 29 kamen am 11. April 1907, die letzten am 7. September 1913. Ausgeschieden sind alle 45 in der ersten Woche des Jahres 1924.",
+        "Aufgaben. Die 29 haben Getreide, Fleisch und Wolle zwischen Unter-Valmorin und Ober-Valmorin gefahren, zusammen 290 Plätze. Die 16 haben Bretter, Holz, Fisch und seit vorigem Januar auch Kleidung von Unter-Valmorin zum Bahnhof Süd gebracht, 160 Plätze. Laut Spiel ist ihr Modell seit 1905 zu haben. Sie selbst sagen nichts über ihr Alter. Man hört es ihnen an.",
+        "Leistung. Sie waren selten leer. Auf der Getreidestrecke waren am 9. Dezember 1923 285 von 290 Plätzen belegt, an schwachen Tagen um die 150. Auf ihnen war das Fleisch unterwegs, nach dem 1922 ein Kind an der Wand gefragt hat. Im Januar 1923 lagen in den Läden 32 Stück, im November 93.",
+        "Verhalten. Laut, aber verlässlich, sagt Anselme. Sie haben gezischt, wenn sie hielten, wie jemand, der etwas sagen will und es sich anders überlegt. Kinder haben ihnen gewinkt. Pferde mochten sie nicht. Das beruhte auf Gegenseitigkeit.",
+        "Besondere Verdienste. Im Juli 1922 standen sie an der Wand am Quai: „Auf dem Lastwagen: 50.“ — „Welcher Lastwagen?“ — „Der zwischen Unter- und Ober-Valmorin. 29 Stück, alle unterwegs.“ Von keinem anderen Fahrzeug der Société weiß man, dass es an dieser Wand gestanden hat.",
+        "Grund des Ausscheidens. Ersetzt durch 45 Lastwagen vom Typ AMO F-15, laut Spiel seit 1924 zu haben, gekauft vom 2. bis 4. Januar 1924. Die neuen bieten auf der Getreidestrecke 348 statt 290 Plätze und zum Bahnhof Süd 192 statt 160. Die Alten scheiden nicht auf eigenen Wunsch aus. Das sei hier ausdrücklich vermerkt, damit es ihnen bei der nächsten Stelle nicht schadet.",
+        "Wir bedauern ihr Ausscheiden und wissen, dass sie nicht allein sind: Auf anderen Linien der Société fahren weiter 137 Dampfkraftwagen, in Tournus, Sin-le-Noble, Lamballe-Armor, Port des Alizés und anderswo. Wer einem von ihnen begegnet, möge ihn von Valmorin grüßen.",
+        "Wohin die 45 gehen, sagen die Bücher nicht. Wir wünschen ihnen für ihren weiteren Weg alles Gute, am liebsten einen Hof, auf dem jemand Kohlen nachlegt, ohne dass er muss.",
+        "Valmorin, im Januar 1924. Lucie, Bahnhof Valmorin. Mitgezeichnet: Mathurin, „Au Quai des Collines“. Barnabé Lacroix, Maurermeister: „Für die Steine, die sie nicht gebracht haben, können sie nichts.“ Anselme: „Gut.“ Es ist das erste Mal, dass er unter etwas „gut“ schreibt. Mathurin hat die Stelle eingerahmt.",
+        "Nachsatz von Lucie, mit Kreide unter den Rahmen geschrieben: „Hemden: 1 von 160. Ihr Neuen, die ihr jetzt zum Bahnhof Süd fahrt: Ihr wisst, was zu tun ist.“"
+      ],
+      "grounding": "Gemessen: RC Getreide,Fleisch,Wolle-Val-LO-1 (Unter-Valmorin Station – Ober-Valmorin Station) bis 31.12.1923 mit 29 Dampfkraftwagen (laut Spiel ab 1905, gekauft vom 11.04.1907 bis 07.09.1913), 290 Plätze, am 09.12.1923 285 belegt, am 20.12.1923 146; ab 03.01.1924 mit 29 AMO F-15 (laut Spiel ab 1924), 348 Plätze. RC Bretter,Kleidung,Fisch,+2-Val-LO-1 (Unter-Valmorin Station – Valmorin Station Süd; Waren Bretter, Holz, Fisch und seit 14.01.1923 Kleidung) bis 03.01.1924 mit 16 Dampfkraftwagen, 160 Plätze, ab 06.01.1924 mit 16 AMO F-15, 192 Plätze. AMO F-15 gekauft vom 02. bis 04.01.1924 (Fuhrpark, Meldung „Neues Fahrzeugmodell“). Nach dem Wechsel fahren auf anderen Linien weiter 137 Dampfkraftwagen, u. a. in Tournus (22), Sin-le-Noble (12) und Lamballe-Armor (8). Valmorin Fleisch 32 von 303 (01.01.1923), 93 von 317 (26.11.1923); Kleidung 1 von 160 (06.01.1924). Was mit den alten Fahrzeugen geschah, misst der Monitor nicht. Erfunden: Zeugnis, Unterschriften, Zitate, Rahmen und Kreide-Nachsatz. Lucie, Mathurin, Barnabé Lacroix, Anselme, das Kind und die Wand stammen aus der Kreidetafel (Juli 1922).",
+      "refs": {
+        "staedte": [
+          174607,
+          174637,
+          174617,
+          174614,
+          174632
+        ],
+        "personen": [],
+        "linien": [
+          238764,
+          356520
+        ],
+        "betriebe": []
+      }
     }
   ]
 }

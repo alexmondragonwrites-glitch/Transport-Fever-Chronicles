@@ -323,6 +323,1147 @@
         ],
         "personen": []
       }
+    },
+    {
+      "id": "1923-02-februarwoche",
+      "date": "1923-02",
+      "art": "fiktion",
+      "sender": "Radio Alizés · Sender Bourg-l’Écorce",
+      "titel": "Woche vom 18. bis 24. Februar 1923",
+      "grounding": "Gemessen: Bourg-l’Écorce 4.050 Einwohner am 13.02.1923, 3.801 am 17.02. und 3.771 am 20.02.1923, die Wohnkapazität sank mit; Port des Alizés Rum 96 von 254 (17.02.1923), am 25.01.1923 erstmals 97; Péronne Lebensmittelfabrik neu im Register am 20.02.1923 (Stufe 1), Fontenay-aux-Roses Lebensmittelfabrik am 08.01.1923, Roquemer verlangt seit 08.01.1923 Lebensmittel; Valombre 801 und Garches 405 Einwohner (17.02.1923); Valmorin Kleidung 72 von 154 (20.02.1923). Radio, Sender, Sendungen, Sendezeiten, Sprecher und Musik gibt es im Spiel nicht. Erfunden: Radio Alizés, alle Sendungen, Zeiten, Musik, Briefe und Antworten. Honorine, Hippolyte und Lucie sind wiederkehrende erfundene Figuren; die zwei Gäste von Garches stammen aus der Geschichte „Zwei Fassungen“.",
+      "tage": [
+        {
+          "tag": "Sonntag, 18. Februar",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Die Glocken des Archipels",
+              "text": "Heute: Garches. Aufgenommen an einem Sonntag im Januar, als vor der Kirche zwei Gäste standen und beide zuerst gefragt haben."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Konzert der Stadtkapelle"
+            }
+          ]
+        },
+        {
+          "tag": "Montag, 19. Februar",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Aus den Messbüchern",
+              "text": "Bourg-l’Écorce zählt seit Samstag 3.801 Einwohner. Am Dienstag davor waren es 4.050. Mit den Menschen fehlen auch die Wohnungen in den Büchern. Der Sender bleibt, wo er ist."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Fragen Sie Honorine",
+              "text": "Rum in Port: 96. Seit dem 25. Januar wieder mehr als im November 1921. Hippolyte bittet, das nicht zu senden. Rum in Bourg: 481 verlangt, keiner."
+            }
+          ]
+        },
+        {
+          "tag": "Mittwoch, 21. Februar",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Landfunk",
+              "text": "Neu im Register seit gestern: eine Lebensmittelfabrik in Péronne, Stufe eins. Es ist die zweite in diesem Jahr, nach Fontenay-aux-Roses im Januar. Lebensmittel verlangt seit Januar auch Roquemer."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Sportfunk: Die Schläferliga",
+              "text": "Valombre 801, Garches 405. Valombre zieht davon. Garches meldet zwei Gäste vom 14. Januar, die nicht zählen."
+            }
+          ]
+        },
+        {
+          "tag": "Freitag, 23. Februar",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Kinofunk",
+              "text": "Ein Lustspiel über einen Mann, der zu einer Verabredung viel zu früh kommt und deshalb zu spät."
+            },
+            {
+              "zeit": "20.15",
+              "titel": "Bunter Abend aus Valmorin",
+              "text": "In der Pause zählt Lucie vom Bahnhof die Hemden der Stadt: 72."
+            }
+          ]
+        },
+        {
+          "tag": "Samstag, 24. Februar",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Hörerpost",
+              "text": "Viele Briefe aus Bourg zu den verschwundenen Wohnungen. Antwort des Senders: Wir senden für 3.771 so gern wie für 4.050."
+            },
+            {
+              "zeit": "20.30",
+              "titel": "Tanz in den Sonntag"
+            }
+          ]
+        }
+      ],
+      "refs": {
+        "staedte": [
+          174605,
+          174632,
+          174636,
+          174615,
+          174606,
+          174621,
+          174644,
+          174607
+        ],
+        "personen": []
+      }
+    },
+    {
+      "id": "1923-03-spielzeugwoche",
+      "date": "1923-03",
+      "art": "fiktion",
+      "sender": "Radio Alizés · Sender Bourg-l’Écorce",
+      "titel": "Woche vom 25. bis 31. März 1923",
+      "grounding": "Gemessen: Vauclaire Spielzeug 0 von 169 am 18.03.1923, 12 am 25.03.1923 (erstmals seit Beginn der Aufzeichnung), 17 am 29.03.1923; Aniche Sandbaggerschiff geschlossen am 25.03.1923; Valombre 821, Garches 405 und Roquemer 993 Einwohner (25.03.1923); Bourg-l’Écorce Rum 420 verlangt, 0 gedeckt (29.03.1923); Netz 1.196 Fahrzeuge auf 213 Linien. Radio, Sender, Sendungen, Sendezeiten, Sprecher und Musik gibt es im Spiel nicht. Erfunden: Radio Alizés, alle Sendungen, Zeiten, Musik, Briefe und das Schiedsgericht. Paul, Honorine und das Märchen vom Holzpferd (November 1920, Lesung Weihnachten 1922) stammen aus früheren Geschichten.",
+      "tage": [
+        {
+          "tag": "Sonntag, 25. März",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Sondermeldung aus Vauclaire",
+              "text": "In den Läden von Vauclaire liegen zwölf Spielzeuge. Zum ersten Mal, seit die Stadt welche verlangt."
+            },
+            {
+              "zeit": "19.40",
+              "titel": "Die Glocken des Archipels",
+              "text": "Außer der Reihe: Vauclaire."
+            }
+          ]
+        },
+        {
+          "tag": "Dienstag, 27. März",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Fragen Sie Honorine",
+              "text": "Fällt heute aus. Die Wirtin ist beim Schiedsgericht."
+            },
+            {
+              "zeit": "19.35",
+              "titel": "Musik zum Warten"
+            }
+          ]
+        },
+        {
+          "tag": "Mittwoch, 28. März",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Landfunk",
+              "text": "Das Sandbaggerschiff von Aniche steht seit Sonntag nicht mehr im Register."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Sportfunk: Die Schläferliga",
+              "text": "Valombre 821, Garches 405. Roquemer steht bei 993 und bittet, abgemeldet zu werden, sobald es tausend ist."
+            }
+          ]
+        },
+        {
+          "tag": "Donnerstag, 29. März",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Aus den Messbüchern",
+              "text": "Vauclaire: 17 Spielzeuge. Bourg: 420 Rum verlangt, keiner. Die Société zählt 1.196 Fahrzeuge auf 213 Linien."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Abendkonzert"
+            }
+          ]
+        },
+        {
+          "tag": "Samstag, 31. März",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Hörerpost",
+              "text": "Ein Brief von Paul aus Vauclaire: „Ihr habt Weihnachten versprochen, dass das Pferd im Märchen ankommt. Unseres ist jetzt auch angekommen. Es ist ein Kreisel.“"
+            },
+            {
+              "zeit": "20.30",
+              "titel": "Tanz in den Sonntag"
+            }
+          ]
+        }
+      ],
+      "refs": {
+        "staedte": [
+          174634,
+          174600,
+          174621,
+          174644,
+          174606,
+          174605
+        ],
+        "personen": []
+      }
+    },
+    {
+      "id": "1923-04-tausenderwoche",
+      "date": "1923-04",
+      "art": "fiktion",
+      "sender": "Radio Alizés · Sender Bourg-l’Écorce",
+      "titel": "Woche vom 15. bis 21. April 1923",
+      "grounding": "Gemessen: Roquemer 1.008 Einwohner am 15.04.1923 (999 am 12.04.); Valmorin 1.600 am 15.04.1923; AP Passagiere-PordesAli-Sin-IC-1 mit 21 Fahrgästen am 15.04.1923; Valombre 826 und Garches 405 Einwohner (15.04.1923); Port des Alizés Rum 99 von 254 (19.04.1923). Radio, Sender, Sendungen, Sendezeiten, Sprecher und Musik gibt es im Spiel nicht. Erfunden: Radio Alizés, alle Sendungen, Zeiten, Musik, Briefe, Honorines Flugbericht und die Aufstellung Roquemers. Honorine, Lucie und Madame Odile sind wiederkehrende erfundene Figuren.",
+      "tage": [
+        {
+          "tag": "Sonntag, 15. April",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Die Glocken des Archipels",
+              "text": "Heute: Roquemer. Die Stadt zählt seit heute 1.008 Einwohner."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Eine Wirtin fliegt",
+              "text": "Honorine aus Port des Alizés berichtet von ihrem ersten Flug nach Sin-le-Noble, heute Vormittag. Kurz, sagt sie."
+            }
+          ]
+        },
+        {
+          "tag": "Montag, 16. April",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Aus den Messbüchern",
+              "text": "Valmorin zählt 1.600. Eine Hörerin vom Bahnhof Valmorin hatte gebeten, dass wir es sagen, sobald es so weit ist. Es ist so weit."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Musik aus Valmorin"
+            }
+          ]
+        },
+        {
+          "tag": "Mittwoch, 18. April",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Sportfunk",
+              "text": "Roquemer wird ab Mai aufgestellt. In welcher Liga, entscheidet die Sportredaktion noch. Schläferliga: Valombre 826, Garches 405."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Kinofunk"
+            }
+          ]
+        },
+        {
+          "tag": "Freitag, 20. April",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Fragen Sie Honorine",
+              "text": "Rum in Port: 99. Heute beantwortet die Wirtin die Frage, wie man im Flugzeug den Hut festhält."
+            },
+            {
+              "zeit": "20.15",
+              "titel": "Musik zum Wochenende"
+            }
+          ]
+        },
+        {
+          "tag": "Samstag, 21. April",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Hörerpost",
+              "text": "Madame Odile aus Roquemer: „Wir sind tausend. In der Rue des Dames habe ich es schon gesagt. Sie dürfen es jetzt auch senden.“"
+            },
+            {
+              "zeit": "20.30",
+              "titel": "Tanz in den Sonntag"
+            }
+          ]
+        }
+      ],
+      "refs": {
+        "staedte": [
+          174606,
+          174607,
+          174632,
+          174617,
+          174621,
+          174644
+        ],
+        "personen": []
+      }
+    },
+    {
+      "id": "1923-05-omnibuswoche",
+      "date": "1923-05",
+      "art": "fiktion",
+      "sender": "Radio Alizés · Sender Bourg-l’Écorce",
+      "titel": "Woche vom 13. bis 19. Mai 1923",
+      "grounding": "Gemessen: Bus Passagiere-Gar-Sin-IC-1 seit 25.04.1923, erste Fahrgäste am 06.05.1923; Sin-le-Noble 502 Einwohner am 13.05.1923; Netz 1.198 Fahrzeuge auf 214 Linien; Bourg-l’Écorce Rum 436 verlangt, 0 gedeckt (13.05.1923); Roquemer 1.000, Valombre 838 und Garches 405 Einwohner (13.05.1923); Vichy 131 Einwohner in jedem Monatsstand seit 1904; Reichshoffen Sägewerk geschlossen 10.05.1923, Gleizé Eisenerzbergwerk geschlossen 17.05.1923. Radio, Sender, Sendungen, Sendezeiten, Sprecher und Musik gibt es im Spiel nicht. Erfunden: Radio Alizés, alle Sendungen, Zeiten, Musik, Ligen und Lesungen. Mademoiselle Eulalie ist eine wiederkehrende erfundene Figur.",
+      "tage": [
+        {
+          "tag": "Sonntag, 13. Mai",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Die Glocken des Archipels",
+              "text": "Heute: Garches. Unser Sprecher ist ab Sin-le-Noble mit dem neuen Omnibus gekommen, oben."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Konzert der Stadtkapelle"
+            }
+          ]
+        },
+        {
+          "tag": "Montag, 14. Mai",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Aus den Messbüchern",
+              "text": "Sin-le-Noble zählt 502 Einwohner. Die Société zählt 1.198 Fahrzeuge auf 214 Linien. Rum in Bourg: 436 verlangt, keiner."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Fragen Sie Honorine"
+            }
+          ]
+        },
+        {
+          "tag": "Mittwoch, 16. Mai",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Sportfunk: Die Wachstumsliga",
+              "text": "Erster Spieltag. Roquemer 1.000, Valombre 838, Sin-le-Noble 502. Valombre wechselt aus der Schläferliga herüber und will nicht mehr zurück."
+            },
+            {
+              "zeit": "19.50",
+              "titel": "Sportfunk: Die Schläferliga",
+              "text": "Garches 405. Neu aufgenommen als Ehrenmitglied: Vichy, 131, in jedem Monat seit 1904. Gegen Vichy hat Garches nie eine Chance gehabt, nur keiner hat es gemerkt."
+            }
+          ]
+        },
+        {
+          "tag": "Freitag, 18. Mai",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Landfunk",
+              "text": "Das Sägewerk von Reichshoffen steht seit dem 10. Mai nicht mehr im Register, das Eisenerzbergwerk von Gleizé seit gestern."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Kinofunk"
+            }
+          ]
+        },
+        {
+          "tag": "Samstag, 19. Mai",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Hörerpost: Eine Anleitung aus Garches",
+              "text": "Mademoiselle Eulalie hat aufgeschrieben, wie man in Garches Omnibus fährt. Wir lesen Auszüge, Punkt 6 zweimal."
+            },
+            {
+              "zeit": "20.30",
+              "titel": "Tanz in den Sonntag"
+            }
+          ]
+        }
+      ],
+      "refs": {
+        "staedte": [
+          174644,
+          174617,
+          174605,
+          174606,
+          174621,
+          174638,
+          174599,
+          174623
+        ],
+        "personen": []
+      }
+    },
+    {
+      "id": "1923-06-namenswoche",
+      "date": "1923-06",
+      "art": "fiktion",
+      "sender": "Radio Alizés · Sender Bourg-l’Écorce",
+      "titel": "Woche vom 17. bis 23. Juni 1923",
+      "grounding": "Gemessen: Umbenennung Vichy → Bellegrève ab 20.06.1923, Linien „Gar-Vic“ heißen ab demselben Tag „Gar-Bel“; Bellegrève 131 Einwohner; Port des Alizés Rum 138 von 254 (16.06.1923); Valombre 850 und Garches 405 Einwohner (20.06.1923); Montfougère Kleidung erstmals am 12.06.1923, 11 von 89 am 20.06.1923; Marceline Philogène (126758, La Mulatière) ohne Arbeitsplatz vom 04.06. bis 23.06.1923. Radio, Sender, Sendungen, Sendezeiten, Sprecher und Musik gibt es im Spiel nicht. Erfunden: Radio Alizés, alle Sendungen, Zeiten, Musik und Briefe. Honorine ist eine wiederkehrende erfundene Figur.",
+      "tage": [
+        {
+          "tag": "Sonntag, 17. Juni",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Die Glocken des Archipels",
+              "text": "Heute: Vichy, 131 Einwohner, eine Glocke."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Sommerkonzert"
+            }
+          ]
+        },
+        {
+          "tag": "Dienstag, 19. Juni",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Fragen Sie Honorine",
+              "text": "Rum in Port: 138. So viel hat diese Sendung noch nie ansagen dürfen. Die Wirtin bittet trotzdem um Mäßigung, beim Trinken und beim Jubeln."
+            },
+            {
+              "zeit": "20.15",
+              "titel": "Tanzmusik aus dem Hafen"
+            }
+          ]
+        },
+        {
+          "tag": "Mittwoch, 20. Juni",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Aus den Messbüchern: Aus Vichy wird Bellegrève",
+              "text": "Ab heute führen die Bücher den Ort unter neuem Namen. Einwohner: 131, wie immer. Die Dampfer dorthin heißen jetzt „Gar-Bel“. Unsere Glockenaufnahme vom Sonntag ist damit historisch."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Sportfunk: Die Schläferliga",
+              "text": "Bellegrève, vormals Vichy, 131. Garches 405. Valombre spielt mit 850 in der Wachstumsliga."
+            }
+          ]
+        },
+        {
+          "tag": "Freitag, 22. Juni",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Landfunk",
+              "text": "In Montfougère liegen seit dem 12. Juni Hemden in den Läden, zum ersten Mal. Inzwischen elf."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Kinofunk"
+            }
+          ]
+        },
+        {
+          "tag": "Samstag, 23. Juni",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Hörerpost",
+              "text": "Ein Brief aus La Mulatière, abgeschickt am Montag: „Ich habe seit dem 4. Juni keine Arbeit. Wenn Sie das vorlesen, habe ich vielleicht schon wieder eine. Kein Musikwunsch.“ Laut den Messbüchern hat die Absenderin seit heute wieder eine."
+            },
+            {
+              "zeit": "20.30",
+              "titel": "Tanz in den Sonntag"
+            }
+          ]
+        }
+      ],
+      "refs": {
+        "staedte": [
+          174638,
+          174632,
+          174621,
+          174644,
+          174646,
+          174631
+        ],
+        "personen": [
+          126758
+        ]
+      }
+    },
+    {
+      "id": "1923-07-festwoche",
+      "date": "1923-07",
+      "art": "fiktion",
+      "sender": "Radio Alizés · Sender Bourg-l’Écorce",
+      "titel": "Festwoche, 8. bis 14. Juli 1923",
+      "grounding": "Gemessen: Montfougère 503 Einwohner seit 04.07.1923; Siméon Thélus (36791, Montfougère) erste beobachtete Fahrt mit der Société am 11.07.1923, Augustine Baptiste (36203) am 09.02.1923; Port des Alizés Rum 145 von 254 (08.07.1923), Bourg-l’Écorce Rum 456 verlangt, 0 gedeckt; Valombre 860, Garches 405 und Bellegrève 131 Einwohner (11.07.1923); Burg des weissen Reihers in Valmorin Stufe 1 von 4. Radio, Sender, Sendungen, Sendezeiten, Sprecher und Musik gibt es im Spiel nicht. Erfunden: Radio Alizés, alle Sendungen, Zeiten, Musik, Feste und Briefe. Anselme und der Quai sind wiederkehrende erfundene Figuren und Orte.",
+      "tage": [
+        {
+          "tag": "Sonntag, 8. Juli",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Die Glocken des Archipels",
+              "text": "Heute: Montfougère, seit Mittwoch 503 Einwohner."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Musik von der Fähre"
+            }
+          ]
+        },
+        {
+          "tag": "Dienstag, 10. Juli",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Fragen Sie Honorine",
+              "text": "Rum in Port: 145. Rum in Bourg: 456 verlangt, keiner. Heute: Darf man auf ein Fest gehen, wenn man nichts zum Anstoßen hat?"
+            },
+            {
+              "zeit": "20.15",
+              "titel": "Tanzmusik aus dem Hafen"
+            }
+          ]
+        },
+        {
+          "tag": "Mittwoch, 11. Juli",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Sportfunk",
+              "text": "Wachstumsliga: Valombre 860. Schläferliga: Garches 405, Bellegrève 131. Beide Mannschaften haben sich seit dem letzten Spieltag nicht bewegt und gelten deshalb als ungeschlagen."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Kinofunk"
+            }
+          ]
+        },
+        {
+          "tag": "Freitag, 13. Juli",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Vorabend des Festes: Musik vom Quai",
+              "text": "Die Kapelle spielt vor der Lärmschutzwand in Valmorin. In der Pause die Burg-Meldung, verlesen von Anselme: Stufe eins. Er liest es vor, als sei es eine gute Nachricht."
+            },
+            {
+              "zeit": "21.30",
+              "titel": "Lampionmusik"
+            }
+          ]
+        },
+        {
+          "tag": "Samstag, 14. Juli",
+          "sendungen": [
+            {
+              "zeit": "11.00",
+              "titel": "Platzkonzert aus Port des Alizés"
+            },
+            {
+              "zeit": "19.30",
+              "titel": "Hörerpost",
+              "text": "Aus Montfougère: „Ich fahre seit Februar mit der Société. Seit Mittwoch fährt auch ein Nachbar, der neun Jahre lang gegangen ist. Bitte nicht seinen Namen sagen, er würde wieder aussteigen.“"
+            },
+            {
+              "zeit": "20.30",
+              "titel": "Tanz zum Fest"
+            }
+          ]
+        }
+      ],
+      "refs": {
+        "staedte": [
+          174646,
+          174632,
+          174605,
+          174621,
+          174644,
+          174638,
+          174607
+        ],
+        "personen": [
+          36791,
+          36203
+        ]
+      }
+    },
+    {
+      "id": "1923-08-sommerwoche",
+      "date": "1923-08",
+      "art": "fiktion",
+      "sender": "Radio Alizés · Sender Bourg-l’Écorce",
+      "titel": "Sommerwoche, 12. bis 18. August 1923",
+      "grounding": "Gemessen: Port des Alizés Rum 150 von 254 (12.08.1923); Bus Passagiere-Bou-LO-10 angelegt am 14.08.1923 ohne Fahrzeug, am 15.08.1923 als Tram Passagiere-Bou-LO-2 mit 3 Straßenbahnen; Vauclaire Spielzeug 54 von 175 (12.08.1923); Bellegrève heißt seit 20.06.1923 so (vorher Vichy). Radio, Sender, Sendungen, Sendezeiten, Sprecher und Musik gibt es im Spiel nicht. Erfunden: Radio Alizés, alle Sendungen, Zeiten, Musik, Briefe und Pauls Spiel. Honorine und Paul sind wiederkehrende erfundene Figuren.",
+      "tage": [
+        {
+          "tag": "Sonntag, 12. August",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Die Glocken des Archipels",
+              "text": "Heute: Pointe des Pêcheurs."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Sonntag am Meer: Musik vom Strand"
+            }
+          ]
+        },
+        {
+          "tag": "Montag, 13. August",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Fragen Sie Honorine",
+              "text": "Rum in Port: 150. Die Wirtin bittet, nicht zu klatschen, das störe beim Einschenken."
+            },
+            {
+              "zeit": "20.15",
+              "titel": "Tanzmusik aus dem Hafen"
+            }
+          ]
+        },
+        {
+          "tag": "Mittwoch, 15. August",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Aus den Messbüchern: Neue Straßenbahn in Bourg",
+              "text": "Seit heute fährt in Bourg-l’Écorce eine zweite Straßenbahnlinie, mit drei Wagen. Gestern stand sie noch als Omnibuslinie ohne Wagen in den Büchern. Sie hat sich über Nacht für Schienen entschieden."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Sommerkonzert"
+            }
+          ]
+        },
+        {
+          "tag": "Freitag, 17. August",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Kinderfunk: Ein Spiel aus Vauclaire",
+              "text": "Paul erklärt sein Würfelspiel von Tournus nach Vauclaire. Bitte einen Würfel und einen Kreisel bereithalten. Wer eine Eins würfelt, fliegt."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Kinofunk"
+            }
+          ]
+        },
+        {
+          "tag": "Samstag, 18. August",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Hörerpost",
+              "text": "Aus Bellegrève fragt ein Hörer, ob man sich an den neuen Namen gewöhnen muss. Antwort des Senders: Die Briefe gewöhnen sich zuerst."
+            },
+            {
+              "zeit": "20.30",
+              "titel": "Tanz in den Sonntag"
+            }
+          ]
+        }
+      ],
+      "refs": {
+        "staedte": [
+          174602,
+          174632,
+          174605,
+          174634,
+          174638
+        ],
+        "personen": []
+      }
+    },
+    {
+      "id": "1923-09-burgwoche",
+      "date": "1923-09",
+      "art": "fiktion",
+      "sender": "Radio Alizés · Sender Bourg-l’Écorce",
+      "titel": "Woche vom 2. bis 8. September 1923",
+      "grounding": "Gemessen: Burg des weissen Reihers in Valmorin seit 23.03.1921 Stufe 1, erstmals Stufe 2 von 4 in der Messung vom 02.09.1923; Valmorin Fleisch 62 von 313, Kleidung 9 von 156, Werkzeuge 0 von 166 (02.09.1923); Port des Alizés Rum 150 (02.09.1923); Valombre 882, Garches 405, Bellegrève 131 Einwohner. Radio, Sender, Sendungen, Sendezeiten, Sprecher und Musik gibt es im Spiel nicht. Erfunden: Radio Alizés, alle Sendungen, Zeiten, Musik und die Postkarte. Die unbekannte Hand an der Wand stammt aus der Kreidetafel (Juli 1922).",
+      "tage": [
+        {
+          "tag": "Sonntag, 2. September",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Sondermeldung aus Valmorin",
+              "text": "Die Burg des weißen Reihers steht auf Stufe zwei von vier. Seit März 1921 war es Stufe eins."
+            },
+            {
+              "zeit": "19.40",
+              "titel": "Die Glocken des Archipels",
+              "text": "Außer der Reihe: Valmorin, mit der Kapelle vom Quai."
+            }
+          ]
+        },
+        {
+          "tag": "Dienstag, 4. September",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Fragen Sie Honorine",
+              "text": "Rum in Port: 150. Heute: Wie gratuliert man einer Burg?"
+            },
+            {
+              "zeit": "20.15",
+              "titel": "Tanzmusik aus dem Hafen"
+            }
+          ]
+        },
+        {
+          "tag": "Mittwoch, 5. September",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Sportfunk",
+              "text": "Wachstumsliga: Valombre 882. Schläferliga: Garches 405, Bellegrève 131."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Kinofunk"
+            }
+          ]
+        },
+        {
+          "tag": "Freitag, 7. September",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Landfunk",
+              "text": "Valmorin, Stand Sonntag: Fleisch 62 im Laden, Hemden 9, Werkzeuge keine. Die Burg ist weiter als die Hemden."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Abendkonzert"
+            }
+          ]
+        },
+        {
+          "tag": "Samstag, 8. September",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Hörerpost",
+              "text": "Aus Valmorin eine Postkarte ohne Unterschrift, mit Kreide geschrieben: „Er hat sich getraut.“ Mehr steht nicht darauf. Wir senden sie trotzdem."
+            },
+            {
+              "zeit": "20.30",
+              "titel": "Tanz in den Sonntag"
+            }
+          ]
+        }
+      ],
+      "refs": {
+        "staedte": [
+          174607,
+          174632,
+          174621,
+          174644,
+          174638
+        ],
+        "personen": []
+      }
+    },
+    {
+      "id": "1923-10-allerheiligenwoche",
+      "date": "1923-10",
+      "art": "fiktion",
+      "sender": "Radio Alizés · Sender Bourg-l’Écorce",
+      "titel": "Woche vom 28. Oktober bis 3. November 1923",
+      "grounding": "Gemessen: Bourg-l’Écorce 4.053 Einwohner am 12.10.1923, 3.888 am 30.10.1923, die Wohnkapazität sank mit; Valombre 900 Einwohner am 30.10.1923, Garches 405, Bellegrève 131; Port des Alizés Rum 152 von 254 (30.10.1923), so viel wie in keiner Messung seit Beginn der Aufzeichnung (erstmals 152 am 24.09.1923). Die Stufen der Zeitung gehen nicht zurück. Radio, Sender, Sendungen, Sendezeiten, Sprecher und Musik gibt es im Spiel nicht. Erfunden: Radio Alizés, alle Sendungen, Zeiten, Musik, Briefe und Antworten. Hortense ist die Schwester aus dem Ferngespräch dieser Ausgabe.",
+      "tage": [
+        {
+          "tag": "Sonntag, 28. Oktober",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Die Glocken des Archipels",
+              "text": "Heute: Bourg-l’Écorce, die eigene Kirche."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Konzert der Stadtkapelle"
+            }
+          ]
+        },
+        {
+          "tag": "Dienstag, 30. Oktober",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Aus den Messbüchern",
+              "text": "Bourg-l’Écorce zählt heute 3.888. Am 12. Oktober waren es 4.053. Wieder sind Wohnungen aus den Büchern verschwunden. Warum, sagen sie nicht. Der Sender sendet weiter."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Fragen Sie Honorine",
+              "text": "Rum in Port: 152, so viel wie noch nie in den Büchern. Rum in Bourg: keiner. Die Wirtin schenkt heute Abend für Bourg-l’Écorce eins mit aus."
+            }
+          ]
+        },
+        {
+          "tag": "Mittwoch, 31. Oktober",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Sportfunk",
+              "text": "Valombre 900! Die Schläferliga hat ihren früheren Spitzenreiter endgültig verloren. Es bleiben Garches 405 und Bellegrève 131."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Kinofunk"
+            }
+          ]
+        },
+        {
+          "tag": "Donnerstag, 1. November, Allerheiligen",
+          "sendungen": [
+            {
+              "zeit": "18.00",
+              "titel": "Die Glocken des Archipels",
+              "text": "Alle Kirchen, von Garches bis Roquemer, nacheinander."
+            },
+            {
+              "zeit": "19.30",
+              "titel": "Stille Musik"
+            }
+          ]
+        },
+        {
+          "tag": "Samstag, 3. November",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Hörerpost",
+              "text": "Antwort an Hortense, Rue de Genève, und an alle, die gefragt haben, ob Bourg noch Rundfunkstadt ist: Einmal Rundfunk, immer Rundfunk. Eine Stadt, die viertausend war, darf zwischendurch Luft holen."
+            },
+            {
+              "zeit": "20.30",
+              "titel": "Tanz in den Sonntag"
+            }
+          ]
+        }
+      ],
+      "refs": {
+        "staedte": [
+          174605,
+          174621,
+          174644,
+          174638,
+          174632,
+          174606
+        ],
+        "personen": []
+      }
+    },
+    {
+      "id": "1923-11-jubilaeumswoche",
+      "date": "1923-11",
+      "art": "fiktion",
+      "sender": "Radio Alizés · Sender Bourg-l’Écorce",
+      "titel": "Ein Jahr Radio Alizés, 18. bis 24. November 1923",
+      "grounding": "Gemessen: Bourg-l’Écorce 4.012 Einwohner am 17.11.1922 (Beginn der Rundfunkzeit), 3.942 am 15.11.1923; Netz 1.186 Fahrzeuge im November 1922, 1.205 im November 1923; seit November 1922: erste Spielzeuge in Vauclaire (25.03.1923), Roquemer über 1.000 (April 1923), Bus Passagiere-Gar-Sin-IC-1 (seit 25.04.1923), Burg des weissen Reihers Stufe 2 (02.09.1923), Vichy → Bellegrève (20.06.1923); Port des Alizés Rum 152, Bourg-l’Écorce Rum 472 verlangt, 0 gedeckt (22.11.1923); La Mulatière Sugar Cane Farm neu im Register am 22.11.1923 (Stufe 11); Méru Eisenerzbergwerk geschlossen 22.11.1923. Radio, Sender, Sendungen, Sendezeiten, Sprecher und Musik gibt es im Spiel nicht. Erfunden: Radio Alizés, alle Sendungen, Zeiten, Musik, Ansprache, Briefe. Honorine ist eine wiederkehrende erfundene Figur, die Bittschrift aus Anse Dorée erscheint in dieser Ausgabe.",
+      "tage": [
+        {
+          "tag": "Sonntag, 18. November",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Ein Jahr Radio Alizés",
+              "text": "Der Bürgermeister spricht. Bourg-l’Écorce zählt 3.942 Einwohner, ein Jahr nach den 4.012, mit denen alles anfing. Er sagt, er zähle lieber Hörer."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Festkonzert aus dem Saal über der Gare Centrale"
+            }
+          ]
+        },
+        {
+          "tag": "Montag, 19. November",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Aus den Messbüchern: Ein Jahr in Zahlen",
+              "text": "Seit unserer ersten Sendung hat Vauclaire Spielzeug bekommen, Roquemer zählt über tausend, Garches fährt Omnibus, Valmorins Burg steht auf Stufe zwei, und Vichy heißt Bellegrève. Die Société zählt 1.205 Fahrzeuge, vor einem Jahr waren es 1.186."
+            },
+            {
+              "zeit": "20.15",
+              "titel": "Wunschkonzert"
+            }
+          ]
+        },
+        {
+          "tag": "Mittwoch, 21. November",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Fragen Sie Honorine",
+              "text": "Ein Jahr lang hat die Wirtin hier den Rum von Bourg angesagt. Es war jedes Mal dieselbe Zahl: keiner. Nur die Zahl davor wurde größer. Rum in Port: 152."
+            },
+            {
+              "zeit": "20.15",
+              "titel": "Tanzmusik aus dem Hafen"
+            }
+          ]
+        },
+        {
+          "tag": "Donnerstag, 22. November",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Landfunk",
+              "text": "Neu im Register seit heute: eine Zuckerrohrplantage bei La Mulatière, gleich auf der elften Stufe. Nicht mehr im Register: das Eisenerzbergwerk von Méru."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Kinofunk"
+            }
+          ]
+        },
+        {
+          "tag": "Samstag, 24. November",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Hörerpost",
+              "text": "Viele Briefe aus Anse Dorée zur neuen Plantage. Eine Hörerin aus der Pension „Les Jardins“ schreibt: „Wir setzen eine Bittschrift auf.“ Der Sender wünscht Glück und Zucker."
+            },
+            {
+              "zeit": "20.30",
+              "titel": "Jubiläumsball"
+            }
+          ]
+        }
+      ],
+      "refs": {
+        "staedte": [
+          174605,
+          174634,
+          174606,
+          174644,
+          174607,
+          174638,
+          174632,
+          174631,
+          174620,
+          174645
+        ],
+        "personen": []
+      }
+    },
+    {
+      "id": "1923-12-weihnachtswoche",
+      "date": "1923-12",
+      "art": "fiktion",
+      "sender": "Radio Alizés · Sender Bourg-l’Écorce",
+      "titel": "Weihnachtswoche, 17. bis 25. Dezember 1923",
+      "grounding": "Gemessen: Vauclaire Spielzeug 50 von 181 (16.12.1923), das erste kam am 25.03.1923; Kasse der Société 1.892,8 Mio. am 16.12.1923; Netz 1.205 Fahrzeuge; Port des Alizés Rum 151, Bourg-l’Écorce Rum 421 verlangt, 0 gedeckt (20.12.1923); Valombre 921, Garches 405, Bellegrève 131 Einwohner (20.12.1923). Radio, Sender, Sendungen, Sendezeiten, Sprecher und Musik gibt es im Spiel nicht. Erfunden: Radio Alizés, alle Sendungen, Zeiten, Musik, das Märchen vom Kreisel, Christmette und Grüße. Honorine, die Tafel „Rum in Bourg?“, der Pfarrer von Garches, Isidore Valère und Marceline Philogène als Grüßende stammen aus früheren Geschichten.",
+      "tage": [
+        {
+          "tag": "Montag, 17. Dezember",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Aus den Messbüchern",
+              "text": "Vauclaire hat 50 Spielzeuge bei 181, die es verlangt. Es ist das erste Weihnachten mit Spielzeug. Die Kasse der Société steht bei 1.892,8 Millionen."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Adventsmusik",
+              "text": "Der Kinderchor von Vauclaire, zum ersten Mal im Radio."
+            }
+          ]
+        },
+        {
+          "tag": "Mittwoch, 19. Dezember",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Fragen Sie Honorine",
+              "text": "Was schenkt man einer Stadt ohne Rum? Port hat 151, Bourg keinen. An der Tafel steht der 39. Strich."
+            },
+            {
+              "zeit": "20.15",
+              "titel": "Kinofunk",
+              "text": "Das Weihnachtsprogramm der Lichtspielhäuser."
+            }
+          ]
+        },
+        {
+          "tag": "Freitag, 21. Dezember",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Sportfunk",
+              "text": "Letzter Spieltag des Jahres. Wachstumsliga: Valombre 921. Schläferliga: Garches 405, Bellegrève 131, beide ohne Gegentor."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Bunter Abend aus Port des Alizés"
+            }
+          ]
+        },
+        {
+          "tag": "Montag, 24. Dezember, Heiligabend",
+          "sendungen": [
+            {
+              "zeit": "18.00",
+              "titel": "Die Glocken des Archipels",
+              "text": "Von Garches bis Roquemer, aufgenommen in der Woche davor."
+            },
+            {
+              "zeit": "18.30",
+              "titel": "Für die Kinder: Das Märchen vom Kreisel, der sich nicht hinlegen wollte",
+              "text": "Neu geschrieben für dieses Jahr. Der Kreisel kommt am Anfang an und dreht sich dann bis zum Schluss."
+            },
+            {
+              "zeit": "19.30",
+              "titel": "Weihnachtliche Musik"
+            },
+            {
+              "zeit": "23.30",
+              "titel": "Christmette aus Garches",
+              "text": "Der Pfarrer predigt kurz. Er hat es versprochen."
+            }
+          ]
+        },
+        {
+          "tag": "Dienstag, 25. Dezember",
+          "sendungen": [
+            {
+              "zeit": "11.00",
+              "titel": "Weihnachtskonzert"
+            },
+            {
+              "zeit": "19.30",
+              "titel": "Grüße der Hörer",
+              "text": "Aus Fontenay-aux-Roses nach La Mulatière, diesmal mit Musikwunsch. Aus La Mulatière nach Fontenay-aux-Roses, ohne. Und aus Vauclaire nach Port des Alizés, an eine Wirtin, die zweimal geflogen ist."
+            },
+            {
+              "zeit": "20.30",
+              "titel": "Tanz am Weihnachtsabend"
+            }
+          ]
+        }
+      ],
+      "refs": {
+        "staedte": [
+          174634,
+          174632,
+          174605,
+          174621,
+          174644,
+          174638,
+          174606,
+          174615,
+          174631
+        ],
+        "personen": []
+      }
+    },
+    {
+      "id": "1924-01-neujahrswoche",
+      "date": "1924-01",
+      "art": "fiktion",
+      "sender": "Radio Alizés · Sender Bourg-l’Écorce",
+      "titel": "Neujahrswoche, 31. Dezember 1923 bis 6. Januar 1924",
+      "grounding": "Gemessen: Kasse der Société 1.690,0 Mio. am 01.01.1923 und 1.889,6 Mio. am 31.12.1923; Netz 1.205 Fahrzeuge auf 216 Linien (31.12.1923); Vauclaire 612 Einwohner am 01.01.1923, 667 am 31.12.1923; Bourg-l’Écorce 3.940 Einwohner (31.12.1923); 29 AMO F-15 (laut Spiel ab 1924) ab 03.01.1924 auf RC Getreide,Fleisch,Wolle-Val-LO-1 statt 29 Dampfkraftwagen; Auch Käserei neu im Register am 28.12.1923, Cassis Käserei am 03.01.1924, beide Stufe 1, Eingang laut Spiel Milch; Bellegrève 131 Einwohner in jedem Monatsstand seit 1904. Radio, Sender, Sendungen, Sendezeiten, Sprecher und Musik gibt es im Spiel nicht. Erfunden: Radio Alizés, alle Sendungen, Zeiten, Musik, Ansprache und Rätsel.",
+      "tage": [
+        {
+          "tag": "Montag, 31. Dezember, Silvester",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Das Jahr 1923 in Zahlen",
+              "text": "Die Kasse der Société: 1.889,6 Millionen, ein Jahr vorher 1.690,0. Fahrzeuge: 1.205 auf 216 Linien. Vauclaire: 612 Einwohner am Neujahrstag, heute 667."
+            },
+            {
+              "zeit": "21.00",
+              "titel": "Silvesterball aus dem Saal über der Gare Centrale"
+            },
+            {
+              "zeit": "23.55",
+              "titel": "Die Bahnhofsuhr von Bourg schlägt zwölf"
+            }
+          ]
+        },
+        {
+          "tag": "Dienstag, 1. Januar",
+          "sendungen": [
+            {
+              "zeit": "11.00",
+              "titel": "Neujahrsansprache des Bürgermeisters",
+              "text": "Bourg-l’Écorce zählt 3.940. Der Bürgermeister wünscht sich für 1924 sechzig mehr und keine Wohnung weniger."
+            },
+            {
+              "zeit": "11.30",
+              "titel": "Neujahrskonzert"
+            }
+          ]
+        },
+        {
+          "tag": "Donnerstag, 3. Januar",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Aus den Messbüchern",
+              "text": "In Valmorin fahren seit heute neue Lastwagen, AMO F-15, ein Modell dieses Jahres. 29 Stück, statt der Dampfkraftwagen, die dort seit 1907 unterwegs waren."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Musik zum Abschied"
+            }
+          ]
+        },
+        {
+          "tag": "Samstag, 5. Januar",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Landfunk: Käse",
+              "text": "Neu im Register: Käsereien in Auch, seit dem 28. Dezember, und in Cassis, seit vorgestern. Sie brauchen Milch und haben noch keine."
+            },
+            {
+              "zeit": "20.30",
+              "titel": "Tanz in den Sonntag"
+            }
+          ]
+        },
+        {
+          "tag": "Sonntag, 6. Januar, Dreikönig",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Dreikönigsrätsel",
+              "text": "Welcher Ort zählt seit 1904 in jedem Monat 131 Einwohner und hat im vorigen Jahr trotzdem etwas Neues bekommen? Auflösung nächsten Sonntag."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Konzert zum Fest"
+            }
+          ]
+        }
+      ],
+      "refs": {
+        "staedte": [
+          174605,
+          174634,
+          174607,
+          174624,
+          174633,
+          174638
+        ],
+        "personen": []
+      }
     }
   ]
 }
