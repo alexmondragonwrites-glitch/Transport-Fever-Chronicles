@@ -5123,6 +5123,494 @@
         ],
         "betriebe": []
       }
+    },
+    {
+      "id": "1924-02-netzplan-port",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1924-02",
+      "lead": true,
+      "rubrik": "Netzplan · Port des Alizés",
+      "titel": "Fünf Linien statt zwölf. Der neue Straßenbahnplan von Port des Alizés, mit Legende",
+      "teaser": "Am 23. Januar 1924 verschwinden in Port des Alizés acht Omnibuslinien und die alte Straßenbahn aus den Büchern. An ihre Stelle treten fünf Straßenbahnlinien, Anfang März ist das neue Netz fertig. Der Schildermaler Gédéon Lamarque hat für den Aushang am Bahnhof einen Plan gezeichnet. Wir drucken die Legende.",
+      "body": [
+        "Plan der Straßenbahnen von Port des Alizés, Stand März 1924. Gezeichnet und gemalt von Gédéon Lamarque, Rue de la Gare, im Auftrag von niemandem. Maßstab: ungefähr. Norden: oben, wie in der Zeitung.",
+        "Rot: Linie 2. Von der Rue du Maine über Ost 2 und den Bahnhof, die Rue Goethe, Mitte-Nord, die Rue du Château d'Eau und die Rue de l'Etoile bis Mitte-Südost. Blau: Linie 3. Dieselben acht Halte, nur andersherum. Wer in die falsche steigt, kommt trotzdem an, nur von der anderen Seite. Lamarque: Das ist die freundlichste Linie, die ich je gemalt habe.",
+        "Grün: Linie 4, der große Ring. Vierzehn Halte, vom Osten über den Süden und den Hafen in den Westen, hinauf nach Norden, am Flughafen vorbei, zum Bahnhof und zurück in den Osten. Gelb: Linie 5, derselbe Ring gegen den Uhrzeiger. Lamarque hat die beiden Kreise ineinander gezeichnet, damit man sieht, dass sie sich nicht im Weg sind. In Wirklichkeit sind sie es manchmal.",
+        "Schwarz, dünn: Linie 1. Bahnhof, Station Umstieg, Flughafen. Drei Halte. Für Leute mit Koffern und für Honorine, die seit dem Sommer behauptet, sie fliege nie wieder, und trotzdem wissen will, wie man hinkommt.",
+        "Grau gestrichelt: die Omnibusse, die bleiben. Zum Steinbruch, zum Stahlwerk, zum Kohlebergwerk von Pointe. Jeweils zwei Wagen, jeweils zwei Halte. Lamarque nennt sie die Pendler.",
+        "Ausgekratzt: die alten Linien. Elf Omnibuslinien und eine Straßenbahn hatte die Stadt im Januar, mit 44 Wagen. Im März sind es acht Linien mit 26. Die alten Nummern stehen noch an den Masten. Lamarque übermalt sie, eine am Tag, von Norden nach Süden. Wer eine alte Nummer findet, darf sie behalten, sagt er, sie sei ohnehin nichts mehr wert.",
+        "Kleingedruckt, unten links: Von Ende Januar bis Anfang März fuhr auf einer Linie beides, zwei Omnibusse und zwei Straßenbahnen. In den Büchern hieß sie an einem Tag Linie 1, am nächsten Linie 5. Lamarque hat ihr ein Schild mit zwei Seiten gemalt. Es hängt jetzt in seiner Werkstatt, weil es keiner mehr braucht.",
+        "Rechts oben, die Zahlen: Von hundert Wegen in Port führten im Januar 51 über die Société, Anfang März 54. Mit den Linien der Société erreicht man jetzt 2.134 Arbeitsplätze statt 1.854. Lamarque hat die Zahlen nicht nachgeprüft. Er hat sie aus der Zeitung abgemalt, das sei dasselbe.",
+        "Links unten, ein kleiner Kreis: Rue Goethe. Dort halten jetzt die Linien 2 und 3 und ein Omnibus. Dort wohnt seit Oktober 1922 die Familie Bonnaire. Die Kinder haben gefragt, ob sie auf dem Plan ein Kreuz für ihr Haus machen dürfen. Lamarque hat Ja gesagt und es klein gemalt, damit die Société nicht meint, sie müsse dort halten. Sie hält sowieso dort.",
+        "Ganz unten, die Unterschrift: „Wer diesen Plan falsch liest, kommt trotzdem an. Das ist das Schöne an Ringen. G. L.“"
+      ],
+      "grounding": "Gemessen: Am 23.01.1924 fehlen in Port des Alizés die Linien Bus Passagiere-PordesAli-LO-1 bis -5 und -7 bis -9 sowie die alte Tram Passagiere-PordesAli-LO-1 dauerhaft; neue Straßenbahnlinien erscheinen am 23.01. und, nach einer zweiten Neuordnung, am 05.03.1924 (Meldungen). Stand 09.03.1924: Tram Passagiere-PordesAli-LO-1 (Station Haltepunkt – Station Umstieg – Flughafen), -LO-2 und -LO-3 (dieselben acht Halte von Rue du Maine bis Mitte-Südost in entgegengesetzter Richtung), -LO-4 und -LO-5 (Ring mit 14 Halten in beiden Richtungen), alle mit Nürnberg F Triebwagen; dazu die Omnibuslinien -LO-6 (Stahlwerk – Rue Champollion), -LO-10 (Steinbruch – Rue Goethe) und -LO-11 (Kohlebergwerk Pointe des Pêcheurs – Rue Sidney Bechet) mit je 2 Wagen. Im Januar 1924 12 Innerortslinien mit 44 Fahrzeugen, im März 8 mit 26. Vom 23.01. bis 03.03.1924 fuhr eine Linie mit 2 Daimler Decksitzwagen und 2 Nürnberg F Triebwagen, ihr Name wechselte in den Messungen zwischen „Tram Passagiere-PordesAli-LO-5“ und „Bus Passagiere-PordesAli-LO-1“; warum, misst der Monitor nicht. Anteil der Société an den Wegen 51,3 % (03.01.1924) und 54,2 % (03.03.1924); per ÖV erreichbare Arbeitsplätze 1.854 und 2.134. Erfunden: Plan, Farben, Schilder, Werkstatt, Zitate, das Kreuz der Bonnaire-Kinder. Gédéon Lamarque, die Familie Bonnaire (Rue Goethe seit 24.10.1922) und Honorine sind wiederkehrende erfundene Figuren.",
+      "refs": {
+        "staedte": [
+          174632
+        ],
+        "personen": [],
+        "linien": [
+          463113,
+          476691,
+          413922,
+          191475,
+          335396,
+          180999,
+          387503,
+          425616
+        ],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1924-03-ortstermin-bourg",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1924-03",
+      "lead": true,
+      "rubrik": "Ortstermin · Bourg-l’Écorce",
+      "titel": "Einmal um die Station Anbau. Ein Ortstermin im neuen Straßenbahnnetz von Bourg-l’Écorce",
+      "teaser": "Ende Februar 1924 hat Bourg-l’Écorce acht Linien verloren und neue bekommen, vier davon Straßenbahnen. Unsere Reporterin ist an einem Märztag mit allen gefahren, von der Rue de Genève bis zum Hafen, und hat aufgeschrieben, wer einsteigt.",
+      "body": [
+        "Sieben Uhr, Rue de Genève. Hier beginnt die Linie 4. Drei Wagen hat sie, und an diesem Morgen stehen an der Haltestelle mehr Menschen, als drei Wagen mitnehmen können. Eine Dame mit Einkaufsnetz stellt sich als Hortense vor, Schwester von Léonie Saint-Cyr aus Vauclaire. Im Oktober, sagt sie, habe sie ins Telefon gerufen, Bourg würfle mit Häusern. Jetzt würfle es mit Straßenbahnen. Sie steigt in den zweiten Wagen. Der erste war voll.",
+        "Die Linie 4 fährt eine Schleife: Zentrum, Station Anbau, Nordwest und denselben Weg zurück. Die Linie 3 tut das Gleiche im Südwesten und im Nordosten. Beide treffen sich an der Station Anbau, und dort steigen fast alle um. An diesem Morgen warten dort, sagt der Schaffner, so viele wie auf einem Sportplatz. Laut den Messbüchern warten auf den beiden Linien zusammen über fünfhundert.",
+        "Neun Uhr, Station Anbau. Hier fährt auch die Linie 1 ab, die lange Straßenbahn, dreizehn Halte vom Hafen über Ober-Bourg bis in den Nordosten, und ihre Schwester, die Linie 2, dieselbe Strecke rückwärts. Ein älterer Herr erklärt, das habe die Société sich in Port abgeschaut. In Port erklärt man es übrigens umgekehrt.",
+        "Clémence Bonheur, seit 1911 in Bourg, fährt fast jeden Weg mit der Société, schon voriges Jahr. Früher, sagt sie, habe sie morgens das Schiff nach Vauclaire genommen und abends gewusst, wo sie war. Jetzt nehme sie die Straßenbahn und wisse es auch. Nur dauere das Umsteigen manchmal länger als damals das Schiff. Sie lacht dabei nicht ganz.",
+        "Elf Uhr, Linie 1 Richtung Hafen. Ein Mann, Siméon Gaspard, erzählt, er sei am 29. Februar zum ersten Mal mit der Société gefahren. Bis dahin Automobil oder zu Fuß. Warum jetzt? Er zeigt aus dem Fenster. „Weil sie jetzt da hält, wo ich bin.“",
+        "Mittag, Hafen. Hier hält der Omnibus Linie 1, neun Halte quer durch alles, was die Straßenbahn nicht erreicht. Er hat fünf Wagen: drei Omnibusse und, man glaubt es kaum, zwei Straßenbahnen. Sie fahren mit, sagt der Fahrer, wie Verwandte, die man nicht eingeladen hat. In den Büchern heißt die Linie deshalb einmal Omnibus und einmal Straßenbahn, je nach Tag.",
+        "Nachmittag, zurück an der Rue de Genève. Hortense steht wieder an der Haltestelle. Sie war in der Stadt und hat nichts gekauft. Möbel gibt es weiter kaum, zwanzig für über fünfhundert, die welche wollen. Aber sie sei ohne Möbel schneller nach Hause gekommen als voriges Jahr mit dem Omnibus ohne Möbel. Das sei auch etwas.",
+        "Was die Bücher sagen: Im Februar führten von hundert Wegen in Bourg 31 über die Société, im Januar 1923 waren es noch 39. Anfang April sind es 38. Mit den Linien erreichen die Leute in Bourg jetzt 4.399 Arbeitsplätze, im Februar waren es 3.725. Die Stadt zählte am 22. Februar 4.001 Einwohner, Mitte März 3.975. Sie schwankt um die viertausend wie jemand, der auf einer Schwelle steht und sich noch nicht entschieden hat.",
+        "Am Abend, im Studio über der Gare Centrale, spielt Radio Alizés einen Marsch, den die Stadtkapelle in der Woche davor geschrieben hat. Er heißt „Linie 4“ und hat drei Strophen, für jeden Wagen eine."
+      ],
+      "grounding": "Gemessen: In Bourg-l’Écorce fehlen ab 25.02.1924 die Linien Bus Passagiere-Bou-LO-1, -4, -6 bis -9 sowie Tram Passagiere-Bou-LO-1 und -2 dauerhaft; neue Straßenbahnlinien Tram Passagiere-Bou-LO-1 bis -5 ab 25.02., neue Omnibuslinien -LO-4 und -LO-6 ab 03.03.1924 (Meldungen). Stand 20.03.1924: Tram -LO-1 und -LO-2 (dieselben 13 Halte vom Hafen #1 bis Nordost in entgegengesetzter Richtung), -LO-3 (Schleife Südwest – Zentrum – Station Anbau – Nordost 2) und -LO-4 (Rue de Genève – Zentrum – Station Anbau – Nordwest und zurück, 3 Wagen); an diesem Tag auf -LO-3 248 und auf -LO-4 277 Wartende. Die Linie Bus Passagiere-Bou-LO-1 (9 Halte) fuhr vom 03.03. bis 11.05.1924 mit 3 Daimler Decksitzwagen und 2 Nürnberg F Triebwagen, ihr Name wechselte in den Messungen zwischen Omnibus und Straßenbahn. Anteil der Société an den Wegen 39,3 % (Januar 1923), 31,1 % (03.02. und 03.03.1924), 37,7 % (01.04.1924); per ÖV erreichbare Arbeitsplätze 3.725 (03.02.) und 4.399 (01.04.1924). Einwohner 4.001 am 22.02., 3.975 am 17.03.1924; Möbel 20 von 534 (20.03.1924). Clémence Bonheur (48725) seit 1911 in Bourg, 1923 82 von 100 und 1924 alle Wege mit der Société. Siméon Gaspard (71359, Bourg) 1923 kein Weg mit der Société, erste beobachtete Fahrt am 29.02.1924. Erfunden: Reporterin, Gespräche, Schaffner, Fahrer, Marsch. Hortense (Ferngespräch Oktober 1923), Léonie Saint-Cyr und Radio Alizés stammen aus früheren Geschichten. Namen der Personen von der Redaktion vergeben.",
+      "refs": {
+        "staedte": [
+          174605,
+          174634
+        ],
+        "personen": [
+          48725,
+          71359
+        ],
+        "linien": [
+          412945,
+          412915,
+          412558,
+          412557,
+          414211
+        ],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1924-04-testament-postkutschen",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1924-04",
+      "lead": true,
+      "rubrik": "Testament · Anse Dorée",
+      "titel": "Letzter Wille der drei Postkutschen von Anse Dorée",
+      "teaser": "Seit 1900 fuhren drei Postkutschen die Grande Rue hinauf zum Domaine des Alizés, länger als jedes andere Fahrzeug, das die Société je in ihren Büchern hatte. Am 19. April 1924 stehen an ihrer Stelle drei Decksitzwagen. Bei Madame Rosalie fand sich, zwischen den Ansichtskarten, ein Blatt mit ihrem letzten Willen.",
+      "body": [
+        "Wir, die drei Postkutschen der Linie Grande Rue – Domaine des Alizés, gebaut nach einem Muster von 1896, im Dienst der Société seit 1900, verfügen im Vollbesitz unserer Räder Folgendes.",
+        "Erstens. Unsere Strecke vermachen wir den drei Decksitzwagen, die am 19. April gekommen sind. Es sind zwei Halte, Grande Rue und Domaine des Alizés, und dazwischen ein Hügel, den man uns vierundzwanzig Jahre lang hinaufgezogen hat. Die Neuen haben doppelt so viele Plätze wie wir, 36 statt 18. Wir wünschen ihnen, dass sie je so voll werden wie wir am Hochzeitstag 1922.",
+        "Zweitens. Unser Schaukeln vermachen wir dem Großvater von Firmin, der 1900 mitgefahren ist und seitdem jedem erzählt, wie wir geschaukelt haben. Er soll es behalten. Er hat es ohnehin nie zurückgegeben.",
+        "Drittens. Unser Glöckchen vermachen wir Madame Rosalie. Sie hat uns auf mehr Ansichtskarten gedruckt, als wir Fahrgäste hatten. Auf ihren Karten fahren wir weiter. Das ist mehr, als die meisten Fahrzeuge von sich sagen können.",
+        "Viertens. Unsere Pferde vermachen wir sich selbst. Sie haben nie in den Büchern der Société gestanden und gehen deshalb, wohin sie wollen. Wir vermuten: auf die Wiese hinter dem Domaine.",
+        "Fünftens. Der Zeitung, die im Juni 1920 ohne uns die Kutschenzeit beendet hat, vermachen wir eine Richtigstellung: Die Kutschenzeit endete am 19. April 1924. Wir waren dabei.",
+        "Sechstens. Héloïse und Firmin, die wir im August 1922 zur Hochzeit gefahren haben, vermachen wir den Rest der Fahrt. Sie sind damals am Domaine ausgestiegen und haben getanzt. Wir haben gewartet. Das war unser Beruf.",
+        "Siebtens. Célestin Hilaire, der voriges Jahr jeden Weg mit dem eigenen Automobil fuhr und seit dem 29. Februar, seit er wieder Arbeit hat, fast jeden mit der Société, vermachen wir unseren Respekt. Mit uns ist er nie gefahren. Wir verstehen das. Wir wären auch nicht mit uns gefahren, wenn wir ein Automobil gehabt hätten.",
+        "Achtens. Den anderen Linien in Anse Dorée, die am selben Tag neu geordnet wurden, vier Omnibuslinien, je zwei um die Stadt in beiden Richtungen, wünschen wir Geduld mit den Fahrgästen. Die Fahrgäste wünschen wir uns zurück. Das geht nicht. Wir wissen das.",
+        "Gegeben am Domaine des Alizés, im April 1924. In Ermangelung von Händen gezeichnet mit drei Hufeisen. Beglaubigt von Madame Rosalie, die sagt, auf ihren Karten habe sie das schon immer gewusst.",
+        "Nachsatz der Redaktion: Die Zeitung nimmt die Richtigstellung an. In der Messung vom 16. April 1924 fahren die drei Postkutschen noch, in der vom 19. April nicht mehr. Seitdem steht keine Kutsche mehr im Linienbetrieb der Société."
+      ],
+      "grounding": "Gemessen: Bus Passagiere-AnsDor-LO-1 (Grande Rue – Domaine des Alizés) mit 3 Postkutschen (laut Spiel ein Modell ab 1896, im Einsatz seit 1900), 18 Plätze, zuletzt in der Messung vom 16.04.1924; ab 19.04.1924 auf derselben Linie 3 Daimler Decksitzwagen mit 36 Plätzen; seitdem fährt auf keiner Linie mehr ein Fahrzeugmodell „Postkutsche“. Am 19.04.1924 neue Omnibuslinien Bus Passagiere-AnsDor-LO-2 bis -5 (-LO-2/-LO-3 und -LO-4/-LO-5 jeweils mit denselben Halten in entgegengesetzter Richtung). Célestin Hilaire (94977, Anse Dorée): ohne Arbeitsplatz 06.12.1922 bis 29.02.1924, 1923 alle Wege mit dem Automobil, ab 29.02.1924 meist mit der Société (1924: 90 von 108 Wegen). Stufe 4 der Zeitung („Ende der Kutschenzeit“) seit Juni 1920. Erfunden: Testament, Glöckchen, Pferde, Hufeisen, Zitate. Madame Rosalie, der Großvater von Firmin, Héloïse und Firmin sind wiederkehrende erfundene Figuren (Gästebuch 1921, Tischordnung 1922). Namen der Personen von der Redaktion vergeben.",
+      "refs": {
+        "staedte": [
+          174645
+        ],
+        "personen": [
+          94977
+        ],
+        "linien": [
+          288188,
+          417105,
+          426697,
+          432806,
+          180187
+        ],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1924-05-mitgehoert-valmorin",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1924-05",
+      "lead": true,
+      "rubrik": "Mitgehört · Valmorin",
+      "titel": "Linie 2, Busbahnhof – Süd 2. Was man im Mai 1924 in einer Valmoriner Straßenbahn hört",
+      "teaser": "Seit dem 3. April 1924 fahren in Valmorin fünf Straßenbahnlinien, und alle treffen sich am Busbahnhof. Die Linie 2 zum Bahnhof ist an manchem Morgen bis auf den letzten Platz besetzt. Wir haben eine Fahrt lang zugehört, ohne uns einzumischen. Die Stimmen, in der Reihenfolge, in der sie zu hören waren.",
+      "body": [
+        "Busbahnhof, kurz nach sieben. Schaffner: Bitte durchgehen, hinten ist noch Platz. Eine Stimme von hinten: Hinten ist nie Platz, das sagen Sie nur.",
+        "Lucie, am Fenster: Ich fahre jetzt mit der Straßenbahn zu meinem eigenen Bahnhof. Ich zähle die Hemden in der Stadt. Seit Ende Januar sind es null. Ich zähle trotzdem. Wer aufhört zu zählen, merkt nicht, wenn sie wiederkommen.",
+        "Prosper Petit-Frère, neben ihr: Ich hatte mal ein Automobil. Ich habe es noch. Es steht. Seit ich im Februar wieder Arbeit gefunden habe, fahre ich hiermit. Das Automobil nimmt mir das übel. Es springt schlechter an.",
+        "Delphine Gaspard, gegenüber: Ich habe keine Arbeit, seit Oktober. Ich fahre trotzdem mit. Man trifft hier Leute, die welche haben. Die erzählen, wo.",
+        "Ein Kind: Mama, warum fährt die Bahn zum Bahnhof, wenn der Bahnhof doch auch fährt? Die Mutter: Damit sie sich treffen.",
+        "Valmorin Station. Schaffner: Bitte umsteigen zum Zug. Viele steigen aus, mehr steigen ein. Laut den Messbüchern sind an diesem Morgen alle 36 Plätze besetzt, und an den Haltestellen der Linie warten noch 165.",
+        "Anselme, der am Bahnhof zugestiegen ist und stehen muss: Früher war es laut, weil die Omnibusse lärmten. Jetzt ist es laut, weil die Leute reden. Ich weiß nicht, was mir lieber ist. Lucie: Doch, weißt du. Anselme: Ja. Sag es keinem.",
+        "Station Abstellgleis. Ein Arbeiter: Hier steigt keiner ein. Hier steigen nur Straßenbahnen aus.",
+        "Süd 2, Endhalt. Lucie steigt nicht aus, sie fährt zurück. Die Linie 2 habe vier Halte, sagt sie, und sie wolle jeden zweimal gesehen haben, bevor sie sich ein Urteil erlaube. Prosper steigt aus und geht die letzten Schritte zu Fuß. Das habe er sich angewöhnt, sagt er, man wisse nie, wann man es wieder braucht.",
+        "Nachsatz, was die Bücher sagen: Anfang April führten von hundert Wegen in Valmorin 40 über die Société, Anfang Juni 52. Mit Straßenbahn und Omnibus erreicht man 2.590 Arbeitsplätze statt 1.478. Ende Mai liegen 136 Stück Fleisch in den Läden, mehr als in jedem Monat des vorigen Jahres. Hemden: siehe Lucie."
+      ],
+      "grounding": "Gemessen: In Valmorin ab 03.04.1924 neue Linien Tram Passagiere-Val-LO-1 bis -5, alle mit Halt Valmorin Busbahnhof; Tram -LO-2 (Valmorin Busbahnhof – Valmorin Station – Station Abstellgleis – Süd 2, 3 Wagen, 36 Plätze) am 02.05.1924 mit 36 Fahrgästen, 165 Wartende auf der Linie. Kleidung in Valmorin seit 27.01.1924 in jeder Messung 0. Prosper Petit-Frère (35029): ohne Arbeitsplatz 28.12.1923 bis 11.02.1924, 1924 kein beobachteter Weg mit dem Automobil, 81 von 108 mit der Société. Delphine Gaspard (35840): ohne Arbeitsplatz 04.10.1923 bis 01.10.1924, 1924 alle 108 Wege mit der Société. Lärm 74,4 dB (01.04.) und 71,3 dB (02.05.1924). Anteil der Société an den Wegen 40,1 % (01.04.) und 52,5 % (01.06.1924); per ÖV erreichbare Arbeitsplätze 1.478 und 2.590. Fleisch 136 von 323 (29.05.1924), 1923 höchstens 93. Erfunden: Fahrt, Gespräche, Schaffner, Kind, Mutter, Arbeiter. Lucie und Anselme sind wiederkehrende erfundene Figuren (Kreidetafel 1922). Namen der Personen von der Redaktion vergeben.",
+      "refs": {
+        "staedte": [
+          174607
+        ],
+        "personen": [
+          35029,
+          35840
+        ],
+        "linien": [
+          164329,
+          413907,
+          319975,
+          196134,
+          433735
+        ],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1924-06-beschwerdebuch-port",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1924-06",
+      "lead": true,
+      "rubrik": "Beschwerdebuch · Port des Alizés",
+      "titel": "Bitte hier eintragen. Aus dem Beschwerdebuch am Bahnhof von Port des Alizés, Frühjahr 1924",
+      "teaser": "Seit der Neuordnung der Straßenbahnen liegt am Bahnhof von Port des Alizés ein Beschwerdebuch aus, an einer Kette. Nach vier Monaten ist es halb voll. Wir drucken Einträge und die Antworten, die der Bahnhofsvorsteher darunter geschrieben hat.",
+      "body": [
+        "Eintrag 1, Rue Goethe: An meiner Haltestelle warten morgens mehr Leute als sonntags in der Kirche. Ich zähle sie, gestern 61. Familie Bonnaire. Antwort: Die Messbücher zählen alle Haltestellen der Linie 2 zusammen und kommen Anfang Juni auf etwa dreihundert Wartende. Sie sind also nicht allein. Das ist ein Trost, aber kein Wagen.",
+        "Eintrag 2, vom Hafen: Die Linie 5 fährt denselben Ring wie die Linie 4, nur andersherum. Warum warte ich auf der 5 länger? Antwort: Laut den Büchern warten auf der 5 im Juni fast doppelt so viele Fahrgäste wie auf der 4, und sie warten länger. Warum, steht nicht darin. Der Bahnhofsvorsteher vermutet, dass die Wagen einander hinterherfahren, statt sich zu verteilen. Er ist aber kein Fachmann für Ringe.",
+        "Eintrag 3: Die neuen Straßenbahnen sind zu kurz. Die alte hatte sechzig Plätze je Wagen. Ein Herr, der Platz braucht. Antwort: Auf den Linien 2 und 3 sind es inzwischen 36 je Wagen, im März waren es zwölf. Auf der 4 und der 5 sind es noch zwölf. Dafür fahren mehr Linien. Ob das reicht, sehen Sie an Eintrag 1.",
+        "Eintrag 4, Rue du Château d'Eau: Seit die vielen Omnibusse weg sind, ist es in unserer Straße stiller. Bitte so lassen. Eine Nachbarin. Antwort: Die Messbücher bestätigen es. Port war im Januar 73,0 Dezibel laut und im Mai 70,8. Wir geben es weiter, an niemanden, der es ändern könnte, aber gern.",
+        "Eintrag 5, ohne Namen: Die Linie 5 hieß im Februar dreimal Linie 1. Ich bin dreimal in die falsche gestiegen und dreimal richtig angekommen. Lob. Antwort: Gern geschehen.",
+        "Eintrag 6, Honorine, Chez Honorine: Die Linie 1 zum Flughafen hat zwei Wagen und fährt fast leer. Ich fahre nicht mit, aus Prinzip. Aber sie soll trotzdem fahren, falls ich es mir anders überlege. Antwort: Sie fährt.",
+        "Eintrag 7, ein Kind: Warum heißt die Straßenbahn Straßenbahn, wenn sie gar nicht auf der Straße fährt? Antwort: Sie fährt auf der Straße, auf Schienen, die in der Straße liegen. Darunter, dieselbe Kinderschrift: Also doch nicht.",
+        "Eintrag 8, Joséphine Séverin: Seit dem 9. Mai habe ich keine Arbeit. Ich fahre jetzt mehr als vorher, um zu suchen. Die Straßenbahn bringt mich überall hin, wo keine Arbeit ist, sehr pünktlich. Antwort: Wir wünschen Glück. Die Linie 4 hält an vierzehn Stellen. An einer wird es sein.",
+        "Eintrag 9, der Postvorsteher: Von hundert Wegen in Port führen jetzt fast sechzig über die Société, im Januar waren es einundfünfzig. Ich habe es in der Zeitung gelesen und wollte es hier eintragen, weil es sonst keiner tut. Antwort: Eingetragen.",
+        "Letzte beschriebene Seite, ohne Eintrag, nur eine Zeichnung: eine Straßenbahn mit sehr vielen Köpfen in den Fenstern. Darunter: Juni 1924."
+      ],
+      "grounding": "Gemessen (Port des Alizés): Tram Passagiere-PordesAli-LO-2 (mit Halt Rue Goethe) am 01.06. und 16.06.1924 mit 301 und 303 Wartenden; -LO-4 und -LO-5 (Ring in beiden Richtungen, je 6 Wagen, 72 Plätze) mit 117 und 125 bzw. 204 und 206 Wartenden, mittlere Wartezeit der Wartenden auf -LO-5 676 und 797, auf -LO-4 534 und 600 Spielsekunden; -LO-2 und -LO-3 im März 1924 3 Wagen mit 36 Plätzen, im Juni 3 Wagen mit 108 Plätzen; die alte Tram Passagiere-PordesAli-LO-1 hatte im Januar 1924 5 Wagen mit 300 Plätzen. Tram -LO-1 (Bahnhof – Flughafen, 2 Wagen) im Juni mit 5 bis 10 Fahrgästen auf 72 Plätzen. Namenswechsel der gemischten Linie zwischen „-LO-5“ und „-LO-1“ im Februar 1924 (Meldungen). Lärm 73,0 dB (03.01.) und 70,8 dB (02.05.1924). Anteil der Société an den Wegen 51,3 % (Januar) und 58,9 % (01.06.1924). Joséphine Séverin (98887, Port): ohne Arbeitsplatz 09.05. bis 05.10.1924, 1924 90 von 108 Wegen mit der Société (1923: 47 von 100). Erfunden: Beschwerdebuch, Einträge, Antworten, Bahnhofsvorsteher, Zeichnung. Familie Bonnaire, Honorine und der Postvorsteher sind wiederkehrende erfundene Figuren. Namen der Personen von der Redaktion vergeben.",
+      "refs": {
+        "staedte": [
+          174632
+        ],
+        "personen": [
+          98887
+        ],
+        "linien": [
+          476691,
+          413922,
+          191475,
+          335396,
+          463113
+        ],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1924-07-wappen-valombre",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1924-07",
+      "lead": true,
+      "rubrik": "Wappen · Valombre",
+      "titel": "In Grün ein silberner Omnibus. Valombre gibt sich zum Tausendsten ein Wappen",
+      "teaser": "Am 5. Juli 1924 zählt Valombre 1.005 Einwohner. Bis Januar 1920 hieß der Ort Melle und hatte fünfzehn Jahre lang in jedem Monat 265 Einwohner. Zum Tausendsten hat der Gemeinderat ein Wappen beschlossen. Hier die amtliche Beschreibung, mit den Erläuterungen des Wappenmalers.",
+      "body": [
+        "Amtliche Beschreibung: In Grün, über einem silbernen Schienenstrang, ein silberner Omnibus mit dreizehn Fenstern, oben begleitet von einer goldenen Tausend, unten von einer schwarzen Brennblase. Schildhalter: rechts ein Brett, links ein Stück Fleisch, beide aufrecht. Wahlspruch auf rotem Band: „Wir waren 265.“",
+        "Erläuterung des Wappenmalers. Grün: für die fünfzehn Jahre, in denen hier nichts gewachsen ist außer Gras. Melle hatte von 1904 bis Januar 1920 in jedem Monat 265 Einwohner. Der Gemeinderat wollte Grau. Ich habe gesagt, Grau ist keine Wappenfarbe, und Gras ist auch etwas.",
+        "Der Schienenstrang: Der Zug kam im Januar 1920, zusammen mit dem neuen Namen. Er hält bis heute an einem Bahnhof, der Melle Station West heißt. Wir haben uns daran gewöhnt, mit dem alten Namen abzufahren und mit dem neuen anzukommen.",
+        "Der Omnibus: Dreizehn Wagen fahren durch die Rue Boris-Vian, die Rue de Bourgogne, die Rue du Jura und die Allée des Hortensias und wieder zurück. Dreizehn Fenster, für jeden einen. In den Büchern heißt die Linie übrigens fast wie eine in Valmorin, weil beide Orte mit „Val“ anfangen. Das hat schon zu Verwechslungen geführt. Wir finden, Valmorin soll sich einen anderen Anfang suchen.",
+        "Die goldene Tausend: Am 5. Juli 1.005 Einwohner. Am 3. September 1920 waren wir 399, genau so viele wie Garches, und Honorine in Port hat darauf eine Nebenwette ausgezahlt. Garches zählt heute 408. Wir grüßen Garches. Es war ein guter Gegner, solange es einer war.",
+        "Die Brennblase: für die Melle Rum Distillery, die so heißt, als gäbe es Melle noch, und die auf Stufe eins steht und keinen Tropfen macht. Schwarz, weil sie schläft. Honorine hat geschrieben, sie kaufe das Wappen, sobald die Blase golden wird.",
+        "Die Schildhalter: das Brett, weil wir 79 von 318 Brettern bekommen, das Fleisch, weil wir 65 von 305 Stück bekommen. Den Käse, den wir seit Januar auch verlangen, haben wir weggelassen. Auf dem ganzen Archipel macht noch keine Käserei Käse, und ein Wappen soll nicht lügen.",
+        "Der Wahlspruch: „Wir waren 265.“ Der Bürgermeister wollte „Wir sind 1.000“. Der Gemeinderat hat entschieden, dass man das, was man ist, nicht aufschreiben muss. Das, was man war, schon.",
+        "Nachbemerkung: Beschlossen wurde das Wappen mit 1.005 Einwohnern. Bis zur Einweihung wenige Tage später waren es 1.008. Der Wappenmaler sagt, er male die Tausend erst neu, wenn sie zweitausend wird."
+      ],
+      "grounding": "Gemessen: Valombre 1.005 Einwohner am 05.07.1924, 1.008 am 09.07.1924 (Meldung „Valombre zählt 1.000 Einwohner“); bis 14.01.1920 als Melle in den Büchern, 265 Einwohner in jedem Monatsstand von Dezember 1904 bis Januar 1920; am 03.09.1920 399 Einwohner wie Garches; Garches 408 seit 13.04.1924. Linien in Valombre: TP Passagiere-Vau-Val-RE-1 mit Halt Melle Station West, Bus Passagiere-Val-LO-5 (13 Daimler Decksitzwagen; Rue Boris-Vian – Rue de Bourgogne – Rue du Jura – Allée des Hortensias und zurück), Güterlinien mit Fleisch und Brettern. Melle Rum Distillery Stufe 1, ohne Produktion. Am 05.07.1924: Bretter 79 von 318, Fleisch 65 von 305, Käse 0 von 305 (verlangt seit Januar 1924), Konserven und Werkzeuge 0; die Käsereien in Auch und Cassis stehen auf Stufe 1 ohne Produktion. Erfunden: Wappen, Gemeinderat, Bürgermeister, Wappenmaler, Einweihung, Zitate. Honorine und ihre Nebenwette stammen aus dem Wettbuch (September 1920).",
+      "refs": {
+        "staedte": [
+          174621,
+          174644,
+          174607
+        ],
+        "personen": [],
+        "linien": [
+          234744,
+          406127
+        ],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1924-08-trinksprueche",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1924-08",
+      "lead": true,
+      "rubrik": "Trinksprüche · Port des Alizés",
+      "titel": "Auf die Hundertvierundfünfzig. Trinksprüche bei Chez Honorine, August 1924",
+      "teaser": "Am 11. August 1924 liegen in Port des Alizés 154 Rum in den Läden, so viel wie nie, seit die Bücher geführt werden. Kurz vorher hatte Valmorin 164 Stück Fleisch, auch das ein Rekord. Honorine hat zu einem Abend geladen. Gesprochen wurde wenig, angestoßen viel. Wir haben die Trinksprüche mitgeschrieben.",
+      "body": [
+        "Honorine, als Wirtin zuerst: Auf die 154. Im November 1921 waren es 95, und ich dachte, das ist eine gute Zeit. Im Oktober 1922 waren es zwölf, und ich wusste, das war sie. Heute sind es 154. Ich trinke auf die gute Zeit, die man nicht erkennt, solange sie da ist. Diese erkenne ich. Santé.",
+        "Hippolyte, Lokführer: Auf die zwanzig Victoria-Flugzeuge, die den Rum aus Montceau-les-Mines bringen. Und auf mein verlorenes Glas von 1922. Es hat sich gelohnt, es zu verlieren, wenn es dafür heute voll ist.",
+        "Inspecteur Lebrun: Auf die Messbücher, die sagen, wie viel Rum ankommt, und nicht, wer ihn trinkt. Ich habe mich daran gewöhnt. Es ist die einzige Lücke im System, die ich liebe.",
+        "Mathurin, Wirt vom „Au Quai des Collines“, mit dem Zug aus Valmorin gekommen: Auf die 164. So viel Fleisch lag in Valmorin noch nie in den Läden, seit die Bücher zählen. Das Kind, das 1922 an die Wand geschrieben hat „Wo ist das Fleisch?“, kann es jetzt selbst nach Hause tragen. Es braucht dafür zwei Körbe.",
+        "Lucie, Bahnhof Valmorin: Auf die Hemden. Es sind null, seit Januar. Ich trinke trotzdem auf sie, damit sie wissen, dass man an sie denkt.",
+        "Anselme: Auf nichts. Aber gern.",
+        "Ein Herr aus Bourg-l’Écorce, auf der Durchreise: Auf Bourg. 478 Rum verlangt, keinen bekommen, seit es Bücher gibt. Dafür haben wir jetzt Straßenbahnen. Man kann damit nicht zum Rum fahren, aber schneller nach Hause, wenn man keinen hatte.",
+        "Honorine, zum Schluss: Und auf die Tafel. Unter „Rum in Bourg?“ steht heute der 47. Strich. Wenn es einmal einen Monat ohne Strich gibt, trinke ich nicht. Dann tanze ich.",
+        "Nachbemerkung: Gegen Mitternacht hat Hippolyte auf die Straßenbahn angestoßen, die ihn nach Hause bringen sollte. Sie hat ihn gebracht. Von hundert Wegen in Port führen inzwischen fast sechzig über die Société. Der Rest geht zu Fuß, oder bleibt bei Honorine."
+      ],
+      "grounding": "Gemessen: Port des Alizés Rum 154 von 255 am 11.08.1924, der höchste Wert in allen Messungen seit Beginn der Aufzeichnung (vorher höchstens 152, 24.09.1923); 95 im November 1921, 12 am 04.10.1922. Luftfrachtlinie AC Sugar,Rum,Dünger-Mon-PordesAli-IC-1 mit 20 Vickers Victoria. Valmorin Fleisch 164 von 323 am 27.07. und 04.08.1924, der höchste Wert seit Beginn der Aufzeichnung (vorher höchstens 152 im August 1918); Kleidung in Valmorin seit 27.01.1924 0. Bourg-l’Écorce Rum 478 verlangt, 0 gedeckt (11.08.1924), in keiner Messung je Rum. Port Anteil der Société an den Wegen 59,5 % (04.08.1924). Alle Höchstwerte geprüft über alle Sitzungen. Erfunden: Abend, Trinksprüche, der Herr aus Bourg, Nachbemerkung. Honorine, Hippolyte, Lebrun, Mathurin, Lucie, Anselme, das Kind, Wettbuch und Tafel sind wiederkehrende erfundene Figuren und Dinge.",
+      "refs": {
+        "staedte": [
+          174632,
+          174607,
+          174605
+        ],
+        "personen": [],
+        "linien": [
+          458215
+        ],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1924-09-herbarium",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1924-09",
+      "lead": true,
+      "rubrik": "Herbarium · Fontenay-aux-Roses – La Mulatière",
+      "titel": "Gepresst zwischen zwei Briefen. Ein Herbarium der Wege von Isidore Valère und Marceline Philogène",
+      "teaser": "Isidore Valère und Marceline Philogène, die letzten beiden aus der Gruppe von 1904, gehen jeden Weg zu Fuß, auch 1924. Seit ihrem Treffen in Garches legen sie einander gepresste Pflanzen in die Briefe. Marceline hat die Blätter bis September 1924 in ein Heft geklebt und beschriftet.",
+      "body": [
+        "Blatt 1, Februar 1924. Ein Grashalm vom Kirchplatz in Garches. Gesammelt von I. V. auf dem Rückweg vom 14. Januar 1923, ein Jahr lang in der Manteltasche vergessen. Beschriftung M. P.: Das ist der Halm, auf dem er gestanden hat, als er behauptete, er habe zuerst gefragt.",
+        "Blatt 2, März 1924. Ein Blatt Zuckerrohr von der Plantage bei La Mulatière. Gesammelt von M. P. am Feldrand, ohne zu fragen. Die Plantage steht seit November auf der elften Stufe im Register. Beschriftung I. V. im Antwortbrief: Es riecht nach nichts. Sie haben mir also nichts Süßes geschickt, sondern etwas, das süß werden könnte. Das verstehe ich als Botschaft.",
+        "Blatt 3, Mai 1924. Ein Kleeblatt, dreiblättrig, aus Fontenay-aux-Roses, vom Weg an der Lebensmittelfabrik vorbei, die seit Januar 1923 im Register steht und noch nichts macht. Beschriftung M. P.: Er schreibt, er habe ein vierblättriges gesucht und keins gefunden, und dieses sei ehrlicher.",
+        "Blatt 4, Juni 1924. Eine Kornblume aus Lamballe-Armor, wo ich bis 1920 gewohnt habe. Seit Februar zählt der Ort 243, zwei mehr als im Winter. Ich habe hineingesehen. Es war in Ordnung.",
+        "Blatt 5, Juli 1924. Kein Blatt, nur ein Bleistiftrand auf leerem Papier. Beschriftung I. V.: Im Juli bin ich jeden Weg gegangen und habe nichts gesehen, das gepresst werden wollte. Ich schicke Ihnen den Rand, damit Sie wissen, wo es gewesen wäre.",
+        "Blatt 6, August 1924. Ein Ahornsamen, einer von denen, die sich drehen wie ein Propeller. Von ihm, mit dem Satz: Das ist das Einzige, was ich je fliegen lassen werde.",
+        "Blatt 7, September 1924. Eine Distel. Gesammelt von M. P. am 9. September, dem ersten Tag ohne Arbeit, auf dem Weg, den ich sonst zur Arbeit gehe. Ich bin ihn trotzdem gegangen. Am 25. hatte ich wieder Arbeit. Die Distel behalte ich, als Erinnerung daran, dass auch sechzehn Tage stechen können.",
+        "Nachwort von Marceline Philogène: Wir gehen beide jeden Weg zu Fuß, den die Bücher von uns kennen, auch 1924. Er sagt, das sei Treue. Ich sage, es sei Gelegenheit: Bei uns hält einfach nichts. In La Mulatière und in Fontenay-aux-Roses hat die Société in all den Jahren nicht einen Weg mitgenommen. Wenn eines Tages eine Linie kommt, pressen wir die erste Fahrkarte."
+      ],
+      "grounding": "Gemessen (feste, nicht repräsentative Beobachtungsgruppe): Isidore Valère (45714, Fontenay-aux-Roses) und Marceline Philogène (126758, La Mulatière), seit 30.12.1904 in der Gruppe, gehen 1924 jeden ihrer 108 beobachteten Wege zu Fuß; Marceline Philogène ohne Arbeitsplatz vom 09.09. bis 25.09.1924. In Fontenay-aux-Roses und La Mulatière liegt der Anteil der Société an den Wegen in jeder Messung seit 1904 bei null. La Mulatière Sugar Cane Farm seit 22.11.1923 auf Stufe 11; Fontenay-aux-Roses Lebensmittelfabrik seit 08.01.1923 auf Stufe 1 ohne Produktion. Lamballe-Armor 241 Einwohner bis Januar 1924, 243 ab 03.02.1924. Erfunden: Herbarium, Pflanzen, Briefe, Beschriftungen, Zitate. Das Treffen in Garches am 14.01.1923 stammt aus der Geschichte „Zwei Fassungen“ (Februar 1923). Namen der Personen von der Redaktion vergeben.",
+      "refs": {
+        "staedte": [
+          174615,
+          174631,
+          174614,
+          174644
+        ],
+        "personen": [
+          45714,
+          126758
+        ],
+        "linien": [],
+        "betriebe": [
+          418234,
+          37008
+        ]
+      }
+    },
+    {
+      "id": "1924-10-abnahmeprotokoll-burg",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1924-10",
+      "lead": true,
+      "rubrik": "Abnahmeprotokoll · Valmorin",
+      "titel": "Burg des weißen Reihers, Stufe drei. Das Abnahmeprotokoll von Maurermeister Barnabé Lacroix",
+      "teaser": "Am 8. Oktober 1924 verzeichnen die Messbücher die Burg des weißen Reihers in Valmorin auf Stufe drei von vier, gut dreizehn Monate nach Stufe zwei. Maurermeister Barnabé Lacroix, der 1922 an die Wand schrieb, er habe keine Steine gesehen, hat die neue Stufe abgenommen. Sein Protokoll, mit den Bemerkungen der Anwesenden.",
+      "body": [
+        "Abnahmeprotokoll. Bauwerk: Burg des weißen Reihers, Valmorin. Gegenstand: Stufe drei von vier. Tag der Abnahme: Donnerstag, 9. Oktober 1924. Anwesend: B. Lacroix, Maurermeister. Lucie, Bahnhof. Mathurin, „Au Quai des Collines“. Anselme, ohne Funktion. Ein Reiher, ohne Stimme.",
+        "1. Befund. Die Burg steht laut den Messbüchern seit dem 8. Oktober auf Stufe drei. Am 5. Oktober stand sie noch auf zwei. Wer in den drei Tagen gebaut hat, ist dem Unterzeichneten nicht bekannt. Steine hat er auch diesmal nicht gesehen.",
+        "2. Stufenfolge. Stufe eins: 23. März 1921. Stufe zwei: 2. September 1923, zweieinhalb Jahre später. Stufe drei: 8. Oktober 1924, gut dreizehn Monate später. Bemerkung Lucie: Es geht schneller. Bemerkung Anselme: Es geht. Bemerkung Mathurin: Wenn es so weitergeht, kommt Stufe vier, bevor wir alt sind. Bemerkung des Unterzeichneten: Wenn.",
+        "3. Fertigstellung. Die Burg ist nicht fertig. Eine Stufe fehlt. Das Protokoll stellt fest, dass eine Burg, der eine Stufe fehlt, bewohnbarer aussieht als eine, der drei fehlen.",
+        "4. Umgebung. Valmorin zählt 1.645 Einwohner. Von hundert Wegen führen 60 über die Société, seit die Straßenbahnen fahren. Fleisch in den Läden: 145. Hemden: null, seit Januar. Werkzeuge: null, wie immer. Bemerkung Lucie: Eine Burg hat Valmorin jetzt fast, ein Hemd nicht. Bemerkung Anselme: Eine Burg zieht man ja auch nicht an.",
+        "5. Die Wand. An der Lärmschutzwand neben dem „Au Quai des Collines“ steht seit September 1923 unter „Wann Stufe zwei?“ das Wort „Ni“, der Rest eines „nie“. In der Nacht zum 8. Oktober hat jemand darunter geschrieben: „Drei.“ Dieselbe Hand, die keiner kennt. Am Morgen hat Anselme aus dem „Ni“ ein „Nie vier?“ gemacht. Lucie hat das Fragezeichen dick nachgezogen. Es bleibt eine Frage.",
+        "6. Mängel. Keine, die der Unterzeichnete beurteilen kann. Er ist Maurer, kein Reiher.",
+        "7. Ergebnis. Stufe drei wird abgenommen. Ein Glas wird erhoben. Die Société hatte am 1. Oktober zum ersten Mal mehr als zwei Milliarden in der Kasse. Bemerkung Mathurin: Davon ein Hemd. Bemerkung Lacroix: Das gehört nicht ins Protokoll. Bemerkung Lucie: Doch.",
+        "Gezeichnet: B. Lacroix. Mitgezeichnet: Lucie, Mathurin. Anselme hat nicht unterschrieben, aber ein kleines Haus an den Rand gezeichnet. Es hat drei Stockwerke."
+      ],
+      "grounding": "Gemessen: Wahrzeichen „Valmorin Burg des weissen Reihers“ Stufe 1 seit 23.03.1921, Stufe 2 ab 02.09.1923, Stufe 2 zuletzt am 05.10.1924, Stufe 3 von 4 (nicht fertig) erstmals am 08.10.1924; wer wann gebaut hat, misst der Monitor nicht. Valmorin am 08.10.1924: 1.645 Einwohner, Anteil der Société an den Wegen 60,3 %, Fleisch 145 von 325, Kleidung 0 von 162 (0 seit 27.01.1924), Werkzeuge 0 von 168. Kasse der Société 2.001,0 Mio. am 01.10.1924, erstmals über 2.000 Mio. Erfunden: Abnahme, Protokoll, Bemerkungen, Kreideanschriften, Zeichnung, Reiher. Barnabé Lacroix, Lucie, Mathurin, Anselme, die Wand und die unbekannte Hand sind wiederkehrende erfundene Figuren (Kreidetafel 1922, Fabel 1923).",
+      "refs": {
+        "staedte": [
+          174607
+        ],
+        "personen": [],
+        "linien": [],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1924-11-erinnerung-anse-doree",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1924-11",
+      "lead": true,
+      "rubrik": "Erinnerungsschreiben · Anse Dorée",
+      "titel": "Zweites Schreiben in Sachen Zucker. Anse Dorée erinnert die Société",
+      "teaser": "Am 28. November 1923 ist die Bittschrift aus Anse Dorée in Port des Alizés eingegangen. Ein Jahr später liegt in Anse Dorée weiter kein Zucker in den Läden, und seit dem 12. November auch keine Kleidung mehr. In der Pension „Les Jardins“ hat man ein zweites Schreiben aufgesetzt, freundlich, aber bestimmt.",
+      "body": [
+        "An die Société des Alizés — Routes, Voyages et Commerce, Port des Alizés. Betrifft: unser Schreiben vom 26. November 1923, Zucker. Anse Dorée, am 26. November 1924.",
+        "Hochverehrte Société, vor einem Jahr haben wir Sie um Zucker gebeten. Wir erlauben uns, in Erinnerung zu rufen, dass wir weiterhin welchen verlangen, inzwischen 379 Einheiten, und weiterhin keinen haben. Wir möchten nicht drängen. Wir möchten nur nicht vergessen werden, was auf einer Insel mit so vielen neuen Straßenbahnen leicht passieren kann.",
+        "Was sich seither verbessert hat, schreiben wir der Gerechtigkeit halber auch auf. Seit April fahren in Anse Dorée vier neue Omnibuslinien, je zwei um die Stadt in beiden Richtungen. Von hundert Wegen führen jetzt 67 über Sie, im April waren es 46. Wir danken. Die Postkutschen fahren nicht mehr. Wir trauern, aber leise.",
+        "Was sich verschlechtert hat: Seit dem 12. November liegt in Anse Dorée auch keine Kleidung mehr in den Läden. Vor einem Jahr hatten wir 28 Stück. Madame Rosalie sagt, man könne in einer Stadt ohne Zucker leben, aber nicht ohne Hemd, und man solle das der Société genau so schreiben. Hiermit geschehen.",
+        "Was gleich geblieben ist: Die Mühle in Montceau-les-Mines macht weiter Zucker. Port des Alizés bekommt inzwischen 232 Stück für 511. Die Plantage bei La Mulatière wächst seit einem Jahr und hat in dieser Zeit, so steht es in den Büchern, nichts verschickt. Wir verstehen das. Wir verschicken auch nichts. Aber wir würden gern etwas bekommen.",
+        "Mit vorzüglicher Hochachtung, die Unterzeichneten: Madame Rosalie. Die Wirtin von „Les Jardins“. Héloïse und Firmin, Firmin weiter Student. Gaston Bellance, Anfang Oktober vier Tage ohne Arbeit, jetzt wieder mit. Lucienne Sainte-Rose, seit dem 12. November wieder ohne Arbeit und deshalb wieder mit Zeit für Unterschriften. Célestin Hilaire, der seit Februar Arbeit hat und mit dem Omnibus fährt und deshalb, wie er sagt, zum ersten Mal mit der Société unterschreibt statt neben ihr. Der Herr aus Roche-Noire, als Zeuge, wieder.",
+        "Beigeheftet, aus La Mulatière: „Die Felder sind gewachsen. Ich sehe sie auf dem Weg zur Arbeit, den ich gehe. Auf der Seekarte liegen zwischen ihnen und Ihnen sechzehn Kilometer, also nur halb so viel wie zwischen Isidore Valère und mir. Wir haben uns trotzdem getroffen. M. P.“",
+        "Eingangsvermerk, Port des Alizés: „Eingegangen am 28. November 1924.“ Darunter, mit Bleistift, eine Hand, die keiner kennt: „Liegt beim ersten.“ Ob und wann Zucker nach Anse Dorée kommt, entscheidet die Société. Die Bücher werden es zeigen."
+      ],
+      "grounding": "Gemessen: Anse Dorée Zucker (Sugar) 379 verlangt, 0 gedeckt (November 1924), in keiner Messung seit Beginn der Aufzeichnung je Zucker (geprüft über alle Sitzungen); Kleidung 0 von 189 ab 12.11.1924, 28 von 184 im November 1923; Anteil der Société an den Wegen 45,8 % (01.04.1924) und 66,8 % (12.11.1924). Neue Omnibuslinien Bus Passagiere-AnsDor-LO-2 bis -5 seit 19.04.1924, Postkutschen seit 19.04.1924 ersetzt. Port des Alizés Zucker 232 von 511 (26.11.1924). La Mulatière Sugar Cane Farm seit 22.11.1923 auf Stufe 11, im November 1924 laut Spiel 91 Zuckerrohr im Jahr erzeugt, 0 verschickt. Gaston Bellance (35085) ohne Arbeitsplatz 01.10. bis 05.10.1924; Lucienne Sainte-Rose (36242) wieder ohne Arbeitsplatz seit 12.11.1924; Célestin Hilaire (94977) Arbeit seit 29.02.1924, 1924 90 von 108 Wegen mit der Société. Abstände: La Mulatière – Anse Dorée 16,0 km, Fontenay-aux-Roses – La Mulatière 32,2 km. Erfunden: Schreiben, Unterschriften, Zitate, Brief, Eingangsvermerk. Madame Rosalie, die Wirtin, Héloïse, Firmin und der Herr aus Roche-Noire sind wiederkehrende erfundene Figuren; die Bittschrift erschien im November 1923. Namen der Personen von der Redaktion vergeben.",
+      "refs": {
+        "staedte": [
+          174645,
+          174631,
+          174635,
+          174632
+        ],
+        "personen": [
+          35085,
+          36242,
+          94977,
+          126758
+        ],
+        "linien": [
+          417105,
+          426697,
+          432806,
+          180187
+        ],
+        "betriebe": [
+          418234
+        ]
+      }
+    },
+    {
+      "id": "1924-12-hoerspiel-pointe",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1924-12",
+      "lead": true,
+      "rubrik": "Hörspiel · Radio Alizés · Pointe des Pêcheurs",
+      "titel": "„Rue Lavoisier, bitte aussteigen.“ Ein Hörspiel für den ersten Weihnachtstag 1924",
+      "teaser": "Seit Oktober 1924 fahren auch in Pointe des Pêcheurs neue Straßenbahnen, und an der Rue Lavoisier, wo sich vier Linien treffen, stehen die Leute Schlange. Radio Alizés hat am ersten Weihnachtstag ein kurzes Hörspiel gesendet. Wir drucken das Manuskript, mit den Geräuschanweisungen.",
+      "body": [
+        "Personen: der Sprecher. Die Schwester, Rue des Tilleuls, Pointe des Pêcheurs. Die Familie Bonnaire aus Port des Alizés, zwei Erwachsene, zwei Kinder. Ein Schaffner. Viele Wartende.",
+        "Geräusch: Wind von Osten. Eine Straßenbahnglocke, weit weg. Sprecher: Erster Weihnachtstag 1924, Pointe des Pêcheurs. An der Haltestelle Rue Lavoisier warten Menschen. Sehr viele. Laut den Messbüchern warten heute an den Haltestellen der Linie 1 über dreihundertsechzig.",
+        "Das ältere Bonnaire-Kind: Papa, warum kommt keine? Herr Bonnaire: Sie kommt. Sie hat nur viele Freunde, die vorher einsteigen.",
+        "Geräusch: Glocke, näher. Bremsen. Schaffner: Linie 1, Richtung Nordwest. Bitte nachrücken. Bitte weiter nachrücken. Bitte so nachrücken, als wäre Weihnachten.",
+        "Sprecher: Seit Oktober fahren in Pointe vier Straßenbahnlinien statt zwei. Die Linie 1 ist die längste. Sie fährt vom Nordwesten über die Rue Lamartine, das Zentrum und die Rue Lavoisier in den Südosten und denselben Weg zurück. Bis gestern fuhren auf ihr fünf Wagen.",
+        "Frau Bonnaire: Fünf? Ich zähle gerade den sechsten. Und da kommt der siebte. Schaffner: Die Société hat heute früh vier Wagen dazugestellt. Frohe Weihnachten. Sprecher: So steht es in den Büchern. Am 25. Dezember fahren auf der Linie 1 neun Straßenbahnen.",
+        "Geräusch: eine Haustür, Kinderstimmen, ein Topfdeckel. Die Schwester, Rue des Tilleuls: Ihr seid mit der Straßenbahn gekommen? Herr Bonnaire: Mit dreien. Die erste war voll, die zweite auch, die dritte hat uns genommen, weil die Kinder gesungen haben.",
+        "Das jüngere Kind: Tante, warum sind deine Stühle so alt? Die Schwester: Weil es in Pointe noch nie Stühle zu kaufen gab, Kind. Die sind vom Großvater. Auf ihnen haben schon deine Mutter und ich gesessen, als wir so groß waren wie du. Das Kind: Dann sind sie gut. Die Schwester: Dann sind sie gut.",
+        "Geräusch: Gläser, Lachen, dann leiser werdend die Glocke. Schaffner, aus der Ferne: Rue Lavoisier, bitte aussteigen. Sprecher: Das war unser Weihnachtshörspiel. Gute Nacht von Radio Alizés, Sender Bourg-l’Écorce. Geräusch: die Bahnhofsuhr von Bourg.",
+        "Nachbemerkung der Redaktion: Vier Tage nach der Sendung, am 29. Dezember 1924, liegen in den Läden von Pointe des Pêcheurs zum ersten Mal Möbel, seit die Bücher es zählen. Seit dem 25. November fährt dort ein eigener Lastwagen der Société mit Möbeln. Die Schwester in der Rue des Tilleuls hat geschrieben, sie behalte die Stühle vom Großvater trotzdem."
+      ],
+      "grounding": "Gemessen: In Pointe des Pêcheurs fehlen ab 12.10.1924 die alten Linien Tram Passagiere-PoidesPêc-LO-1 und -LO-2 sowie Bus -LO-2; neue Linien ab 13.10.1924, die als Tram Passagiere-PoidesPêc-LO-1 bis -LO-4 geführt werden, alle mit Halt Rue Lavoisier. Tram -LO-1 (Nordwest – Nordwest 2 – Rue Lamartine – Zentrum – Rue Lavoisier – Mitte-Südost – Südost und zurück) am 25.12.1924 mit 9 statt 5 Wagen (Meldung „Verstärkt“) und 366 Wartenden. Möbel in Pointe des Pêcheurs erstmals am 29.12.1924 in den Läden (geprüft über alle Sitzungen), RC Möbel-PoidesPêc-LO-1 seit 25.11.1924. Erfunden: Hörspiel, Sendung, Sprecher, Schaffner, Gespräche, Stühle. Die Familie Bonnaire und die Schwester in der Rue des Tilleuls stammen aus den Nachsendeanträgen (Oktober 1922), Radio Alizés aus der Rundfunkzeit.",
+      "refs": {
+        "staedte": [
+          174602,
+          174632,
+          174605
+        ],
+        "personen": [],
+        "linien": [
+          450609,
+          450608,
+          450641,
+          450725,
+          419854
+        ],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1925-01-honorine-und-die-fokker",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1925-01",
+      "lead": true,
+      "rubrik": "Erzählung · Port des Alizés",
+      "titel": "Honorine und die Fokker",
+      "teaser": "Am Neujahrstag 1925 fliegen zwischen Port des Alizés und Sin-le-Noble keine Junkers mehr. An ihrer Stelle verzeichnen die Bücher fünf Fokker F VII, ein Modell, das es laut Spiel erst seit diesem Jahr gibt. Honorine ist zweimal mit den alten geflogen. Ein drittes Mal hatte sie nicht vor.",
+      "body": [
+        "Honorine hatte beschlossen, nicht mehr zu fliegen, und zwar endgültig, zweimal. Einmal nach dem April 1923, als sie ihre Wette eingelöst hatte, und einmal nach dem Juli, als sie hatte überprüfen wollen, ob es wirklich nicht so schlimm gewesen war. Es war nicht so schlimm gewesen. Gerade deshalb, fand sie, musste man aufhören.",
+        "Am Neujahrsmorgen 1925 stand Hippolyte in der Tür von Chez Honorine, den Hut in der Hand, wie ein Mann, der eine schlechte Nachricht bringt. „Die Junkers sind weg“, sagte er. „Alle acht.“",
+        "Honorine stellte das Glas ab, das sie gerade polierte. Seit dem Juni 1920 waren Junkers zwischen Port und Sin-le-Noble geflogen, erst vier, zuletzt acht, vier Plätze in jeder. In einer von ihnen hatte sie auf Platz drei gesessen und den Hut aufbehalten.",
+        "„Was fliegt denn jetzt?“ — „Fokker“, sagte Hippolyte, und er sprach das Wort aus, als hätte er es aus einem Katalog. „Fünf Stück. Größer. Acht Plätze in jeder.“ — „Fünf mal acht“, sagte Honorine. „Vierzig.“ — „Vierzig“, sagte Hippolyte. „Acht mehr als vorher, mit drei Flugzeugen weniger.“ Er hatte es auf dem Weg ausgerechnet und war sichtlich stolz darauf.",
+        "Lebrun kam gegen Mittag, wie jeden Neujahrstag, um festzustellen, dass sich nichts geändert hatte. Diesmal konnte er es nicht. Er setzte sich ans Fenster und notierte, dass an diesem Tag siebzehn Fahrgäste in den neuen Flugzeugen saßen. „Siebzehn von vierzig“, sagte er. „Die Leute misstrauen dem Neuen.“ — „Oder sie schlafen noch“, sagte Honorine. „Es ist Neujahr.“",
+        "Am Nachmittag ging sie zum Flughafen. Sie wolle nur schauen, sagte sie. Hippolyte ging mit, um sicherzustellen, dass sie nur schaute, und Lebrun, um zu bezeugen, dass Hippolyte es sicherstellte. Die Straßenbahn Linie 1 brachte sie hin, vom Bahnhof über die Station Umstieg zum Flughafen, in einem Wagen, in dem außer ihnen niemand saß.",
+        "Die Fokker stand auf dem Feld, ein Hochdecker mit einer richtigen Kabine und Fenstern, aus denen man sehen konnte, ohne sich zu verrenken. Honorine ging einmal um das Flugzeug herum, wie sie um einen neuen Gast herumging, bevor sie entschied, ob er anschreiben durfte. „Und die Junkers?“, fragte sie den Mann am Tor. Der zuckte die Schultern. „Weg. Wohin, weiß keiner. Steht in keinem Buch.“",
+        "Sie sah lange hin. Dann sagte sie zu Hippolyte: „Ich habe zweimal aufgehört. Ein drittes Mal aufhören kann ich nur, wenn ich vorher ein drittes Mal fliege. Das ist Logik.“ — „Das ist keine Logik“, sagte Lebrun. „Das ist Honorine“, sagte Hippolyte.",
+        "Sie flog an diesem Tag nicht. Sie kaufte eine Karte für den Sonntag und steckte sie hinter den Spiegel über der Kasse, neben den Schiedsspruch von 1923. Abends schrieb sie ins Wettbuch, auf eine neue Seite: „Honorine gegen sich selbst: Ich fliege am Sonntag. Einsatz: ein Glas. Schiedsrichter: die Messbücher.“",
+        "Am Sonntag, dem 4. Januar, saßen laut den Büchern dreizehn Fahrgäste in den Fokker. Ob einer davon einen Hut aufbehielt, steht nicht darin."
+      ],
+      "grounding": "Gemessen: AP Passagiere-PordesAli-Sin-IC-1 (Flughafen Port des Alizés – Flughafen Sin-le-Noble) bis 29.12.1924 mit 8 Junkers F 13 Herta (32 Plätze), seit 01.01.1925 mit 5 Fokker F VII A (laut Spiel ab 1925, 40 Plätze; Meldungen „Ausgedünnt“ und „Neues Fahrzeugmodell“); am 01.01.1925 17 und am 04.01.1925 13 Fahrgäste an Bord. Die Linie flog ab Juni 1920 mit 4 Junkers. Tram Passagiere-PordesAli-LO-1 (Bahnhof – Station Umstieg – Flughafen) fährt mit 2 Wagen. Was mit den Junkers geschah, misst der Monitor nicht. Erfunden: Szene, Gespräche, Honorines zweiter und dritter Flug, Wettbucheintrag, Mann am Tor. Honorine, Hippolyte, Lebrun, das Wettbuch und der Schiedsspruch (März 1923) sind wiederkehrende erfundene Figuren und Dinge.",
+      "refs": {
+        "staedte": [
+          174632,
+          174617
+        ],
+        "personen": [],
+        "linien": [
+          220049,
+          463113
+        ],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1925-02-einordnung-stadtnetze",
+      "typ": "einordnung",
+      "art": "einordnung",
+      "date": "1925-02",
+      "lead": true,
+      "rubrik": "Einordnung · Hauptinsel",
+      "titel": "Ein Jahr neue Stadtnetze. Was sich in den fünf großen Städten verändert hat",
+      "teaser": "Zwischen Januar und Oktober 1924 hat die Société die Innerortsnetze aller fünf Städte der Hauptinsel umgebaut: Port des Alizés, Bourg-l’Écorce, Valmorin, Anse Dorée und Pointe des Pêcheurs. Eine Bilanz nach den Messbüchern, Stand Februar 1925.",
+      "body": [
+        "Was geschah. In Port des Alizés ersetzten zwischen dem 23. Januar und dem 5. März 1924 fünf Straßenbahnlinien acht Omnibuslinien und die alte Straßenbahn. In Bourg-l’Écorce folgten ab dem 25. Februar vier Straßenbahnlinien und eine Omnibuslinie, die bis Mai auch Straßenbahnen führte, in Valmorin am 3. April fünf Straßenbahnlinien, in Anse Dorée am 19. April vier neue Omnibuslinien (dabei wurden die letzten Postkutschen ersetzt) und in Pointe des Pêcheurs am 12. und 13. Oktober vier Straßenbahnlinien. Fast überall fahren die Linien paarweise, dieselbe Strecke in beide Richtungen. Sin-le-Noble auf der Nachbarinsel folgte am 1. November.",
+        "Mehr Wege mit der Société. Der Anteil der Wege, die über Linien der Société führen, war 1923 in allen fünf Städten gesunken. Nach dem Umbau stieg er überall, jeweils ab dem Monat des Umbaus: in Port von 51 auf 63 Prozent, in Bourg von 31 auf 66 (so hoch wie nie seit Beginn der Aufzeichnung), in Valmorin von 40 auf 62, in Anse Dorée von 46 auf 68 und in Pointe des Pêcheurs von 50 auf 68. In Städten anderer Inseln ohne neues Netz blieb er nahezu gleich, in Roquemer bei 45, in Valombre bei 40 bis 42 Prozent.",
+        "Mehr erreichbar. Mit den Linien der Société erreichen die Bewohner deutlich mehr Arbeitsplätze als vorher: in Port 3.465 statt 1.854, in Bourg 5.156 statt 3.725, in Valmorin 3.757 statt 1.478, in Anse Dorée 3.060 statt 1.855, in Pointe des Pêcheurs 4.595 statt 2.519. Bei den Geschäften ist der Zuwachs noch größer, in Valmorin von 1.396 auf 4.691. Was man zu Fuß oder mit dem Automobil erreicht, blieb in derselben Zeit fast unverändert.",
+        "Weniger Wagen, mehr Wartende. Innerorts fahren in Port jetzt 35 statt 44 Fahrzeuge, in Bourg 42 statt 50, in Valmorin 18 statt 25. An den Haltestellen warten dafür deutlich mehr Menschen, und sie warten länger. Auf den Innerortslinien von Bourg warteten vor dem Umbau im Mittel rund 450 Fahrgäste gleichzeitig, danach rund 1.040; in Anse Dorée stieg die mittlere Wartezeit der Wartenden von etwa 90 auf fast 580 Spielsekunden. Am meisten stehen an der Station Anbau in Bourg, am Busbahnhof und an der Station von Valmorin und an der Rue Lavoisier in Pointe des Pêcheurs.",
+        "Geld und Lärm. Die Jahresbilanz der Innerortslinien drehte in Bourg von minus 1,04 auf plus 1,83 Millionen und in Valmorin von minus 1,26 auf plus 0,13 Millionen. In Anse Dorée blieb sie bei gut 0,6 Millionen, in Port sank sie von plus 0,39 Millionen auf etwa null. Leiser geworden sind Bourg (74,8 auf 72,3 Dezibel), Anse Dorée und Pointe des Pêcheurs; in Port und Valmorin ist es wieder so laut wie vorher.",
+        "Was sich nicht messbar geändert hat: das Wachstum. Bourg wächst seit dem Umbau stetig, von 3.996 Einwohnern im Februar 1924 auf 4.205 im Februar 1925, nachdem es 1923 zweimal Wohnungen verloren hatte. Port des Alizés ist seit Januar 1923 voll und zählt unverändert 2.497 bis 2.498. Valmorin, Anse Dorée und Pointe des Pêcheurs wuchsen so langsam wie vorher, um ein bis zwei Prozent im Jahr. Orte ohne neues Netz wuchsen im selben Jahr schneller, Roquemer um zehn, Valombre um vierzehn Prozent.",
+        "Einordnung. Die Messbücher zeigen zeitliche Zusammenhänge, keine Ursachen. Dieser ist ungewöhnlich deutlich, weil die Wende in jeder Stadt genau im Monat ihres Umbaus kommt und die Vergleichsorte sie nicht zeigen. Für das Wachstum der Städte scheinen andere Dinge wichtiger zu sein; welche, sagen die Bücher nicht. Die Schlangen an den Haltestellen deuten darauf hin, dass manche der neuen Linien mehr Fahrgäste anziehen, als sie im Augenblick befördern."
+      ],
+      "grounding": "Belegt, aus den Detailmessungen der Sitzungen vom Oktober 2026 (Spielzeit Januar 1923 bis Februar 1925). Hauptinsel nach dem Höhenraster der Seekarte (zusammenhängende Landfläche mit Bourg-l’Écorce, Port des Alizés, Pointe des Pêcheurs, Valmorin und Anse Dorée). Umbautermine aus den Meldungen „Neue Linie“ und „Eingestellt“. Innerortslinien: Bus- und Straßenbahnlinien mit „-LO-“ im Namen, deren Halte im Ort liegen; Bus Passagiere-Val-LO-5 gehört zu Valombre und ist nicht mitgezählt. ÖV-Anteil = Anteil der Wege über Linien der Société (line_usage_percent), Werte vom letzten Stand vor dem Umbau und vom Februar 1925. Erreichbare Arbeitsplätze und Geschäfte mit Linien der Société bzw. zu Fuß und mit dem Automobil, wie das Spiel sie je Stadt angibt (jobs_public/jobs_private, shops_public/shops_private). Wartende und mittlere Wartezeit: Stichprobe der wartenden Fahrgäste je Linie, Mittel von Juli 1923 bis zum Umbau und ab zwei Monaten nach dem Umbau. Bilanz: Betriebsbilanz der Linien im letzten Spieljahr, bei Linien, die jünger sind, seit ihrem Beginn; für Pointe des Pêcheurs zu kurz. Bourg 65,5 % am 07.02.1925 ist der höchste ÖV-Anteil dieser Stadt in allen Sitzungen. Einwohner = Wohnkapazität. Vergleichsorte Roquemer, Valombre, Vauclaire, Roche-Noire und Montfougère (andere Inseln, kein Umbau bis Februar 1925). Ursachen misst der Monitor nicht.",
+      "refs": {
+        "staedte": [
+          174632,
+          174605,
+          174607,
+          174645,
+          174602,
+          174606,
+          174621
+        ],
+        "personen": [],
+        "linien": [],
+        "betriebe": []
+      }
     }
   ]
 }
