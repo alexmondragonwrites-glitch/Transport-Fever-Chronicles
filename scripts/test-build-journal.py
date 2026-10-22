@@ -1,5 +1,5 @@
 """Journal build from synthetic monitor sessions: vehicle models (Spielmonitor revision 15), the player's notebook,
-the sea chart from measured positions (revision 16), the kinds of vehicle, air lines included, and the epochs
+the sea chart from measured positions (revision 16), the kinds of vehicle, air lines and mixed bus/tram lines included, and the epochs
 (zeitleiste.json from epoch rules: earliest and latest year, triggers, the crisis paper, rollbacks, no rules file).
 
 Usage: python scripts/test-build-journal.py
@@ -25,10 +25,12 @@ REDAKTION = {'schema_version':1, 'items':[{'id':'test-einordnung', 'typ':'einord
              'titel':'Testbeitrag', 'body':['Nur für den Test.'], 'grounding':'Einordnung der Redaktion zur Datengrundlage; keine Fiktion, nur Test.'}]}
 
 
-def model(mid, name, vehicles, parts=None, bought=None, file=True):
+def model(mid, name, vehicles, parts=None, bought=None, file=True, carrier=None):
     m = {'model_id':mid, 'name':name, 'vehicles':vehicles, 'parts':parts or vehicles, 'first_parts':vehicles, 'available_from':1900}
     if file:
         m['model_file'] = f'vehicle/test/m{mid}.mdl'
+    if carrier:
+        m['carrier'] = carrier
     if bought:
         m['purchase_first_game_time'] = m['purchase_last_game_time'] = 1
         m['purchase_first_game_date'] = m['purchase_last_game_date'] = {'year':bought[0], 'month':bought[1], 'day':bought[2]}
@@ -349,6 +351,87 @@ class JournalKindTests(JournalCase):
         self.assertEqual({l['id']:l['art'] for l in chart['linien']}[4], 'flugzeug')
         # Air cargo is a kind of its own; without a known prefix the carrier alone still says aircraft.
         self.assertEqual((journal.line_kind('AC Post-Val-Roc-IC-1', 'AIR'), journal.line_kind('Linie 1', 'AIR')), ('frachtflugzeug', 'flugzeug'))
+
+
+def shared(row, lid, name, carrier, models, places=('Valmorin',)):
+    """Adds line lid to a detail row. The monitor reports no line carrier while vehicles of several carriers share a line."""
+    row['lines'].append({'id':lid, 'name':name, 'carrier':carrier, 'vehicles':sum(m['vehicles'] for m in models), 'places':list(places),
+                         'vehicle_models':models, 'vehicle_models_complete':True})
+    return row
+
+
+def buses(n):
+    return model(61, 'Decksitzwagen', n, carrier='ROAD')
+
+
+def trams(n):
+    return model(62, 'Triebwagen F', n, carrier='TRAM')
+
+
+DAYS = [(1, 20), (2, 1), (2, 5), (2, 9), (2, 13), (2, 17), (2, 21)]
+
+
+class JournalMixedLineTests(JournalCase):
+    """Buses and trams on one line: the game names the line after either kind, so the measured name flips back and forth."""
+    def changes(self, meld, lid):
+        return [(e['date'], e['titel']) for e in meld['meldungen'] if e['typ'] == 'linie-neu-gefuehrt' and e['refs']['line'] == lid]
+
+    def test_mixed_line_flips_its_name_without_conversions_and_is_reported_once(self):
+        mix = [buses(2), trams(2)]
+        # Line 5 runs buses, then buses and trams together, then trams only: one mix, one real conversion.
+        five = [('Bus Passagiere-Val-LO-2', 'ROAD', [buses(3)])]+[(n, None, mix) for n in ('Tram Passagiere-Val-LO-1', 'Bus Passagiere-Val-LO-2',
+                'Tram Passagiere-Val-LO-1', 'Bus Passagiere-Val-LO-2')]+[('Tram Passagiere-Val-LO-1', 'TRAM', [trams(4)])]*2
+        # Line 6 is mixed from its first measurement and ends with trams under its first name: nothing changed for good.
+        six = [None]+[(n, None, mix) for n in ('Tram Passagiere-Roc-LO-3', 'Bus Passagiere-Roc-LO-4', 'Tram Passagiere-Roc-LO-3',
+               'Bus Passagiere-Roc-LO-4', 'Bus Passagiere-Roc-LO-4')]+[('Tram Passagiere-Roc-LO-3', 'TRAM', [trams(4)])]
+        rows = []
+        for i, day in enumerate(DAYS):
+            row = shared(detail(day, 100*(i+1), BASE), 5, *five[i])
+            rows.append(shared(row, 6, *six[i], places=('Roc',)) if six[i] else row)
+        meld, _ = self.build({'a':rows})
+        self.assertEqual(self.changes(meld, 5), [('1912-02-01', 'Gemischter Betrieb: Bus Passagiere-Val-LO-2'),
+                                                 ('1912-02-17', 'Umstellung auf Straßenbahn')])
+        mixed, conversion = [e for e in meld['meldungen'] if e['typ'] == 'linie-neu-gefuehrt' and e['refs']['line'] == 5]
+        self.assertEqual(mixed['text'], 'Auf der Linie „Bus Passagiere-Val-LO-2“ in Valmorin fahren Fahrzeuge verschiedener Art gemeinsam: '
+                         '2 Decksitzwagen und 2 Triebwagen F. Die Messungen führen sie deshalb abwechselnd als „Bus Passagiere-Val-LO-2“ '
+                         'und „Tram Passagiere-Val-LO-1“.')
+        self.assertEqual([m['verkehrstraeger'] for m in mixed['werte']['modelle']], ['ROAD', 'TRAM'])
+        self.assertEqual((conversion['werte']['alt'], conversion['werte']['neu']), ('Bus Passagiere-Val-LO-2', 'Tram Passagiere-Val-LO-1'))
+        self.assertIn('Seit 01.02.1912 fuhren auf ihr Fahrzeuge verschiedener Art gemeinsam, jetzt nur noch eine.', conversion['text'])
+        self.assertEqual(self.changes(meld, 6), [('1912-02-01', 'Gemischter Betrieb: Tram Passagiere-Roc-LO-3')])
+        self.assertEqual([e['titel'] for e in meld['meldungen'] if e['typ'] == 'linie'], ['Neue Linie: Tram Passagiere-Roc-LO-3'])
+
+    def test_real_conversions_still_count_and_closures_keep_the_reported_name(self):
+        lines = {
+            # The game renames a new tram line a few days late: a conversion, as in Pointe des Pêcheurs in October 1924.
+            7:[('Bus Passagiere-Roc-LO-5', 'TRAM', [trams(3)])]+[('Tram Passagiere-Roc-LO-2', 'TRAM', [trams(3)])]*5,
+            # Trams replace buses one by one: two mixed measurements in between, no news of a mix.
+            8:[('Bus Passagiere-Val-LO-7', 'ROAD', [buses(4)]), ('Tram Passagiere-Val-LO-6', None, [buses(2), trams(2)]),
+               ('Bus Passagiere-Val-LO-7', None, [buses(1), trams(3)])]+[('Tram Passagiere-Val-LO-6', 'TRAM', [trams(4)])]*3,
+            # The line's carrier was not read, but its models name a single one: no mix, the conversion counts.
+            9:[('Tram Passagiere-Gar-LO-1', 'TRAM', [trams(2)])]+[('Bus Passagiere-Gar-LO-1', None, [buses(2)])]*5,
+            # Mixed from the first measurement on, closed while mixed: the closure names the line as first reported.
+            10:[(n, None, [buses(1), trams(1)]) for n in ('Tram Passagiere-Gar-LO-2', 'Bus Passagiere-Gar-LO-3', 'Bus Passagiere-Gar-LO-3')]+[None]*3}
+        rows = []
+        for i, day in enumerate(DAYS[:6]):
+            row = detail(day, 100*(i+1), BASE)
+            for lid, course in lines.items():
+                if course[i]:
+                    shared(row, lid, *course[i])
+            rows.append(row)
+        meld, _ = self.build({'a':rows})
+        self.assertEqual(self.changes(meld, 7), [('1912-02-01', 'Umstellung auf Straßenbahn')])
+        self.assertEqual(self.changes(meld, 8), [('1912-02-09', 'Umstellung auf Straßenbahn')])
+        conversion = next(e for e in meld['meldungen'] if e['typ'] == 'linie-neu-gefuehrt' and e['refs']['line'] == 8)
+        self.assertEqual((conversion['werte']['alt'], conversion['werte']['neu']), ('Bus Passagiere-Val-LO-7', 'Tram Passagiere-Val-LO-6'))
+        self.assertNotIn('verschiedener Art', conversion['text'])
+        self.assertEqual(self.changes(meld, 9), [('1912-02-01', 'Umstellung auf Bus')])
+        self.assertEqual(self.changes(meld, 10), [('1912-01-20', 'Gemischter Betrieb: Tram Passagiere-Gar-LO-2')])
+        closure = next(e for e in meld['meldungen'] if e['typ'] == 'linie-ende' and e['refs']['line'] == 10)
+        self.assertEqual((closure['date'], closure['titel']), ('1912-02-09', 'Eingestellt: Tram Passagiere-Gar-LO-2'))
+        # Without vehicles there is no carrier either, and no mix; before revision 15 the missing carrier alone tells.
+        self.assertEqual([journal.mixed([1, 'Bus X', None, 0, [], None]), journal.mixed([1, 'Bus X', None, 2, [], None]),
+                          journal.mixed([1, 'Bus X', 'ROAD', 2, [], None])], [False, True, False])
 
 
 EPOCH_RULES = {'schema_version':1,

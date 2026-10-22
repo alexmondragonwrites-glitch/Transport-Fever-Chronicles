@@ -83,13 +83,27 @@ def model_key(m):
 
 
 def compact_models(line):
-    """[complete, [[key, name, vehicles, parts, first purchase, last purchase, available from], …]] or None before revision 15."""
+    """[complete, [[key, name, vehicles, parts, first purchase, last purchase, available from, carrier], …]] or None before revision 15."""
     models = line.get('vehicle_models')
     if models is None:
         return None
     return [bool(line.get('vehicle_models_complete')),
             [[model_key(m), m.get('name'), m.get('vehicles') or 0, m.get('parts') or 0, date(m.get('purchase_first_game_date')),
-              date(m.get('purchase_last_game_date')), m.get('available_from')] for m in (models or [])]]
+              date(m.get('purchase_last_game_date')), m.get('available_from'), m.get('carrier')] for m in (models or [])]]
+
+
+def mixed(line):
+    """Vehicles of more than one carrier on a compact line, e.g. buses and trams. The monitor reports a line's carrier only
+    when all its vehicles share one, and the game then names the line after either kind. Vehicle models (revision 15 on)
+    carry their own carrier: exactly one there means the line's carrier was just not read."""
+    if line[2] is not None or not line[3]:
+        return False
+    models = line[5][1] if len(line) > 5 and line[5] else []
+    return len({m[7] for m in models if len(m) > 7 and m[7]}) != 1
+
+
+def joined(parts):
+    return ' und '.join([', '.join(parts[:-1]), parts[-1]]) if len(parts) > 2 else ' und '.join(parts)
 
 
 def compact(row):
@@ -169,7 +183,7 @@ def place_text(places):
         return ''
     if len(unique) == 1:
         return 'in '+unique[0]
-    return 'zwischen '+' und '.join([', '.join(unique[:-1]), unique[-1]]) if len(unique) > 2 else f'zwischen {unique[0]} und {unique[1]}'
+    return 'zwischen '+joined(unique)
 
 
 def detect(rows, jumps, latest_places):
@@ -197,13 +211,18 @@ def detect(rows, jumps, latest_places):
     # The canonical course above still drops the abandoned branch; it is just not announced.
 
     lines, line_vehicles, line_missing, gone_since = {}, {}, collections.Counter(), {}
+    # While a line runs vehicles of several kinds its measured name flips between them. Name changes count only when the
+    # line runs one kind again, against the name it had then (named); the mix itself is news once, after three measurements.
+    named, mixing, mixed_told = {}, {}, set()
     kinds_seen = set()
     inds, ind_missing = {}, collections.Counter()
     towns, town_steps, town_pending = {}, {}, {}
     last_lc, last_vc = first['lc'], first['vc']
     for l in first['lines']:
-        lines[l[0]] = l
+        lines[l[0]] = named[l[0]] = l
         line_vehicles[l[0]] = l[3]
+        if mixed(l):
+            mixing[l[0]] = {'row':first, 'line':l, 'names':[l[1]], 'runs':1}
         if l[3]:
             kinds_seen.add(line_kind(l[1], l[2]))
     for i in first['inds']:
@@ -225,9 +244,10 @@ def detect(rows, jumps, latest_places):
                         f"{LINE_LABEL[kind]} {place_text(places)}, erstmals erfasst mit {l[3]} Fahrzeug{'en' if l[3] != 1 else ''}.".replace('  ', ' ').replace(' ,', ','),
                         {'line':lid}, {'art':kind, 'fahrzeuge':l[3]}, key=lid)
                     line_vehicles[lid] = l[3]
-                elif l[1] != lines[lid][1]:
-                    old = lines[lid][1]
-                    old_kind = line_kind(old, lines[lid][2])
+                    named[lid] = l
+                elif l[1] != named[lid][1] and not mixed(l):
+                    old = named[lid][1]
+                    old_kind = line_kind(old, named[lid][2])
                     gained = [g for g in line_goods(l[1]) if g not in line_goods(old)]
                     lost = [g for g in line_goods(old) if g not in line_goods(l[1])]
                     if not line_goods(old):
@@ -244,7 +264,32 @@ def detect(rows, jumps, latest_places):
                         text = f"„{old}“ {' und '.join(parts)}; neuer Name „{l[1]}“."
                     else:
                         title, text = 'Linie neu geführt', f"„{old}“ heißt jetzt „{l[1]}“."
+                    if mixing.get(lid, {}).get('runs', 0) >= 3:
+                        text += f" Seit {de(mixing[lid]['row']['d'])} fuhren auf ihr Fahrzeuge verschiedener Art gemeinsam, jetzt nur noch eine."
                     add('linie-neu-gefuehrt', row, title, text, {'line':lid}, {'alt':old, 'neu':l[1], 'neue_waren':gained, 'entfallene_waren':lost}, key=lid)
+                if mixed(l):
+                    mix = mixing.setdefault(lid, {'row':row, 'line':l, 'names':[], 'runs':0})
+                    mix['runs'] += 1
+                    if l[1] not in mix['names']:
+                        mix['names'].append(l[1])
+                    if mix['runs'] == 3 and lid not in mixed_told:
+                        mixed_told.add(lid)
+                        first_mixed = mix['line']
+                        models = [m for m in (first_mixed[5][1] if len(first_mixed) > 5 and first_mixed[5] else []) if m[2]]
+                        fleet_text = (joined([f"{m[2]} {model_name(m[0], m[1])}" for m in models]) if models
+                                      else f"{first_mixed[3]} Fahrzeug{'e' if first_mixed[3] != 1 else ''}")
+                        names = list(dict.fromkeys([named[lid][1]]+mix['names']))
+                        text = (f"Auf der Linie „{named[lid][1]}“ {place_text(first_mixed[4] or latest_places.get(lid))} fahren Fahrzeuge "
+                                f"verschiedener Art gemeinsam: {fleet_text}.").replace('  ', ' ')
+                        if len(names) > 1:
+                            text += f" Die Messungen führen sie deshalb abwechselnd als {joined([f'„{n}“' for n in names])}."
+                        add('linie-neu-gefuehrt', mix['row'], f"Gemischter Betrieb: {named[lid][1]}", text, {'line':lid},
+                            {'gemischt':True, 'namen':names, 'fahrzeuge':first_mixed[3],
+                             'modelle':[{'modell':model_name(m[0], m[1]), 'fahrzeuge':m[2], 'verkehrstraeger':m[7]} for m in models]},
+                            key=f"{lid}-gemischt")
+                else:
+                    mixing.pop(lid, None)
+                    named[lid] = l
                 # A premiere needs a vehicle: a line set up before its first purchase waits for it.
                 if kind not in kinds_seen and kind != 'unbekannt' and l[3]:
                     add('premiere', row, f"Premiere: {KIND_LABEL[kind]}",
@@ -267,10 +312,12 @@ def detect(rows, jumps, latest_places):
                     line_missing[lid] += 1
                     gone_since.setdefault(('line', lid), row)
                     if line_missing[lid] == 3:
-                        add('linie-ende', gone_since.pop(('line', lid)), f"Eingestellt: {lines[lid][1]}",
+                        add('linie-ende', gone_since.pop(('line', lid)), f"Eingestellt: {named[lid][1]}",
                             f"Die Linie fehlt ab dieser Messung dauerhaft im Netz; zuletzt mit {lines[lid][3]} Fahrzeugen.",
                             {'line':lid}, key=lid)
-                        del lines[lid]
+                        del lines[lid], named[lid]
+                        mixing.pop(lid, None)
+                        mixed_told.discard(lid)
         # Industries
         if row['inds'] and len(row['inds']) >= 0.6*len(inds):
             current = {i[0]:i for i in row['inds']}
@@ -511,7 +558,7 @@ def fleet_models(rows):
     captured = [l for l in last['lines'] if len(l) > 5 and l[5] is not None]
     for l in captured:
         kind = line_kind(l[1], l[2])
-        for key, name, vehicles, parts, bought_first, bought_last, available in l[5][1]:
+        for key, name, vehicles, parts, bought_first, bought_last, available, *_ in l[5][1]:
             e = kinds[kind].setdefault(key, {'modell':model_name(key, name), 'datei':key, 'fahrzeuge':0, 'einheiten':0, 'linien':0,
                                              'kauf_erstes':None, 'kauf_letztes':None, 'verfuegbar_ab':available,
                                              'erstmals':first_seen[key], 'seit_beginn':first_seen[key] == first['d']})
