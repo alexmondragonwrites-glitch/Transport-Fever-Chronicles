@@ -2671,6 +2671,1798 @@
         ],
         "personen": []
       }
+    },
+    {
+      "id": "1925-03-maerzwoche",
+      "date": "1925-03",
+      "art": "fiktion",
+      "sender": "Radio Alizés · Sender Bourg-l’Écorce",
+      "titel": "Woche vom 15. bis 21. März 1925",
+      "grounding": "Gemessen: Gaston Bellance (35085, Anse Dorée, in der Beobachtungsgruppe seit 18.01.1920) zuletzt am 13.03.1925; Philomène Désir (33157, Montfougère) neu in der Beobachtungsgruppe am 16.03.1925; Montfougère 587, Roquemer 1.190, Bourg-l’Écorce 4.220 Einwohner (16.03.1925); TC Eisenerz,Kohle,Stein-AnsDor-PordesAli-IC-1 verstärkt am 24.03.1925. Namen der Beobachteten von der Redaktion vergeben. Radio, Sender, Sendungen, Sendezeiten, Sprecher und Musik gibt es im Spiel nicht. Erfunden: Radio Alizés, alle Sendungen, Zeiten, Musik und Ansagen.",
+      "tage": [
+        {
+          "tag": "Sonntag, 15. März",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Aus den Messbüchern",
+              "text": "Seit Freitag fehlt in den Büchern Gaston Bellance aus Anse Dorée. Er stand seit Januar 1920 darin. Wir wissen nicht, wohin er gegangen ist, und wünschen ihm einen guten Weg."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Sonntagskonzert"
+            }
+          ]
+        },
+        {
+          "tag": "Montag, 16. März",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Die Glocken des Archipels",
+              "text": "Heute: Montfougère, 587 Einwohner. Neu in den Büchern seit heute: Philomène Désir. Die Glocke läutet für sie, ob sie es hört oder nicht."
+            }
+          ]
+        },
+        {
+          "tag": "Samstag, 21. März",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Sportfunk",
+              "text": "Wachstumsliga, Stand Mitte März: Roquemer 1.190, Valombre dahinter. Bourg-l’Écorce spielt außer Konkurrenz, 4.220."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Frühlingsball"
+            }
+          ]
+        }
+      ],
+      "refs": {
+        "staedte": [
+          174645,
+          174646,
+          174606,
+          174605
+        ],
+        "linien": [],
+        "personen": [
+          35085,
+          33157
+        ],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1925-04-namenswoche",
+      "date": "1925-04",
+      "art": "fiktion",
+      "sender": "Radio Alizés · Sender Bourg-l’Écorce",
+      "titel": "Woche vom 26. April bis 2. Mai 1925",
+      "grounding": "Gemessen: Le Malesherbois heißt seit 25.04.1925 Ferrières-sur-Mer, 190 Einwohner (27.04.1925); Halte und Betriebe behalten den Namen Le Malesherbois. Am 27.04.1925 neu: WP Passagiere-Lar-LO-1 (Lardy Hafen West – Le Malesherbois Hafen #1 – Labenne Hafen) und WC Passagiere,Blech,Kohle-Lar-Fer-IC-1 (Lardy Hafen #1 – Le Malesherbois Hafen #1 – Lardy Hafen Nord). Bourg-l’Écorce 4.257 Einwohner (27.04.1925). Péronne Holzfällerlager Nord neu am 04.04.1925. Radio, Sender, Sendungen, Sendezeiten, Sprecher und Musik gibt es im Spiel nicht. Erfunden: Radio Alizés, alle Sendungen, Zeiten, Musik, Hörerfragen und Antworten. Honorine ist eine wiederkehrende erfundene Figur.",
+      "tage": [
+        {
+          "tag": "Sonntag, 26. April",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Die Glocken des Archipels",
+              "text": "Heute: Ferrières-sur-Mer. Seit gestern heißt Le Malesherbois so. Die Glocken klingen wie vorher, sagt der Küster. 190 Einwohner, wie vorher."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Konzert der Stadtkapelle"
+            }
+          ]
+        },
+        {
+          "tag": "Montag, 27. April",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Aus den Messbüchern",
+              "text": "Zwei neue Schiffslinien ab heute: ein Passagierschiff von Lardy über Le Malesherbois Hafen nach Labenne und ein Schiff für Blech und Kohle zwischen Lardy und Le Malesherbois Hafen. Ja, Le Malesherbois. Die Halte heißen weiter so. Wir bitten um Nachsicht mit den Kapitänen."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Musik zum Wochenbeginn"
+            }
+          ]
+        },
+        {
+          "tag": "Mittwoch, 29. April",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Fragen Sie Honorine",
+              "text": "Ein Hörer aus Labenne fragt, wie er einen Brief an seine Tante adressieren soll, die seit Samstag woanders wohnt, ohne umgezogen zu sein. Honorine: Schreiben Sie beide Namen, einen oben, einen unten. Der Briefträger nimmt den, der ihm besser gefällt."
+            }
+          ]
+        },
+        {
+          "tag": "Samstag, 2. Mai",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Bourg-l’Écorce heute",
+              "text": "4.257 Einwohner. Kein neuer Name, keine Klagen."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Bunter Abend: Wie hieß das Dorf?",
+              "text": "Ratespiel mit Orten, die früher anders hießen. Der Hauptpreis ist ein Stempel ohne Inschrift."
+            }
+          ]
+        }
+      ],
+      "refs": {
+        "staedte": [
+          174642,
+          174612,
+          174619,
+          174605
+        ],
+        "linien": [
+          212158,
+          321922
+        ],
+        "personen": [],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1925-05-omnibuswoche",
+      "date": "1925-05",
+      "art": "fiktion",
+      "sender": "Radio Alizés · Sender Bourg-l’Écorce",
+      "titel": "Woche vom 3. bis 9. Mai 1925",
+      "grounding": "Gemessen: Lardy 214 Einwohner (05.05.1925); Bus Passagiere-Lar-LO-1 neu am 05.05.1925 (Rue Auguste Rodin – Lardy Eisenerzbergwerk), Bus Passagiere-Fer-LO-1 neu am 09.05.1925 (Rue Gustave Eiffel – Le Malesherbois Kohlebergwerk), je 2 Yellow Coach Modell W mit 10 Plätzen; Modell verfügbar ab 1925, erstmals erfasst 09.05.1925. WC Passagiere,Stahl,Eisenerz-Lar-Lab-RE-1 seit 01.05.1925 Frachtschiff (3 Schiffe). Bourg-l’Écorce 4.263 Einwohner (05.05.1925). Radio, Sender, Sendungen, Sendezeiten, Sprecher und Musik gibt es im Spiel nicht. Erfunden: Radio Alizés, alle Sendungen, Zeiten, Musik und Reportage.",
+      "tage": [
+        {
+          "tag": "Sonntag, 3. Mai",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Die Glocken des Archipels",
+              "text": "Heute: Lardy, 214 Einwohner, eine Rumbrennerei, zwei Stahlwerke, die nichts gießen, und eine Fahrzeugfabrik, die nichts baut. Die Glocke läutet trotzdem pünktlich."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Sonntagskonzert"
+            }
+          ]
+        },
+        {
+          "tag": "Dienstag, 5. Mai",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Aus den Messbüchern",
+              "text": "Lardy hat seit heute eine Omnibuslinie, von der Rue Auguste Rodin zum Eisenerzbergwerk. Zwei Wagen. Seit Freitag liegen am Lardy Hafen West drei Frachtschiffe, die das Erz holen sollen."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Musik der Bergleute"
+            }
+          ]
+        },
+        {
+          "tag": "Donnerstag, 7. Mai",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Fragen Sie Honorine",
+              "text": "Eine Hörerin fragt, ob ein Omnibus, der nur zum Bergwerk fährt, ein richtiger Omnibus ist. Honorine: Ein Omnibus ist, was hält, wenn man winkt. Ob er dann dorthin fährt, wo man hin will, ist eine andere Frage."
+            }
+          ]
+        },
+        {
+          "tag": "Samstag, 9. Mai",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Neu im Katalog",
+              "text": "Yellow Coach Modell W, ein Omnibus aus diesem Jahr, zehn Plätze. Zwei fahren in Lardy, seit heute zwei weitere in Ferrières-sur-Mer, von der Rue Gustave Eiffel zum Le Malesherbois Kohlebergwerk."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Tanzmusik"
+            }
+          ]
+        }
+      ],
+      "refs": {
+        "staedte": [
+          174612,
+          174642,
+          174605
+        ],
+        "linien": [
+          384318,
+          305408,
+          212158
+        ],
+        "personen": [],
+        "betriebe": [
+          389582,
+          182564,
+          187786
+        ]
+      }
+    },
+    {
+      "id": "1925-06-stahlwoche",
+      "date": "1925-06",
+      "art": "fiktion",
+      "sender": "Radio Alizés · Sender Bourg-l’Écorce",
+      "titel": "Woche vom 14. bis 20. Juni 1925",
+      "grounding": "Gemessen: Ferrières-sur-Mer 190 Einwohner; Le Malesherbois Kohlebergwerk ausgebaut am 11.06.1925; Le Malesherbois Stahlwerk erste Produktion am 15.06.1925 (12 Blech, 9 Stahl; vorher in keiner Messung seit 19.09.1922), am selben Tag erstes Blech auf WC Passagiere,Blech,Kohle-Lar-Fer-IC-1 nach Lardy Hafen Nord und erster Stahl auf WC Passagiere,Stahl,Eisenerz-Lar-Lab-RE-1 nach Labenne; Vauclaire 737 Einwohner (Juni 1925). Radio, Sender, Sendungen, Sendezeiten, Sprecher und Musik gibt es im Spiel nicht. Erfunden: Radio Alizés, alle Sendungen, Zeiten, Musik, Hörerfrage und Antwort. Honorine ist eine wiederkehrende erfundene Figur.",
+      "tage": [
+        {
+          "tag": "Sonntag, 14. Juni",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Die Glocken des Archipels",
+              "text": "Heute: Ferrières-sur-Mer, 190 Einwohner, seit April mit neuem Namen. Das Kohlebergwerk, das noch den alten trägt, ist am Donnerstag ausgebaut worden."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Sonntagskonzert"
+            }
+          ]
+        },
+        {
+          "tag": "Montag, 15. Juni",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Sondermeldung aus Ferrières-sur-Mer",
+              "text": "Das Le Malesherbois Stahlwerk gießt zum ersten Mal, seit es in den Büchern steht: zwölf Blech, neun Stahl. Noch am selben Tag geht das Blech aufs Schiff nach Lardy, der Stahl nach Labenne."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Musik der Hüttenleute"
+            }
+          ]
+        },
+        {
+          "tag": "Samstag, 20. Juni",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Fragen Sie Honorine",
+              "text": "Ein Hörer fragt, was man in Lardy mit Blech anfängt. Honorine: Dort steht eine Fahrzeugfabrik, die noch nie etwas gebaut hat. Vielleicht wartet sie genau darauf. Vielleicht wartet sie auch nur."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Tanzmusik"
+            }
+          ]
+        }
+      ],
+      "refs": {
+        "staedte": [
+          174642,
+          174612,
+          174619
+        ],
+        "linien": [
+          321922,
+          212158
+        ],
+        "personen": [],
+        "betriebe": [
+          334696,
+          187786,
+          389582
+        ]
+      }
+    },
+    {
+      "id": "1925-07-sommerwoche",
+      "date": "1925-07",
+      "art": "fiktion",
+      "sender": "Radio Alizés · Sender Bourg-l’Écorce",
+      "titel": "Woche vom 28. Juni bis 4. Juli 1925",
+      "grounding": "Gemessen: Roquemer 1.215 Einwohner (29.06.1925); Netz 1.300 Fahrzeuge am 02.07.1925, Kasse 1.861,0 Mio. (02.07.1925); Gummilinie WC Passagiere,Gummi-Gre-Fer-IC-1 am 02.07.1925 von 30 auf 60 Schaufelraddampfer verstärkt; Auch Ölplattform #1 neu am 03.07.1925; Lardy Eisenerzbergwerk ausgebaut am 20.05. und 04.07.1925; Le Malesherbois Stahlwerk erste Produktion am 15.06.1925 (vorher in keiner Messung seit 19.09.1922); Fernand Saint-Cyr (35558) seit 23.05.1925 mit Arbeit und mit öffentlichem Verkehr. Radio, Sender, Sendungen, Sendezeiten, Sprecher und Musik gibt es im Spiel nicht. Erfunden: Radio Alizés, alle Sendungen, Zeiten, Musik und Hörerpost. Léonie Saint-Cyr ist eine wiederkehrende erfundene Figur.",
+      "tage": [
+        {
+          "tag": "Sonntag, 28. Juni",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Die Glocken des Archipels",
+              "text": "Heute: Roquemer, 1.215 Einwohner, Tabellenführer der Wachstumsliga. Madame Odile lässt ausrichten, sie habe gezählt und sei auf mehr gekommen."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Sonntagskonzert"
+            }
+          ]
+        },
+        {
+          "tag": "Donnerstag, 2. Juli",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Aus den Messbüchern",
+              "text": "Das Netz zählt heute 1.300 Fahrzeuge. Dreißig davon kamen an einem Tag: Die Gummischiffe zwischen Grenay und Ferrières-sur-Mer fahren jetzt mit sechzig Schaufelraddampfern statt dreißig."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Musik am Kai"
+            }
+          ]
+        },
+        {
+          "tag": "Freitag, 3. Juli",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Hörerpost",
+              "text": "Léonie Saint-Cyr aus Vauclaire schreibt, ihr Mann fahre seit dem 23. Mai jeden Tag mit der Société, und fragt, ob man dem Sender dafür danken müsse. Nein, Madame. Aber wir nehmen es an."
+            }
+          ]
+        },
+        {
+          "tag": "Samstag, 4. Juli",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Landfunk",
+              "text": "Das Lardy Eisenerzbergwerk ist heute ausgebaut worden, zum zweiten Mal seit Mai. Das Erz geht nach Ferrières-sur-Mer, wo das Stahlwerk seit dem 15. Juni zum ersten Mal gießt. Neu im Register: eine Ölplattform bei Auch."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Tanzmusik"
+            }
+          ]
+        }
+      ],
+      "refs": {
+        "staedte": [
+          174606,
+          174625,
+          174642,
+          174612,
+          174634
+        ],
+        "linien": [
+          458439
+        ],
+        "personen": [
+          35558
+        ],
+        "betriebe": [
+          182564,
+          334696
+        ]
+      }
+    },
+    {
+      "id": "1925-08-augustwoche",
+      "date": "1925-08",
+      "art": "fiktion",
+      "sender": "Radio Alizés · Sender Bourg-l’Écorce",
+      "titel": "Woche vom 2. bis 8. August 1925",
+      "grounding": "Gemessen: Bourg-l’Écorce 4.303 Einwohner (03.08.1925, ebenso im Juli); Tram Passagiere-Bou-LO-4 und Bus Passagiere-Bou-LO-1 verstärkt am 07.08.1925; Netz 1.313 Fahrzeuge in der Monatsübersicht August 1925. Radio, Sender, Sendungen, Sendezeiten, Sprecher und Musik gibt es im Spiel nicht. Erfunden: Radio Alizés, alle Sendungen, Zeiten, Musik und Hörerpost. Hortense ist eine wiederkehrende erfundene Figur.",
+      "tage": [
+        {
+          "tag": "Sonntag, 2. August",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Die Glocken des Archipels",
+              "text": "Heute: Bourg-l’Écorce, 4.303 Einwohner, so viele wie vor einem Monat. Die Stadt macht Sommerpause."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Sommerkonzert im Park"
+            }
+          ]
+        },
+        {
+          "tag": "Freitag, 7. August",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Aus den Messbüchern",
+              "text": "Mehr Wagen für Bourg: auf der Straßenbahnlinie 4 und auf der Omnibuslinie 1. Hortense aus der Rue de Genève, wo die 4 beginnt, schreibt, sie habe heute zum ersten Mal einen Sitzplatz bekommen. Ob das an den neuen Wagen lag, wisse sie nicht."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Der Marsch „Linie 4“, auf Wunsch"
+            }
+          ]
+        },
+        {
+          "tag": "Samstag, 8. August",
+          "sendungen": [
+            {
+              "zeit": "20.00",
+              "titel": "Tanzmusik"
+            }
+          ]
+        }
+      ],
+      "refs": {
+        "staedte": [
+          174605
+        ],
+        "linien": [],
+        "personen": [],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1925-09-ringwoche",
+      "date": "1925-09",
+      "art": "fiktion",
+      "sender": "Radio Alizés · Sender Bourg-l’Écorce",
+      "titel": "Woche vom 27. September bis 3. Oktober 1925",
+      "grounding": "Gemessen: Valombre 1.168 Einwohner (28.09.1925); Bus Passagiere-Val-LO-5 (13 Daimler Decksitzwagen) eingestellt, Bus Passagiere-Val-LO-1 und -2 neu am 28.09.1925 (Ring durch Valombre Mitte-Ost, Mitte-Süd, Rue Boris-Vian, Mitte-West, Mitte-Nordwest, Nord in beiden Richtungen), ab 02.10.1925 je 6 Wagen; Gleizé Sugar Cane Farm geschlossen am 02.10.1925; Labenne Sandbaggerschiff neu am 03.10.1925. Radio, Sender, Sendungen, Sendezeiten, Sprecher und Musik gibt es im Spiel nicht. Erfunden: Radio Alizés, alle Sendungen, Zeiten, Musik, Wappenmaler und Äußerungen.",
+      "tage": [
+        {
+          "tag": "Sonntag, 27. September",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Die Glocken des Archipels",
+              "text": "Heute: Valombre, 1.168 Einwohner, und dreizehn Omnibusse im Wappen."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Sonntagskonzert"
+            }
+          ]
+        },
+        {
+          "tag": "Montag, 28. September",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Aus den Messbüchern",
+              "text": "Die Omnibuslinie durch die Rue Boris-Vian, die Rue de Bourgogne, die Rue du Jura und die Allée des Hortensias ist eingestellt. Dafür fahren zwei Linien im Kreis durch die Stadt, eine so herum, eine andersherum. Der Wappenmaler war heute nicht zu erreichen."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Musik im Kreis"
+            }
+          ]
+        },
+        {
+          "tag": "Freitag, 2. Oktober",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Landfunk",
+              "text": "In Valombre fahren jetzt sechs Wagen auf jeder Ringlinie, zusammen zwölf. Der Wappenmaler hat nachgezählt und schweigt. Die Zuckerrohrfarm bei Gleizé ist geschlossen."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Kinofunk"
+            }
+          ]
+        }
+      ],
+      "refs": {
+        "staedte": [
+          174621
+        ],
+        "linien": [
+          234744,
+          416977,
+          489397
+        ],
+        "personen": [],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1925-10-wachstumswoche",
+      "date": "1925-10",
+      "art": "fiktion",
+      "sender": "Radio Alizés · Sender Bourg-l’Écorce",
+      "titel": "Woche vom 25. bis 31. Oktober 1925",
+      "grounding": "Gemessen: Valombre 1.175 Einwohner (27.10.1925), seit 28.09.1925 Bus Passagiere-Val-LO-1 und -2 in entgegengesetzter Richtung (ab 02.10.1925 je 6 Wagen) statt Bus Passagiere-Val-LO-5 (13 Wagen); Vauclaire 751 Einwohner am 27.10.1925 (Meldung „Vauclaire zählt 750 Einwohner“); Bus Passagiere-Lab-LO-1 neu am 17.10.1925 (Rue Anatole France – Labenne Maschinenfabrik), Bus Passagiere-Gre-LO-1 neu am 31.10.1925 (Allée des Erables – Grenay Gummiplantage), je 2 Yellow Coach Modell W; Le Malesherbois Kohlebergwerk ausgebaut am 23.10.1925; Gleizé Sugar Cane Farm geschlossen am 02.10.1925. Radio, Sender, Sendungen, Sendezeiten, Sprecher und Musik gibt es im Spiel nicht. Erfunden: Radio Alizés, alle Sendungen, Zeiten, Musik, Wettliga und Gratulation. Honorine, Paul und das Brettpferd sind wiederkehrende erfundene Figuren.",
+      "tage": [
+        {
+          "tag": "Sonntag, 25. Oktober",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Die Glocken des Archipels",
+              "text": "Heute: Valombre. Die Glocken läuten für zwei Omnibuslinien, eine links herum, eine rechts herum, sechs Wagen auf jeder. Das Wappen bleibt bei dreizehn Fenstern, die Gemeinde hat so entschieden."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Sonntagskonzert"
+            }
+          ]
+        },
+        {
+          "tag": "Dienstag, 27. Oktober",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Aus den Messbüchern",
+              "text": "Vauclaire zählt heute 751 Einwohner. Herzlichen Glückwunsch. Paul lässt ausrichten, das Brettpferd habe es gewusst."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Musik für Vauclaire"
+            }
+          ]
+        },
+        {
+          "tag": "Donnerstag, 29. Oktober",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Fragen Sie Honorine",
+              "text": "Wie steht die Wachstumsliga? Honorine: Valombre wächst am schnellsten, Roquemer ist der Größte in der Liga, Vauclaire klopft an. In der Schläferliga hält Bellegrève die 131. Wer dort aufsteigt, steigt ab."
+            }
+          ]
+        },
+        {
+          "tag": "Samstag, 31. Oktober",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Landfunk",
+              "text": "Ein neuer Omnibus in Grenay, von der Allée des Erables zur Gummiplantage. Seit dem 17. fährt schon einer in Labenne zur Maschinenfabrik. Beide Male zwei Wagen Yellow Coach. Das Kohlebergwerk von Le Malesherbois ist am 23. zum dritten Mal in diesem Jahr ausgebaut worden."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Tanzmusik"
+            }
+          ]
+        }
+      ],
+      "refs": {
+        "staedte": [
+          174621,
+          174634,
+          174606,
+          174625,
+          174619,
+          174642
+        ],
+        "linien": [
+          416977,
+          489397,
+          386859,
+          480856
+        ],
+        "personen": [],
+        "betriebe": [
+          362454,
+          371203,
+          187786
+        ]
+      }
+    },
+    {
+      "id": "1925-11-roche-noire-woche",
+      "date": "1925-11",
+      "art": "fiktion",
+      "sender": "Radio Alizés · Sender Bourg-l’Écorce",
+      "titel": "Woche vom 8. bis 14. November 1925",
+      "grounding": "Gemessen: Roche-Noire 1.393 Einwohner (09.11.1925); Bus Passagiere-Roc-LO-1 und -2 eingestellt am 05.11.1925, neu am 09.11.1925 Bus Passagiere-Roc-LO-1 bis -4 (zwei Ringlinien durch Roche-Noire Mitte-Südost, Mitte-Süd, Busbahnhof, Mitte-Nordwest, Nordost, Mitte-Ost, eine Linie Busbahnhof – Hafen #2, eine Linie Rue Gustave Courbet – Mitte-Südost mit 6 Yellow Coach Modell W); Fernand Saint-Cyr (35558, Vauclaire) ohne Arbeit seit 13.11.1925 (Arbeit seit 23.05.1925). Radio, Sender, Sendungen, Sendezeiten, Sprecher und Musik gibt es im Spiel nicht. Erfunden: Radio Alizés, alle Sendungen, Zeiten, Musik und Hörerpost. Léonie Saint-Cyr ist eine wiederkehrende erfundene Figur.",
+      "tage": [
+        {
+          "tag": "Sonntag, 8. November",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Die Glocken des Archipels",
+              "text": "Heute: Roche-Noire. Seit Donnerstag sind die beiden alten Omnibuslinien eingestellt. Ab morgen, sagt die Société, fahren mehr als vorher."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Sonntagskonzert"
+            }
+          ]
+        },
+        {
+          "tag": "Montag, 9. November",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Aus den Messbüchern",
+              "text": "Roche-Noire, 1.393 Einwohner, hat vier neue Omnibuslinien: zwei Ringe durch die Stadt in beiden Richtungen, eine zum Hafen und eine von der Rue Gustave Courbet nach Mitte-Südost, mit sechs neuen Yellow Coach."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Musik für Bergleute"
+            }
+          ]
+        },
+        {
+          "tag": "Freitag, 13. November",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Hörerpost",
+              "text": "Léonie Saint-Cyr aus Vauclaire schreibt nur einen Satz: Seit heute hat Fernand wieder keine Arbeit. Wir senden ihm ein Lied und keinen Rat."
+            },
+            {
+              "zeit": "19.40",
+              "titel": "Ein Lied für Fernand"
+            }
+          ]
+        }
+      ],
+      "refs": {
+        "staedte": [
+          174601,
+          174634
+        ],
+        "linien": [
+          355402,
+          355421,
+          369574,
+          490781
+        ],
+        "personen": [
+          35558
+        ],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1925-12-weihnachtswoche",
+      "date": "1925-12",
+      "art": "fiktion",
+      "sender": "Radio Alizés · Sender Bourg-l’Écorce",
+      "titel": "Weihnachtswoche, 20. bis 26. Dezember 1925",
+      "grounding": "Gemessen: Garches 412 Einwohner seit 18.12.1925 (vorher 411 seit 15.08.1924); Grenay Gummiplantage ausgebaut am 18.12.1925 (von Stufe 5 auf 6), Grenay 152 Einwohner; Kasse der Société 2.003,1 Mio. am 26.12.1925 (zuvor zwischen 1.970 und 2.007 Mio.); Bourg-l’Écorce 4.346 Einwohner (Dezember 1925). Radio, Sender, Sendungen, Sendezeiten, Sprecher und Musik gibt es im Spiel nicht. Erfunden: Radio Alizés, alle Sendungen, Zeiten, Musik, Märchen und Grüße. Mademoiselle Eulalie, Paul und das Brettpferd sind wiederkehrende erfundene Figuren.",
+      "tage": [
+        {
+          "tag": "Sonntag, 20. Dezember",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Die Glocken des Archipels",
+              "text": "Heute: Garches. Seit Freitag 412 Einwohner, zum ersten Mal seit August 1924 einer mehr. Mademoiselle Eulalie zieht für Lichtmess eine Kerze zusätzlich."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Adventskonzert"
+            }
+          ]
+        },
+        {
+          "tag": "Donnerstag, 24. Dezember, Heiligabend",
+          "sendungen": [
+            {
+              "zeit": "18.00",
+              "titel": "Märchenstunde",
+              "text": "Heute, wie jedes Jahr auf Wunsch von Paul aus Vauclaire: Das Holzpferd, das mit der Société kommen sollte."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Weihnachtskonzert der Stadtkapelle"
+            }
+          ]
+        },
+        {
+          "tag": "Samstag, 26. Dezember",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Landfunk",
+              "text": "Die Gummiplantage von Grenay ist eine Woche vor Weihnachten ausgebaut worden, von Stufe fünf auf sechs. Grenay hat 152 Einwohner und jetzt mehr Bäume, als es zählen kann."
+            },
+            {
+              "zeit": "19.45",
+              "titel": "Aus den Messbüchern",
+              "text": "Die Kasse der Société steht heute wieder über zwei Milliarden, knapp."
+            }
+          ]
+        }
+      ],
+      "refs": {
+        "staedte": [
+          174644,
+          174625,
+          174634
+        ],
+        "linien": [],
+        "personen": [],
+        "betriebe": [
+          371203
+        ]
+      }
+    },
+    {
+      "id": "1926-01-neujahrswoche",
+      "date": "1926-01",
+      "art": "fiktion",
+      "sender": "Radio Alizés · Sender Bourg-l’Écorce",
+      "titel": "Woche vom 3. bis 9. Januar 1926",
+      "grounding": "Gemessen: Lamballe-Armor 243 Einwohner; Lamballe-Armor Sugar Cane Farm neu am 02.01.1926 (Stufe 13), erste Produktion am 05.01.1926; Neues Fahrzeugmodell Kesselwagen 1926 am 05.01.1926 (auf TC Chemikalien,Farbstoffe-Lam-Ani-IC-1); Anse Dorée 1.415 Einwohner, Zucker 0 von 389 (05.01.1926), in keiner Messung geliefert. Radio, Sender, Sendungen, Sendezeiten, Sprecher und Musik gibt es im Spiel nicht. Erfunden: Radio Alizés, alle Sendungen, Zeiten, Musik, Hörerfrage und Antwort. Honorine und Madame Rosalie sind wiederkehrende erfundene Figuren.",
+      "tage": [
+        {
+          "tag": "Sonntag, 3. Januar",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Die Glocken des Archipels",
+              "text": "Heute: Lamballe-Armor, 243 Einwohner. Seit gestern steht dort eine Zuckerrohrfarm im Register, gleich auf Stufe dreizehn."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Neujahrskonzert"
+            }
+          ]
+        },
+        {
+          "tag": "Dienstag, 5. Januar",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Landfunk",
+              "text": "Die Farm in Lamballe-Armor erntet zum ersten Mal. Und auf der Chemiestrecke nach Aniche fahren neue Kesselwagen, Baujahr 1926."
+            }
+          ]
+        },
+        {
+          "tag": "Freitag, 8. Januar",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Fragen Sie Honorine",
+              "text": "Madame Rosalie aus Anse Dorée fragt, ob das neue Zuckerrohr diesmal nach Anse Dorée kommt. Anse Dorée verlangt 389 Säcke und hat noch nie einen bekommen. Honorine: Zuckerrohr ist noch kein Zucker, Madame. Aber es ist näher dran als vorher."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Kinofunk"
+            }
+          ]
+        }
+      ],
+      "refs": {
+        "staedte": [
+          174614,
+          174600,
+          174645
+        ],
+        "linien": [
+          360353
+        ],
+        "personen": [],
+        "betriebe": [
+          335519
+        ]
+      }
+    },
+    {
+      "id": "1926-02-burgwoche",
+      "date": "1926-02",
+      "art": "fiktion",
+      "sender": "Radio Alizés · Sender Bourg-l’Écorce",
+      "titel": "Woche vom 7. bis 13. Februar 1926",
+      "grounding": "Gemessen: Garches 412 Einwohner (08.02.1926, seit Dezember 1925); AP Passagiere-Sin-LO-1 (Sin-le-Noble Flughafen – Ferrières-sur-Mer Flughafen) neu am 08.02.1926, am 10.02.1926 Umstellung auf Frachtflugzeug (AC Passagiere,Fleisch,Bretter-Sin-Fer-IC-1); Netz 230 Linien (08.02.1926); Valmorin Burg des weissen Reihers Stufe 4, abgeschlossen, seit 10.02.1926; Valmorin 1.673 Einwohner (08.02.1926); Grenay Gummiplantage ausgebaut am 18.12.1925 und 04.02.1926. Radio, Sender, Sendungen, Sendezeiten, Sprecher und Musik gibt es im Spiel nicht. Erfunden: Radio Alizés, alle Sendungen, Zeiten, Musik, Kerzen, Tafel und Hörerpost. Mademoiselle Eulalie, Anselme, Lucie und die Stadtkapelle sind wiederkehrende erfundene Figuren.",
+      "tage": [
+        {
+          "tag": "Sonntag, 7. Februar",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Die Glocken des Archipels",
+              "text": "Heute: Garches. Zu Lichtmess hat Mademoiselle Eulalie 412 Kerzen gezogen, eine mehr als im vorigen Jahr. Sie sagt, mehr Wachs habe sie auch nicht gebraucht."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Sonntagskonzert"
+            }
+          ]
+        },
+        {
+          "tag": "Montag, 8. Februar",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Aus den Messbüchern",
+              "text": "Seit heute steht eine Fluglinie zwischen Sin-le-Noble und Ferrières-sur-Mer in den Büchern. Das Netz zählt 230 Linien."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Musik zum Wochenbeginn"
+            }
+          ]
+        },
+        {
+          "tag": "Mittwoch, 10. Februar",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Sondersendung aus Valmorin",
+              "text": "Die Burg des weißen Reihers steht auf Stufe vier, und in den Büchern steht zum ersten Mal: abgeschlossen. Die Stadtkapelle spielt vor dem „Au Quai des Collines“. Am Mikrofon: niemand, der gebaut hat. Gesucht wird er noch."
+            },
+            {
+              "zeit": "20.15",
+              "titel": "Der Reihermarsch, Uraufführung"
+            },
+            {
+              "zeit": "22.00",
+              "titel": "Spätmeldung",
+              "text": "Die Fluglinie zwischen Sin-le-Noble und Ferrières-sur-Mer trägt ab heute Fracht."
+            }
+          ]
+        },
+        {
+          "tag": "Freitag, 12. Februar",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Hörerpost",
+              "text": "Lucie vom Bahnhof Valmorin schreibt: An der Lärmschutzwand steht jetzt Vier. Darunter hat Anselme Fünf? geschrieben. Hemden gibt es weiter keine. Sie bittet, die Reihenfolge der Nachrichten so zu senden."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Kinofunk"
+            }
+          ]
+        }
+      ],
+      "refs": {
+        "staedte": [
+          174644,
+          174617,
+          174642,
+          174607
+        ],
+        "linien": [
+          362597
+        ],
+        "personen": [],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1926-03-maerzwoche",
+      "date": "1926-03",
+      "art": "fiktion",
+      "sender": "Radio Alizés · Sender Bourg-l’Écorce",
+      "titel": "Woche vom 14. bis 20. März 1926",
+      "grounding": "Gemessen: Fontenay-aux-Roses 139, La Mulatière 117 Einwohner (18.03.1926); Isidore Valère (45714, Fontenay-aux-Roses) erste Autofahrt am 18.03.1926, 1904–1925 alle 1.932 Messungen zu Fuß; Marceline Philogène (126758, La Mulatière) 1926 jeder gemessene Weg zu Fuß; Bus Passagiere-Fer-LO-5 (Südost – Le Malesherbois Reifenfabrik) neu am 02.03.1926; AP Passagiere-PordesAli-Sin-IC-1 verstärkt am 13.03.1926. Namen der Beobachteten von der Redaktion vergeben. Radio, Sender, Sendungen, Sendezeiten, Sprecher und Musik gibt es im Spiel nicht. Erfunden: Radio Alizés, alle Sendungen, Zeiten, Musik und Hörerpost.",
+      "tage": [
+        {
+          "tag": "Sonntag, 14. März",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Die Glocken des Archipels",
+              "text": "Heute: Fontenay-aux-Roses, 139 Einwohner, und La Mulatière, 117. Zwei kleine Orte, zwischen denen seit Jahren Briefe hin- und hergehen."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Sonntagskonzert"
+            }
+          ]
+        },
+        {
+          "tag": "Donnerstag, 18. März",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Hörerpost",
+              "text": "Aus La Mulatière erreicht uns eine Karte: Isidore Valère aus Fontenay-aux-Roses sei heute zum ersten Mal Automobil gefahren, nach einundzwanzig Jahren zu Fuß. Die Absenderin schreibt, sie selbst gehe weiter. Jemand müsse ja wissen, wie der Weg aussieht."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Musik für Spaziergänger"
+            }
+          ]
+        },
+        {
+          "tag": "Samstag, 20. März",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Aus den Messbüchern",
+              "text": "Mehr Flugzeuge zwischen Port des Alizés und Sin-le-Noble. In Ferrières-sur-Mer fährt seit Anfang des Monats ein Omnibus zur Reifenfabrik, die noch keinen Reifen gemacht hat."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Tanzmusik"
+            }
+          ]
+        }
+      ],
+      "refs": {
+        "staedte": [
+          174615,
+          174631,
+          174642,
+          174632,
+          174617
+        ],
+        "linien": [
+          449225,
+          220049
+        ],
+        "personen": [
+          45714,
+          126758
+        ],
+        "betriebe": [
+          467127
+        ]
+      }
+    },
+    {
+      "id": "1926-04-osterwoche",
+      "date": "1926-04",
+      "art": "fiktion",
+      "sender": "Radio Alizés · Sender Bourg-l’Écorce",
+      "titel": "Osterwoche, 4. bis 10. April 1926",
+      "grounding": "Gemessen: Garches 413 Einwohner (06.04.1926); Ferrières-sur-Mer 195 Einwohner (06.04.1926; 190 bis Januar, 188 im Februar und März 1926); RC Passagiere,Getreide,Fleisch,+2-Sin-Gar-IC-1 neu am 06.04.1926, verstärkt am 10.04.1926; Meyzieu Fischzucht neu am 03.04.1926. Radio, Sender, Sendungen, Sendezeiten, Sprecher und Musik gibt es im Spiel nicht. Erfunden: Radio Alizés, alle Sendungen, Zeiten, Musik, Gottesdienst und Äußerungen. Der Pfarrer von Garches ist eine wiederkehrende erfundene Figur.",
+      "tage": [
+        {
+          "tag": "Sonntag, 4. April, Ostern",
+          "sendungen": [
+            {
+              "zeit": "10.00",
+              "titel": "Ostergottesdienst aus Garches",
+              "text": "Der Pfarrer zählt 413 in seiner Gemeinde und nennt das eine Auferstehung in kleinen Schritten."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Osterkonzert"
+            }
+          ]
+        },
+        {
+          "tag": "Dienstag, 6. April",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Landfunk",
+              "text": "Neue Lastwagen der Société zwischen Sin-le-Noble und Garches, für Getreide, Fleisch und Leute. Bei Meyzieu ist eine Fischzucht ins Register gekommen."
+            }
+          ]
+        },
+        {
+          "tag": "Samstag, 10. April",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Aus den Messbüchern",
+              "text": "Ferrières-sur-Mer zählt 195 Einwohner. Ein Jahr lang waren es 190, im Februar 188. Der Bürgermeister sagt, er habe es ja gesagt. Die Druckerei sagt, sie habe nichts gedruckt."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Tanzmusik"
+            }
+          ]
+        }
+      ],
+      "refs": {
+        "staedte": [
+          174644,
+          174617,
+          174642
+        ],
+        "linien": [
+          479815
+        ],
+        "personen": [],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1926-05-garcheswoche",
+      "date": "1926-05",
+      "art": "fiktion",
+      "sender": "Radio Alizés · Sender Bourg-l’Écorce",
+      "titel": "Woche vom 16. bis 22. Mai 1926",
+      "grounding": "Gemessen: Garches 413 Einwohner (17.05.1926); Bus Passagiere-Gar-LO-1 seit 17.05.1926 (Rue André Gide – Garches Viehzuchtbetrieb Süd, 2 Yellow Coach Modell W, zuletzt gekaufte Wagen dieses Modells am 13.05.1926); weiter Bus Passagiere-Gar-Sin-IC-1 (Rue André Gide – Sin-le-Noble Bauernhof); Port des Alizés Sägewerk neu am 20.05.1926; Port des Alizés 2.497 Einwohner (17.05.1926), seit 29.01.1923 voll; Grenay Gummiplantage ausgebaut am 06.05.1926 (Stufe 9). Radio, Sender, Sendungen, Sendezeiten, Sprecher und Musik gibt es im Spiel nicht. Erfunden: Radio Alizés, alle Sendungen, Zeiten, Musik, Abkündigung und Rätsel. Der Pfarrer, Mademoiselle Eulalie und Honorine sind wiederkehrende erfundene Figuren.",
+      "tage": [
+        {
+          "tag": "Sonntag, 16. Mai",
+          "sendungen": [
+            {
+              "zeit": "11.00",
+              "titel": "Gottesdienst aus Garches",
+              "text": "Abkündigung des Pfarrers: Ab morgen fährt ein zweiter Omnibus, von der Rue André Gide zum Viehzuchtbetrieb, und kehrt wieder um. Der alte nach Sin-le-Noble bleibt. Die Gemeinde zählt 413 Seelen."
+            },
+            {
+              "zeit": "19.30",
+              "titel": "Die Glocken des Archipels",
+              "text": "Noch einmal Garches, weil es so selten etwas zu läuten gibt."
+            }
+          ]
+        },
+        {
+          "tag": "Montag, 17. Mai",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Aus den Messbüchern",
+              "text": "In Garches fahren seit heute zwei Yellow Coach. Es sind die letzten zwei, die die Société von diesem Modell gekauft hat, vorerst."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Musik vom Land"
+            }
+          ]
+        },
+        {
+          "tag": "Donnerstag, 20. Mai",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Landfunk",
+              "text": "Neu im Register: ein Sägewerk in Port des Alizés. Die Stadt ist seit über drei Jahren voll, 2.497 Einwohner. Bretter für Häuser, die keinen Platz haben, sagt Inspecteur Lebrun."
+            }
+          ]
+        },
+        {
+          "tag": "Samstag, 22. Mai",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Fragen Sie Honorine",
+              "text": "Mademoiselle Eulalie fragt: Wenn der Omnibus Leute nach Garches bringt, wie viele Kerzen brauche ich zu Lichtmess? Honorine: Er fährt zum Viehzuchtbetrieb, Mademoiselle. Ziehen Sie eine Kerze für die Kühe."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Tanzmusik"
+            }
+          ]
+        }
+      ],
+      "refs": {
+        "staedte": [
+          174644,
+          174617,
+          174632
+        ],
+        "linien": [
+          497617,
+          465920
+        ],
+        "personen": [],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1926-06-sommerwoche",
+      "date": "1926-06",
+      "art": "fiktion",
+      "sender": "Radio Alizés · Sender Bourg-l’Écorce",
+      "titel": "Woche vom 20. bis 26. Juni 1926",
+      "grounding": "Gemessen: Grenay 152 Einwohner; Grenay Gummiplantage ausgebaut am 20.06.1926 auf Stufe 10 (Stufe 5 bis Dezember 1925); Gummi auf 60 Schaufelraddampfern nach Le Malesherbois Hafen; Le Malesherbois Reifenfabrik ohne Produktion; Bourg-l’Écorce 4.419 Einwohner (20.06.1926); Garches 416 Einwohner (Juni 1926). Radio, Sender, Sendungen, Sendezeiten, Sprecher und Musik gibt es im Spiel nicht. Erfunden: Radio Alizés, alle Sendungen, Zeiten, Musik, Hörerfrage und Antwort. Honorine ist eine wiederkehrende erfundene Figur.",
+      "tage": [
+        {
+          "tag": "Sonntag, 20. Juni",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Die Glocken des Archipels",
+              "text": "Heute: Grenay, 152 Einwohner. Die Gummiplantage ist heute zum fünften Mal seit Dezember ausgebaut worden, jetzt Stufe zehn. Sechzig Schiffe holen den Gummi ab."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Sommerkonzert"
+            }
+          ]
+        },
+        {
+          "tag": "Mittwoch, 23. Juni",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Fragen Sie Honorine",
+              "text": "Ein Hörer aus Grenay fragt, wohin der ganze Gummi fährt. Honorine: Zu einer Reifenfabrik, die noch keinen Reifen gemacht hat, damit eines Tages eine Fahrzeugfabrik, die noch kein Automobil gebaut hat, eines baut. Ich habe darauf eine Wette angeboten. Niemand wollte dagegen halten."
+            }
+          ]
+        },
+        {
+          "tag": "Samstag, 26. Juni",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Sportfunk",
+              "text": "Bourg-l’Écorce 4.419. In der Schläferliga zieht Garches an, 416."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Tanzmusik"
+            }
+          ]
+        }
+      ],
+      "refs": {
+        "staedte": [
+          174625,
+          174642,
+          174612,
+          174605,
+          174644
+        ],
+        "linien": [
+          458439
+        ],
+        "personen": [],
+        "betriebe": [
+          371203,
+          467127,
+          389582
+        ]
+      }
+    },
+    {
+      "id": "1926-07-juliwoche",
+      "date": "1926-07",
+      "art": "fiktion",
+      "sender": "Radio Alizés · Sender Bourg-l’Écorce",
+      "titel": "Woche vom 18. bis 24. Juli 1926",
+      "grounding": "Gemessen: Roche-Noire 1.418 Einwohner (19.07.1926); Roche-Noire Toy Factory geschlossen am 19.07.1926, ohne Produktion in jeder Messung seit 19.09.1922; Siméon Thélus (36791, Montfougère, in der Beobachtungsgruppe seit 19.07.1914) zuletzt am 19.07.1926; Siméon Désir (33399, Pointe des Pêcheurs) neu in der Beobachtungsgruppe am 24.07.1926; RC Gemüse-Gre-LO-1 neu am 24.07.1926; Valmorin Eisenerzbergwerk geschlossen am 15.07.1926. Namen der Beobachteten von der Redaktion vergeben. Radio, Sender, Sendungen, Sendezeiten, Sprecher und Musik gibt es im Spiel nicht. Erfunden: Radio Alizés, alle Sendungen, Zeiten, Musik und Ansagen.",
+      "tage": [
+        {
+          "tag": "Sonntag, 18. Juli",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Die Glocken des Archipels",
+              "text": "Heute: Roche-Noire, 1.418 Einwohner, und eine Spielzeugfabrik, die nie ein Spielzeug gemacht hat."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Sonntagskonzert"
+            }
+          ]
+        },
+        {
+          "tag": "Montag, 19. Juli",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Aus den Messbüchern",
+              "text": "Die Spielzeugfabrik von Roche-Noire ist aus den Büchern verschwunden. Aus den Büchern verschwunden ist heute auch Siméon Thélus aus Montfougère, der seit Juli 1914 darin stand, auf den Tag zwölf Jahre. Wir wünschen ihm einen guten Weg."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Abendmusik"
+            }
+          ]
+        },
+        {
+          "tag": "Samstag, 24. Juli",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Landfunk",
+              "text": "In Grenay fährt jetzt ein Lastwagen Gemüse. Neu in den Büchern: Siméon Désir aus Pointe des Pêcheurs. Der Name Siméon bleibt uns also erhalten."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Tanzmusik"
+            }
+          ]
+        }
+      ],
+      "refs": {
+        "staedte": [
+          174601,
+          174646,
+          174602,
+          174625
+        ],
+        "linien": [
+          299784
+        ],
+        "personen": [
+          36791,
+          33399
+        ],
+        "betriebe": [
+          248192
+        ]
+      }
+    },
+    {
+      "id": "1926-08-flugwoche",
+      "date": "1926-08",
+      "art": "fiktion",
+      "sender": "Radio Alizés · Sender Bourg-l’Écorce",
+      "titel": "Woche vom 15. bis 21. August 1926",
+      "grounding": "Gemessen: Ferrières-sur-Mer 240 Einwohner (15.08.1926); AP Passagiere-Fer-LO-1 neu am 15.08.1926, ab 19.08.1926 AP Passagiere-Fer-PordesAli-IC-1 mit 4 Fokker F VII A (Ferrières-sur-Mer Flughafen – Port des Alizés Flughafen); Netz 240 Linien (15.08.1926); Le Malesherbois Reifenfabrik erste Reifen am 28.07.1926, erstmals verschifft am 11.08.1926 (WC Passagiere,Reifen,Maschinen-Fer-Lar-RE-1, Le Malesherbois Hafen – Labenne Hafen – Lardy Hafen Nord); Grenay Gummiplantage Stufe 11 seit 05.08.1926; Sarrians Eisenerzbergwerk geschlossen am 11.08.1926; Roche-Noire Holzfällerlager neu am 19.08.1926; Lardy Fahrzeugfabrik ohne Produktion. Radio, Sender, Sendungen, Sendezeiten, Sprecher und Musik gibt es im Spiel nicht. Erfunden: Radio Alizés, alle Sendungen, Zeiten, Musik und Reportage. Honorine ist eine wiederkehrende erfundene Figur.",
+      "tage": [
+        {
+          "tag": "Sonntag, 15. August",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Die Glocken des Archipels",
+              "text": "Heute: Ferrières-sur-Mer, 240 Einwohner, vor einem halben Jahr waren es 188. Am Flughafen wird eine Passagierlinie eingerichtet. Das Netz zählt 240 Linien, so viele wie Ferrières Einwohner. Ein Zufall, sagt der Bürgermeister. Er freut sich trotzdem."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Sonntagskonzert"
+            }
+          ]
+        },
+        {
+          "tag": "Dienstag, 17. August",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Unterwegs mit einem Reifen",
+              "text": "Seit dem 11. August fahren die ersten Reifen aus der Le Malesherbois Reifenfabrik mit dem Schiff über Labenne nach Lardy. Der Gummi dafür kommt aus Grenay, wo die Plantage seit dem 5. August auf Stufe elf steht. In Lardy wartet eine Fahrzeugfabrik. Gebaut hat sie noch nichts."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Musik für Reisende"
+            }
+          ]
+        },
+        {
+          "tag": "Donnerstag, 19. August",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Sondermeldung vom Flughafen",
+              "text": "Vier Fokker fliegen ab heute zwischen Ferrières-sur-Mer und Port des Alizés. Honorine hat den ersten Platz gebucht und den Rückflug offengelassen. Neu im Register: ein Holzfällerlager bei Roche-Noire."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Kinofunk"
+            }
+          ]
+        },
+        {
+          "tag": "Samstag, 21. August",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Fragen Sie Honorine, aus Ferrières",
+              "text": "Wie war der Flug? Honorine: Kurz. Wie ist Ferrières? Honorine: Es weiß nicht genau, wie es heißt, aber es weiß, wohin es will. Bei Le Malesherbois Hafen gibt es guten Fisch."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Tanzmusik"
+            }
+          ]
+        }
+      ],
+      "refs": {
+        "staedte": [
+          174642,
+          174632,
+          174612,
+          174625,
+          174619,
+          174601
+        ],
+        "linien": [
+          342595,
+          413844
+        ],
+        "personen": [],
+        "betriebe": [
+          467127,
+          371203,
+          389582
+        ]
+      }
+    },
+    {
+      "id": "1926-09-herbstwoche",
+      "date": "1926-09",
+      "art": "fiktion",
+      "sender": "Radio Alizés · Sender Bourg-l’Écorce",
+      "titel": "Woche vom 19. bis 25. September 1926",
+      "grounding": "Gemessen: Roquemer 1.317 Einwohner (20.09.1926); Ferrières-sur-Mer 250 Einwohner (Meldung 23.09.1926), 190 bis Januar 1926; WC Passagiere,Reifen,Maschinen-Fer-Lar-RE-1 am 10.09.1926 von 2 auf 3 Terra Nova verstärkt; Clovis Calixte (36283, Vauclaire) ohne Arbeit vom 20.01. bis 02.09.1926. Radio, Sender, Sendungen, Sendezeiten, Sprecher und Musik gibt es im Spiel nicht. Erfunden: Radio Alizés, alle Sendungen, Zeiten, Musik, Hörerpost und Gratulation. Madame Odile und Léonie Saint-Cyr sind wiederkehrende erfundene Figuren.",
+      "tage": [
+        {
+          "tag": "Sonntag, 19. September",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Die Glocken des Archipels",
+              "text": "Heute: Roquemer, 1.317 Einwohner. Madame Odile aus der Rue des Dames sagt, sie habe aufgehört nachzuzählen. Es würden ohnehin jede Woche mehr."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Sonntagskonzert"
+            }
+          ]
+        },
+        {
+          "tag": "Donnerstag, 23. September",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Aus den Messbüchern",
+              "text": "Ferrières-sur-Mer zählt 250 Einwohner. Bis Januar waren es 190, so lange, dass man sie für den Namen des Ortes hätte halten können. Seit diesem Monat fährt auch ein drittes Schiff mit Reifen und Maschinen nach Lardy."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Musik aus Ferrières"
+            }
+          ]
+        },
+        {
+          "tag": "Samstag, 25. September",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Hörerpost",
+              "text": "Léonie Saint-Cyr aus Vauclaire: Clovis von nebenan hat seit dem 2. September wieder Arbeit, nach siebeneinhalb Monaten. Wir gratulieren. Léonie schreibt, Clovis komme trotzdem weiter jeden Abend herüber."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Tanzmusik"
+            }
+          ]
+        }
+      ],
+      "refs": {
+        "staedte": [
+          174606,
+          174642,
+          174634
+        ],
+        "linien": [
+          413844
+        ],
+        "personen": [
+          36283
+        ],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1926-10-fabrikwoche",
+      "date": "1926-10",
+      "art": "fiktion",
+      "sender": "Radio Alizés · Sender Bourg-l’Écorce",
+      "titel": "Woche vom 17. bis 23. Oktober 1926",
+      "grounding": "Gemessen: Lardy 218 Einwohner (18.10.1926, seit 30.08.1926; vorher 214); Lardy Fahrzeugfabrik erste Fahrzeuge am 18.10.1926 (9), am 21.10.1926 17, davon 15 verschifft auf WC Passagiere,Blech,Stahl,+2-PoidesPêc-PordesAli-RE-1 (7 Terra Nova); Pointe des Pêcheurs 2.000 Einwohner am 18.10.1926; Fahrzeuge verlangt: Bourg-l’Écorce 300, Port des Alizés 122, Anse Dorée 76, jeweils 0 gedeckt; Beuvry Toy Factory neu am 07.10.1926. Radio, Sender, Sendungen, Sendezeiten, Sprecher und Musik gibt es im Spiel nicht. Erfunden: Radio Alizés, alle Sendungen, Zeiten, Musik, Hörerfrage und Antwort. Honorine ist eine wiederkehrende erfundene Figur.",
+      "tage": [
+        {
+          "tag": "Sonntag, 17. Oktober",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Die Glocken des Archipels",
+              "text": "Heute: Lardy. Seit Ende August 218 Einwohner, vier mehr als in jeder Messung seit 1922. Die Glocke ist dieselbe."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Sonntagskonzert"
+            }
+          ]
+        },
+        {
+          "tag": "Montag, 18. Oktober",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Sondermeldung aus Lardy",
+              "text": "Die Lardy Fahrzeugfabrik meldet zum ersten Mal Fahrzeuge. Neun Stück. Seit mindestens 1922 stand sie im Register und hat bis heute keines gebaut. In derselben Messung: Pointe des Pêcheurs zählt 2.000 Einwohner. Die Stadtkapelle von Bourg weiß nicht, wem sie zuerst spielen soll, und spielt für beide."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Konzert für neun Automobile und eine Stadt"
+            }
+          ]
+        },
+        {
+          "tag": "Mittwoch, 20. Oktober",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Fragen Sie Honorine",
+              "text": "Ein Hörer aus Bourg fragt, ob er sich jetzt ein Automobil aus Lardy bestellen kann. Honorine: Bourg verlangt dreihundert, Port hundertzweiundzwanzig, Anse Dorée sechsundsiebzig. Stellen Sie sich hinten an."
+            }
+          ]
+        },
+        {
+          "tag": "Donnerstag, 21. Oktober",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Aus den Messbüchern",
+              "text": "Lardy hat jetzt 17 Fahrzeuge gebaut. 15 sind an Bord der Terra Nova gegangen, die von Lardy Hafen Nord weiter nach Port des Alizés fahren. Wir melden, wenn sie ankommen."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Musik am Kai"
+            }
+          ]
+        }
+      ],
+      "refs": {
+        "staedte": [
+          174612,
+          174602,
+          174605,
+          174632,
+          174645
+        ],
+        "linien": [
+          194859
+        ],
+        "personen": [],
+        "betriebe": [
+          389582
+        ]
+      }
+    },
+    {
+      "id": "1926-11-jubilaeumswoche",
+      "date": "1926-11",
+      "art": "fiktion",
+      "sender": "Radio Alizés · Sender Bourg-l’Écorce",
+      "titel": "Woche vom 14. bis 20. November 1926",
+      "grounding": "Gemessen: Bourg-l’Écorce 4.495 Einwohner (16.11.1926), 4.498 (20.11.1926); Radio Alizés sendet laut Journal seit 19.11.1922 (Rundfunkzeit seit Bourg-l’Écorce 4.000 am 17.11.1922); 24 Fahrzeuge der Lardy Fahrzeugfabrik als Ladung auf WC Passagiere,Blech,Stahl,+2-PoidesPêc-PordesAli-RE-1 in jeder Messung seit 29.10.1926; WC Passagiere,Reifen,Maschinen-Fer-Lar-RE-1 seit 01.11.1926 mit 4 Terra Nova; Beaucaire Bauernhof geschlossen am 26.08.1926 und neu am 20.11.1926. Radio, Sender, Sendungen, Sendezeiten, Sprecher und Musik gibt es im Spiel nicht. Erfunden: Radio Alizés, alle Sendungen, Zeiten, Musik, Jubiläum und Glückwünsche. Hortense und Honorine sind wiederkehrende erfundene Figuren.",
+      "tage": [
+        {
+          "tag": "Sonntag, 14. November",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Aus den Messbüchern",
+              "text": "Noch immer 24 Automobile aus Lardy auf den Schiffen. Auf der Strecke, die Reifen und Maschinen nach Lardy bringt, fährt seit Anfang des Monats ein viertes Schiff."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Sonntagskonzert"
+            }
+          ]
+        },
+        {
+          "tag": "Freitag, 19. November",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Vier Jahre Radio Alizés",
+              "text": "Heute vor vier Jahren haben wir zum ersten Mal gesendet, über der Gare Centrale. Bourg-l’Écorce hatte damals gut 4.000 Einwohner, heute fast 4.500. Glückwünsche kamen von Hortense aus der Rue de Genève und von Honorine, die schreibt, auf den Sender wette sie inzwischen nicht mehr, er sei eine sichere Sache."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Festkonzert der Stadtkapelle"
+            }
+          ]
+        },
+        {
+          "tag": "Samstag, 20. November",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Landfunk",
+              "text": "Der Bauernhof bei Beaucaire, im August geschlossen, steht wieder im Register."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Tanzmusik"
+            }
+          ]
+        }
+      ],
+      "refs": {
+        "staedte": [
+          174605,
+          174612
+        ],
+        "linien": [
+          194859,
+          413844
+        ],
+        "personen": [],
+        "betriebe": [
+          389582
+        ]
+      }
+    },
+    {
+      "id": "1926-12-weihnachtswoche",
+      "date": "1926-12",
+      "art": "fiktion",
+      "sender": "Radio Alizés · Sender Bourg-l’Écorce",
+      "titel": "Weihnachtswoche, 25. bis 31. Dezember 1926",
+      "grounding": "Gemessen: Netz 1.350 Fahrzeuge am 25.12.1926; Bus Passagiere-AnsDor-LO-4 verstärkt am 25.12., Bus Passagiere-AnsDor-LO-3 am 27.12.1926; Anse Dorée 1.445, Bourg-l’Écorce 4.511 Einwohner (25.12.1926); 24 Fahrzeuge der Lardy Fahrzeugfabrik als Ladung auf WC Passagiere,Blech,Stahl,+2-PoidesPêc-PordesAli-RE-1 in jeder Messung seit 29.10.1926; Fontenay-aux-Roses Fischzucht geschlossen am 27.12.1926; Lamballe-Armor Radiofabrik und Aniche Röhrenfabrik neu am 31.12.1926, beide Stufe 1 ohne Produktion; Vauclaire verlangt seit 31.12.1926 112 Radios, 0 gedeckt. Radio, Sender, Sendungen, Sendezeiten, Sprecher und Musik gibt es im Spiel nicht. Erfunden: Radio Alizés, alle Sendungen, Zeiten, Musik, Märchen und Ansprache. Paul und Marthe sind wiederkehrende erfundene Figuren.",
+      "tage": [
+        {
+          "tag": "Samstag, 25. Dezember, Weihnachten",
+          "sendungen": [
+            {
+              "zeit": "11.00",
+              "titel": "Weihnachtskonzert der Stadtkapelle"
+            },
+            {
+              "zeit": "19.30",
+              "titel": "Aus den Messbüchern",
+              "text": "Das Netz zählt heute 1.350 Fahrzeuge. Ein Teil davon ist ein Geschenk an Anse Dorée: mehr Omnibusse auf Linie 4, am Montag auch auf Linie 3. Anse Dorée zählt 1.445, Bourg 4.511."
+            }
+          ]
+        },
+        {
+          "tag": "Montag, 27. Dezember",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Märchenstunde",
+              "text": "Heute: Die vierundzwanzig Automobile auf dem Meer. Es waren einmal vierundzwanzig Automobile, die in Lardy gebaut wurden und mit einem Schiff in die Welt fuhren. Sie fuhren und fuhren, und weil niemand sie abholte, fuhren sie weiter. Ob sie ankommen, erzählen wir, wenn es so weit ist."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Musik zwischen den Jahren"
+            }
+          ]
+        },
+        {
+          "tag": "Freitag, 31. Dezember, Silvester",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Sondermeldung",
+              "text": "Neu im Register: eine Radiofabrik in Lamballe-Armor und eine Röhrenfabrik in Aniche. Noch macht keine von beiden etwas. Und Vauclaire verlangt seit heute Radios, 112 Stück. Radio Alizés begrüßt die Konkurrenz und die Kundschaft."
+            },
+            {
+              "zeit": "21.00",
+              "titel": "Silvesterball"
+            },
+            {
+              "zeit": "23.55",
+              "titel": "Paul aus Vauclaire zählt die letzten Sekunden",
+              "text": "Marthe hat ihm erlaubt, aufzubleiben, weil er versprochen hat, im neuen Jahr ein eigenes Radio zu verlangen."
+            }
+          ]
+        }
+      ],
+      "refs": {
+        "staedte": [
+          174645,
+          174605,
+          174612,
+          174614,
+          174600,
+          174634,
+          174615
+        ],
+        "linien": [
+          194859
+        ],
+        "personen": [],
+        "betriebe": [
+          389582,
+          492737,
+          204769
+        ]
+      }
+    },
+    {
+      "id": "1927-01-lokwoche",
+      "date": "1927-01",
+      "art": "fiktion",
+      "sender": "Radio Alizés · Sender Bourg-l’Écorce",
+      "titel": "Woche vom 2. bis 8. Januar 1927",
+      "grounding": "Gemessen: TP Passagiere-PordesAli-AnsDor-RE-1 am 02.01.1927 mit 12 Russische Baureihe SU statt 12 Amerikanische 4-4-2 Atlantic, am 05.01.1927 mit 13 SU; Modell neu am 02.01.1927; Valmorin Eisenerzbergwerk geschlossen am 15.07.1926 und neu am 05.01.1927; Valmorin 1.697 Einwohner (02.01.1927); Vauclaire verlangt 112 Radios, 0 gedeckt. Radio, Sender, Sendungen, Sendezeiten, Sprecher und Musik gibt es im Spiel nicht. Erfunden: Radio Alizés, alle Sendungen, Zeiten, Musik und Hörerpost. Hippolyte Rosemond, Lucie und Paul sind wiederkehrende erfundene Figuren.",
+      "tage": [
+        {
+          "tag": "Sonntag, 2. Januar",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Aus den Messbüchern",
+              "text": "Auf der Hauptstrecke von Port des Alizés nach Anse Dorée ziehen seit heute zwölf Lokomotiven der Russischen Baureihe SU, ein Modell aus diesem Jahr. Die Atlantic sind abgegeben. Lokführer Rosemond lässt ausrichten, er werde sich daran gewöhnen. Irgendwann."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Russische Nacht, Tanzmusik"
+            }
+          ]
+        },
+        {
+          "tag": "Mittwoch, 5. Januar",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Landfunk",
+              "text": "Der dreizehnte Zug auf der Hauptstrecke, ebenfalls mit einer SU. Und in Valmorin steht wieder ein Eisenerzbergwerk im Register, ein halbes Jahr nachdem das alte geschlossen wurde. Lucie sagt, Erz habe man jetzt wieder, Hemden noch nicht. Valmorin zählt 1.697."
+            }
+          ]
+        },
+        {
+          "tag": "Freitag, 7. Januar",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Hörerpost",
+              "text": "Paul aus Vauclaire schreibt, er habe jetzt ein Radio verlangt, wie versprochen, und mit ihm 111 andere. Bekommen hat Vauclaire noch keines. Er hört uns weiter auf dem Gerät seines Großvaters, das, so schreibt er, älter sei als der Sender."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Kinofunk"
+            }
+          ]
+        },
+        {
+          "tag": "Samstag, 8. Januar",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Fahrgäste berichten",
+              "text": "Wie fährt es sich hinter einer SU? Eine Reisende aus Pointe des Pêcheurs: Wie hinter einer Atlantic, nur dass man es anders hört."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Tanzmusik"
+            }
+          ]
+        }
+      ],
+      "refs": {
+        "staedte": [
+          174632,
+          174645,
+          174607,
+          174634,
+          174602
+        ],
+        "linien": [
+          322356
+        ],
+        "personen": [],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1927-02-ankunftswoche",
+      "date": "1927-02",
+      "art": "fiktion",
+      "sender": "Radio Alizés · Sender Bourg-l’Écorce",
+      "titel": "Woche vom 13. bis 19. Februar 1927",
+      "grounding": "Gemessen: Port des Alizés 2.497 Einwohner (13.02.1927), seit 29.01.1923 voll; Fahrzeuge auf WC Passagiere,Blech,Stahl,+2-PoidesPêc-PordesAli-RE-1: 24 in jeder Messung vom 29.10.1926 bis 13.02.1927, 9 am 18.02.1927; RC Fahrzeuge-PordesAli-LO-1 (Station Zentrum – Station Transfer, 2 AMO F-15) seit 29.10.1926, am 18.02.1927 mit 12 von 12 Fahrzeugen beladen; Port des Alizés verlangt 122 Fahrzeuge, 0 gedeckt; Bourg-l’Écorce 4.525 Einwohner (13.02.1927), verlangt 305 Fahrzeuge. Radio, Sender, Sendungen, Sendezeiten, Sprecher und Musik gibt es im Spiel nicht. Erfunden: Radio Alizés, alle Sendungen, Zeiten, Musik, Wette und Reportage. Honorine und Inspecteur Lebrun sind wiederkehrende erfundene Figuren.",
+      "tage": [
+        {
+          "tag": "Sonntag, 13. Februar",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Die Glocken des Archipels",
+              "text": "Heute: Port des Alizés, 2.497 Einwohner, voll seit dem 29. Januar 1923, also seit vier Jahren. Draußen im Hafen fahren seit Oktober 24 Automobile aus Lardy vorbei. Die Glocken läuten für sie mit."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Sonntagskonzert"
+            }
+          ]
+        },
+        {
+          "tag": "Mittwoch, 16. Februar",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Fragen Sie Honorine",
+              "text": "Wann kommt das erste Automobil aus Lardy in Port an? Honorine: Vor Ostern. Ich habe es ins Wettbuch geschrieben, damit es sich beeilt. Gegenstimme: Inspecteur Lebrun, der als Schiedsrichter eigentlich nichts sagen dürfte."
+            }
+          ]
+        },
+        {
+          "tag": "Freitag, 18. Februar",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Sondermeldung aus dem Hafen",
+              "text": "Nach vier Monaten an Bord gehen die ersten Automobile aus Lardy in Port des Alizés von den Schiffen. Zwölf stehen auf zwei Lastwagen der Société, neun sind noch an Bord. In der Stadt angekommen ist noch keines. Port verlangt 122, Bourg 305."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Hafenkonzert"
+            }
+          ]
+        },
+        {
+          "tag": "Samstag, 19. Februar",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Bunter Abend",
+              "text": "24 Automobile, sieben Schiffe, ein Winter. Rätselfrage für die Hörer: Wie oft ist ein Automobil an Port vorbeigefahren, bevor es ankam? Die richtige Antwort weiß niemand. Die schönste gewinnt."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Tanzmusik"
+            }
+          ]
+        }
+      ],
+      "refs": {
+        "staedte": [
+          174632,
+          174612,
+          174605
+        ],
+        "linien": [
+          194859,
+          495634
+        ],
+        "personen": [],
+        "betriebe": [
+          389582
+        ]
+      }
+    },
+    {
+      "id": "1927-03-ankunftswoche",
+      "date": "1927-03",
+      "art": "fiktion",
+      "sender": "Radio Alizés · Sender Bourg-l’Écorce",
+      "titel": "Woche vom 13. bis 19. März 1927",
+      "grounding": "Gemessen: RC Fahrzeuge-PordesAli-LO-1 in Port des Alizés mit 12 Fahrzeugen beladen seit 18.02.1927, 6 am 13.03., 2 am 14.03., 0 am 16.03.1927; Port des Alizés Fahrzeuge 8 von 122 gedeckt (16.03.1927), vorher in keiner Messung; Lardy Fahrzeugfabrik Auslieferung im Jahreswert 12 (16.03.1927); Bourg-l’Écorce verlangt 305 Fahrzeuge, 0 gedeckt. Die Messungen enden vorerst am 17.03.1927. Radio, Sender, Sendungen, Sendezeiten, Sprecher und Musik gibt es im Spiel nicht. Erfunden: Radio Alizés, alle Sendungen, Zeiten, Musik, Reportage und Wette. Honorine, Inspecteur Lebrun und die Stadtkapelle sind wiederkehrende erfundene Figuren.",
+      "tage": [
+        {
+          "tag": "Sonntag, 13. März",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Aus den Messbüchern",
+              "text": "In Port des Alizés werden die Lastwagen leer: Gestern waren noch zehn Automobile aus Lardy darauf, heute sechs. Wohin sie gehen, melden wir, sobald es in den Büchern steht."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Sonntagskonzert"
+            }
+          ]
+        },
+        {
+          "tag": "Mittwoch, 16. März",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Sondermeldung aus Port des Alizés",
+              "text": "Die ersten Automobile aus Lardy sind angekommen. Port des Alizés hat 8 von 122 verlangten Fahrzeugen, zum ersten Mal überhaupt. Die Fabrik in Lardy meldet zwölf ausgelieferte Wagen. Die Stadtkapelle von Bourg spielt, obwohl Bourg noch keines hat."
+            },
+            {
+              "zeit": "20.00",
+              "titel": "Hupkonzert, eine Uraufführung"
+            }
+          ]
+        },
+        {
+          "tag": "Donnerstag, 17. März",
+          "sendungen": [
+            {
+              "zeit": "19.30",
+              "titel": "Fragen Sie Honorine",
+              "text": "Heute fragt Honorine selbst: Wer schuldet mir einen Rum? Inspecteur Lebrun hat die Wette entschieden, einen Monat vor Ostern. Bourg-l’Écorce bittet um eine neue Wette: 305 Automobile, wann?"
+            }
+          ]
+        },
+        {
+          "tag": "Samstag, 19. März",
+          "sendungen": [
+            {
+              "zeit": "20.00",
+              "titel": "Tanzmusik"
+            }
+          ]
+        }
+      ],
+      "refs": {
+        "staedte": [
+          174632,
+          174612,
+          174605
+        ],
+        "linien": [
+          495634
+        ],
+        "personen": [],
+        "betriebe": [
+          389582
+        ]
+      }
     }
   ]
 }

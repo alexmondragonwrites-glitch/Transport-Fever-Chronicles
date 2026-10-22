@@ -5611,6 +5611,576 @@
         "linien": [],
         "betriebe": []
       }
+    },
+    {
+      "id": "1925-04-auftragsbuch-ferrieres",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1925-04",
+      "lead": true,
+      "rubrik": "Auftragsbuch · Ferrières-sur-Mer",
+      "titel": "Neuer Name, alte Schilder. Aus dem Auftragsbuch der Druckerei von Ferrières-sur-Mer",
+      "teaser": "Seit dem 25. April 1925 heißt Le Malesherbois Ferrières-sur-Mer. Die einzige Druckerei am Ort hat in einer Woche so viele Aufträge wie sonst in einem halben Jahr. Nicht alle Kunden wollen aber einen neuen Namen.",
+      "body": [
+        "Auftragsbuch der Druckerei Morel, Hafenstraße. Geführt von Armand Morel. Spalten: Tag, Kunde, Auftrag, Menge, Bemerkung.",
+        "Samstag, 25. April 1925. Mairie. Ein Dienststempel, rund, Umschrift „Commune de Ferrières-sur-Mer“. 1 Stück. Bemerkung: Seit heute heißt der Ort so. Der Bürgermeister wollte den alten Stempel abschleifen und neu gravieren lassen. Geht nicht, der neue Name ist länger. Den alten hat er wieder mitgenommen.",
+        "25. April. Postamt. 200 Briefbögen, Kopf „Postes · Ferrières-sur-Mer“. Bemerkung: eilt. Der Postvorsteher sagt, bis Ende Mai nehme er Briefe mit beiden Namen an, danach nur noch mit einem. Mit welchem, hat er nicht gesagt.",
+        "Montag, 27. April. Agentur der Société am Hafen. 30 Fahrplanaushänge für zwei neue Linien ab heute: ein Passagierschiff von Lardy Hafen West über Le Malesherbois Hafen #1 nach Labenne, und ein Schiff für Blech und Kohle von Lardy Hafen #1 über Le Malesherbois Hafen #1 nach Lardy Hafen Nord. Bemerkung: Ich habe gefragt, ob ich „Le Malesherbois Hafen“ in „Ferrières-sur-Mer Hafen“ ändern soll. Der Agent: Nein. So heißen die Halte in den Büchern der Société, und wer etwas anderes druckt, schickt die Leute an einen Hafen, den es nicht gibt.",
+        "27. April. Hafenmeisterei. Ein Emailleschild „Ferrières-sur-Mer · Hafen“. Am Nachmittag storniert, siehe oben.",
+        "Dienstag, 28. April. Le Malesherbois Stahlwerk. Anfrage wegen neuer Lieferscheine. Kein Auftrag: Das Werk behält seinen Namen. Bemerkung: Lieferscheine braucht es vorerst ohnehin nicht. Es steht seit Jahren im Register und hat noch kein Blech gemacht. Der Werkmeister sagt, er fange an, sobald Erz und Kohle da seien, und zwar unter dem Namen, unter dem man ihn kennt.",
+        "28. April. Le Malesherbois Kohlebergwerk. Kein Auftrag. Bemerkung: Man lässt ausrichten, Kohle sei Kohle, gleich aus welchem Ort.",
+        "Mittwoch, 29. April. Le Malesherbois Reifenfabrik. Kein Auftrag. Bemerkung: Die Fabrik war im September geschlossen und steht seit dem 1. November wieder im Register. Einen Reifen hat sie noch nicht gemacht. Briefe schreibt sie auch keine.",
+        "Donnerstag, 30. April. Familie Picard, privat. 60 Hochzeitsanzeigen. Text auf Wunsch der Braut: „Geboren in Le Malesherbois, getraut in Ferrières-sur-Mer, und nie umgezogen.“",
+        "Samstag, 2. Mai. Mairie. Zwei Ortsschilder für die Einfahrten. Bemerkung: Der Bürgermeister wollte die Einwohnerzahl darunter haben, 190. Ich habe ihm geraten, sie wegzulassen. Mit dem neuen Namen, sagt er, würden es mehr. Mit dem alten waren es in jeder Zählung, an die ich mich erinnere, 190.",
+        "Summe: sechs Aufträge, einer storniert, drei Werke ohne Auftrag. Darunter, mit Bleistift: Den alten Stempel hat der Bürgermeister nicht zurückgebracht. Ich nehme an, er stempelt damit zu Hause."
+      ],
+      "grounding": "Gemessen: Le Malesherbois heißt seit 25.04.1925 Ferrières-sur-Mer; 190 Einwohner in jeder geprüften Messung von 19.09.1922 bis Januar 1926. Halte und Betriebe tragen weiter den alten Namen (Le Malesherbois Hafen, Le Malesherbois Hafen #1, Le Malesherbois Stahlwerk, Kohlebergwerk und Reifenfabrik; Stand Februar 1927). Neue Linien am 27.04.1925: WP Passagiere-Lar-LO-1 (Lardy Hafen West – Le Malesherbois Hafen #1 – Labenne Hafen) und WC Passagiere,Blech,Kohle-Lar-Fer-IC-1 (Lardy Hafen #1 – Le Malesherbois Hafen #1 – Lardy Hafen Nord). Le Malesherbois Stahlwerk ohne Produktion in jeder Messung von 19.09.1922 bis zur ersten am 15.06.1925; Le Malesherbois Reifenfabrik geschlossen 06.09.1924, wieder im Register seit 01.11.1924, ohne Produktion bis Juli 1926. Erfunden: Druckerei Morel, Auftragsbuch, alle Aufträge, Personen und Äußerungen.",
+      "refs": {
+        "staedte": [
+          174642,
+          174612,
+          174619
+        ],
+        "linien": [
+          212158,
+          321922
+        ],
+        "personen": [],
+        "betriebe": [
+          334696,
+          187786,
+          467127
+        ]
+      }
+    },
+    {
+      "id": "1925-05-postkarte-lardy",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1925-05",
+      "lead": true,
+      "rubrik": "Postkarte · Lardy",
+      "titel": "„Er fährt nur zum Bergwerk.“ Eine Postkarte aus Lardy",
+      "teaser": "Seit dem 5. Mai 1925 fährt in Lardy ein Omnibus von der Rue Auguste Rodin zum Eisenerzbergwerk, zwei Wagen eines Modells, das es erst seit diesem Jahr gibt. Ein Junge schreibt seiner Großmutter nach Port des Alizés.",
+      "body": [
+        "Vorderseite: Lardy, Hafen mit Schiffen. Handkoloriert. Die Schiffe sind rot, das Wasser ist braun geraten.",
+        "Rückseite, Bleistift: Liebe Großmama, seit Dienstag haben wir einen Omnibus. Es sind zwei. Sie heißen Yellow Coach, das ist englisch, Papa sagt, es heißt gelbe Kutsche. Sie sind ganz neu, die gibt es erst seit diesem Jahr. Sie fahren von unserer Straße bis zum Bergwerk und wieder zurück, sonst nirgends hin.",
+        "Papa fährt jetzt morgens mit. Ich durfte am Sonntag mitfahren, weil sonntags keiner zur Arbeit muss und Platz war. In jeden Wagen passen zehn Leute. Am Bergwerk sind wir ausgestiegen und haben das Erz angeschaut. Es ist auch braun.",
+        "Papa sagt, das Erz soll mit dem Schiff wegfahren und als Blech wiederkommen. Das glaube ich nicht. Steine kommen nicht als etwas anderes wieder.",
+        "Bei uns gibt es eine große Halle, an der Fahrzeugfabrik steht. Da drin ist niemand. Ich habe durchs Fenster geschaut. Papa sagt, da sollen einmal Automobile gebaut werden, aber dafür braucht man Blech und Reifen und Maschinen, und von allem hat Lardy nichts. Ich habe gesagt, dann nehmen wir das Blech vom Erz. Papa hat gelacht.",
+        "Die Lehrerin sagt, wir sind 214. Das sagt sie jedes Jahr. Grüß den Hund. Dein Bastien.",
+        "Quer am Rand: Wenn der Omnibus einmal zu Dir fährt, komme ich. Papa sagt, das tut er nicht. Er fährt nur zum Bergwerk.",
+        "Poststempel: Lardy, 11. Mai 1925. Anschrift: Madame Albertine Roux, Rue du Maine, Port des Alizés."
+      ],
+      "grounding": "Gemessen: Bus Passagiere-Lar-LO-1 neu am 05.05.1925, Rue Auguste Rodin – Lardy Eisenerzbergwerk, 2 Fahrzeuge Yellow Coach Modell W mit zusammen 20 Plätzen; das Modell ist ab 1925 verfügbar, erstmals gekauft am 05.05.1925 und erstmals erfasst am 09.05.1925 (am selben Tag auch Bus Passagiere-Fer-LO-1 in Ferrières-sur-Mer). Lardy 214 Einwohner in jeder geprüften Messung von 19.09.1922 bis August 1926. Lardy Fahrzeugfabrik seit mindestens 19.09.1922 im Register, Stufe 1, ohne Produktion; WC Passagiere,Stahl,Eisenerz-Lar-Lab-RE-1 ab Lardy Hafen West seit 01.05.1925 Frachtschiff, erstes Eisenerz an Bord am 20.05.1925. Farbe der Wagen nicht gemessen. Erfunden: Bastien, seine Familie, die Großmutter und ihre Anschrift, die Postkarte, die Lehrerin.",
+      "refs": {
+        "staedte": [
+          174612,
+          174632,
+          174642
+        ],
+        "linien": [
+          384318,
+          305408,
+          212158
+        ],
+        "personen": [],
+        "betriebe": [
+          182564,
+          389582
+        ]
+      }
+    },
+    {
+      "id": "1925-06-portraet-fernand",
+      "typ": "portraet",
+      "art": "fiktion",
+      "date": "1925-06",
+      "lead": true,
+      "rubrik": "Porträt · Vauclaire",
+      "titel": "Wieder eingestiegen. Fernand Saint-Cyr nach zwanzig Monaten zu Fuß",
+      "teaser": "Vom 24. September 1923 an hatte Fernand Saint-Cyr aus Vauclaire keine Arbeit, und jeden Weg, den die Messbücher von ihm kennen, ging er zu Fuß. Seit dem 23. Mai 1925 hat er wieder eine Stelle und fährt mit der Société.",
+      "body": [
+        "Fernand Saint-Cyr erzählt nicht viel. Er erzählt mit den Schuhen. Im Haushaltsbuch seiner Frau Léonie stehen seit 1921 neue Sohlen in fast jedem Winter, im Winter 1924 zweimal.",
+        "Die Messbücher kennen ihn seit Januar 1920. 1922 und 1923 fuhr er in rund zwei von drei Messungen mit der Société. Am 24. September 1923 verlor er seine Stelle, und von da an ging er zu Fuß: in jeder Messung bis in den Mai 1925, 1924 in allen 108. Léonie sagt, er habe in diesen zwanzig Monaten jedes Werkstor zwischen Vauclaire und dem Sarrians-Hof zweimal gesehen, einmal hin, einmal zurück.",
+        "Am 23. Mai stand er an der Haltestelle. Was er dort gedacht hat, weiß niemand, er hat es nicht gesagt. Am Abend lag die Fahrkarte auf dem Küchentisch, gefaltet, wie man einen Lohn auf den Tisch legt. Seitdem zeigen ihn die Bücher bei jedem Weg in Bus oder Bahn. Mit welcher Linie, steht nicht darin.",
+        "Clovis Calixte von nebenan, der seit Oktober wieder Arbeit hat und 1925 jeden gemessenen Weg mit der Société fährt, hat ihm am Vorabend den Fahrplan erklärt. Fernand sagt, er habe ihn nicht gebraucht. Clovis sagt, er habe ihn zweimal erklärt.",
+        "Paul, inzwischen dreizehn, hat in sein Würfelspiel ein neues Feld gemalt: „Fernand fährt. Zwei vor.“ Es liegt neben dem Feld, auf dem man ohne Arbeit eine Runde aussetzt. Marthe, einundzwanzig, hat es auf einem Zettel für die Leute von 1950 nachgetragen. Der Zettel passt nicht mehr in die Keksdose, er liegt jetzt unter dem Brettpferd.",
+        "Vauclaire zählt im Juni 737 Einwohner, im Herbst 1923 waren es 655. Spielzeug gibt es 51 Stück, verlangt werden 200. Die Maschinenfabrik, die seit November 1922 im Register steht, hat noch keine einzige Maschine gemacht. Fernand sagt, er arbeite nicht dort. Mehr sagt er darüber nicht.",
+        "Gefragt, wie es sei, nach zwanzig Monaten wieder einzusteigen, sagt er: „Man sitzt.“ Nach einer Weile: „Und man kommt an, ohne dass man es merkt. Das ist das Unheimliche daran.“",
+        "Die Sohlen, sagt Léonie, sind diesen Sommer noch nicht durch. Neue hat sie trotzdem gekauft. Für den Fall."
+      ],
+      "grounding": "Gemessen (Person 35558 der Beobachtungsgruppe, Wohnort Vauclaire, erste Messung 29.01.1920): 1922 68 von 105 und 1923 66 von 100 Messungen mit öffentlichem Verkehr; ohne Arbeit seit 24.09.1923, danach jeder gemessene Weg zu Fuß bis 22.05.1925, 1924 alle 108 Messungen; Arbeit wieder ab 23.05.1925, seitdem jeder gemessene Weg mit öffentlichem Verkehr (Linie nicht gemessen). Clovis Calixte (36283) Arbeit seit 20.10.1924, 1925 alle Messungen mit öffentlichem Verkehr. Vauclaire 737 Einwohner (Juni 1925), Spielzeug 51 von 200 (03.06.1925); Vauclaire Maschinenfabrik ohne Produktion. Namen von der Redaktion vergeben. Erfunden: Léonie, Paul, Marthe, alle Äußerungen, Fahrkarte, Sohlen, Würfelspiel, Zettel und der Arbeitsweg.",
+      "refs": {
+        "staedte": [
+          174634
+        ],
+        "linien": [],
+        "personen": [
+          35558,
+          36283
+        ],
+        "betriebe": [
+          460014
+        ]
+      }
+    },
+    {
+      "id": "1925-10-auszaehlung-valombre",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1925-10",
+      "lead": true,
+      "rubrik": "Auszählung · Valombre",
+      "titel": "Dreizehn Fenster oder zwölf? Die Auszählung der Wappenfrage in Valombre",
+      "teaser": "Am 28. September 1925 verschwindet die Omnibuslinie, die seit Juli 1924 mit dreizehn Fenstern im Wappen von Valombre fährt. Zwei Ringlinien ersetzen sie, seit dem 2. Oktober mit zwölf Wagen. Die Gemeinde hat gefragt, ob das Wappen jetzt lügt.",
+      "body": [
+        "Bürgerbefragung der Gemeinde Valombre, Sonntag, 11. Oktober 1925. Frage: Das Wappen zeigt einen silbernen Omnibus mit dreizehn Fenstern, für die dreizehn Wagen der Linie durch die Rue Boris-Vian, die Rue de Bourgogne, die Rue du Jura und die Allée des Hortensias. Diese Linie gibt es seit dem 28. September nicht mehr. Seitdem fahren zwei Linien im Kreis durch Mitte-Ost, Mitte-Süd, die Rue Boris-Vian, Mitte-West, Mitte-Nordwest und Nord, die eine so herum, die andere andersherum, seit dem 2. Oktober mit sechs Wagen auf jeder. Was soll mit dem Wappen geschehen?",
+        "Antwort A: Ein Fenster übermalen. Zwölf Wagen, zwölf Fenster. Antwort B: Zwei Omnibusse ins Wappen, einer nach links, einer nach rechts. Antwort C: Alles lassen, wie es ist. Ein Wappen zeigt, was war.",
+        "Ergebnis. Abgegebene Zettel: 412. Antwort A: 97. Antwort B: 141. Antwort C: 158. Ungültig: 16.",
+        "Bemerkungen auf den Zetteln, abgeschrieben vom Wahlvorstand:",
+        "A: „Ein Fenster weniger ist ehrlicher als ein Omnibus mehr.“",
+        "B: „Aber so, dass sie sich nicht ansehen. Sie fahren ja auch aneinander vorbei.“",
+        "B: „Der zweite nicht silbern, sondern grün wie das Feld. Dann sieht ihn nur, wer weiß, dass er da ist.“",
+        "C: „Wir waren 265. Wir waren dreizehn Wagen. Passt.“",
+        "C: „Die Brennblase ist immer noch schwarz. Umgemalt wird erst, wenn sie golden ist.“ Vermerk des Wahlvorstands: Die Melle Rum Distillery steht auf Stufe eins und macht keinen Rum.",
+        "Ungültig: „Käse.“ Vermerk: Valombre verlangt 346 Stück und bekommt keines. Der Zettel wurde als ungültig gezählt, aber vorgelesen.",
+        "Ungültig: „Fragt Valmorin, ob es seinen Namen hergibt.“ Vermerk: Die beiden neuen Linien heißen in den Büchern der Société Bus Passagiere-Val-LO-1 und Bus Passagiere-Val-LO-2. In Valmorin fahren Straßenbahnen, die Tram Passagiere-Val-LO-1 und -2 heißen.",
+        "Beschluss des Gemeinderats vom Montag, 12. Oktober 1925: Das Wappen bleibt, wie es ist. Der amtlichen Beschreibung wird ein Satz angefügt: „Das dreizehnte Fenster ist ein Erinnerungsfenster.“ Antwort B wird vertagt bis zur zweiten goldenen Tausend.",
+        "Nachtrag des Wappenmalers: Ich habe die Wagen gezählt. Es sind zwölf, sechs auf jeder Linie. Ich habe außerdem die Zettel gezählt: 412. Valombre hatte am 6. Oktober 1.168 Einwohner. Wären alle gekommen, hätte ich ein größeres Wappen gebraucht."
+      ],
+      "grounding": "Gemessen: Bus Passagiere-Val-LO-5 in Valombre mit 13 Daimler Decksitzwagen (Rue Boris-Vian – Rue de Bourgogne – Rue du Jura – Allée des Hortensias und zurück) zuletzt erfasst am 24.09.1925, eingestellt 28.09.1925; neu am 28.09.1925 Bus Passagiere-Val-LO-1 und -2 durch Valombre Mitte-Ost, Mitte-Süd, Rue Boris-Vian, Mitte-West, Mitte-Nordwest, Nord, in entgegengesetzter Richtung, zunächst 3 und 6, ab 02.10.1925 6 und 6 Daimler Decksitzwagen. In Valmorin fahren Tram Passagiere-Val-LO-1 und -2. Valombre 1.168 Einwohner (06.10.1925), Käse 0 von 346; Melle Rum Distillery Stufe 1 ohne Produktion. Wappen und Wahlspruch aus dem Beitrag vom Juli 1924. Erfunden: Befragung, Zettel, Stimmenzahlen, Bemerkungen, Beschluss, Wappenmaler.",
+      "refs": {
+        "staedte": [
+          174621,
+          174607
+        ],
+        "linien": [
+          234744,
+          416977,
+          489397
+        ],
+        "personen": [],
+        "betriebe": [
+          271347
+        ]
+      }
+    },
+    {
+      "id": "1926-02-interview-lacroix",
+      "typ": "interview",
+      "art": "fiktion",
+      "date": "1926-02",
+      "lead": true,
+      "rubrik": "Im Gespräch · Valmorin",
+      "titel": "„Gesehen habe ich keinen Stein. Aber sie steht.“ Maurermeister Barnabé Lacroix über die vierte Stufe",
+      "teaser": "Seit dem 10. Februar 1926 steht die Burg des weißen Reihers in Valmorin auf Stufe vier, und zum ersten Mal führen die Bücher sie als abgeschlossen. Barnabé Lacroix hat im Oktober 1924 die dritte Stufe abgenommen. Ein Gespräch im „Au Quai des Collines“.",
+      "partner": {
+        "name": "Barnabé Lacroix",
+        "rolle": "Maurermeister in Valmorin"
+      },
+      "fragen": [
+        {
+          "frage": "Monsieur Lacroix, im Oktober 1924 haben Sie ins Protokoll geschrieben: Die Burg ist nicht fertig, eine Stufe fehlt. Und jetzt?",
+          "antwort": "Jetzt fehlt keine. Seit dem 10. Februar steht sie auf Stufe vier. Und in den Büchern steht ein Wort, das bei Stufe drei nicht dastand: abgeschlossen. Ich habe es mir zweimal vorlesen lassen."
+        },
+        {
+          "frage": "Mathurin hat damals gesagt: Wenn es so weitergeht, kommt Stufe vier, bevor wir alt sind. Hat er recht behalten?",
+          "antwort": "Halb. Von Stufe zwei bis drei waren es gut dreizehn Monate, von drei bis vier sechzehn. Es ging also langsamer, nicht schneller. Alt sind wir trotzdem nicht geworden. Jedenfalls nicht so alt, wie Mathurin befürchtet hat."
+        },
+        {
+          "frage": "Wer hat gebaut?",
+          "antwort": "Das fragen Sie mich jedes Mal. Ich weiß es nicht. Ich habe auch diesmal keinen Stein gesehen, keinen Kran, keinen Mörtel. In der einen Messung stand sie auf drei, in der nächsten auf vier. Ich bin Maurer, ich weiß, wie lange eine Mauer braucht. Diese braucht keine Zeit. Sie braucht Geduld, und zwar unsere."
+        },
+        {
+          "frage": "In Port des Alizés stehen der Eiffelturm und das Amphitheater ebenfalls auf Stufe vier.",
+          "antwort": "Und sind auch abgeschlossen, ja. Drei solche Bauwerke kennen die Bücher auf dem ganzen Archipel, und alle drei sind jetzt fertig. Port hat zwei, Valmorin eines. Dafür hat unseres einen Reiher. Ob der Eiffelturm einen hat, weiß ich nicht. Lucie sagt, nein."
+        },
+        {
+          "frage": "Was hat sich in Valmorin seit der dritten Stufe verändert?",
+          "antwort": "Wir sind 1.673, im Oktober 1924 waren wir 1.645. Fleisch gibt es 59 Stück, verlangt werden 334. Im Sommer 1924 waren es einmal 164. Hemden: null, seit Januar 1924. Werkzeuge: null. Wir haben jetzt eine fertige Burg und ziehen uns an wie vor zwei Jahren. Lucie sagt, das sei Valmorin in einem Satz."
+        },
+        {
+          "frage": "Und die Tafel an der Lärmschutzwand?",
+          "antwort": "Da steht jetzt von oben nach unten: Wann Stufe zwei? Ni. Drei. Nie vier? Und darunter, seit dem Morgen des 10. Februar, in derselben Hand wie das Drei: Vier. Anselme hat eine Stunde davorgestanden. Dann hat er das Nie durchgestrichen und darunter geschrieben: Fünf?"
+        },
+        {
+          "frage": "Gibt es eine fünfte Stufe?",
+          "antwort": "In meinen Plänen nicht. Die Bücher sagen abgeschlossen, und ich glaube den Büchern mehr als Anselme. Anselme sagt, das habe man bei Stufe zwei auch gesagt. Das stimmt nicht. Aber er sagt es so, dass man nachsieht."
+        },
+        {
+          "frage": "Was machen Sie jetzt, ohne Burg?",
+          "antwort": "Ich mauere einen Hühnerstall in der Rue Aristide-Briand. Der wächst, wenn ich Steine setze, und nicht, wenn ich schlafe. Das ist mir lieber. Aber sonntags gehe ich zur Burg und sehe sie an. Man muss doch wissen, worauf man so lange gewartet hat."
+        }
+      ],
+      "grounding": "Gemessen: Valmorin Burg des weissen Reihers Stufe 4, abgeschlossen, seit 10.02.1926 (Stufe 3 seit 08.10.1924, damals nicht abgeschlossen; Stufe 2 seit 02.09.1923); Port des Alizés Eiffelturm und Amphitheater Stufe 4, abgeschlossen, in jeder Messung seit 10.10.1924; weitere Bauwerke dieser Art erfassen die Messungen nicht. Valmorin 1.673 Einwohner, Fleisch 59 von 334, Kleidung 0 von 167, Werkzeuge 0 von 171 (10.02.1926); 1.645 Einwohner am 10.10.1924; Fleisch-Höchstwert 164 (27.07.1924); Kleidung 0 seit 27.01.1924. Rue Aristide-Briand ist ein Halt der Straßenbahn in Valmorin. Erfunden: Gespräch, Barnabé Lacroix, Mathurin, Lucie, Anselme, die Tafel und alle Inschriften, der Hühnerstall.",
+      "refs": {
+        "staedte": [
+          174607,
+          174632
+        ],
+        "linien": [],
+        "personen": [],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1926-07-handelsregister-roche-noire",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1926-07",
+      "lead": true,
+      "rubrik": "Handelsregister · Roche-Noire",
+      "titel": "Gelöscht, ohne je ein Spielzeug gemacht zu haben. Die Roche-Noire Toy Factory im Handelsregister",
+      "teaser": "Am 19. Juli 1926 verschwindet die Roche-Noire Toy Factory aus den Büchern. Seit mindestens September 1922 stand sie auf Stufe eins im Register, produziert hat sie in keiner Messung. Roche-Noire verlangt 232 Spielzeuge und bekommt keines. Der Registerauszug, mit Randbemerkungen des Registerbeamten.",
+      "body": [
+        "Handelsregister Roche-Noire, Abteilung B. Blatt: Roche-Noire Toy Factory. Gegenstand des Unternehmens: Herstellung von Spielwaren. Größe: Stufe 1.",
+        "Eintragung: vor Beginn der hier geführten Bücher. Erste Erwähnung in den Messbüchern: 19. September 1922. Randbemerkung: Wann sie gegründet wurde, weiß niemand mehr. Mein Vorgänger sagte, sie sei schon da gewesen, als er kam.",
+        "Produktion: keine. Geprüft in jeder Messung vom 19. September 1922 bis zum 15. Juli 1926. Randbemerkung: Ich habe nachgesehen, ob ein Schreibfehler vorliegt. Es liegt keiner vor.",
+        "Vergleichbare Betriebe: In Tournus macht eine Spielzeugfabrik derselben Art etwa 260 Stück im Jahr. Ein Teil davon kommt in Vauclaire und Sin-le-Noble an. Randbemerkung: Hier nicht.",
+        "Nachfrage am Ort: Roche-Noire, 1.418 Einwohner, verlangt im Juli 1926 232 Spielzeuge. Geliefert: keines, in keiner Messung. Randbemerkung: Die Stadt hat 232 Wünsche und eine Fabrik. Das hätte zusammenpassen können.",
+        "Löschung: 19. Juli 1926. Grund: nicht angegeben. Randbemerkung: Ein Grund wäre mir lieber gewesen. Ich hätte ihn gern eingetragen.",
+        "Nachtrag, 20. Juli: Eine Frau aus der Rue Voltaire war hier und hat gefragt, ob man die Fabrik wieder eintragen könne, wenn jemand verspreche, diesmal etwas zu machen. Ich habe gesagt, das Register nimmt keine Versprechen. Sie hat gesagt, die Stadt verlange ja auch 232 Spielzeuge, ohne etwas zu versprechen. Das habe ich nicht eingetragen.",
+        "Nachtrag, 21. Juli: Ein Junge hat einen geschnitzten Kreisel auf den Tresen gelegt und gesagt, das sei die Produktion. Ich habe ihn gewogen und als Fundsache verbucht. Abholung jederzeit."
+      ],
+      "grounding": "Gemessen: Roche-Noire Toy Factory, Stufe 1, in den Messungen seit 19.09.1922, ohne Produktion in jeder Messung vom 19.09.1922 bis 15.07.1926, geschlossen am 19.07.1926. Tournus Toy Factory produziert (266 im Jahreswert am 11.07.1926); Spielzeug am 19.07.1926: Vauclaire 56 von 218, Sin-le-Noble 90 von 182. Roche-Noire 1.418 Einwohner, Spielzeug 0 von 232 (19.07.1926), in keiner geprüften Messung geliefert. Rue Voltaire ist ein Omnibushalt in Roche-Noire. Erfunden: Handelsregister, Registerbeamter, Randbemerkungen, die Frau, der Junge und der Kreisel.",
+      "refs": {
+        "staedte": [
+          174601,
+          174637,
+          174634
+        ],
+        "linien": [],
+        "personen": [],
+        "betriebe": [
+          248192,
+          426809
+        ]
+      }
+    },
+    {
+      "id": "1926-09-willkommen-ferrieres",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1926-09",
+      "lead": true,
+      "rubrik": "Begrüßungsschreiben · Ferrières-sur-Mer",
+      "titel": "„Sie sind die Zweihundertfünfzigste.“ Ein Willkommensbrief aus der Mairie von Ferrières-sur-Mer",
+      "teaser": "Bis Anfang 1926 hatte der Ort, der bis April 1925 Le Malesherbois hieß, in jeder Messung 190 Einwohner. Seit dem Frühjahr wächst er, am 23. September 1926 sind es 250. Der Bürgermeister schreibt an die Neue.",
+      "body": [
+        "Ferrières-sur-Mer, den 24. September 1926. Sehr geehrte Madame, die Mairie heißt Sie in Ferrières-sur-Mer willkommen. Nach unserer Zählung sind Sie die Zweihundertfünfzigste. Ob das genau stimmt, wissen wir nicht, weil am selben Tag noch jemand gekommen ist, der sich erst später gemeldet hat. Wir haben uns für Sie entschieden, weil Sie zuerst geklingelt haben.",
+        "Damit Sie sich zurechtfinden, einige Hinweise.",
+        "Erstens, der Name. Der Ort heißt seit dem 25. April 1925 Ferrières-sur-Mer. Der Hafen, das Stahlwerk, das Kohlebergwerk und die Reifenfabrik heißen weiter Le Malesherbois. Wenn Sie mit dem Schiff verreisen wollen, fragen Sie nach Le Malesherbois Hafen. Wenn Sie zurückkommen, sind Sie wieder in Ferrières. Man gewöhnt sich daran. Die Druckerei Morel verkauft einen Stadtplan, in zwei Ausgaben.",
+        "Zweitens, der Omnibus. Seit Februar fahren zwei Ringlinien durch den Ort, Südost, Südwest, Nordwest, Nord, Busbahnhof, die eine so herum, die andere andersherum, mit je zwei Wagen. Vom Busbahnhof fahren vier Wagen zum Flughafen und weiter zum Hafen. Zum Kohlebergwerk fährt man ab der Rue Gustave Eiffel, zur Reifenfabrik ab Südost, beide Male mit den neuen Yellow Coach.",
+        "Drittens, der Flughafen. Seit dem 19. August fliegen vier Fokker zwischen unserem Flughafen und Port des Alizés. Frachtflugzeuge aus Sin-le-Noble landen bei uns schon seit Februar. Wer zum ersten Mal fliegt, dem empfehle ich einen Fensterplatz und Honorine in Port, die einen Ratgeber dazu hat.",
+        "Viertens, die Arbeit. Die Reifenfabrik macht seit dem 28. Juli Reifen, zum ersten Mal, seit sie in den Büchern steht. Seit dem 11. August gehen sie mit dem Schiff über Labenne nach Lardy, wo eine Fahrzeugfabrik auf sie wartet. Ob die in Lardy je ein Automobil baut, kann ich Ihnen nicht versprechen. Sie wartet seit Jahren.",
+        "Fünftens, wir. Im Februar waren wir 188, im April 199, im Juli 237, gestern 250. Fast ein Jahr nach dem neuen Namen blieben wir 190, als hätten wir uns erst an ihn gewöhnen müssen. Ich habe damals der Druckerei gesagt, mit dem neuen Namen würden es mehr. Sie hat die Einwohnerzahl trotzdem nicht auf die Ortsschilder gedruckt. Heute bin ich ihr dankbar. Ich hätte die Schilder jede Woche neu bestellen müssen.",
+        "Mit freundlichen Grüßen, der Bürgermeister.",
+        "PS: Der alte Stempel mit Le Malesherbois liegt noch bei mir zu Hause. Wenn Sie einmal an eines der Werke schreiben, stempele ich Ihren Brief gern damit ab. Dann kommt er an."
+      ],
+      "grounding": "Gemessen: Ferrières-sur-Mer (bis 25.04.1925 Le Malesherbois) 190 Einwohner in jeder geprüften Messung von 19.09.1922 bis Januar 1926, 188 im Februar und März, 199 im April, 237 im Juli, 250 am 23.09.1926. Seit 19.02.1926 Bus Passagiere-Fer-LO-2 und -3 (Ring Südost – Südwest – Nordwest – Nord – Busbahnhof in beiden Richtungen, je 2 Daimler Decksitzwagen) und Bus Passagiere-Fer-LO-4 (Busbahnhof – Flughafen – Le Malesherbois Hafen, 4 Wagen); Bus Passagiere-Fer-LO-1 (Rue Gustave Eiffel – Le Malesherbois Kohlebergwerk) seit 09.05.1925 und Bus Passagiere-Fer-LO-5 (Südost – Le Malesherbois Reifenfabrik) seit 02.03.1926 mit je 2 Yellow Coach Modell W. AP Passagiere-Fer-PordesAli-IC-1 mit 4 Fokker F VII A seit 19.08.1926; Frachtflugzeuge von Sin-le-Noble seit 10.02.1926. Le Malesherbois Reifenfabrik erste Reifen am 28.07.1926 (vorher in keiner Messung seit 19.09.1922), erstmals verschifft am 11.08.1926 über Labenne Hafen nach Lardy Hafen Nord; Lardy Fahrzeugfabrik ohne Produktion. Erfunden: Brief, Bürgermeister, Neubürgerin, Stempel, Druckerei, Stadtplan.",
+      "refs": {
+        "staedte": [
+          174642,
+          174632,
+          174617,
+          174612
+        ],
+        "linien": [
+          173091,
+          459738,
+          442316,
+          305408,
+          449225,
+          342595,
+          413844
+        ],
+        "personen": [],
+        "betriebe": [
+          467127,
+          334696,
+          187786,
+          389582
+        ]
+      }
+    },
+    {
+      "id": "1926-10-ahnentafel-lardy",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1926-10",
+      "lead": true,
+      "rubrik": "Ahnentafel · Lardy",
+      "titel": "Neun auf einmal. Die Ahnentafel des ersten Automobils aus Lardy",
+      "teaser": "Am 18. Oktober 1926 meldet die Lardy Fahrzeugfabrik zum ersten Mal Fahrzeuge, neun Stück. Seit mindestens September 1922 stand sie im Register, ohne eines zu bauen. Damit es so weit kam, mussten in Grenay, Ferrières-sur-Mer, Labenne und in Lardy selbst andere Werke anlaufen. Wir haben die Vorfahren aufgeschrieben.",
+      "body": [
+        "Ahnentafel. Proband: Automobil Nr. 1 der Lardy Fahrzeugfabrik. Geboren am 18. Oktober 1926 in Lardy, zusammen mit acht Geschwistern. Farbe und Gewicht: nicht verzeichnet. Taufpate: keiner, die Société hatte zu tun.",
+        "Erste Generation, die Eltern. Ein Automobil hat drei: Blech, Maschinen und Reifen.",
+        "Die Reifen stammen aus der Le Malesherbois Reifenfabrik in Ferrières-sur-Mer. Die ersten zehn kamen am 28. Juli 1926 zur Welt, am 11. August gingen sie zum ersten Mal an Bord, auf den Terra Nova über Labenne nach Lardy Hafen Nord. Im September stellte die Société auf dieser Strecke ein drittes Schiff dazu. Die Reifen sind das jüngste Elternteil und waren wohl das letzte, das noch fehlte.",
+        "Die Maschinen stammen aus der Labenne Maschinenfabrik, die schon 1922 Maschinen machte, lange bevor jemand in Lardy welche brauchte. Ihre Maschinen fahren seit April 1925 auf derselben Strecke wie später die Reifen und seit Oktober 1925 auch auf den sieben Terra Nova, die von Pointe des Pêcheurs über Labenne und Lardy nach Port des Alizés fahren.",
+        "Das Blech: Vaterschaft nicht eindeutig. Am Lardy Hafen Nord kommt Blech auf zwei Linien an, seit Juni 1925 mit den Terra Nova aus Ferrières-sur-Mer, wo das Le Malesherbois Stahlwerk am 15. Juni 1925 zum ersten Mal goss, und seit Juli 1925 mit den sieben Terra Nova zwischen Pointe des Pêcheurs und Port des Alizés. Welches Blech im Automobil Nr. 1 steckt, sagt keine Messung.",
+        "Zweite Generation, die Großeltern.",
+        "Des Blechs: Eisenerz aus dem Lardy Eisenerzbergwerk, 1925 zweimal ausgebaut. Es fährt seit Mai 1925 auf drei Terra Nova von Lardy Hafen West nach Le Malesherbois Hafen #1 und kommt als Blech zurück. Trägt das Automobil Nr. 1 Blech aus Ferrières, ist es also zum Teil aus Lardy selbst gemacht und sein eigener Großvater. Dazu Kohle aus dem Le Malesherbois Kohlebergwerk, 1925 dreimal ausgebaut.",
+        "Der Reifen: Gummi aus der Grenay Gummiplantage. Sie stand bis Dezember 1925 auf Stufe 5 und wurde bis zum 5. August 1926 sechsmal ausgebaut, auf Stufe 11. Ihren Gummi fahren sechzig Schaufelraddampfer über Le Malesherbois Hafen, so viele Schiffe wie auf keiner anderen Linie.",
+        "Der Maschinen: Stahl und Kunststoff. Den Stahl bringen die Erzschiffe seit Juni 1925 von Ferrières nach Labenne. Woher der Kunststoff kommt, ist nicht ermittelt.",
+        "Dritte Generation, die Paten. An fünf Stellen der Familie fährt seit 1925 oder 1926 ein Omnibus der Société bis zu einem Halt, der nach dem Werk heißt, immer zwei Wagen Yellow Coach Modell W: zum Lardy Eisenerzbergwerk seit 5. Mai 1925, zum Le Malesherbois Kohlebergwerk seit 9. Mai 1925, zur Labenne Maschinenfabrik seit 17. Oktober 1925, zur Grenay Gummiplantage seit 31. Oktober 1925 und zur Le Malesherbois Reifenfabrik seit 2. März 1926. Zur Fahrzeugfabrik selbst führt keine eigene Linie.",
+        "Lebenslauf. 18. Oktober: geboren, mit acht Geschwistern. In derselben Messung zählt Pointe des Pêcheurs 2.000 Einwohner. Wer zuerst da war, das Automobil oder der Zweitausendste, ist nicht festzustellen. 21. Oktober: 17 Fahrzeuge gebaut, 15 davon an Bord der Terra Nova, die von Lardy Hafen Nord weiter nach Port des Alizés fahren. 25. Oktober: 24 gebaut. 29. Oktober: alle 24 an Bord.",
+        "Erwartete Nachkommen. Fahrzeuge verlangen auf dem Archipel drei Städte: Bourg-l’Écorce 300, Port des Alizés 122, Anse Dorée 76. Bis Ende Oktober hat keine eines bekommen.",
+        "Nachbemerkung. Der Junge in Lardy, der im Mai 1925 seiner Großmutter schrieb, in der großen Halle sei niemand und Steine kämen nicht als etwas anderes zurück, hat ihr wieder eine Postkarte geschickt. Darauf steht eine Zeile: „Papa hatte recht, und in der Halle ist jetzt jemand.“"
+      ],
+      "grounding": "Gemessen: Lardy Fahrzeugfabrik (Stufe 1, Eingänge Blech, Maschinen, Reifen) seit mindestens 19.09.1922 im Register, ohne Produktion in jeder Messung bis 17.10.1926; am 18.10.1926 9 Fahrzeuge, am 21.10.1926 17 (15 verschifft), am 25.10.1926 24, am 29.10.1926 24 verschifft auf WC Passagiere,Blech,Stahl,+2-PoidesPêc-PordesAli-RE-1 (7 Terra Nova, Pointe des Pêcheurs Hafen #1 – Labenne Hafen – Lardy Hafen Nord – Port des Alizés Hafen #1). Le Malesherbois Reifenfabrik erste Reifen am 28.07.1926, erstmals verschifft am 11.08.1926 auf WC Passagiere,Reifen,Maschinen-Fer-Lar-RE-1 (Le Malesherbois Hafen – Labenne Hafen – Lardy Hafen Nord; Maschinen dort seit 23.04.1925; am 10.09.1926 von 2 auf 3 Schiffe). Labenne Maschinenfabrik produziert 1922. Blech auf WC Passagiere,Blech,Kohle-Lar-Fer-IC-1 seit 15.06.1925 (erste Produktion Le Malesherbois Stahlwerk am selben Tag) und auf der RE-1-Linie aus Pointe des Pêcheurs seit 12.07.1925, Maschinen dort seit 14.10.1925. Eisenerz auf WC Passagiere,Stahl,Eisenerz-Lar-Lab-RE-1 seit 20.05.1925, Stahl dort seit 15.06.1925. Lardy Eisenerzbergwerk ausgebaut am 20.05. und 04.07.1925, Le Malesherbois Kohlebergwerk am 11.06., 25.07. und 23.10.1925; Grenay Gummiplantage von Stufe 5 auf 11 (Ausbauten 18.12.1925, 04.02., 21.03., 06.05., 20.06., 05.08.1926), 60 Schaufelraddampfer auf der Gummilinie seit 02.07.1925, die meisten Fahrzeuge einer Linie (18.10.1926). Omnibuslinien mit je 2 Yellow Coach Modell W: Bus Passagiere-Lar-LO-1, -Fer-LO-1, -Lab-LO-1, -Gre-LO-1, -Fer-LO-5. Pointe des Pêcheurs 2.000 Einwohner am 18.10.1926. Fahrzeuge verlangt (18.10.1926): Bourg-l’Écorce 300, Port des Alizés 122, Anse Dorée 76, jeweils 0 gedeckt. Welche Lieferung in die Fabrik ging, ist nicht gemessen. Erfunden: Ahnentafel, Verwandtschaftsbilder, Taufpate, der Junge und seine Postkarte.",
+      "refs": {
+        "staedte": [
+          174612,
+          174642,
+          174619,
+          174625,
+          174602,
+          174632,
+          174605,
+          174645
+        ],
+        "linien": [
+          194859,
+          413844,
+          321922,
+          212158,
+          458439,
+          384318,
+          305408,
+          386859,
+          480856,
+          449225
+        ],
+        "personen": [],
+        "betriebe": [
+          389582,
+          467127,
+          334696,
+          187786,
+          362454,
+          371203,
+          182564
+        ]
+      }
+    },
+    {
+      "id": "1926-12-fahrtenbuch-isidore",
+      "typ": "portraet",
+      "art": "fiktion",
+      "date": "1926-12",
+      "lead": true,
+      "rubrik": "Fahrtenbuch · Fontenay-aux-Roses",
+      "titel": "Nach einundzwanzig Jahren zu Fuß. Das Fahrtenbuch von Isidore Valère, 1926",
+      "teaser": "Seit Ende 1904 kennen die Messbücher Isidore Valère aus Fontenay-aux-Roses, und bis März 1926 ging er jeden gemessenen Weg zu Fuß. Am 18. März sitzt er zum ersten Mal im Automobil. Im Dezember geht er wieder. Sein Fahrtenbuch, mit Randbemerkungen von Marceline Philogène aus La Mulatière.",
+      "body": [
+        "Fahrtenbuch I. V., angelegt am 18. März 1926. Vorbemerkung: Ich schreibe nur die Tage auf, an denen sich etwas ändert. An allen anderen fahre ich oder gehe ich, wie am Tag davor.",
+        "Nachgetragen: 1904 bis 1925 zu Fuß. 20. Januar 1926: Stelle verloren. 8. Februar: neue Stelle, weiter weg als die alte. Zu Fuß.",
+        "18. März. Automobil. Zum ersten Mal. Bemerkung: Es ist schneller, als ich gedacht habe, und lauter, als ich gehofft habe.",
+        "Randbemerkung M. P.: Er hat mir geschrieben, die Bäume am Weg seien jetzt Striche. Ich habe ihm einen gepressten Zweig geschickt, damit er weiß, wie ein Baum aussieht, wenn er stillsteht.",
+        "17. April. Zu Fuß. Der Wagen steht. Bemerkung: Ich wollte wissen, ob ich es noch kann.",
+        "20. Juni. Automobil.",
+        "11. Juli. Stelle verloren. Gefahren bin ich trotzdem. Wohin, schreibe ich nicht auf.",
+        "15. Juli. Neue Stelle. Zu Fuß.",
+        "Randbemerkung M. P.: Am 5. Juli habe ich meine Stelle verloren und am 19. eine neue gefunden. Er ist in diesen Tagen einmal ohne Stelle gefahren. Ich bin gegangen, wie an jedem Tag dieses Jahres.",
+        "23. August. Automobil. 1. Oktober. Zu Fuß. 16. November. Automobil.",
+        "10. Dezember. Stelle verloren. Automobil.",
+        "13. Dezember. Stelle wieder, und zwar dieselbe wie 1925. Zu Fuß. Bemerkung: Der Wagen ist mit der weiten Stelle gekommen und mit ihr gegangen.",
+        "Jahresabschluss, von der Redaktion nach den Messbüchern: 1926 hat der Monitor Isidore Valère 104-mal angetroffen, 67-mal zu Fuß, 37-mal im Automobil, keinmal in Bus, Bahn oder Schiff. In den Jahren 1904 bis 1925 waren es 1.932 Messungen, alle zu Fuß. Woher das Automobil kommt, sagt die Messung nicht. Aus Lardy jedenfalls nicht: Die ersten 24 Fahrzeuge von dort fahren seit Ende Oktober als Ladung auf den Terra Nova und sind bis Jahresende in keiner Stadt angekommen.",
+        "Herbarium, Dezember 1926. Ein Löwenzahn, flach wie ein Strich. Beschriftung I. V.: Hing am Kühler. Beschriftung M. P.: Den hätte ich lieber stehend gesehen."
+      ],
+      "grounding": "Gemessen (Personen 45714 und 126758 der Beobachtungsgruppe): Isidore Valère, Wohnort Fontenay-aux-Roses, erste Messung 30.12.1904, 1904–1925 alle 1.932 Messungen zu Fuß; 1926 104 Messungen, 67 zu Fuß, 37 mit dem Auto, 0 mit öffentlichem Verkehr; erste Autofahrt 18.03.1926. Wechsel laut Detailmessungen: ohne Arbeit 20.01.1926, neue Arbeit 08.02., Auto 18.03., zu Fuß 17.04., Auto 20.06., ohne Arbeit 11.07. (Auto), neue Arbeit 15.07. (zu Fuß), Auto 23.08., zu Fuß 01.10., Auto 16.11., ohne Arbeit 10.12. (Auto), Arbeit 13.12.1926 am selben Arbeitsplatz wie ab 25.07.1925 (zu Fuß). Marceline Philogène, Wohnort La Mulatière, 1926 alle 104 Messungen zu Fuß, ohne Arbeit 05.–19.07.1926. 24 Fahrzeuge der Lardy Fahrzeugfabrik als Ladung auf WC Passagiere,Blech,Stahl,+2-PoidesPêc-PordesAli-RE-1 in jeder Messung vom 29.10.1926 bis Jahresende; Fahrzeuge in keiner Stadt geliefert. Entfernung der Arbeitsplätze nicht gemessen. Namen von der Redaktion vergeben. Erfunden: Fahrtenbuch, Bemerkungen, Briefe, Herbarium und Pflanzen.",
+      "refs": {
+        "staedte": [
+          174615,
+          174631,
+          174612
+        ],
+        "linien": [
+          194859
+        ],
+        "personen": [
+          45714,
+          126758
+        ],
+        "betriebe": [
+          389582
+        ]
+      }
+    },
+    {
+      "id": "1927-01-uebergabebuch-re1",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1927-01",
+      "lead": true,
+      "rubrik": "Übergabebuch · RE-1",
+      "titel": "Zwölf Atlantic ab, dreizehn SU an. Das Übergabebuch von Lokführer Hippolyte Rosemond",
+      "teaser": "Am 2. Januar 1927 ziehen auf der Hauptstrecke von Port des Alizés nach Anse Dorée keine Atlantic mehr, sondern zwölf Lokomotiven der Russischen Baureihe SU, eines Modells, das es erst seit diesem Jahr gibt. Am 5. Januar sind es dreizehn. Hippolyte Rosemond, Lokführer auf der RE-1, hat die Übergabe festgehalten.",
+      "body": [
+        "Übergabebuch der Linie RE-1: Gare de Port des Alizés, Gare de la Pointe des Pêcheurs, Bourg-l’Écorce Gare Centrale, Valmorin Gare des Collines, Anse Dorée Les Jardins und zurück. Geführt von H. Rosemond.",
+        "Bestand am 1. Januar 1927: zwölf Züge, jeder mit einer Amerikanischen 4-4-2 Atlantic vor Heavyweight-Parlor-Wagen. So steht es in den Büchern, so weit ich zurückblättere, bis September 1922. Als man mich 1911 nach meiner Strecke fragte, fuhren hier zehn.",
+        "2. Januar 1927. Übergabe.",
+        "Zug 1. Atlantic ab, SU an. Bemerkung: längerer Kessel, tiefere Pfeife. Ich habe dreimal gepfiffen, um sicherzugehen.",
+        "Zug 2. Desgleichen. Bemerkung des Heizers: mehr Schaufeln.",
+        "Zug 3 bis 11. Desgleichen. Bemerkung: Neunmal dasselbe zu schreiben ist auch Arbeit.",
+        "Zug 12. Atlantic ab, SU an. Bemerkung: Die letzte Atlantic dieser Strecke hat beim Abkuppeln noch einmal Dampf abgelassen. Der Werkstattmeister sagt, das sei ein Ventil. Ich schreibe es trotzdem hin.",
+        "5. Januar. Zug 13. Neu. SU mit eigenen Parlor-Wagen. Wer ihn fährt, steht noch nicht fest. Bemerkung des Heizers: Dreizehn sei eine gute Zahl für eine Lokomotive aus Russland. Er war nie in Russland.",
+        "Verbleib der Atlantic: Im Buch steht nur „abgegeben“. Personenzüge zieht auf dem Archipel seit heute keine Atlantic mehr. Neun fahren noch vor Güterzügen, auf vier Linien. Auf der Chemiestrecke von Lamballe-Armor nach Aniche sind sie schon am 13. Januar 1926 durch Krokodile ersetzt worden. Auf der RE-1 waren wir die Letzten.",
+        "Von den Bahnsteigen. In Valmorin hat Lucie gefragt, ob die Russen Hemden mitgebracht haben. Valmorin bekommt seit Januar 1924 keine. Nein. In Anse Dorée hat Madame Rosalie gefragt, ob die SU Zucker zieht. Die Stadt verlangt 397 Säcke und hat in keiner Messung je einen bekommen. Die SU zieht Parlor-Wagen. Ich habe ihr die Frage nicht übelgenommen.",
+        "In Port hat Honorine ins Wettbuch geschrieben: „Wette: Sagt Rosemond bis Ostern noch ‚meine Atlantic‘, wenn er die SU meint? Einsatz: ein Rum.“ Ich habe dagegen gesetzt. Ich habe heute zweimal „meine Atlantic“ gesagt.",
+        "31. Januar. Die SU ziehen gut. In der Monatsübersicht der Société ist die Kasse im Januar zum ersten Mal seit einem Jahr kleiner als im Monat davor. Was die Lokomotiven gekostet haben, steht nicht in meinem Buch. In meinem Buch steht, dass sie ziehen."
+      ],
+      "grounding": "Gemessen: TP Passagiere-PordesAli-AnsDor-RE-1 (Gare de Port des Alizés – Gare de la Pointe des Pêcheurs – Bourg-l’Écorce – Gare Centrale – Valmorin – Gare des Collines – Anse Dorée – Les Jardins und zurück) mit 12 Fahrzeugen aus Amerikanische 4-4-2 Atlantic und Heavyweight 28-1 Parlor in jeder geprüften Messung vom 19.09.1922 bis 01.01.1927; am 02.01.1927 12 Russische Baureihe SU (neues Modell, verfügbar ab 1927), am 05.01.1927 13; im Dezember 1911 10 Fahrzeuge. Seit 02.01.1927 keine Atlantic mehr in Personenzügen; 9 Atlantic auf 4 Güterzuglinien. TC Chemikalien,Farbstoffe-Lam-Ani-IC-1: 3 Atlantic durch 3 Ce 6/8 II Krokodil ersetzt am 13.01.1926. Valmorin Kleidung 0 seit 27.01.1924; Anse Dorée Zucker 0 von 397 (10.01.1927), in keiner Messung geliefert. Kasse in der Monatsübersicht: Dezember 1926 2.373,6 Mio., Januar 1927 2.309,8 Mio., zuletzt gesunken im Januar 1926. Kosten der Lokomotiven nicht gemessen. Erfunden: Hippolyte Rosemond, Übergabebuch, alle Bemerkungen, Heizer, Werkstattmeister, Lucie, Madame Rosalie, Honorine und die Wette.",
+      "refs": {
+        "staedte": [
+          174632,
+          174602,
+          174605,
+          174607,
+          174645,
+          174614,
+          174600
+        ],
+        "linien": [
+          322356,
+          360353
+        ],
+        "personen": [],
+        "betriebe": []
+      }
+    },
+    {
+      "id": "1927-02-funkverkehr-terra-nova",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1927-02",
+      "lead": true,
+      "rubrik": "Funkverkehr · Lardy – Port des Alizés",
+      "titel": "„Vierundzwanzig Automobile an Bord, bitte Anweisung.“ Der Funkverkehr eines Winters",
+      "teaser": "Am 21. Oktober 1926 gehen die ersten Fahrzeuge aus Lardy an Bord der Terra Nova, die zwischen Pointe des Pêcheurs, Labenne, Lardy und Port des Alizés fahren. An Land kommen sie erst im Februar 1927. Dazwischen liegt ein Winter auf See. Aus dem Spruchbuch der Funkstelle am Hafen von Port des Alizés.",
+      "body": [
+        "Spruchbuch der Funkstelle Port des Alizés Hafen #1. Auszug. Funker: Jules Marchal.",
+        "21.10.1926, 09.40 Uhr. Terra Nova an Port: Ab Lardy Hafen Nord 15 Automobile an Bord, fabrikneu, erste Ladung der Lardy Fahrzeugfabrik. Erbitten Anweisung, wo löschen.",
+        "21.10.1926, 09.52 Uhr. Port an Terra Nova: Anweisung folgt. Glückwunsch.",
+        "29.10.1926, 14.05 Uhr. Terra Nova an Port: Weitere neun übernommen, zusammen 24. Platz an Bord für 50. Anweisung?",
+        "29.10.1926, 16.30 Uhr. Port an Terra Nova: Heute zwei Lastwagen AMO F-15 der Société in Dienst gestellt, Linie Station Zentrum – Station Transfer, Bezeichnung Fahrzeuge. Ladung: noch keine. Bitte an Bord behalten.",
+        "11.11.1926. Terra Nova an Port: 24 an Bord. Fahren unsere Runde, Pointe, Labenne, Lardy, Port. Ladung unverändert.",
+        "02.12.1926. Port an Terra Nova: Weiter an Bord behalten. Anweisung von oben steht aus.",
+        "24.12.1926. Terra Nova an Port: Frohe Weihnachten von sieben Schiffen und 24 Automobilen. Die Matrosen haben einem Wagen eine Kerze auf die Haube gestellt.",
+        "25.12.1926. Port an Terra Nova: Danke. Die Société zählt heute 1.350 Fahrzeuge. Ihre 24 sind nicht dabei. Sie sind Ladung.",
+        "02.01.1927. Terra Nova an Port: Hören, auf der Eisenbahn fahren jetzt Russen. Bei uns weiter 24 Automobile. Sie rosten nicht, melden die Matrosen. Sie werden jeden Tag poliert, aus Langeweile.",
+        "Januar 1927, mehrfach. Port an Terra Nova: Behalten. Terra Nova an Port: Behalten verstanden.",
+        "13.02.1927. Terra Nova an Port: Unverändert 24. Bitte Anweisung. Die Matrosen haben den Automobilen Namen gegeben.",
+        "18.02.1927, 07.15 Uhr. Port an Terra Nova: Löschen in Port des Alizés. Die Lastwagen übernehmen.",
+        "18.02.1927, 11.40 Uhr. Vermerk der Funkstelle: 15 Automobile von Bord. Zwölf auf den zwei Lastwagen AMO F-15, Linie Station Zentrum – Station Transfer. Neun noch an Bord. Wo die übrigen drei stehen, ist nicht vermerkt.",
+        "26.02.1927. Terra Nova an Port: Keine Automobile mehr an Bord, nach gut vier Monaten. Bitte den Lastwagen ausrichten: gut festhalten. Sie sind das Fahren auf Wasser gewohnt.",
+        "Vermerk der Funkstelle, Ende Februar 1927: Port des Alizés verlangt 122 Automobile und hat in keiner Messung eines bekommen. Die zwölf stehen auf den Lastwagen. Honorine hat eine Wette eröffnet, dass das erste Automobil aus Lardy vor Ostern in der Stadt ankommt. Schiedsrichter: Inspecteur Lebrun."
+      ],
+      "grounding": "Gemessen: Lardy Fahrzeugfabrik erste Fahrzeuge am 18.10.1926; auf WC Passagiere,Blech,Stahl,+2-PoidesPêc-PordesAli-RE-1 (7 Terra Nova, Pointe des Pêcheurs Hafen #1 – Labenne Hafen – Lardy Hafen Nord – Port des Alizés Hafen #1, Fahrzeugplätze 50) Fahrzeuge als Ladung: 15 am 21.10.1926, 24 in jeder Messung vom 29.10.1926 bis 13.02.1927, 9 am 18.02.1927, 0 ab 26.02.1927. RC Fahrzeuge-PordesAli-LO-1 (Port des Alizés Station Zentrum – Station Transfer, 2 AMO F-15) seit 29.10.1926, ohne Ladung bis 13.02.1927, ab 18.02.1927 12 von 12 Fahrzeugen geladen. Netz 1.350 Fahrzeuge am 25.12.1926; Russische Baureihe SU auf der RE-1 seit 02.01.1927. Port des Alizés verlangt 122 Fahrzeuge, 0 gedeckt in jeder Messung bis Februar 1927; die Fabrik meldet keine Auslieferung. Verbleib der übrigen 3 am 18.02.1927 nicht gemessen. Erfunden: Funkstelle, Funker, alle Sprüche und Uhrzeiten, Matrosen, Kerze, Namen, Honorines Wette und Inspecteur Lebrun.",
+      "refs": {
+        "staedte": [
+          174612,
+          174632,
+          174602,
+          174619
+        ],
+        "linien": [
+          194859,
+          495634
+        ],
+        "personen": [],
+        "betriebe": [
+          389582
+        ]
+      }
+    },
+    {
+      "id": "1927-02-einordnung-fahrzeugkette",
+      "typ": "einordnung",
+      "art": "einordnung",
+      "date": "1927-02",
+      "rubrik": "Einordnung · Fahrzeugkette",
+      "titel": "Vom Gummi in Grenay bis zum Lastwagen in Port. Die Fahrzeugkette in Zahlen",
+      "teaser": "Seit Oktober 1926 baut die Lardy Fahrzeugfabrik Automobile, die einzige Fahrzeugfabrik in den Messbüchern. Was die Messungen über die Kette dahinter zeigen, wo die ersten Fahrzeuge geblieben sind und was noch offen ist.",
+      "body": [
+        "Die Fabrik. Die Lardy Fahrzeugfabrik steht seit mindestens 19.09.1922 auf Stufe 1 im Register und hat in keiner Messung bis 17.10.1926 produziert. Am 18.10.1926 meldet sie 9 Fahrzeuge, am 25.10.1926 24. Sie braucht Blech, Maschinen und Reifen.",
+        "Maschinen. Die Labenne Maschinenfabrik produziert schon 1922. Ihre Maschinen fahren seit 23.04.1925 auf WC Passagiere,Reifen,Maschinen-Fer-Lar-RE-1 (Le Malesherbois Hafen – Labenne Hafen – Lardy Hafen Nord) und seit 14.10.1925 auch auf der Linie von Pointe des Pêcheurs über Labenne und Lardy nach Port des Alizés (7 Terra Nova).",
+        "Blech. Das Le Malesherbois Stahlwerk in Ferrières-sur-Mer produziert seit 15.06.1925, davor in keiner Messung seit 1922. Sein Erz kommt seit 20.05.1925 per Frachtschiff aus dem Lardy Eisenerzbergwerk, seine Kohle aus dem Le Malesherbois Kohlebergwerk (1925 dreimal ausgebaut). Blech fährt seit 15.06.1925 auf WC Passagiere,Blech,Kohle-Lar-Fer-IC-1 nach Lardy Hafen Nord, seit 12.07.1925 zusätzlich auf der Linie aus Pointe des Pêcheurs.",
+        "Reifen. Die Le Malesherbois Reifenfabrik (geschlossen am 06.09.1924, seit 01.11.1924 wieder im Register) macht am 28.07.1926 die ersten 10 Reifen und verschifft am 11.08.1926 zum ersten Mal Reifen nach Lardy Hafen Nord. Vorher wurde die Grenay Gummiplantage zwischen 18.12.1925 und 05.08.1926 sechsmal ausgebaut, von Stufe 5 auf 11. Ihr Gummi fährt seit Februar 1925 auf Schaufelraddampfern nach Le Malesherbois Hafen: 10 Schiffe, ab 14.02.1925 30, ab 02.07.1925 60, die meisten Fahrzeuge auf einer Linie im ganzen Netz (Stand Februar 1927).",
+        "Bis zum ersten Fahrzeug. Blech und Maschinen erreichten Lardy Hafen Nord seit Mitte 1925, Reifen erst ab 11.08.1926. Gut zwei Monate später, am 18.10.1926, meldet die Fabrik die ersten Fahrzeuge. Die Messungen sprechen dafür, dass die Reifen das letzte fehlende Glied waren. Was tatsächlich in der Fabrik ankam, misst der Monitor nicht.",
+        "Nach der Fabrik. Am 21.10.1926 sind 15 Fahrzeuge als Ladung auf den Terra Nova der Linie Pointe des Pêcheurs – Labenne – Lardy – Port des Alizés, ab 29.10.1926 24, in jeder Messung bis 13.02.1927. In Port des Alizés gibt es seit 29.10.1926 die Lastwagenlinie RC Fahrzeuge-PordesAli-LO-1 (2 AMO F-15, Station Zentrum – Station Transfer). Bis 13.02.1927 fährt sie leer. Am 18.02.1927 sind noch 9 Fahrzeuge auf den Schiffen und 12 auf den Lastwagen, ab 26.02.1927 keines mehr auf den Schiffen.",
+        "Nachfrage. Fahrzeuge verlangen drei Städte: Bourg-l’Écorce (272 im Oktober 1924, 305 im Januar 1927), Port des Alizés (122 in jeder Messung seit Oktober 1924) und Anse Dorée (73 bis 77). Gedeckt ist in keiner Messung auch nur eines, und die Fabrik meldet keine Auslieferung.",
+        "Einordnung. Die Kette hat rund anderthalb Jahre gebraucht, vom ersten Gummischiff (Februar 1925) und dem ersten Blech (Juni 1925) über die ausgebaute Gummiplantage bis zum ersten Reifen (Juli 1926) und zum ersten Fahrzeug (Oktober 1926). Seit Oktober liegt die Lücke hinter der Fabrik: Vier Monate lang zeigt keine Messung, dass die Fahrzeuge irgendwo abgeladen wurden, und auch die zwölf auf den Lastwagen sind bis Ende Februar in keiner Stadt angekommen. Warum, misst der Monitor nicht. Ob die erste Lieferung die Stadt erreicht, zeigen erst die nächsten Messungen."
+      ],
+      "grounding": "Alle Zahlen gemessen (Detailmessungen 19.09.1922–Februar 1927; Lücke 18.01.–09.10.1924 für die Fabriken eigens geprüft). Industrieangaben aus Produktion, Versand und Auslieferung im Jahreswert; Ladung je Linie aus der Linienladung (belegte Plätze). Deutung der Redaktion: dass die Reifen das letzte fehlende Glied waren, und dass die Lücke seit Oktober 1926 im Weg von den Schiffen in die Stadt liegt. Was in die Fabrik geliefert wurde und warum die Fahrzeuge an Bord blieben, ist nicht gemessen.",
+      "refs": {
+        "staedte": [
+          174612,
+          174642,
+          174619,
+          174625,
+          174632,
+          174605,
+          174645,
+          174602
+        ],
+        "linien": [
+          413844,
+          194859,
+          321922,
+          212158,
+          458439,
+          495634
+        ],
+        "personen": [],
+        "betriebe": [
+          389582,
+          362454,
+          334696,
+          187786,
+          182564,
+          467127,
+          371203
+        ]
+      }
+    },
+    {
+      "id": "1927-03-extrablatt-erste-lieferung",
+      "typ": "artikel",
+      "art": "fiktion",
+      "date": "1927-03",
+      "lead": true,
+      "rubrik": "Extrablatt · Port des Alizés",
+      "titel": "Sie sind da! Die ersten Automobile aus Lardy erreichen Port des Alizés",
+      "teaser": "Am 16. März 1927, knapp fünf Monate nach der ersten Verschiffung, meldet die Lardy Fahrzeugfabrik zum ersten Mal eine Auslieferung: zwölf Fahrzeuge. In Port des Alizés sind 8 der 122 verlangten Automobile gedeckt. Ein Extrablatt mit Stimmen aus der Stadt.",
+      "body": [
+        "EXTRABLATT · Mittwoch, 16. März 1927 · Preis: 5 Centimes, für Automobilisten frei.",
+        "Die Nachricht. Seit heute steht in den Büchern von Port des Alizés eine Zahl, die dort noch nie stand: Fahrzeuge, gedeckt 8, verlangt 122. Die Lardy Fahrzeugfabrik meldet zum ersten Mal, seit sie im Register steht, eine Auslieferung: zwölf Fahrzeuge.",
+        "Der Weg. Gebaut ab dem 18. Oktober 1926 in Lardy. Am 21. Oktober die ersten an Bord der Terra Nova, ab dem 29. Oktober 24, und so den ganzen Winter. Am 18. Februar zwölf von Bord auf zwei Lastwagen der Société, Linie Station Zentrum – Station Transfer. Dort standen sie gut drei Wochen. Ab dem 12. März wurden sie abgeladen: an diesem Tag waren noch zehn auf den Wagen, am 13. sechs, am 14. zwei, heute keines mehr. Von der ersten Verschiffung bis heute: 146 Tage.",
+        "Am Hafen. Funker Jules Marchal hat das Spruchbuch des Winters geschlossen und als letzte Zeile eingetragen: „Angekommen. Behalten aufgehoben.“ Die Matrosen der Terra Nova lassen fragen, ob die Automobile ihre Namen behalten dürfen.",
+        "Bei Chez Honorine. Die Wette, dass das erste Automobil aus Lardy vor Ostern in der Stadt ist, hat Honorine gewonnen, einen Monat vor dem Fest. Schiedsrichter Inspecteur Lebrun hat die Bücher geprüft und den Spruch in einem Satz gefällt: „Acht von hundertzweiundzwanzig ist nicht viel, aber es ist nicht null.“ Honorine schenkt heute Abend Rum aus, so viel Port davon hat.",
+        "In der Rue du Maine. Madame Albertine Roux, deren Enkel Bastien in Lardy wohnt, hat sich an die Straße gestellt und gewartet. Sie sagt, sie wisse nicht, ob eines der Automobile an ihr vorbeigefahren sei. Aber sie habe Bastien geschrieben, dass sie gewartet hat, und das sei die Hauptsache.",
+        "Was noch fehlt. Bourg-l’Écorce verlangt 305 Fahrzeuge, Anse Dorée 77. Beide haben noch keines. In Lardy baut die Fabrik seit heute wieder.",
+        "In eigener Sache. Diese Zeitung hat im Oktober die Ahnentafel des ersten Automobils aus Lardy gedruckt und im Februar den Funkverkehr eines Winters. Heute können wir den Satz schreiben, auf den wir seitdem gewartet haben: Es ist angekommen."
+      ],
+      "grounding": "Gemessen: RC Fahrzeuge-PordesAli-LO-1 (Port des Alizés Station Zentrum – Station Transfer, 2 AMO F-15) mit 12 Fahrzeugen beladen vom 18.02.1927 bis 11.03.1927, danach 10 (12.03.), 6 (13.03.), 2 (14.03.), 0 (16.03.1927); Port des Alizés, Bezirk Industrie: Fahrzeuge 8 von 122 gedeckt (Detailmessung 16.03.1927), vorher in keiner Messung; Lardy Fahrzeugfabrik Auslieferung im Jahreswert erstmals 12 (16.03.1927), produziert an diesem Tag wieder; erste Fahrzeuge am 18.10.1926, erste Verschiffung am 21.10.1926 (146 Tage bis 16.03.1927). Bourg-l’Écorce verlangt 305, Anse Dorée 77 Fahrzeuge, jeweils 0 gedeckt (16.03.1927). Ostern 1927 ist am 17. April. Was zwischen dem 18.02. und dem 12.03.1927 an der Station geschah, ist nicht gemessen. Erfunden: Extrablatt, Funker Jules Marchal, Matrosen, Honorine, Inspecteur Lebrun, die Wette, Madame Albertine Roux und Bastien, alle Äußerungen.",
+      "refs": {
+        "staedte": [
+          174632,
+          174612,
+          174605,
+          174645
+        ],
+        "linien": [
+          495634,
+          194859
+        ],
+        "personen": [],
+        "betriebe": [
+          389582
+        ]
+      }
     }
   ]
 }

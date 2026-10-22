@@ -186,7 +186,7 @@ Vom Spieler bestätigt (18.10.2026). Der Name ist ein eigenes Merkmal und wechse
 | 12 | alizes-journal.fr | Die Zeitung geht online |
 | 14 | Alizés | App-Name, nur noch ein Wort |
 
-## In dieser Welt (Stand Spiel 07.02.1925)
+## In dieser Welt (Stand Spiel 17.03.1927)
 
 So steht es in `zeitleiste.json`, berechnet aus den Messungen:
 
@@ -198,16 +198,18 @@ So steht es in `zeitleiste.json`, berechnet aus den Messungen:
 | 4 Ende der Kutschenzeit | Juni 1920 | Premiere Flugzeug am 14.06.1920 (Linie Port des Alizés – Sin-le-Noble), Name „Journal des Alizés“ |
 | 5 Rundfunkzeit | November 1922 | Bourg-l’Écorce zählt am 17.11.1922 als erste Stadt 4.012 Einwohner (Meldung „Bourg-l’Écorce zählt 4.000 Einwohner“), Rubrik „Radioprogramm“ ab dieser Ausgabe |
 
-Krisenpapier: bisher kein Fall (frühestens 1925).
+Krisenpapier: bisher kein Fall (frühestens 1925; der Rückgang im Januar 1927 von 2.373,6 auf 2.309,8 Mio. liegt weit unter 20 %).
 
 Name der Gesellschaft (Merkmal `firma`, Spielervorgabe vom 19.10.2026): bis September 1921 „Société des Routes et des Rails“, ab der Ausgabe Oktober 1921 „Société des Alizés — Routes, Voyages et Commerce“ mit Notiz „In eigener Sache“ und sechs Ausgaben lang „vormals Société des Routes et des Rails“.
 
 Die Zeitung nahm im Juni 1920 Abschied von der Kutschenzeit, die Kutschen selbst erst später: Die **drei Postkutschen** (gekauft 1900) auf der Buslinie in Anse Dorée (Grande Rue – Domaine des Alizés) fahren zuletzt in der Messung vom 16.04.1924, ab 19.04.1924 fahren dort Daimler Decksitzwagen. Seitdem steht keine Kutsche mehr im Linienbetrieb der Société („Letzter Wille der drei Postkutschen“, April 1924).
 
+Auf der Hauptstrecke RE-1 ersetzen am 02.01.1927 zwölf Lokomotiven der Russischen Baureihe SU (laut Spiel ab 1927 verfügbar) die Atlantic, am 05.01.1927 sind es dreizehn („Übergabebuch“, Januar 1927). Das ist das erste Modell mit Baujahr 1927; für Stufe 6 zählt erst ein Modell ab 1935, frühestens 1932.
+
 ## Offene Fragen
 
 - Stufe 6 (Dreißiger/Vierziger) bauen, kurz bevor das Spiel sie erreichen kann (frühestens 1932).
-- Radioprogramm Monat für Monat weiterschreiben (bisher November 1922 bis Februar 1925, Sender „Radio Alizés · Sender Bourg-l’Écorce“; wiederkehrende Sendungen in `JOURNAL.md` unter „Rundfunkzeit“).
+- Radioprogramm Monat für Monat weiterschreiben (bisher November 1922 bis März 1927, Sender „Radio Alizés · Sender Bourg-l’Écorce“; wiederkehrende Sendungen in `JOURNAL.md` unter „Rundfunkzeit“).
 
 Geklärt am 18.10.2026: Auslöser der Stufen 6, 9, 11, 13 und 14 (Technik-Jahrgänge), Krise als Zustand, Namen je Stufe, Schalter „im heutigen Stil lesen“ kommt, nur das Journal verändert sich, Umfang der ersten Runde (Mechanik, Krisenpapier, Stufen 1 bis 5). Ebenfalls am 18.10.2026: Jost liegt als freie geometrische Schrift der Stufe 4 im Repository (siehe „Schriften“).
 
@@ -215,5 +217,5 @@ Geklärt am 18.10.2026: Auslöser der Stufen 6, 9, 11, 13 und 14 (Technik-Jahrg�
 
 1. Erledigt: Regeldatei `data/epochen.json`, Auswertung in `build-journal.py`, `zeitleiste.json` mit Stufen und Zuständen, Validator und Tests (frühestens, spätestens, Auslöser vor „frühestens“, Zustand beginnt und endet, Rücksprung ändert nichts, gleiche Messungen, ohne Regeldatei byte-identisch).
 2. Erledigt: Anzeige-Gerüst in `journal.js`, Stile für die Stufen 1 bis 4 und das Krisenpapier, Name je Stufe, Notiz „In eigener Sache“, Schalter „im heutigen Stil lesen“, lokale geometrische Schrift (Jost).
-3. Erledigt: Rubriken-Gerüst (Rubrik erscheint ab ihrem Monat) und die Rundfunkzeit (Stufe 5, Radioprogramm von Hand; in dieser Welt seit November 1922, Programme bisher November 1922 bis Februar 1925).
+3. Erledigt: Rubriken-Gerüst (Rubrik erscheint ab ihrem Monat) und die Rundfunkzeit (Stufe 5, Radioprogramm von Hand; in dieser Welt seit November 1922, Programme bisher November 1922 bis März 1927).
 4. Jede spätere Stufe kurz bevor das Spiel sie erreicht.
