@@ -35,6 +35,7 @@ KINDS = {'Bus':('bus','Bus','ROAD'), 'RC':('lkw','Lastwagen','ROAD'), 'Tram':('t
          'WP':('passagierschiff','Passagierschiff','WATER'), 'WC':('frachtschiff','Frachtschiff','WATER'),
          'AP':('flugzeug','Flugzeug','AIR'), 'AC':('frachtflugzeug','Frachtflugzeug','AIR')}
 CARRIER_KIND = {'ROAD':'bus', 'TRAM':'tram', 'RAIL':'personenzug', 'WATER':'frachtschiff', 'AIR':'flugzeug'}
+KIND_CARRIER = {v[0]:v[2] for v in KINDS.values()}
 KIND_LABEL = {v[0]:v[1] for v in KINDS.values()} | {'unbekannt':'Unbekannt'}
 LINE_LABEL = {'bus':'Buslinie', 'lkw':'Lkw-Linie', 'tram':'Straßenbahnlinie', 'personenzug':'Personenzuglinie',
               'gueterzug':'Güterzuglinie', 'passagierschiff':'Passagierschifflinie', 'frachtschiff':'Frachtschifflinie',
@@ -100,6 +101,23 @@ def mixed(line):
         return False
     models = line[5][1] if len(line) > 5 and line[5] else []
     return len({m[7] for m in models if len(m) > 7 and m[7]}) != 1
+
+
+def running(line):
+    """Models with vehicles on a compact line by key; empty without model data."""
+    return {m[0]:m for m in (line[5][1] if len(line) > 5 and line[5] else []) if m[2]}
+
+
+def unchanged_vehicles(before, now, old_kind, kind):
+    """The game may rename a line days after its vehicles changed, or because its goods changed: a line that already ran
+    uniformly with what it runs now was not converted. With vehicle models on both sides every model now running must
+    have run before; without them only a carrier can tell, and only between kinds of different carriers."""
+    if before[2] is None or not before[3]:
+        return False
+    old, new = running(before), running(now)
+    if old and new:
+        return new.keys() <= old.keys()
+    return before[2] == KIND_CARRIER.get(kind) != KIND_CARRIER.get(old_kind)
 
 
 def joined(parts):
@@ -250,9 +268,12 @@ def detect(rows, jumps, latest_places):
                     old_kind = line_kind(old, named[lid][2])
                     gained = [g for g in line_goods(l[1]) if g not in line_goods(old)]
                     lost = [g for g in line_goods(old) if g not in line_goods(l[1])]
+                    # A conversion needs vehicles: a line emptied and renamed by the game converts nothing.
+                    converted = old_kind != kind and kind != 'unbekannt' and bool(l[3])
+                    same = converted and unchanged_vehicles(named[lid], l, old_kind, kind)
                     if not line_goods(old):
                         title, text = 'Linie eingerichtet', f"Aus der vorläufigen Linie „{old}“ wird „{l[1]}“."
-                    elif old_kind != kind and kind != 'unbekannt':
+                    elif converted and not same:
                         text = f"Die Linie „{old}“ wird als {KIND_LABEL[kind]} weitergeführt und heißt jetzt „{l[1]}“."
                         if kind not in kinds_seen and l[3]:
                             add('premiere', row, f"Premiere: {KIND_LABEL[kind]}", text, {'line':lid}, {'art':kind}, key=kind)
@@ -264,6 +285,10 @@ def detect(rows, jumps, latest_places):
                         text = f"„{old}“ {' und '.join(parts)}; neuer Name „{l[1]}“."
                     else:
                         title, text = 'Linie neu geführt', f"„{old}“ heißt jetzt „{l[1]}“."
+                    if same and line_goods(old):
+                        models = running(l).values() if running(named[lid]) else []
+                        text += (f" Es fahren dieselben Modelle wie vorher: {joined([f'{m[2]} {model_name(m[0], m[1])}' for m in models])}."
+                                 if models else f" Schon vorher fuhr sie als {KIND_LABEL[kind]}.")
                     if mixing.get(lid, {}).get('runs', 0) >= 3:
                         text += f" Seit {de(mixing[lid]['row']['d'])} fuhren auf ihr Fahrzeuge verschiedener Art gemeinsam, jetzt nur noch eine."
                     add('linie-neu-gefuehrt', row, title, text, {'line':lid}, {'alt':old, 'neu':l[1], 'neue_waren':gained, 'entfallene_waren':lost}, key=lid)

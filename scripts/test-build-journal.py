@@ -354,9 +354,14 @@ class JournalKindTests(JournalCase):
 
 
 def shared(row, lid, name, carrier, models, places=('Valmorin',)):
-    """Adds line lid to a detail row. The monitor reports no line carrier while vehicles of several carriers share a line."""
-    row['lines'].append({'id':lid, 'name':name, 'carrier':carrier, 'vehicles':sum(m['vehicles'] for m in models), 'places':list(places),
-                         'vehicle_models':models, 'vehicle_models_complete':True})
+    """Adds line lid to a detail row; models is its vehicle_models list or, as before revision 15, only the number of vehicles.
+    The monitor reports no line carrier while vehicles of several carriers share a line."""
+    line = {'id':lid, 'name':name, 'carrier':carrier, 'places':list(places)}
+    if isinstance(models, int):
+        line['vehicles'] = models
+    else:
+        line |= {'vehicles':sum(m['vehicles'] for m in models), 'vehicle_models':models, 'vehicle_models_complete':True}
+    row['lines'].append(line)
     return row
 
 
@@ -403,8 +408,10 @@ class JournalMixedLineTests(JournalCase):
 
     def test_real_conversions_still_count_and_closures_keep_the_reported_name(self):
         lines = {
-            # The game renames a new tram line a few days late: a conversion, as in Pointe des Pêcheurs in October 1924.
-            7:[('Bus Passagiere-Roc-LO-5', 'TRAM', [trams(3)])]+[('Tram Passagiere-Roc-LO-2', 'TRAM', [trams(3)])]*5,
+            # Trams replace the buses between two measurements.
+            11:[('Bus Passagiere-Val-LO-8', 'ROAD', [buses(3)])]+[('Tram Passagiere-Val-LO-9', 'TRAM', [trams(3)])]*5,
+            # A line without vehicles gets its first trams under a new name, as in Bourg-l’Écorce on 15 August 1923.
+            12:[('Bus Passagiere-Roc-LO-6', None, [])]+[('Tram Passagiere-Roc-LO-7', 'TRAM', [trams(2)])]*5,
             # Trams replace buses one by one: two mixed measurements in between, no news of a mix.
             8:[('Bus Passagiere-Val-LO-7', 'ROAD', [buses(4)]), ('Tram Passagiere-Val-LO-6', None, [buses(2), trams(2)]),
                ('Bus Passagiere-Val-LO-7', None, [buses(1), trams(3)])]+[('Tram Passagiere-Val-LO-6', 'TRAM', [trams(4)])]*3,
@@ -420,7 +427,8 @@ class JournalMixedLineTests(JournalCase):
                     shared(row, lid, *course[i])
             rows.append(row)
         meld, _ = self.build({'a':rows})
-        self.assertEqual(self.changes(meld, 7), [('1912-02-01', 'Umstellung auf Straßenbahn')])
+        self.assertEqual(self.changes(meld, 11), [('1912-02-01', 'Umstellung auf Straßenbahn')])
+        self.assertEqual(self.changes(meld, 12), [('1912-02-01', 'Umstellung auf Straßenbahn')])
         self.assertEqual(self.changes(meld, 8), [('1912-02-09', 'Umstellung auf Straßenbahn')])
         conversion = next(e for e in meld['meldungen'] if e['typ'] == 'linie-neu-gefuehrt' and e['refs']['line'] == 8)
         self.assertEqual((conversion['werte']['alt'], conversion['werte']['neu']), ('Bus Passagiere-Val-LO-7', 'Tram Passagiere-Val-LO-6'))
@@ -432,6 +440,32 @@ class JournalMixedLineTests(JournalCase):
         # Without vehicles there is no carrier either, and no mix; before revision 15 the missing carrier alone tells.
         self.assertEqual([journal.mixed([1, 'Bus X', None, 0, [], None]), journal.mixed([1, 'Bus X', None, 2, [], None]),
                           journal.mixed([1, 'Bus X', 'ROAD', 2, [], None])], [False, True, False])
+
+    def test_name_lagging_behind_the_vehicles_or_without_them_is_no_conversion(self):
+        steamer = lambda n:model(63, 'Schaufelraddampfer', n, carrier='WATER')
+        lines = {
+            # Trams from the first measurement on, the bus name follows days later: Port des Alizés, March 1924.
+            7:[('Bus Passagiere-Roc-LO-5', 'TRAM', [trams(3)])]+[('Tram Passagiere-Roc-LO-2', 'TRAM', [trams(3)])]*2,
+            # Without vehicle models the carrier alone shows that trams already ran.
+            13:[('Bus Passagiere-Gar-LO-4', 'TRAM', 2)]+[('Tram Passagiere-Gar-LO-1', 'TRAM', 2)]*2,
+            # Same carrier, same steamers: the name changes with the goods, not with the vehicles.
+            14:[('WP Passagiere-Roc-LO-1', 'WATER', [steamer(2)])]+[('WC Passagiere,Wolle-Roc-Val-IC-1', 'WATER', [steamer(2)])]*2,
+            # The lorries leave and the empty line is renamed as a bus line, as in Sin-le-Noble in January 1923: no bus runs.
+            15:[('RC Fisch-Roc-LO-3', 'ROAD', [model(64, 'Dreitonner Kasten', 3, carrier='ROAD')])]+[('Bus -Roc-LO-4', None, [])]*2}
+        rows = []
+        for i, day in enumerate(DAYS[:3]):
+            row = detail(day, 100*(i+1), BASE)
+            for lid, course in lines.items():
+                shared(row, lid, *course[i])
+            rows.append(row)
+        meld, _ = self.build({'a':rows})
+        self.assertFalse([e for e in meld['meldungen'] if e['titel'].startswith('Umstellung')])
+        self.assertEqual([self.changes(meld, lid) for lid in lines], [[('1912-02-01', 'Linie neu geführt')], [('1912-02-01', 'Linie neu geführt')],
+                                                                     [('1912-02-01', 'Neue Ware: Wolle')], [('1912-02-01', 'Ware entfällt: Fisch')]])
+        text = {e['refs']['line']:e['text'] for e in meld['meldungen'] if e['typ'] == 'linie-neu-gefuehrt'}
+        self.assertEqual(text[7], '„Bus Passagiere-Roc-LO-5“ heißt jetzt „Tram Passagiere-Roc-LO-2“. Es fahren dieselben Modelle wie vorher: 3 Triebwagen F.')
+        self.assertEqual(text[13], '„Bus Passagiere-Gar-LO-4“ heißt jetzt „Tram Passagiere-Gar-LO-1“. Schon vorher fuhr sie als Straßenbahn.')
+        self.assertTrue(text[14].endswith('Es fahren dieselben Modelle wie vorher: 2 Schaufelraddampfer.'))
 
 
 EPOCH_RULES = {'schema_version':1,
