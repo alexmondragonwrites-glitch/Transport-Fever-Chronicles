@@ -15,6 +15,18 @@ Zweite Welt im Archiv, angelegt am 24.10.2026. Eigenständiger TF3-Spielstand, S
 
 Die allgemeine Datenansicht (`index.html?view=archive`) ist noch auf das Archipel zugeschnitten (Wörter wie „Inseln“ im Atlas). Einstieg für die Falkenmark ist `chronik.html`.
 
+## Kapitel anlegen
+
+Jedes Kapitel ist ein `<article class="fm-chapter" id="kapitel-N">` in `#kapitel` und bekommt einen Eintrag in der Kapitelnavigation (`.fm-chapnav`). Aufbau:
+
+1. Kopf: `<h3><span class="fm-chapter-no">Kapitel N</span> Titel</h3>` und `<p class="fm-chapter-period">` mit dem Zeitraum.
+2. Optional ein Bild (`figure.fm-founding`), bei KI-Bildern so gekennzeichnet.
+3. Übersicht `.fm-overview`: Kennzahlen (`.fm-stat`, `--neg` für Verluste), Zeitachse (`ol.fm-timeline`, Schlüsselereignis mit `is-key`) und Linien-Schemata (`figure.fm-route`: `fm-stop`, `fm-leg`, `fm-leg--assumed` für nicht gemessene Verläufe, `fm-stop--ring` für Linien im Ort). Nur Zahlen und Daten, die wörtlich im Text oder im Register stehen.
+4. Textblöcke: `div.fm-block.fm-block--belegt` (Dokumentkasten, Quelle als letzter Absatz `p.fm-source`), `div.fm-block.fm-block--abgeleitet` (Kommentar mit Akzentbalken), `div.fm-scene` (Pergament, Initiale, eingerückte Folgeabsätze).
+5. Quellen als Badge: `<a class="fm-q" href="#q4" data-tip="…" aria-label="Quelle Q4: …">Q4</a>`; die Quellenliste hat die Anker `#q1` bis `#q5`.
+
+Schriften bleiben lokal (Source Serif 4, Jost) bzw. Systemschrift für Zahlen (`--fm-mono`); keine Google Fonts, kein Playfair (Archipel).
+
 ## Ereignisse eintragen
 
 Jeder Eintrag in `events.json` braucht `id`, `date` (`JJJJ`, `JJJJ-MM` oder `JJJJ-MM-TT`, Spielzeit), `kind`, `category`, `title`, `description`, `source`. Zusätzlich hier:
