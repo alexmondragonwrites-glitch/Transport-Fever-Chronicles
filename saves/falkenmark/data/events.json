@@ -169,6 +169,198 @@
       "source": "Spielmonitor, Welt „Falkenmark – 1900“",
       "recorded": "2026-10-24",
       "recorded_note": "Messung um 07:14 Uhr."
+    },
+    {
+      "id": "kontostand-unter-null-1900-03",
+      "date": "1900-03-29",
+      "precision": "day",
+      "game_time_label": "Ende März 1900",
+      "kind": "fakt",
+      "category": "Finanzen",
+      "title": "Der Kontostand fällt unter null",
+      "description": "Am 29.3.1900 steht das Konto bei −280.375, Ende Juni bei −2.967.353. Der Kredit wird in dieser Zeit in Raten von 8 auf 3,11 Millionen getilgt.",
+      "entities": [
+        "falkenmark"
+      ],
+      "source": "Spielmonitor, Welt „Falkenmark – 1900“",
+      "recorded": "2026-10-24",
+      "recorded_note": "Sitzung 20261024_064129, aufgenommen am 24.10.2026."
+    },
+    {
+      "id": "gemuese-lindendorf-1900-04-05",
+      "date": "1900-04-05",
+      "precision": "day",
+      "game_time_label": "5. April 1900",
+      "kind": "fakt",
+      "category": "Versorgung",
+      "title": "Erstes Gemüse für Lindendorf",
+      "description": "Der Kornhausen Bauernhof verschickt seit dem 8.3.1900. Am 5.4. ist Lindendorf erstmals versorgt: 3 von 39 Einheiten Gemüse; am 19.12.1900 sind es 35 von 72.",
+      "entities": [
+        "falkenmark"
+      ],
+      "source": "Spielmonitor, Welt „Falkenmark – 1900“",
+      "recorded": "2026-10-24",
+      "recorded_note": "Sitzung 20261024_064129, aufgenommen am 24.10.2026."
+    },
+    {
+      "id": "ziegelei-brennt-1900-04-23",
+      "date": "1900-04-23",
+      "precision": "day",
+      "game_time_label": "23. April 1900",
+      "kind": "fakt",
+      "category": "Betrieb",
+      "title": "Die Ziegelei in Hintereichdorf brennt",
+      "description": "Die Hintereichdorf Ziegelei meldet am 23.4.1900 erstmals Produktion und verschickt ab dem 15.5.1900 Ziegel.",
+      "entities": [
+        "falkenmark"
+      ],
+      "source": "Spielmonitor, Welt „Falkenmark – 1900“",
+      "recorded": "2026-10-24",
+      "recorded_note": "Sitzung 20261024_064129, aufgenommen am 24.10.2026."
+    },
+    {
+      "id": "erste-ziegel-falkenried-1900-07-01",
+      "date": "1900-07-01",
+      "precision": "day",
+      "game_time_label": "1. Juli 1900",
+      "kind": "fakt",
+      "category": "Versorgung",
+      "title": "Die ersten Ziegel in Falkenried",
+      "description": "Falkenried ist erstmals mit Ziegeln versorgt: 8 von 32 Einheiten. Der Ort zählt an diesem Tag 131 Einwohner, am 1.1.1900 waren es 101.",
+      "entities": [
+        "falkenmark"
+      ],
+      "source": "Spielmonitor, Welt „Falkenmark – 1900“",
+      "recorded": "2026-10-24",
+      "recorded_note": "Sitzung 20261024_064129, aufgenommen am 24.10.2026."
+    },
+    {
+      "id": "oelkette-1900-07-11",
+      "date": "1900-07-11",
+      "precision": "day",
+      "game_time_label": "11. Juli 1900",
+      "kind": "fakt",
+      "category": "Verkehr",
+      "title": "Dampfer, Ölplattform und die erste Eisenbahn",
+      "description": "Gekauft am 11.7.1900: der Dampfer „Sydfart“ für eine Linie zwischen Birkreuth und Breitroda (Rohöl, später auch Treibstoff) sowie eine Lokomotive „Preussische T 3“ mit einem „Kesselwagen 1899“ für eine Linie mit zwei Halten in Breitroda. Es ist die erste Eisenbahn der FTG. Im dritten Quartal nimmt die FTG Kredite über 19.333.328 auf.",
+      "entities": [
+        "falkenmark"
+      ],
+      "source": "Spielmonitor, Welt „Falkenmark – 1900“",
+      "recorded": "2026-10-24",
+      "recorded_note": "Sitzung 20261024_064129, aufgenommen am 24.10.2026."
+    },
+    {
+      "id": "treibstoff-fuhrwerke-1900-07-18",
+      "date": "1900-07-18",
+      "precision": "day",
+      "game_time_label": "18. Juli 1900",
+      "kind": "fakt",
+      "category": "Verkehr",
+      "title": "Fuhrwerke für Treibstoff nach Lindendorf",
+      "description": "Zwei Pferdefuhrwerke, gekauft am 18.7.1900, auf einer Linie zwischen Lindendorf und Birkreuth, laut Name für Treibstoff. Bis zum 19.12.1900 ist Lindendorf nicht mit Treibstoff versorgt.",
+      "entities": [
+        "falkenmark"
+      ],
+      "source": "Spielmonitor, Welt „Falkenmark – 1900“",
+      "recorded": "2026-10-24",
+      "recorded_note": "Sitzung 20261024_064129, aufgenommen am 24.10.2026."
+    },
+    {
+      "id": "erstes-oel-1900-08-11",
+      "date": "1900-08-11",
+      "precision": "day",
+      "game_time_label": "11. August 1900",
+      "kind": "fakt",
+      "category": "Betrieb",
+      "title": "Erstes Öl von der Plattform",
+      "description": "Die Birkreuth Ölplattform verschickt erstmals Rohöl (Jahreswert am 19.12.1900: 88 erzeugt, 20 verschickt).",
+      "entities": [
+        "falkenmark"
+      ],
+      "source": "Spielmonitor, Welt „Falkenmark – 1900“",
+      "recorded": "2026-10-24",
+      "recorded_note": "Sitzung 20261024_064129, aufgenommen am 24.10.2026."
+    },
+    {
+      "id": "raffinerie-1900-11-01",
+      "date": "1900-11-01",
+      "precision": "day",
+      "game_time_label": "1. November 1900",
+      "kind": "fakt",
+      "category": "Betrieb",
+      "title": "Die Raffinerie in Breitroda arbeitet",
+      "description": "Die Breitroda Ölraffinerie meldet erstmals Produktion und Versand (Jahreswert am 19.12.1900: 56 erzeugt, 24 verschickt).",
+      "entities": [
+        "falkenmark"
+      ],
+      "source": "Spielmonitor, Welt „Falkenmark – 1900“",
+      "recorded": "2026-10-24",
+      "recorded_note": "Sitzung 20261024_064129, aufgenommen am 24.10.2026."
+    },
+    {
+      "id": "postkutsche-hintereichdorf-1900-11-23",
+      "date": "1900-11-23",
+      "precision": "day",
+      "game_time_label": "23. November 1900",
+      "kind": "fakt",
+      "category": "Verkehr",
+      "title": "Postkutsche Falkenried–Hintereichdorf",
+      "description": "Die erste Personenlinie zwischen zwei Orten: zwei Postkutschen zwischen Falkenried und Hintereichdorf.",
+      "entities": [
+        "falkenmark"
+      ],
+      "source": "Spielmonitor, Welt „Falkenmark – 1900“",
+      "recorded": "2026-10-24",
+      "recorded_note": "Sitzung 20261024_064129, aufgenommen am 24.10.2026."
+    },
+    {
+      "id": "subvention-1900-q4",
+      "date": "1900-12-19",
+      "precision": "day",
+      "game_time_label": "4. Quartal 1900 (Stand 19.12.)",
+      "kind": "fakt",
+      "category": "Finanzen",
+      "title": "Erstes Plus im Quartal, mit Subvention",
+      "description": "Das vierte Quartal schließt bis zum 19.12. mit +593.910, das erste positive Quartal. Darin enthalten ist eine Subvention über 1.190.000. Schiff und Bahn bringen ihre ersten Einnahmen: 285.472 und 353.568.",
+      "entities": [
+        "falkenmark"
+      ],
+      "source": "Spielmonitor, Welt „Falkenmark – 1900“",
+      "recorded": "2026-10-24",
+      "recorded_note": "Sitzung 20261024_064129, aufgenommen am 24.10.2026."
+    },
+    {
+      "id": "betriebe-1900",
+      "date": "1900-12-19",
+      "precision": "day",
+      "game_time_label": "Im Lauf des Jahres 1900",
+      "kind": "fakt",
+      "category": "Industrie",
+      "title": "Sechs neue Betriebe, einer verschwunden",
+      "description": "Neu gemessen: Erlstedt Bauernhof (18.2.), Föhrenjoch im Wald Lehmgrube (24.5.), Falkenried Ölplattform (7.7.), Klippenbrück an der See Bauernhof (24.8.), Fischersiel Holzfällerlager (5.10.), Klippenbrück an der See Fischzucht Süd (23.11.). Die Hinteralmhafen Fischzucht ist nach dem 22.7.1900 nicht mehr gemessen. Ende 1900: 57 Betriebe.",
+      "entities": [
+        "falkenmark"
+      ],
+      "source": "Spielmonitor, Welt „Falkenmark – 1900“",
+      "recorded": "2026-10-24",
+      "recorded_note": "Sitzung 20261024_064129, aufgenommen am 24.10.2026."
+    },
+    {
+      "id": "jahresende-1900",
+      "date": "1900-12-31",
+      "precision": "day",
+      "game_time_label": "31. Dezember 1900",
+      "kind": "fakt",
+      "category": "Jahresbilanz",
+      "title": "Das erste Jahr der FTG",
+      "description": "9 Linien, 24 Fahrzeuge (6 Postkutschen, 16 Pferdefuhrwerke, 1 Lokomotive mit Kesselwagen, 1 Dampfer). Kontostand 107.554, Kredit 21.873.690. Falkenried 183 Einwohner, die Falkenmark 8.058.",
+      "entities": [
+        "falkenmark"
+      ],
+      "source": "Spielmonitor, Welt „Falkenmark – 1900“",
+      "recorded": "2026-10-24",
+      "recorded_note": "Sitzung 20261024_064129, aufgenommen am 24.10.2026."
     }
   ]
 }
