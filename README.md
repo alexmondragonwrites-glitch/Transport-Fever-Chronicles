@@ -43,7 +43,7 @@ Die illustrierte Langform-Seite über die Jahre 1900 bis 1910 bleibt unter [Sond
 
 ## Zweite Welt: Falkenmark · ab 1900
 
-Eine erfundene mitteleuropäische Region in gemäßigtem Klima: 20,5 × 41 km Kartenrand, Höhen bis 466 m, Seen. Am 1.1.1900 laut Spielmonitor 67 Städte mit 7.893 Einwohnern und 52 Industrien. Eigenständiger Spielstand, getrennt vom Archipel. **[Falkenmark – Chronik eines Landes im Wandel](saves/falkenmark/chronik.html)** wächst aus dem Spielverlauf; Unternehmen und erste Verbindungen stehen noch aus. [Arbeitsweise und Regeln](docs/FALKENMARK.md).
+Eine erfundene mitteleuropäische Region in gemäßigtem Klima: 20,5 × 41 km Kartenrand, Höhen bis 466 m, Seen. Am 1.1.1900 laut Spielmonitor 67 Städte mit 7.893 Einwohnern und 52 Industrien. Eigenständiger Spielstand, getrennt vom Archipel. **[Falkenmark – Chronik eines Landes im Wandel](saves/falkenmark/chronik.html)** wächst aus dem Spielverlauf. Seit dem 1.1.1900 baut die Falkenrieder Transportgesellschaft (FTG) von Falkenried aus eine erste Ziegelkette auf. [Arbeitsweise und Regeln](docs/FALKENMARK.md).
 
 ## Methodik und Datenqualität
 

@@ -73,6 +73,102 @@
       "source": "Spielmonitor, Welt „Falkenmark – 1900“",
       "recorded": "2026-10-24",
       "recorded_note": "Messung um 06:29 Uhr; Positionen und Höhenraster aus der Messung beim Laden um 06:20 Uhr (Spielprotokoll)."
+    },
+    {
+      "id": "falkenried-1900-01-01",
+      "date": "1900-01-01",
+      "precision": "day",
+      "game_time_label": "1. Januar 1900",
+      "kind": "fakt",
+      "category": "Namen",
+      "title": "Ostheim heißt jetzt Falkenried",
+      "description": "Der Spieler hat den Ort, der bei der ersten Messung Ostheim hieß (101 Einwohner), am 1. Januar 1900 in Falkenried umbenannt, vor allen anderen Orten.",
+      "entities": [
+        "falkenmark"
+      ],
+      "source": "Spielmonitor, Welt „Falkenmark – 1900“; Spielprotokoll; Bestätigung des Spielers",
+      "recorded": "2026-10-24",
+      "recorded_note": "Umbenannt zwischen 06:41 und 07:02 Uhr."
+    },
+    {
+      "id": "namen-organic-towns-1900-01-01",
+      "date": "1900-01-01",
+      "precision": "day",
+      "game_time_label": "1. Januar 1900",
+      "kind": "fakt",
+      "category": "Namen",
+      "title": "Neue Namen für 66 Städte und alle 52 Industrien",
+      "description": "Der Mod „Organic Towns“ hat die übrigen 66 Städte und alle 52 Industrien nach der Landschaft neu benannt, etwa Templin in Buchenburg und Ratzeburg in Hintereichdorf. Ein technischer Vorgang im Spiel, kein Ereignis der erzählten Geschichte. Die Chronik verwendet die neuen Namen; die alten stehen in der Namenskonkordanz.",
+      "entities": [
+        "falkenmark"
+      ],
+      "source": "Spielprotokoll (Organic Towns, NAMES); Spielmonitor, Welt „Falkenmark – 1900“",
+      "recorded": "2026-10-24",
+      "recorded_note": "07:02 Uhr."
+    },
+    {
+      "id": "ftg-1900-01-01",
+      "date": "1900-01-01",
+      "precision": "day",
+      "game_time_label": "1. Januar 1900",
+      "kind": "fakt",
+      "category": "Unternehmen",
+      "title": "Falkenrieder Transportgesellschaft (FTG)",
+      "description": "Das Unternehmen heißt Falkenrieder Transportgesellschaft, kurz FTG, und hat seinen Sitz in Falkenried, im Haus am Ende der Allee. Seine ersten Fahrzeuge kauft es am 1. Januar 1900.",
+      "entities": [
+        "falkenmark"
+      ],
+      "source": "Angabe des Spielers; Spielmonitor (Kaufdatum)",
+      "recorded": "2026-10-24",
+      "recorded_note": "Name und Sitz im Gespräch genannt."
+    },
+    {
+      "id": "erste-linien-1900-01-01",
+      "date": "1900-01-01",
+      "precision": "day",
+      "game_time_label": "1. Januar 1900",
+      "kind": "fakt",
+      "category": "Verkehr",
+      "title": "Die ersten vier Linien",
+      "description": "Zwei Linien mit je zwei Postkutschen und vier Halten in Falkenried. Pferdefuhrwerke zwischen Buchenburg Lehmgrube und Hintereichdorf Ziegelei (Lehm) und zwischen der Ziegelei und Falkenried (Ziegel), je fünf. Alle 14 Fahrzeuge gekauft am 1.1.1900. Kredit 8.000.000, Kontostand nach dem Bau 3.665.242.",
+      "entities": [
+        "falkenmark"
+      ],
+      "source": "Spielmonitor, Welt „Falkenmark – 1900“",
+      "recorded": "2026-10-24",
+      "recorded_note": "Erste Messung mit Linien um 07:02 Uhr."
+    },
+    {
+      "id": "erster-lehm-1900-02-18",
+      "date": "1900-02-18",
+      "precision": "day",
+      "game_time_label": "11. bis 18. Februar 1900",
+      "kind": "fakt",
+      "category": "Betrieb",
+      "title": "Der erste Lehm geht auf den Weg",
+      "description": "Die Buchenburg Lehmgrube meldet seit Anfang Januar Lehm, verschickt war bis zum 11.2. nichts. Am 18.2. sind es 10 Einheiten (Jahreswert der Produktion: 60). Die Hintereichdorf Ziegelei hat noch nichts gebrannt, in Falkenried ist noch kein Ziegel angekommen.",
+      "entities": [
+        "falkenmark"
+      ],
+      "source": "Spielmonitor, Welt „Falkenmark – 1900“",
+      "recorded": "2026-10-24",
+      "recorded_note": "Messungen um 07:12 und 07:14 Uhr."
+    },
+    {
+      "id": "fuenfte-linie-1900-02-18",
+      "date": "1900-02-18",
+      "precision": "day",
+      "game_time_label": "18. Februar 1900",
+      "kind": "fakt",
+      "category": "Verkehr",
+      "title": "Fünfte Linie: Lindendorf–Falkenried",
+      "description": "Vier Pferdefuhrwerke, gekauft am 18.2.1900, auf einer Linie zwischen Lindendorf und Falkenried, laut Liniennamen für Gemüse. Kontostand danach 1.196.425, Kredit 6.666.668.",
+      "entities": [
+        "falkenmark"
+      ],
+      "source": "Spielmonitor, Welt „Falkenmark – 1900“",
+      "recorded": "2026-10-24",
+      "recorded_note": "Messung um 07:14 Uhr."
     }
   ]
 }

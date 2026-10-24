@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "save_id": "falkenmark",
-  "latest_game_date": "1900-01-01",
+  "latest_game_date": "1900-02-18",
   "latest": {
     "meta": "meta.json",
     "cities": "cities.json",
