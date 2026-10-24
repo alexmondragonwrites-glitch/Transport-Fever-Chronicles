@@ -87,3 +87,9 @@ body.fm{
   .fm-scene{padding:16px 16px 4px}
   .fm-table tbody th{width:auto}
 }
+
+/* Gründungsansicht: vollständiges Querformat, auch auf kleinen Bildschirmen. */
+.fm-founding{margin:18px 0 22px}
+.fm-founding a{display:block}
+.fm-founding img{display:block;width:100%;height:auto;border:1px solid var(--line);box-shadow:var(--shadow)}
+.fm-founding figcaption{margin-top:10px;font-size:13.5px;line-height:1.55;color:var(--muted)}
