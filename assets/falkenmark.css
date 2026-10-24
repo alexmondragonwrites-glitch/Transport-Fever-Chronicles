@@ -127,19 +127,36 @@ html{scroll-behavior:smooth}
 .fm-main .fm-fix{font-size:14px;line-height:1.55;margin:8px 0 0;padding:8px 10px;background:var(--fm-note);color:var(--fm-read)}
 
 /* Kapitel, Bild, Konkordanz */
-.fm-chapter{margin:38px 0 0;padding-top:30px;border-top:1px solid var(--fm-line-strong);box-shadow:0 -3px 0 -2px var(--fm-line-strong);scroll-margin-top:128px}
+.fm-chapter{margin:38px 0 0;padding-top:30px;border-top:1px solid var(--fm-line-strong);box-shadow:0 -3px 0 -2px var(--fm-line-strong);scroll-margin-top:150px}
 .fm-chapter-head{margin:0 0 18px}
 .fm-main .fm-chapter-head h3{font-size:clamp(30px,3.6vw,40px);line-height:1.1;margin:0 0 6px}
 .fm-chapter-no{display:block;font-family:var(--fm-sans);font-size:12px;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--fm-brick);margin-bottom:6px}
 .fm-main .fm-chapter-period{font-family:var(--fm-mono);font-size:13px;color:var(--fm-muted);margin:0}
 
 /* Kapitelnavigation: bleibt beim Lesen unter der Kopfleiste stehen */
-.fm-chapnav{position:sticky;top:62px;z-index:10;display:flex;gap:4px;margin:22px 0 6px;padding:6px;background:#eef0e9f2;border:1px solid var(--fm-line);box-shadow:0 8px 18px -16px #1f3128aa;overflow-x:auto;scrollbar-width:none}
+.fm-chapnav{display:flex;gap:4px;margin:22px 0 6px;padding:6px;background:#eef0e9f2;border:1px solid var(--fm-line);box-shadow:0 8px 18px -16px #1f3128aa;overflow-x:auto;scrollbar-width:none}
 .fm-chapnav::-webkit-scrollbar{display:none}
 .fm-chapnav a{flex:1 0 auto;display:flex;flex-direction:column;gap:1px;padding:7px 12px;text-decoration:none;color:var(--fm-read);font-family:var(--fm-serif);font-size:16px;white-space:nowrap;border-bottom:2px solid transparent}
 .fm-chapnav a span{font-family:var(--fm-sans);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--fm-muted)}
 .fm-chapnav a:hover{background:var(--fm-card)}
 .fm-chapnav a[aria-current="true"]{background:var(--fm-card);border-bottom-color:var(--fm-brick);color:var(--fm-ink)}
+
+/* Jahresauswahl: läuft unter der Kopfleiste mit, Jahrzehnt wählen, dann das Jahr */
+.fm [hidden]{display:none!important}
+.fm-years{position:sticky;top:62px;z-index:12;display:flex;flex-wrap:wrap;align-items:center;gap:6px 12px;margin:0 0 26px;padding:8px 10px;background:#eef0e9f2;border:1px solid var(--fm-line);box-shadow:0 8px 18px -16px #1f3128aa}
+.fm-year{display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;min-width:50px;padding:4px 7px;font-family:var(--fm-mono);font-size:13.5px;line-height:1.4;text-decoration:none;color:var(--fm-ink);background:var(--fm-card);border:1px solid var(--fm-line-strong);border-radius:2px}
+a.fm-year:hover{border-color:var(--fm-forest)}
+.fm-year[aria-disabled]{color:#9aa39a;background:transparent;border-color:var(--fm-line-soft);cursor:default}
+.fm-year[aria-current="true"]{color:var(--fm-ivory);background:var(--fm-forest);border-color:var(--fm-forest)}
+.fm-year--all{min-width:0;padding:5px 10px;font-family:var(--fm-sans);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase}
+.fm-decade{display:inline-flex;align-items:center;gap:6px;font-family:var(--fm-sans);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--fm-muted)}
+.fm-decade select{font-family:var(--fm-mono);font-size:13.5px;padding:3px 6px;color:var(--fm-ink);background:var(--fm-card);border:1px solid var(--fm-line-strong);border-radius:2px}
+.fm-year-list{display:flex;gap:4px;flex:1 1 200px;min-width:0;overflow-x:auto;scrollbar-width:none}
+.fm-year-list::-webkit-scrollbar{display:none}
+.fm-main .fm-year-status{flex-basis:100%;margin:0;font-family:var(--fm-sans);font-size:12.5px;line-height:1.4;color:var(--fm-muted)}
+.fm-main .fm-year-mark{display:flex;align-items:center;gap:14px;margin:46px 0 -14px;font-family:var(--fm-mono);font-size:14px;font-weight:600;letter-spacing:.32em;color:var(--fm-brick)}
+.fm-main .fm-year-mark:after{content:"";flex:1;border-top:1px solid var(--fm-line-strong)}
+.fm-yearblock+.fm-yearblock{margin-top:8px}
 
 /* Kapitel auf einen Blick: Kennzahlen, Zeitachse, Linien */
 .fm-overview{margin:20px 0 26px;padding:18px 20px 8px;background:var(--fm-card);border:1px solid var(--fm-line)}
@@ -229,7 +246,9 @@ html{scroll-behavior:smooth}
   .fm-scene{margin-left:0;padding:20px 18px 8px}
   .fm-block--belegt{padding:14px 16px 4px}
   .fm-block--abgeleitet{padding-left:16px}
-  .fm-chapnav{top:56px}
+  .fm-years{top:56px;padding:6px 8px;gap:6px 8px}
+  .fm-main .fm-year-status,.fm-decade span{display:none}
+  .fm-chapter{scroll-margin-top:130px}
   .fm-chapnav a{padding:6px 8px;font-size:14.5px}
   .fm-overview{padding:14px 14px 6px}
   .fm-stats{grid-template-columns:repeat(2,minmax(0,1fr))}

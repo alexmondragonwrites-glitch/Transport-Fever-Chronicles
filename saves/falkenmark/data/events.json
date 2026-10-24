@@ -152,7 +152,11 @@
       ],
       "source": "Spielmonitor, Welt „Falkenmark – 1900“",
       "recorded": "2026-10-24",
-      "recorded_note": "Messungen um 07:12 und 07:14 Uhr."
+      "recorded_note": "Messungen um 07:12 und 07:14 Uhr.",
+      "correction": {
+        "date": "2026-10-24",
+        "note": "„Jahreswert“ meint den Wert, den das Spiel „pro Jahr“ führt; er umfasst ein Wirtschaftsjahr, in dieser Welt rund 91 Kalendertage. Am 18.2.1900 reicht er noch bis zum Spielbeginn zurück: Bis dahin sind 60 Einheiten erzeugt."
+      }
     },
     {
       "id": "fuenfte-linie-1900-02-18",
@@ -280,7 +284,11 @@
       ],
       "source": "Spielmonitor, Welt „Falkenmark – 1900“",
       "recorded": "2026-10-24",
-      "recorded_note": "Sitzung 20261024_064129, aufgenommen am 24.10.2026."
+      "recorded_note": "Sitzung 20261024_064129, aufgenommen am 24.10.2026.",
+      "correction": {
+        "date": "2026-10-24",
+        "note": "„Jahreswert“ meint den Wert, den das Spiel „pro Jahr“ führt; er umfasst ein Wirtschaftsjahr, in dieser Welt rund 91 Kalendertage, hier etwa vom 19.9. bis 19.12.1900, nicht das ganze Jahr 1900."
+      }
     },
     {
       "id": "raffinerie-1900-11-01",
@@ -296,7 +304,11 @@
       ],
       "source": "Spielmonitor, Welt „Falkenmark – 1900“",
       "recorded": "2026-10-24",
-      "recorded_note": "Sitzung 20261024_064129, aufgenommen am 24.10.2026."
+      "recorded_note": "Sitzung 20261024_064129, aufgenommen am 24.10.2026.",
+      "correction": {
+        "date": "2026-10-24",
+        "note": "„Jahreswert“ meint den Wert, den das Spiel „pro Jahr“ führt; er umfasst ein Wirtschaftsjahr, in dieser Welt rund 91 Kalendertage (etwa 19.9. bis 19.12.1900). Weil die Raffinerie erst am 1.11. anlief, sind 56 und 24 alles, was sie bis zum 19.12.1900 erzeugt und verschickt hat."
+      }
     },
     {
       "id": "postkutsche-hintereichdorf-1900-11-23",
