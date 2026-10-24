@@ -1,4 +1,4 @@
-# Monitoransicht – Archipel
+# Monitoransicht und Upload aus dem Spielmonitor
 
 Der Langzeitmonitor unter `saves/archipel-des-alizes/index.html?view=monitor` zeigt den zuletzt hochgeladenen Spielemonitor-Stand. Ohne Parameter leitet die Seite auf den aktuellen Bericht (`latestReport`) weiter; das redaktionelle Archiv mit Weltatlas und März-1910-Tabellen bleibt über `?view=archive` erreichbar. Diese Quellen werden nicht still vermischt.
 
@@ -9,14 +9,22 @@ Der Langzeitmonitor unter `saves/archipel-des-alizes/index.html?view=monitor` ze
 Im Spielmonitor-Ordner `WEBSITE_AKTUALISIEREN.bat` doppelklicken, oder:
 
 ```text
-python scripts/publish-monitor.py            # zeigt Änderungen, fragt vor dem Upload
-python scripts/publish-monitor.py --no-push  # nur lokal erzeugen, nichts committen
-python scripts/publish-monitor.py --yes      # ohne Rückfrage (z. B. für geplante Aufgaben)
+python scripts/publish-monitor.py                    # alle Welten, zeigt Änderungen, fragt vor dem Upload
+python scripts/publish-monitor.py --save falkenmark  # nur eine Welt (Kennung aus data/monitor-sources.json)
+python scripts/publish-monitor.py --no-push          # nur lokal erzeugen, nichts committen
+python scripts/publish-monitor.py --yes              # ohne Rückfrage (z. B. für geplante Aufgaben)
 ```
 
-Das Script liest `../Spielmonitor/sessions/*/daten.jsonl`, archivierte Sitzungen als verlustfreies `daten.jsonl.xz` (`scripts/monitor_files.py`, Archivierung mit `Spielmonitor/archivieren.py`; anderer Ort: `--monitor PFAD`), nimmt nur Messungen der in `data/monitor-sources.json` eingetragenen `world_id` und erzeugt daraus `saves/archipel-des-alizes/data/monitor/`. Die Ausgabe enthält keine Uhrzeit des Exports, sondern nur Messwerte: Abgeschlossene Sitzungen bleiben byte-identisch und werden nie erneut hochgeladen. Ein Upload enthält deshalb normalerweise nur den Abschnitt der laufenden Sitzung und `index.json`. Ohne neue Messungen entsteht kein Commit.
+**Mehrere Welten:** Ohne `--save` nimmt das Script jede Welt aus `data/monitor-sources.json` (Archipel des Alizés, Falkenmark) und lädt alles mit einer Rückfrage in einem Commit hoch („Monitorstand Archipel des Alizés Spiel … ; Falkenmark Spiel …“). Welten ohne Messungen werden übersprungen. Je Welt steuern die Einträge dort:
 
-Ablauf: GitHub-Stand nachziehen (nur Fast-Forward), geänderte Dateien schreiben, `validate-monitor.mjs` und `validate-data.mjs` ausführen, Änderungen anzeigen, nach Bestätigung committen und pushen. Schlägt eine Prüfung fehl, wird nichts committet. Eine noch nicht vollständig geschriebene letzte Zeile der laufenden Sitzung bleibt für den nächsten Lauf stehen. Bereits gelesene, unveränderte Sitzungsdateien merkt sich `.publish-cache/` (nicht im Repository); Änderungen an `monitor_build.py` verwerfen diesen Cache automatisch.
+- `world.world_id`: nur Messungen dieser Weltkennung.
+- `journal: true`: auch die Zeitung neu bauen (nur Archipel, „Le Journal des Alizés“, mit Seekarten-Relief).
+- `manifest_key`: Standard `monitor` bindet die Monitorseite `?view=monitor` (im Archipel-Stil). Die Falkenmark nutzt `monitor_data`: Die Daten liegen geprüft unter `saves/falkenmark/data/monitor/`, eine Monitorseite wird für sie nicht eingebunden, bis es eine im Falkenmark-Stil gibt.
+- `archive`: Verweis auf ein Rohdaten-Release (nur Archipel).
+
+Das Script liest `../Spielmonitor/sessions/*/daten.jsonl`, archivierte Sitzungen als verlustfreies `daten.jsonl.xz` (`scripts/monitor_files.py`, Archivierung mit `Spielmonitor/archivieren.py`; anderer Ort: `--monitor PFAD`), nimmt je Welt nur Messungen ihrer `world_id` und erzeugt daraus `saves/<welt>/data/monitor/`. Die Ausgabe enthält keine Uhrzeit des Exports, sondern nur Messwerte: Abgeschlossene Sitzungen bleiben byte-identisch und werden nie erneut hochgeladen. Ein Upload enthält deshalb normalerweise nur den Abschnitt der laufenden Sitzung und `index.json`. Ohne neue Messungen entsteht kein Commit.
+
+Ablauf: GitHub-Stand nachziehen (nur Fast-Forward), geänderte Dateien schreiben, `validate-monitor.mjs` und `validate-data.mjs` ausführen, Änderungen anzeigen, nach Bestätigung committen und pushen. Schlägt eine Prüfung fehl, wird nichts committet. Eine noch nicht vollständig geschriebene letzte Zeile der laufenden Sitzung bleibt für den nächsten Lauf stehen. Bereits gelesene, unveränderte Sitzungsdateien merkt sich `.publish-cache/monitor-<welt>.json` je Welt (nicht im Repository; ein alter gemeinsamer `monitor.json` wird für seine Welt übernommen); Änderungen an `monitor_build.py` verwerfen diesen Cache automatisch.
 
 Neue Rohdaten bleiben lokal im Spielmonitor. Das Rohdaten-Archiv auf GitHub (Release) ist der vollständige Export vom 11.10.2026 und wird nicht automatisch erweitert.
 

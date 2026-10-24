@@ -13,7 +13,18 @@
         "sha256": "b2c76387f5569d83d7bc0ff90d7f7b9e7cd1bc315d6553dba6ab52d0b0dd92a1",
         "packages": 28,
         "measurement_count": 2864
-      }
+      },
+      "journal": true
+    },
+    "falkenmark": {
+      "world": {
+        "name": "Falkenmark – 1900",
+        "world_id": "tf3-2026-10-24-1792815641-1925542896-2"
+      },
+      "folder": "monitor",
+      "archive": null,
+      "journal": false,
+      "manifest_key": "monitor_data"
     }
   }
 }

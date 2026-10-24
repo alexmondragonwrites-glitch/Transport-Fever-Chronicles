@@ -2,9 +2,11 @@ import assert from 'node:assert/strict';
 import {readFileSync,readdirSync} from 'node:fs';
 import {basename,dirname} from 'node:path';
 import {chartPaths} from '../assets/monitor.js';
-const base='saves/archipel-des-alizes/data/';
+// Every world with a monitor view is checked; base and read point at the world currently being checked.
+const sources=JSON.parse(readFileSync('data/monitor-sources.json','utf8')).saves;
+const worlds=JSON.parse(readFileSync('data/worlds.json','utf8')).worlds;
+let base='';
 const read=p=>JSON.parse(readFileSync(base+p,'utf8'));
-const manifest=read('manifest.json');
 
 // Shared checks for the live monitor (separate line files) and the frozen archive (embedded line history).
 function validate(indexPath){
@@ -40,24 +42,34 @@ function validate(indexPath){
   return {index,records,details,segments:ids.size,latest:read(index.segments.at(-1).file)};
 }
 
-const live=validate(manifest.monitor);
-assert(live.index.archive?.url&&/^[0-9a-f]{64}$/.test(live.index.archive.sha256),'raw data archive reference missing');
-assert(live.index.segments.every(s=>s.lines_file),'live monitor must use separate line files');
-assert(live.latest.snapshot.towns.length>0,'latest snapshot without towns');
-if(live.latest.detail_count)assert(Array.isArray(live.latest.detail_quality.errors),'basic rows must not clear cached detail errors');
+const report=[];
+for(const world of worlds){
+  base='saves/'+world.id+'/data/';
+  const manifest=read('manifest.json');
+  const indexPath=manifest.monitor||manifest.monitor_data;
+  if(!indexPath)continue;
+  const live=validate(indexPath);
+  if(sources[world.id]?.archive)assert(live.index.archive?.url&&/^[0-9a-f]{64}$/.test(live.index.archive.sha256),'raw data archive reference missing: '+world.id);
+  assert.equal(live.index.world?.world_id,sources[world.id]?.world?.world_id,'monitor view belongs to another world: '+world.id);
+  assert(live.index.segments.every(s=>s.lines_file),'live monitor must use separate line files');
+  assert(live.latest.snapshot.towns.length>0,'latest snapshot without towns');
+  if(live.latest.detail_count)assert(Array.isArray(live.latest.detail_quality.errors),'basic rows must not clear cached detail errors');
 
-// The frozen 11.10.2026 export feeds the decade dossier and must not change.
-if(manifest.monitor_archive){
-  const archive=validate(manifest.monitor_archive);
-  assert.equal(archive.records,2864);assert.equal(archive.segments,11);
-  assert.equal(archive.index.source_sha256,'b2c76387f5569d83d7bc0ff90d7f7b9e7cd1bc315d6553dba6ab52d0b0dd92a1');
-  const s=archive.latest.snapshot;
-  assert.equal(s.towns.length,50);assert.equal(s.lines.length,82);assert.equal(s.vehicle_count,474);
-  assert.equal(archive.latest.detail_quality.errors.length,20,'basic rows must not clear cached detail errors');
+  // The frozen 11.10.2026 export feeds the Archipel decade dossier and must not change.
+  if(manifest.monitor_archive){
+    const archive=validate(manifest.monitor_archive);
+    assert.equal(archive.records,2864);assert.equal(archive.segments,11);
+    assert.equal(archive.index.source_sha256,'b2c76387f5569d83d7bc0ff90d7f7b9e7cd1bc315d6553dba6ab52d0b0dd92a1');
+    const s=archive.latest.snapshot;
+    assert.equal(s.towns.length,50);assert.equal(s.lines.length,82);assert.equal(s.vehicle_count,474);
+    assert.equal(archive.latest.detail_quality.errors.length,20,'basic rows must not clear cached detail errors');
+  }
+  report.push(`${world.id}: live ${live.records} measurements, ${live.details} details, ${live.segments} separate segments${manifest.monitor_archive?'; frozen archive unchanged':''}`);
 }
+assert(report.length,'no monitor view found');
 
 const t='2026-10-11T10:00:';
 const points=[{game_time:1,recorded_at:t+'00Z',n:0},{game_time:2,recorded_at:t+'10Z',n:4},{game_time:3,recorded_at:'2026-10-11T10:03:00Z',n:5},{game_time:2,recorded_at:'2026-10-11T10:03:10Z',n:7},{game_time:4,recorded_at:'2026-10-11T10:03:20Z',n:null}];
 assert.deepEqual(chartPaths(points,'n').map(x=>x.length),[2,1,1]);
 assert.equal(chartPaths(points,'n')[0][0].n,0,'valid zeros retained');
-console.log(`OK: live ${live.records} measurements, ${live.details} details, ${live.segments} separate segments${manifest.monitor_archive?'; frozen archive unchanged':''}; quality, gaps and null handling checked.`);
+console.log(`OK: ${report.join(' · ')}; quality, gaps and null handling checked.`);

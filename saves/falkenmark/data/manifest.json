@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "save_id": "falkenmark",
-  "latest_game_date": "1900-02-18",
+  "latest_game_date": "1900-12-31",
   "latest": {
     "meta": "meta.json",
     "cities": "cities.json",
@@ -19,5 +19,6 @@
       "demand": "demand-1900-01-01.json"
     }
   ],
-  "latestReport": "chronik.html"
+  "latestReport": "chronik.html",
+  "monitor_data": "monitor/index.json"
 }

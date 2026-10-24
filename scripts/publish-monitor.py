@@ -2,8 +2,10 @@
 
 Usage: python scripts/publish-monitor.py [--monitor PATH] [--save ID] [--yes] [--no-push]
 
-Reads the local session files (sessions/*/daten.jsonl, archived ones as daten.jsonl.xz) of the configured world,
-builds the compact website view and writes only files whose content changed.
+Without --save every world in data/monitor-sources.json is published in one commit; --save limits it to one.
+Reads the local session files (sessions/*/daten.jsonl, archived ones as daten.jsonl.xz) of each configured world,
+builds the compact website view and writes only files whose content changed. Worlds with "journal": true also
+get their newspaper rebuilt (Le Journal des Alizés).
 Finished sessions stay byte-identical, so a commit normally contains the active
 session's segment and index.json. Nothing is committed without confirmation
 (or --yes); with no visible change nothing is committed at all.
@@ -27,8 +29,22 @@ import monitor_files
 journal = importlib.import_module('build-journal')
 
 ROOT = Path(__file__).resolve().parents[1]
-CACHE = ROOT/'.publish-cache/monitor.json'
+CACHE_DIR = ROOT/'.publish-cache'
+LEGACY_CACHE = CACHE_DIR/'monitor.json'
 BRANCH = 'main'
+
+
+def cache_path(save, world_id):
+    """One cache per world, so alternating worlds does not reparse every session; the old single cache is adopted."""
+    path = CACHE_DIR/f'monitor-{save}.json'
+    if not path.exists() and LEGACY_CACHE.exists():
+        try:
+            legacy_world = json.loads(LEGACY_CACHE.read_text(encoding='utf-8')).get('identity', {}).get('world_id')
+        except (OSError, ValueError):
+            legacy_world = None
+        if legacy_world == world_id:
+            LEGACY_CACHE.replace(path)
+    return path
 
 
 def git(*args, check=True):
@@ -58,10 +74,12 @@ def session_rows(path, size, world_id, stats):
 
 
 def build(monitor, save, config, use_cache=True):
+    """Build one world's view; None when the monitor has no measurements of that world."""
     world_id = config['world']['world_id']
     builder = MonitorBuilder(world_id, config['folder'])
+    cache_file = cache_path(save, world_id)
     try:
-        cache = json.loads(CACHE.read_text(encoding='utf-8')) if use_cache else {}
+        cache = json.loads(cache_file.read_text(encoding='utf-8')) if use_cache else {}
     except (OSError, ValueError):
         cache = {}
     # Any change to the builder or target folder invalidates all cached sessions.
@@ -85,23 +103,24 @@ def build(monitor, save, config, use_cache=True):
             record = builder.add_session(name, session_rows(path, monitor_files.size(path), world_id, stats))
             cached = {'key':key, 'record':record}
         sessions[name] = cached
-    if not builder.segments:
-        raise SystemExit(f'Keine Messungen für {world_id} in {monitor/"sessions"} gefunden.')
     cache['sessions'] = sessions
-    index = builder.index(config['world'], source='spielmonitor', archive=config['archive'])
+    CACHE_DIR.mkdir(exist_ok=True)
+    cache_file.write_text(json.dumps(cache), encoding='utf-8')
+    if not builder.segments:
+        return None
+    index = builder.index(config['world'], source='spielmonitor', archive=config.get('archive'))
     out = ROOT/'saves'/save/'data'/config['folder']
     changed = builder.write(out, index)
-    CACHE.parent.mkdir(exist_ok=True)
-    CACHE.write_text(json.dumps(cache), encoding='utf-8')
     return builder, index, changed, stats
 
 
-def point_manifest(save, folder):
+def point_manifest(save, folder, key='monitor'):
+    """Point the manifest at the view; key "monitor" mounts the (Archipel-styled) monitor page, "monitor_data" only lists the data."""
     path = ROOT/'saves'/save/'data/manifest.json'
     manifest = json.loads(path.read_text(encoding='utf-8'))
     target = folder+'/index.json'
-    if manifest.get('monitor') != target:
-        manifest['monitor'] = target
+    if manifest.get(key) != target:
+        manifest[key] = target
         path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2)+'\n', encoding='utf-8')
     return path
 
@@ -184,16 +203,58 @@ def validate():
             raise SystemExit(f'Prüfung {" ".join(command)} fehlgeschlagen, nichts hochgeladen:\n{result.stdout}{result.stderr}')
 
 
+def world_titles():
+    try:
+        return {w['id']: w['title'] for w in json.loads((ROOT/'data/worlds.json').read_text(encoding='utf-8'))['worlds']}
+    except (OSError, ValueError, KeyError):
+        return {}
+
+
+def publish_world(monitor, save, config, title):
+    """Rebuild one world's monitor view (and its newspaper, if it has one); returns the summary or None without data."""
+    folder = config['folder']
+    print(f'\n== {title} ==')
+    print('Lese Spielmonitor-Sitzungen …')
+    try:
+        result = build(monitor, save, config)
+    except FileNotFoundError:
+        result = build(monitor, save, config, use_cache=False)
+    if result is None:
+        print(f"Keine Messungen für {config['world']['world_id']} gefunden – übersprungen.")
+        return None
+    builder, index, changed, stats = result
+    point_manifest(save, folder, config.get('manifest_key', 'monitor'))
+    latest = index['segments'][-1]
+    print(f"Stand: Spiel {latest['last_game_date']}, aufgezeichnet {index['exported_at']} · "
+          f"{index['counts']['measurements']} Messungen in {len(index['segments'])} Abschnitten "
+          f"({stats['parsed_sessions']} Sitzungsdatei(en) neu gelesen)")
+    if stats['unreadable']:
+        print(f"Hinweis: {stats['unreadable']} unlesbare Zeile(n) übersprungen.")
+    paths = [f'saves/{save}/data/{folder}', f'saves/{save}/data/manifest.json']
+    if config.get('journal'):
+        print('Aktualisiere die Zeitung …')
+        journal_changed, _, journal_sizes = journal.build(monitor, save)
+        print(f"Journal: {journal_sizes['meldungen.json']} Meldungen, {journal_sizes['menschen.json']} Personen, "
+              f"{journal_sizes['notizen.json']} Notizen aus dem Notizbuch"
+              + (f" · geändert: {', '.join(journal_changed)}" if journal_changed else ' · unverändert'))
+        refresh_relief(save, config, monitor)
+        paths.append(f'saves/{save}/data/journal')
+    return {'save':save, 'title':title, 'folder':folder, 'index':index, 'latest':latest, 'paths':paths, 'journal':bool(config.get('journal'))}
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__.split('\n')[0])
     parser.add_argument('--monitor', default=str(ROOT.parent/'Spielmonitor'), help='Spielmonitor-Ordner mit sessions/')
-    parser.add_argument('--save', default='archipel-des-alizes')
+    parser.add_argument('--save', help='nur diese Welt (Kennung aus data/monitor-sources.json); ohne Angabe alle')
     parser.add_argument('--yes', action='store_true', help='ohne Rückfrage committen und hochladen')
     parser.add_argument('--no-push', action='store_true', help='nur lokal aktualisieren, nichts committen')
     args = parser.parse_args()
-    config = json.loads((ROOT/'data/monitor-sources.json').read_text(encoding='utf-8'))['saves'][args.save]
-    folder = config['folder']
-    paths = [f'saves/{args.save}/data/{folder}', f'saves/{args.save}/data/manifest.json', f'saves/{args.save}/data/journal']
+    sources = json.loads((ROOT/'data/monitor-sources.json').read_text(encoding='utf-8'))['saves']
+    if args.save and args.save not in sources:
+        raise SystemExit(f"Unbekannte Welt {args.save!r}. Bekannt: {', '.join(sources)}")
+    saves = [args.save] if args.save else list(sources)
+    titles = world_titles()
+    monitor = Path(args.monitor).resolve()
 
     if git('diff', '--cached', '--quiet', check=False).returncode:
         raise SystemExit('Im Website-Repository sind bereits Änderungen vorgemerkt (git add). Bitte zuerst committen oder zurücknehmen.')
@@ -206,57 +267,52 @@ def main():
             print(f'{behind} neuere(n) Commit(s) von GitHub übernommen.')
     unpushed = [] if args.no_push else git('log', '--format=  %h %s', f'origin/{BRANCH}..HEAD').stdout.splitlines()
 
-    print('Lese Spielmonitor-Sitzungen …')
-    try:
-        builder, index, changed, stats = build(Path(args.monitor).resolve(), args.save, config)
-    except FileNotFoundError:
-        builder, index, changed, stats = build(Path(args.monitor).resolve(), args.save, config, use_cache=False)
-    point_manifest(args.save, folder)
-    latest = index['segments'][-1]
-    print(f"Stand: Spiel {latest['last_game_date']}, aufgezeichnet {index['exported_at']} · "
-          f"{index['counts']['measurements']} Messungen in {len(index['segments'])} Abschnitten "
-          f"({stats['parsed_sessions']} Sitzungsdatei(en) neu gelesen)")
-    if stats['unreadable']:
-        print(f"Hinweis: {stats['unreadable']} unlesbare Zeile(n) übersprungen.")
-    print('Aktualisiere Le Journal des Alizés …')
-    journal_changed, _, journal_sizes = journal.build(Path(args.monitor).resolve(), args.save)
-    print(f"Journal: {journal_sizes['meldungen.json']} Meldungen, {journal_sizes['menschen.json']} Personen, "
-          f"{journal_sizes['notizen.json']} Notizen aus dem Notizbuch"
-          + (f" · geändert: {', '.join(journal_changed)}" if journal_changed else ' · unverändert'))
-    refresh_relief(args.save, config, Path(args.monitor).resolve())
-
-    git('add', '-A', '--', *paths)
-    has_changes = git('diff', '--cached', '--quiet', check=False).returncode != 0
+    worlds = [w for w in (publish_world(monitor, save, sources[save], titles.get(save, save)) for save in saves) if w]
+    paths = [p for w in worlds for p in w['paths']]
+    if paths:
+        git('add', '-A', '--', *paths)
+    has_changes = bool(paths) and git('diff', '--cached', '--quiet', check=False).returncode != 0
     if not has_changes and not unpushed:
-        print('Keine Änderung an der Website-Ansicht seit dem letzten Upload – nichts zu tun.')
+        print('\nKeine Änderung an der Website-Ansicht seit dem letzten Upload – nichts zu tun.')
         return
+    changed_worlds = []
     if has_changes:
         validate()
-        previous = published_index(args.save, folder)
-        new_measurements = index['counts']['measurements']-(previous['counts']['measurements'] if previous else 0)
         print('\nGeänderte Dateien:')
         print(git('diff', '--cached', '--stat=100', '--', *paths).stdout.rstrip())
-        if previous:
-            new_segments = [s['id'] for s in index['segments'] if s['id'] not in {p['id'] for p in previous['segments']}]
-            print(f"\n+{new_measurements} Messungen seit dem letzten Upload"+(f", neue Abschnitte: {', '.join(new_segments)}" if new_segments else ''))
+        for w in worlds:
+            if not git('diff', '--cached', '--quiet', '--', *w['paths'], check=False).returncode:
+                continue
+            previous = published_index(w['save'], w['folder'])
+            w['new_measurements'] = w['index']['counts']['measurements']-(previous['counts']['measurements'] if previous else 0)
+            new_segments = [s['id'] for s in w['index']['segments'] if s['id'] not in {p['id'] for p in (previous or {}).get('segments', [])}]
+            print(f"{w['title']}: +{w['new_measurements']} Messungen seit dem letzten Upload"
+                  + (f", neue Abschnitte: {', '.join(new_segments)}" if previous and new_segments else '')
+                  + ('' if previous else ' (erster Upload dieser Welt)'))
+            changed_worlds.append(w)
     if unpushed:
         print('\nNoch nicht hochgeladene lokale Commits, die mitgeschickt werden:')
         print('\n'.join(unpushed))
 
     if args.no_push:
-        git('reset', '--quiet', '--', *paths)
+        if paths:
+            git('reset', '--quiet', '--', *paths)
         print('\n--no-push: Dateien lokal aktualisiert, nichts committet.')
         return
     if not args.yes:
         answer = input('\nJetzt committen und zu GitHub hochladen? [j/N] ').strip().lower()
         if answer not in ('j', 'ja', 'y', 'yes'):
-            git('reset', '--quiet', '--', *paths)
+            if paths:
+                git('reset', '--quiet', '--', *paths)
             print('Abgebrochen. Dateien bleiben lokal aktualisiert; der nächste Lauf nimmt sie mit.')
             return
     if has_changes:
-        # Staged rather than just rebuilt: an aborted earlier run may already have written the notes.
-        notes = git('diff', '--cached', '--name-only', '--', f'saves/{args.save}/data/journal/notizen.json').stdout.strip()
-        message = f"Monitorstand Spiel {latest['last_game_date']} (+{new_measurements} Messungen{', Notizbuch aktualisiert' if notes else ''})"
+        parts = []
+        for w in changed_worlds:
+            # Staged rather than just rebuilt: an aborted earlier run may already have written the notes.
+            notes = w['journal'] and git('diff', '--cached', '--name-only', '--', f"saves/{w['save']}/data/journal/notizen.json").stdout.strip()
+            parts.append(f"{w['title']} Spiel {w['latest']['last_game_date']} (+{w['new_measurements']} Messungen{', Notizbuch aktualisiert' if notes else ''})")
+        message = 'Monitorstand ' + '; '.join(parts)
         git('commit', '--quiet', '-m', message)
         print(f'Commit: {message}')
     push = git('push', 'origin', f'HEAD:{BRANCH}', check=False)
