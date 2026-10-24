@@ -104,6 +104,18 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,su
 .world-art{min-height:270px;position:relative;background:url(affiche-alizes.svg) center 62%/cover;border-right:6px solid var(--panel);box-shadow:1px 0 0 var(--line-soft)}
 .world-art:before,.world-art:after{content:none}
 .world-card[data-world="falkenmark"] .world-art{background-image:url(affiche-falkenmark.svg);background-position:center 70%}
+/* Falkenmark auf dem Portal: eigenes Erscheinungsbild wie assets/falkenmark.css (Leinen, Waldgrün, Grenzlinie, Source Serif und Jost) */
+@font-face{font-family:'Jost';font-style:normal;font-weight:100 900;font-display:swap;src:url(fonts/jost.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+.world-card[data-world="falkenmark"]{background:#f8f9f5;border-color:#97a398;border-radius:2px;box-shadow:inset 0 0 0 5px #f8f9f5,inset 0 0 0 6px #dde2d9,0 12px 26px -20px #1f312899}
+.world-card[data-world="falkenmark"].is-link:hover{border-color:#9a4a2f}
+.world-card[data-world="falkenmark"] .world-art{border-color:#f8f9f5}
+.world-card[data-world="falkenmark"] .world-copy{position:relative}
+.world-card[data-world="falkenmark"] .world-copy:before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:repeating-linear-gradient(90deg,#a8752a 0 16px,transparent 16px 22px,#a8752a 22px 25px,transparent 25px 31px)}
+.world-card[data-world="falkenmark"] h3{font-family:'Source Serif 4',Georgia,serif;font-weight:700;letter-spacing:-.01em;color:#1d2925}
+.world-card[data-world="falkenmark"] p{color:#56625c}
+.world-card[data-world="falkenmark"] .tag{font-family:Jost,Futura,'Century Gothic',sans-serif;text-transform:uppercase;letter-spacing:.14em;font-size:11px;color:#2f4a3a;background:#eef0e9;border-radius:2px}
+.world-card[data-world="falkenmark"] .cta{font-family:Jost,Futura,'Century Gothic',sans-serif;font-weight:500;background:#1f3128;color:#f1efe6;border-radius:2px;box-shadow:inset 0 0 0 3px #1f3128,inset 0 0 0 4px #a8752a99}
+.world-card[data-world="falkenmark"] .cta:hover{background:#9a4a2f;box-shadow:inset 0 0 0 3px #9a4a2f,inset 0 0 0 4px #f1efe699}
 .world-copy{padding:28px}
 .tag{display:inline-block;padding:4px 11px;border:1px solid currentColor;border-radius:99px;font-size:12px;color:var(--mint);letter-spacing:.04em;background:#fbf6ea99}
 .tag.earth{color:var(--gold)}

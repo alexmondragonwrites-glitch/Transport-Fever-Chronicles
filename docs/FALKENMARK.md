@@ -10,7 +10,8 @@ Zweite Welt im Archiv, angelegt am 24.10.2026. Eigenständiger TF3-Spielstand, S
 | `saves/falkenmark/data/events.json` | Ereignisregister, einzige Quelle. `chronik.html` und die Datenansicht lesen es. |
 | `saves/falkenmark/data/meta.json` | Kurzbeschreibung, Status, Monitor-Weltname. |
 | `saves/falkenmark/data/manifest.json` | `latestReport: chronik.html`: Die Weltseite leitet dorthin weiter. |
-| `assets/falkenmark.css`, `assets/affiche-falkenmark.svg` | Eigene Farben (Waldgrün, Lodenband statt Madras) und Zierbild. Das Bild ist keine Karte. |
+| `saves/falkenmark/images/` | Bilder der Chronik, z. B. die KI-Ansicht „Falkenried · 1900“ nach einer Spielaufnahme. |
+| `assets/falkenmark.css`, `assets/affiche-falkenmark.svg` | Eigenes Erscheinungsbild, unabhängig von `styles.css`: Leinenpapier mit Höhenlinien, Waldgrün, Schiefer, Ziegelrot, Grenzlinie (Strich-Punkt) statt Madras-Band, Source Serif 4 und Jost statt Playfair. Dazu das Zierbild (keine Karte). Die Falkenmark-Karte auf dem Portal hat passende Regeln in `styles.css` (`.world-card[data-world="falkenmark"]`). |
 
 Die allgemeine Datenansicht (`index.html?view=archive`) ist noch auf das Archipel zugeschnitten (Wörter wie „Inseln“ im Atlas). Einstieg für die Falkenmark ist `chronik.html`.
 
