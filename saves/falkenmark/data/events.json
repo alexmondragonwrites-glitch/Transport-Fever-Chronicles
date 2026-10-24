@@ -9,14 +9,18 @@
       "game_time_label": "Startjahr 1900, vor Spielbeginn",
       "kind": "fakt",
       "category": "Spielstart",
-      "title": "Einstellungen der neuen Welt",
+      "title": "Einstellungsseite vor dem Spielstart",
       "description": "Startjahr 1900. Kartengröße „Größenwahnsinnig“ im Format 1:2, 16,5 × 33,0 km, Zufallswert L20TRhQnGA. Seen vereinzelt, Flüsse und Berge normal. Deutsche Ortsnamen, mittlere Städtedichte, normale Industriedichte. Wetter dynamisch, Tageszeit kontinuierlich, Schwierigkeit „Schwierig“. Die Seite zeigt den Stand vor dem Klick auf „Spiel starten“.",
       "entities": [
         "falkenmark"
       ],
       "source": "Screenshot „Neues Spiel – Einstellungen“",
       "recorded": "2026-10-24",
-      "recorded_note": "Tag der Übergabe; die genaue Aufnahmezeit ist nicht bekannt."
+      "recorded_note": "Tag der Übergabe; die genaue Aufnahmezeit ist nicht bekannt.",
+      "correction": {
+        "date": "2026-10-24",
+        "note": "Diese Seite zeigt nicht die gespeicherte Welt. Gespeichert wurde eine später erzeugte Karte mit Zufallswert OKij0PeQLm und einer Stufe größerer Karte; Dichte, Schwierigkeit, Wetter, Tageszeit und Ortsnamen blieben gleich. Siehe „Welt erzeugt und als Falkenmark gespeichert“."
+      }
     },
     {
       "id": "vorschau-falkenmark",
@@ -32,7 +36,43 @@
       ],
       "source": "Screenshot „Neues Spiel – Einstellungen“",
       "recorded": "2026-10-24",
-      "recorded_note": "Tag der Übergabe; die genaue Aufnahmezeit ist nicht bekannt."
+      "recorded_note": "Tag der Übergabe; die genaue Aufnahmezeit ist nicht bekannt.",
+      "correction": {
+        "date": "2026-10-24",
+        "note": "Die Vorschau gehört zur Karte mit Zufallswert L20TRhQnGA, die laut Spielprotokoll tatsächlich 46 Städte und 44 Industrien hatte, aber nicht gespeichert wurde. Die gespeicherte Welt hat 67 Städte und 52 Industrien."
+      }
+    },
+    {
+      "id": "erzeugt-falkenmark",
+      "date": "1900-01-01",
+      "precision": "day",
+      "game_time_label": "1. Januar 1900",
+      "kind": "fakt",
+      "category": "Spielstart",
+      "title": "Welt erzeugt und als Falkenmark gespeichert",
+      "description": "Zufallswert OKij0PeQLm, Kartengröße Stufe 8 (die Karte „Größenwahnsinnig“ der Einstellungsseite war Stufe 7), Format 1:2, gemessener Kartenrand 20,5 × 41,0 km. Gemäßigtes Klima, deutsche Ortsnamen. Dichte-, Schwierigkeits-, Wetter- und Tageszeitwerte wie auf der Einstellungsseite. 42 Mods aktiv, darunter „Lebensmittel-Industrie“ (Rev. 3), „Electronics Pack“ (Rev. 2) und „Spielmonitor – Live-Daten und Chronik“ (Rev. 18).",
+      "entities": [
+        "falkenmark"
+      ],
+      "source": "Spielprotokoll von Transport Fever 3 (stdout.txt)",
+      "recorded": "2026-10-24",
+      "recorded_note": "Erzeugt 06:18 bis 06:21 Uhr, gespeichert als Falkenmark.sav um 06:21, 06:28 und 06:30 Uhr."
+    },
+    {
+      "id": "messung-falkenmark-1900-01-01",
+      "date": "1900-01-01",
+      "precision": "day",
+      "game_time_label": "1. Januar 1900",
+      "kind": "fakt",
+      "category": "Erste Messung",
+      "title": "67 Städte, 7.893 Einwohner, 52 Industrien",
+      "description": "Erste Messung des Spielmonitors: 67 Städte mit zusammen 7.893 Einwohnern, die größte ist Dierdorf mit 231. 52 Industrien, keine davon aus den Paketen „Lebensmittel-Industrie“ oder „Electronics Pack“. Noch keine Linie und kein Fahrzeug; Kontostand laut Messung 0.",
+      "entities": [
+        "falkenmark"
+      ],
+      "source": "Spielmonitor, Welt „Falkenmark – 1900“",
+      "recorded": "2026-10-24",
+      "recorded_note": "Messung um 06:29 Uhr; Positionen und Höhenraster aus der Messung beim Laden um 06:20 Uhr (Spielprotokoll)."
     }
   ]
 }

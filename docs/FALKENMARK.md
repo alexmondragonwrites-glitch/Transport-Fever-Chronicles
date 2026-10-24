@@ -38,6 +38,6 @@ Politische Einordnung bleibt offen; reale historische Ereignisse gehören nicht 
 
 ## Spielmonitor
 
-Im Spielmonitor heißt die Welt „Falkenmark – 1900“ (angelegt und vorgewählt am 24.10.2026). Die Weltkennung des Spielstands wird mit der ersten Messung verknüpft. Voraussetzungen: Mod „Spielmonitor – Live-Daten und Chronik“ im Spielstand aktiv, Monitor vor dem Laden mit dieser Welt gestartet, Spielstand nach dem ersten Laden gespeichert.
+Im Spielmonitor heißt die Welt „Falkenmark – 1900“ (angelegt und vorgewählt am 24.10.2026), Weltkennung `tf3-2026-10-24-1792815641-1925542896-2`, Spielstand `Falkenmark.sav`, Zufallswert `OKij0PeQLm`. Der Screenshot der Einstellungsseite zeigt eine früher erzeugte Karte, nicht diese Welt (Korrektur vom 24.10.2026 in `chronik.html`). Voraussetzungen: Mod „Spielmonitor – Live-Daten und Chronik“ im Spielstand aktiv, Monitor vor dem Laden mit dieser Welt gestartet, Spielstand nach dem ersten Laden gespeichert.
 
-Sobald die Weltkennung feststeht, kann die Falkenmark einen Eintrag in `data/monitor-sources.json` bekommen. Ob `publish-monitor.py --save falkenmark` dann ohne Anpassungen läuft (es baut auch das Journal), ist noch nicht geprüft. `WEBSITE_AKTUALISIEREN.bat` lädt weiter nur das Archipel hoch; die Skripte lesen nur Zeilen mit dessen `world_id`.
+Die Weltkennung steht fest; ein Eintrag in `data/monitor-sources.json` fehlt noch. Ob `publish-monitor.py --save falkenmark` dann ohne Anpassungen läuft (es baut auch das Journal), ist noch nicht geprüft. `WEBSITE_AKTUALISIEREN.bat` lädt weiter nur das Archipel hoch; die Skripte lesen nur Zeilen mit dessen `world_id`.

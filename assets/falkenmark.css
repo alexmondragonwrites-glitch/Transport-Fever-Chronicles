@@ -64,6 +64,7 @@ body.fm{
 .fm-table td.fm-time{width:118px;font-family:var(--serif);font-style:italic;color:var(--red)}
 #register .fm-table td:last-child{min-width:190px}
 .fm-table td strong{color:var(--ink)}
+.fm-main .fm-fix{font-size:14px;line-height:1.55;margin:8px 0 0;padding:8px 10px;background:var(--note-bg);color:var(--read)}
 
 /* Auswertungen */
 .fm-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:6px 0 10px}
