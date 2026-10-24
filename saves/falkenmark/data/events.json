@@ -361,6 +361,182 @@
       "source": "Spielmonitor, Welt „Falkenmark – 1900“",
       "recorded": "2026-10-24",
       "recorded_note": "Sitzung 20261024_064129, aufgenommen am 24.10.2026."
+    },
+    {
+      "id": "treibstoff-lindendorf-1901-02-14",
+      "date": "1901-02-14",
+      "precision": "day",
+      "game_time_label": "14. Februar 1901",
+      "kind": "fakt",
+      "category": "Versorgung",
+      "title": "Erster Treibstoff in Lindendorf",
+      "description": "Lindendorf ist erstmals mit Treibstoff versorgt: 6 von 48 Einheiten. Das Konto steht an diesem Tag bei −1.292.862.",
+      "entities": [
+        "falkenmark"
+      ],
+      "source": "Spielmonitor, Welt „Falkenmark – 1900“",
+      "recorded": "2026-10-24",
+      "recorded_note": "Sitzungen 20261024_064129 und 20261024_093700, aufgenommen am 24.10.2026."
+    },
+    {
+      "id": "subvention-1901-02-20",
+      "date": "1901-02-20",
+      "precision": "day",
+      "game_time_label": "20. Februar 1901",
+      "kind": "fakt",
+      "category": "Finanzen",
+      "title": "Subvention über 11.180.000",
+      "description": "Der Kontostand steigt auf 8.729.093. Am selben Tag fährt ein zweiter Dampfer „Sydfart“.",
+      "entities": [
+        "falkenmark"
+      ],
+      "source": "Spielmonitor, Welt „Falkenmark – 1900“",
+      "recorded": "2026-10-24",
+      "recorded_note": "Sitzungen 20261024_064129 und 20261024_093700, aufgenommen am 24.10.2026."
+    },
+    {
+      "id": "fuhrwerke-1901-02-26",
+      "date": "1901-02-26",
+      "precision": "day",
+      "game_time_label": "26. Februar 1901",
+      "kind": "fakt",
+      "category": "Verkehr",
+      "title": "Mehr Fuhrwerke",
+      "description": "Lehm 9 statt 5, Ziegel 6 statt 5, Gemüse 5 statt 4 Pferdefuhrwerke.",
+      "entities": [
+        "falkenmark"
+      ],
+      "source": "Spielmonitor, Welt „Falkenmark – 1900“",
+      "recorded": "2026-10-24",
+      "recorded_note": "Sitzungen 20261024_064129 und 20261024_093700, aufgenommen am 24.10.2026."
+    },
+    {
+      "id": "postkutschen-lindendorf-1901-03-06",
+      "date": "1901-03-06",
+      "precision": "day",
+      "game_time_label": "6. März 1901",
+      "kind": "fakt",
+      "category": "Verkehr",
+      "title": "Postkutschen in Lindendorf",
+      "description": "Zwei Postkutschenlinien im Ort mit je drei Kutschen und fünf Halten.",
+      "entities": [
+        "falkenmark"
+      ],
+      "source": "Spielmonitor, Welt „Falkenmark – 1900“",
+      "recorded": "2026-10-24",
+      "recorded_note": "Sitzungen 20261024_064129 und 20261024_093700, aufgenommen am 24.10.2026."
+    },
+    {
+      "id": "postkutsche-breitroda-1901-05-23",
+      "date": "1901-05-23",
+      "precision": "day",
+      "game_time_label": "23. Mai 1901",
+      "kind": "fakt",
+      "category": "Verkehr",
+      "title": "Postkutsche in Breitroda; Subvention 1.450.000",
+      "description": "Eine Postkutschenlinie mit zwei Kutschen und zwei Halten in Breitroda, gekauft am 23.5.1901. Am selben Tag geht eine Subvention über 1.450.000 ein.",
+      "entities": [
+        "falkenmark"
+      ],
+      "source": "Spielmonitor, Welt „Falkenmark – 1900“",
+      "recorded": "2026-10-24",
+      "recorded_note": "Sitzungen 20261024_064129 und 20261024_093700, aufgenommen am 24.10.2026."
+    },
+    {
+      "id": "kutter-hafenort-1901-07-28",
+      "date": "1901-07-28",
+      "precision": "day",
+      "game_time_label": "28. Juli 1901",
+      "kind": "fakt",
+      "category": "Verkehr",
+      "title": "Kanadischer Kutter in Hafenort",
+      "description": "Gekauft für eine Linie mit zwei Halten in Hafenort (Rohöl). In Hafenort wird seit dem 20.5.1901 eine Ölplattform gemessen.",
+      "entities": [
+        "falkenmark"
+      ],
+      "source": "Spielmonitor, Welt „Falkenmark – 1900“",
+      "recorded": "2026-10-24",
+      "recorded_note": "Sitzungen 20261024_064129 und 20261024_093700, aufgenommen am 24.10.2026."
+    },
+    {
+      "id": "rohoel-hafenort-1901-08-04",
+      "date": "1901-08-04",
+      "precision": "day",
+      "game_time_label": "4. August 1901",
+      "kind": "fakt",
+      "category": "Verkehr",
+      "title": "Fuhrwerke für Rohöl Hafenort–Breitroda",
+      "description": "Drei Pferdefuhrwerke, gekauft am 4.8.1901; sechs ab dem 20.8., neun ab dem 9.10.1901. Die Ölplattform bei Hafenort verschickt ab dem 10.8.1901.",
+      "entities": [
+        "falkenmark"
+      ],
+      "source": "Spielmonitor, Welt „Falkenmark – 1900“",
+      "recorded": "2026-10-24",
+      "recorded_note": "Sitzungen 20261024_064129 und 20261024_093700, aufgenommen am 24.10.2026."
+    },
+    {
+      "id": "postkutsche-buchenburg-1901-08-22",
+      "date": "1901-08-22",
+      "precision": "day",
+      "game_time_label": "22. August 1901",
+      "kind": "fakt",
+      "category": "Verkehr",
+      "title": "Postkutsche in Buchenburg; Subvention 2.210.000",
+      "description": "Eine Postkutschenlinie mit zwei Kutschen in Buchenburg, gekauft am 22.8.1901; am selben Tag geht eine Subvention über 2.210.000 ein. Bis zum 11.9. folgen weitere 3.870.000 (3. Quartal zusammen 6.080.000).",
+      "entities": [
+        "falkenmark"
+      ],
+      "source": "Spielmonitor, Welt „Falkenmark – 1900“",
+      "recorded": "2026-10-24",
+      "recorded_note": "Sitzungen 20261024_064129 und 20261024_093700, aufgenommen am 24.10.2026."
+    },
+    {
+      "id": "flotten-herbst-1901",
+      "date": "1901-12-03",
+      "precision": "day",
+      "game_time_label": "Oktober bis Dezember 1901",
+      "kind": "fakt",
+      "category": "Verkehr",
+      "title": "Flotten wachsen",
+      "description": "Je drei Kutschen in Breitroda und Buchenburg (15.10.), fünf Treibstoff-Fuhrwerke (10.11.), drei Kutschen Falkenried–Hintereichdorf (3.12.).",
+      "entities": [
+        "falkenmark"
+      ],
+      "source": "Spielmonitor, Welt „Falkenmark – 1900“",
+      "recorded": "2026-10-24",
+      "recorded_note": "Sitzungen 20261024_064129 und 20261024_093700, aufgenommen am 24.10.2026."
+    },
+    {
+      "id": "betriebe-1901",
+      "date": "1901-12-25",
+      "precision": "day",
+      "game_time_label": "Im Lauf des Jahres 1901",
+      "kind": "fakt",
+      "category": "Industrie",
+      "title": "Neun neue Betriebe, sechs verschwunden",
+      "description": "Neu gemessen u. a. Hintereschensee Sägewerk (3.4.), Hafenort Ölplattform (20.5.), Erleneck Lehmgrube (4.7.), Hintertalhausen Viehzuchtbetrieb (20.8.), Falkenried Fischzucht (16.12.). Ende 1901: 60 Betriebe.",
+      "entities": [
+        "falkenmark"
+      ],
+      "source": "Spielmonitor, Welt „Falkenmark – 1900“",
+      "recorded": "2026-10-24",
+      "recorded_note": "Sitzungen 20261024_064129 und 20261024_093700, aufgenommen am 24.10.2026."
+    },
+    {
+      "id": "jahresende-1901",
+      "date": "1901-12-31",
+      "precision": "day",
+      "game_time_label": "31. Dezember 1901",
+      "kind": "fakt",
+      "category": "Jahresbilanz",
+      "title": "Das zweite Jahr der FTG",
+      "description": "15 Linien, 60 Fahrzeuge. Jahresergebnis +3.708.209 bei 18.710.000 Subvention (Stand 25.12.). Kredit 19.833.346, Kontostand 2.356.202 (30.12.). Falkenried 269, Lindendorf 165 Einwohner, die Falkenmark 8.188.",
+      "entities": [
+        "falkenmark"
+      ],
+      "source": "Spielmonitor, Welt „Falkenmark – 1900“",
+      "recorded": "2026-10-24",
+      "recorded_note": "Sitzungen 20261024_064129 und 20261024_093700, aufgenommen am 24.10.2026."
     }
   ]
 }

@@ -107,6 +107,8 @@ html{scroll-behavior:smooth}
 .fm-main .fm-scene p+p{text-indent:1.6em}
 .fm-main .fm-scene h3+p::first-letter{float:left;font-size:3.3em;line-height:.9;font-weight:600;margin:.06em .1em 0 0;color:var(--fm-brick)}
 .fm-main .fm-scene p:last-child{margin-bottom:12px}
+/* Dialoge ohne Initiale: sie fiele sonst auf das Anführungszeichen */
+.fm-main .fm-scene--dialog h3+p::first-letter{float:none;font-size:inherit;line-height:inherit;font-weight:inherit;margin:0;color:inherit}
 .fm-scene .fm-block-label{margin-bottom:10px}
 .fm-note{margin:28px 0 8px;padding:14px 18px;border:1px dashed var(--fm-line-strong);background:#ffffff66}
 .fm-main .fm-note h4{margin:0 0 6px}
@@ -132,8 +134,9 @@ html{scroll-behavior:smooth}
 .fm-main .fm-chapter-period{font-family:var(--fm-mono);font-size:13px;color:var(--fm-muted);margin:0}
 
 /* Kapitelnavigation: bleibt beim Lesen unter der Kopfleiste stehen */
-.fm-chapnav{position:sticky;top:62px;z-index:10;display:flex;gap:4px;margin:22px 0 6px;padding:6px;background:#eef0e9f2;border:1px solid var(--fm-line);box-shadow:0 8px 18px -16px #1f3128aa}
-.fm-chapnav a{flex:1;display:flex;flex-direction:column;gap:1px;padding:7px 12px;text-decoration:none;color:var(--fm-read);font-family:var(--fm-serif);font-size:16px;border-bottom:2px solid transparent}
+.fm-chapnav{position:sticky;top:62px;z-index:10;display:flex;gap:4px;margin:22px 0 6px;padding:6px;background:#eef0e9f2;border:1px solid var(--fm-line);box-shadow:0 8px 18px -16px #1f3128aa;overflow-x:auto;scrollbar-width:none}
+.fm-chapnav::-webkit-scrollbar{display:none}
+.fm-chapnav a{flex:1 0 auto;display:flex;flex-direction:column;gap:1px;padding:7px 12px;text-decoration:none;color:var(--fm-read);font-family:var(--fm-serif);font-size:16px;white-space:nowrap;border-bottom:2px solid transparent}
 .fm-chapnav a span{font-family:var(--fm-sans);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--fm-muted)}
 .fm-chapnav a:hover{background:var(--fm-card)}
 .fm-chapnav a[aria-current="true"]{background:var(--fm-card);border-bottom-color:var(--fm-brick);color:var(--fm-ink)}
