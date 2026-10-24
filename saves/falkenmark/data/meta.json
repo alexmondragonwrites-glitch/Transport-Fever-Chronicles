@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "id": "falkenmark",
+  "name": "Falkenmark",
+  "chronicle_title": "Falkenmark – Chronik eines Landes im Wandel",
+  "subtitle": "Chronik eines Landes im Wandel",
+  "game": "Transport Fever 3",
+  "starting_year": 1900,
+  "latest_game_date": "1900",
+  "last_observed": "2026-10-24",
+  "company": "Unternehmen noch nicht festgelegt",
+  "status": "Neuer Spielstand",
+  "tone": "Erfundene mitteleuropäische Region, gemäßigtes Klima, deutsche Ortsnamen",
+  "description": "Ein schmales Land von 16,5 × 33 km mit bewaldeten Höhenzügen, Flusstälern und verstreuten Seen. Laut Kartenvorschau 46 Städte und 44 Industrien, Startjahr 1900. Unternehmen, Gründungsort und erste Verbindungen stehen noch nicht fest.",
+  "city_ids": [],
+  "monitor_world": "Falkenmark – 1900",
+  "isolation_note": "Eigenständiger Spielstand. Orte, Unternehmen und Ereignisse anderer Welten dieses Archivs werden nicht übernommen.",
+  "disclaimer": "Spielbeobachtungen und Momentaufnahmen, keine Echtzeitdaten. Literarische Szenen sind gekennzeichnet."
+}

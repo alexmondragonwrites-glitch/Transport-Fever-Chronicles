@@ -41,6 +41,10 @@ Die illustrierte Langform-Seite über die Jahre 1900 bis 1910 bleibt unter [Sond
 - **GitHub Pages:** https://alexmondragonwrites-glitch.github.io/Transport-Fever-Chronicles/
 - **Aktueller Bericht:** https://alexmondragonwrites-glitch.github.io/Transport-Fever-Chronicles/saves/archipel-des-alizes/weihnachten-1911.html
 
+## Zweite Welt: Falkenmark · ab 1900
+
+Eine erfundene mitteleuropäische Region in gemäßigtem Klima: 16,5 × 33 km, bewaldete Höhenzüge, Flusstäler, verstreute Seen, laut Kartenvorschau 46 Städte und 44 Industrien. Eigenständiger Spielstand, getrennt vom Archipel. **[Falkenmark – Chronik eines Landes im Wandel](saves/falkenmark/chronik.html)** wächst aus dem Spielverlauf; Unternehmen und erste Verbindungen stehen noch aus. [Arbeitsweise und Regeln](docs/FALKENMARK.md).
+
 ## Methodik und Datenqualität
 
 Der Export vom **24. Dezember 1911** unterscheidet **Jahresproduktion**, **Jahresversand**, **Jahreszulieferung** und den aktuellen Status einer Industrie. Darum können Betriebe aktuell auf „gestoppt“ stehen, obwohl das laufende Spieljahr bereits positive Produktions- oder Versandmengen hatte. Ein positiver Produktionswert bei Versand 0 beweist nicht, dass alle Güter verderben oder ungenutzt bleiben.

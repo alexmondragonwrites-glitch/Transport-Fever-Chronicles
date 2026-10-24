@@ -12,6 +12,18 @@
       "path": "saves/archipel-des-alizes/",
       "data": "saves/archipel-des-alizes/data/",
       "accent": "#e9b763"
+    },
+    {
+      "id": "falkenmark",
+      "title": "Falkenmark",
+      "subtitle": "Chronik eines Landes im Wandel: Höhenzüge, Flusstäler und 46 Städte in einem gemäßigten Land",
+      "game": "Transport Fever 3",
+      "starting_year": 1900,
+      "status": "Neuer Spielstand",
+      "company": "Unternehmen noch nicht festgelegt",
+      "path": "saves/falkenmark/",
+      "data": "saves/falkenmark/data/",
+      "accent": "#4f6f52"
     }
   ]
 }

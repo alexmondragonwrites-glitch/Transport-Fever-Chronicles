@@ -23,8 +23,10 @@ write(latest.demand,{schema_version:1,save_id:id,game_date:initial,source:"Noch 
 write("events.json",{schema_version:1,policy:"append-only",events:[{id:"start-"+id,date:String(year),precision:"year",kind:"fakt",category:"Spielstart",title:"Beginn der neuen Welt",description:"Der Spielstand wurde für das Startjahr "+year+" angelegt.",entities:[id],source:"Spielstand-Metadaten"}]});
 write("manifest.json",{schema_version:1,save_id:id,latest_game_date:initial,latest,snapshots:[{game_date:initial,source:"Erstellung ohne Watcher-Export",lines:latest.lines,industries:latest.industries,demand:latest.demand}]});
 const template=readFileSync("saves/archipel-des-alizes/index.html","utf8");
-writeFileSync(join(path,"index.html"),template.replaceAll("Archipel des Alizés",name).replace('data-save="archipel-des-alizes"','data-save="'+id+'"'),"utf8");
-reg.worlds.push({id,title:name,subtitle:meta.subtitle,game:"Transport Fever 3",starting_year:year,status:meta.status,company,path:path+"/",data:base+"/",accent:"#e9b763"});
+const attr=s=>s.replace(/&/g,"&amp;").replace(/"/g,"&quot;");
+writeFileSync(join(path,"index.html"),template.replace(/<meta name="description" content="[^"]*">/,'<meta name="description" content="'+attr(name)+': eine Transport-Fever-3-Welt ab '+year+'.">').replaceAll("Archipel des Alizés",name).replace('data-save="archipel-des-alizes"','data-save="'+id+'"'),"utf8");
+// Registerpfade sind URLs: immer mit "/", auch wenn join() unter Windows "\" liefert.
+reg.worlds.push({id,title:name,subtitle:meta.subtitle,game:"Transport Fever 3",starting_year:year,status:meta.status,company,path:"saves/"+id+"/",data:"saves/"+id+"/data/",accent:"#e9b763"});
 writeFileSync(regPath,JSON.stringify(reg,null,2)+"\n","utf8");
 console.log("Neue Welt angelegt: "+name+" ("+id+"). Portalregister aktualisiert.");
 console.log("Nächster Schritt: node scripts/validate-data.mjs, anschließend Änderungen committen.");

@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "policy": "append-only",
+  "events": [
+    {
+      "id": "start-falkenmark",
+      "date": "1900",
+      "precision": "year",
+      "game_time_label": "Startjahr 1900, vor Spielbeginn",
+      "kind": "fakt",
+      "category": "Spielstart",
+      "title": "Einstellungen der neuen Welt",
+      "description": "Startjahr 1900. Kartengröße „Größenwahnsinnig“ im Format 1:2, 16,5 × 33,0 km, Zufallswert L20TRhQnGA. Seen vereinzelt, Flüsse und Berge normal. Deutsche Ortsnamen, mittlere Städtedichte, normale Industriedichte. Wetter dynamisch, Tageszeit kontinuierlich, Schwierigkeit „Schwierig“. Die Seite zeigt den Stand vor dem Klick auf „Spiel starten“.",
+      "entities": [
+        "falkenmark"
+      ],
+      "source": "Screenshot „Neues Spiel – Einstellungen“",
+      "recorded": "2026-10-24",
+      "recorded_note": "Tag der Übergabe; die genaue Aufnahmezeit ist nicht bekannt."
+    },
+    {
+      "id": "vorschau-falkenmark",
+      "date": "1900",
+      "precision": "year",
+      "game_time_label": "Startjahr 1900, vor Spielbeginn",
+      "kind": "fakt",
+      "category": "Kartenvorschau",
+      "title": "46 Städte und 44 Industrien in der Vorschau",
+      "description": "Die Kartenvorschau nennt 46 Städte und 44 Industrien. Ob die gestartete Welt genau diese Zahlen hat, bestätigt erst der Spielstand oder die erste Monitor-Messung.",
+      "entities": [
+        "falkenmark"
+      ],
+      "source": "Screenshot „Neues Spiel – Einstellungen“",
+      "recorded": "2026-10-24",
+      "recorded_note": "Tag der Übergabe; die genaue Aufnahmezeit ist nicht bekannt."
+    }
+  ]
+}

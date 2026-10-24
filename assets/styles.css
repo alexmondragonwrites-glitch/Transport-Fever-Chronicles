@@ -103,6 +103,7 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,su
 .world-card{display:grid;grid-template-columns:230px 1fr;overflow:hidden;padding:0}
 .world-art{min-height:270px;position:relative;background:url(affiche-alizes.svg) center 62%/cover;border-right:6px solid var(--panel);box-shadow:1px 0 0 var(--line-soft)}
 .world-art:before,.world-art:after{content:none}
+.world-card[data-world="falkenmark"] .world-art{background-image:url(affiche-falkenmark.svg);background-position:center 70%}
 .world-copy{padding:28px}
 .tag{display:inline-block;padding:4px 11px;border:1px solid currentColor;border-radius:99px;font-size:12px;color:var(--mint);letter-spacing:.04em;background:#fbf6ea99}
 .tag.earth{color:var(--gold)}

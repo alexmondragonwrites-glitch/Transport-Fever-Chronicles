@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 520" preserveAspectRatio="xMidYMid slice">
+  <!-- Zierbild der Falkenmark: Höhenzüge, See, Flusstal. Keine Karte: Lage und Richtung von Orten, Seen und Flüssen sind frei gezeichnet. -->
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="280" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#b7c6c3"/>
+      <stop offset=".6" stop-color="#dcdecd"/>
+      <stop offset="1" stop-color="#f0e5c8"/>
+    </linearGradient>
+    <linearGradient id="lake" x1="0" y1="304" x2="0" y2="346" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#a6c3c1"/>
+      <stop offset="1" stop-color="#6c9496"/>
+    </linearGradient>
+    <symbol id="fir" viewBox="0 0 12 22"><path d="M6 0 0 9h3l-3 6h4l-3 6h10l-3-6h4l-3-6h3z"/></symbol>
+  </defs>
+  <rect width="400" height="520" fill="url(#sky)"/>
+  <circle cx="284" cy="156" r="50" fill="#f7ecd3" opacity=".9"/>
+  <g fill="#eef0e3" opacity=".75">
+    <ellipse cx="104" cy="84" rx="62" ry="7"/>
+    <ellipse cx="306" cy="100" rx="72" ry="6"/>
+    <ellipse cx="226" cy="58" rx="40" ry="5"/>
+  </g>
+  <!-- Falke -->
+  <path d="M112 128q17-15 34-4 3-6 7-6t7 6q17-11 34 4-19-6-34 7-3 4-7 4t-7-4q-15-13-34-7z" fill="#2b3a39"/>
+  <!-- Höhenzüge -->
+  <path d="M0 252c40-14 72-22 112-14s70-18 110-8 80-18 120-4 50 4 58 0v72H0z" fill="#a9b8ac"/>
+  <path d="M0 284c50-20 92-24 140-12s92-8 132 6 86-18 128-10v74H0z" fill="#7d957e"/>
+  <!-- See -->
+  <path d="M150 318c40-14 110-12 150-2 20 6 12 18-10 22-40 8-110 8-140-2-16-6-14-14 0-18z" fill="url(#lake)"/>
+  <g stroke="#e7efe6" stroke-width="2" stroke-linecap="round" opacity=".6">
+    <path d="M190 322h44"/><path d="M212 330h52"/><path d="M178 337h30"/>
+  </g>
+  <!-- Bewaldete Hänge -->
+  <path d="M0 302c40-10 82-4 120 16s52 46 40 62H0z" fill="#4c6a52"/>
+  <path d="M400 298c-40 4-70 22-82 42s4 34 22 40h60z" fill="#567058"/>
+  <g fill="#3a5541">
+    <use href="#fir" x="14" y="300" width="12" height="22"/><use href="#fir" x="32" y="296" width="12" height="22"/>
+    <use href="#fir" x="50" y="300" width="12" height="22"/><use href="#fir" x="70" y="306" width="12" height="22"/>
+    <use href="#fir" x="90" y="314" width="12" height="22"/><use href="#fir" x="108" y="326" width="12" height="22"/>
+    <use href="#fir" x="24" y="322" width="12" height="22"/><use href="#fir" x="58" y="328" width="12" height="22"/>
+    <use href="#fir" x="352" y="304" width="12" height="22"/><use href="#fir" x="370" y="300" width="12" height="22"/>
+    <use href="#fir" x="336" y="318" width="12" height="22"/><use href="#fir" x="384" y="316" width="12" height="22"/>
+  </g>
+  <!-- Talboden mit Feldern -->
+  <path d="M0 362c80-12 150-16 210-12s120 8 190 4v166H0z" fill="#a9a974"/>
+  <g fill="#bdb47c">
+    <path d="M30 380l70-6 8 18-74 8z"/><path d="M262 372l64 2-4 18-62-2z"/><path d="M118 404l58-4 6 16-60 6z"/>
+  </g>
+  <g fill="#929660">
+    <path d="M300 404l66 2-2 16-66-2z"/><path d="M40 418l56-4 4 14-58 6z"/>
+  </g>
+  <!-- Fluss -->
+  <path d="M226 344c4 26-20 40-12 60s36 28 18 52-54 34-42 64" fill="none" stroke="#9cbfbd" stroke-width="8" stroke-linecap="round"/>
+  <path d="M226 344c4 26-20 40-12 60s36 28 18 52-54 34-42 64" fill="none" stroke="#d6e6e2" stroke-width="2" stroke-linecap="round" opacity=".7"/>
+  <!-- Ort im Tal -->
+  <g>
+    <rect x="258" y="392" width="16" height="11" fill="#efe2c5"/><path d="M256 393l10-8 10 8z" fill="#8a4b33"/>
+    <rect x="278" y="396" width="14" height="10" fill="#e8d9b8"/><path d="M276 397l9-7 9 7z" fill="#7c4430"/>
+    <rect x="298" y="390" width="20" height="14" fill="#efe2c5"/><path d="M296 391l12-8 12 8z" fill="#8a4b33"/>
+    <rect x="322" y="380" width="8" height="24" fill="#e8d9b8"/><path d="M321 381l5-14 5 14z" fill="#5d3a2c"/>
+    <rect x="330" y="392" width="18" height="12" fill="#efe2c5"/><path d="M328 393l11-7 11 7z" fill="#7c4430"/>
+  </g>
+  <!-- Vordergrund -->
+  <path d="M0 448c70-20 140-12 190 18s70 54 70 54H0z" fill="#2f4a3a"/>
+  <path d="M400 438c-50 6-90 30-100 82h100z" fill="#33503d"/>
+  <g fill="#22382c">
+    <use href="#fir" x="10" y="436" width="16" height="30"/><use href="#fir" x="34" y="430" width="16" height="30"/>
+    <use href="#fir" x="58" y="428" width="16" height="30"/><use href="#fir" x="84" y="432" width="16" height="30"/>
+    <use href="#fir" x="110" y="440" width="16" height="30"/><use href="#fir" x="22" y="462" width="16" height="30"/>
+    <use href="#fir" x="70" y="458" width="16" height="30"/><use href="#fir" x="340" y="436" width="16" height="30"/>
+    <use href="#fir" x="366" y="430" width="16" height="30"/><use href="#fir" x="320" y="456" width="16" height="30"/>
+  </g>
+</svg>
