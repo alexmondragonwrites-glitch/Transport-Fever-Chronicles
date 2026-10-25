@@ -26,7 +26,7 @@ Aufbau eines Kapitels:
 1. Kopf: `<h3><span class="fm-chapter-no">Kapitel N</span> Titel</h3>` und `<p class="fm-chapter-period">` mit dem Zeitraum.
 2. Optional ein Bild (`figure.fm-founding`), bei KI-Bildern so gekennzeichnet.
 3. Übersicht `.fm-overview`: Kennzahlen (`.fm-stat`, `--neg` für Verluste), Zeitachse (`ol.fm-timeline`, Schlüsselereignis mit `is-key`) und Linien-Schemata (`figure.fm-route`: `fm-stop`, `fm-leg`, `fm-leg--assumed` für nicht gemessene Verläufe, `fm-stop--ring` für Linien im Ort). Nur Zahlen und Daten, die wörtlich im Text oder im Register stehen.
-4. Textblöcke: `div.fm-block.fm-block--belegt` (Dokumentkasten, Quelle als letzter Absatz `p.fm-source`), `div.fm-block.fm-block--abgeleitet` (Kommentar mit Akzentbalken), `div.fm-scene` (Pergament, Initiale, eingerückte Folgeabsätze).
+4. Textblöcke: `div.fm-block.fm-block--belegt` (Dokumentkasten, Quelle als letzter Absatz `p.fm-source`), `div.fm-block.fm-block--abgeleitet` (Kommentar mit Akzentbalken), `div.fm-scene` (Pergament, Initiale, eingerückte Folgeabsätze). Varianten: `fm-scene--dialog` (keine Initiale, für Szenen, die mit einem Anführungszeichen beginnen), `fm-scene--eintraege` (Anzeigen, Protokoll und andere Einträge: ohne Initiale und Einzug, mit Abstand), `p.fm-randnotiz` (Randbemerkung in Ziegelrot, etwa die Note des Lehrers). Gestrichelte Wege im Linien-Schema: `fm-leg--assumed` für den abgeleiteten Verlauf einer gemessenen Linie, zusätzlich `fm-leg--ware` für einen möglichen Warenweg zwischen Betrieben, für den es noch keine Linie gibt (Zusatz „Luftlinie“).
 5. Quellen als Badge: `<a class="fm-q" href="#q4" data-tip="…" aria-label="Quelle Q4: …">Q4</a>`; die Quellenliste hat die Anker `#q1`, `#q2` … (`li id="qN"`). Die nächste freie Nummer steht in `werkstatt/falkenmark/STAND.md`.
 
 Schriften bleiben lokal (Source Serif 4, Jost) bzw. Systemschrift für Zahlen (`--fm-mono`); keine Google Fonts, kein Playfair (Archipel).
@@ -54,6 +54,8 @@ Einträge nicht löschen. Falsche Angaben werden korrigiert und im Abschnitt „
 Werte „pro Jahr“ aus dem Spiel (Produktion, Versand, Linienbilanz) umfassen ein Wirtschaftsjahr des Spiels, nicht das Kalenderjahr. Die Falkenmark läuft mit rund 16.000 Spielzeit-Einheiten je Kalendertag, ein Wirtschaftsjahr sind also rund 91 Tage. In der Chronik steht deshalb immer der Zeitraum dabei (Korrektur vom 24.10.2026). Die Finanztabelle rechnet nach Kalenderquartalen.
 
 Politische Einordnung bleibt offen; reale historische Ereignisse gehören nicht automatisch zur Welt. Ton: ruhige Regionalgeschichte mit gelegentlichen Reportagen, kein Werbeton, auch Umwege und stillstehende Orte erzählen. Die Zukunft wird nicht vorweggenommen.
+
+Wunsch des Spielers vom 25.10.2026 für alle Texte, besonders die Szenen: Formen variieren, natürlich klingen, Verneinungsfiguren meiden („nicht X, sondern Y“, „kein …“, „niemand …“) und keine KI-Phrasen (etwa „zeugt von“, „markiert“, „Meilenstein“, glatte Schlusssätze, Dreierreihen). Was fehlt, positiv sagen: „fehlt“, „bleibt offen“, „steht still“. Bisherige Formen und wiederkehrende Figuren stehen in `werkstatt/falkenmark/STAND.md`.
 
 ## Spielmonitor
 

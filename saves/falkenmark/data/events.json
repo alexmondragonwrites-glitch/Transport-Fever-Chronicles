@@ -549,6 +549,390 @@
       "source": "Spielmonitor, Welt „Falkenmark – 1900“",
       "recorded": "2026-10-24",
       "recorded_note": "Sitzungen 20261024_064129 und 20261024_093700, aufgenommen am 24.10.2026."
+    },
+    {
+      "id": "falkenried-groesster-ort-1901-07-07",
+      "date": "1901-07-07",
+      "precision": "day",
+      "game_time_label": "7. Juli 1901",
+      "kind": "fakt",
+      "category": "Bevölkerung",
+      "title": "Falkenried ist der größte Ort",
+      "description": "232 Einwohner am 7.7.1901, einer mehr als Rotrode (231), bis dahin der größte Ort der Falkenmark. Nachgetragen am 25.10.2026.",
+      "entities": [
+        "falkenmark"
+      ],
+      "source": "Spielmonitor, Welt „Falkenmark – 1900“",
+      "recorded": "2026-10-24",
+      "recorded_note": "Sitzung 20261024_093700, aufgenommen am 24.10.2026."
+    },
+    {
+      "id": "fisch-falkenried-1902-01-04",
+      "date": "1902-01-04",
+      "precision": "day",
+      "game_time_label": "4. Januar 1902",
+      "kind": "fakt",
+      "category": "Verkehr",
+      "title": "Fisch für Falkenried",
+      "description": "Ein „Kanadischer Kutter“ zwischen der Falkenried Fischzucht und dem Hafen von Falkenried und vier Pferdefuhrwerke vom Hafen in den Ort, gekauft am 4.1.1902. Am selben Tag Subvention über 4.330.000. Die Fischzucht verschickt ab dem 9.2.; erster Fisch in Falkenried am 15.3.1902, 1 von 50 Einheiten.",
+      "entities": [
+        "falkenmark"
+      ],
+      "source": "Spielmonitor, Welt „Falkenmark – 1900“",
+      "recorded": "2026-10-24",
+      "recorded_note": "Sitzungen 20261024_093700 und 20261024_125132, aufgenommen am 24.10.2026."
+    },
+    {
+      "id": "personenzug-falkenried-lindendorf-1902-03-30",
+      "date": "1902-03-30",
+      "precision": "day",
+      "game_time_label": "30. März 1902",
+      "kind": "fakt",
+      "category": "Verkehr",
+      "title": "Erster Personenzug: Falkenried–Lindendorf",
+      "description": "Eine Lokomotive „Preussische T 3“ mit Abteilwagen zwischen Falkenried Station Transfer und Lindendorf Station Ost (2,3 km Luftlinie), gekauft am 30.3.1902. Am selben Tag in beiden Orten je eine Postkutschenlinie mit zwei Kutschen vom Busbahnhof zum Bahnhof. Bauten im 1. Quartal 6,61 Mio., Kredit Ende März 24 Mio.",
+      "entities": [
+        "falkenmark"
+      ],
+      "source": "Spielmonitor, Welt „Falkenmark – 1900“",
+      "recorded": "2026-10-24",
+      "recorded_note": "Sitzung 20261024_125132, aufgenommen am 24.10.2026."
+    },
+    {
+      "id": "waimarie-falkenried-1902-06-05",
+      "date": "1902-06-05",
+      "precision": "day",
+      "game_time_label": "5. Juni 1902",
+      "kind": "fakt",
+      "category": "Verkehr",
+      "title": "Raddampfer zur Fischzucht",
+      "description": "Raddampfer „Waimarie“ für Fahrgäste zwischen Falkenried Hafen und Falkenried Fischzucht, dazu eine Postkutschenlinie mit zwei Kutschen vom Busbahnhof zum Strandweg beim Hafen, beide gekauft am 5.6.1902. Am selben Tag Subvention über 1.730.000.",
+      "entities": [
+        "falkenmark"
+      ],
+      "source": "Spielmonitor, Welt „Falkenmark – 1900“",
+      "recorded": "2026-10-24",
+      "recorded_note": "Sitzung 20261024_125132, aufgenommen am 24.10.2026."
+    },
+    {
+      "id": "falkenried-300-1902-06-26",
+      "date": "1902-06-26",
+      "precision": "day",
+      "game_time_label": "26. Juni 1902",
+      "kind": "fakt",
+      "category": "Bevölkerung",
+      "title": "Falkenried über 300 Einwohner",
+      "description": "302 Einwohner am 26.6.1902. Lindendorf zählt am 29.6. 200.",
+      "entities": [
+        "falkenmark"
+      ],
+      "source": "Spielmonitor, Welt „Falkenmark – 1900“",
+      "recorded": "2026-10-24",
+      "recorded_note": "Sitzung 20261024_125132, aufgenommen am 24.10.2026."
+    },
+    {
+      "id": "lindendorf-vor-rotrode-1902-09-28",
+      "date": "1902-09-28",
+      "precision": "day",
+      "game_time_label": "28. September 1902",
+      "kind": "fakt",
+      "category": "Bevölkerung",
+      "title": "Lindendorf vor Rotrode",
+      "description": "240 Einwohner am 28.9.1902, damit nach Falkenried der zweitgrößte Ort; Rotrode zählt weiter 231. Im Jahr 1902 wächst Lindendorf von 165 auf 286 Einwohner.",
+      "entities": [
+        "falkenmark"
+      ],
+      "source": "Spielmonitor, Welt „Falkenmark – 1900“",
+      "recorded": "2026-10-24",
+      "recorded_note": "Sitzung 20261024_125132, aufgenommen am 24.10.2026."
+    },
+    {
+      "id": "rinderfarm-hintereichdorf-1902-10-02",
+      "date": "1902-10-02",
+      "precision": "day",
+      "game_time_label": "2. Oktober 1902",
+      "kind": "fakt",
+      "category": "Industrie",
+      "title": "Rinderfarm bei Hintereichdorf",
+      "description": "Hintereichdorf Rinderfarm, 1,6 km vom Ort, macht aus Getreide Fleisch und Milch. Erster Betrieb aus dem Mod-Paket „Lebensmittel-Industrie“. Bis Jahresende ohne Produktion.",
+      "entities": [
+        "falkenmark"
+      ],
+      "source": "Spielmonitor, Welt „Falkenmark – 1900“",
+      "recorded": "2026-10-24",
+      "recorded_note": "Sitzung 20261024_125132, aufgenommen am 24.10.2026."
+    },
+    {
+      "id": "lebensmittel-falkenried-1902-10-03",
+      "date": "1902-10-03",
+      "precision": "day",
+      "game_time_label": "3. Oktober 1902",
+      "kind": "fakt",
+      "category": "Versorgung",
+      "title": "Falkenried verlangt Lebensmittel",
+      "description": "Seit 3.10.1902 zusätzlich Lebensmittel, 64 Einheiten, eine Ware aus dem Mod-Paket „Lebensmittel-Industrie“. Die gemessene Fischversorgung fällt am selben Tag von 34 auf 20 Einheiten. Bis Jahresende unversorgt.",
+      "entities": [
+        "falkenmark"
+      ],
+      "source": "Spielmonitor, Welt „Falkenmark – 1900“",
+      "recorded": "2026-10-24",
+      "recorded_note": "Sitzung 20261024_125132, aufgenommen am 24.10.2026."
+    },
+    {
+      "id": "subvention-1902-10-10",
+      "date": "1902-10-10",
+      "precision": "day",
+      "game_time_label": "10. Oktober 1902",
+      "kind": "fakt",
+      "category": "Finanzen",
+      "title": "Subvention über 6.360.000",
+      "description": "Die größte Zahlung des Jahres, nach −593.616 auf dem Konto am 30.9. Subventionen 1902 zusammen 12.420.000 (4.1., 5.6., 10.10.).",
+      "entities": [
+        "falkenmark"
+      ],
+      "source": "Spielmonitor, Welt „Falkenmark – 1900“",
+      "recorded": "2026-10-24",
+      "recorded_note": "Sitzung 20261024_125132, aufgenommen am 24.10.2026."
+    },
+    {
+      "id": "postkutsche-lindendorf-kornhausen-1902-11-20",
+      "date": "1902-11-20",
+      "precision": "day",
+      "game_time_label": "20. November 1902",
+      "kind": "fakt",
+      "category": "Verkehr",
+      "title": "Postkutsche Lindendorf–Kornhausen",
+      "description": "Zwei Postkutschen vom Busbahnhof Lindendorf zum Kornhausen Bauernhof, 1,4 km vor Falkenried, gekauft am 20.11.1902; laut Name die Linie Lindendorf–Falkenried.",
+      "entities": [
+        "falkenmark"
+      ],
+      "source": "Spielmonitor, Welt „Falkenmark – 1900“",
+      "recorded": "2026-10-24",
+      "recorded_note": "Sitzung 20261024_180200, aufgenommen am 24.10.2026."
+    },
+    {
+      "id": "postkutschen-birkreuth-1902-12-09",
+      "date": "1902-12-09",
+      "precision": "day",
+      "game_time_label": "9. Dezember 1902",
+      "kind": "fakt",
+      "category": "Verkehr",
+      "title": "Drei Postkutschenlinien in Birkreuth",
+      "description": "Je zwei Kutschen zwischen dem Busbahnhof, Birkreuth Süd und dem neuen Bahnhof, erstmals gemessen am 9.12.1902. Birkreuth zählt an diesem Tag 76 Einwohner (seit 1900: 84), am 15.12. 82.",
+      "entities": [
+        "falkenmark"
+      ],
+      "source": "Spielmonitor, Welt „Falkenmark – 1900“",
+      "recorded": "2026-10-25",
+      "recorded_note": "Sitzung 20261025_055605, aufgenommen am 25.10.2026."
+    },
+    {
+      "id": "kleidung-lindendorf-1902-12-09",
+      "date": "1902-12-09",
+      "precision": "day",
+      "game_time_label": "9. Dezember 1902",
+      "kind": "fakt",
+      "category": "Versorgung",
+      "title": "Lindendorf verlangt Kleidung",
+      "description": "Seit 9.12.1902 zusätzlich Kleidung, 54 Einheiten. Die gemessene Gemüseversorgung fällt am selben Tag von 62 auf 23 Einheiten. Bis Jahresende unversorgt.",
+      "entities": [
+        "falkenmark"
+      ],
+      "source": "Spielmonitor, Welt „Falkenmark – 1900“",
+      "recorded": "2026-10-25",
+      "recorded_note": "Sitzung 20261025_055605, aufgenommen am 25.10.2026."
+    },
+    {
+      "id": "personenzug-birkreuth-1902-12-15",
+      "date": "1902-12-15",
+      "precision": "day",
+      "game_time_label": "15. Dezember 1902",
+      "kind": "fakt",
+      "category": "Verkehr",
+      "title": "Der Personenzug fährt bis Birkreuth",
+      "description": "Ab 15.12.1902 hält die Linie in Falkenried, Lindendorf und Birkreuth Station West (2,85 km Luftlinie vom Bahnhof Lindendorf), mit drei Zügen aus je einer „Preussischen T 3“ und einem Abteilwagen; der zweite fährt seit dem 14.8.1902. Linienbilanz vom 29.9. bis 29.12.1902 (ein Wirtschaftsjahr): 1.316.735, die höchste aller Linien.",
+      "entities": [
+        "falkenmark"
+      ],
+      "source": "Spielmonitor, Welt „Falkenmark – 1900“",
+      "recorded": "2026-10-25",
+      "recorded_note": "Sitzung 20261025_055605, aufgenommen am 25.10.2026."
+    },
+    {
+      "id": "betriebe-1902",
+      "date": "1902-12-29",
+      "precision": "day",
+      "game_time_label": "Im Lauf des Jahres 1902",
+      "kind": "fakt",
+      "category": "Industrie",
+      "title": "Neun neue Betriebe, fünf verschwunden",
+      "description": "Neu gemessen u. a. Hinteralmhafen Ölplattform Süd (1.1.), Klein Nordfeld Steinbruch (14.3., der erste der Falkenmark), Fuchshain Lehmgrube #1 (22.5.), Hafenort Ölplattform Nord (3.7.), Hintereichdorf Rinderfarm (2.10.). Verschwunden u. a. Birkreuth Lehmgrube (zuletzt 14.8.) und Klein Eibenstadt Holzfällerlager (zuletzt 14.10.). Ende 1902: 64 Betriebe.",
+      "entities": [
+        "falkenmark"
+      ],
+      "source": "Spielmonitor, Welt „Falkenmark – 1900“",
+      "recorded": "2026-10-25",
+      "recorded_note": "Sitzungen 20261024_093700 bis 20261025_055605, aufgenommen am 24. und 25.10.2026."
+    },
+    {
+      "id": "jahresende-1902",
+      "date": "1902-12-31",
+      "precision": "day",
+      "game_time_label": "31. Dezember 1902",
+      "kind": "fakt",
+      "category": "Jahresbilanz",
+      "title": "Das dritte Jahr der FTG",
+      "description": "26 Linien, 102 Fahrzeuge. Jahresergebnis −4.586.951 bei 12.420.000 Subvention (Stand 29.12.). Kredit 23.664.776, Kontostand 1.958.226 (31.12.). Falkenried 356, Lindendorf 286 Einwohner, die Falkenmark 8.403.",
+      "entities": [
+        "falkenmark"
+      ],
+      "source": "Spielmonitor, Welt „Falkenmark – 1900“",
+      "recorded": "2026-10-25",
+      "recorded_note": "Sitzung 20261025_055605, aufgenommen am 25.10.2026."
+    },
+    {
+      "id": "textilfabrik-hinteralmhafen-1903-01-02",
+      "date": "1903-01-02",
+      "precision": "day",
+      "game_time_label": "2. Januar 1903",
+      "kind": "fakt",
+      "category": "Industrie",
+      "title": "Textilfabrik bei Hinteralmhafen",
+      "description": "Hinteralmhafen Textilfabrik, 1,2 km vom Ort: Kleidung aus Stoff und Farbstoffen. Kleidung verlangt nur Lindendorf (seit 9.12.1902), 11,7 km entfernt. Für Stoff und Farbstoffe fehlt zu dieser Zeit jeder Betrieb im Land. Bis 26.6.1903 still.",
+      "entities": [
+        "falkenmark"
+      ],
+      "source": "Spielmonitor, Welt „Falkenmark – 1900“",
+      "recorded": "2026-10-25",
+      "recorded_note": "Sitzung 20261025_055605, aufgenommen am 25.10.2026."
+    },
+    {
+      "id": "chemiefabrik-langstein-1903-02-16",
+      "date": "1903-02-16",
+      "precision": "day",
+      "game_time_label": "16. Februar 1903",
+      "kind": "fakt",
+      "category": "Industrie",
+      "title": "Chemiefabrik bei Langstein",
+      "description": "Langstein Chemiefabrik, 1,7 km vom Ort: Farbstoffe und Kunststoff aus Chemikalien, 5,5 km von der Textilfabrik in Hinteralmhafen. Die einzige arbeitende Raffinerie (Breitroda) liegt 14,8 km entfernt. Bis 26.6.1903 still.",
+      "entities": [
+        "falkenmark"
+      ],
+      "source": "Spielmonitor, Welt „Falkenmark – 1900“",
+      "recorded": "2026-10-25",
+      "recorded_note": "Sitzung 20261025_055605, aufgenommen am 25.10.2026."
+    },
+    {
+      "id": "lindendorf-300-1903-02-23",
+      "date": "1903-02-23",
+      "precision": "day",
+      "game_time_label": "23. Februar 1903",
+      "kind": "fakt",
+      "category": "Bevölkerung",
+      "title": "Lindendorf über 300 Einwohner",
+      "description": "301 Einwohner am 23.2.1903, 350 am 19.5.1903.",
+      "entities": [
+        "falkenmark"
+      ],
+      "source": "Spielmonitor, Welt „Falkenmark – 1900“",
+      "recorded": "2026-10-25",
+      "recorded_note": "Sitzungen 20261025_064700 und 20261025_073310, aufgenommen am 25.10.2026."
+    },
+    {
+      "id": "lebensmittelfabrik-hintereichdorf-1903-03-11",
+      "date": "1903-03-11",
+      "precision": "day",
+      "game_time_label": "11. März 1903",
+      "kind": "fakt",
+      "category": "Industrie",
+      "title": "Lebensmittelfabrik bei Hintereichdorf",
+      "description": "Hintereichdorf Lebensmittelfabrik, 1,8 km vom Ort und 3,2 km von Falkenried: Lebensmittel aus Getreide, Fleisch und Gemüse; Betrieb aus dem Mod-Paket „Lebensmittel-Industrie“. Auf Wunsch des Spielers über einen eigenen Mod gesetzt (Q8). Bis 26.6.1903 still.",
+      "entities": [
+        "falkenmark"
+      ],
+      "source": "Spielmonitor, Welt „Falkenmark – 1900“; Angaben des Spielers und Spielprotokoll (Q8)",
+      "recorded": "2026-10-25",
+      "recorded_note": "Sitzung 20261025_070100, aufgenommen am 25.10.2026. Angaben des Spielers und Spielprotokoll vom selben Tag."
+    },
+    {
+      "id": "hafen-birkreuth-1903-03-26",
+      "date": "1903-03-26",
+      "precision": "day",
+      "game_time_label": "26. März 1903",
+      "kind": "fakt",
+      "category": "Verkehr",
+      "title": "Postkutschen zum Hafen Birkreuth, Raddampfer zur Ölplattform",
+      "description": "Drei Postkutschen zwischen Lindendorf Süd und dem Hafenweg am Hafen Birkreuth und ein zweiter Raddampfer „Waimarie“ für Fahrgäste zwischen Birkreuth Hafen und der Ölplattform (0,9 km), gekauft am 26.3.1903. Am selben Tag Subvention über 2.400.000, die einzige im ersten Halbjahr 1903.",
+      "entities": [
+        "falkenmark"
+      ],
+      "source": "Spielmonitor, Welt „Falkenmark – 1900“",
+      "recorded": "2026-10-25",
+      "recorded_note": "Sitzung 20261025_070100, aufgenommen am 25.10.2026."
+    },
+    {
+      "id": "weberei-steinbach-1903-04-03",
+      "date": "1903-04-03",
+      "precision": "day",
+      "game_time_label": "3. April 1903",
+      "kind": "fakt",
+      "category": "Industrie",
+      "title": "Weberei bei Steinbach im Tal",
+      "description": "Steinbach im Tal Weberei, 1,4 km vom Ort: Stoff aus Wolle, 5,3 km von der Textilfabrik in Hinteralmhafen und 6,0 km vom Bahnhof Birkreuth. Damit gibt es für die Textilfabrik beide Zulieferer im Land. Bis 26.6.1903 still.",
+      "entities": [
+        "falkenmark"
+      ],
+      "source": "Spielmonitor, Welt „Falkenmark – 1900“",
+      "recorded": "2026-10-25",
+      "recorded_note": "Sitzung 20261025_070100, aufgenommen am 25.10.2026."
+    },
+    {
+      "id": "falkenried-400-1903-04-28",
+      "date": "1903-04-28",
+      "precision": "day",
+      "game_time_label": "28. April 1903",
+      "kind": "fakt",
+      "category": "Bevölkerung",
+      "title": "Falkenried zählt 400 Einwohner",
+      "description": "400 Einwohner am 28.4.1903, 416 am 26.6.1903.",
+      "entities": [
+        "falkenmark"
+      ],
+      "source": "Spielmonitor, Welt „Falkenmark – 1900“",
+      "recorded": "2026-10-25",
+      "recorded_note": "Sitzungen 20261025_072103 und 20261025_075205, aufgenommen am 25.10.2026."
+    },
+    {
+      "id": "baumwollplantage-hohenstedt-1903-05-18",
+      "date": "1903-05-18",
+      "precision": "day",
+      "game_time_label": "18. Mai 1903",
+      "kind": "fakt",
+      "category": "Industrie",
+      "title": "Baumwollplantage bei Hohenstedt",
+      "description": "Hohenstedt Baumwollplantage, 1,6 km vom Ort; liefert laut Spiel Wolle. 25,4 km von der Weberei in Steinbach im Tal.",
+      "entities": [
+        "falkenmark"
+      ],
+      "source": "Spielmonitor, Welt „Falkenmark – 1900“",
+      "recorded": "2026-10-25",
+      "recorded_note": "Sitzung 20261025_073310, aufgenommen am 25.10.2026."
+    },
+    {
+      "id": "stand-1903-06-26",
+      "date": "1903-06-26",
+      "precision": "day",
+      "game_time_label": "26. Juni 1903",
+      "kind": "fakt",
+      "category": "Stand",
+      "title": "Stand Ende Juni 1903",
+      "description": "28 Linien, 113 Fahrzeuge (seit 19.5. zehn statt fünf Treibstoff-Fuhrwerke Lindendorf–Birkreuth). Ergebnis 1. Quartal +1.787.476; Konto 31.5. −599.351, 26.6. −296.842; Kredit 20.073.869. Ende April 1,02 Mio. für Gleise, Zweck offen. Falkenried 416, Lindendorf 358, Birkreuth 96 Einwohner, die Falkenmark 8.553. Lebensmittel und Kleidung weiter unversorgt.",
+      "entities": [
+        "falkenmark"
+      ],
+      "source": "Spielmonitor, Welt „Falkenmark – 1900“",
+      "recorded": "2026-10-25",
+      "recorded_note": "Sitzung 20261025_075205, aufgenommen am 25.10.2026."
     }
   ]
 }

@@ -2,6 +2,15 @@
 
 Übergaben und Reviews, neueste oben. Kopf: `## JJJJ-MM-TT · Wer · Thema`. Nur ergänzen; Fehler in älteren Einträgen mit einem neuen Eintrag richtigstellen.
 
+## 2026-10-25 · Claude · Falkenmark Kapitel V bis VII (1902 bis Juni 1903)
+
+- Drei neue Kapitel: V „Die Bahn nach Lindendorf“ (Januar bis Juni 1902: Fisch für Falkenried, erster Personenzug Falkenried–Lindendorf am 30.3., Raddampfer zur Fischzucht), VI „Bis Birkreuth“ (Juli bis Dezember 1902: Lindendorf wird zweitgrößter Ort, neue Wünsche Lebensmittel und Kleidung, Zug bis Birkreuth am 15.12.), VII „Vier Fabriken“ (Januar bis 26.6.1903: Textilfabrik, Chemiefabrik, Lebensmittelfabrik, Weberei, alle still). Sechs Szenen in neuen Formen: Schulaufsatz, Kleinanzeigen, Gemeinderatsprotokoll, Erzählung, Reportage, Ansprache; wiederkehrende Figuren und Formen stehen jetzt in `falkenmark/STAND.md`.
+- Wunsch des Spielers für alle Szenen: variieren, natürlich, ohne Verneinungsfiguren und KI-Phrasen. Kapitel V bis VII ohne Treffer bei grep auf nicht/kein/nie/niemand/nichts/sondern/ohne.
+- Register +24 (33 → 57, darunter der Nachtrag „Falkenried größter Ort seit 7.7.1901“), Jahresbilanz 1902, Ortsverzeichnis (drei neue Orte), Unternehmen, offene Fragen, Q8 (Lebensmittelfabrik auf Wunsch des Spielers über einen Mod gesetzt, als Hinweis „Zur Lebensmittelfabrik“ in VII). Korrektur im Ortsverzeichnis: Falkenried war als Ziel der Gemüselinie geführt, das Gemüse geht aber nach Lindendorf.
+- Technik: `fm-scene--eintraege` (Szenen aus Einträgen, ohne Initiale), `fm-randnotiz` (Randbemerkung), `fm-leg--ware` (möglicher Warenweg, Hinweis „Luftlinie“); Jahresauswahl nennt die Jahresbilanz nur, wenn es eine gibt. Faktenblätter 1902 und 1903 neu erzeugt.
+- Daten: Spielmonitor lokal bis 26.6.1903, lückenlos; das Spiel wurde danach beendet. Kapitel VIII beginnt am 27.6.1903. Im Repo liegen Messdaten bis 19.4.1903, Upload nur mit Freigabe.
+- Geprüft: `validate-data.mjs`, Browser 1024 px und 375 px ohne Überlauf, Register lädt (57), Jahresauswahl 1902/1903, keine Konsolenfehler. Noch nicht committet.
+
 ## 2026-10-25 · Claude · Karte der Falkenmark auf der Website
 
 - Neu unter V „Orte und Landschaft“ (`#karte`, Link „Karte“ in der Kopfleiste): Karte der Verkehrswege im Stil farbiger Atlaskarten um 1900, Stand 29.12.1902, und ein Reliefmodell. Bilder `saves/falkenmark/images/falkenmark-1902-karte.jpg` (A2, 300 dpi, 4,2 MB), `-karte-web.jpg`, `-reliefmodell.jpg`. Neue Quelle Q7 (Messung 29.12.1902 und Feinscan des Geländes); nächste freie Nummer Q8.
