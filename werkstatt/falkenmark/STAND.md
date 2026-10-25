@@ -22,7 +22,7 @@ Zuletzt nachgezogen: 25.10.2026, Claude.
 ## Daten
 
 - Spielmonitor lokal: Messungen bis **26.6.1903** (Sitzung `20261025_075205_781340`), lückenlos seit 1.1.1900. Einziger Rücksprung: 600 Spielzeit-Einheiten (unter einer Stunde Spielzeit) an der Sitzungsgrenze vom 24.10.2026, 14:03/18:03 Uhr.
-- Im Repo (`saves/falkenmark/data/monitor/`): Export vom 25.10.2026, 07:19 Uhr, bis Spiel 19.4.1903. Neuere Messungen kommen erst mit `WEBSITE_AKTUALISIEREN.bat` dazu.
+- Im Repo (`saves/falkenmark/data/monitor/`): Export vom 25.10.2026, 08:54 Uhr, bis Spiel 27.6.1903 (`60fd9a8`, 1.534 Messungen). Neuere Messungen kommen erst mit `WEBSITE_AKTUALISIEREN.bat` dazu.
 - Gelände fein (64 m) vollständig seit 25.10.2026 (`Spielmonitor/history/gelaende/`).
 - Faktenblätter: `fakten/1900.md` bis `fakten/1902.md` vollständig, `fakten/1903.md` bis 26.6.1903.
 - Für Kapitel VIII liegen bereit: Gleisbau Ende April 1903 für 1,02 Mio. ohne neue Linie bis Ende Juni; vier stillstehende Fabriken (Textilfabrik Hinteralmhafen, Chemiefabrik Langstein, Lebensmittelfabrik Hintereichdorf, Weberei Steinbach im Tal), dazu die Rinderfarm Hintereichdorf und die Baumwollplantage Hohenstedt (liefert laut Spiel Wolle). Mehr erst, wenn der Spieler weitergespielt hat.
