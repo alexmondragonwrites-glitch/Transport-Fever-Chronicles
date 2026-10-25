@@ -1,6 +1,6 @@
 # Falkenmark · Stand der Chronik
 
-Zuletzt nachgezogen: 24.10.2026, Claude.
+Zuletzt nachgezogen: 25.10.2026, Claude.
 
 ## Erzählt
 
@@ -13,12 +13,13 @@ Zuletzt nachgezogen: 24.10.2026, Claude.
 
 - Erzählt bis **31.12.1901**. Jahresbilanzen unter VII für 1900 und 1901.
 - Register `saves/falkenmark/data/events.json`: 33 Einträge, letzter `jahresende-1901`.
-- **Nächste freie Quelle: Q7.** Vergeben: Q1 Einstellungsseite, Q2 Angaben des Spielers, Q3 Spielprotokoll, Q4 Spielmonitor, Q5 Bestätigung „Falkenried“ mit Screenshot (Vorlage des KI-Bildes in Kapitel I), Q6 Screenshot Lindendorf (Vorlage des Bildes in Kapitel III).
+- **Nächste freie Quelle: Q8.** Vergeben: Q1 Einstellungsseite, Q2 Angaben des Spielers, Q3 Spielprotokoll, Q4 Spielmonitor, Q5 Bestätigung „Falkenried“ mit Screenshot (Vorlage des KI-Bildes in Kapitel I), Q6 Screenshot Lindendorf (Vorlage des Bildes in Kapitel III), Q7 Spielmonitor-Messung vom 29.12.1902 und Feinscan des Geländes (Grundlage der Karte unter V).
 
 ## Daten
 
 - Spielmonitor lokal: Messungen bis **30.1.1902** (Sitzung `20261024_093700_921135`).
 - Im Repo (`saves/falkenmark/data/monitor/`): Export vom 24.10.2026, 08:15, 382 Messungen. Neuere Messungen kommen erst mit `WEBSITE_AKTUALISIEREN.bat` dazu.
+- Gelände fein (64 m) vollständig seit 25.10.2026 (`Spielmonitor/history/gelaende/`), angefordert über den Knopf der Spielmonitor-Mod. Lokale Messungen inzwischen bis 29.12.1902.
 - Faktenblätter: `fakten/1900.md`, `fakten/1901.md`, `fakten/1902.md` (nur Januar 1902).
 - Für Kapitel V liegen bereit: zwei neue Linien am 4.1.1902 in Falkenried, ein Kanadischer Kutter (`WC Passagiere,Werkzeuge,Fisch-Fal-LO-1`) und vier Pferdefuhrwerke (`RC Fisch,Ziegel-Fal-LO-1`), beide mit zwei Halten in Falkenried; neu gemessen die Hinteralmhafen Ölplattform Süd. Mehr erst, wenn der Spieler weitergespielt hat.
 
@@ -32,6 +33,7 @@ Bestätigt vom Spieler: Falkenried (vorher Ostheim, vom Spieler umbenannt), Falk
 |---|---|---|
 | `saves/falkenmark/images/falkenried-gruendung-1900.jpg` | I | KI-Bild nach einem Screenshot im Spiel (Q5) |
 | `saves/falkenmark/images/lindendorf-um-1901.jpg` | III | Bild nach einem Screenshot, Datierung vom Spieler auf 1901 geschätzt (Q6) |
+| `saves/falkenmark/images/falkenmark-1902-karte.jpg`, `-karte-web.jpg`, `-reliefmodell.jpg` | V (`#karte`) | Karte, aus Messdaten gerechnet, Stand 29.12.1902 (Q7). Erzeugt mit `E:\KI-Projekte\Falkenmark-Karte\KARTE_RECHNEN.bat`, nicht von Hand ändern |
 
 ## Fallstricke
 
