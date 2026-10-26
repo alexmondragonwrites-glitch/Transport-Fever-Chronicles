@@ -933,6 +933,294 @@
       "source": "Spielmonitor, Welt „Falkenmark – 1900“",
       "recorded": "2026-10-25",
       "recorded_note": "Sitzung 20261025_075205, aufgenommen am 25.10.2026."
+    },
+    {
+      "id": "birkreuth-100-1903-07-19",
+      "date": "1903-07-19",
+      "precision": "day",
+      "game_time_label": "19. Juli 1903",
+      "kind": "fakt",
+      "category": "Bevölkerung",
+      "title": "Birkreuth über 100 Einwohner",
+      "description": "101 Einwohner am 19.7.1903, nach 84 von 1900 bis Ende 1902. Ende 1903: 135.",
+      "entities": [
+        "falkenmark"
+      ],
+      "source": "Spielmonitor, Welt „Falkenmark – 1900“",
+      "recorded": "2026-10-25",
+      "recorded_note": "Sitzung 20261025_085925, aufgenommen am 25.10.2026. Messungen aus verworfenen Abschnitten nach dem Neuladen sind herausgenommen."
+    },
+    {
+      "id": "subvention-zuege-1903-07-27",
+      "date": "1903-07-27",
+      "precision": "day",
+      "game_time_label": "27. Juli 1903",
+      "kind": "fakt",
+      "category": "Finanzen",
+      "title": "Subvention über 6.950.000, fünf Personenzüge",
+      "description": "Die größte Subvention seit Februar 1901 und bis Ende 1904 die letzte. Am selben Tag zwei weitere Personenzüge, je eine „Preussische T 3“ mit Abteilwagen; zwischen Falkenried, Lindendorf und Birkreuth fahren jetzt fünf.",
+      "entities": [
+        "falkenmark"
+      ],
+      "source": "Spielmonitor, Welt „Falkenmark – 1900“",
+      "recorded": "2026-10-25",
+      "recorded_note": "Sitzung 20261025_085925, aufgenommen am 25.10.2026. Messungen aus verworfenen Abschnitten nach dem Neuladen sind herausgenommen."
+    },
+    {
+      "id": "duenger-oel-falkenried-1903-09-17",
+      "date": "1903-09-17",
+      "precision": "day",
+      "game_time_label": "17. September 1903",
+      "kind": "fakt",
+      "category": "Verkehr",
+      "title": "Zweite Werksbahn, Schiff und Fuhrwerk für Dünger und Rohöl",
+      "description": "Gekauft am 17.9.1903: zweite Werksbahn in Breitroda („Russische Baureihe OB“ mit Güterwagen, laut Name Rohöl und Dünger), „Kanadischer Kutter“ Breitroda Hafen Nord–Falkenried Hafen und ein Pferdefuhrwerk Falkenried–Kornhausen Bauernhof (Dünger); neuer Kredit 3,91 Mio. Ab 27.9. hält das Schiff auch an der Ölplattform bei Falkenried, ab Mitte Oktober fahren zwei Dampfer „Sydfart“ und sechs Fuhrwerke.",
+      "entities": [
+        "falkenmark"
+      ],
+      "source": "Spielmonitor, Welt „Falkenmark – 1900“",
+      "recorded": "2026-10-25",
+      "recorded_note": "Sitzung 20261025_085925, aufgenommen am 25.10.2026. Messungen aus verworfenen Abschnitten nach dem Neuladen sind herausgenommen."
+    },
+    {
+      "id": "lindendorf-400-1903-09-23",
+      "date": "1903-09-23",
+      "precision": "day",
+      "game_time_label": "23. September 1903",
+      "kind": "fakt",
+      "category": "Bevölkerung",
+      "title": "Lindendorf über 400 Einwohner",
+      "description": "401 Einwohner am 23.9.1903; Ende 1903: 420.",
+      "entities": [
+        "falkenmark"
+      ],
+      "source": "Spielmonitor, Welt „Falkenmark – 1900“",
+      "recorded": "2026-10-25",
+      "recorded_note": "Sitzung 20261025_085925, aufgenommen am 25.10.2026. Messungen aus verworfenen Abschnitten nach dem Neuladen sind herausgenommen."
+    },
+    {
+      "id": "oel-falkenried-1903-10-24",
+      "date": "1903-10-24",
+      "precision": "day",
+      "game_time_label": "24. Oktober 1903",
+      "kind": "fakt",
+      "category": "Betrieb",
+      "title": "Erstes Rohöl von der Ölplattform bei Falkenried",
+      "description": "Die Ölplattform bei Falkenried, 1,7 km vom Ort, verschickt am 24.10.1903 zum ersten Mal Rohöl, mehr als drei Jahre nach ihrer ersten Produktion im Juli 1900. Falkenried zählt an diesem Tag 452 Einwohner.",
+      "entities": [
+        "falkenmark"
+      ],
+      "source": "Spielmonitor, Welt „Falkenmark – 1900“",
+      "recorded": "2026-10-25",
+      "recorded_note": "Sitzung 20261025_085925, aufgenommen am 25.10.2026. Messungen aus verworfenen Abschnitten nach dem Neuladen sind herausgenommen."
+    },
+    {
+      "id": "betriebe-1903",
+      "date": "1903-12-29",
+      "precision": "day",
+      "game_time_label": "Im Lauf des Jahres 1903",
+      "kind": "fakt",
+      "category": "Industrie",
+      "title": "Acht neue Betriebe",
+      "description": "Textilfabrik Hinteralmhafen (2.1.), Chemiefabrik Langstein (16.2.), Lebensmittelfabrik Hintereichdorf (11.3.), Weberei Steinbach im Tal (3.4.), Baumwollplantage Hohenstedt (18.5.), Holzfällerlager Hochloh (3.7.), wieder eine Lehmgrube bei Birkreuth (2.10.), Bauernhof Apfelhausen (17.11.). Ende 1903: 72 Betriebe.",
+      "entities": [
+        "falkenmark"
+      ],
+      "source": "Spielmonitor, Welt „Falkenmark – 1900“",
+      "recorded": "2026-10-25",
+      "recorded_note": "Sitzungen 20261025_055605 bis 20261025_085925, aufgenommen am 25.10.2026. Messungen aus verworfenen Abschnitten nach dem Neuladen sind herausgenommen."
+    },
+    {
+      "id": "jahresende-1903",
+      "date": "1903-12-31",
+      "precision": "day",
+      "game_time_label": "31. Dezember 1903",
+      "kind": "fakt",
+      "category": "Jahresbilanz",
+      "title": "Das vierte Jahr der FTG",
+      "description": "31 Linien, 125 Fahrzeuge. Jahresergebnis −1.924.105 bei 9.350.000 Subvention (Stand 29.12.). Kredit 24.332.394, Kontostand 512.985 (29.12.). Lindendorf 420, Falkenried 463, Birkreuth 135 Einwohner, die Falkenmark 8.707.",
+      "entities": [
+        "falkenmark"
+      ],
+      "source": "Spielmonitor, Welt „Falkenmark – 1900“",
+      "recorded": "2026-10-25",
+      "recorded_note": "Sitzung 20261025_085925, aufgenommen am 25.10.2026. Messungen aus verworfenen Abschnitten nach dem Neuladen sind herausgenommen."
+    },
+    {
+      "id": "falkenried-februar-1904",
+      "date": "1904-02-11",
+      "precision": "day",
+      "game_time_label": "4. bis 25. Februar 1904",
+      "kind": "fakt",
+      "category": "Bevölkerung",
+      "title": "Falkenried sinkt, Lindendorf kurz vorn",
+      "description": "Falkenried fällt vom 4. bis 11.2.1904 von 472 auf 448 Einwohner. Am 18.2. liegt Lindendorf mit 458 zu 453 zum ersten Mal vorn, ab 25.2. führt wieder Falkenried; Anfang März liegt es über dem alten Stand.",
+      "entities": [
+        "falkenmark"
+      ],
+      "source": "Spielmonitor, Welt „Falkenmark – 1900“",
+      "recorded": "2026-10-25",
+      "recorded_note": "Sitzungen 20261025_085925 und 20261025_123213, aufgenommen am 25.10.2026. Messungen aus verworfenen Abschnitten nach dem Neuladen sind herausgenommen."
+    },
+    {
+      "id": "quartale-1904-plus",
+      "date": "1904-03-31",
+      "precision": "day",
+      "game_time_label": "1. und 2. Quartal 1904",
+      "kind": "fakt",
+      "category": "Finanzen",
+      "title": "Zwei Plus-Quartale aus dem laufenden Geschäft",
+      "description": "Erstes Quartal 1904 +2.306.607, zweites +1.829.431 (Stand 28.12.1904). Der Kredit sinkt von 24,33 Mio. Ende 1903 auf 19,90 Mio. am 28.6.1904.",
+      "entities": [
+        "falkenmark"
+      ],
+      "source": "Spielmonitor, Welt „Falkenmark – 1900“",
+      "recorded": "2026-10-25",
+      "recorded_note": "Sitzungen 20261025_123812 und 20261025_125910, aufgenommen am 25.10.2026. Messungen aus verworfenen Abschnitten nach dem Neuladen sind herausgenommen."
+    },
+    {
+      "id": "falkenried-500-1904-05-11",
+      "date": "1904-05-11",
+      "precision": "day",
+      "game_time_label": "11. Mai 1904",
+      "kind": "fakt",
+      "category": "Bevölkerung",
+      "title": "Falkenried zählt 500 Einwohner",
+      "description": "500 Einwohner am 11.5.1904; Lindendorf erreicht 500 am 26.5., am 30.5. stehen beide bei 501.",
+      "entities": [
+        "falkenmark"
+      ],
+      "source": "Spielmonitor, Welt „Falkenmark – 1900“",
+      "recorded": "2026-10-25",
+      "recorded_note": "Sitzung 20261025_125910, aufgenommen am 25.10.2026. Messungen aus verworfenen Abschnitten nach dem Neuladen sind herausgenommen."
+    },
+    {
+      "id": "lindendorf-groesster-ort-1904-06-24",
+      "date": "1904-06-24",
+      "precision": "day",
+      "game_time_label": "24. Juni 1904",
+      "kind": "fakt",
+      "category": "Bevölkerung",
+      "title": "Lindendorf ist der größte Ort",
+      "description": "Lindendorf 514, Falkenried 508 Einwohner. Seit dem 24.6.1904 ist Lindendorf der größte Ort der Falkenmark; Falkenried war es seit dem 7.7.1901.",
+      "entities": [
+        "falkenmark"
+      ],
+      "source": "Spielmonitor, Welt „Falkenmark – 1900“",
+      "recorded": "2026-10-25",
+      "recorded_note": "Sitzung 20261025_125910, aufgenommen am 25.10.2026. Messungen aus verworfenen Abschnitten nach dem Neuladen sind herausgenommen."
+    },
+    {
+      "id": "werkzeuge-falkenried-1904-06-24",
+      "date": "1904-06-24",
+      "precision": "day",
+      "game_time_label": "24. Juni 1904",
+      "kind": "fakt",
+      "category": "Versorgung",
+      "title": "Falkenried verlangt Werkzeuge",
+      "description": "Seit 24.6.1904 zusätzlich Werkzeuge, 62 Einheiten. Am selben Tag gemessen: Werkzeugfabrik bei Hohenstedt (Werkzeuge aus Brettern und Kunststoff), 24,0 km von Falkenried. Bis Ende 1904 unversorgt.",
+      "entities": [
+        "falkenmark"
+      ],
+      "source": "Spielmonitor, Welt „Falkenmark – 1900“",
+      "recorded": "2026-10-25",
+      "recorded_note": "Sitzung 20261025_125910, aufgenommen am 25.10.2026. Messungen aus verworfenen Abschnitten nach dem Neuladen sind herausgenommen."
+    },
+    {
+      "id": "maschinen-lindendorf-1904-07-15",
+      "date": "1904-07-15",
+      "precision": "day",
+      "game_time_label": "13. bis 15. Juli 1904",
+      "kind": "fakt",
+      "category": "Versorgung",
+      "title": "Lindendorf verlangt Maschinen",
+      "description": "Seit 15.7.1904 zusätzlich Maschinen, 64 Einheiten. Neu gemessen: Maschinenfabrik Hochloh (13.7., 33 km von Lindendorf), Stahlwerk Mittelfelde (14.7.), Kohlebergwerk Hintereschensee und Eisenerzbergwerk Lärchental (15.7.); später Kohlebergwerk Hintertalhausen (17.8.), Eisenerzbergwerk Hinterklosterhafen (2.10.), Kohlebergwerk Weidenleiten (16.11.). Bis Ende 1904 unversorgt.",
+      "entities": [
+        "falkenmark"
+      ],
+      "source": "Spielmonitor, Welt „Falkenmark – 1900“",
+      "recorded": "2026-10-25",
+      "recorded_note": "Sitzungen 20261025_125910 und 20261025_175438, aufgenommen am 25.10.2026. Messungen aus verworfenen Abschnitten nach dem Neuladen sind herausgenommen."
+    },
+    {
+      "id": "lindendorf-stillstand-1904",
+      "date": "1904-07-15",
+      "precision": "day",
+      "game_time_label": "15. Juli bis Ende September 1904",
+      "kind": "fakt",
+      "category": "Bevölkerung",
+      "title": "Lindendorf bleibt bei 525 Einwohnern",
+      "description": "Vom 15.7. bis Ende September 1904 bleibt Lindendorf bei 525 Einwohnern. Die Stadtentwicklung war dort abgeschaltet, ein Nebeneffekt des Mods Organic Towns, und wurde über einen Mod des Spielers wieder eingeschaltet (Q9). Danach wächst Lindendorf bis zum 28.12. auf 759.",
+      "entities": [
+        "falkenmark"
+      ],
+      "source": "Spielmonitor, Welt „Falkenmark – 1900“; Befunde zum Gebäude-Mod (Q9)",
+      "recorded": "2026-10-25",
+      "recorded_note": "Sitzungen 20261025_125910 und 20261025_175438, aufgenommen am 25.10.2026. Messungen aus verworfenen Abschnitten nach dem Neuladen sind herausgenommen."
+    },
+    {
+      "id": "gueterzug-hintereichdorf-1904-10-18",
+      "date": "1904-10-18",
+      "precision": "day",
+      "game_time_label": "18. Oktober 1904",
+      "kind": "fakt",
+      "category": "Verkehr",
+      "title": "Güterzug zur Lebensmittelfabrik",
+      "description": "Güterzug von Falkenried-Gut (beim Kornhausen Bauernhof) nach Hintereichdorf-Werk (Lebensmittelfabrik), 4,3 km, „Russische Baureihe OB“ mit einem, ab 24.10. zwei Güterwagen; hin Getreide und Gemüse, zurück Lebensmittel. Am selben Tag Kredit von 17,32 auf 25 Mio. erhöht. Linienbilanz bis 28.12.1904: 378.311.",
+      "entities": [
+        "falkenmark"
+      ],
+      "source": "Spielmonitor, Welt „Falkenmark – 1900“",
+      "recorded": "2026-10-25",
+      "recorded_note": "Sitzung 20261025_125910, aufgenommen am 25.10.2026. Messungen aus verworfenen Abschnitten nach dem Neuladen sind herausgenommen."
+    },
+    {
+      "id": "lebensmittelfabrik-arbeitet-1904-11-30",
+      "date": "1904-11-30",
+      "precision": "day",
+      "game_time_label": "30. November 1904",
+      "kind": "fakt",
+      "category": "Betrieb",
+      "title": "Die Lebensmittelfabrik arbeitet",
+      "description": "Die Lebensmittelfabrik Hintereichdorf erzeugt am 30.11.1904 zum ersten Mal Lebensmittel und verschickt sie ab 7.12. Am 7.12. beginnen drei Pferdefuhrwerke vom Haltepunkt Kornhausen Bauernhof nach Ober-Falkenried (laut Name Lebensmittel). Am 28.12. hat der Zug 40 Einheiten geladen, Falkenrieds Versorgung steht bei 0 von 111.",
+      "entities": [
+        "falkenmark"
+      ],
+      "source": "Spielmonitor, Welt „Falkenmark – 1900“",
+      "recorded": "2026-10-25",
+      "recorded_note": "Sitzungen 20261025_125910 und 20261025_175438, aufgenommen am 25.10.2026. Messungen aus verworfenen Abschnitten nach dem Neuladen sind herausgenommen."
+    },
+    {
+      "id": "betriebe-1904",
+      "date": "1904-12-28",
+      "precision": "day",
+      "game_time_label": "Im Lauf des Jahres 1904",
+      "kind": "fakt",
+      "category": "Industrie",
+      "title": "Dreizehn neue Betriebe, einer verschwunden",
+      "description": "Neu u. a. Werkzeugfabrik Hohenstedt (24.6.), Maschinenfabrik Hochloh (13.7.), Stahlwerk Mittelfelde (14.7.), drei Kohle- und zwei Eisenerzbergwerke, eine Fischzucht, eine Ölplattform, ein Bauernhof, eine Lehmgrube, ein Viehzuchtbetrieb. Verschwunden: Hintergemsthal Ölplattform (zuletzt 30.11.). Ende 1904: 84 Betriebe.",
+      "entities": [
+        "falkenmark"
+      ],
+      "source": "Spielmonitor, Welt „Falkenmark – 1900“",
+      "recorded": "2026-10-25",
+      "recorded_note": "Sitzungen 20261025_085925 bis 20261025_175438, aufgenommen am 25.10.2026. Messungen aus verworfenen Abschnitten nach dem Neuladen sind herausgenommen."
+    },
+    {
+      "id": "jahresende-1904",
+      "date": "1904-12-31",
+      "precision": "day",
+      "game_time_label": "31. Dezember 1904",
+      "kind": "fakt",
+      "category": "Jahresbilanz",
+      "title": "Das fünfte Jahr der FTG",
+      "description": "33 Linien, 132 Fahrzeuge. Jahresergebnis +1.655.737, ganz aus dem laufenden Geschäft (Stand 28.12.). Kredit 23.660.710, Kontostand 1.088.099 (31.12.). Lindendorf 759, Falkenried 535, Birkreuth 193 Einwohner, die Falkenmark 9.185.",
+      "entities": [
+        "falkenmark"
+      ],
+      "source": "Spielmonitor, Welt „Falkenmark – 1900“",
+      "recorded": "2026-10-25",
+      "recorded_note": "Sitzung 20261025_175438, aufgenommen am 25.10.2026. Messungen aus verworfenen Abschnitten nach dem Neuladen sind herausgenommen."
     }
   ]
 }

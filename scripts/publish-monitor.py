@@ -252,7 +252,11 @@ def main():
     sources = json.loads((ROOT/'data/monitor-sources.json').read_text(encoding='utf-8'))['saves']
     if args.save and args.save not in sources:
         raise SystemExit(f"Unbekannte Welt {args.save!r}. Bekannt: {', '.join(sources)}")
-    saves = [args.save] if args.save else list(sources)
+    # Beendete Welten ("closed" in monitor-sources.json) lädt nur noch ein ausdrückliches --save hoch.
+    saves = [args.save] if args.save else [s for s in sources if not sources[s].get('closed')]
+    for s in sources:
+        if not args.save and sources[s].get('closed'):
+            print(f"{s}: beendet am {sources[s]['closed'].get('date')}, wird übersprungen.")
     titles = world_titles()
     monitor = Path(args.monitor).resolve()
 

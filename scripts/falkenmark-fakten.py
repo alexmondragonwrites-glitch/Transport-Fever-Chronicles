@@ -38,6 +38,19 @@ def rows_of(monitor):
                     yield row
 
 
+def canonical(rows):
+    """Nur der gültige Spielverlauf: Nach einem Neuladen (Spielzeit springt zurück) fallen die Messungen weg,
+    die hinter dem geladenen Stand lagen. Sie gehören zu einem verworfenen Abschnitt."""
+    kept = []
+    for r in rows:
+        t = r.get('game_time')
+        if isinstance(t, (int, float)):
+            while kept and isinstance(kept[-1].get('game_time'), (int, float)) and kept[-1]['game_time'] > t:
+                kept.pop()
+        kept.append(r)
+    return kept
+
+
 def day(r):
     d = r['game_date']
     return d['year'], d['month'], d['day']
@@ -92,7 +105,8 @@ def window(rows, r):
 
 
 def sheet(year, monitor):
-    rows = list(rows_of(monitor))
+    raw = list(rows_of(monitor))
+    rows = canonical(raw)
     det = [r for r in rows if r.get('sample_mode') == 'detail']
     inyear = [r for r in det if day(r)[0] == year]
     if not inyear:
@@ -105,9 +119,11 @@ def sheet(year, monitor):
            f'Vergleich: {"letzte Detailmessung " + de(day(start)) if prev else "erste Detailmessung " + de(day(start))} '
            f'bis letzte Detailmessung {de(day(end))}. {len(inyear)} Detailmessungen aus den Sitzungen '
            f'{", ".join(sorted({r["_session"] for r in inyear}))}.', '']
-    back = sum(1 for a, b in zip(rows, rows[1:]) if day(b)[0] == year and isinstance(a.get('game_time'), (int, float))
+    back = sum(1 for a, b in zip(raw, raw[1:]) if day(b)[0] == year and isinstance(a.get('game_time'), (int, float))
                and isinstance(b.get('game_time'), (int, float)) and b['game_time'] < a['game_time'])
-    out.append(f'Rücksprünge der Spielzeit (Neuladen) im Jahr: {back}. Geladene Stände sind kein Erzählstoff.')
+    dropped = sum(1 for r in raw if day(r)[0] == year) - sum(1 for r in rows if day(r)[0] == year)
+    out.append(f'Rücksprünge der Spielzeit (Neuladen) im Jahr: {back}; {dropped} Messungen aus verworfenen Abschnitten '
+               'sind herausgenommen. Geladene Stände sind kein Erzählstoff.')
     out += ['', '## Linien', '']
     old = {l['id']: l for l in start['lines']} if prev else {}
     seen, events = {}, []

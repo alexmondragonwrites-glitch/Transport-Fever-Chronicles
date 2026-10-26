@@ -2,6 +2,21 @@
 
 Übergaben und Reviews, neueste oben. Kopf: `## JJJJ-MM-TT · Wer · Thema`. Nur ergänzen; Fehler in älteren Einträgen mit einem neuen Eintrag richtigstellen.
 
+## 2026-10-26 · Claude · Falkenmark archiviert
+
+- Wunsch des Spielers: Die Falkenmark wird beendet, weil sie nach Einschätzung des Spielers anders lief als geplant; alles Vorhandene wird archiviert. Die Chronik bleibt als abgeschlossene Chronik online.
+- Website: Kapitel VIII bis X (vom 25.10. abends) gehen mit hoch, dazu ein Archiv-Vermerk am Anfang der Chronik (`#archiv`), Kopfzeile „Archiviert · erzählt 1900 bis 1904“, Portal-Status „Archiviert · gespielt 1900–1905“ (`data/worlds.json`), `meta.json` mit Endstand. Letzter Monitor-Upload bis Spiel 24.10.1905; danach steht die Welt in `data/monitor-sources.json` als `closed`, und `publish-monitor.py` überspringt sie ohne ausdrückliches `--save falkenmark`.
+- Lokal: `E:\KI-Projekte\_archiv\falkenmark-2026-10-26\` mit `spielstand/` (Kopie von `Falkenmark.sav`, Stand 25.10.2026 18:43; die Spielstände im Spielordner bleiben), `spielmonitor/` (22 Sitzungen und Geländescan als tar.xz, 8,9 MB, die Originale bleiben im Spielmonitor), `karte/` (das Kartenprojekt, vorher `E:\KI-Projekte\Falkenmark-Karte`), `chronik-website.zip` und `README.md`.
+- Werkstatt: offene Falkenmark-Aufgaben entfallen; die Prüfaufträge für veröffentlichte Kapitel bleiben, Korrekturen sind weiter möglich.
+
+## 2026-10-25 · Claude · Falkenmark Kapitel VIII bis X (27.6.1903 bis 31.12.1904)
+
+- Drei neue Kapitel: VIII „Das dritte Öl“ (Ölplattform bei Falkenried angeschlossen, Dünger von der Raffinerie zum Kornhausen Bauernhof, fünf Personenzüge, letzte Subvention 27.7.1903), IX „Lindendorf vorn“ (zwei Plus-Quartale aus dem laufenden Geschäft, Lindendorf seit 24.6.1904 größter Ort, Falkenried verlangt Werkzeuge), X „Getreide für Hintereichdorf“ (Maschinenkette für Lindendorf, Güterzug zur Lebensmittelfabrik ab 18.10., Fabrik arbeitet ab 30.11.1904, Falkenried wartet auf die ersten Lebensmittel). Sechs Szenen in neuen Formen: Fundbuch, Postkarte, Leserbriefe „Eingesandt“, Tagebuch des Buchhalters, Telegramme, Unterredung mit dem Bürgermeister; wiederkehrende Figuren in `falkenmark/STAND.md`.
+- Neuladen: Der Spieler hat den Spielstand für Mod-Tests mehrfach neu geladen. Auswertung und Faktenblätter nehmen die verworfenen Abschnitte heraus (`scripts/falkenmark-fakten.py`, Funktion `canonical`); 1900 bis 1902 bleiben inhaltlich gleich.
+- Technischer Hinweis in Kapitel X mit neuer Quelle Q9: Gebäude-Mod des Spielers seit Ende Juni 1903 (Spielzeit), Stadtentwicklung in Lindendorf vom 15.7. bis Ende September 1904 abgeschaltet (Organic Towns) und wieder eingeschaltet. Schulen sind unbelegt und bleiben vorerst draußen.
+- Register +18 (75), Jahresbilanzen 1903 und 1904, Ortsverzeichnis (+Hohenstedt, Hochloh), Unternehmen, offene Fragen. CSS: Kapitelleiste umbricht ab 901 px Breite (zehn Kapitel waren hinter einer unsichtbaren Scrollleiste), `fm-scene--telegramm`.
+- Geprüft: `validate-data.mjs`, grep der neuen Kapitel ohne Treffer bei nicht/kein/nie/niemand/nichts/sondern/ohne, Browser 1280 und 375 px ohne Überlauf, Jahresauswahl 1903/1904, keine Konsolenfehler. Noch nicht committet.
+
 ## 2026-10-25 · Claude · Falkenmark Kapitel V bis VII (1902 bis Juni 1903)
 
 - Drei neue Kapitel: V „Die Bahn nach Lindendorf“ (Januar bis Juni 1902: Fisch für Falkenried, erster Personenzug Falkenried–Lindendorf am 30.3., Raddampfer zur Fischzucht), VI „Bis Birkreuth“ (Juli bis Dezember 1902: Lindendorf wird zweitgrößter Ort, neue Wünsche Lebensmittel und Kleidung, Zug bis Birkreuth am 15.12.), VII „Vier Fabriken“ (Januar bis 26.6.1903: Textilfabrik, Chemiefabrik, Lebensmittelfabrik, Weberei, alle still). Sechs Szenen in neuen Formen: Schulaufsatz, Kleinanzeigen, Gemeinderatsprotokoll, Erzählung, Reportage, Ansprache; wiederkehrende Figuren und Formen stehen jetzt in `falkenmark/STAND.md`.

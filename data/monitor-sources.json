@@ -24,7 +24,11 @@
       "folder": "monitor",
       "archive": null,
       "journal": false,
-      "manifest_key": "monitor_data"
+      "manifest_key": "monitor_data",
+      "closed": {
+        "date": "2026-10-26",
+        "note": "Welt beendet und archiviert. Letzter Upload mit Messungen bis Spiel 24.10.1905; weitere Uploads nur mit --save falkenmark."
+      }
     }
   }
 }

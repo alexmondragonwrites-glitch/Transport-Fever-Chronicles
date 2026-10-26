@@ -112,6 +112,8 @@ html{scroll-behavior:smooth}
 /* Szenen aus Einzeleinträgen (Anzeigen, Protokoll): ohne Initiale und Einzug, Abstand zwischen den Einträgen */
 .fm-main .fm-scene--eintraege h3+p::first-letter{float:none;font-size:inherit;line-height:inherit;font-weight:inherit;margin:0;color:inherit}
 .fm-main .fm-scene--eintraege p+p{text-indent:0;margin-top:.7em}
+/* Telegramme: Schreibmaschinenschrift, etwas kleiner */
+.fm-main .fm-scene--telegramm p:not(.fm-block-label){font-family:var(--fm-mono);font-size:15px;line-height:1.6;letter-spacing:.03em}
 /* Randbemerkung in einer Szene, etwa die Note des Lehrers */
 .fm-main .fm-scene .fm-randnotiz{text-indent:0;margin-top:.6em;font-style:italic;color:var(--fm-brick)}
 .fm-scene .fm-block-label{margin-bottom:10px}
@@ -145,6 +147,8 @@ html{scroll-behavior:smooth}
 .fm-chapnav a span{font-family:var(--fm-sans);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--fm-muted)}
 .fm-chapnav a:hover{background:var(--fm-card)}
 .fm-chapnav a[aria-current="true"]{background:var(--fm-card);border-bottom-color:var(--fm-brick);color:var(--fm-ink)}
+/* Auf breiten Bildschirmen alle Kapitel zeigen (Umbruch statt verborgener Scrollleiste); schmal bleibt die Leiste einzeilig */
+@media(min-width:901px){.fm-chapnav{flex-wrap:wrap}}
 
 /* Jahresauswahl: läuft unter der Kopfleiste mit, Jahrzehnt wählen, dann das Jahr */
 .fm [hidden]{display:none!important}
