@@ -23,7 +23,7 @@ Format: `- [Welt] Aufgabe · Dateien · Wer · seit/erledigt am`. Wer etwas anf�
 
 ## Erledigt
 
-- [Falkenmark] Welt archiviert: Chronik mit Kapitel VIII bis X und Archiv-Vermerk, Portal-Status „Archiviert“, letzte Messdaten bis Spiel 24.10.1905, `closed` in `data/monitor-sources.json`; lokales Archiv mit Spielstand, gepackten Spielmonitor-Sitzungen und Kartenprojekt · Claude, 26.10.2026. Damit entfallen die offenen Falkenmark-Aufgaben: Kapitel XI, weitere Messdaten, Schulen und Gebäude, Zweck der Subventionen, Kalenderjahres-Bilanzen, eigene Monitor-Ansicht.
+- [Falkenmark] Welt archiviert: Chronik mit Kapitel VIII bis X und Archiv-Vermerk, Portal-Status „Archiviert“, letzte Messdaten bis Spiel 24.10.1905, `closed` in `data/monitor-sources.json`; lokales Archiv mit Spielstand, gepackten Spielmonitor-Sitzungen und Kartenprojekt · Claude, 26.10.2026 · `9f2aa2f`, `c7e8b86`. Damit entfallen die offenen Falkenmark-Aufgaben: Kapitel XI, weitere Messdaten, Schulen und Gebäude, Zweck der Subventionen, Kalenderjahres-Bilanzen, eigene Monitor-Ansicht.
 - [Falkenmark] Messdaten bis Spiel 27.6.1903 hochgeladen (+114 Messungen) · Claude, 25.10.2026 · `60fd9a8`
 - [Falkenmark] Karte der Verkehrswege 1902 und Reliefmodell unter V (`#karte`), Quelle Q7 · Claude, 25.10.2026 · `67ab3ee`
 - [Werkstatt] Arbeitsbereich angelegt: README, Aufgaben, Log, Eingang, Falkenmark-Stand, Faktenblätter, `AGENTS.md`/`CLAUDE.md` · Claude, 24.10.2026
