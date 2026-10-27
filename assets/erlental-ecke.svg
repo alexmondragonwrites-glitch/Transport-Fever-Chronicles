@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Eckstück für Rahmen der Erlental-Chronik (oben links): doppelte Linie, Erlenblätter und zwei Zapfen. Als Maske verwendet und für die übrigen Ecken gespiegelt. -->
+  <g fill="#000" stroke="#000" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M3 61V3h58" stroke-width="1.6" fill="none"/>
+    <path d="M8.5 61V8.5H61" stroke-width=".7" fill="none"/>
+    <!-- Zweig aus der Ecke -->
+    <path d="M8.5 8.5c5.5 6 12 9.6 21 10.8" stroke-width="1.2" fill="none"/>
+    <!-- Blatt nach rechts oben -->
+    <path d="M17 13.6c4.2-6.4 11-9.4 17.6-7.6.8 1.8.2 3.2-1.2 4 1.8 1.6 1.4 3.6-.6 4.2-6 1.8-11.2 1.6-15.8-.6z" stroke="none"/>
+    <!-- Blatt nach links unten -->
+    <path d="M13.6 17c-6.4 4.2-9.4 11-7.6 17.6 1.8.8 3.2.2 4-1.2 1.6 1.8 3.6 1.4 4.2-.6 1.8-6 1.6-11.2-.6-15.8z" stroke="none"/>
+    <!-- Zapfen -->
+    <ellipse cx="27" cy="24.4" rx="2.6" ry="3.6" transform="rotate(-40 27 24.4)" stroke="none"/>
+    <ellipse cx="32.4" cy="20.6" rx="2.3" ry="3.2" transform="rotate(-40 32.4 20.6)" stroke="none"/>
+  </g>
+</svg>

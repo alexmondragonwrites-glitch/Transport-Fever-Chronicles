@@ -13,15 +13,35 @@ Der Name der Welt ist „Erlental“, ohne Artikel („in Erlental“, „eine K
 | `saves/erlental/data/meta.json` | Kurzbeschreibung, Status, Monitor-Weltname und Weltkennung. |
 | `saves/erlental/data/manifest.json` | `latestReport: chronik.html` (die Weltseite leitet dorthin weiter), `monitor_data` für die Messdaten. |
 | `saves/erlental/data/monitor/` | Messdaten aus dem Spielmonitor, geschrieben von `publish-monitor.py`. Nicht von Hand ändern. |
-| `saves/erlental/images/` | Bilder der Chronik. `arenswiel-gruendung-1900.png` ist das Original des Gründungsbilds (bleibt unverändert), `arenswiel-gruendung-1900-web.jpg` die Fassung für die Seite. KI-Bilder als solche kennzeichnen, mit Vorlage. |
+| `saves/erlental/images/` | Bilder der Chronik. `arenswiel-gruendung-1900.png` ist das Original des Gründungsbilds (bleibt unverändert), `arenswiel-gruendung-1900-web.jpg` die Fassung für Kapitel I („Tafel I“), `arenswiel-gruendung-1900-ausschnitt.jpg` der Ausschnitt mit Arenswiel und Haus Weitblick für Titelblatt und Portalkarte. KI-Bilder als solche kennzeichnen, mit Vorlage. |
 | `werkstatt/erlental/gruendung-1900.md` | Wortlaut der Gründungsgeschichte, wie der Spieler sie geliefert hat. Die Chronik übernimmt ihn unverändert. |
-| `assets/erlental.css`, `assets/affiche-erlental.svg` | Eigenes Erscheinungsbild, unabhängig von `styles.css` und `falkenmark.css`, dazu das Zierbild (keine Karte). Die Portalkarte hat passende Regeln in `styles.css` (`.world-card[data-world="erlental"]`). |
+| `assets/erlental.css`, `assets/erlental-zierleiste.svg`, `assets/erlental-ecke.svg`, `assets/fonts/eb-garamond*.woff2`, `assets/fonts/cormorant*.woff2` | Eigenes Erscheinungsbild „Firmenschrift der EWV“, unabhängig von `styles.css` und `falkenmark.css`, mit Ornamenten und Schriften. Die Portalkarte hat passende Regeln in `styles.css` (`.world-card[data-world="erlental"]`). |
 
-## Erscheinungsbild
+## Erscheinungsbild: „Firmenschrift der EWV“
 
-Leitbild: Messtischblatt und Wiesenland um 1900. Büttenpapier mit Sumpfsignaturen und Wasserschraffur, Flussblau (`--et-water`, Kopfleiste `--et-deep`), Erlenrot wie frisch geschnittenes Erlenholz (`--et-alder`, Akzent), Ried (`--et-reed`), Kätzchengelb (`--et-ochre`, Abgeleitet), Schlehenviolett (`--et-slate`, Szenen). Grenzlinie als Kreisgrenze: Strich, Punkt, Punkt. Schriften lokal wie im übrigen Archiv: Source Serif 4 und Jost, Zahlen in der Systemschrift (`--et-mono`); keine Google Fonts, kein Playfair (Archipel).
+Seit 27.10.2026 auf Wunsch des Spielers ein eigenes Design, klar unterschieden von Falkenmark (Heimatkalender) und Archipel (Tropenplakat). Leitbild: Festschrift einer Verkehrsgesellschaft um 1900, Historismus mit ersten Jugendstil-Zügen. Den Ton gibt das Gründungsbild vor.
 
-Das Seitengerüst entspricht der Falkenmark, die Klassen tragen das Kürzel `et-` statt `fm-`. Änderungen an einer der beiden Dateien wirken nur in ihrer Welt.
+- **Farben** (Variablen in `assets/erlental.css`):
+  - Chamois-Papier (`--et-paper`, heller `--et-paper-2`, getönt `--et-paper-3`) und Druckbraun (`--et-ink`).
+  - Bronze für Linien, Rahmen und Ornamente (`--et-bronze`).
+  - Waldgrün für Kopf- und Fußleiste (`--et-wald`).
+  - Seeblau für Belegt (`--et-see`), Felsocker für Abgeleitet (`--et-ocker`), Siegelrot für Szenen, Initialen und Schlüsselereignisse (`--et-siegel`).
+  - Im Dunkelmodus (`prefers-color-scheme: dark`) dunkles Papier mit Elfenbeinschrift. Waldgrüner Text und Linien laufen dann über `--et-firma` und `--et-linie` und werden heller.
+- **Schriften**, lokal unter SIL OFL: EB Garamond für den Text (Mediävalziffern, Kapitälchen über `font-variant-caps: all-small-caps`) und Cormorant für Titel und Kennzahlen. In Tabellen, Jahresleiste und Kennzahlen stehen Versalziffern mit fester Breite.
+  - Beschnitten mit fontTools auf Latein und Satzzeichen, alle OpenType-Features außer `locl`. EB Garamond tauscht für Deutsch sonst Ä, Ö, Ü gegen Formen mit eingesenkten Punkten, und dafür fehlen Kapitälchen.
+  - Neu beschneiden: Feature-Liste aus der Originaldatei ohne `locl` an `--layout-features` übergeben.
+- **Ornamente** als SVG-Masken, eingefärbt per Stylesheet:
+  - `erlental-zierleiste.svg` (Erlenzweig mit Blättern, Zapfen und Kätzchen) unter jeder Abschnittsüberschrift und auf dem Titelblatt;
+  - `erlental-ecke.svg` (Eckstück) an Frontispiz und Szenen;
+  - das Blatt-Ornament ❦ als Abschluss jedes Abschnitts.
+- **Titelblatt:** Frontispiz links (Ausschnitt aus dem Gründungsbild, gerahmt, mit Eckstücken), Titel rechts. Darunter Zierleiste, Firmenname in Kapitälchen und „Arenswiel · Haus Weitblick · Gegründet 1900“. Das ganze Gründungsbild steht als „Tafel I“ in Kapitel I.
+- **Textarten:**
+  - Belegt als „Bericht“: helles Papier, Doppellinie in Seeblau, Quellenvermerk kursiv.
+  - Abgeleitet als „Erläuterung“: Doppelrandlinie in Ocker, ohne Kasten.
+  - Literarische Szene als „Erzählung“: getöntes Papier, Rahmen mit Eckstücken, Blocksatz und Schmuckinitiale in Siegelrot.
+  - Die Etiketten „Belegt“, „Abgeleitet“, „Literarische Szene“ bleiben.
+
+Die Klassen tragen das Kürzel `et-`; die Bausteine (Kapitel, Übersicht, Zeitachse, Linien-Schemata, Jahresauswahl) heißen wie bei der Falkenmark, sehen aber eigenständig aus. Änderungen an `erlental.css` wirken nur hier.
 
 ## Kapitel anlegen
 

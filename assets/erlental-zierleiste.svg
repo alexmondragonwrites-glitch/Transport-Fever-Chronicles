@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 36">
+  <!-- Zierleiste der Erlental-Chronik: Erlenzweig mit Blättern, Zapfen und Kätzchen zwischen zwei Linien. Wird als Maske verwendet; die Farbe kommt aus dem Stylesheet. -->
+  <g fill="#000" stroke="#000" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M10 18H104M196 18H290" stroke-width="1.2" fill="none"/>
+    <path d="M40 21.6H98M202 21.6H260" stroke-width=".6" fill="none"/>
+    <path d="M107 18l3.6-3.6 3.6 3.6-3.6 3.6zM186 18l3.6-3.6 3.6 3.6-3.6 3.6z" stroke="none"/>
+    <!-- Zweig -->
+    <path d="M121 20.5c10-2.5 21-6 34-6 8 0 14 1.6 21 4" stroke-width="1.4" fill="none"/>
+    <!-- Blätter: verkehrt eiförmig, an der Spitze eingekerbt -->
+    <path d="M137 17.6c-3-5.6-8.6-8.6-14.4-7.6-.8 1.6-.6 3 .6 4-1.8 1-1.8 2.8 0 3.8 4.8 1.8 9.6 1.8 13.8-.2z" stroke="none"/>
+    <path d="M161 14.8c3.2-5.4 8.8-8 14.4-6.6.6 1.6.2 3-1 3.8 1.6 1.2 1.4 3-.4 3.8-5 1.4-9.6 1-13-1z" stroke="none"/>
+    <!-- Zapfen mit Stielen -->
+    <path d="M145.5 19.6v-1.4M151 18.6v-3.2M156.5 19.4v-2.6" stroke-width=".8" fill="none"/>
+    <ellipse cx="145.5" cy="23.6" rx="2.5" ry="3.5" stroke="none"/>
+    <ellipse cx="151" cy="24.6" rx="2.3" ry="3.2" stroke="none"/>
+    <ellipse cx="156.5" cy="23.4" rx="2.5" ry="3.5" stroke="none"/>
+    <!-- Kätzchen -->
+    <path d="M168.6 18.6c.8 4 1 8 2.8 11.6" stroke-width="2.4" fill="none"/>
+    <path d="M173.4 19.4c1.4 3.4 1.8 6.8 3.8 9.6" stroke-width="2.1" fill="none"/>
+  </g>
+</svg>

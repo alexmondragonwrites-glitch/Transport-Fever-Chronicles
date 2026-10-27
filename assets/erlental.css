@@ -1,276 +1,313 @@
-/* Erlental · eigenes Erscheinungsbild, unabhängig von styles.css (Archipel) und falkenmark.css
- * Seitengerüst wie die Falkenmark (Textarten, Kapitel, Jahresauswahl), Klassen mit dem Kürzel et-, Farben und Muster eigen.
- * Leitbild: Messtischblatt und Wiesenland um 1900. Papier mit Sumpfsignaturen und Wasserschraffur,
- * Flussblau, Erlenrot (frisch geschnittenes Erlenholz), Ried, Kätzchengelb; Kreisgrenze (Strich, Punkt, Punkt).
- * Schriften lokal (SIL Open Font License, siehe fonts/OFL-*.txt): Source Serif 4 für Text und Titel, Jost als Kartenschrift.
+/* Erlental · „Firmenschrift der EWV“: eigenes Erscheinungsbild, unabhängig von styles.css (Archipel) und falkenmark.css.
+ * Leitbild: Festschrift einer Verkehrsgesellschaft um 1900 (Historismus mit ersten Jugendstil-Zügen).
+ * Farben aus dem Gründungsbild: Chamois-Papier, Druckbraun, Bronze, Waldgrün, Wiesengrün, Seeblau, Felsocker, Siegelrot.
+ * Schriften lokal (SIL Open Font License, siehe fonts/OFL-*.txt): EB Garamond für den Text, Cormorant für Titel.
+ * Ornamente: erlental-zierleiste.svg und erlental-ecke.svg, als Maske eingefärbt. Klassen mit dem Kürzel et-.
  */
-@font-face{font-family:'Source Serif 4';font-style:normal;font-weight:400 700;font-display:swap;src:url(fonts/source-serif-4.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
-@font-face{font-family:'Source Serif 4';font-style:italic;font-weight:400 700;font-display:swap;src:url(fonts/source-serif-4-italic.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
-@font-face{font-family:'Jost';font-style:normal;font-weight:100 900;font-display:swap;src:url(fonts/jost.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'EB Garamond';font-style:normal;font-weight:400 800;font-display:swap;src:url(fonts/eb-garamond.woff2) format('woff2')}
+@font-face{font-family:'EB Garamond';font-style:italic;font-weight:400 800;font-display:swap;src:url(fonts/eb-garamond-italic.woff2) format('woff2')}
+@font-face{font-family:'Cormorant';font-style:normal;font-weight:300 700;font-display:swap;src:url(fonts/cormorant.woff2) format('woff2')}
+@font-face{font-family:'Cormorant';font-style:italic;font-weight:300 700;font-display:swap;src:url(fonts/cormorant-italic.woff2) format('woff2')}
 
 body.et{
   /* Papier */
-  --et-paper:#f1eee5;--et-card:#faf8f3;--et-scene:#e6e7df;--et-note:#efe6d2;
+  --et-paper:#efe5c9;--et-paper-2:#f7f0dc;--et-paper-3:#e8dab5;--et-note:#efe1bd;
   /* Druckfarben */
-  --et-ink:#1e2529;--et-read:#2d3438;--et-muted:#5a6266;
-  --et-line:#cfcdc2;--et-line-soft:#e2dfd5;--et-line-strong:#9c9a8c;
-  --et-water:#2c5161;--et-deep:#1b2a31;--et-reed:#6b7448;--et-slate:#4b4660;
-  --et-alder:#b0532b;--et-ochre:#a07a26;--et-ochre-ink:#735610;--et-ivory:#f3f0e7;--et-ivory-muted:#c3c7c4;
-  --et-shadow:0 12px 26px -20px #1b2a3199;
-  --et-serif:'Source Serif 4','Iowan Old Style','Palatino Linotype',Georgia,serif;
-  --et-sans:Jost,Futura,'Futura PT','Century Gothic','Avenir Next',Avenir,sans-serif;
-  /* Zahlen und Daten: Systemschrift mit festen Ziffernbreiten, keine Anfrage an fremde Server */
-  --et-mono:ui-monospace,'Cascadia Mono','Segoe UI Mono','SF Mono',Consolas,Menlo,monospace;
-  --et-parchment:#f3ead8;--et-parchment-line:#e0d1af;--et-parchment-ink:#392d22;
-  /* Grenzlinie wie auf Messtischblättern: Strich, Punkt, Punkt */
-  --et-border-line:repeating-linear-gradient(90deg,var(--et-alder) 0 14px,transparent 14px 19px,var(--et-alder) 19px 22px,transparent 22px 26px,var(--et-alder) 26px 29px,transparent 29px 34px);
-  margin:0;color:var(--et-ink);font-family:var(--et-serif);font-size:16px;line-height:1.6;font-variant-numeric:lining-nums;
-  /* Sumpfsignaturen und Wasserschraffur wie auf Messtischblättern, mit Abstand zum Kachelrand */
+  --et-ink:#2b2118;--et-read:#3b2f23;--et-muted:#6f604c;
+  --et-line:#d6c49b;--et-line-soft:#e4d6b3;--et-line-strong:#b09868;
+  --et-bronze:#9a7a3c;--et-bronze-dark:#6e5422;--et-bronze-light:#c8ab6c;
+  --et-wald:#33482e;--et-wald-deep:#243422;--et-wiese:#6b7f3e;--et-see:#3f6a86;--et-ocker:#a87a43;--et-siegel:#8f3123;
+  --et-ivory:#f6efdc;--et-ivory-muted:#cfc3a3;
+  /* Text in Waldgrün und Linien der Schemata: im Dunkelmodus heller */
+  --et-firma:#33482e;--et-linie:#33482e;
+  --et-shadow:0 16px 32px -24px rgba(43,33,24,.6);
+  --et-serif:'EB Garamond','Garamond','Iowan Old Style','Palatino Linotype',Georgia,serif;
+  --et-titel:'Cormorant','EB Garamond','Garamond',Georgia,serif;
+  /* Zahlen in Tabellen und Kennzahlen: Versalziffern mit fester Breite aus der Textschrift */
+  --et-zahl:'EB Garamond','Garamond',Georgia,serif;
+  --et-rule:3px double var(--et-bronze);
+  margin:0;color:var(--et-ink);font-family:var(--et-serif);font-size:19px;line-height:1.6;
+  font-variant-numeric:oldstyle-nums proportional-nums;font-kerning:normal;
+  text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;
+  /* Papierkorn: feines Rauschen, darunter ein leichter Schatten zum Rand */
   background:
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='560' height='560' viewBox='0 0 560 560'%3E%3Cpath fill='none' stroke='%232c5161' stroke-opacity='.11' stroke-width='1.2' stroke-linecap='round' d='M52 80h18M56 80v-5M61 80v-7M66 80v-5M104 98h18M108 98v-5M113 98v-7M118 98v-5M78 124h18M82 124v-5M87 124v-7M92 124v-5M402 64h18M406 64v-5M411 64v-7M416 64v-5M452 84h18M456 84v-5M461 84v-7M466 84v-5M292 262h18M296 262v-5M301 262v-7M306 262v-5M338 280h18M342 280v-5M347 280v-7M352 280v-5M314 306h18M318 306v-5M323 306v-7M328 306v-5M84 424h18M88 424v-5M93 424v-7M98 424v-5M132 442h18M136 442v-5M141 442v-7M146 442v-5M470 404h18M474 404v-5M479 404v-7M484 404v-5M500 430h18M504 430v-5M509 430v-7M514 430v-5M236 500h18M240 500v-5M245 500v-7M250 500v-5M180 176h56M187 182h42M194 188h28M410 330h56M417 336h42M424 342h28M40 300h56M47 306h42M54 312h28M300 90h56M307 96h42M314 102h28M380 500h56M387 506h42M394 512h28'/%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='k'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .32 0 0 0 0 .24 0 0 0 0 .13 0 0 0 .07 0'/%3E%3C/filter%3E%3Crect width='240' height='240' filter='url(%23k)'/%3E%3C/svg%3E"),
+    radial-gradient(ellipse at 50% 0%,#f4ebd2 0%,rgba(244,235,210,0) 60%),
     var(--et-paper)}
+@media (prefers-color-scheme:dark){
+  body.et{
+    --et-paper:#1e1913;--et-paper-2:#28211a;--et-paper-3:#2e261c;--et-note:#33291d;
+    --et-ink:#efe4c8;--et-read:#e1d4b5;--et-muted:#b2a280;
+    --et-line:#4a3d2b;--et-line-soft:#382e22;--et-line-strong:#6d5a3c;
+    --et-bronze:#c6a560;--et-bronze-dark:#e0c48a;--et-bronze-light:#8a6f3a;
+    --et-wald:#16221a;--et-wald-deep:#0f1812;--et-wiese:#a4b56d;--et-see:#8cb5cf;--et-ocker:#d6a46a;--et-siegel:#d77a62;
+    --et-ivory:#efe4c8;--et-ivory-muted:#b9ad8e;
+    --et-firma:#c3d199;--et-linie:#a4b56d;
+    --et-shadow:0 16px 32px -24px rgba(0,0,0,.8);
+    background:radial-gradient(ellipse at 50% 0%,#2a2219 0%,rgba(42,34,25,0) 60%),var(--et-paper)}
+}
 .et *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-.et a{color:inherit}
-.et a:focus-visible,.et summary:focus-visible{outline:3px solid var(--et-slate);outline-offset:3px}
-.et ::selection{background:#b0532b33}
-.et .skip{position:absolute;top:-70px;left:12px;padding:10px;background:var(--et-deep);color:var(--et-ivory);z-index:99}
+.et a{color:inherit;text-decoration-color:var(--et-bronze-light);text-underline-offset:.18em}
+.et a:focus-visible,.et summary:focus-visible,.et select:focus-visible{outline:2px solid var(--et-siegel);outline-offset:3px}
+.et ::selection{background:#c8ab6c66}
+.et [hidden]{display:none!important}
+.et .skip{position:absolute;top:-70px;left:12px;padding:10px;background:var(--et-wald);color:var(--et-ivory);z-index:99}
 .et .skip:focus{top:10px}
-.et .shell{max-width:1200px;margin:auto;padding:0 28px}
-.et .eyebrow,.et .kicker{font-family:var(--et-sans);text-transform:uppercase;letter-spacing:.18em;font-size:12px;font-weight:500;color:var(--et-water)}
+.et .shell{max-width:1220px;margin:auto;padding:0 32px}
+/* Kapitälchen-Zeilen: Überschriftenzeilen, Marken, Navigation */
+.et .eyebrow,.et .kicker{font-family:var(--et-serif);font-variant-caps:all-small-caps;letter-spacing:.16em;font-size:17px;font-weight:500;color:var(--et-bronze-dark)}
 
-/* Kopfleiste: Wortmarke, Navigation, Grenzlinie */
-.et-bar{position:sticky;top:0;z-index:20;background:var(--et-deep);color:var(--et-ivory)}
-.et-bar:after{content:"";position:absolute;left:0;right:0;bottom:-4px;height:4px;background:var(--et-border-line),var(--et-deep)}
-.et-bar-inner{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:58px}
-.et-wordmark{display:flex;align-items:baseline;gap:12px;text-decoration:none;color:var(--et-ivory);white-space:nowrap}
-.et-wordmark b{font-family:var(--et-sans);font-weight:600;font-size:17px;letter-spacing:.34em;text-transform:uppercase}
-.et-wordmark i{font-family:var(--et-serif);font-size:15px;color:var(--et-ivory-muted)}
-.et-nav{display:flex;gap:20px;align-items:center;flex-wrap:wrap}
-.et-nav a{font-family:var(--et-sans);font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--et-ivory-muted);text-decoration:none}
+/* Zierleiste als Maske, Farbe Bronze */
+.et-zier{display:block;width:240px;max-width:100%;height:29px;background:var(--et-bronze);-webkit-mask:url(erlental-zierleiste.svg) center/contain no-repeat;mask:url(erlental-zierleiste.svg) center/contain no-repeat}
+
+/* Kopfleiste: Waldgrün mit Doppellinie in Bronze */
+.et-bar{position:sticky;top:0;z-index:20;background:var(--et-wald);color:var(--et-ivory);border-bottom:var(--et-rule);box-shadow:0 1px 0 var(--et-wald-deep)}
+.et-bar-inner{display:flex;align-items:center;justify-content:space-between;gap:22px;min-height:58px}
+.et-wordmark{display:flex;align-items:baseline;gap:14px;text-decoration:none;color:var(--et-ivory);white-space:nowrap}
+.et-wordmark b{font-family:var(--et-titel);font-weight:700;font-size:25px;letter-spacing:.14em;text-transform:uppercase}
+.et-wordmark i{font-family:var(--et-serif);font-size:16px;color:var(--et-ivory-muted)}
+.et-nav{display:flex;gap:22px;align-items:center;flex-wrap:wrap}
+.et-nav a{font-variant-caps:all-small-caps;letter-spacing:.12em;font-size:18px;color:var(--et-ivory-muted);text-decoration:none}
 .et-nav a:hover{color:var(--et-ivory)}
-.et-nav .et-nav-home{border-left:1px solid #ffffff33;padding-left:20px}
+.et-nav .et-nav-home{border-left:1px solid #f6efdc33;padding-left:22px}
 
-/* Kopf */
-.et-hero{padding:62px 0 52px;border-bottom:1px solid var(--et-line-strong);box-shadow:0 3px 0 -2px var(--et-line-strong)}
-.et-hero-grid{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(0,.55fr);gap:56px;align-items:center}
-.et-hero h1{font-family:var(--et-serif);font-weight:700;font-size:clamp(50px,7vw,100px);line-height:.98;letter-spacing:-.02em;margin:16px 0 18px;color:var(--et-ink)}
-.et-hero h1 em{display:block;font-weight:400;font-size:.36em;line-height:1.25;letter-spacing:0;color:var(--et-water);margin-top:14px}
-.et-lede{font-size:19px;line-height:1.65;max-width:640px;color:var(--et-read);margin:0 0 20px}
-.et-state{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center;font-family:var(--et-sans);font-size:13px;letter-spacing:.03em;color:var(--et-muted);margin:0}
-.et-poster{margin:0;background:var(--et-card);border:1px solid var(--et-line-strong);padding:9px;box-shadow:var(--et-shadow)}
-.et-poster img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;border:1px solid var(--et-line)}
-.et-poster figcaption{font-family:var(--et-sans);font-size:12px;line-height:1.45;letter-spacing:.02em;color:var(--et-muted);padding:9px 2px 1px}
+/* Titelblatt: Frontispiz links, Titel rechts */
+.et-hero{padding:56px 0 50px;border-bottom:var(--et-rule)}
+.et-hero-grid{display:grid;grid-template-columns:minmax(0,1.12fr) minmax(0,.88fr);gap:58px;align-items:center}
+.et-frontispiz{margin:0}
+.et-plate{position:relative;padding:22px;background:var(--et-paper-2);border:1px solid var(--et-line-strong);box-shadow:inset 0 0 0 7px var(--et-paper-2),inset 0 0 0 8px var(--et-bronze-light),var(--et-shadow)}
+.et-plate a{display:block}
+.et-plate img{display:block;width:100%;height:auto;border:1px solid var(--et-line)}
+.et-ecke{position:absolute;width:46px;height:46px;background:var(--et-bronze);-webkit-mask:url(erlental-ecke.svg) center/contain no-repeat;mask:url(erlental-ecke.svg) center/contain no-repeat;pointer-events:none}
+.et-ecke--ol{top:4px;left:4px}
+.et-ecke--or{top:4px;right:4px;transform:scaleX(-1)}
+.et-ecke--ul{bottom:4px;left:4px;transform:scaleY(-1)}
+.et-ecke--ur{bottom:4px;right:4px;transform:scale(-1,-1)}
+.et-frontispiz figcaption{margin:12px 6px 0;font-style:italic;font-size:15px;line-height:1.5;color:var(--et-muted);text-align:center}
+.et-titel{text-align:center}
+.et-hero h1{font-family:var(--et-titel);font-weight:700;font-size:clamp(54px,6.8vw,100px);line-height:.95;letter-spacing:.05em;text-transform:uppercase;margin:14px 0 6px;color:var(--et-ink)}
+.et-hero h1 em{display:block;margin-top:14px;font-family:var(--et-serif);font-weight:400;font-size:.3em;letter-spacing:.02em;text-transform:none;color:var(--et-bronze-dark)}
+.et-titel .et-zier{margin:22px auto 20px;width:270px}
+.et-titel-firma{margin:0 0 18px;font-family:var(--et-titel);font-weight:700;font-size:25px;line-height:1.25;letter-spacing:.07em;font-variant-caps:all-small-caps;color:var(--et-firma)}
+.et-titel-firma span{display:block;margin-top:6px;font-family:var(--et-serif);font-weight:400;font-style:italic;font-size:19px;letter-spacing:.02em;font-variant-caps:normal;color:var(--et-muted)}
+.et-lede{font-size:20px;line-height:1.6;max-width:560px;margin:0 auto 20px;color:var(--et-read);hyphens:auto}
+.et-state{display:flex;flex-wrap:wrap;justify-content:center;gap:6px 16px;align-items:center;margin:0;font-variant-caps:all-small-caps;letter-spacing:.1em;font-size:17px;color:var(--et-muted)}
 
-/* Gerüst */
-.et-body{display:grid;grid-template-columns:190px minmax(0,1fr);gap:56px;padding:48px 0 80px}
-.et-toc{position:sticky;top:92px;align-self:start;display:flex;flex-direction:column;gap:3px}
-.et-toc a{font-family:var(--et-sans);font-size:13px;letter-spacing:.04em;text-decoration:none;color:var(--et-muted);border-left:2px solid var(--et-line);padding:4px 0 4px 12px}
-.et-toc a:hover{color:var(--et-ink);border-color:var(--et-alder)}
-.et-main{max-width:780px;min-width:0}
-.et-main>section{scroll-margin-top:84px;padding:4px 0 40px;margin-bottom:32px;border-bottom:1px solid var(--et-line)}
-.et-main>section:last-child{border:0;margin-bottom:0}
-.et-main h2{font-family:var(--et-serif);font-weight:600;font-size:clamp(30px,3.4vw,42px);line-height:1.15;letter-spacing:-.01em;margin:6px 0 16px;color:var(--et-ink)}
-.et-main h3{font-family:var(--et-serif);font-weight:600;font-size:23px;line-height:1.25;margin:26px 0 8px;color:var(--et-ink)}
-.et-main h4{font-family:var(--et-sans);font-weight:500;font-size:14px;letter-spacing:.14em;text-transform:uppercase;margin:28px 0 8px;color:var(--et-water)}
-.et-main p{font-size:17.5px;line-height:1.72;color:var(--et-read);margin:0 0 16px}
-.et-main ul{padding-left:20px;margin:0 0 16px}
-.et-main li{font-size:16.5px;line-height:1.6;color:var(--et-read);margin:0 0 9px}
-.et-main li::marker{color:var(--et-alder)}
-.et-source,.et-muted{font-size:13.5px;line-height:1.5;color:var(--et-muted)}
-.et-main p.et-source{font-size:13.5px}
+/* Gerüst: Inhalt links, Text rechts */
+.et-body{display:grid;grid-template-columns:200px minmax(0,1fr);gap:60px;padding:50px 0 84px}
+.et-toc{position:sticky;top:96px;align-self:start;display:flex;flex-direction:column}
+.et-toc-titel{margin:0 0 8px;font-family:var(--et-titel);font-weight:700;font-size:22px;letter-spacing:.14em;text-transform:uppercase;color:var(--et-ink);border-bottom:var(--et-rule);padding-bottom:6px}
+.et-toc a{font-size:16.5px;line-height:1.35;text-decoration:none;color:var(--et-muted);padding:6px 0;border-bottom:1px dotted var(--et-line-strong)}
+.et-toc a:hover{color:var(--et-siegel)}
+.et-main{max-width:760px;min-width:0}
+.et-main>section{scroll-margin-top:86px;padding:4px 0 44px;margin-bottom:34px}
+.et-main>section:not(:last-child)::after{content:"\2766";display:block;margin-top:40px;text-align:center;font-size:24px;color:var(--et-bronze)}
+.et-main h2{font-family:var(--et-titel);font-weight:600;font-size:clamp(34px,4vw,48px);line-height:1.1;letter-spacing:.01em;margin:4px 0 6px;color:var(--et-ink)}
+.et-main>section>h2::after{content:"";display:block;width:220px;height:27px;margin:12px 0 18px;background:var(--et-bronze);-webkit-mask:url(erlental-zierleiste.svg) left center/contain no-repeat;mask:url(erlental-zierleiste.svg) left center/contain no-repeat}
+.et-main h3{font-family:var(--et-titel);font-weight:600;font-size:28px;line-height:1.2;margin:28px 0 8px;color:var(--et-ink)}
+.et-main h4{font-variant-caps:all-small-caps;letter-spacing:.14em;font-weight:600;font-size:18px;margin:26px 0 8px;color:var(--et-bronze-dark)}
+.et-main p{font-size:19px;line-height:1.66;color:var(--et-read);margin:0 0 16px;hyphens:auto}
+.et-main ul{padding-left:22px;margin:0 0 16px}
+.et-main li{font-size:18px;line-height:1.6;color:var(--et-read);margin:0 0 10px;hyphens:auto}
+.et-main li::marker{color:var(--et-bronze)}
+.et-source,.et-muted{font-size:15px;line-height:1.5;color:var(--et-muted)}
+.et-main p.et-source{font-size:15px;font-style:italic}
 .et-empty{font-style:italic;color:var(--et-muted)}
+.et code{font-size:.85em}
 
-/* Kennzeichnung */
-.et-legend{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:0 0 36px}
-.et-legend div{background:var(--et-card);border:1px solid var(--et-line);border-top:3px solid var(--c);padding:12px 14px;font-size:14px;line-height:1.5;color:var(--et-read)}
-.et-legend .et-legend-abg{background:linear-gradient(90deg,#a07a2614,transparent 70%),var(--et-card);border-top-width:1px;border-left:4px solid var(--et-ochre)}
-.et-legend .et-legend-szene{background:var(--et-parchment);border-color:var(--et-parchment-line);border-top:3px solid var(--et-alder);font-style:italic}
-.et-legend strong{display:block;font-family:var(--et-sans);font-weight:500;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--et-ink);margin-bottom:4px}
-.et-label{display:inline-block;font-family:var(--et-sans);font-size:10.5px;line-height:1.6;letter-spacing:.14em;text-transform:uppercase;font-weight:600;padding:1px 7px;border:1px solid currentColor;border-radius:2px;white-space:nowrap}
-.et-label.belegt{color:var(--et-water)}
-.et-label.abgeleitet{color:var(--et-ochre-ink)}
-.et-label.szene{color:var(--et-slate)}
+/* Zeichenerklärung */
+.et-legend{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:0 0 40px}
+.et-legend div{padding:12px 14px 13px;font-size:15.5px;line-height:1.45;color:var(--et-read);background:var(--et-paper-2);border:1px solid var(--et-line);border-top:3px double var(--et-see)}
+.et-legend .et-legend-abg{background:transparent;border:0;border-left:4px double var(--et-ocker);padding-left:16px}
+.et-legend .et-legend-szene{background:var(--et-paper-3);border-top-color:var(--et-siegel);font-style:italic}
+.et-legend strong{display:block;margin-bottom:3px;font-style:normal;font-variant-caps:all-small-caps;letter-spacing:.14em;font-size:17px;font-weight:600;color:var(--et-ink)}
+.et-label{display:inline-block;font-variant-caps:all-small-caps;font-size:15px;line-height:1.5;letter-spacing:.14em;font-weight:600;padding:0 9px 1px;border:1px solid currentColor;border-radius:1px;white-space:nowrap;font-style:normal}
+.et-label.belegt{color:var(--et-see)}
+.et-label.abgeleitet{color:var(--et-ocker)}
+.et-label.szene{color:var(--et-siegel)}
 .et-label.offen{color:var(--et-muted);border-style:dashed}
-.et-block-label{margin:0 0 8px}
+.et-block-label{margin:0 0 10px}
 
-/* Drei Textarten: Belegt (Dokument), Abgeleitet (Kommentar), Literarische Szene (Buchauszug) */
-.et-block{margin:24px 0}
-.et-block--belegt{background:var(--et-card);border:1px solid var(--et-line);border-top:3px solid var(--et-water);padding:16px 22px 6px;box-shadow:var(--et-shadow)}
-.et-main .et-block--belegt p{font-family:var(--et-sans);font-size:16.5px;line-height:1.75;letter-spacing:.005em;font-variant-numeric:tabular-nums lining-nums}
-.et-main .et-block--belegt p.et-source{font-size:13px;border-top:1px dashed var(--et-line);padding-top:10px;margin-top:4px}
-.et-block--abgeleitet{border-left:4px solid var(--et-ochre);padding:4px 0 2px 22px;background:linear-gradient(90deg,#a07a2614,transparent 70%)}
-.et-main .et-block--abgeleitet p{font-size:17.5px;color:var(--et-read)}
-.et-scene{position:relative;margin:30px 0 30px 14px;padding:26px 32px 12px;background:var(--et-parchment);border:1px solid var(--et-parchment-line);box-shadow:var(--et-shadow)}
-.et-scene:before{content:"";position:absolute;inset:6px;border:1px solid var(--et-parchment-line);pointer-events:none}
-.et-scene h3{margin:4px 0 14px;font-style:italic;font-weight:500;font-size:24px;color:var(--et-parchment-ink)}
-.et-main .et-scene p{font-size:17.5px;line-height:1.78;color:var(--et-parchment-ink);margin:0;hyphens:auto}
-.et-main .et-scene p+p{text-indent:1.6em}
-.et-main .et-scene h3+p::first-letter{float:left;font-size:3.3em;line-height:.9;font-weight:600;margin:.06em .1em 0 0;color:var(--et-alder)}
+/* Drei Textarten: Bericht (Belegt), Erläuterung (Abgeleitet), Erzählung (Literarische Szene) */
+.et-block{margin:26px 0}
+.et-block--belegt{position:relative;padding:18px 24px 6px;background:var(--et-paper-2);border:1px solid var(--et-line);border-top:3px double var(--et-see);box-shadow:var(--et-shadow)}
+.et-main .et-block--belegt p{font-size:18.5px;font-variant-numeric:lining-nums proportional-nums}
+.et-main .et-block--belegt p.et-source{font-size:14.5px;border-top:1px dotted var(--et-line-strong);padding-top:10px;margin-top:6px}
+.et-block--abgeleitet{padding:4px 0 2px 26px;border-left:4px double var(--et-ocker)}
+.et-main .et-block--abgeleitet p{color:var(--et-read)}
+.et-scene{position:relative;margin:34px 0;padding:34px 40px 18px;background:var(--et-paper-3);border:1px solid var(--et-line-strong);box-shadow:inset 0 0 0 6px var(--et-paper-3),inset 0 0 0 7px var(--et-bronze-light),var(--et-shadow)}
+.et-scene::before,.et-scene::after{content:"";position:absolute;width:38px;height:38px;background:var(--et-bronze);-webkit-mask:url(erlental-ecke.svg) center/contain no-repeat;mask:url(erlental-ecke.svg) center/contain no-repeat;pointer-events:none}
+.et-scene::before{top:3px;left:3px}
+.et-scene::after{bottom:3px;right:3px;transform:scale(-1,-1)}
+.et-scene h3{margin:2px 0 16px;font-family:var(--et-titel);font-style:italic;font-weight:600;font-size:32px;line-height:1.15;color:var(--et-ink)}
+.et-scene h3 .et-scene-sub{display:block;margin-top:8px;font-family:var(--et-serif);font-style:normal;font-weight:500;font-size:16px;letter-spacing:.12em;font-variant-caps:all-small-caps;color:var(--et-muted)}
+.et-main .et-scene p{font-size:19px;line-height:1.72;color:var(--et-read);margin:0;text-align:justify;hyphens:auto}
+.et-main .et-scene p+p{text-indent:1.5em}
+.et-main .et-scene p.et-block-label,.et-main .et-scene p.et-scene-note{text-indent:0;text-align:left}
+.et-main .et-scene p.et-scene-note{margin:0 0 14px;font-size:15px;line-height:1.5;font-style:italic;color:var(--et-muted)}
+/* Schmuckinitiale: Siegelrot in doppeltem Bronzerahmen */
+.et-main .et-scene h3+p::first-letter{float:left;margin:.08em .16em 0 0;padding:.06em .12em .02em;font-family:var(--et-titel);font-weight:700;font-size:3.6em;line-height:.82;color:var(--et-siegel);border:3px double var(--et-bronze);background:var(--et-paper-2)}
 .et-main .et-scene p:last-child{margin-bottom:12px}
-/* Dialoge ohne Initiale: sie fiele sonst auf das Anführungszeichen */
-.et-main .et-scene--dialog h3+p::first-letter{float:none;font-size:inherit;line-height:inherit;font-weight:inherit;margin:0;color:inherit}
-/* Szenen aus Einzeleinträgen (Anzeigen, Protokoll): ohne Initiale und Einzug, Abstand zwischen den Einträgen */
-.et-main .et-scene--eintraege h3+p::first-letter{float:none;font-size:inherit;line-height:inherit;font-weight:inherit;margin:0;color:inherit}
-.et-main .et-scene--eintraege p+p{text-indent:0;margin-top:.7em}
-/* Telegramme: Schreibmaschinenschrift, etwas kleiner */
-.et-main .et-scene--telegramm p:not(.et-block-label){font-family:var(--et-mono);font-size:15px;line-height:1.6;letter-spacing:.03em}
-/* Randbemerkung in einer Szene, etwa die Note des Lehrers */
-.et-main .et-scene .et-randnotiz{text-indent:0;margin-top:.6em;font-style:italic;color:var(--et-alder)}
+.et-main .et-scene--dialog h3+p::first-letter,.et-main .et-scene--eintraege h3+p::first-letter{float:none;margin:0;padding:0;font:inherit;line-height:inherit;color:inherit;border:0;background:none}
+.et-main .et-scene--eintraege p{text-align:left}
+.et-main .et-scene--eintraege p+p{text-indent:0;margin-top:.75em}
+.et-main .et-scene--telegramm p:not(.et-block-label):not(.et-scene-note){font-family:ui-monospace,'Cascadia Mono',Consolas,monospace;font-size:15px;line-height:1.6;letter-spacing:.03em;text-align:left}
+.et-main .et-scene .et-randnotiz{text-indent:0;margin-top:.6em;font-style:italic;color:var(--et-siegel)}
 .et-scene .et-block-label{margin-bottom:10px}
-.et-note{margin:28px 0 8px;padding:14px 18px;border:1px dashed var(--et-line-strong);background:#ffffff66}
+.et-note{margin:28px 0 8px;padding:14px 18px;border:1px dashed var(--et-line-strong);background:var(--et-paper-2)}
 .et-main .et-note h4{margin:0 0 6px}
-.et-main .et-note p{font-size:15.5px;margin:0}
+.et-main .et-note p{font-size:17px;margin:0}
 
-/* Tabellen */
+/* Tabellen im Stil gestochener Übersichten */
 .et-scroll{overflow-x:auto;margin:0 0 12px}
-.et-table{width:100%;border-collapse:collapse;font-size:15px;line-height:1.5}
+.et-table{width:100%;border-collapse:collapse;font-size:16.5px;line-height:1.5;font-variant-numeric:lining-nums tabular-nums;border-top:var(--et-rule);border-bottom:1px solid var(--et-line-strong)}
 .et-table th,.et-table td{padding:9px 10px;border-bottom:1px solid var(--et-line-soft);vertical-align:top;text-align:left;color:var(--et-read)}
-.et-table thead th{font-family:var(--et-sans);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;font-weight:500;color:var(--et-muted);border-bottom:2px solid var(--et-line-strong)}
+.et-table thead th{font-variant-caps:all-small-caps;font-size:16px;letter-spacing:.13em;font-weight:600;color:var(--et-bronze-dark);border-bottom:1px solid var(--et-line-strong)}
 .et-table tbody th{font-weight:600;color:var(--et-ink);width:28%}
-.et-table td.et-time{width:118px;font-style:italic;color:var(--et-alder)}
+.et-table td.et-time{width:126px;font-style:italic;color:var(--et-siegel)}
 #register .et-table td:last-child{min-width:190px}
 .et-table td strong{color:var(--et-ink)}
-.et-table .et-num{text-align:right;font-variant-numeric:tabular-nums}
-.et-main .et-fix{font-size:14px;line-height:1.55;margin:8px 0 0;padding:8px 10px;background:var(--et-note);color:var(--et-read)}
+.et-table .et-num{text-align:right}
+.et-main .et-fix{font-size:15px;line-height:1.55;margin:8px 0 0;padding:8px 10px;background:var(--et-note);color:var(--et-read)}
 
-/* Kapitel, Bild, Konkordanz */
-.et-chapter{margin:38px 0 0;padding-top:30px;border-top:1px solid var(--et-line-strong);box-shadow:0 -3px 0 -2px var(--et-line-strong);scroll-margin-top:150px}
-.et-chapter-head{margin:0 0 18px}
-.et-main .et-chapter-head h3{font-size:clamp(30px,3.6vw,40px);line-height:1.1;margin:0 0 6px}
-.et-chapter-no{display:block;font-family:var(--et-sans);font-size:12px;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--et-alder);margin-bottom:6px}
-.et-main .et-chapter-period{font-family:var(--et-mono);font-size:13px;color:var(--et-muted);margin:0}
+/* Kapitel */
+.et-chapter{margin:40px 0 0;padding-top:30px;border-top:var(--et-rule);scroll-margin-top:150px}
+.et-chapter-head{margin:0 0 20px;text-align:center}
+.et-chapter-no{display:block;margin-bottom:4px;font-variant-caps:all-small-caps;font-size:18px;letter-spacing:.24em;font-weight:600;color:var(--et-siegel)}
+.et-main .et-chapter-head h3{font-family:var(--et-titel);font-weight:700;font-size:clamp(38px,4.4vw,52px);line-height:1.05;margin:0 0 8px}
+.et-main .et-chapter-period{margin:0;font-style:italic;font-size:17px;color:var(--et-muted);font-variant-numeric:lining-nums}
 
-/* Kapitelnavigation: bleibt beim Lesen unter der Kopfleiste stehen */
-.et-chapnav{display:flex;gap:4px;margin:22px 0 6px;padding:6px;background:#f1eee5f2;border:1px solid var(--et-line);box-shadow:0 8px 18px -16px #1b2a31aa;overflow-x:auto;scrollbar-width:none}
+/* Kapitelnavigation */
+.et-chapnav{display:flex;gap:4px;margin:22px 0 6px;padding:6px;background:var(--et-paper-2);border:1px solid var(--et-line);border-top:var(--et-rule);overflow-x:auto;scrollbar-width:none}
 .et-chapnav::-webkit-scrollbar{display:none}
-.et-chapnav a{flex:1 0 auto;display:flex;flex-direction:column;gap:1px;padding:7px 12px;text-decoration:none;color:var(--et-read);font-family:var(--et-serif);font-size:16px;white-space:nowrap;border-bottom:2px solid transparent}
-.et-chapnav a span{font-family:var(--et-sans);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--et-muted)}
-.et-chapnav a:hover{background:var(--et-card)}
-.et-chapnav a[aria-current="true"]{background:var(--et-card);border-bottom-color:var(--et-alder);color:var(--et-ink)}
-/* Auf breiten Bildschirmen alle Kapitel zeigen (Umbruch statt verborgener Scrollleiste); schmal bleibt die Leiste einzeilig */
+.et-chapnav a{flex:1 0 auto;display:flex;flex-direction:column;gap:1px;padding:7px 12px;text-decoration:none;color:var(--et-read);font-family:var(--et-titel);font-weight:600;font-size:21px;white-space:nowrap;border-bottom:2px solid transparent}
+.et-chapnav a span{font-family:var(--et-serif);font-weight:500;font-variant-caps:all-small-caps;font-size:15px;letter-spacing:.16em;color:var(--et-muted)}
+.et-chapnav a:hover{background:var(--et-paper)}
+.et-chapnav a[aria-current="true"]{border-bottom-color:var(--et-siegel);color:var(--et-ink)}
 @media(min-width:901px){.et-chapnav{flex-wrap:wrap}}
 
-/* Jahresauswahl: läuft unter der Kopfleiste mit, Jahrzehnt wählen, dann das Jahr */
-.et [hidden]{display:none!important}
-.et-years{position:sticky;top:62px;z-index:12;display:flex;flex-wrap:wrap;align-items:center;gap:6px 12px;margin:0 0 26px;padding:8px 10px;background:#f1eee5f2;border:1px solid var(--et-line);box-shadow:0 8px 18px -16px #1b2a31aa}
-.et-year{display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;min-width:50px;padding:4px 7px;font-family:var(--et-mono);font-size:13.5px;line-height:1.4;text-decoration:none;color:var(--et-ink);background:var(--et-card);border:1px solid var(--et-line-strong);border-radius:2px}
-a.et-year:hover{border-color:var(--et-water)}
-.et-year[aria-disabled]{color:#a19f93;background:transparent;border-color:var(--et-line-soft);cursor:default}
-.et-year[aria-current="true"]{color:var(--et-ivory);background:var(--et-water);border-color:var(--et-water)}
-.et-year--all{min-width:0;padding:5px 10px;font-family:var(--et-sans);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase}
-.et-decade{display:inline-flex;align-items:center;gap:6px;font-family:var(--et-sans);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--et-muted)}
-.et-decade select{font-family:var(--et-mono);font-size:13.5px;padding:3px 6px;color:var(--et-ink);background:var(--et-card);border:1px solid var(--et-line-strong);border-radius:2px}
+/* Jahresauswahl */
+.et-years{position:sticky;top:61px;z-index:12;display:flex;flex-wrap:wrap;align-items:center;gap:6px 12px;margin:0 0 30px;padding:8px 10px;background:color-mix(in srgb,var(--et-paper-2) 94%,transparent);border:1px solid var(--et-line);border-top:var(--et-rule);box-shadow:var(--et-shadow)}
+.et-year{display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;min-width:52px;padding:3px 8px;font-family:var(--et-zahl);font-variant-numeric:lining-nums tabular-nums;font-size:17px;line-height:1.35;text-decoration:none;color:var(--et-ink);background:var(--et-paper);border:1px solid var(--et-line-strong)}
+a.et-year:hover{border-color:var(--et-siegel)}
+.et-year[aria-disabled]{color:var(--et-line-strong);background:transparent;border-color:var(--et-line-soft);cursor:default}
+.et-year[aria-current="true"]{color:var(--et-ivory);background:var(--et-wald);border-color:var(--et-wald)}
+.et-year--all{min-width:0;padding:3px 12px;font-family:var(--et-serif);font-variant-caps:all-small-caps;letter-spacing:.12em}
+.et-decade{display:inline-flex;align-items:center;gap:6px;font-variant-caps:all-small-caps;letter-spacing:.1em;font-size:16px;color:var(--et-muted)}
+.et-decade select{font-family:var(--et-zahl);font-variant-numeric:lining-nums;font-size:16px;padding:2px 6px;color:var(--et-ink);background:var(--et-paper);border:1px solid var(--et-line-strong)}
 .et-year-list{display:flex;gap:4px;flex:1 1 200px;min-width:0;overflow-x:auto;scrollbar-width:none}
 .et-year-list::-webkit-scrollbar{display:none}
-.et-main .et-year-status{flex-basis:100%;margin:0;font-family:var(--et-sans);font-size:12.5px;line-height:1.4;color:var(--et-muted)}
-.et-main .et-year-mark{display:flex;align-items:center;gap:14px;margin:46px 0 -14px;font-family:var(--et-mono);font-size:14px;font-weight:600;letter-spacing:.32em;color:var(--et-alder)}
-.et-main .et-year-mark:after{content:"";flex:1;border-top:1px solid var(--et-line-strong)}
+.et-main .et-year-status{flex-basis:100%;margin:0;font-size:15px;line-height:1.4;font-style:italic;color:var(--et-muted)}
+.et-main .et-year-mark{display:flex;align-items:center;gap:14px;margin:48px 0 -14px;font-family:var(--et-titel);font-weight:700;font-size:22px;letter-spacing:.3em;font-variant-numeric:lining-nums;color:var(--et-siegel)}
+.et-main .et-year-mark::before,.et-main .et-year-mark::after{content:"";flex:1;border-top:var(--et-rule)}
+.et-main .et-year-mark::before{flex:0 0 28px}
 .et-yearblock+.et-yearblock{margin-top:8px}
 
 /* Kapitel auf einen Blick: Kennzahlen, Zeitachse, Linien */
-.et-overview{margin:20px 0 26px;padding:18px 20px 8px;background:var(--et-card);border:1px solid var(--et-line)}
-.et-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(138px,1fr));gap:10px;margin:0 0 18px}
-.et-stat{display:flex;flex-direction:column;gap:3px;padding:10px 12px;background:var(--et-paper);border:1px solid var(--et-line-soft);border-left:3px solid var(--et-water)}
-.et-stat--neg{border-left-color:var(--et-alder)}
-.et-stat-label{font-family:var(--et-sans);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--et-muted);line-height:1.35}
-.et-stat-value{font-family:var(--et-mono);font-size:20px;font-weight:600;line-height:1.2;color:var(--et-ink);font-variant-numeric:tabular-nums}
-.et-stat--neg .et-stat-value{color:var(--et-alder)}
-.et-stat-note{font-family:var(--et-sans);font-size:12px;color:var(--et-muted);line-height:1.35}
-.et-overview-grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:28px}
+.et-overview{margin:22px 0 28px;padding:20px 22px 10px;background:var(--et-paper-2);border:1px solid var(--et-line);border-top:var(--et-rule)}
+.et-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:0 0 20px}
+.et-stat{display:flex;flex-direction:column;gap:2px;padding:10px 12px 11px;background:var(--et-paper);border:1px solid var(--et-line-soft);border-top:3px double var(--et-bronze)}
+.et-stat--neg{border-top-color:var(--et-siegel)}
+.et-stat-label{font-variant-caps:all-small-caps;font-size:15px;letter-spacing:.12em;line-height:1.3;color:var(--et-muted)}
+.et-stat-value{font-family:var(--et-titel);font-weight:700;font-size:31px;line-height:1.1;font-variant-numeric:lining-nums tabular-nums;color:var(--et-ink)}
+.et-stat--neg .et-stat-value{color:var(--et-siegel)}
+.et-stat-note{font-size:14px;line-height:1.35;font-style:italic;color:var(--et-muted)}
+.et-overview-grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:30px}
 .et-main .et-overview h4{margin:4px 0 12px}
 .et-timeline{list-style:none;margin:0 0 14px;padding:0;position:relative}
-.et-timeline:before{content:"";position:absolute;left:5px;top:6px;bottom:6px;width:2px;background:var(--et-line)}
-.et-main .et-timeline li{position:relative;display:grid;grid-template-columns:76px minmax(0,1fr);gap:8px;margin:0;padding:0 0 11px 22px;font-family:var(--et-sans);font-size:14.5px;line-height:1.45;color:var(--et-read)}
-.et-timeline li:before{content:"";position:absolute;left:0;top:5px;width:12px;height:12px;border-radius:50%;background:var(--et-paper);border:2px solid var(--et-water)}
-.et-timeline li.is-key:before{background:var(--et-alder);border-color:var(--et-alder)}
-.et-timeline time{font-family:var(--et-mono);font-size:12.5px;color:var(--et-water);padding-top:1px;white-space:nowrap}
-.et-timeline li.is-key span{font-weight:500;color:var(--et-ink)}
+.et-timeline::before{content:"";position:absolute;left:6px;top:8px;bottom:8px;border-left:3px double var(--et-bronze-light)}
+.et-main .et-timeline li{position:relative;display:grid;grid-template-columns:72px minmax(0,1fr);gap:8px;margin:0;padding:0 0 12px 26px;font-size:16.5px;line-height:1.45;color:var(--et-read)}
+.et-timeline li::before{content:"";position:absolute;left:0;top:6px;width:15px;height:15px;border-radius:50%;background:var(--et-paper);border:2px solid var(--et-bronze)}
+.et-timeline li.is-key::before{background:var(--et-siegel);border-color:var(--et-siegel)}
+.et-timeline time{font-variant-caps:all-small-caps;font-variant-numeric:lining-nums;letter-spacing:.06em;font-size:16px;color:var(--et-bronze-dark);white-space:nowrap}
+.et-timeline li.is-key span{font-weight:600;color:var(--et-ink)}
 .et-route{margin:0 0 16px}
-.et-route figcaption{font-family:var(--et-sans);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--et-muted);margin-bottom:6px}
+.et-route figcaption{font-variant-caps:all-small-caps;font-size:15px;letter-spacing:.14em;color:var(--et-muted);margin-bottom:6px}
 .et-route ol{list-style:none;margin:0;padding:0}
-.et-main .et-route li{position:relative;margin:0;padding-left:26px;font-family:var(--et-sans);line-height:1.4}
-.et-main .et-route .et-stop{font-size:14.5px;font-weight:500;color:var(--et-ink);padding-top:1px;padding-bottom:1px}
-.et-route .et-stop:before{content:"";position:absolute;left:1px;top:2px;width:15px;height:15px;box-sizing:border-box;border-radius:50%;background:var(--et-card);border:3px solid var(--et-water)}
-.et-route .et-stop--end:before{background:var(--et-water)}
-.et-route .et-stop--ring:before{border:4px double var(--et-slate)}
-.et-main .et-route .et-leg{font-size:12.5px;color:var(--et-muted);padding-top:8px;padding-bottom:8px}
-.et-route .et-leg:before{content:"";position:absolute;left:7px;top:0;bottom:0;border-left:3px solid var(--et-water)}
-.et-route .et-leg--assumed:before{border-left-style:dashed;border-left-color:var(--et-ochre)}
-.et-route .et-leg--assumed span:after{content:" · Verlauf abgeleitet";color:var(--et-ochre-ink)}
-/* Möglicher Warenweg zwischen Betrieben, noch ohne Linie: gestrichelt wie oben, Hinweis auf die Luftlinie */
-.et-route .et-leg--ware span:after{content:" · Luftlinie"}
-.et-main .et-route-legend{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;font-family:var(--et-sans);font-size:12px;color:var(--et-muted);margin:4px 0 10px}
-.et-key{display:inline-block;width:22px;height:0;border-top:3px solid var(--et-water);vertical-align:middle}
-.et-key--dashed{border-top-style:dashed;border-top-color:var(--et-ochre);margin-left:8px}
+.et-main .et-route li{position:relative;margin:0;padding-left:28px;line-height:1.4}
+.et-main .et-route .et-stop{font-size:17px;font-weight:600;color:var(--et-ink);padding-top:1px;padding-bottom:1px}
+.et-route .et-stop::before{content:"";position:absolute;left:1px;top:3px;width:16px;height:16px;border-radius:50%;background:var(--et-paper);border:3px solid var(--et-linie)}
+.et-route .et-stop--end::before{background:var(--et-linie)}
+.et-route .et-stop--ring::before{border:4px double var(--et-see)}
+.et-main .et-route .et-leg{font-size:15px;font-style:italic;color:var(--et-muted);padding-top:8px;padding-bottom:8px}
+.et-route .et-leg::before{content:"";position:absolute;left:8px;top:0;bottom:0;border-left:3px solid var(--et-linie)}
+.et-route .et-leg--assumed::before{border-left-style:dashed;border-left-color:var(--et-ocker)}
+.et-route .et-leg--assumed span::after{content:" · Verlauf abgeleitet";color:var(--et-ocker)}
+.et-route .et-leg--ware span::after{content:" · Luftlinie"}
+.et-main .et-route-legend{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;font-size:14.5px;font-style:italic;color:var(--et-muted);margin:4px 0 10px}
+.et-key{display:inline-block;width:24px;height:0;border-top:3px solid var(--et-linie);vertical-align:middle}
+.et-key--dashed{border-top-style:dashed;border-top-color:var(--et-ocker);margin-left:8px}
 
-/* Quellen als Badges mit Tooltip */
-.et-q{position:relative;display:inline-block;vertical-align:super;margin:0 1px;padding:0 5px;font-family:var(--et-mono);font-size:10.5px;line-height:1.5;font-style:normal;font-weight:600;letter-spacing:.02em;color:var(--et-water);text-decoration:none;text-indent:0;background:var(--et-card);border:1px solid var(--et-line-strong);border-radius:3px}
-.et-q:hover,.et-q:focus-visible{color:var(--et-ivory);background:var(--et-water);border-color:var(--et-water)}
-/* Nur beim Zeigen im Layout, damit der Hinweis sonst nicht über den Seitenrand ragt */
-.et-q:after{content:attr(data-tip);display:none;position:absolute;z-index:30;bottom:calc(100% + 7px);left:50%;transform:translateX(-50%);width:max-content;max-width:min(260px,70vw);white-space:normal;padding:7px 9px;font-family:var(--et-sans);font-size:12.5px;font-weight:400;line-height:1.4;letter-spacing:0;text-align:left;color:var(--et-ivory);background:var(--et-deep);border-radius:3px;box-shadow:var(--et-shadow)}
-.et-q:hover:after,.et-q:focus-visible:after{display:block}
+/* Quellen als Marken mit Hinweis */
+.et-q{position:relative;display:inline-block;vertical-align:super;margin:0 1px;padding:0 6px;font-family:var(--et-serif);font-variant-caps:all-small-caps;font-variant-numeric:lining-nums;font-size:13px;line-height:1.45;font-style:normal;font-weight:600;letter-spacing:.06em;color:var(--et-bronze-dark);text-decoration:none;text-indent:0;background:var(--et-paper-2);border:1px solid var(--et-bronze-light);border-radius:2px}
+.et-q:hover,.et-q:focus-visible{color:var(--et-ivory);background:var(--et-wald);border-color:var(--et-wald)}
+.et-q::after{content:attr(data-tip);display:none;position:absolute;z-index:30;bottom:calc(100% + 7px);left:50%;transform:translateX(-50%);width:max-content;max-width:min(260px,70vw);white-space:normal;padding:7px 10px;font-variant-caps:normal;font-size:14px;font-weight:400;line-height:1.4;letter-spacing:0;text-align:left;color:var(--et-ivory);background:var(--et-wald-deep);box-shadow:var(--et-shadow)}
+.et-q:hover::after,.et-q:focus-visible::after{display:block}
 .et-main li[id^="q"]{scroll-margin-top:90px}
-.et-main li[id^="q"]:target{background:#a07a261f;outline:4px solid #a07a261f}
-/* Gründungsansicht: vollständiges Querformat, auch auf kleinen Bildschirmen. */
-.et-founding{margin:18px 0 26px;background:var(--et-card);border:1px solid var(--et-line-strong);padding:12px 12px 10px;box-shadow:var(--et-shadow)}
-.et-founding>a{display:block;outline:1px solid var(--et-line);outline-offset:4px}
-.et-founding img{display:block;width:100%;height:auto}
-.et-founding figcaption{font-family:var(--et-serif);font-style:italic;margin:14px 6px 2px;font-size:14px;line-height:1.55;color:var(--et-muted);text-align:center}
-.et-founding figcaption strong{font-style:normal;font-weight:600;color:var(--et-ink)}
-.et-map{max-width:660px;margin-left:auto;margin-right:auto}
-.et-map figcaption{text-align:left}
-.et-details{margin:14px 0 18px;border:1px solid var(--et-line);background:var(--et-card);padding:10px 14px}
-.et-details summary{cursor:pointer;font-family:var(--et-sans);font-weight:500;letter-spacing:.04em;color:var(--et-ink)}
-.et-details[open] summary{margin-bottom:10px}
+.et-main li[id^="q"]:target{background:#c8ab6c33;outline:4px solid #c8ab6c33}
 
-/* Erzählung mit Untertitel und Vorbemerkung (Gründungsgeschichte, Kapitel I) */
-.et-scene h3 .et-scene-sub{display:block;margin-top:6px;font-family:var(--et-sans);font-style:normal;font-size:13px;font-weight:500;letter-spacing:.06em;color:#6b5a45}
-.et-main .et-scene p.et-scene-note{font-family:var(--et-sans);font-size:13.5px;line-height:1.5;font-style:italic;color:#6b5a45;text-indent:0;margin:0 0 12px}
+/* Bildtafeln */
+.et-founding{position:relative;margin:20px 0 28px;padding:20px 20px 12px;background:var(--et-paper-2);border:1px solid var(--et-line-strong);box-shadow:inset 0 0 0 6px var(--et-paper-2),inset 0 0 0 7px var(--et-bronze-light),var(--et-shadow)}
+.et-founding>a{display:block}
+.et-founding img{display:block;width:100%;height:auto;border:1px solid var(--et-line)}
+.et-founding figcaption{margin:14px 8px 4px;font-style:italic;font-size:15.5px;line-height:1.55;color:var(--et-muted);text-align:center}
+.et-founding figcaption strong{font-style:normal;font-variant-caps:all-small-caps;letter-spacing:.08em;font-weight:600;color:var(--et-ink)}
+.et-tafel{display:block;margin:-2px 0 12px;text-align:center;font-variant-caps:all-small-caps;font-size:16px;letter-spacing:.2em;font-weight:600;color:var(--et-bronze-dark)}
+.et-map{max-width:660px;margin-left:auto;margin-right:auto}
+.et-details{margin:14px 0 18px;border:1px solid var(--et-line);background:var(--et-paper-2);padding:10px 14px}
+.et-details summary{cursor:pointer;font-variant-caps:all-small-caps;letter-spacing:.1em;color:var(--et-ink)}
+.et-details[open] summary{margin-bottom:10px}
 
 /* Auswertungen */
 .et-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:6px 0 10px}
-.et-card{background:var(--et-card);border:1px solid var(--et-line);border-top:3px solid var(--et-water);padding:16px 18px}
-.et-card h3{margin:4px 0 6px;font-size:22px}
-.et-main .et-card p{font-size:15px;line-height:1.55;margin:0 0 8px}
+.et-card{background:var(--et-paper-2);border:1px solid var(--et-line);border-top:3px double var(--et-bronze);padding:16px 18px}
+.et-card h3{margin:4px 0 6px;font-size:26px;font-variant-numeric:lining-nums}
+.et-main .et-card p{font-size:16.5px;line-height:1.55;margin:0 0 8px}
 
 /* Fuß */
-.et-foot{position:relative;background:var(--et-deep);color:var(--et-ivory-muted);padding:30px 0;font-family:var(--et-sans);font-size:13px;letter-spacing:.02em}
-.et-foot:before{content:"";position:absolute;left:0;right:0;top:-4px;height:4px;background:var(--et-border-line),var(--et-deep)}
+.et-foot{background:var(--et-wald);color:var(--et-ivory-muted);border-top:var(--et-rule);padding:32px 0;font-variant-caps:all-small-caps;letter-spacing:.1em;font-size:16px}
 .et-foot-inner{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
 .et-foot a{color:var(--et-ivory)}
 
-@media(max-width:900px){
-  .et-hero-grid{grid-template-columns:1fr;gap:30px}
-  .et-poster{max-width:340px}
-  .et-body{grid-template-columns:1fr;gap:26px;padding-top:30px}
-  .et-toc{position:static;flex-direction:row;flex-wrap:wrap;gap:6px 16px}
-  .et-toc a{border-left:0;padding:0}
+@media(max-width:980px){
+  .et-hero-grid{grid-template-columns:1fr;gap:34px}
+  .et-titel{order:-1}
+  .et-body{grid-template-columns:1fr;gap:26px;padding-top:32px}
+  .et-toc{position:static;flex-direction:row;flex-wrap:wrap;gap:4px 16px}
+  .et-toc-titel{flex-basis:100%}
+  .et-toc a{border-bottom:0;padding:2px 0}
   .et-overview-grid{grid-template-columns:1fr;gap:6px}
 }
 @media(max-width:650px){
+  body.et{font-size:18px}
   .et .shell{padding:0 16px}
   .et-bar-inner{min-height:52px;gap:14px}
-  .et-wordmark b{font-size:14px;letter-spacing:.24em}
+  .et-wordmark b{font-size:21px}
   .et-wordmark i{display:none}
   .et-nav{gap:14px;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;min-width:0;padding:4px 0}
   .et-nav::-webkit-scrollbar{display:none}
-  .et-nav a{font-size:12px;white-space:nowrap}
+  .et-nav a{font-size:17px;white-space:nowrap}
   .et-nav .et-nav-home{padding-left:14px}
-  .et-hero{padding:40px 0 36px}
-  .et-lede{font-size:17.5px}
+  .et-hero{padding:34px 0 34px}
+  .et-titel-firma{font-size:21px}
+  .et-lede{font-size:18.5px}
+  .et-plate{padding:14px}
+  .et-ecke{width:30px;height:30px}
   .et-legend,.et-cards{grid-template-columns:1fr}
-  .et-main p{font-size:16.5px}
-  .et-scene{margin-left:0;padding:20px 18px 8px}
+  .et-main p{font-size:18px}
+  .et-scene{padding:26px 18px 10px}
+  .et-main .et-scene p{text-align:left}
   .et-block--belegt{padding:14px 16px 4px}
   .et-block--abgeleitet{padding-left:16px}
-  .et-years{top:56px;padding:6px 8px;gap:6px 8px}
+  .et-years{top:55px;padding:6px 8px;gap:6px 8px}
   .et-main .et-year-status,.et-decade span{display:none}
   .et-chapter{scroll-margin-top:130px}
-  .et-chapnav a{padding:6px 8px;font-size:14.5px}
+  .et-chapnav a{padding:6px 8px;font-size:19px}
   .et-overview{padding:14px 14px 6px}
   .et-stats{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .et-stat-value{font-size:17px}
+  .et-stat-value{font-size:25px}
   .et-table tbody th{width:auto}
+  .et-founding{padding:12px 12px 8px}
   .et-foot-inner{display:block}
 }

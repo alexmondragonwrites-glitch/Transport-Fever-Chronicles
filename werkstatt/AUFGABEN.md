@@ -6,7 +6,7 @@ Format: `- [Welt] Aufgabe · Dateien · Wer · seit/erledigt am`. Wer etwas anf�
 
 ## In Arbeit
 
-- *(nichts)*
+- [Erlental] Neues Design „Firmenschrift der EWV“ für Chronik und Portalkarte: lokal fertig (Titelblatt mit Frontispiz, Schriften EB Garamond und Cormorant ohne `locl`, Ornamente, Dunkelmodus), Probedruck beim Spieler, Hochladen nach Freigabe · `assets/erlental.css`, `assets/erlental-zierleiste.svg`, `assets/erlental-ecke.svg`, `assets/fonts/`, `assets/styles.css`, `saves/erlental/chronik.html`, `saves/erlental/images/` · Claude, seit 27.10.2026
 
 ## Zur Prüfung
 
@@ -23,6 +23,7 @@ Format: `- [Welt] Aufgabe · Dateien · Wer · seit/erledigt am`. Wer etwas anf�
 - [Erlental] Faktenblatt-Skript nach dem Muster von `scripts/falkenmark-fakten.py` (mit Filter für verworfene Abschnitte nach Neuladen), bevor Kapitel II geschrieben wird · Claude
 - [Erlental] Kapitel I fortsetzen oder Kapitel II beginnen (Stichtag bisher 2.2.1900); die Grenze setzt der Spielverlauf.
 - [Erlental] Länge eines Wirtschaftsjahres in Kalendertagen bestimmen, sobald die erste Linie eine volle Bilanzperiode hat.
+- [Erlental] 3D-Karte nach Briefing (`E:\KI-Projekte\Erlental-Karte\BRIEFING.md`, lokal): Monitor-Mod Revision 21 „Kartendaten“, Probebild Arenswiel in Blender, dann Kacheln für Tag und Nacht und React-Seite unter `saves/erlental/karte/` · Claude
 
 ## Erledigt
 

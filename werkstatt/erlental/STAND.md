@@ -60,4 +60,4 @@ Figuren (erfunden, nur in Szenen):
 |---|---|---|
 | `saves/erlental/images/arenswiel-gruendung-1900.png` | I (Original, verlinkt) | KI-Bild nach einem Screenshot im Spiel, kolorierte Lithografie (Q5) |
 | `saves/erlental/images/arenswiel-gruendung-1900-web.jpg` | I | Web-Fassung desselben Bildes (JPEG, 1604 × 980) |
-| `assets/affiche-erlental.svg` | Kopf | Zierbild, gezeichnet, keine Karte |
+| `saves/erlental/images/arenswiel-gruendung-1900-ausschnitt.jpg` | Titelblatt, Portal | Ausschnitt aus dem Gründungsbild (Arenswiel, Haus Weitblick) |
