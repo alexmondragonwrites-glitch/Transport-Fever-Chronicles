@@ -2,6 +2,11 @@
 
 Übergaben und Reviews, neueste oben. Kopf: `## JJJJ-MM-TT · Wer · Thema`. Nur ergänzen; Fehler in älteren Einträgen mit einem neuen Eintrag richtigstellen.
 
+## 2026-10-27 · Claude · Erlental: Kapitel II hochgeladen
+
+- Auf Wunsch des Spielers hochgeladen: Kapitel II mit Faktenblatt-Skript in `16868c8`, die Erlental-Messdaten in `340a2cd` (Monitorstand Spiel 4.7.1901, +636 Messungen, sechs neue Abschnitte). Damit ist der Vermerk „Nicht hochgeladen“ im Eintrag darunter erledigt.
+- Die Messdaten reichen über den Stichtag von Kapitel II (31.12.1900) hinaus; Kapitel III beginnt mit `py -3 scripts/erlental-fakten.py 1901`.
+
 ## 2026-10-27 · Claude · Erlental: Faktenblatt-Skript und Kapitel II „Fisch und Ziegel“
 
 - Auftrag des Spielers: zuerst das Erlental-Faktenblatt fest einbauen, dann Kapitel II bis zum 31.12.1900 mit zwei, drei Szenen in verschiedenen Formen. Hochladen erst nach seiner Freigabe.
