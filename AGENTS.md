@@ -15,7 +15,7 @@ Statische Website (GitHub Pages) mit Chroniken zu Spielständen aus Transport Fe
 - Hochladen nur mit Freigabe des Spielers.
 - Keine Zahlen erfinden. Belegt, Abgeleitet und Literarische Szene trennen. Namen erst nach Bestätigung des Spielers.
 - Veröffentlichten Wortlaut nur zur Korrektur eines Fehlers ändern, mit Eintrag unter „Korrekturen“. `data/events.json` ist append-only.
-- Werte „pro Jahr“ aus dem Spiel gelten für ein Wirtschaftsjahr (im Archipel und in der Falkenmark rund 91 Kalendertage, in Erlental noch offen), nicht für das Kalenderjahr.
+- Werte „pro Jahr“ aus dem Spiel gelten für ein Wirtschaftsjahr (im Archipel und in der Falkenmark rund 91 Kalendertage, in Erlental rund 92), nicht für das Kalenderjahr.
 - Welten nicht vermischen.
 - Öffentliches Repo: keine Zugangsdaten oder privaten Dateien.
 

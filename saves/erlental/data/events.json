@@ -158,6 +158,264 @@
       "source": "Spielmonitor, Welt „Erlental – 1900“",
       "recorded": "2026-10-27",
       "recorded_note": "Aufgenommen um 06:06 Uhr; Stichtag von Kapitel I."
+    },
+    {
+      "id": "erster-zug-1900-02-23",
+      "date": "1900-02-23",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Verkehr",
+      "title": "Erster Zug, dazu Lehm- und Ziegelfuhren",
+      "description": "Ein Güterzug mit einer Lokomotive der Russischen Baureihe OB und einem gedeckten Güterwagen von 1897 fährt zwischen Arenswiel Station Ost und Bad Oeynhausen Station, 4,8 km Luftlinie, und lädt Fisch. Am selben Tag beginnen vier Fuhrwerkslinien: 9 Wagen fahren Lehm von der Klötze Lehmgrube zur Eckartsberga Ziegelei, 8 Ziegel von dort zur Bad Oeynhausen Station West, 4 sind für Ziegel in Arenswiel bestimmt, 6 Fisch-Fuhrwerke (Kaufdatum 3. Januar) bilden in Arenswiel eine zweite Fischlinie; die erste fährt seitdem mit 5. Am 26. Februar folgen 4 Fisch-Fuhrwerke in Bad Oeynhausen. Der Kredit steigt im Februar von 7,67 auf 28,22 Millionen.",
+      "entities": [
+        "ewv",
+        "arenswiel",
+        "wengenrode",
+        "kloetze",
+        "eckartsberga"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-27",
+      "recorded_note": "Aufgenommen um 07:25 Uhr."
+    },
+    {
+      "id": "erster-fisch-arenswiel-1900-03-09",
+      "date": "1900-03-09",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Versorgung",
+      "title": "Erster Fisch in Arenswiel",
+      "description": "Die Messung zeigt Arenswiel zum ersten Mal mit Fisch versorgt, 5 von 52. Der Fisch kommt vom Seegut Tiefenborn, per Dampfer zum Hafen und mit Fuhrwerken in den Ort.",
+      "entities": [
+        "arenswiel",
+        "seegut-tiefenborn"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-27",
+      "recorded_note": "Aufgenommen um 07:28 Uhr."
+    },
+    {
+      "id": "umbenennung-wengenrode",
+      "date": "1900-04-19",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Ort",
+      "title": "Bad Oeynhausen heißt Wengenrode",
+      "description": "Der Spieler hat die Stadt Bad Oeynhausen umbenannt; die Messung vom 19. April führt sie zum ersten Mal als Wengenrode. Bahnhof und Halte behalten den alten Namen (Bad Oeynhausen Station, Station West, Station Abstellgleis).",
+      "entities": [
+        "wengenrode"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“; Umbenennung durch den Spieler im Spiel",
+      "recorded": "2026-10-27",
+      "recorded_note": "Aufgenommen um 07:37 Uhr."
+    },
+    {
+      "id": "ziegelei-eckartsberga-1900-05-11",
+      "date": "1900-05-11",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Betrieb",
+      "title": "Erste Ziegel aus Eckartsberga",
+      "description": "Die Eckartsberga Ziegelei produziert seit dem 4. Mai und verschickt am 11. Mai zum ersten Mal Ziegel. Den Lehm liefert seit dem 25. März die Klötze Lehmgrube, 2,0 km Luftlinie entfernt.",
+      "entities": [
+        "eckartsberga",
+        "kloetze"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-27",
+      "recorded_note": "Aufgenommen um 08:47 Uhr."
+    },
+    {
+      "id": "erster-fisch-wengenrode-1900-05-11",
+      "date": "1900-05-11",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Versorgung",
+      "title": "Erster Fisch in Wengenrode",
+      "description": "Wengenrode ist zum ersten Mal mit Fisch versorgt, 4 von 54. Im Ort fahren seit dem 26. Februar Fisch-Fuhrwerke vom Bahnhof aus.",
+      "entities": [
+        "wengenrode"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-27",
+      "recorded_note": "Aufgenommen um 08:47 Uhr."
+    },
+    {
+      "id": "umbenennung-silberweide",
+      "date": "1900-07-17",
+      "precision": "day",
+      "game_time_label": "zwischen 16. und 17. Juli 1900",
+      "kind": "fakt",
+      "category": "Ort",
+      "title": "Mettmann heißt Silberweide",
+      "description": "Der Spieler hat die Stadt Mettmann umbenannt; die Messung vom 17. Juli führt sie zum ersten Mal als Silberweide. Der Mettmann Bauernhof behält seinen Namen. Am 1. Januar zählte der Ort 217 Einwohner.",
+      "entities": [
+        "silberweide"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“; Umbenennung durch den Spieler im Spiel",
+      "recorded": "2026-10-27",
+      "recorded_note": "Aufgenommen um 09:04 Uhr."
+    },
+    {
+      "id": "gemuese-silberweide-1900-07-19",
+      "date": "1900-07-19",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Verkehr",
+      "title": "Gemüse für Silberweide",
+      "description": "Fünf Fuhrwerke fahren Gemüse vom Mettmann Bauernhof, erstmals gemessen am 4. Juli, 1,1 km von der Ortsmitte, zur Silberweide Station. Ab dem 24. August fahren zwei Postkutschen von der Waldstrasse zum Hof. Am 21. August ist Silberweide zum ersten Mal mit Gemüse versorgt, 5 von 76.",
+      "entities": [
+        "ewv",
+        "silberweide"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-27",
+      "recorded_note": "Aufgenommen um 09:05 Uhr."
+    },
+    {
+      "id": "zuschuesse-1900-08-26",
+      "date": "1900-08-26",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Finanzen",
+      "title": "Erste Zuschüsse",
+      "description": "Die Finanztabelle verbucht zum ersten Mal Zuschüsse: 2,59 Millionen im dritten Quartal. Ab dem 5. Oktober folgen weitere, 12,23 Millionen im vierten Quartal, zusammen 14,82 Millionen im Jahr 1900. Wofür, ist offen.",
+      "entities": [
+        "ewv"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-27",
+      "recorded_note": "Aufgenommen um 09:13 Uhr."
+    },
+    {
+      "id": "erste-ziegel-arenswiel-1900-09-27",
+      "date": "1900-09-27",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Versorgung",
+      "title": "Erste Ziegel in Arenswiel",
+      "description": "Arenswiel ist zum ersten Mal mit Ziegeln versorgt, 2 von 64. Gemessen sind davor: Versand der Eckartsberga Ziegelei ab 11. Mai, Ziegel im Zug ab 22. Juli, beladene Ziegel-Fuhrwerke in Arenswiel ab 6. September.",
+      "entities": [
+        "arenswiel",
+        "eckartsberga"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-27",
+      "recorded_note": "Aufgenommen um 09:23 Uhr."
+    },
+    {
+      "id": "arenswiel-300-1900-10-20",
+      "date": "1900-10-20",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Ort",
+      "title": "Arenswiel über 300 Einwohner",
+      "description": "Die Messung zählt in Arenswiel zum ersten Mal über 300 Einwohner. Am 2. Februar waren es 143, am 28. Dezember sind es 318; damit ist Arenswiel nach Ahaus (409) die zweitgrößte Stadt.",
+      "entities": [
+        "arenswiel"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-27",
+      "recorded_note": "Aufgenommen um 09:28 Uhr."
+    },
+    {
+      "id": "waimarie-postkutschen-1900-11-12",
+      "date": "1900-11-12",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Verkehr",
+      "title": "Dampfer „Waimarie“, dritte Postkutschenlinie in Arenswiel",
+      "description": "Der Dampfer „Waimarie“ fährt als eigene Linie zwischen Arenswiel Hafen und Seegut Tiefenborn. Drei Postkutschen fahren in Arenswiel vom Busbahnhof zur Bachstrasse, ab dem 9. Dezember vier. Die zweite der beiden Postkutschenlinien in Silberweide (ab 9. Oktober, je drei Kutschen) steht zuletzt in der Messung vom 10. November.",
+      "entities": [
+        "ewv",
+        "arenswiel",
+        "seegut-tiefenborn",
+        "silberweide"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-27",
+      "recorded_note": "Aufgenommen um 09:33 Uhr."
+    },
+    {
+      "id": "itzehoe-1900-11-18",
+      "date": "1900-11-18",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Verkehr",
+      "title": "Erste Linie in Itzehoe",
+      "description": "Drei Fuhrwerke fahren zwischen Itzehoe Station und dem Itzehoe Bauernhof, 1,8 km vom Ort. Der Hof verschickt ab dem 18. Dezember.",
+      "entities": [
+        "ewv",
+        "itzehoe"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-27",
+      "recorded_note": "Aufgenommen um 09:35 Uhr."
+    },
+    {
+      "id": "ausbau-1900-12-28",
+      "date": "1900-12-28",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Verkehr",
+      "title": "Zweiter Zug, Ziegel nach Silberweide",
+      "description": "Am 24. Dezember steigt der Kredit von 32,49 auf 37,59 Millionen. Die Ziegelfuhren aus Eckartsberga fahren ab dem 24. Dezember mit 12 Wagen, die Lehmfuhren ab dem 25. Dezember mit 13. Am 28. Dezember fährt ein zweiter Zug, und zwei Linien für Ziegel nach Silberweide beginnen: ein weiterer Dampfer „Sydfart“ vom Arenswiel Hafen zum Silberweide Hafen und vier Fuhrwerke von der Silberweide Station West zur Station Umstieg. Silberweide verlangt 84 Ziegel.",
+      "entities": [
+        "ewv",
+        "arenswiel",
+        "silberweide",
+        "eckartsberga",
+        "kloetze"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-27",
+      "recorded_note": "Aufgenommen zwischen 13:27 und 13:33 Uhr."
+    },
+    {
+      "id": "stand-1900-12-31",
+      "date": "1900-12-31",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Messung",
+      "title": "Jahresende 1900: 17 Linien, 85 Fahrzeuge, 9.819 Einwohner",
+      "description": "Fahrzeuge: 69 Pferdefuhrwerke, 10 Postkutschen, 3 Dampfer „Sydfart“, die „Waimarie“, 2 Züge. Linienbilanzen im Wirtschaftsjahr vom 27.9. bis 28.12.1900 zusammen 1.725.261, am höchsten der Zug (620.182). Versorgung am 28.12.: Arenswiel Fisch 66 von 102, Ziegel 28 von 68; Wengenrode Fisch 36 von 73; Silberweide Gemüse 18 von 80. Kredit 37,52 Millionen, Kontostand 1,46 Millionen. Finanztabelle 1900 (Stand 28.12.): Ergebnis −36,01 Millionen, Zuschüsse 14,82 Millionen.",
+      "entities": [
+        "erlental",
+        "ewv"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-27",
+      "recorded_note": "Letzte Messung des Jahres um 13:34 Uhr; Versorgung und Finanztabelle aus der Messung vom 28.12. um 13:33 Uhr."
+    },
+    {
+      "id": "betriebe-1900",
+      "date": "1900",
+      "precision": "year",
+      "game_time_label": "Februar bis November 1900",
+      "kind": "fakt",
+      "category": "Betrieb",
+      "title": "Sieben neue Betriebe, einer verschwunden",
+      "description": "Erstmals gemessen: Karlsfeld Bauernhof (18.2.), Klötze Ölplattform Süd (4.4.), Weinheim Viehzuchtbetrieb (19.5.), Mettmann Bauernhof (4.7.), Itzehoe Holzfällerlager West (20.8.), Hohen Neuendorf Fischzucht (3.10.), Eckartsberga Lehmgrube (18.11.). Die Philippsburg Lehmgrube steht zuletzt in der Messung vom 25.7. Am Jahresende 70 Betriebe, alle aus dem Grundspiel.",
+      "entities": [
+        "erlental"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-27",
+      "recorded_note": "Erste Messungen zwischen 07:06 und 09:35 Uhr."
+    },
+    {
+      "id": "wirtschaftsjahr-erlental",
+      "date": "1900-12-28",
+      "precision": "day",
+      "kind": "rekonstruktion",
+      "category": "Auswertung",
+      "title": "Ein Wirtschaftsjahr dauert rund 92 Kalendertage",
+      "description": "Abgeleitet aus den Bilanzzeiträumen der Linien, zuletzt vom 27.9. bis 28.12.1900, und dem Kalendertempo von rund 16.000 Spielzeit-Einheiten je Tag: Ein Wirtschaftsjahr des Spiels umfasst in Erlental rund 92 Kalendertage. Werte „pro Jahr“ für Linien und Betriebe gelten für diesen Zeitraum.",
+      "entities": [
+        "erlental"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“; ausgewertet mit scripts/erlental-fakten.py",
+      "recorded": "2026-10-27"
     }
   ]
 }

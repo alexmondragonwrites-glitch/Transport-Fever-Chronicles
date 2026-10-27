@@ -2,6 +2,18 @@
 
 Übergaben und Reviews, neueste oben. Kopf: `## JJJJ-MM-TT · Wer · Thema`. Nur ergänzen; Fehler in älteren Einträgen mit einem neuen Eintrag richtigstellen.
 
+## 2026-10-27 · Claude · Erlental: Faktenblatt-Skript und Kapitel II „Fisch und Ziegel“
+
+- Auftrag des Spielers: zuerst das Erlental-Faktenblatt fest einbauen, dann Kapitel II bis zum 31.12.1900 mit zwei, drei Szenen in verschiedenen Formen. Hochladen erst nach seiner Freigabe.
+- Faktenblatt: `scripts/erlental-fakten.py` nach dem Muster der Falkenmark, dazu ein Abschnitt „Namen“ (Umbenennungen im Spiel über die Kennung, aus allen Messungen), Halte mit Stationsnamen, Linien und Betriebe, die im Lauf des Jahres verschwinden (geprüft an allen Messungen des Jahres), und Orte unter ihrem Namen am Jahresende. Test `scripts/test-erlental-fakten.py` mit synthetischen Sitzungen (sechs Fälle, auch Neuladen), in `.github/workflows/validate.yml` eingetragen. Erzeugt: `werkstatt/erlental/fakten/1900.md` (94 Detailmessungen, keine Rücksprünge).
+- Kapitel II „Fisch und Ziegel“ (Messungen 3.2. bis 31.12.1900): erster Zug Arenswiel Ost–Bad Oeynhausen und die Lehm- und Ziegelfuhren ab 23.2., erster Fisch in Arenswiel 9.3., Wengenrode (vorher Bad Oeynhausen, 19.4.) und Silberweide (vorher Mettmann, 17.7.) als Namen des Spielers, Ziegelweg bis zur ersten Lieferung in Arenswiel am 27.9., Gemüse für Silberweide, Zuschüsse 14,82 Mio. ab 26.8., Ausbau zu Weihnachten mit zweitem Zug und Ziegellinie zum Silberweide Hafen. Arenswiel wächst von 143 auf 318 Einwohner.
+- Szenen in drei neuen Formen: Fahrplan mit Bleistiftnotizen des Stationsvorstehers, Speisekarten des Gasthauses zur Post (der Wirt aus Kapitel I; neue Darstellung `et-scene--karte` in `assets/erlental.css`), Brief des Landmessers aus dem Prolog an die Direktion, jetzt mit Namen Ernst Fiedler. Figuren und Formen in `erlental/STAND.md`.
+- Dazu: 16 Registereinträge (jetzt 26), Jahresbilanz 1900 unter VII, Orte (Silberweide statt Mettmann, neu Wengenrode, Klötze, Eckartsberga, Itzehoe), Unternehmen, offene Fragen (Zuschüsse, Ziegelweg, Wachstum Arenswiel; Fisch für Arenswiel beantwortet), Q4 erweitert, Steckbrief-Ortsnamen, `meta.json`.
+- Ein Wirtschaftsjahr dauert in Erlental rund 92 Kalendertage (gemessen 91,6). Fallstricke (Liniennamen, Laderaum des Zuges, alte Namen an Halten) in `erlental/STAND.md`.
+- Geprüft: `validate-data.mjs`, `test-erlental-fakten.py`, Verneinungs-grep über alle neuen Zeilen, Browser 1280 px und 375 px ohne Überlauf und ohne Konsolenfehler.
+- **Nicht hochgeladen.** Die Messdaten unter `saves/erlental/data/monitor/` stehen noch beim 4.2.1900; beim Hochladen `WEBSITE_AKTUALISIEREN.bat --save erlental` mitnehmen.
+- An Codex: Bitte Kapitel II gegen `werkstatt/erlental/fakten/1900.md` prüfen (Review hier im Log).
+
 ## 2026-10-27 · Claude · Erlental: Design „Firmenschrift der EWV“
 
 - Wunsch des Spielers: Erlental soll sich optisch klar von den anderen Welten abheben. Er hat im Briefing (lokal, `E:\KI-Projekte\Erlental-Karte\BRIEFING.md`) die Richtung „Firmenschrift der EWV“ gewählt: eine Festschrift der Gesellschaft um 1900 nach dem Gründungsbild.

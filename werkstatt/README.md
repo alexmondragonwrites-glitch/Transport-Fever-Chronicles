@@ -14,6 +14,7 @@ Hier stimmen sich die KI-Sitzungen ab, die an den Chroniken arbeiten (Claude Cod
 | `falkenmark/STAND.md` | Wie weit die Falkenmark erzählt ist, nächste freie Quellennummer, Bilder, Datenstand, Fallstricke. | wer ein Kapitel abschließt |
 | `falkenmark/fakten/JJJJ.md` | Faktenblatt je Spieljahr aus dem Spielmonitor. Erzeugt von `scripts/falkenmark-fakten.py`, nicht von Hand ändern. | Skript |
 | `erlental/STAND.md` | Dasselbe für Erlental (seit 27.10.2026): Erzähltes, nächste freie Quellennummer, Daten, Spielstand, Namen, Szenen. | wer ein Kapitel abschließt |
+| `erlental/fakten/JJJJ.md` | Faktenblatt je Spieljahr für Erlental. Erzeugt von `scripts/erlental-fakten.py`, nicht von Hand ändern. | Skript |
 | `erlental/gruendung-1900.md` | Wortlaut der Gründungsgeschichte, wie der Spieler sie geliefert hat; Kapitel I übernimmt ihn unverändert. | Spieler |
 
 Die Regeln der Falkenmark-Chronik stehen in `docs/FALKENMARK.md`, die von Erlental in `docs/ERLENTAL.md`, das Journal des Archipels in `docs/JOURNAL.md`. Bekommt das Archipel hier einen eigenen Ordner, dann `werkstatt/archipel/` nach demselben Muster.
@@ -33,7 +34,7 @@ Die Regeln der Falkenmark-Chronik stehen in `docs/FALKENMARK.md`, die von Erlent
 - **Wortlaut:** Veröffentlichte Kapitel nicht umschreiben. Ausnahme: ein Fehler. Dann knapp korrigieren und unter „Korrekturen“ in der Chronik mit Datum und Grund vermerken.
 - **Register:** `data/events.json` ist append-only. Einträge nicht löschen; Fehler bekommen ein Feld `correction` mit `date` und `note`.
 - **Zahlen** nur aus Messungen, Faktenblättern, Screenshots oder Angaben des Spielers. Fehlt etwas, bleibt es offen und kommt unter „Offen und unbestätigt“.
-- **Werte „pro Jahr“** aus dem Spiel (Produktion, Versand, Linienbilanz) gelten für ein Wirtschaftsjahr des Spiels, nicht für das Kalenderjahr. In beiden Welten läuft der Kalender langsamer (rund 16.000 Spielzeit-Einheiten je Tag); ein Wirtschaftsjahr sind dort rund 91 Kalendertage. Die Finanztabelle dagegen rechnet nach Kalenderquartalen.
+- **Werte „pro Jahr“** aus dem Spiel (Produktion, Versand, Linienbilanz) gelten für ein Wirtschaftsjahr des Spiels, nicht für das Kalenderjahr. In beiden Welten läuft der Kalender langsamer (rund 16.000 Spielzeit-Einheiten je Tag); ein Wirtschaftsjahr sind dort rund 91 Kalendertage, in Erlental rund 92. Die Finanztabelle dagegen rechnet nach Kalenderquartalen.
 - **Textarten:** Belegt, Abgeleitet und Literarische Szene getrennt halten. Erfundene Personen und Zitate nur in Szenen mit Etikett.
 - **Namen** von Orten, Firmen und Landschaften erst nach Bestätigung des Spielers.
 - **Quellen:** Nummern (Q1, Q2, …) vergibt, wer ein Kapitel schreibt. Die nächste freie Nummer steht im `STAND.md` der Welt; wer eine vergibt, zählt dort sofort weiter.
@@ -49,6 +50,7 @@ Die Regeln der Falkenmark-Chronik stehen in `docs/FALKENMARK.md`, die von Erlent
 Faktenblatt erzeugen (nur wo der Spielmonitor liegt):
 
 ```bash
+py -3 scripts/erlental-fakten.py 1900
 py -3 scripts/falkenmark-fakten.py 1902
 ```
 

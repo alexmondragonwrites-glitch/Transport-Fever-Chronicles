@@ -14,6 +14,7 @@ Der Name der Welt ist „Erlental“, ohne Artikel („in Erlental“, „eine K
 | `saves/erlental/data/manifest.json` | `latestReport: chronik.html` (die Weltseite leitet dorthin weiter), `monitor_data` für die Messdaten. |
 | `saves/erlental/data/monitor/` | Messdaten aus dem Spielmonitor, geschrieben von `publish-monitor.py`. Nicht von Hand ändern. |
 | `saves/erlental/images/` | Bilder der Chronik. `arenswiel-gruendung-1900.png` ist das Original des Gründungsbilds (bleibt unverändert), `arenswiel-gruendung-1900-web.jpg` die Fassung für Kapitel I („Tafel I“), `arenswiel-gruendung-1900-ausschnitt.jpg` der Ausschnitt mit Arenswiel und Haus Weitblick für Titelblatt und Portalkarte. KI-Bilder als solche kennzeichnen, mit Vorlage. |
+| `werkstatt/erlental/fakten/JJJJ.md` | Faktenblatt je Spieljahr aus dem Spielmonitor, erzeugt von `scripts/erlental-fakten.py`. Nicht von Hand ändern. |
 | `werkstatt/erlental/gruendung-1900.md` | Wortlaut der Gründungsgeschichte, wie der Spieler sie geliefert hat. Die Chronik übernimmt ihn unverändert. |
 | `assets/erlental.css`, `assets/erlental-zierleiste.svg`, `assets/erlental-ecke.svg`, `assets/fonts/eb-garamond*.woff2`, `assets/fonts/cormorant*.woff2` | Eigenes Erscheinungsbild „Firmenschrift der EWV“, unabhängig von `styles.css` und `falkenmark.css`, mit Ornamenten und Schriften. Die Portalkarte hat passende Regeln in `styles.css` (`.world-card[data-world="erlental"]`). |
 
@@ -54,7 +55,7 @@ Aufbau eines Kapitels (Muster: Kapitel I):
 1. Kopf: `<header class="et-chapter-head"><h3><span class="et-chapter-no">Kapitel N</span> Titel</h3><p class="et-chapter-period">Zeitraum</p></header>`. Kapitel haben einen Stichtag (Messung mit Spieldatum und Aufnahmezeit), weil der Spieler beim Schreiben weiterspielt.
 2. Optional ein Bild (`figure.et-founding`), bei KI-Bildern so gekennzeichnet, mit Link auf das Original.
 3. Übersicht `.et-overview`: Kennzahlen (`.et-stat`, `--neg` für Verluste), Zeitachse (`ol.et-timeline`, Schlüsselereignis mit `is-key`) und Linien-Schemata (`figure.et-route` mit `et-stop`, `et-leg`, `et-leg--assumed` für abgeleitete Verläufe, `et-leg--ware` für mögliche Warenwege ohne Linie, `et-stop--ring` für Linien im Ort). Nur Zahlen und Daten, die wörtlich im Text oder im Register stehen.
-4. Textblöcke: `div.et-block.et-block--belegt` (Quelle als letzter Absatz `p.et-source`), `div.et-block.et-block--abgeleitet`, `div.et-scene` mit den Varianten `et-scene--dialog`, `et-scene--eintraege`, `et-scene--telegramm`, `p.et-randnotiz`, dazu `p.et-scene-note` (Vorbemerkung vor dem Titel) und `span.et-scene-sub` (Untertitel im `h3`).
+4. Textblöcke: `div.et-block.et-block--belegt` (Quelle als letzter Absatz `p.et-source`), `div.et-block.et-block--abgeleitet`, `div.et-scene` mit den Varianten `et-scene--dialog`, `et-scene--eintraege`, `et-scene--telegramm`, `et-scene--karte` (Speisekarte, Aushang: mittig gesetzt, Zwischentitel `p.et-karte-zeit`), `p.et-randnotiz`, dazu `p.et-scene-note` (Vorbemerkung vor dem Titel) und `span.et-scene-sub` (Untertitel im `h3`).
 5. Quellen als Badge: `<a class="et-q" href="#q4" data-tip="…" aria-label="Quelle Q4: …">Q4</a>`; die Quellenliste hat die Anker `#q1`, `#q2` … Die nächste freie Nummer steht in `werkstatt/erlental/STAND.md`.
 
 ## Ereignisse eintragen
@@ -81,7 +82,7 @@ Ton: ruhige Regionalgeschichte mit gelegentlichen Reportagen, kein Werbeton, auc
 
 - **Einstellungsseite und gespeicherte Welt:** Maßgeblich ist die Welt, die das Spielprotokoll beim Start und Speichern nennt. Bei Erlental stimmen Zufallswert (SpWJDQtUdp), Größe und Mod-Zahl der Einstellungsseite mit dem Protokoll überein.
 - **Neuladen:** Lädt der Spieler einen älteren Stand, springt die Spielzeit zurück; die Messungen dahinter gehören zu einem verworfenen Abschnitt und werden nicht erzählt.
-- **Werte „pro Jahr“** (Produktion, Versand, Linienbilanz) gelten für ein Wirtschaftsjahr des Spiels. Wie viele Kalendertage das in Erlental sind, zeigt die erste vollständige Bilanzperiode einer Linie (`balance_start_game_time`); bis dahin solche Werte nur mit „im laufenden Wirtschaftsjahr“ nennen und nie als Kalenderjahr ausgeben.
+- **Werte „pro Jahr“** (Produktion, Versand, Linienbilanz) gelten für ein Wirtschaftsjahr des Spiels. In Erlental sind das rund 92 Kalendertage (gemessen Ende 1900 an den Bilanzzeiträumen der Linien, 91,6 Tage). Solche Werte mit ihrem Zeitraum nennen und nie als Kalenderjahr ausgeben.
 - **Mods des Spielers** (Bauten, gesetzte Betriebe) als Hinweis mit Quelle nennen, als Ereignis der erzählten Welt nur, wenn der Spieler es so will. Die Mod-Auswahl von Erlental ist laut Spieler gewollt (Organic Towns deinstalliert, eigene Mods ausgeschaltet).
 
 ## Spielmonitor
@@ -90,4 +91,4 @@ Im Spielmonitor heißt die Welt „Erlental – 1900“ (am 27.10.2026 angelegt 
 
 `WEBSITE_AKTUALISIEREN.bat` lädt Erlental mit hoch (Eintrag in `data/monitor-sources.json`, ohne Zeitung, `manifest_key: monitor_data`). Die Chronik selbst bleibt Handarbeit. Einzeln: `WEBSITE_AKTUALISIEREN.bat --save erlental`. Hochladen nur mit Freigabe des Spielers.
 
-Ein Faktenblatt-Skript wie `scripts/falkenmark-fakten.py` gibt es für Erlental noch nicht; Kapitel I ist direkt aus den Sitzungsdaten geschrieben. Für Kapitel II steht das Skript auf der Tafel.
+Faktenblätter: `py -3 scripts/erlental-fakten.py JAHR` schreibt `werkstatt/erlental/fakten/JAHR.md`, aufgebaut wie bei der Falkenmark, dazu Umbenennungen im Spiel, Stationsnamen der Halte und Linien, die im Lauf des Jahres verschwinden. Test: `py -3 scripts/test-erlental-fakten.py`. Kapitel I ist direkt aus den Sitzungsdaten geschrieben, Kapitel II nach dem Faktenblatt 1900; Daten nennt die Chronik nach der frühesten Messung, auch aus Grundmessungen.

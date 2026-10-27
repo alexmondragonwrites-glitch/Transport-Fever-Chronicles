@@ -154,6 +154,12 @@ html{scroll-behavior:smooth}
 .et-main .et-scene--eintraege p+p{text-indent:0;margin-top:.75em}
 .et-main .et-scene--telegramm p:not(.et-block-label):not(.et-scene-note){font-family:ui-monospace,'Cascadia Mono',Consolas,monospace;font-size:15px;line-height:1.6;letter-spacing:.03em;text-align:left}
 .et-main .et-scene .et-randnotiz{text-indent:0;margin-top:.6em;font-style:italic;color:var(--et-siegel)}
+/* Speisekarte, Aushang: mittig gesetzte Zeilen, Zwischentitel in Kapitälchen */
+.et-main .et-scene--karte h3{text-align:center}
+.et-main .et-scene--karte h3+p::first-letter{float:none;margin:0;padding:0;font:inherit;line-height:inherit;color:inherit;border:0;background:none}
+.et-main .et-scene--karte p:not(.et-block-label):not(.et-scene-note){text-align:center;text-indent:0}
+.et-main .et-scene--karte p+p{margin-top:.35em}
+.et-main .et-scene--karte .et-karte-zeit{margin-top:1.1em;font-variant-caps:all-small-caps;letter-spacing:.14em;color:var(--et-muted)}
 .et-scene .et-block-label{margin-bottom:10px}
 .et-note{margin:28px 0 8px;padding:14px 18px;border:1px dashed var(--et-line-strong);background:var(--et-paper-2)}
 .et-main .et-note h4{margin:0 0 6px}

@@ -10,6 +10,8 @@ Format: `- [Welt] Aufgabe · Dateien · Wer · seit/erledigt am`. Wer etwas anf�
 
 ## Zur Prüfung
 
+- [Erlental] Kapitel II „Fisch und Ziegel“ (3.2. bis 31.12.1900) mit drei Szenen (Fahrplan mit Randnotizen, Speisekarten, Brief), 16 neue Registereinträge, Jahresbilanz 1900, Orte (Silberweide, Wengenrode, Klötze, Eckartsberga, Itzehoe), Unternehmen, offene Fragen; Szenenform `et-scene--karte`. Dazu das Faktenblatt-Skript `scripts/erlental-fakten.py` mit Test (auch in CI) und `werkstatt/erlental/fakten/1900.md` · `saves/erlental/chronik.html`, `saves/erlental/data/events.json`, `saves/erlental/data/meta.json`, `assets/erlental.css`, `.github/workflows/validate.yml` · Claude, 27.10.2026, noch nicht hochgeladen · Bitte gegen `werkstatt/erlental/fakten/1900.md` prüfen; Daten aus Grundmessungen liegen teils ein bis drei Tage vor dem Faktenblatt (siehe `erlental/STAND.md`, Fallstricke).
+
 - [Falkenmark] Kapitel VIII „Das dritte Öl“, IX „Lindendorf vorn“, X „Getreide für Hintereichdorf“ (27.6.1903 bis 31.12.1904), 18 Registereinträge, Jahresbilanzen 1903 und 1904, Ortsverzeichnis (neu: Hohenstedt, Hochloh), Unternehmen, offene Fragen, Q9 (Gebäude-Mod, Stadtentwicklung Lindendorf), Hinweis „Zur Stadtentwicklung 1903 und 1904“ · `saves/falkenmark/chronik.html`, `saves/falkenmark/data/events.json`, `assets/falkenmark.css` (Kapitelleiste umbricht auf breiten Bildschirmen, `fm-scene--telegramm`) · Claude, 25.10.2026 abends, mit dem Archiv-Vermerk am 26.10.2026 hochgeladen · Bitte gegen `werkstatt/falkenmark/fakten/1903.md` und `1904.md` prüfen.
 - [Falkenmark] `scripts/falkenmark-fakten.py` nimmt Messungen aus verworfenen Abschnitten (Rücksprung der Spielzeit nach Neuladen) heraus; Faktenblätter 1900 bis 1904 neu erzeugt (1900 bis 1902 inhaltlich gleich) · Claude, 25.10.2026 abends
 - [Falkenmark] Kapitel V „Die Bahn nach Lindendorf“, VI „Bis Birkreuth“ und VII „Vier Fabriken“ (Januar 1902 bis 26.6.1903), 24 Registereinträge, Jahresbilanz 1902, Orte (neu: Hinteralmhafen, Langstein, Steinbach im Tal), Unternehmen, offene Fragen, Q8, Korrektur „Gemüselinie“ im Ortsverzeichnis · `saves/falkenmark/chronik.html`, `saves/falkenmark/data/events.json`, `assets/falkenmark.css` · Claude, 25.10.2026 · `df5c2e8`, auf Wunsch des Spielers hochgeladen · Bitte gegen `werkstatt/falkenmark/fakten/1902.md` und `1903.md` prüfen; einzelne Daten stammen aus Grundmessungen und liegen bis zu drei Tage vor dem Faktenblatt (siehe `STAND.md`, Fallstricke).
@@ -19,10 +21,8 @@ Format: `- [Welt] Aufgabe · Dateien · Wer · seit/erledigt am`. Wer etwas anf�
 ## Offen
 
 - [Archipel] Prüfen, ob Journal und Auswertungen Werte „pro Jahr“ als Kalenderjahr ausgeben. Das Archipel läuft ebenfalls mit rund 16.000 Spielzeit-Einheiten je Tag.
-- [Spielmonitor] Kalendertempo (Millisekunden je Tag) mit messen; `balance_start_game_date` und `balance_end_game_date` kommen derzeit als `null`.
-- [Erlental] Faktenblatt-Skript nach dem Muster von `scripts/falkenmark-fakten.py` (mit Filter für verworfene Abschnitte nach Neuladen), bevor Kapitel II geschrieben wird · Claude
-- [Erlental] Kapitel I fortsetzen oder Kapitel II beginnen (Stichtag bisher 2.2.1900); die Grenze setzt der Spielverlauf.
-- [Erlental] Länge eines Wirtschaftsjahres in Kalendertagen bestimmen, sobald die erste Linie eine volle Bilanzperiode hat.
+- [Spielmonitor] Kalendertempo (Millisekunden je Tag) mit messen. `balance_start_game_date` und `balance_end_game_date` kommen seit Mod-Revision 22 als Datum.
+- [Erlental] Kapitel III beginnen (Stichtag bisher 31.12.1900); die Grenze setzt der Spielverlauf. Vorher `py -3 scripts/erlental-fakten.py 1901`.
 - [Erlental] 3D-Karte nach Briefing (`E:\KI-Projekte\Erlental-Karte\BRIEFING.md`, lokal): Monitor-Mod Revision 21 „Kartendaten“, Probebild Arenswiel in Blender, dann Kacheln für Tag und Nacht und React-Seite unter `saves/erlental/karte/` · Claude
 
 ## Erledigt
