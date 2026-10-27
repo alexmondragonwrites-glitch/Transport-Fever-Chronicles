@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "save_id": "erlenmark",
+  "latest_game_date": "1900-01-01",
+  "latest": {
+    "meta": "meta.json",
+    "cities": "cities.json",
+    "lines": "lines-1900-01-01.json",
+    "industries": "industries-1900-01-01.json",
+    "demand": "demand-1900-01-01.json",
+    "events": "events.json"
+  },
+  "snapshots": [
+    {
+      "game_date": "1900-01-01",
+      "source": "Erstellung ohne Watcher-Export",
+      "lines": "lines-1900-01-01.json",
+      "industries": "industries-1900-01-01.json",
+      "demand": "demand-1900-01-01.json"
+    }
+  ],
+  "latestReport": "chronik.html",
+  "monitor_data": "monitor/index.json"
+}

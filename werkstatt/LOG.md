@@ -2,6 +2,14 @@
 
 Übergaben und Reviews, neueste oben. Kopf: `## JJJJ-MM-TT · Wer · Thema`. Nur ergänzen; Fehler in älteren Einträgen mit einem neuen Eintrag richtigstellen.
 
+## 2026-10-27 · Claude · Neue Welt Erlenmark angelegt
+
+- Wunsch des Spielers: eine neue Karte „Erlenmark“ für Spielmonitor und Chronik. Gestartet am 27.10.2026 um 05:35 Uhr mit Zufallswert SpWJDQtUdp (Einstellungsseite und Protokoll stimmen überein), Größenstufe 8, 1:2, 46 Mods; gespeichert als `Erlenmark.sav` (05:37) und `Erlental.sav` (05:38).
+- Spielmonitor: Welt „Erlenmark – 1900“ angelegt und vorgewählt, Monitor vor dem ersten Laden gestartet. Die Weltkennung `tf3-2026-10-27-1793075833-1414195950-2` ist an den Namen gebunden; die Startmessung mit Positionen und Höhenraster steht in der Sitzung `20261027_053713_859866`.
+- Website: `saves/erlenmark/` mit `chronik.html` (Prolog „Die Erlenmark um 1900“ mit Belegt, Abgeleitet und der Szene „Aus dem Feldbuch eines Landmessers“, Steckbrief, Register mit 3 Einträgen, Ausgangswerte, offene Fragen, Quellen Q1 bis Q4), eigenes Erscheinungsbild `assets/erlenmark.css` (Gerüst der Falkenmark mit Kürzel `em-`, Flussblau, Erlenrot, Sumpfsignaturen) und Zierbild `assets/affiche-erlenmark.svg`, Portalkarte, `data/monitor-sources.json`, Messdaten bis Spiel 2.1.1900 (lokal erzeugt, `--no-push`). Regeln: `docs/ERLENMARK.md`, Stand: `werkstatt/erlenmark/STAND.md`.
+- Geprüft: `validate-data.mjs`, `validate-monitor.mjs`, Browser 1280 px und 375 px ohne Überlauf, Register lädt, keine Konsolenfehler, Portalkarte. Prolog und Szene ohne Verneinungsfiguren.
+- Offen: welche Spielstanddatei weitergeführt wird (Erlenmark oder Erlental); Faktenblatt-Skript für die Erlenmark vor Kapitel I; Hochladen nur mit Freigabe.
+
 ## 2026-10-26 · Claude · Falkenmark archiviert
 
 - Wunsch des Spielers: Die Falkenmark wird beendet, weil sie nach Einschätzung des Spielers anders lief als geplant; alles Vorhandene wird archiviert. Die Chronik bleibt als abgeschlossene Chronik online.

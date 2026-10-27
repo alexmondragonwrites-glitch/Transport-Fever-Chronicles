@@ -1,13 +1,13 @@
 # Transport Fever Chronicles – Hinweise für KI-Sitzungen
 
-Statische Website (GitHub Pages) mit Chroniken zu Spielständen aus Transport Fever 3. Zwei getrennte Welten: Archipel des Alizés (`saves/archipel-des-alizes/`) und Falkenmark (`saves/falkenmark/`). Mehrere Sitzungen arbeiten parallel daran, Claude Code und Codex.
+Statische Website (GitHub Pages) mit Chroniken zu Spielständen aus Transport Fever 3. Drei getrennte Welten: Archipel des Alizés (`saves/archipel-des-alizes/`), Falkenmark (`saves/falkenmark/`, seit 26.10.2026 archiviert) und Erlenmark (`saves/erlenmark/`, seit 27.10.2026). Mehrere Sitzungen arbeiten parallel daran, Claude Code und Codex.
 
 ## Zuerst lesen
 
 1. `werkstatt/README.md`: Ablauf, Regeln, wer was kann.
 2. `werkstatt/AUFGABEN.md`: wer gerade woran arbeitet. Vor dem Ändern eintragen.
 3. Die obersten Einträge in `werkstatt/LOG.md`.
-4. Für die Falkenmark: `werkstatt/falkenmark/STAND.md` und `docs/FALKENMARK.md`. Für das Archipel: `docs/JOURNAL.md`.
+4. Für die Erlenmark: `werkstatt/erlenmark/STAND.md` und `docs/ERLENMARK.md`. Für die Falkenmark: `werkstatt/falkenmark/STAND.md` und `docs/FALKENMARK.md`. Für das Archipel: `docs/JOURNAL.md`.
 
 ## Kurzregeln
 

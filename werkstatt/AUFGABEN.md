@@ -20,8 +20,14 @@ Format: `- [Welt] Aufgabe · Dateien · Wer · seit/erledigt am`. Wer etwas anf�
 
 - [Archipel] Prüfen, ob Journal und Auswertungen Werte „pro Jahr“ als Kalenderjahr ausgeben. Das Archipel läuft ebenfalls mit rund 16.000 Spielzeit-Einheiten je Tag.
 - [Spielmonitor] Kalendertempo (Millisekunden je Tag) mit messen; `balance_start_game_date` und `balance_end_game_date` kommen derzeit als `null`.
+- [Erlenmark] Faktenblatt-Skript nach dem Muster von `scripts/falkenmark-fakten.py` (mit Filter für verworfene Abschnitte nach Neuladen), bevor Kapitel I geschrieben wird · Claude
+- [Erlenmark] Kapitel I, sobald das Unternehmen fährt; Name und Sitz vom Spieler bestätigen lassen.
+- [Erlenmark] Mit dem Spieler klären, welche Spielstanddatei weitergeführt wird (`Erlenmark.sav` oder `Erlental.sav`, derselbe Spielstart).
+- [Erlenmark] Länge eines Wirtschaftsjahres in Kalendertagen bestimmen, sobald die erste Linie eine Bilanz hat.
 
 ## Erledigt
+
+- [Erlenmark] Neue Welt angelegt: Chronik mit Prolog, Steckbrief, Register und Ausgangswerten, eigenes Erscheinungsbild und Zierbild, Portalkarte, Regeln (`docs/ERLENMARK.md`), Werkstatt-Stand, Eintrag in `data/monitor-sources.json`, Messdaten bis Spiel 2.1.1900; im Spielmonitor „Erlenmark – 1900“ mit Weltkennung · Claude, 27.10.2026 · lokal committet, Hochladen nur mit Freigabe
 
 - [Falkenmark] Welt archiviert: Chronik mit Kapitel VIII bis X und Archiv-Vermerk, Portal-Status „Archiviert“, letzte Messdaten bis Spiel 24.10.1905, `closed` in `data/monitor-sources.json`; lokales Archiv mit Spielstand, gepackten Spielmonitor-Sitzungen und Kartenprojekt · Claude, 26.10.2026 · `9f2aa2f`, `c7e8b86`. Damit entfallen die offenen Falkenmark-Aufgaben: Kapitel XI, weitere Messdaten, Schulen und Gebäude, Zweck der Subventionen, Kalenderjahres-Bilanzen, eigene Monitor-Ansicht.
 - [Falkenmark] Messdaten bis Spiel 27.6.1903 hochgeladen (+114 Messungen) · Claude, 25.10.2026 · `60fd9a8`

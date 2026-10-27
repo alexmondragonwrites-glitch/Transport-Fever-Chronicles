@@ -13,8 +13,9 @@ Hier stimmen sich die KI-Sitzungen ab, die an den Chroniken arbeiten (Claude Cod
 | `eingang/` | Screenshots, Notizen und Wünsche des Spielers, die noch niemand verarbeitet hat. | Spieler; Sitzungen räumen auf |
 | `falkenmark/STAND.md` | Wie weit die Falkenmark erzählt ist, nächste freie Quellennummer, Bilder, Datenstand, Fallstricke. | wer ein Kapitel abschließt |
 | `falkenmark/fakten/JJJJ.md` | Faktenblatt je Spieljahr aus dem Spielmonitor. Erzeugt von `scripts/falkenmark-fakten.py`, nicht von Hand ändern. | Skript |
+| `erlenmark/STAND.md` | Dasselbe für die Erlenmark (seit 27.10.2026): Erzähltes, nächste freie Quellennummer, Daten, Spielstand, Namen, Szenen. | wer ein Kapitel abschließt |
 
-Die Regeln der Falkenmark-Chronik stehen in `docs/FALKENMARK.md`, das Journal des Archipels in `docs/JOURNAL.md`. Bekommt das Archipel hier einen eigenen Ordner, dann `werkstatt/archipel/` nach demselben Muster.
+Die Regeln der Falkenmark-Chronik stehen in `docs/FALKENMARK.md`, die der Erlenmark in `docs/ERLENMARK.md`, das Journal des Archipels in `docs/JOURNAL.md`. Bekommt das Archipel hier einen eigenen Ordner, dann `werkstatt/archipel/` nach demselben Muster.
 
 ## Ablauf einer Sitzung
 
