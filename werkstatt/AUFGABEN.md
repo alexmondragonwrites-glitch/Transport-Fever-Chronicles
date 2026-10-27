@@ -27,7 +27,7 @@ Format: `- [Welt] Aufgabe · Dateien · Wer · seit/erledigt am`. Wer etwas anf�
 
 ## Erledigt
 
-- [Erlenmark] Neue Welt angelegt: Chronik mit Prolog, Steckbrief, Register und Ausgangswerten, eigenes Erscheinungsbild und Zierbild, Portalkarte, Regeln (`docs/ERLENMARK.md`), Werkstatt-Stand, Eintrag in `data/monitor-sources.json`, Messdaten bis Spiel 2.1.1900; im Spielmonitor „Erlenmark – 1900“ mit Weltkennung · Claude, 27.10.2026 · lokal committet, Hochladen nur mit Freigabe
+- [Erlenmark] Neue Welt angelegt: Chronik mit Prolog, Steckbrief, Register und Ausgangswerten, eigenes Erscheinungsbild und Zierbild, Portalkarte, Regeln (`docs/ERLENMARK.md`), Werkstatt-Stand, Eintrag in `data/monitor-sources.json`, Messdaten bis Spiel 2.1.1900; im Spielmonitor „Erlenmark – 1900“ mit Weltkennung · Claude, 27.10.2026 · `0b56c72`, lokal; Hochladen nur mit Freigabe
 
 - [Falkenmark] Welt archiviert: Chronik mit Kapitel VIII bis X und Archiv-Vermerk, Portal-Status „Archiviert“, letzte Messdaten bis Spiel 24.10.1905, `closed` in `data/monitor-sources.json`; lokales Archiv mit Spielstand, gepackten Spielmonitor-Sitzungen und Kartenprojekt · Claude, 26.10.2026 · `9f2aa2f`, `c7e8b86`. Damit entfallen die offenen Falkenmark-Aufgaben: Kapitel XI, weitere Messdaten, Schulen und Gebäude, Zweck der Subventionen, Kalenderjahres-Bilanzen, eigene Monitor-Ansicht.
 - [Falkenmark] Messdaten bis Spiel 27.6.1903 hochgeladen (+114 Messungen) · Claude, 25.10.2026 · `60fd9a8`
