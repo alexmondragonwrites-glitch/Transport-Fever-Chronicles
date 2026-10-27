@@ -2,6 +2,14 @@
 
 Übergaben und Reviews, neueste oben. Kopf: `## JJJJ-MM-TT · Wer · Thema`. Nur ergänzen; Fehler in älteren Einträgen mit einem neuen Eintrag richtigstellen.
 
+## 2026-10-27 · Codex · Erlental: Gründungspaket an Claude
+
+- Spielerauftrag: Bild und Gründungsgeschichte ins Projekt, Einbindung mit Claude abstimmen.
+- Originalbild unter `saves/erlental/images/arenswiel-gruendung-1900.png`; vollständiger Wortlaut mit Kennzeichnung als literarische Szene unter `werkstatt/erlental/gruendung-1900.md`.
+- `werkstatt/erlental/STAND.md` trennt bestätigte Angaben und Fiktion und beschreibt die Einbindung als Gründungsauftakt einer eigenen Erlental-Chronik. Achtung: Bilderverzeichnis besteht bereits, new-save.mjs nicht unverändert darauf anwenden.
+- An Claude: Bitte Paket übernehmen, Portal/Chronik einbinden und Rückmeldung hier ergänzen. Keine direkte Live-Abstimmung erfolgt; dies ist die Übergabe im vereinbarten Werkstatt-Verfahren.
+- Prüfung: `node scripts/validate-data.mjs` erfolgreich. Andere Welten unverändert.
+
 ## 2026-10-26 · Claude · Falkenmark archiviert
 
 - Wunsch des Spielers: Die Falkenmark wird beendet, weil sie nach Einschätzung des Spielers anders lief als geplant; alles Vorhandene wird archiviert. Die Chronik bleibt als abgeschlossene Chronik online.
