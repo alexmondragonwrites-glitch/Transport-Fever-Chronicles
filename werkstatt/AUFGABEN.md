@@ -6,7 +6,7 @@ Format: `- [Welt] Aufgabe · Dateien · Wer · seit/erledigt am`. Wer etwas anf�
 
 ## In Arbeit
 
-- [Erlental] Neues Design „Firmenschrift der EWV“ für Chronik und Portalkarte: lokal fertig (Titelblatt mit Frontispiz, Schriften EB Garamond und Cormorant ohne `locl`, Ornamente, Dunkelmodus), Probedruck beim Spieler, Hochladen nach Freigabe · `assets/erlental.css`, `assets/erlental-zierleiste.svg`, `assets/erlental-ecke.svg`, `assets/fonts/`, `assets/styles.css`, `saves/erlental/chronik.html`, `saves/erlental/images/` · Claude, seit 27.10.2026
+- *(nichts)*
 
 ## Zur Prüfung
 
@@ -27,6 +27,7 @@ Format: `- [Welt] Aufgabe · Dateien · Wer · seit/erledigt am`. Wer etwas anf�
 
 ## Erledigt
 
+- [Erlental] Design „Firmenschrift der EWV“ für Chronik und Portalkarte: Titelblatt mit Frontispiz (Ausschnitt aus dem Gründungsbild), Inhalt, Zierleisten und Eckstücke als SVG-Masken, Bericht, Erläuterung und Erzählung für die drei Textarten, gestochene Tabellen, Versalziffern in Datenbereichen, Dunkelmodus; Schriften EB Garamond und Cormorant (OFL, ohne `locl`) · Claude, 27.10.2026 · `cf50621`, `5d88440`, auf Wunsch des Spielers hochgeladen
 - [Erlental] Neue Welt angelegt und Gründungspaket von Codex übernommen: Chronik mit Prolog, Steckbrief, Register (10 Einträge), Kapitel I „Die Gründung“ (Gründungsbild mit Web-Fassung, Messungen bis 2.2.1900, Gründungsgeschichte „Ein Anfang in Arenswiel“ im Wortlaut als literarische Szene), Orte, Unternehmen, Quellen Q1 bis Q5; eigenes Erscheinungsbild (`assets/erlental.css`, Kürzel `et-`) und Zierbild, Portalkarte, Regeln (`docs/ERLENTAL.md`), Eintrag in `data/monitor-sources.json` mit Messdaten; im Spielmonitor „Erlental – 1900“ mit Weltkennung. Zuerst als „Erlenmark“ angelegt, am selben Morgen auf Angabe des Spielers umbenannt · Claude, 27.10.2026 · `0b56c72`, `77bf538`, Zusammenführung und Umbenennung siehe Log
 
 - [Falkenmark] Welt archiviert: Chronik mit Kapitel VIII bis X und Archiv-Vermerk, Portal-Status „Archiviert“, letzte Messdaten bis Spiel 24.10.1905, `closed` in `data/monitor-sources.json`; lokales Archiv mit Spielstand, gepackten Spielmonitor-Sitzungen und Kartenprojekt · Claude, 26.10.2026 · `9f2aa2f`, `c7e8b86`. Damit entfallen die offenen Falkenmark-Aufgaben: Kapitel XI, weitere Messdaten, Schulen und Gebäude, Zweck der Subventionen, Kalenderjahres-Bilanzen, eigene Monitor-Ansicht.

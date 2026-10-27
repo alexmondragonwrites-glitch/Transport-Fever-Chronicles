@@ -2,6 +2,19 @@
 
 Übergaben und Reviews, neueste oben. Kopf: `## JJJJ-MM-TT · Wer · Thema`. Nur ergänzen; Fehler in älteren Einträgen mit einem neuen Eintrag richtigstellen.
 
+## 2026-10-27 · Claude · Erlental: Design „Firmenschrift der EWV“
+
+- Wunsch des Spielers: Erlental soll sich optisch klar von den anderen Welten abheben. Er hat im Briefing (lokal, `E:\KI-Projekte\Erlental-Karte\BRIEFING.md`) die Richtung „Firmenschrift der EWV“ gewählt: eine Festschrift der Gesellschaft um 1900 nach dem Gründungsbild.
+- Umgesetzt in `assets/erlental.css` (neu geschrieben) und `saves/erlental/chronik.html`; Inhalte, Register und Wortlaut bleiben unverändert:
+  - Titelblatt mit Frontispiz: der Ausschnitt `arenswiel-gruendung-1900-ausschnitt.jpg` mit Arenswiel und Haus Weitblick. Das ganze Gründungsbild steht weiter als „Tafel I“ in Kapitel I.
+  - Inhaltsverzeichnis, Zierleiste mit Erlenzweig und Eckstück (`erlental-zierleiste.svg`, `erlental-ecke.svg`, als Masken eingefärbt), ❦ am Abschnittsende.
+  - Belegt als „Bericht“, Abgeleitet als „Erläuterung“, Szenen als „Erzählung“ mit Schmuckinitiale. Die Etiketten bleiben gleich.
+  - Dunkelmodus.
+- Schriften: EB Garamond und Cormorant (OFL) aus dem Google-Fonts-Repository, mit fontTools auf Latein und Satzzeichen beschnitten, ohne `locl`. Die deutsche `locl`-Regel von EB Garamond tauscht Ä, Ö und Ü gegen Formen mit eingesenkten Punkten, und dafür gibt es keine Kapitälchen. In Datenbereichen stehen Versalziffern, weil die Mediävalnull wie ein „o“ aussah.
+- Portalkarte im selben Stil, mit dem Ausschnitt als Bild. Das alte Zierbild `affiche-erlental.svg` entfällt.
+- Geprüft: `validate-data.mjs`, Browser 1280 px und 375 px ohne Überlauf, Dunkelmodus, Portal, keine Konsolenfehler. Auf Wunsch des Spielers hochgeladen.
+- Als Nächstes laut Briefing: Monitor-Mod Revision 21 „Kartendaten“ für die 3D-Karte.
+
 ## 2026-10-27 · Claude · Erlental: Gründungspaket übernommen, Welt angelegt
 
 - Antwort auf die Übergabe von Codex (Eintrag darunter): Paket übernommen und eingebunden, Aufgabe auf der Tafel abgeschlossen. Umgesetzt wie vorgeschlagen: Gründungsbild als Auftakt von Kapitel I mit Kennzeichnung „KI-Bild nach einem Screenshot im Spiel“ und Link auf das unveränderte Original, dazu eine Web-Fassung (`arenswiel-gruendung-1900-web.jpg`, 590 KB); die Gründungsgeschichte steht im Wortlaut als literarische Szene (Absatz für Absatz gegen `gruendung-1900.md` geprüft); Gründung jahresgenau 1900; Erfundenes bleibt außerhalb des Registers.
