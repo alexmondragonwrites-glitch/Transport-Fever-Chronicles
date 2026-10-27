@@ -204,6 +204,9 @@ a.et-year:hover{border-color:var(--et-siegel)}
 .et-main .et-year-mark::before{flex:0 0 28px}
 .et-yearblock+.et-yearblock{margin-top:8px}
 
+/* Datenreiche Stellen mit Versalziffern: Die Mediävalnull sähe sonst aus wie ein kleines o ("0 Linien") */
+.et-overview,.et-cards,.et-state,.et-chapnav,#steckbrief,#register,#orte,#unternehmen,#offen,#quellen{font-variant-numeric:lining-nums proportional-nums}
+
 /* Kapitel auf einen Blick: Kennzahlen, Zeitachse, Linien */
 .et-overview{margin:22px 0 28px;padding:20px 22px 10px;background:var(--et-paper-2);border:1px solid var(--et-line);border-top:var(--et-rule)}
 .et-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:0 0 20px}
