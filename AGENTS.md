@@ -1,13 +1,13 @@
 # Transport Fever Chronicles – Hinweise für KI-Sitzungen
 
-Statische Website (GitHub Pages) mit Chroniken zu Spielständen aus Transport Fever 3. Drei getrennte Welten: Archipel des Alizés (`saves/archipel-des-alizes/`), Falkenmark (`saves/falkenmark/`, seit 26.10.2026 archiviert) und Erlenmark (`saves/erlenmark/`, seit 27.10.2026). Mehrere Sitzungen arbeiten parallel daran, Claude Code und Codex.
+Statische Website (GitHub Pages) mit Chroniken zu Spielständen aus Transport Fever 3. Drei getrennte Welten: Archipel des Alizés (`saves/archipel-des-alizes/`), Falkenmark (`saves/falkenmark/`, seit 26.10.2026 archiviert) und Erlental (`saves/erlental/`, seit 27.10.2026). Mehrere Sitzungen arbeiten parallel daran, Claude Code und Codex.
 
 ## Zuerst lesen
 
 1. `werkstatt/README.md`: Ablauf, Regeln, wer was kann.
 2. `werkstatt/AUFGABEN.md`: wer gerade woran arbeitet. Vor dem Ändern eintragen.
 3. Die obersten Einträge in `werkstatt/LOG.md`.
-4. Für die Erlenmark: `werkstatt/erlenmark/STAND.md` und `docs/ERLENMARK.md`. Für die Falkenmark: `werkstatt/falkenmark/STAND.md` und `docs/FALKENMARK.md`. Für das Archipel: `docs/JOURNAL.md`.
+4. Für Erlental: `werkstatt/erlental/STAND.md` und `docs/ERLENTAL.md`. Für die Falkenmark: `werkstatt/falkenmark/STAND.md` und `docs/FALKENMARK.md`. Für das Archipel: `docs/JOURNAL.md`.
 
 ## Kurzregeln
 
@@ -15,7 +15,7 @@ Statische Website (GitHub Pages) mit Chroniken zu Spielständen aus Transport Fe
 - Hochladen nur mit Freigabe des Spielers.
 - Keine Zahlen erfinden. Belegt, Abgeleitet und Literarische Szene trennen. Namen erst nach Bestätigung des Spielers.
 - Veröffentlichten Wortlaut nur zur Korrektur eines Fehlers ändern, mit Eintrag unter „Korrekturen“. `data/events.json` ist append-only.
-- Werte „pro Jahr“ aus dem Spiel gelten für ein Wirtschaftsjahr (in beiden Welten rund 91 Kalendertage), nicht für das Kalenderjahr.
+- Werte „pro Jahr“ aus dem Spiel gelten für ein Wirtschaftsjahr (im Archipel und in der Falkenmark rund 91 Kalendertage, in Erlental noch offen), nicht für das Kalenderjahr.
 - Welten nicht vermischen.
 - Öffentliches Repo: keine Zugangsdaten oder privaten Dateien.
 

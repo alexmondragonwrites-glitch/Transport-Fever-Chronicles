@@ -45,9 +45,9 @@ Die illustrierte Langform-Seite über die Jahre 1900 bis 1910 bleibt unter [Sond
 
 Eine erfundene mitteleuropäische Region in gemäßigtem Klima: 20,5 × 41 km Kartenrand, Höhen bis 466 m, Seen. Am 1.1.1900 laut Spielmonitor 67 Städte mit 7.893 Einwohnern und 52 Industrien. Eigenständiger Spielstand, getrennt vom Archipel. **[Falkenmark – Chronik eines Landes im Wandel](saves/falkenmark/chronik.html)** wächst aus dem Spielverlauf. Seit dem 1.1.1900 baut die Falkenrieder Transportgesellschaft (FTG) von Falkenried aus eine erste Ziegelkette auf. [Arbeitsweise und Regeln](docs/FALKENMARK.md). Am 26.10.2026 beendet und archiviert; die Chronik bleibt abgeschlossen online (erzählt bis Ende 1904).
 
-## Dritte Welt: Erlenmark · ab 1900
+## Dritte Welt: Erlental · ab 1900
 
-Eine erfundene Region mit deutschen Ortsnamen in gemäßigtem Klima: 20,5 × 41 km Kartenrand, Höhen bis 484 m, Flüsse und vereinzelte Seen. Am 1.1.1900 laut Spielmonitor 67 Städte mit 9.640 Einwohnern und 64 Betriebe. Eigenständiger Spielstand, getrennt von den anderen Welten. **[Erlenmark – Chronik ab 1900](saves/erlenmark/chronik.html)** beginnt mit Prolog und Steckbrief; Unternehmen und erste Verbindungen stehen noch aus. [Arbeitsweise und Regeln](docs/ERLENMARK.md).
+Eine erfundene Region mit deutschen Ortsnamen in gemäßigtem Klima: 20,5 × 41 km Kartenrand, Höhen bis 484 m, Flüsse und vereinzelte Seen. Am 1.1.1900 laut Spielmonitor 67 Städte mit 9.640 Einwohnern und 64 Betriebe. Eigenständiger Spielstand, getrennt von den anderen Welten. **[Erlental – Chronik ab 1900](saves/erlental/chronik.html)** beginnt mit der Gründung der Erlentaler Wege- und Verkehrsgesellschaft (EWV) im Haus Weitblick oberhalb von Arenswiel; seit Januar 1900 fahren Fisch per Dampfer und Fuhrwerk und Postkutschen im Ort. [Arbeitsweise und Regeln](docs/ERLENTAL.md).
 
 ## Methodik und Datenqualität
 

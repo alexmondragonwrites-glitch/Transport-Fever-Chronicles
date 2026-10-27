@@ -1,0 +1,163 @@
+{
+  "schema_version": 1,
+  "policy": "append-only",
+  "events": [
+    {
+      "id": "einstellungen-erlental",
+      "date": "1900",
+      "precision": "year",
+      "game_time_label": "Startjahr 1900, vor Spielbeginn",
+      "kind": "fakt",
+      "category": "Spielstart",
+      "title": "Einstellungen der neuen Welt",
+      "description": "Startjahr 1900. Kartengröße „Gigantomanisch“ im Format 1:2, laut Vorschau 20,0 × 40,0 km, Zufallswert SpWJDQtUdp. Seen vereinzelt, Flüsse und Berge normal. Deutsche Ortsnamen, mittlere Städtedichte, normale Industriedichte. Wetter dynamisch, Tageszeit kontinuierlich, Tutorial aus, Schwierigkeit „Schwierig“, 46 Mods. Die Vorschau nennt 67 Städte und 64 Industrien. Die Seite zeigt den Stand vor dem Klick auf „Spiel starten“.",
+      "entities": [
+        "erlental"
+      ],
+      "source": "Screenshot „Neues Spiel – Einstellungen“",
+      "recorded": "2026-10-27",
+      "recorded_note": "Tag der Übergabe; aufgenommen nach der letzten Kartenvorschau um 05:28 Uhr (Spielprotokoll)."
+    },
+    {
+      "id": "start-erlental",
+      "date": "1900-01-01",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Spielstart",
+      "title": "Spielstart mit dem Zufallswert der Einstellungsseite",
+      "description": "Das Spiel startet die Welt mit dem Zufallswert SpWJDQtUdp, Größenstufe 8 im Format 1:2, gemäßigtem Klima, deutschen Ortsnamen und 46 aktiven Mods, darunter der Spielmonitor (Rev. 20). Beim Aufbau entstehen 67 Städte. Gespeichert als „Erlenmark.sav“ um 05:37 Uhr und als „Erlental.sav“ um 05:38 Uhr; der Spieler führt „Erlental.sav“ weiter.",
+      "entities": [
+        "erlental"
+      ],
+      "source": "Spielprotokoll von Transport Fever 3; Angabe des Spielers",
+      "recorded": "2026-10-27",
+      "recorded_note": "Spielstart um 05:35 Uhr."
+    },
+    {
+      "id": "messung-erlental-1900-01-01",
+      "date": "1900-01-01",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Messung",
+      "title": "Erste Messung: 67 Städte, 9.640 Einwohner, 64 Betriebe",
+      "description": "Kartenrand 20,5 × 41,0 km, Höhen bis 484 m über dem Wasserspiegel, 10,5 % der Rasterfelder darunter. Größte Städte: Ahaus 409, Stendal 258, Drolshagen 256, Rinteln 255; kleinste: Emmelshausen 60. Selters hat 167 Einwohner. Betriebe: 16 Bauernhöfe, 11 Ölplattformen, 10 Fischzuchten, 8 Lehmgruben, 6 Viehzuchtbetriebe, 4 Holzfällerlager, 4 Ölraffinerien, 3 Ziegeleien, 2 Sägewerke. 0 Linien, 0 Fahrzeuge, Kontostand 0, Kredit 0.",
+      "entities": [
+        "erlental"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-27",
+      "recorded_note": "Aufgenommen um 05:37 Uhr, Weltkennung tf3-2026-10-27-1793075833-1414195950-2."
+    },
+    {
+      "id": "gruendung-ewv-1900",
+      "date": "1900",
+      "precision": "year",
+      "game_time_label": "1900, genauer Tag offen",
+      "kind": "fakt",
+      "category": "Unternehmen",
+      "title": "Gründung der Erlentaler Wege- und Verkehrsgesellschaft (EWV)",
+      "description": "Name und Sitz nach Angabe des Spielers: Erlentaler Wege- und Verkehrsgesellschaft, kurz EWV, mit Sitz im Haus Weitblick oberhalb von Arenswiel. Ein genauer Gründungstag ist offen; die erste Messung mit Linien stammt vom 3. Januar 1900.",
+      "entities": [
+        "erlental",
+        "ewv",
+        "arenswiel"
+      ],
+      "source": "Gründungspaket des Spielers (Werkstatt-Übergabe)",
+      "recorded": "2026-10-27"
+    },
+    {
+      "id": "umbenennung-arenswiel",
+      "date": "1900-01-03",
+      "precision": "day",
+      "game_time_label": "zwischen 1. und 3. Januar 1900",
+      "kind": "fakt",
+      "category": "Ort",
+      "title": "Selters heißt Arenswiel",
+      "description": "Der Spieler hat die Stadt Selters umbenannt; die Messung vom 3. Januar führt sie zum ersten Mal als Arenswiel. Am 1. Januar zählte sie 167 Einwohner.",
+      "entities": [
+        "arenswiel"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-27",
+      "recorded_note": "Erste Messung mit dem neuen Namen um 05:54 Uhr."
+    },
+    {
+      "id": "erste-linien-1900-01-03",
+      "date": "1900-01-03",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Verkehr",
+      "title": "Erste Linien: Dampfer zur Fischzucht, Fuhrwerke nach Arenswiel",
+      "description": "Der Dampfer „Sydfart“ fährt zwischen Arenswiel Hafen und der Fischzucht bei Mettmann, für Fahrgäste und Fisch; elf Pferdefuhrwerke fahren Fisch von Arenswiel Station am Hafen nach Arenswiel Station Transfer in der Ortsmitte. Kredit 8 Millionen, Kontostand 3,65 Millionen. Erste Messung mit Linien; gebaut wurde zwischen dem 1. und 3. Januar.",
+      "entities": [
+        "ewv",
+        "arenswiel"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-27",
+      "recorded_note": "Aufgenommen um 05:54 Uhr."
+    },
+    {
+      "id": "postkutschen-arenswiel-1900-01-13",
+      "date": "1900-01-13",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Verkehr",
+      "title": "Zwei Postkutschenlinien in Arenswiel",
+      "description": "Je zwei Postkutschen fahren über die vier Halte Busbahnhof, Südwest, Mitte-Nord und Nordost, die zweite Linie in Gegenrichtung. Der Kontostand sinkt dabei von 3,47 auf 1,41 Millionen. Am selben Tag erste Tilgung des Kredits (auf 7,89 Millionen).",
+      "entities": [
+        "ewv",
+        "arenswiel"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-27",
+      "recorded_note": "Aufgenommen um 05:57 Uhr."
+    },
+    {
+      "id": "arenswiel-einwohner-1900-01-14",
+      "date": "1900-01-14",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Ort",
+      "title": "Arenswiel sinkt von 167 auf 140 Einwohner",
+      "description": "Einen Tag nach dem Bau der Postkutschenlinien misst der Spielmonitor 140 statt 167 Einwohner. Bis zum 2. Februar pendelt die Zahl zwischen 135 und 145 und steht dann bei 143. Der Grund ist offen.",
+      "entities": [
+        "arenswiel"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-27"
+    },
+    {
+      "id": "umbenennung-seegut-tiefenborn",
+      "date": "1900-01-22",
+      "precision": "day",
+      "game_time_label": "zwischen 19. und 22. Januar 1900",
+      "kind": "fakt",
+      "category": "Betrieb",
+      "title": "Die Fischzucht bei Mettmann heißt Seegut Tiefenborn",
+      "description": "Der Spieler hat die Fischzucht umbenannt, im Spiel vorher „Mettmann Fischzucht“. Von hier fährt der Dampfer den Fisch nach Arenswiel.",
+      "entities": [
+        "seegut-tiefenborn"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-27",
+      "recorded_note": "Erste Messung mit dem neuen Namen um 06:02 Uhr."
+    },
+    {
+      "id": "stand-1900-02-02",
+      "date": "1900-02-02",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Messung",
+      "title": "Stand am 2. Februar: vier Linien, 16 Fahrzeuge",
+      "description": "Konto 949.810, Kredit 7,67 Millionen nach Tilgungen am 13., 19. und 29. Januar. Fuhrpark: 11 Pferdefuhrwerke, 4 Postkutschen, 1 Dampfer „Sydfart“. Linienbilanzen im laufenden Wirtschaftsjahr zusammen −114.699. Arenswiel hat 143 Einwohner und verlangt Fisch und Ziegel; die Versorgung mit beiden Waren steht bei 0.",
+      "entities": [
+        "ewv",
+        "arenswiel"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-27",
+      "recorded_note": "Aufgenommen um 06:06 Uhr; Stichtag von Kapitel I."
+    }
+  ]
+}

@@ -26,15 +26,15 @@
       "accent": "#4f6f52"
     },
     {
-      "id": "erlenmark",
-      "title": "Erlenmark",
-      "subtitle": "Chronik ab 1900: 67 Städte und 64 Betriebe in einem gemäßigten Land mit Flüssen und vereinzelten Seen",
+      "id": "erlental",
+      "title": "Erlental",
+      "subtitle": "Chronik ab 1900: Arenswiel, Haus Weitblick und 67 Städte zwischen Bergen, Flüssen und vereinzelten Seen",
       "game": "Transport Fever 3",
       "starting_year": 1900,
-      "status": "Neuer Spielstand",
-      "company": "Unternehmen noch nicht festgelegt",
-      "path": "saves/erlenmark/",
-      "data": "saves/erlenmark/data/",
+      "status": "Aktiver Spielstand",
+      "company": "Erlentaler Wege- und Verkehrsgesellschaft (EWV)",
+      "path": "saves/erlental/",
+      "data": "saves/erlental/data/",
       "accent": "#2c5161"
     }
   ]

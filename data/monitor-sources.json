@@ -30,9 +30,9 @@
         "note": "Welt beendet und archiviert. Letzter Upload mit Messungen bis Spiel 24.10.1905; weitere Uploads nur mit --save falkenmark."
       }
     },
-    "erlenmark": {
+    "erlental": {
       "world": {
-        "name": "Erlenmark – 1900",
+        "name": "Erlental – 1900",
         "world_id": "tf3-2026-10-27-1793075833-1414195950-2"
       },
       "folder": "monitor",

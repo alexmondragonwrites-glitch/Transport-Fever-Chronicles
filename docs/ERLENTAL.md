@@ -1,0 +1,73 @@
+# Erlental – Chronik ab 1900
+
+Dritte Welt im Archiv, angelegt am 27.10.2026. Eigenständiger TF3-Spielstand, Startjahr 1900, getrennt vom Archipel des Alizés und von der archivierten Falkenmark: Orte, Unternehmen und Ereignisse von dort werden nicht übernommen, Vergleiche zwischen den Welten nur auf ausdrückliche Bitte des Spielers. Wer gerade woran schreibt, wie weit erzählt ist und welche Messwerte bereitliegen: `werkstatt/erlental/STAND.md` und `werkstatt/AUFGABEN.md`.
+
+Der Name der Welt ist „Erlental“, ohne Artikel („in Erlental“, „eine Karte Erlentals“), so wie in der Gründungsgeschichte des Spielers. Der Spieler nannte sie zuerst „Erlenmark“ und hat das am selben Morgen richtiggestellt; „Erlenmark.sav“ ist eine Kopie desselben Starts. „Chronik ab 1900“ ist ein Arbeitstitel.
+
+## Wo was liegt
+
+| Datei | Inhalt |
+|---|---|
+| `saves/erlental/chronik.html` | Die Chronik: Prolog, Steckbrief, Register, Kapitel, Orte, Unternehmen, Auswertungen, offene Fragen, Quellen, Korrekturen. Handgeschrieben. |
+| `saves/erlental/data/events.json` | Ereignisregister, einzige Quelle. `chronik.html` und die Datenansicht lesen es. Append-only. |
+| `saves/erlental/data/meta.json` | Kurzbeschreibung, Status, Monitor-Weltname und Weltkennung. |
+| `saves/erlental/data/manifest.json` | `latestReport: chronik.html` (die Weltseite leitet dorthin weiter), `monitor_data` für die Messdaten. |
+| `saves/erlental/data/monitor/` | Messdaten aus dem Spielmonitor, geschrieben von `publish-monitor.py`. Nicht von Hand ändern. |
+| `saves/erlental/images/` | Bilder der Chronik. `arenswiel-gruendung-1900.png` ist das Original des Gründungsbilds (bleibt unverändert), `arenswiel-gruendung-1900-web.jpg` die Fassung für die Seite. KI-Bilder als solche kennzeichnen, mit Vorlage. |
+| `werkstatt/erlental/gruendung-1900.md` | Wortlaut der Gründungsgeschichte, wie der Spieler sie geliefert hat. Die Chronik übernimmt ihn unverändert. |
+| `assets/erlental.css`, `assets/affiche-erlental.svg` | Eigenes Erscheinungsbild, unabhängig von `styles.css` und `falkenmark.css`, dazu das Zierbild (keine Karte). Die Portalkarte hat passende Regeln in `styles.css` (`.world-card[data-world="erlental"]`). |
+
+## Erscheinungsbild
+
+Leitbild: Messtischblatt und Wiesenland um 1900. Büttenpapier mit Sumpfsignaturen und Wasserschraffur, Flussblau (`--et-water`, Kopfleiste `--et-deep`), Erlenrot wie frisch geschnittenes Erlenholz (`--et-alder`, Akzent), Ried (`--et-reed`), Kätzchengelb (`--et-ochre`, Abgeleitet), Schlehenviolett (`--et-slate`, Szenen). Grenzlinie als Kreisgrenze: Strich, Punkt, Punkt. Schriften lokal wie im übrigen Archiv: Source Serif 4 und Jost, Zahlen in der Systemschrift (`--et-mono`); keine Google Fonts, kein Playfair (Archipel).
+
+Das Seitengerüst entspricht der Falkenmark, die Klassen tragen das Kürzel `et-` statt `fm-`. Änderungen an einer der beiden Dateien wirken nur in ihrer Welt.
+
+## Kapitel anlegen
+
+Jedes Kapitel ist ein `<article class="et-chapter" id="kapitel-N" data-year="JJJJ">` in `#kapitel` und bekommt einen Eintrag in der Kapitelnavigation (`.et-chapnav`). Reicht ein Kapitel über einen Jahreswechsel, stehen beide Jahre im Attribut (`data-year="1901 1902"`). Jede Jahresbilanz unter VII steht in `<div class="et-yearblock" data-year="JJJJ">`.
+
+**Jahresauswahl:** Die Leiste `#jahre` erscheint von selbst, sobald es ein Kapitel gibt, und baut sich aus den `data-year`-Attributen (Jahrzehnt wählen, dann das Jahr). Adresse `#jahr-1901`, alles: `#jahr-alle`.
+
+Aufbau eines Kapitels (Muster: Kapitel I):
+
+1. Kopf: `<header class="et-chapter-head"><h3><span class="et-chapter-no">Kapitel N</span> Titel</h3><p class="et-chapter-period">Zeitraum</p></header>`. Kapitel haben einen Stichtag (Messung mit Spieldatum und Aufnahmezeit), weil der Spieler beim Schreiben weiterspielt.
+2. Optional ein Bild (`figure.et-founding`), bei KI-Bildern so gekennzeichnet, mit Link auf das Original.
+3. Übersicht `.et-overview`: Kennzahlen (`.et-stat`, `--neg` für Verluste), Zeitachse (`ol.et-timeline`, Schlüsselereignis mit `is-key`) und Linien-Schemata (`figure.et-route` mit `et-stop`, `et-leg`, `et-leg--assumed` für abgeleitete Verläufe, `et-leg--ware` für mögliche Warenwege ohne Linie, `et-stop--ring` für Linien im Ort). Nur Zahlen und Daten, die wörtlich im Text oder im Register stehen.
+4. Textblöcke: `div.et-block.et-block--belegt` (Quelle als letzter Absatz `p.et-source`), `div.et-block.et-block--abgeleitet`, `div.et-scene` mit den Varianten `et-scene--dialog`, `et-scene--eintraege`, `et-scene--telegramm`, `p.et-randnotiz`, dazu `p.et-scene-note` (Vorbemerkung vor dem Titel) und `span.et-scene-sub` (Untertitel im `h3`).
+5. Quellen als Badge: `<a class="et-q" href="#q4" data-tip="…" aria-label="Quelle Q4: …">Q4</a>`; die Quellenliste hat die Anker `#q1`, `#q2` … Die nächste freie Nummer steht in `werkstatt/erlental/STAND.md`.
+
+## Ereignisse eintragen
+
+Jeder Eintrag in `events.json` braucht `id`, `date` (`JJJJ`, `JJJJ-MM` oder `JJJJ-MM-TT`, Spielzeit), `kind`, `category`, `title`, `description`, `source`. Dazu nach Bedarf `game_time_label` (Spielzeit in Worten), `recorded` (reales Datum der Aufnahme, `JJJJ-MM-TT`) und `recorded_note`. `kind`: `fakt` = Belegt, `rekonstruktion` = Abgeleitet, `fiktion` = Literarische Szene. Einträge nicht löschen; Fehler bekommen ein Feld `correction` mit `date` und `note` und einen Eintrag unter „Korrekturen“ in der Chronik. Erfundenes aus Szenen (Beratungen, Wirt, Fuhrmann, Büroausstattung) gehört nicht ins Register.
+
+## Regeln aus dem Auftrag des Spielers
+
+Es gelten dieselben Regeln wie für die Falkenmark (`docs/FALKENMARK.md`, Abschnitt „Regeln aus dem Auftrag des Spielers“):
+
+1. Belegtes, Abgeleitetes und Erfundenes trennen.
+2. Keine Einwohnerzahlen, Finanzwerte, Produktionsmengen, Eröffnungsdaten oder Verbindungen erfinden. Fehlendes bleibt offen.
+3. Fiktive Personen und Zitate nur in Passagen mit dem Etikett „Literarische Szene“.
+4. Spieljahr und reales Aufnahmedatum immer getrennt. Für die Gründung der Gesellschaft gilt das Jahr 1900; einen gemessenen Gründungstag gibt es nicht.
+5. Orts- und Unternehmensnamen erst nach Bestätigung des Spielers verbindlich. Namen, die der Spieler im Spiel selbst vergibt (Arenswiel, Seegut Tiefenborn), gelten als bestätigt.
+6. Aus der kleinen Kartenvorschau keine Himmelsrichtungen, Fließrichtungen oder Verbindungen ableiten. Entfernungen aus den Monitor-Positionen als Luftlinie angeben.
+7. Widersprüche benennen und nachvollziehbar korrigieren.
+
+Schreibweise (Wunsch des Spielers vom 25.10.2026, gilt für alle Chroniken): Formen variieren, natürlich klingen, Verneinungsfiguren meiden („nicht X, sondern Y“, „kein …“, „niemand …“) und keine KI-Phrasen. Was fehlt, positiv sagen: „fehlt“, „bleibt offen“, „steht still“. Neue Abschnitte mit `grep -n -w -E "nicht|kein|keine|nie|niemand|nichts|sondern|ohne"` prüfen. Texte, die der Spieler selbst liefert (wie die Gründungsgeschichte), stehen im Wortlaut. Formen und wiederkehrende Figuren in `werkstatt/erlental/STAND.md` nachhalten.
+
+Ton: ruhige Regionalgeschichte mit gelegentlichen Reportagen, kein Werbeton, auch Umwege und stillstehende Orte erzählen. Die Zukunft wird nicht vorweggenommen.
+
+## Erfahrungen aus der Falkenmark
+
+- **Einstellungsseite und gespeicherte Welt:** Maßgeblich ist die Welt, die das Spielprotokoll beim Start und Speichern nennt. Bei Erlental stimmen Zufallswert (SpWJDQtUdp), Größe und Mod-Zahl der Einstellungsseite mit dem Protokoll überein.
+- **Neuladen:** Lädt der Spieler einen älteren Stand, springt die Spielzeit zurück; die Messungen dahinter gehören zu einem verworfenen Abschnitt und werden nicht erzählt.
+- **Werte „pro Jahr“** (Produktion, Versand, Linienbilanz) gelten für ein Wirtschaftsjahr des Spiels. Wie viele Kalendertage das in Erlental sind, zeigt die erste vollständige Bilanzperiode einer Linie (`balance_start_game_time`); bis dahin solche Werte nur mit „im laufenden Wirtschaftsjahr“ nennen und nie als Kalenderjahr ausgeben.
+- **Mods des Spielers** (Bauten, gesetzte Betriebe) als Hinweis mit Quelle nennen, als Ereignis der erzählten Welt nur, wenn der Spieler es so will. Die Mod-Auswahl von Erlental ist laut Spieler gewollt (Organic Towns deinstalliert, eigene Mods ausgeschaltet).
+
+## Spielmonitor
+
+Im Spielmonitor heißt die Welt „Erlental – 1900“ (am 27.10.2026 angelegt und vorgewählt, zuerst unter „Erlenmark – 1900“, am selben Morgen umbenannt), Weltkennung `tf3-2026-10-27-1793075833-1414195950-2`. Der Monitor lief beim ersten Laden, die erste Messung mit Positionen und Höhenraster steht deshalb in der Sitzung `20261027_053713_859866`; eine Kopie liegt in `Spielmonitor/exports/erlental-start-1900-01-01-geo.json`, das Spielprotokoll des Starts in `exports/tf3-spielprotokoll-2026-10-27-erlental.txt`. Weitergespielt wird `Erlental.sav`; `Erlenmark.sav` ist eine Kopie desselben Starts mit derselben Weltkennung. Wer beide abwechselnd lädt, erzeugt Rücksprünge (verworfene Abschnitte).
+
+`WEBSITE_AKTUALISIEREN.bat` lädt Erlental mit hoch (Eintrag in `data/monitor-sources.json`, ohne Zeitung, `manifest_key: monitor_data`). Die Chronik selbst bleibt Handarbeit. Einzeln: `WEBSITE_AKTUALISIEREN.bat --save erlental`. Hochladen nur mit Freigabe des Spielers.
+
+Ein Faktenblatt-Skript wie `scripts/falkenmark-fakten.py` gibt es für Erlental noch nicht; Kapitel I ist direkt aus den Sitzungsdaten geschrieben. Für Kapitel II steht das Skript auf der Tafel.
