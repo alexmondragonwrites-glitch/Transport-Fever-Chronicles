@@ -622,6 +622,214 @@
       "source": "Spielmonitor, Welt „Erlental – 1900“",
       "recorded": "2026-10-28",
       "recorded_note": "Letzte Messung des Jahres um 06:41 Uhr; Versorgung und Finanztabelle aus der Messung vom 28.12.1901."
+    },
+    {
+      "id": "textil-1902-01-24",
+      "date": "1902-01-24",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Betrieb",
+      "title": "Betriebe für Stoff und Kleidung",
+      "description": "Der Monitor misst eine Textilfabrik bei Emmelshausen (24.1.), eine Chemiefabrik bei Munderkingen (25.1.), eine Weberei bei Gütersloh (26.1.) und eine Baumwollplantage bei Blaubeuren (27.1.). Schon am 3. Januar steht wieder eine Ölraffinerie bei Ahaus in den Messungen.",
+      "entities": [
+        "erlental"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-28",
+      "recorded_note": "Aufgenommen zwischen 06:51 und 06:57 Uhr."
+    },
+    {
+      "id": "oeldampfer-1902-04-25",
+      "date": "1902-04-25",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Verkehr",
+      "title": "Erster Öldampfer: Selters Ölplattform–Leuna Hafen",
+      "description": "Der Dampfer „Dunara Castle“ fährt zwischen der Selters Ölplattform, 2,1 km von Arenswiel, und dem Leuna Hafen, 1,5 km Luftlinie; ab dem 11. Mai sind es zwei. Rohöl lädt er zum ersten Mal am 14. Mai. Die Plattform trägt im Spiel den alten Namen von Arenswiel.",
+      "entities": [
+        "ewv",
+        "leuna",
+        "arenswiel"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-28",
+      "recorded_note": "Grundmessung, aufgenommen um 09:19 Uhr."
+    },
+    {
+      "id": "oelzug-1902-05-09",
+      "date": "1902-05-09",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Verkehr",
+      "title": "Kesselwagenzug Leuna–Ditzingen",
+      "description": "Ein Zug mit einer Lokomotive der Russischen Baureihe OB und einem Kesselwagen von 1899 fährt zwischen Leuna Station und Ditzingen Station, 4,0 km; ab dem 31. Juli zwei Züge. Fünf Fuhrwerke fahren von der Ditzingen Station Nord zur Ditzingen Ölraffinerie, ab dem 9. August zehn, ab dem 19. November 15. Am selben Tag steigt der Kredit von 35,18 auf 57,18 Millionen.",
+      "entities": [
+        "ewv",
+        "leuna",
+        "ditzingen"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-28",
+      "recorded_note": "Aufgenommen um 09:24 und 09:26 Uhr."
+    },
+    {
+      "id": "tulpenweg-oelplattform-1902-06-21",
+      "date": "1902-06-21",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Verkehr",
+      "title": "Postkutschen zum Tulpenweg, Fahrgastdampfer zur Ölplattform",
+      "description": "Zwei Postkutschen fahren in Arenswiel vom Busbahnhof zum Tulpenweg. Ein dritter Dampfer „Waimarie“ fährt Fahrgäste vom Anleger Arenswiel Hafen #1 zur Selters Ölplattform. Die Finanztabelle verbucht 1,91 Millionen Zuschüsse für das zweite Quartal.",
+      "entities": [
+        "ewv",
+        "arenswiel"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-28",
+      "recorded_note": "Aufgenommen um 09:38 Uhr."
+    },
+    {
+      "id": "arenswiel-500-1902-07-11",
+      "date": "1902-07-11",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Ort",
+      "title": "Arenswiel über 500 Einwohner",
+      "description": "Arenswiel zählt zum ersten Mal über 500 Einwohner; am 24. Dezember sind es 541.",
+      "entities": [
+        "arenswiel"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-28",
+      "recorded_note": "Aufgenommen um 12:51 Uhr."
+    },
+    {
+      "id": "wengenrode-300-1902-08-15",
+      "date": "1902-08-15",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Ort",
+      "title": "Wengenrode über 300 Einwohner",
+      "description": "Wengenrode zählt zum ersten Mal über 300 Einwohner. Der Ort wächst 1902 von 194 auf 354, stärker als jeder andere Ort in Erlental.",
+      "entities": [
+        "wengenrode"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-28",
+      "recorded_note": "Aufgenommen um 13:04 Uhr."
+    },
+    {
+      "id": "raffinerie-ditzingen-1902-09-10",
+      "date": "1902-09-10",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Betrieb",
+      "title": "Die Raffinerie in Ditzingen arbeitet",
+      "description": "Die Ditzingen Ölraffinerie produziert ab dieser Messung und verschickt ab dem 16. September. Treibstoff laden die Fuhrwerke in Ditzingen ab dem 11. September, der Zug nach Leuna ab dem 17. Oktober. Am selben 10. September verbucht die Finanztabelle 5,17 Millionen Zuschüsse.",
+      "entities": [
+        "ditzingen"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-28",
+      "recorded_note": "Aufgenommen um 13:09 Uhr."
+    },
+    {
+      "id": "treibstoff-itzehoe-1902-09-26",
+      "date": "1902-09-26",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Verkehr",
+      "title": "Kesselwagenzug nach Itzehoe",
+      "description": "Ein Zug mit einem Kesselwagen von 1899 fährt zwischen Arenswiel Station West und Unter-Itzehoe Station, 6,3 km. Ab dem 3. Oktober fahren in Itzehoe vier Fuhrwerke von der Station Transfer zur Ober-Itzehoe Station. Itzehoe verlangt Treibstoff (78); die Versorgung steht am 24. Dezember bei 0.",
+      "entities": [
+        "ewv",
+        "itzehoe",
+        "arenswiel"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-28",
+      "recorded_note": "Grundmessung, aufgenommen um 13:13 Uhr."
+    },
+    {
+      "id": "duenger-gemuese-1902-11-14",
+      "date": "1902-11-14",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Verkehr",
+      "title": "Dünger und Gemüse zwischen Leuna, Ditzingen und Leipheim",
+      "description": "Neu: Fuhrwerke von der Leuna Station Ost zum Leuna Bauernhof, ein Zug mit einem Güterwagen von 1899 zwischen Leuna und Ditzingen und Fuhrwerke von der Ditzingen Station Nord nach Leipheim, 3,9 km. Dünger laden die Fuhrwerke in Ditzingen ab dem 23. November, Gemüse die Fuhrwerke am Leuna Bauernhof ab dem 1. Dezember. Am 13. und 14. November steigt der Kredit von 51,52 auf 59,55 Millionen.",
+      "entities": [
+        "ewv",
+        "leuna",
+        "ditzingen",
+        "leipheim"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-28",
+      "recorded_note": "Aufgenommen zwischen 13:23 und 13:28 Uhr."
+    },
+    {
+      "id": "konto-minus-1902-11-25",
+      "date": "1902-11-25",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Finanzen",
+      "title": "Konto im Minus",
+      "description": "Das Konto steht bei −63.114; am 24. Dezember bei −2,03 Millionen, am 31. Dezember bei −2,76 Millionen, bei 57,46 Millionen Kredit.",
+      "entities": [
+        "ewv"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-28",
+      "recorded_note": "Aufgenommen um 13:30 Uhr."
+    },
+    {
+      "id": "erster-treibstoff-arenswiel-1902-11-27",
+      "date": "1902-11-27",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Verkehr",
+      "title": "Der erste Treibstoff auf dem Dampfer",
+      "description": "Der Dampfer „Dunara Castle“ lädt zum ersten Mal Treibstoff. Seit dem 19. August legt er auch am Anleger Arenswiel Hafen West an, 0,2 km von der Arenswiel Station West, wo der Zug nach Itzehoe abfährt.",
+      "entities": [
+        "ewv",
+        "arenswiel"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-28",
+      "recorded_note": "Grundmessung, aufgenommen um 13:30 Uhr."
+    },
+    {
+      "id": "betriebe-1902",
+      "date": "1902",
+      "precision": "year",
+      "game_time_label": "Januar bis November 1902",
+      "kind": "fakt",
+      "category": "Betrieb",
+      "title": "15 neue Betriebe, sechs verschwunden",
+      "description": "Erstmals gemessen: Ahaus Ölraffinerie (3.1.), Emmelshausen Textilfabrik (24.1.), Munderkingen Chemiefabrik (25.1.), Gütersloh Weberei (26.1.), Blaubeuren Baumwollplantage (27.1.), Ulrichstein Bauernhof (18.2.), Wolgast Bauernhof (4.4.), Munderkingen Bauernhof (20.5.), Ratzeburg Lehmgrube (5.7.), Gemünden Fischzucht (19.8.), Osterburg Brauerei (15.9.), Philippsburg Glashütte (16.9.), Ratzeburg Sandbaggerschiff (17.9.), Gemünden Ölplattform (4.10.), Hohen Neuendorf Fischzucht Nord (19.11.). Zuletzt gemessen: Ratzeburg Ölplattform (12.1.), Gemünden Fischzucht (3.6.), Richtenberg Ölplattform (8.6.), Gemünden Bauernhof (5.7.), Drolshagen Bauernhof (18.8.), Stendal Bauernhof (17.10.). Am Jahresende 83 Betriebe.",
+      "entities": [
+        "erlental"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-28",
+      "recorded_note": "Erste Messungen zwischen 06:51 und 13:29 Uhr."
+    },
+    {
+      "id": "stand-1902-12-31",
+      "date": "1902-12-31",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Messung",
+      "title": "Jahresende 1902: 34 Linien, 153 Fahrzeuge, 10.387 Einwohner",
+      "description": "Fahrzeuge: 102 Pferdefuhrwerke, 35 Postkutschen, 7 Züge, 4 Dampfer „Sydfart“, 3 „Waimarie“, 2 „Dunara Castle“. Linienbilanzen im Wirtschaftsjahr vom 24.9. bis 24.12.1902 zusammen 5.391.212, am höchsten der Güterzug Arenswiel–Wengenrode (1.273.321) und der Personenzug (1.139.689), am tiefsten der Treibstoffzug nach Itzehoe (−683.895). Versorgung am 24.12.: Arenswiel Fisch 82 von 140, Ziegel 32 von 105; Wengenrode Fisch 93 von 148; Silberweide Ziegel 69 von 160, Gemüse 42 von 131; Itzehoe Gemüse 29 von 87, Treibstoff 0 von 78. Kredit 57,46 Millionen, Kontostand −2,76 Millionen. Finanztabelle 1902 (Stand 24.12.): Ergebnis −25,73 Millionen, Einnahmen 56,10 Millionen, Unterhalt 41,12 Millionen, Bauten 23,99 Millionen, Fahrzeuge 22,59 Millionen, Zuschüsse 7,08 Millionen.",
+      "entities": [
+        "erlental",
+        "ewv"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-28",
+      "recorded_note": "Letzte Messung des Jahres um 13:33 Uhr; Versorgung und Finanztabelle aus der Messung vom 24.12.1902."
     }
   ]
 }

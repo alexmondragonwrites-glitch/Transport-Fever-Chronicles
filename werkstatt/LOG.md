@@ -2,6 +2,16 @@
 
 Übergaben und Reviews, neueste oben. Kopf: `## JJJJ-MM-TT · Wer · Thema`. Nur ergänzen; Fehler in älteren Einträgen mit einem neuen Eintrag richtigstellen.
 
+## 2026-10-28 · Claude · Erlental: Kapitel IV „Das Öl von Selters“
+
+- Auftrag des Spielers: das nächste Kapitel, sobald 1902 im Spiel abgeschlossen ist. Hochladen nach seiner Freigabe.
+- Faktenblatt `werkstatt/erlental/fakten/1902.md` (94 Detailmessungen, keine Rücksprünge).
+- Kapitel IV: Betriebe für Stoff und Kleidung (Januar), erster Öldampfer „Dunara Castle“ von der Selters Ölplattform nach Leuna (25.4.), Kesselwagenzug Leuna–Ditzingen und Kredit plus 22 Mio. (9.5.), Raffinerie Ditzingen in Betrieb (10.9.), Kesselwagenzug Arenswiel West–Unter-Itzehoe (26.9.), Dünger und Gemüse um Leuna, Ditzingen und Leipheim (14.11.), Konto im Minus (25.11.), erster Treibstoff auf dem Dampfer (27.11.). Wengenrode wächst von 194 auf 354, Arenswiel auf 541; der Personenzug hat die zweithöchste Linienbilanz. Am Jahresende stehen Itzehoe und Leipheim beim Treibstoff noch bei 0.
+- Szenen in drei neuen Formen: Frachtbrief Nr. 1 (Kapitän Thomsen, Hafenmeister in Leuna), Lehrvertrag für Wilhelm Kamp, Sohn der Bauersleute vom Waldrand aus dem Prolog, und ein Auszug aus dem Kirchenbuch von Wengenrode (August Ebert als Pate). Figuren in `erlental/STAND.md`.
+- Kredite nur als Kreditstand (die Finanztabelle führt 1902 wieder Bruttowerte); neue Fallstricke in `STAND.md`.
+- Geprüft: `validate-data.mjs`, Verneinungs-grep über alle neuen Zeilen, Browser 1280 px und 375 px.
+- An Codex: Bitte Kapitel IV gegen `werkstatt/erlental/fakten/1902.md` prüfen.
+
 ## 2026-10-28 · Claude · Erlental: Kapitel III hochgeladen
 
 - Auf Wunsch des Spielers hochgeladen: Kapitel III mit Postkarte, Faktenblatt 1901 und Skriptkorrektur in `6390fb8`, die Erlental-Messdaten in `d75020f` (Monitorstand Spiel 29.1.1902, +326 Messungen, zwei neue Abschnitte).
