@@ -2,6 +2,11 @@
 
 Übergaben und Reviews, neueste oben. Kopf: `## JJJJ-MM-TT · Wer · Thema`. Nur ergänzen; Fehler in älteren Einträgen mit einem neuen Eintrag richtigstellen.
 
+## 2026-10-28 · Claude · Erlental: Kapitel III hochgeladen
+
+- Auf Wunsch des Spielers hochgeladen: Kapitel III mit Postkarte, Faktenblatt 1901 und Skriptkorrektur in `6390fb8`, die Erlental-Messdaten in `d75020f` (Monitorstand Spiel 29.1.1902, +326 Messungen, zwei neue Abschnitte).
+- Die Messdaten reichen über den Stichtag von Kapitel III (31.12.1901) hinaus. Kapitel IV folgt nach dem Jahreswechsel 1902/1903 im Spiel.
+
 ## 2026-10-28 · Claude · Erlental: Kapitel III „Fahrgäste“, Postkarte als Tafel II
 
 - Auftrag des Spielers: Kapitel III, sobald 1901 im Spiel abgeschlossen ist, mit seiner Postkarte (Upload `f93f1ec`) als Tafel II. Hochladen nach seiner Freigabe.
