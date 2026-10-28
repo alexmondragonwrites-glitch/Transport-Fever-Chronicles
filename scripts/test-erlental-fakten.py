@@ -38,9 +38,9 @@ def row(d, t, mode, place, people, works=None, lines=(), finance=False):
         r['logistics'] = {'stations': [{'id': 100, 'name': works}]}
         r['lines'] = list(lines)
     if finance:
-        r['finance'] = {'game_date': {'year': 1900, 'month': 1, 'day': d}, 'periods': ['1/00 - 3/00'], 'rows': [],
-                        'total': [-500], 'loan_borrowing': [0], 'loan_repayment': [0], 'interest': [0],
-                        'balance': [1000], 'loan': [0], 'loan_now': 0}
+        r['finance'] = {'game_date': {'year': 1900, 'month': 1, 'day': d}, 'periods': ['10/99 - 12/99', '1/00 - 3/00'], 'rows': [],
+                        'total': [-100, -500], 'loan_borrowing': [0, 0], 'loan_repayment': [0, 0], 'interest': [0, 0],
+                        'balance': [900, 1000], 'loan': [0, 0], 'loan_now': 0}
     return r
 
 
@@ -83,6 +83,10 @@ class ErlentalFakten(unittest.TestCase):
     def test_discarded_section_after_reload(self):
         self.assertIn('Rücksprünge der Spielzeit (Neuladen) im Jahr: 1; 1 Messungen aus verworfenen Abschnitten', self.text)
         self.assertNotIn('Falschname', self.text)
+
+    def test_year_sum_leaves_out_the_quarter_of_the_year_before(self):
+        self.assertIn('| Posten | 10/99 - 12/99 | 1/00 - 3/00 | Summe 1900 |', self.text)
+        self.assertIn('| Ergebnis | -100 | -500 | -500 |', self.text)
 
     def test_economic_year_in_days(self):
         self.assertIn('sind das etwa 4 Kalendertage', self.text)

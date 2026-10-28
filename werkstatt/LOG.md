@@ -2,6 +2,17 @@
 
 Übergaben und Reviews, neueste oben. Kopf: `## JJJJ-MM-TT · Wer · Thema`. Nur ergänzen; Fehler in älteren Einträgen mit einem neuen Eintrag richtigstellen.
 
+## 2026-10-28 · Claude · Erlental: Kapitel III „Fahrgäste“, Postkarte als Tafel II
+
+- Auftrag des Spielers: Kapitel III, sobald 1901 im Spiel abgeschlossen ist, mit seiner Postkarte (Upload `f93f1ec`) als Tafel II. Hochladen nach seiner Freigabe.
+- Faktenblatt `werkstatt/erlental/fakten/1901.md` (78 Detailmessungen; ein kleiner Rücksprung am 6.7.1901 nach Neuladen ist herausgenommen). Das Skript summiert die Finanztabelle jetzt nur über die Quartale des Jahres („Summe JJJJ“); im laufenden Jahr hatte die Spalte das Vorjahresquartal mitgezählt. Test um einen Fall erweitert (7 Fälle). `fakten/1900.md` neu erzeugt, geändert sind nur Kopfzeile und Hinweis.
+- Kapitel III: „Waimarie“ als Fahrgastdampfer bis Silberweide Hafen (9.1.), Ziegel für Silberweide (2.3.), Kredit-Höchststand 44,28 Mio. am 26.2., Spielzeugfabrik bei Burladingen als erster Mod-Betrieb (25.5.), Postkutschen Wengenrode–Eckartsberga (31.5.) und in Wengenrode (23.9.), erster Personenzug Ober-Arenswiel–Wengenrode (29.10.), Arenswiel größte Stadt (3.11.), Erlental über 10.000 Einwohner (17.10.), erstes positives Jahresergebnis (+1,56 Mio.). Kredite stehen nur als Kreditstand im Text, weil die Finanztabelle Aufnahme und Tilgung später verrechnet.
+- Tafel II: Web-Fassung `images/arenswiel-postkarte-web.jpg` (460 KB), das Original bleibt unverändert und verlinkt; neue Quelle Q6, Vorlage offen. Die Bildunterschrift sagt, dass Gebäude, Kirche und Zug frei gestaltet sind.
+- Szenen: Zuteilungsliste des Hafenmeisters (neue Form), Zeugnis für August Ebert und Reportage vom ersten Personenzug. August Ebert verbindet den Fuhrmann zur Furt (Prolog), den alten Fuhrmann (Kapitel I) und den Fuhrmann von der Station Zentrum (Kapitel II); er wird Schaffner. Figuren und Formen in `erlental/STAND.md`; dort steht jetzt auch, welche Textarten die Falkenmark schon genutzt hat.
+- Korrekturen: erster Eintrag zur Finanztabelle des 4. Quartals 1900 (Kapitel II bleibt beim Stand vom 28.12.1900).
+- Geprüft: `validate-data.mjs`, `test-erlental-fakten.py`, Verneinungs-grep über alle neuen Zeilen, Browser 1280 px und 375 px ohne Überlauf und ohne Konsolenfehler (ein langer Dateiname in Q6 hatte die Seite verbreitert, entfernt).
+- An Codex: Bitte Kapitel III gegen `werkstatt/erlental/fakten/1901.md` prüfen.
+
 ## 2026-10-27 · Claude · Erlental: Kapitel II hochgeladen
 
 - Auf Wunsch des Spielers hochgeladen: Kapitel II mit Faktenblatt-Skript in `16868c8`, die Erlental-Messdaten in `340a2cd` (Monitorstand Spiel 4.7.1901, +636 Messungen, sechs neue Abschnitte). Damit ist der Vermerk „Nicht hochgeladen“ im Eintrag darunter erledigt.

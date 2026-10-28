@@ -416,6 +416,212 @@
       ],
       "source": "Spielmonitor, Welt „Erlental – 1900“; ausgewertet mit scripts/erlental-fakten.py",
       "recorded": "2026-10-27"
+    },
+    {
+      "id": "fahrgaeste-silberweide-1901-01-09",
+      "date": "1901-01-09",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Verkehr",
+      "title": "Die „Waimarie“ fährt Fahrgäste bis Silberweide",
+      "description": "Der Dampfer „Waimarie“ fährt ab dieser Messung Fahrgäste vom Arenswiel Hafen über das Seegut Tiefenborn zum Silberweide Hafen; ab dem 11. April sind es zwei. Am selben Tag beginnt in Silberweide eine Postkutschenlinie mit drei Kutschen vom Busbahnhof zur Kirchgasse.",
+      "entities": [
+        "ewv",
+        "silberweide",
+        "arenswiel",
+        "seegut-tiefenborn"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-27",
+      "recorded_note": "Aufgenommen um 13:37 Uhr."
+    },
+    {
+      "id": "kredit-1901-02-26",
+      "date": "1901-02-26",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Finanzen",
+      "title": "Kredit auf 44,28 Millionen",
+      "description": "Der Kredit steigt von 38,05 auf 44,28 Millionen, den höchsten Stand bisher, das Konto von 0,23 auf 6,14 Millionen. Danach sinkt der Kredit Monat für Monat bis 37,89 Millionen am 31. Dezember 1901.",
+      "entities": [
+        "ewv"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-27",
+      "recorded_note": "Aufgenommen um 13:43 Uhr."
+    },
+    {
+      "id": "erste-ziegel-silberweide-1901-03-02",
+      "date": "1901-03-02",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Versorgung",
+      "title": "Erste Ziegel für Silberweide",
+      "description": "Silberweide ist zum ersten Mal mit Ziegeln versorgt, 2 von 84. Die Ziegel kommen seit dem 28. Dezember 1900 per Dampfer vom Arenswiel Hafen zum Silberweide Hafen und mit Fuhrwerken in den Ort. Am 28. Dezember 1901 steht die Versorgung bei 54 von 114.",
+      "entities": [
+        "silberweide"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-27",
+      "recorded_note": "Aufgenommen um 13:44 Uhr."
+    },
+    {
+      "id": "spielzeugfabrik-burladingen-1901-05-25",
+      "date": "1901-05-25",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Betrieb",
+      "title": "Spielzeugfabrik bei Burladingen",
+      "description": "Der Monitor misst bei Burladingen, 29,2 km von Arenswiel, die „Burladingen Toy Factory“, die Bretter zu Spielzeug verarbeitet: der erste Betrieb aus einem der Mod-Pakete („Toy Factory“).",
+      "entities": [
+        "burladingen"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-27",
+      "recorded_note": "Grundmessung, aufgenommen um 13:56 Uhr."
+    },
+    {
+      "id": "postkutschen-wengenrode-eckartsberga-1901-05-31",
+      "date": "1901-05-31",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Verkehr",
+      "title": "Postkutschen von Wengenrode zur Eckartsberga Ziegelei",
+      "description": "Drei Postkutschen fahren vom Rosenweg in Wengenrode zur Eckartsberga Ziegelei, 3,6 km Luftlinie, ab dem 8. September vier. Am selben Tag verbucht die Finanztabelle 2,09 Millionen Zuschüsse für das zweite Quartal.",
+      "entities": [
+        "ewv",
+        "wengenrode",
+        "eckartsberga"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-27",
+      "recorded_note": "Aufgenommen um 13:58 Uhr."
+    },
+    {
+      "id": "postkutschen-wengenrode-1901-09-23",
+      "date": "1901-09-23",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Verkehr",
+      "title": "Postkutschen in Wengenrode",
+      "description": "Drei Postkutschenlinien mit je zwei Kutschen fahren in Wengenrode zwischen Busbahnhof, Station Ost, Nord und Ost.",
+      "entities": [
+        "ewv",
+        "wengenrode"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-28",
+      "recorded_note": "Grundmessung, aufgenommen um 06:16 Uhr."
+    },
+    {
+      "id": "erlental-10000-1901-10-17",
+      "date": "1901-10-17",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Messung",
+      "title": "Erlental über 10.000 Einwohner",
+      "description": "Die 67 Orte zählen zusammen zum ersten Mal über 10.000 Einwohner, 10.006 Ende Oktober und 10.067 am 28. Dezember. Arenswiel hat seit dem 28. September über 400 Einwohner, Silberweide ab dem 28. Oktober über 300.",
+      "entities": [
+        "erlental"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-28",
+      "recorded_note": "Aufgenommen um 06:23 Uhr."
+    },
+    {
+      "id": "personenzug-1901-10-29",
+      "date": "1901-10-29",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Verkehr",
+      "title": "Erster Personenzug: Ober-Arenswiel–Wengenrode",
+      "description": "Eine Lokomotive der Russischen Baureihe OB mit einem Abteilwagen fährt Fahrgäste zwischen Ober-Arenswiel Station, 0,4 km von der Ortsmitte, und Wengenrode Station, 0,5 km von der Ortsmitte; 2,3 km Luftlinie. Ab dem 30. Oktober fahren vier Postkutschen vom Busbahnhof in Arenswiel zur Station Umstieg an der neuen Station, ab dem 20. November sechs.",
+      "entities": [
+        "ewv",
+        "arenswiel",
+        "wengenrode"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-28",
+      "recorded_note": "Aufgenommen um 06:25 Uhr."
+    },
+    {
+      "id": "arenswiel-groesste-stadt-1901-11-03",
+      "date": "1901-11-03",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Ort",
+      "title": "Arenswiel ist die größte Stadt",
+      "description": "Arenswiel zählt mehr Einwohner als Ahaus, das seit der ersten Messung bei 409 steht. Am 28. Dezember 1901 hat Arenswiel 427 Einwohner.",
+      "entities": [
+        "arenswiel"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-28",
+      "recorded_note": "Aufgenommen um 06:26 Uhr."
+    },
+    {
+      "id": "ziegel-silberweide-1901-12-27",
+      "date": "1901-12-27",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Verkehr",
+      "title": "Zweiter Ziegeldampfer nach Silberweide",
+      "description": "Ein zweiter Dampfer „Sydfart“ fährt Ziegel vom Arenswiel Hafen zum Silberweide Hafen; ab dem 28. Dezember fahren in Silberweide sechs statt vier Ziegel-Fuhrwerke.",
+      "entities": [
+        "ewv",
+        "silberweide"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-28",
+      "recorded_note": "Grundmessung, aufgenommen um 06:40 Uhr."
+    },
+    {
+      "id": "betriebe-1901",
+      "date": "1901",
+      "precision": "year",
+      "game_time_label": "Januar bis November 1901",
+      "kind": "fakt",
+      "category": "Betrieb",
+      "title": "Zehn neue Betriebe, sechs verschwunden",
+      "description": "Erstmals gemessen: Dahlen Ölplattform (3.1.), Philippsburg Lehmgrube (18.2.), Hohen Neuendorf Viehzuchtbetrieb (4.4.), Kappeln Bauernhof (20.5.), Burladingen Toy Factory (25.5.), Walldorf Holzfällerlager (5.7.), Rinteln Fischzucht Ost (19.8.), Wesel Steinbruch (24.8.), Wengenrode Ölplattform (4.10.), Ramstein-Miesenbach Bauernhof (19.11.). Zuletzt gemessen: Hohen Neuendorf Bauernhof (22.1.), Bad Herrenalb Viehzuchtbetrieb (30.1.), Itzehoe Holzfällerlager (25.3.), Ramstein-Miesenbach Bauernhof (13.7., im November neu), Wesel Bauernhof (17.8.), Ahaus Ölraffinerie (30.8.). Am Jahresende 74 Betriebe.",
+      "entities": [
+        "erlental"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-28",
+      "recorded_note": "Erste Messungen am 27.10.2026 ab 13:35 Uhr und am 28.10.2026 bis 06:30 Uhr."
+    },
+    {
+      "id": "linien-tragen-sich-1901",
+      "date": "1901-09",
+      "precision": "month",
+      "game_time_label": "drittes Quartal 1901",
+      "kind": "rekonstruktion",
+      "category": "Auswertung",
+      "title": "Die Linien tragen sich",
+      "description": "Abgeleitet aus der Finanztabelle (Stand 28.12.1901): Bis Juni kostet der Unterhalt in jedem Quartal mehr, als die Linien einnehmen; im dritten Quartal nehmen sie 10,48 Millionen ein bei 6,22 Millionen Unterhalt, im vierten 10,00 bei 6,96 Millionen. 1901 ist das erste Jahr mit positivem Ergebnis: 1,56 Millionen, darin 8,27 Millionen Zuschüsse.",
+      "entities": [
+        "ewv"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“; Finanztabelle, ausgewertet mit scripts/erlental-fakten.py",
+      "recorded": "2026-10-28"
+    },
+    {
+      "id": "stand-1901-12-31",
+      "date": "1901-12-31",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Messung",
+      "title": "Jahresende 1901: 24 Linien, 113 Fahrzeuge, 10.067 Einwohner",
+      "description": "Fahrzeuge: 73 Pferdefuhrwerke, 31 Postkutschen, 4 Dampfer „Sydfart“, 2 „Waimarie“, 3 Züge (2 Güterzüge, 1 Personenzug). Linienbilanzen im Wirtschaftsjahr vom 28.9. bis 28.12.1901 zusammen 6.196.162, am höchsten der Güterzug (2.166.730), im Minus vor allem der Personenzug (−380.970). Versorgung am 28.12.: Arenswiel Fisch 74 von 127, Ziegel 21 von 91; Silberweide Ziegel 54 von 114, Gemüse 35 von 117; Wengenrode Fisch 84 von 111; Itzehoe Gemüse 25 von 74. Kredit 37,89 Millionen, Kontostand 3,22 Millionen. Finanztabelle 1901 (Stand 28.12.): Ergebnis +1,56 Millionen, Einnahmen 31,39 Millionen, Unterhalt 24,89 Millionen, Zuschüsse 8,27 Millionen (2,09 im zweiten, 6,18 im vierten Quartal).",
+      "entities": [
+        "erlental",
+        "ewv"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-28",
+      "recorded_note": "Letzte Messung des Jahres um 06:41 Uhr; Versorgung und Finanztabelle aus der Messung vom 28.12.1901."
     }
   ]
 }

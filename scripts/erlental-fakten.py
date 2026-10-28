@@ -252,18 +252,27 @@ def sheet(year, monitor):
     out += ['', '## Finanzen', '']
     fin = [r for r in rows if day(r)[0] == year and r.get('finance')][-1]['finance']
     fd = fin.get('game_date') or {}
-    out.append(f"Finanztabelle des Spiels, Stand {fd.get('day')}.{fd.get('month')}.{fd.get('year')}, Quartale {', '.join(fin.get('periods') or [])}:")
-    out += ['', '| Posten | ' + ' | '.join(fin.get('periods') or []) + ' | Summe |', '|---|' + '---:|' * (len(fin.get('periods') or []) + 1)]
+    periods = fin.get('periods') or []
+    # Im laufenden Jahr reicht die Tabelle ins Vorjahr zurück; die Summe zählt nur die Quartale dieses Jahres.
+    mine = [p.endswith(f'/{year % 100:02d}') for p in periods]
+    if not any(mine):
+        mine = [True] * len(periods)
+
+    def year_sum(vals):
+        return sum(v for v, m in zip(vals, mine) if m)
+
+    out.append(f"Finanztabelle des Spiels, Stand {fd.get('day')}.{fd.get('month')}.{fd.get('year')}, Quartale {', '.join(periods)}:")
+    out += ['', '| Posten | ' + ' | '.join(periods) + f' | Summe {year} |', '|---|' + '---:|' * (len(periods) + 1)]
     agg = {}
     for row in fin.get('rows', []):
         key = f"{row.get('type')} {row.get('carrier') or ''}".strip()
         agg[key] = [a + b for a, b in zip(agg.get(key, [0] * len(row['values'])), row['values'])]
     for title, key in (('Ergebnis', 'total'), ('Kredit aufgenommen', 'loan_borrowing'), ('Tilgung', 'loan_repayment'), ('Zinsen', 'interest')):
         vals = fin.get(key) or []
-        out.append(f"| {title} | " + ' | '.join(n(v) for v in vals) + f" | {n(sum(vals))} |")
+        out.append(f"| {title} | " + ' | '.join(n(v) for v in vals) + f" | {n(year_sum(vals))} |")
     for key, vals in agg.items():
         if any(vals):
-            out.append(f"| {key} | " + ' | '.join(n(v) for v in vals) + f" | {n(sum(vals))} |")
+            out.append(f"| {key} | " + ' | '.join(n(v) for v in vals) + f" | {n(year_sum(vals))} |")
     out.append(f"| Kontostand (Quartalsende) | " + ' | '.join(n(v) for v in fin.get('balance') or []) + ' | |')
     out.append(f"| Kredit (Quartalsende) | " + ' | '.join(n(v) for v in fin.get('loan') or []) + ' | |')
     months = {}
@@ -290,7 +299,9 @@ def sheet(year, monitor):
             '- Werte „pro Jahr“ (Linienbilanz, Produktion, Versand) gelten für ein Wirtschaftsjahr des Spiels, nicht für das Kalenderjahr. '
             f'Bei diesem Kalendertempo (rund {n(round(pace(rows)))} Spielzeit-Einheiten je Tag) sind das etwa '
             f'{round(days) if math.isfinite(days) else "unbekannt viele"} Kalendertage. Für Aussagen über ein ganzes Jahr nicht verwenden.',
-            '- Die Finanztabelle rechnet nach Kalenderquartalen; ihre Summen sind echte Jahreswerte.',
+            f'- Die Finanztabelle rechnet nach Kalenderquartalen; „Summe {year}“ zählt nur die Quartale dieses Jahres. '
+            'Ältere Quartale rechnet das Spiel später teils um (Kreditaufnahme und Tilgung verrechnet, der Saldo bleibt); '
+            'Jahreswerte aus dem Blatt des Jahres nehmen.',
             '- Finanzwerte sind Stand der letzten Messung im Jahr, nicht zwingend der 31. Dezember.',
             '- Das Blatt kennt nur Detailmessungen; die Grundmessungen dazwischen zeigen manches einen bis drei Tage früher. '
             'Umbenennungen und „nicht mehr gemessen“ stammen aus allen Messungen des Jahres.']
