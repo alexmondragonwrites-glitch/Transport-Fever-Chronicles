@@ -2,6 +2,11 @@
 
 Übergaben und Reviews, neueste oben. Kopf: `## JJJJ-MM-TT · Wer · Thema`. Nur ergänzen; Fehler in älteren Einträgen mit einem neuen Eintrag richtigstellen.
 
+## 2026-10-28 · Claude · Erlental: Kapitel IV hochgeladen
+
+- Auf Wunsch des Spielers hochgeladen: Kapitel IV mit Faktenblatt 1902 in `85d7b8b`, die Erlental-Messdaten in `7aeafaf` (Monitorstand Spiel 20.5.1903, +550 Messungen, zwei neue Abschnitte).
+- Die Messdaten reichen über den Stichtag von Kapitel IV (31.12.1902) hinaus. Kapitel V folgt nach dem Jahreswechsel 1903/1904 im Spiel.
+
 ## 2026-10-28 · Claude · Erlental: Kapitel IV „Das Öl von Selters“
 
 - Auftrag des Spielers: das nächste Kapitel, sobald 1902 im Spiel abgeschlossen ist. Hochladen nach seiner Freigabe.
