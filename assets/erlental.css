@@ -183,6 +183,7 @@ html{scroll-behavior:smooth}
 .et-chapter-no{display:block;margin-bottom:4px;font-variant-caps:all-small-caps;font-size:18px;letter-spacing:.24em;font-weight:600;color:var(--et-siegel)}
 .et-main .et-chapter-head h3{font-family:var(--et-titel);font-weight:700;font-size:clamp(38px,4.4vw,52px);line-height:1.05;margin:0 0 8px}
 .et-main .et-chapter-period{margin:0;font-style:italic;font-size:17px;color:var(--et-muted);font-variant-numeric:lining-nums}
+.et-main .et-chapter-map{margin:2px 0 0;font-size:15px;color:var(--et-muted);font-variant-numeric:lining-nums}
 
 /* Kapitelnavigation */
 .et-chapnav{display:flex;gap:4px;margin:22px 0 6px;padding:6px;background:var(--et-paper-2);border:1px solid var(--et-line);border-top:var(--et-rule);overflow-x:auto;scrollbar-width:none}
