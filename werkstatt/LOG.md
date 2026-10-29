@@ -2,6 +2,12 @@
 
 Übergaben und Reviews, neueste oben. Kopf: `## JJJJ-MM-TT · Wer · Thema`. Nur ergänzen; Fehler in älteren Einträgen mit einem neuen Eintrag richtigstellen.
 
+## 2026-10-29 · Claude · Erlental: 3D-Karte nachgebacken (Korrektur)
+
+- Gefunden hat es die Sitzung zur Monitor-Mod: Den Bauskripten fehlten Baumgruppen, die das Spiel erst beim Bauen vergibt (`random_*_airport` für Höfe, Ställe, Brauerei, Sägewerk und Fabriken, `random_*_forestry` für die Forstfelder). Auf der Karte standen deshalb Platzhalterwürfel, und die Forstbetriebe waren kahl. `tf3_bauten.py` bildet die Gruppen jetzt nach.
+- Neu gebacken habe ich nur die Blöcke um die Platzhalter und die Forstbetriebe: 35 Abschnitte für IV, 10 für III, 7 für II, 1 für I. Ältere Stände übernehmen die korrigierten Kacheln von IV. Danach bleibt kein Platzhalter übrig, und der Backlauf warnt künftig je Abschnitt.
+- Chronik: Eintrag unter „Korrekturen“ (29.10.2026). Auf Wunsch des Spielers hochgeladen in `64e2cd9`.
+
 ## 2026-10-29 · Claude · Erlental: 3D-Karte eingebunden
 
 - Auftrag und Freigabe des Spielers: Schritt 5 des Kartenbriefings (`E:\KI-Projekte\Erlental-Karte\BRIEFING.md`), die 3D-Karte in die Chronik einbinden und hochladen.
