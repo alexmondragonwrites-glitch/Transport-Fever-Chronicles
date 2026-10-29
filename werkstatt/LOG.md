@@ -2,6 +2,20 @@
 
 Übergaben und Reviews, neueste oben. Kopf: `## JJJJ-MM-TT · Wer · Thema`. Nur ergänzen; Fehler in älteren Einträgen mit einem neuen Eintrag richtigstellen.
 
+## 2026-10-29 · Claude · Erlental: 3D-Karte eingebunden
+
+- Auftrag und Freigabe des Spielers: Schritt 5 des Kartenbriefings (`E:\KI-Projekte\Erlental-Karte\BRIEFING.md`), die 3D-Karte in die Chronik einbinden und hochladen.
+- `saves/erlental/karte/` ist die gebaute Seite (Vite, React, three.js) mit je Kapitel einem Kartenstand: I → 2.9.1900, II → 1.1.1901, III → 1.1.1902, IV → 1.1.1903. Dazu Tag und Nacht, Städte, Stationen und Betriebe mit Ortskarte und die Linien je Stichtag. Verweise aus der Chronik: `karte/#kapitel-N`.
+- Die Kacheln sind in Blender gerenderte Bilder; Spielmodelle und Texturen blieben lokal. Gleiche Kacheln liegen nur einmal beim neuesten Stand (`herkunft` in `kacheln.json`). Zusammen 6 703 Dateien, 136,6 MB.
+- Chronik:
+  - unter V „Orte und Landschaft“ die Figur `#karte` mit Vorschaubild `images/erlental-karte-1903.jpg`;
+  - im Kopf jedes Kapitels die Zeile `p.et-chapter-map` (Stil in `assets/erlental.css`);
+  - Quelle Q7 mit Belegt und Abgeleitet.
+- Abgeleitet sind: Verlauf der Linien (kürzester Weg, gestrichelt), Lage der Bäume im Feld, Wald in allen Kapiteln vom 1.1.1903; in Kapitel I die Bauparameter unveränderter Bauten vom 1.1.1901.
+- Geprüft: `validate-data`, `validate-monitor`, `validate-journal`, die Tests und `build-decade --check`; Chronik und Karte bei 1280 und 375 px, auch im Dunkelmodus; die Karte aus dem Chronik-Ordner ohne fehlende Kacheln.
+- Nächstes Kapitel: `docs/ERLENTAL.md`, „Kapitel anlegen“, Punkt 6.
+- Auf Wunsch des Spielers hochgeladen in `6f66daa`.
+
 ## 2026-10-28 · Claude · Erlental: Kapitel IV hochgeladen
 
 - Auf Wunsch des Spielers hochgeladen: Kapitel IV mit Faktenblatt 1902 in `85d7b8b`, die Erlental-Messdaten in `7aeafaf` (Monitorstand Spiel 20.5.1903, +550 Messungen, zwei neue Abschnitte).
