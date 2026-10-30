@@ -25,7 +25,7 @@ Zuletzt nachgezogen: 30.10.2026, Claude. Regeln und Aufbau: `docs/ERLENTAL.md`.
 - Kartenstände für Kapitel V und VI fehlen noch: Die Kapitelköpfe tragen deshalb keine Zeile `p.et-chapter-map`. Kartenexporte vom Jahreswechsel liegen vor (`1793201502-1811.json`, Spieltag 2.1.1904; `1793287674-2167.json`, 1.1.1905). Backen erst nach Freigabe des Spielers und bei geschlossenem TF3, siehe `docs/ERLENTAL.md`, „Kapitel anlegen“, Punkt 6.
 - Kartenstand für Kapitel VII ebenso offen (Export vom Jahreswechsel 1905/1906 nachsehen).
 - Register `saves/erlental/data/events.json`: 89 Einträge, letzter `stand-1905-12-31`.
-- **Nächste freie Quelle: Q8.** Vergeben: Q1 Einstellungsseite (Screenshot), Q2 Angaben des Spielers vom 27.10.2026 (Name Erlental, weitergeführte Datei, Mods gewollt), Q3 Spielprotokoll vom 27.10.2026, Q4 Spielmonitor (Messungen ab 1.1.1900), Q5 Gründungspaket vom 27.10.2026 (Name und Sitz der EWV, Gründungsbild, Gründungsgeschichte), Q6 Postkarte des Spielers vom 28.10.2026 (KI-Bild, Vorlage offen), Q7 3D-Karte (`saves/erlental/karte/`, am 29.10.2026 aus den Kartenexporten vom 2.9.1900 bis 1.1.1903 in Blender gebacken).
+- **Nächste freie Quelle: Q9.** Vergeben: Q1 Einstellungsseite (Screenshot), Q2 Angaben des Spielers vom 27.10.2026 (Name Erlental, weitergeführte Datei, Mods gewollt), Q3 Spielprotokoll vom 27.10.2026, Q4 Spielmonitor (Messungen ab 1.1.1900), Q5 Gründungspaket vom 27.10.2026 (Name und Sitz der EWV, Gründungsbild, Gründungsgeschichte), Q6 Postkarte des Spielers vom 28.10.2026 (KI-Bild, Vorlage offen), Q8 Bildmappe „Ansichten aus Erlental · 1905“ (`saves/erlental/ansichten-1905.html`, am 30.10.2026 auf GitHub angelegt, KI-Bilder, Vorlagen offen), Q7 3D-Karte (`saves/erlental/karte/`, am 29.10.2026 aus den Kartenexporten vom 2.9.1900 bis 1.1.1903 in Blender gebacken).
 
 ## Übergabe von Codex (27.10.2026)
 
@@ -113,4 +113,6 @@ Figuren (erfunden, nur in Szenen):
 | `saves/erlental/images/arenswiel-gruendung-1900-ausschnitt.jpg` | Titelblatt, Portal | Ausschnitt aus dem Gründungsbild (Arenswiel, Haus Weitblick) |
 | `saves/erlental/images/wide_cinematic_vintage_sepia_postcard_like_scene_1.png` | III (Original, verlinkt) | KI-Bild, Ansichtskarte in Sepia, vom Spieler am 28.10.2026 hochgeladen (`f93f1ec`); Vorlage offen (Q6) |
 | `saves/erlental/images/arenswiel-postkarte-web.jpg` | III, Tafel II | Web-Fassung derselben Postkarte (JPEG, 1448 × 1086) |
+| `saves/erlental/images/arenswiel-1905.jpg`, `wengenrode-1905.jpg`, `ditzingen-1905.jpg`, `silberweide-1905.jpg` | Bildmappe 1905 (`ansichten-1905.html`) | KI-Bilder im Stil handkolorierter Ansichtskarten, am 30.10.2026 über GitHub hochgeladen (`d86ea59`, 1448 × 1086); Seite und Texte am selben Tag auf GitHub angelegt (`e7d948d`, `ca0c7fb`, `9e45f35`); Vorlagen offen (Q8) |
+| `saves/erlental/images/ansichten-1905-<ort>-klein.jpg` | V (Abschnitt „Bildtafeln“, `#bildtafeln`) | Vorschaubilder derselben vier Bilder, 480 × 360, je rund 55 KB |
 | `saves/erlental/images/erlental-karte-1903.jpg` | V (Orte und Landschaft) | Bildschirmfoto der 3D-Karte, Kartenstand 1.1.1903 (JPEG, 1600 × 760), gebacken aus dem Kartenexport (Q7); kein KI-Bild |

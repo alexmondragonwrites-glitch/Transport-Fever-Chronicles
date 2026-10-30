@@ -100,6 +100,7 @@ html{scroll-behavior:smooth}
 .et-toc-titel{margin:0 0 8px;font-family:var(--et-titel);font-weight:700;font-size:22px;letter-spacing:.14em;text-transform:uppercase;color:var(--et-ink);border-bottom:var(--et-rule);padding-bottom:6px}
 .et-toc a{font-size:16.5px;line-height:1.35;text-decoration:none;color:var(--et-muted);padding:6px 0;border-bottom:1px dotted var(--et-line-strong)}
 .et-toc a:hover{color:var(--et-siegel)}
+.et-toc a.et-toc-sub{padding-left:16px;font-size:15.5px;font-style:italic}
 .et-main{max-width:760px;min-width:0}
 .et-main>section{scroll-margin-top:86px;padding:4px 0 44px;margin-bottom:34px}
 .et-main>section:not(:last-child)::after{content:"\2766";display:block;margin-top:40px;text-align:center;font-size:24px;color:var(--et-bronze)}
@@ -267,6 +268,11 @@ a.et-year:hover{border-color:var(--et-siegel)}
 .et-founding img{display:block;width:100%;height:auto;border:1px solid var(--et-line)}
 .et-founding figcaption{margin:14px 8px 4px;font-style:italic;font-size:15.5px;line-height:1.55;color:var(--et-muted);text-align:center}
 .et-founding figcaption strong{font-style:normal;font-variant-caps:all-small-caps;letter-spacing:.08em;font-weight:600;color:var(--et-ink)}
+#bildtafeln{scroll-margin-top:150px}
+.et-tafeln-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:0;padding:0;list-style:none}
+.et-tafeln-grid a{display:block;text-decoration:none;color:var(--et-ink)}
+.et-tafeln-grid a:hover span{color:var(--et-siegel)}
+.et-tafeln-grid span{display:block;margin-top:7px;text-align:center;font-variant-caps:all-small-caps;letter-spacing:.1em;font-size:17px}
 .et-tafel{display:block;margin:-2px 0 12px;text-align:center;font-variant-caps:all-small-caps;font-size:16px;letter-spacing:.2em;font-weight:600;color:var(--et-bronze-dark)}
 .et-map{max-width:660px;margin-left:auto;margin-right:auto}
 .et-details{margin:14px 0 18px;border:1px solid var(--et-line);background:var(--et-paper-2);padding:10px 14px}
@@ -325,5 +331,6 @@ a.et-year:hover{border-color:var(--et-siegel)}
   .et-stat-value{font-size:25px}
   .et-table tbody th{width:auto}
   .et-founding{padding:12px 12px 8px}
+  .et-tafeln-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
   .et-foot-inner{display:block}
 }

@@ -10,6 +10,13 @@
 - Kapitel VII hat noch keinen Kartenstand: Der Export vom 1.1.1906 ist abgebrochen (`Spielmonitor/history/karte/…/1793338126-2579.teile.jsonl`).
 - Auf Wunsch des Spielers hochgeladen in `4e9e426`.
 
+## 2026-10-30 · Claude · Erlental: Bildmappe 1905 in der Chronik auffindbar
+
+- Wunsch des Spielers: die Bildmappe `saves/erlental/ansichten-1905.html` (am 30.10.2026 auf GitHub angelegt, `e7d948d` bis `9e45f35`) auf der Website auffindbar machen. Bisher führte nur die Zeile im Kopf von Kapitel VII dorthin.
+- Chronik: „Bildtafeln“ in der Kopfleiste und als Unterpunkt von V im Inhalt; unter V der Abschnitt `#bildtafeln` mit vier Vorschaubildern (`images/ansichten-1905-<ort>-klein.jpg`, 480 × 360, Originale unverändert), die auf die Tafeln der Bildmappe verlinken; Quelle Q8. Stil `.et-tafeln-grid` in `assets/erlental.css` (vier Spalten, auf dem Telefon zwei), Version des Stylesheets erhöht.
+- Weitere Jahrgänge: je Bildmappe eine Figur unter `#bildtafeln`.
+- Geprüft: `validate-data.mjs`, Browser 1280 und 375 px ohne Überlauf und ohne Konsolenfehler, Sprung aus der Kopfleiste unter die feste Leiste.
+
 ## 2026-10-30 · Claude · Erlental: Kapitel VII hochgeladen
 
 - Auf Wunsch des Spielers hochgeladen: Kapitel VII mit Faktenblatt 1905 in `f8e9d32`. Die Messdaten bis Spiel 4.1.1906 waren schon mit `e7b6121` online; seitdem kam keine Messung dazu.
