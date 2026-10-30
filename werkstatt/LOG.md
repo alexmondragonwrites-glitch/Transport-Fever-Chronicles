@@ -2,6 +2,11 @@
 
 Übergaben und Reviews, neueste oben. Kopf: `## JJJJ-MM-TT · Wer · Thema`. Nur ergänzen; Fehler in älteren Einträgen mit einem neuen Eintrag richtigstellen.
 
+## 2026-10-30 · Claude · Erlental: Kapitel VII hochgeladen
+
+- Auf Wunsch des Spielers hochgeladen: Kapitel VII mit Faktenblatt 1905 in `f8e9d32`. Die Messdaten bis Spiel 4.1.1906 waren schon mit `e7b6121` online; seitdem kam keine Messung dazu.
+- Die Kartenzeilen für Kapitel V und VI, die die Kartensitzung schon in `saves/erlental/chronik.html` eingetragen hat, sind bewusst nicht in diesem Commit: Ihre Kartenstände backen noch. Sie kommen mit den Kartenständen hoch.
+
 ## 2026-10-30 · Claude · Erlental: Kapitel VII „Dampf auf der Straße“
 
 - Auftrag des Spielers: 1905 ist abgeschlossen, nach dem Hochladen von V und VI schreiben. Hochladen nach seiner Freigabe.
