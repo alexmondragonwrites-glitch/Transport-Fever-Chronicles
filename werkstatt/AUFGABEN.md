@@ -10,6 +10,8 @@ Format: `- [Welt] Aufgabe · Dateien · Wer · seit/erledigt am`. Wer etwas anf�
 
 ## Zur Prüfung
 
+- [Erlental] Kapitel V „Treibstoff für Itzehoe“ (1903) und VI „Umsteigen“ (1904), je drei Szenen in neuen Formen (Lied, Predigt, Bauakte; Beschwerdebuch, Grundsteinurkunde, Reisehandbuch), 24 neue Registereinträge, Jahresbilanzen 1903 und 1904, Orte (neu: Walldorf, Munderkingen), Unternehmen, offene Fragen, Q4; Korrektur der Entfernung Ditzingen Station Nord–Leipheim in Kapitel IV mit Vermerk im Register; Szenenform `et-scene--lied`; `fakten/1903.md`, `fakten/1904.md` · `saves/erlental/chronik.html`, `saves/erlental/data/events.json`, `saves/erlental/data/meta.json`, `assets/erlental.css`, `docs/ERLENTAL.md` · Claude, 30.10.2026 · Hochladen nach Freigabe des Spielers · Bitte gegen `werkstatt/erlental/fakten/1903.md` und `1904.md` prüfen.
+
 - [Erlental] Kapitel IV „Das Öl von Selters“ (1.1. bis 31.12.1902), drei Szenen (Frachtbrief, Lehrvertrag, Kirchenbuch), 13 neue Registereinträge, Jahresbilanz 1902, Orte (neu: Selters Ölplattform, Leuna, Ditzingen, Leipheim), Unternehmen, offene Fragen; `fakten/1902.md` · `saves/erlental/chronik.html`, `saves/erlental/data/events.json`, `saves/erlental/data/meta.json` · Claude, 28.10.2026 · `85d7b8b`, Messdaten bis Spiel 20.5.1903 in `7aeafaf`, auf Wunsch des Spielers hochgeladen · Bitte gegen `werkstatt/erlental/fakten/1902.md` prüfen.
 
 - [Erlental] Kapitel III „Fahrgäste“ (1.1. bis 31.12.1901) mit der Postkarte des Spielers als Tafel II (Web-Fassung `images/arenswiel-postkarte-web.jpg`, Original unverändert, Q6), drei Szenen (Zuteilungsliste des Hafenmeisters, Zeugnis für August Ebert, Reportage vom ersten Personenzug), 13 neue Registereinträge, Jahresbilanz 1901, Orte (neu: Ahaus, Burladingen), Unternehmen, offene Fragen, erster Eintrag unter „Korrekturen“ (Finanztabelle des 4. Quartals 1900). Dazu `fakten/1901.md` und im Faktenblatt-Skript die Summe nur über die Quartale des Jahres (Test mit 7 Fällen) · `saves/erlental/chronik.html`, `saves/erlental/data/events.json`, `saves/erlental/data/meta.json`, `saves/erlental/images/arenswiel-postkarte-web.jpg`, `scripts/erlental-fakten.py`, `scripts/test-erlental-fakten.py` · Claude, 28.10.2026 · `6390fb8`, Messdaten bis Spiel 29.1.1902 in `d75020f`, auf Wunsch des Spielers hochgeladen · Bitte gegen `werkstatt/erlental/fakten/1901.md` prüfen.
@@ -26,7 +28,8 @@ Format: `- [Welt] Aufgabe · Dateien · Wer · seit/erledigt am`. Wer etwas anf�
 
 - [Archipel] Prüfen, ob Journal und Auswertungen Werte „pro Jahr“ als Kalenderjahr ausgeben. Das Archipel läuft ebenfalls mit rund 16.000 Spielzeit-Einheiten je Tag.
 - [Spielmonitor] Kalendertempo (Millisekunden je Tag) mit messen. `balance_start_game_date` und `balance_end_game_date` kommen seit Mod-Revision 22 als Datum.
-- [Erlental] Kapitel V nach dem Jahreswechsel 1903/1904 im Spiel; der Spieler lässt Kapitel jahresweise schreiben (Wunsch vom 28.10.2026). Vorher `py -3 scripts/erlental-fakten.py 1903`. Offen: die Vorlage der Postkarte (Q6) beim Spieler erfragen · Claude
+- [Erlental] Kapitel VII (1905) nach dem Jahreswechsel 1905/1906 im Spiel; der Spieler lässt Kapitel jahresweise schreiben (Wunsch vom 28.10.2026). Vorher `py -3 scripts/erlental-fakten.py 1905`. Offen: die Vorlage der Postkarte (Q6) beim Spieler erfragen · Claude
+- [Erlental] Kartenstände für Kapitel V und VI (Exporte vom 2.1.1904 und 1.1.1905) in `Erlental-Karte/zeitleiste.json` eintragen und backen, danach die Kartenzeile in beide Kapitelköpfe und Q7 erweitern; nur nach Freigabe des Spielers und bei geschlossenem TF3 · Claude
 
 ## Erledigt
 

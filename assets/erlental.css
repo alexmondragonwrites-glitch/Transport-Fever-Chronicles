@@ -160,6 +160,10 @@ html{scroll-behavior:smooth}
 .et-main .et-scene--karte p:not(.et-block-label):not(.et-scene-note){text-align:center;text-indent:0}
 .et-main .et-scene--karte p+p{margin-top:.35em}
 .et-main .et-scene--karte .et-karte-zeit{margin-top:1.1em;font-variant-caps:all-small-caps;letter-spacing:.14em;color:var(--et-muted)}
+.et-main .et-scene--lied h3+p::first-letter{float:none;margin:0;padding:0;font:inherit;line-height:inherit;color:inherit;border:0;background:none}
+.et-main .et-scene--lied p:not(.et-block-label):not(.et-scene-note):not(.et-randnotiz):not(.et-kehrreim){margin-left:2em;text-align:left;text-indent:0}
+.et-main .et-scene--lied p+p{margin-top:.9em}
+.et-main .et-scene--lied p.et-kehrreim{margin-top:.45em;margin-left:3.5em;text-align:left;text-indent:0;font-style:italic;color:var(--et-muted)}
 .et-scene .et-block-label{margin-bottom:10px}
 .et-note{margin:28px 0 8px;padding:14px 18px;border:1px dashed var(--et-line-strong);background:var(--et-paper-2)}
 .et-main .et-note h4{margin:0 0 6px}
@@ -308,6 +312,8 @@ a.et-year:hover{border-color:var(--et-siegel)}
   .et-main p{font-size:18px}
   .et-scene{padding:26px 18px 10px}
   .et-main .et-scene p{text-align:left}
+  .et-main .et-scene--lied p:not(.et-block-label):not(.et-scene-note):not(.et-randnotiz):not(.et-kehrreim){margin-left:.4em}
+  .et-main .et-scene--lied p.et-kehrreim{margin-left:1.4em}
   .et-block--belegt{padding:14px 16px 4px}
   .et-block--abgeleitet{padding-left:16px}
   .et-years{top:55px;padding:6px 8px;gap:6px 8px}

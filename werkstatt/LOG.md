@@ -2,6 +2,18 @@
 
 Übergaben und Reviews, neueste oben. Kopf: `## JJJJ-MM-TT · Wer · Thema`. Nur ergänzen; Fehler in älteren Einträgen mit einem neuen Eintrag richtigstellen.
 
+## 2026-10-30 · Claude · Erlental: Kapitel V „Treibstoff für Itzehoe“ und VI „Umsteigen“
+
+- Auftrag des Spielers: Stoff für zwei neue Kapitel, das Spiel steht bei Juli 1905. Hochladen nach seiner Freigabe.
+- Faktenblätter `werkstatt/erlental/fakten/1903.md` (58 Detailmessungen, ein Rücksprung nach Neuladen mit 24 verworfenen Messungen) und `1904.md` (62 Detailmessungen).
+- Kapitel V (1903): Treibstoff erreicht Itzehoe (erste Versorgung 15.5.), Gemüse Leipheim (6.4.), der Leuna Bauernhof steigt mit Dünger von Stufe 5 auf 10, Wengenrode wird am 16.6. die zweitgrößte Stadt, Kredit plus 19 Mio. im Juli und 12,5 Mio. zurück nach den Zuschüssen im September, Postkutschen in Leuna und Leipheim, Fuhrwerke nach Walldorf, dritter Öldampfer, Arenswiel verlangt Werkzeuge. Die drei Züge, die Ende 1902 im Minus lagen, liegen Ende 1903 im Plus. Arenswiels Ziegel fallen von 35 auf 2 von 112, Ursache offen.
+- Kapitel VI (1904): Die ersten Postkutschenlinien von 1900 enden am 19.1.; ab 4.5. fahren die Postkutschen in Arenswiel ab der Station Umstieg am Bahnhof Ober-Arenswiel. Postkutschen um Itzehoe, Gemüse für Ditzingen, Treibstoff für Walldorf, Öl von der Leipheim Ölplattform ab 1.9. (Treibstoff für Leipheim ab 8.11.), Konservenkette um Munderkingen ohne Linie, neue Lehmgrube bei Arenswiel, Erlental über 11.000 Einwohner. Ergebnis −6,56 Mio.
+- Szenen in sechs neuen Formen, keine davon in der Falkenmark genutzt: Lied (neue Darstellung `et-scene--lied` mit `p.et-kehrreim`), Predigt, Bauakte, Beschwerdebuch, Grundsteinurkunde, Reisehandbuch. Figuren in `erlental/STAND.md`.
+- Korrektur: Kapitel IV nannte für die Fuhrwerke Ditzingen Station Nord–Leipheim 3,9 km, die Luftlinie zwischen den Ortsmitten. Richtig sind 2,0 km. Text berichtigt, Eintrag unter „Korrekturen“, Registereintrag mit `correction`.
+- Kartenstände für V und VI fehlen noch; die Kapitelköpfe tragen deshalb keine Kartenzeile. Backen nach Freigabe des Spielers (Exporte vom 2.1.1904 und 1.1.1905 liegen vor).
+- Geprüft: `validate-data.mjs`, `validate-monitor.mjs`, `test-erlental-fakten.py`, Verneinungs- und KI-Wort-grep über alle neuen Zeilen, Browser 1280 und 375 px ohne Überlauf und ohne Konsolenfehler, Register mit 76 Einträgen und Korrekturvermerk.
+- An Codex: Bitte Kapitel V und VI gegen `werkstatt/erlental/fakten/1903.md` und `1904.md` prüfen.
+
 ## 2026-10-29 · Claude · Erlental: 3D-Karte nachgebacken (Korrektur)
 
 - Gefunden hat es die Sitzung zur Monitor-Mod: Den Bauskripten fehlten Baumgruppen, die das Spiel erst beim Bauen vergibt (`random_*_airport` für Höfe, Ställe, Brauerei, Sägewerk und Fabriken, `random_*_forestry` für die Forstfelder). Auf der Karte standen deshalb Platzhalterwürfel, und die Forstbetriebe waren kahl. `tf3_bauten.py` bildet die Gruppen jetzt nach.

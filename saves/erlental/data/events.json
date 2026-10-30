@@ -766,7 +766,11 @@
       ],
       "source": "Spielmonitor, Welt „Erlental – 1900“",
       "recorded": "2026-10-28",
-      "recorded_note": "Aufgenommen zwischen 13:23 und 13:28 Uhr."
+      "recorded_note": "Aufgenommen zwischen 13:23 und 13:28 Uhr.",
+      "correction": {
+        "date": "2026-10-30",
+        "note": "3,9 km ist die Luftlinie zwischen den Ortsmitten von Ditzingen und Leipheim. Von der Ditzingen Station Nord zur Leipheim Station, zwischen denen die Fuhrwerke fahren, sind es 2,0 km."
+      }
     },
     {
       "id": "konto-minus-1902-11-25",
@@ -830,6 +834,387 @@
       "source": "Spielmonitor, Welt „Erlental – 1900“",
       "recorded": "2026-10-28",
       "recorded_note": "Letzte Messung des Jahres um 13:33 Uhr; Versorgung und Finanztabelle aus der Messung vom 24.12.1902."
+    },
+    {
+      "id": "treibstoff-itzehoe-1903-05-15",
+      "date": "1903-05-15",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Versorgung",
+      "title": "Itzehoe zum ersten Mal mit Treibstoff versorgt",
+      "description": "Versorgung 6 von 78. Der Kesselwagenzug von der Arenswiel Station West nach Unter-Itzehoe lädt Treibstoff zum ersten Mal am 11. Januar, die Fuhrwerke von der Itzehoe Station Transfer zur Ober-Itzehoe Station, 1,7 km, am 11. April. Ab dem 24. Juli sieben statt vier Fuhrwerke. Am 25. Dezember steht die Versorgung bei 47 von 91.",
+      "entities": [
+        "itzehoe",
+        "ewv"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-28",
+      "recorded_note": "Aufgenommen um 13:48 Uhr."
+    },
+    {
+      "id": "gemuese-leipheim-1903-04-06",
+      "date": "1903-04-06",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Versorgung",
+      "title": "Leipheim zum ersten Mal mit Gemüse versorgt",
+      "description": "Versorgung 2 von 51. Das Gemüse kommt vom Leuna Bauernhof mit dem Zug nach Ditzingen und mit Fuhrwerken von der Ditzingen Station Nord zur Leipheim Station, 2,0 km; diese laden Gemüse zum ersten Mal am 7. März. Dünger aus der Raffinerie fährt ab dem 26. Januar im Zug nach Leuna und ab dem 20. Februar zum Leuna Bauernhof, der zwischen dem 5. Februar und dem 6. August von Stufe 5 auf 10 steigt. Am 25. Dezember steht Leipheim bei 52 von 101.",
+      "entities": [
+        "leipheim",
+        "leuna",
+        "ditzingen",
+        "ewv"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-28",
+      "recorded_note": "Aufgenommen um 13:45 Uhr."
+    },
+    {
+      "id": "wengenrode-zweite-stadt-1903-06-16",
+      "date": "1903-06-16",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Ort",
+      "title": "Wengenrode ist die zweitgrößte Stadt",
+      "description": "Wengenrode zählt seit dem 3. Juni über 400 Einwohner und in dieser Messung mehr als Ahaus (409). Am 3. Juni zählt Erlental zusammen über 10.500 Einwohner. Am 25. Dezember hat Wengenrode 465 Einwohner.",
+      "entities": [
+        "wengenrode"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-28",
+      "recorded_note": "Aufgenommen um 13:51 Uhr."
+    },
+    {
+      "id": "kredit-1903-07-18",
+      "date": "1903-07-18",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Finanzen",
+      "title": "Kredit 19 Millionen höher, das Konto wieder im Plus",
+      "description": "Am 18. Juli steht das Konto bei 12,41 Millionen, zum ersten Mal seit dem 25. November 1902 im Plus; Ende Juni stand es bei −7,65 Millionen. Am 19. Juli liegt der Kredit bei 68,92 Millionen, 19 Millionen über der Messung davor. Die Finanztabelle verbucht am 18. Juli 1,35 Millionen Zuschüsse für das dritte Quartal.",
+      "entities": [
+        "ewv"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-28",
+      "recorded_note": "Aufgenommen um 13:54 und 13:55 Uhr."
+    },
+    {
+      "id": "postkutschen-leuna-1903-07-18",
+      "date": "1903-07-18",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Verkehr",
+      "title": "Postkutschen in Leuna",
+      "description": "Drei Postkutschen fahren vom Leuna Bauernhof zum Lerchenweg nahe der Ortsmitte, 1,8 km; Fahrgäste ab dem 16. August. Ab dem 26. August fährt ein Fuhrwerk von der Leuna Station Ost zur Leuna Lehmgrube, 2,7 km; es lädt Lehm zum ersten Mal am 27. Oktober.",
+      "entities": [
+        "leuna",
+        "ewv"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-28",
+      "recorded_note": "Grundmessung, aufgenommen um 13:55 Uhr."
+    },
+    {
+      "id": "arenswiel-600-1903-08-08",
+      "date": "1903-08-08",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Ort",
+      "title": "Arenswiel über 600 Einwohner",
+      "description": "Arenswiel zählt zum ersten Mal über 600 Einwohner; am 25. Dezember sind es 639.",
+      "entities": [
+        "arenswiel"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-28",
+      "recorded_note": "Aufgenommen um 14:04 Uhr."
+    },
+    {
+      "id": "zuschuss-tilgung-1903-09-22",
+      "date": "1903-09-22",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Finanzen",
+      "title": "Zuschüsse, 12,5 Millionen Kredit zurückgezahlt",
+      "description": "Die Finanztabelle verbucht weitere 8,75 Millionen Zuschüsse für das dritte Quartal, zusammen 10,10 Millionen. Der Kredit sinkt von 66,63 auf 54,13 Millionen.",
+      "entities": [
+        "ewv"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-28",
+      "recorded_note": "Aufgenommen um 14:09 Uhr."
+    },
+    {
+      "id": "postkutschen-leipheim-1903-09-26",
+      "date": "1903-09-26",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Verkehr",
+      "title": "Postkutschen in Leipheim",
+      "description": "Zwei Postkutschenlinien fahren in Gegenrichtung zwischen Busbahnhof, Südwest und Nordwest, je zwei Kutschen; Fahrgäste ab dem 3. Oktober. Leipheim schwankt bis September zwischen 134 und 138 Einwohnern und wächst bis zum 25. Dezember auf 167.",
+      "entities": [
+        "leipheim",
+        "ewv"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-28",
+      "recorded_note": "Aufgenommen um 14:10 Uhr."
+    },
+    {
+      "id": "walldorf-1903-10-29",
+      "date": "1903-10-29",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Verkehr",
+      "title": "Fuhrwerke von Itzehoe nach Walldorf",
+      "description": "Fuhrwerke fahren zwischen der Itzehoe Station Transfer und der Walldorf Station, 1,9 km, ab dem 30. Oktober vier. Walldorf liegt 3,1 km von Itzehoe und verlangt Treibstoff (56); am 25. Dezember steht die Versorgung bei 0.",
+      "entities": [
+        "itzehoe",
+        "ewv"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-28",
+      "recorded_note": "Grundmessung, aufgenommen um 16:15 Uhr."
+    },
+    {
+      "id": "dunara-castle-drei-1903-11-06",
+      "date": "1903-11-06",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Verkehr",
+      "title": "Dritter Öldampfer „Dunara Castle“",
+      "description": "Zwischen Leuna Hafen, Arenswiel Hafen West und der Selters Ölplattform fahren jetzt drei Dampfer „Dunara Castle“.",
+      "entities": [
+        "ewv",
+        "leuna",
+        "arenswiel"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-28",
+      "recorded_note": "Grundmessung, aufgenommen um 16:17 Uhr."
+    },
+    {
+      "id": "werkzeuge-arenswiel-1903-12-18",
+      "date": "1903-12-18",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Versorgung",
+      "title": "Arenswiel verlangt Werkzeuge",
+      "description": "Arenswiel verlangt zum ersten Mal Werkzeuge (56). Am selben Tag misst der Monitor eine Werkzeugfabrik bei Ramstein-Miesenbach, 34,6 km von Arenswiel; sie verarbeitet Bretter und Kunststoff.",
+      "entities": [
+        "arenswiel"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-28",
+      "recorded_note": "Aufgenommen um 16:28 und 16:29 Uhr."
+    },
+    {
+      "id": "betriebe-1903",
+      "date": "1903",
+      "precision": "year",
+      "game_time_label": "Januar bis Dezember 1903",
+      "kind": "fakt",
+      "category": "Betrieb",
+      "title": "Neun neue Betriebe, fünf verschwunden",
+      "description": "Erstmals gemessen: Eschborn Bauernhof #1 (4.1.), Riesa Bauernhof (20.2.), Aalen Fischzucht (6.4.), Fröndenberg Ölplattform (20.5., 4,7 km von Arenswiel), Weinheim Bauernhof (6.7.), Gütersloh Viehzuchtbetrieb (21.8.), Wolgast Viehzuchtbetrieb (4.10.), Ahaus Ölplattform (19.11.), Ramstein-Miesenbach Werkzeugfabrik (18.12.). Zuletzt gemessen: Rinteln Fischzucht (17.1.), Dahlen Viehzuchtbetrieb (10.3.), Garding Bauernhof (31.3.), Weinheim Viehzuchtbetrieb (4.5.), die alte Ahaus Ölplattform (30.7.). Die Leuna Lehmgrube verschickt am 30.10. zum ersten Mal. Am Jahresende 87 Betriebe.",
+      "entities": [
+        "erlental"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-28",
+      "recorded_note": "Erste Messungen zwischen 13:34 und 16:29 Uhr."
+    },
+    {
+      "id": "stand-1903-12-30",
+      "date": "1903-12-30",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Messung",
+      "title": "Jahresende 1903: 39 Linien, 176 Fahrzeuge, 10.683 Einwohner",
+      "description": "Fahrzeuge: 114 Pferdefuhrwerke, 45 Postkutschen, 7 Züge, 4 Dampfer „Sydfart“, 3 „Waimarie“, 3 „Dunara Castle“. Linienbilanzen im Wirtschaftsjahr vom 25.9. bis 25.12.1903 zusammen 8.984.354, am höchsten der Güterzug Arenswiel–Wengenrode (1.438.353), der Personenzug (912.036) und die Kesselwagenzüge Leuna–Ditzingen (814.403), am tiefsten die Fuhrwerke nach Walldorf (−53.796). Versorgung am 25.12.: Arenswiel Fisch 84 von 147, Ziegel 2 von 112; Wengenrode Fisch 102 von 169; Silberweide Ziegel 73 von 188, Gemüse 45 von 146; Itzehoe Gemüse 29 von 109, Treibstoff 47 von 91; Leipheim Gemüse 52 von 101. Kredit 51,29 Millionen, Kontostand 64.798. Finanztabelle 1903 (Stand 25.12.): Ergebnis +8,73 Millionen, Einnahmen 63,70 Millionen, Unterhalt 56,20 Millionen, Bauten 4,77 Millionen, Fahrzeuge 2,72 Millionen, Zuschüsse 10,10 Millionen.",
+      "entities": [
+        "erlental",
+        "ewv"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-28",
+      "recorded_note": "Letzte Messung des Jahres um 16:31 Uhr; Versorgung und Finanztabelle aus der Messung vom 25.12.1903."
+    },
+    {
+      "id": "erste-postkutschen-ende-1904-01-19",
+      "date": "1904-01-19",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Verkehr",
+      "title": "Die ersten Postkutschenlinien fahren zum letzten Mal",
+      "description": "Der Monitor misst die beiden Postkutschenlinien in Arenswiel, die seit dem 13. Januar 1900 in Gegenrichtung fuhren, zum letzten Mal, zuletzt mit je zwei Kutschen. Ihre Halte Nordost, Mitte-Nord, Südwest und Südost 2 verschwinden am 20. Januar. Die Linie vom Busbahnhof zur Station Umstieg fährt seit dem 16. Januar mit neun Kutschen.",
+      "entities": [
+        "arenswiel",
+        "ewv"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-28",
+      "recorded_note": "Grundmessung, aufgenommen um 16:36 Uhr."
+    },
+    {
+      "id": "kredit-1904-02-01",
+      "date": "1904-02-01",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Finanzen",
+      "title": "Kredit plus 8,2 Millionen; Gemüse in Ditzingen",
+      "description": "Der Kredit steigt von 50,31 auf 58,50 Millionen. Seit dem 31. Januar fahren vier Fuhrwerke zwischen der Ditzingen Station Abstellgleis nahe der Ortsmitte und der Ditzingen Station Nord, 1,8 km; sie laden Gemüse ab dem 6. Februar. Ditzingen ist am 7. März zum ersten Mal mit Gemüse versorgt, zu 4 von 43.",
+      "entities": [
+        "ewv",
+        "ditzingen"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-28",
+      "recorded_note": "Aufgenommen um 16:39 Uhr."
+    },
+    {
+      "id": "itzehoe-postkutschen-1904-02-11",
+      "date": "1904-02-11",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Verkehr",
+      "title": "Postkutschen um Itzehoe, zweiter Treibstoffzug",
+      "description": "Zwei Postkutschenlinien fahren in Gegenrichtung um Itzehoe, über Nord, West, den Busbahnhof und Ost, je zwei Kutschen. Ab dem 13. Februar fährt ein zweiter Kesselwagenzug von der Arenswiel Station West nach Unter-Itzehoe. Walldorf ist am 14. Februar zum ersten Mal mit Treibstoff versorgt, zu 4 von 56.",
+      "entities": [
+        "itzehoe",
+        "ewv"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-29",
+      "recorded_note": "Grundmessung, aufgenommen um 05:42 Uhr."
+    },
+    {
+      "id": "konserven-1904-02-18",
+      "date": "1904-02-18",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Betrieb",
+      "title": "Konservenfabrik bei Munderkingen",
+      "description": "Zehn Tage nachdem Itzehoe zum ersten Mal Konserven verlangt (55, Messung vom 8. Februar), misst der Monitor eine Konservenfabrik bei Munderkingen, 28,8 km von Itzehoe. Es folgen ein Stahlwerk bei Munderkingen (4.4.), ein Kohlebergwerk bei Garding (20.5.) und ein Eisenerzbergwerk bei Richtenberg (4.7.), höchstens 6,7 km vom Stahlwerk. Konservenfabrik und Stahlwerk stehen bis zum Jahresende still.",
+      "entities": [
+        "itzehoe"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-29",
+      "recorded_note": "Grundmessung, aufgenommen um 05:44 Uhr."
+    },
+    {
+      "id": "postkutschen-arenswiel-1904-05-04",
+      "date": "1904-05-04",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Verkehr",
+      "title": "Neue Postkutschenlinien ab der Station Umstieg",
+      "description": "Zwei Linien fahren in Gegenrichtung von der Station Umstieg am Bahnhof Ober-Arenswiel über Nordwest, den Busbahnhof, Süd und Ost, eine dritte zum Halt am Hafen #1, je drei Kutschen; ab dem 16. Mai fünf zum Hafen, auf den Ringlinien ab dem 29. Mai sieben und ab dem 11. Juli fünf. Die Linien vom Busbahnhof zur Station Umstieg (seit 29.10.1901) und zum Tulpenweg (seit 21.6.1902) werden am selben Tag zum letzten Mal gemessen. Der Kredit steigt von 55,22 auf 57,80 Millionen.",
+      "entities": [
+        "arenswiel",
+        "ewv"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-29",
+      "recorded_note": "Aufgenommen um 06:05 und 06:07 Uhr."
+    },
+    {
+      "id": "wengenrode-500-1904-06-07",
+      "date": "1904-06-07",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Ort",
+      "title": "Wengenrode über 500 Einwohner",
+      "description": "Wengenrode zählt zum ersten Mal über 500 Einwohner, ab dem 8. November über 550; am 27. Dezember sind es 576. Silberweide zählt seit dem 21. Januar mehr Einwohner als Ahaus.",
+      "entities": [
+        "wengenrode",
+        "silberweide"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-29",
+      "recorded_note": "Aufgenommen um 06:13 Uhr."
+    },
+    {
+      "id": "oel-leipheim-1904-09-01",
+      "date": "1904-09-01",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Verkehr",
+      "title": "Öl von Leipheim",
+      "description": "Ein Dampfer „Sydfart“ fährt zwischen der Leipheim Ölplattform, 2,0 km von Leipheim, und dem neuen Leipheim Hafen, 0,9 km. Von der Leipheim Station Nord neben dem Hafen fahren neun Fuhrwerke zur Unter-Leipheim Station, 1,2 km, von dort 13 Fuhrwerke zur Ditzingen Station Nord, 2,2 km. Am 31. August und 1. September steigt der Kredit von 53,78 auf 63,01 Millionen; die Finanztabelle verbucht 2,34 Millionen Zuschüsse. Rohöl lädt der Dampfer ab dem 24. September, die Plattform verschickt ab dem 27. September; Leipheim ist am 8. November zum ersten Mal mit Treibstoff versorgt, zu 2 von 60.",
+      "entities": [
+        "leipheim",
+        "ditzingen",
+        "ewv"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-29",
+      "recorded_note": "Aufgenommen um 06:26 Uhr."
+    },
+    {
+      "id": "lehmgrube-arenswiel-1904-10-04",
+      "date": "1904-10-04",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Betrieb",
+      "title": "Neue Lehmgrube bei Arenswiel",
+      "description": "Der Monitor misst die Arenswiel Lehmgrube, 160 m neben der Selters Lehmgrube, die am 24. April zum letzten Mal gemessen wurde; Lehm ab dem 9. Oktober. Den alten Namen Selters trägt damit nur noch die Ölplattform. Am 20. August kam eine Ziegelei bei Hohen Neuendorf dazu, 15,0 km von Arenswiel, die bis zum Jahresende stillsteht.",
+      "entities": [
+        "arenswiel"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-29",
+      "recorded_note": "Grundmessung, aufgenommen um 06:29 Uhr."
+    },
+    {
+      "id": "erlental-11000-1904-11-18",
+      "date": "1904-11-18",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Ort",
+      "title": "Erlental über 11.000 Einwohner",
+      "description": "Erlental zählt zusammen zum ersten Mal über 11.000 Einwohner; am 27. Dezember sind es 11.044. Leipheim wächst 1904 von 167 auf 279 und liegt seit dem 7. März über 200, seit dem 5. August über 250 Einwohnern.",
+      "entities": [
+        "erlental",
+        "leipheim"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-29",
+      "recorded_note": "Aufgenommen um 16:22 Uhr."
+    },
+    {
+      "id": "betriebe-1904",
+      "date": "1904",
+      "precision": "year",
+      "game_time_label": "Januar bis Dezember 1904",
+      "kind": "fakt",
+      "category": "Betrieb",
+      "title": "Acht neue Betriebe, fünf verschwunden",
+      "description": "Erstmals gemessen: Dahlen Bauernhof (4.1.), Munderkingen Konservenfabrik (18.2.), Munderkingen Stahlwerk (4.4.), Garding Kohlebergwerk (20.5.), Richtenberg Eisenerzbergwerk (4.7.), Hohen Neuendorf Ziegelei (20.8.), Arenswiel Lehmgrube (4.10.), Gemünden Bauernhof (18.11.). Zuletzt gemessen: Leuna Ziegelei (5.3.), Karlsfeld Bauernhof (14.3.), Selters Lehmgrube (24.4.), Ulrichstein Bauernhof (2.8.), Rinteln Fischzucht Ost (4.12.). Am Jahresende 90 Betriebe.",
+      "entities": [
+        "erlental"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-29",
+      "recorded_note": "Erste Messungen vom 28.10.2026, 16:32 Uhr, bis 29.10.2026, 16:32 Uhr."
+    },
+    {
+      "id": "stand-1904-12-30",
+      "date": "1904-12-30",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Messung",
+      "title": "Jahresende 1904: 44 Linien, 214 Fahrzeuge, 11.044 Einwohner",
+      "description": "Fahrzeuge: 142 Pferdefuhrwerke, 53 Postkutschen, 8 Züge, 5 Dampfer „Sydfart“, 3 „Waimarie“, 3 „Dunara Castle“. Linienbilanzen im Wirtschaftsjahr vom 27.9. bis 27.12.1904 zusammen 9.410.345, am höchsten der Güterzug Arenswiel–Wengenrode (1.612.015), die Kesselwagenzüge Leuna–Ditzingen (1.341.957) und der Personenzug (1.009.971), am tiefsten die Treibstoffzüge nach Itzehoe (−192.172) und die Fuhrwerke für das Öl in Leipheim (−174.785). Versorgung am 27.12.: Arenswiel Fisch 72 von 156, Ziegel 38 von 117; Wengenrode Fisch 121 von 194; Silberweide Ziegel 72 von 203, Gemüse 74 von 156; Itzehoe Treibstoff 61 von 124, Gemüse 30 von 118; Walldorf Treibstoff 29 von 75; Leipheim Gemüse 51 von 153, Treibstoff 15 von 62; Ditzingen Gemüse 30 von 56. Kredit 58,09 Millionen, Kontostand 1,13 Millionen. Finanztabelle 1904 (Stand 27.12.): Ergebnis −6,56 Millionen, Einnahmen 73,28 Millionen, Unterhalt 64,37 Millionen, Bauten 7,24 Millionen, Fahrzeuge 9,09 Millionen, Zuschüsse 2,34 Millionen.",
+      "entities": [
+        "erlental",
+        "ewv"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-29",
+      "recorded_note": "Letzte Messung des Jahres um 16:27 Uhr; Versorgung und Finanztabelle aus der Messung vom 27.12.1904."
     }
   ]
 }
