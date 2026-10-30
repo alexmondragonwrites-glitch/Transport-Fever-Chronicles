@@ -2,6 +2,14 @@
 
 Übergaben und Reviews, neueste oben. Kopf: `## JJJJ-MM-TT · Wer · Thema`. Nur ergänzen; Fehler in älteren Einträgen mit einem neuen Eintrag richtigstellen.
 
+## 2026-10-30 · Claude · Erlental: 3D-Karte für Kapitel V und VI
+
+- Auftrag des Spielers: Kartenstände für die neuen Kapitel. V zeigt die Bilder vom 2.1.1904, VI die vom 1.1.1905. Beide sind je ein Jahr Änderungen gegen den vorigen Stand (V gegen IV, VI gegen V), zusammen eine Stunde Backzeit. Die fünf neuen Betriebsarten (Kohlebergwerk, Lebensmittelfabrik, Eisenerzmine, Stahlwerk, Werkzeugfabrik) liefen vorab ohne Platzhalter durch.
+- Gleiche Kacheln liegen beim Stand, der sie gerendert hat. Kapitel I bis IV bleiben deshalb unverändert, neu sind die Ordner `karte/staende/1904-01-02/` und `1905-01-01/`, die Website hat jetzt 186 MB.
+- Chronik: Kartenzeile im Kopf von Kapitel V und VI. Figur `#karte` und Q7 waren schon mit Kapitel VII (`f8e9d32`) hochgegangen und stimmen jetzt mit der Karte überein.
+- Kapitel VII hat noch keinen Kartenstand: Der Export vom 1.1.1906 ist abgebrochen (`Spielmonitor/history/karte/…/1793338126-2579.teile.jsonl`).
+- Auf Wunsch des Spielers hochgeladen in `4e9e426`.
+
 ## 2026-10-30 · Claude · Erlental: Kapitel VII hochgeladen
 
 - Auf Wunsch des Spielers hochgeladen: Kapitel VII mit Faktenblatt 1905 in `f8e9d32`. Die Messdaten bis Spiel 4.1.1906 waren schon mit `e7b6121` online; seitdem kam keine Messung dazu.

@@ -6,7 +6,7 @@ Format: `- [Welt] Aufgabe · Dateien · Wer · seit/erledigt am`. Wer etwas anf�
 
 ## In Arbeit
 
-- [Erlental] 3D-Karte für Kapitel V und VI: Kartenstände 2.1.1904 und 1.1.1905 (je ein Jahr Änderungen), Kartenzeile im Kopf von Kapitel V und VI, Q7 und die Kartenfigur unter V ergänzen · `saves/erlental/karte/`, `saves/erlental/chronik.html` (nur Kapitelköpfe V und VI, `#karte`, `#q7`) · Claude, 30.10.2026
+- *(nichts)*
 
 ## Zur Prüfung
 
@@ -35,6 +35,7 @@ Format: `- [Welt] Aufgabe · Dateien · Wer · seit/erledigt am`. Wer etwas anf�
 
 ## Erledigt
 
+- [Erlental] 3D-Karte für Kapitel V und VI: Kartenstände 2.1.1904 und 1.1.1905 (je ein Jahr Änderungen), Kartenzeile im Kopf von Kapitel V und VI, Q7 und die Kartenfigur unter V ergänzen · `saves/erlental/karte/`, `saves/erlental/chronik.html` (nur Kapitelköpfe V und VI, `#karte`, `#q7`) · Claude, 30.10.2026 · `4e9e426`, auf Wunsch des Spielers hochgeladen
 - [Erlental] Korrektur der 3D-Karte: fehlende Baumgruppen an Höfen, Betrieben und Forstfeldern (Platzhalterwürfel, kahle Forstbetriebe) in allen vier Kartenständen nachbacken, Eintrag unter „Korrekturen“ · `saves/erlental/karte/`, `saves/erlental/chronik.html` · Claude, 29.10.2026 · `64e2cd9`, auf Wunsch des Spielers hochgeladen
 - [Erlental] 3D-Karte einbinden (Schritt 5 des Briefings `E:\KI-Projekte\Erlental-Karte\BRIEFING.md`): statische Seite unter `saves/erlental/karte/` mit je Kapitel einem Kartenstand (I bis IV), Tag und Nacht, Orten und Linien; in der Chronik unter V „Orte und Landschaft“ mit Vorschaubild, Quelle Q7 und je Kapitel ein Verweis auf die Karte · `saves/erlental/karte/`, `saves/erlental/chronik.html`, `saves/erlental/images/erlental-karte-1903.jpg`, `assets/erlental.css`, `werkstatt/erlental/STAND.md`, `docs/ERLENTAL.md` · Claude, 29.10.2026 · `6f66daa`, auf Wunsch des Spielers hochgeladen
 - [Erlental] Design „Firmenschrift der EWV“ für Chronik und Portalkarte: Titelblatt mit Frontispiz (Ausschnitt aus dem Gründungsbild), Inhalt, Zierleisten und Eckstücke als SVG-Masken, Bericht, Erläuterung und Erzählung für die drei Textarten, gestochene Tabellen, Versalziffern in Datenbereichen, Dunkelmodus; Schriften EB Garamond und Cormorant (OFL, ohne `locl`) · Claude, 27.10.2026 · `cf50621`, `5d88440`, auf Wunsch des Spielers hochgeladen
