@@ -2,6 +2,11 @@
 
 Übergaben und Reviews, neueste oben. Kopf: `## JJJJ-MM-TT · Wer · Thema`. Nur ergänzen; Fehler in älteren Einträgen mit einem neuen Eintrag richtigstellen.
 
+## 2026-10-30 · Claude · Erlental: Kapitel V und VI hochgeladen
+
+- Auf Wunsch des Spielers hochgeladen: Kapitel V und VI mit den Faktenblättern 1903 und 1904 in `f7b6020`, die Erlental-Messdaten in `e7b6121` (Monitorstand Spiel 4.1.1906, +1048 Messungen, fünf neue Abschnitte).
+- Die Messdaten reichen über den Stichtag von Kapitel VI (30.12.1904) hinaus. Der Spieler meldet 1905 als abgeschlossen; Kapitel VII folgt mit `py -3 scripts/erlental-fakten.py 1905`.
+
 ## 2026-10-30 · Claude · Erlental: Kapitel V „Treibstoff für Itzehoe“ und VI „Umsteigen“
 
 - Auftrag des Spielers: Stoff für zwei neue Kapitel, das Spiel steht bei Juli 1905. Hochladen nach seiner Freigabe.
