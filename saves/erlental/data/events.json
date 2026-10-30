@@ -1215,6 +1215,223 @@
       "source": "Spielmonitor, Welt „Erlental – 1900“",
       "recorded": "2026-10-29",
       "recorded_note": "Letzte Messung des Jahres um 16:27 Uhr; Versorgung und Finanztabelle aus der Messung vom 27.12.1904."
+    },
+    {
+      "id": "dampfkraftwagen-1905-02-05",
+      "date": "1905-02-05",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Verkehr",
+      "title": "Die ersten Dampfkraftwagen",
+      "description": "15 Dampfkraftwagen statt Pferdefuhrwerken zwischen der Ditzingen Station Nord und der Raffinerie, ab dem 8. Februar 11 mit Fisch in Wengenrode, 13 mit Lehm von der Klötze Lehmgrube und 12 mit Ziegeln von der Eckartsberga Ziegelei. Das Spiel bietet das Modell seit 1905 an. Am selben 5. Februar verbucht die Finanztabelle 12,10 Millionen Zuschüsse; das Konto steigt von 1,46 auf 11,42 Millionen.",
+      "entities": [
+        "ditzingen",
+        "wengenrode",
+        "kloetze",
+        "eckartsberga",
+        "ewv"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-29",
+      "recorded_note": "Aufgenommen um 16:31 und 16:32 Uhr."
+    },
+    {
+      "id": "arenswiel-700-1905-02-08",
+      "date": "1905-02-08",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Ort",
+      "title": "Arenswiel über 700 Einwohner",
+      "description": "Arenswiel zählt zum ersten Mal über 700 Einwohner, ab dem 10. September über 750; am 31. Dezember sind es 777. Wengenrode zählt seit dem 21. Februar über 600 Einwohner, seit dem 22. August über 650.",
+      "entities": [
+        "arenswiel",
+        "wengenrode"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-29",
+      "recorded_note": "Aufgenommen um 16:32 Uhr."
+    },
+    {
+      "id": "obeissante-1905-02-14",
+      "date": "1905-02-14",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Verkehr",
+      "title": "Omnibusse „L’Obéissante“ statt Postkutschen",
+      "description": "Vier Omnibusse „L’Obéissante“ fahren zwischen dem Rosenweg in Wengenrode und der Eckartsberga Ziegelei, ab dem 17. Februar zwei zwischen der Waldstrasse in Silberweide und dem Mettmann Bauernhof. Ab dem 23. Februar fahren drei statt zwei Dampfer „Sydfart“ mit Fisch vom Seegut Tiefenborn nach Arenswiel.",
+      "entities": [
+        "wengenrode",
+        "eckartsberga",
+        "silberweide",
+        "ewv"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-29",
+      "recorded_note": "Aufgenommen um 16:35 Uhr."
+    },
+    {
+      "id": "hafen1-ende-1905-06-12",
+      "date": "1905-06-12",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Verkehr",
+      "title": "Die Linien zum Anleger Hafen #1 enden",
+      "description": "Der Monitor misst die Postkutschen von der Station Umstieg zum Halt am Hafen #1 am 12. Juni zum letzten Mal, den Fahrgastdampfer vom Anleger Hafen #1 zur Selters Ölplattform am 14. Juni und das Fuhrwerk zur Leuna Lehmgrube am 18. Juni. 1904 lagen alle drei Linien im Minus.",
+      "entities": [
+        "arenswiel",
+        "leuna",
+        "ewv"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-29",
+      "recorded_note": "Grundmessungen, aufgenommen zwischen 16:53 und 16:55 Uhr."
+    },
+    {
+      "id": "dampf-arenswiel-1905-07-11",
+      "date": "1905-07-11",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Verkehr",
+      "title": "Dampfkraftwagen und Omnibusse in Arenswiel",
+      "description": "Zwölf Dampfkraftwagen statt 16 Fuhrwerken fahren Fisch und Ziegel zur Station Zentrum, ab dem 18. Juli sechs Omnibusse „L’Obéissante“ zur Bachstrasse und fünf Dampfkraftwagen auf der zweiten Fischlinie, ab dem 2. August vier Dampfkraftwagen mit Ziegeln zur Station Haltepunkt. Seit dem 9. Juli fahren zwei Omnibusse von Itzehoe Nord zum Itzehoe Bauernhof, 1,7 km.",
+      "entities": [
+        "arenswiel",
+        "itzehoe",
+        "ewv"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-30",
+      "recorded_note": "Grundmessung, aufgenommen um 05:43 Uhr."
+    },
+    {
+      "id": "maschinen-1905-01-14",
+      "date": "1905-01-14",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Versorgung",
+      "title": "Wengenrode verlangt Maschinen",
+      "description": "Wengenrode verlangt zum ersten Mal Maschinen (32). Am selben Tag misst der Monitor eine Maschinenfabrik bei Ditzingen, 7,9 km von Wengenrode.",
+      "entities": [
+        "wengenrode",
+        "ditzingen"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-29",
+      "recorded_note": "Aufgenommen um 16:29 Uhr."
+    },
+    {
+      "id": "spielzeug-leipheim-1905-06-05",
+      "date": "1905-06-05",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Versorgung",
+      "title": "Leipheim verlangt Spielzeug",
+      "description": "Leipheim verlangt zum ersten Mal Spielzeug (167). Am 5. Juli misst der Monitor eine Spielzeugfabrik aus dem Paket „Toy Factory“ bei Weinheim, 23,5 km von Leipheim.",
+      "entities": [
+        "leipheim"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-29",
+      "recorded_note": "Aufgenommen um 16:52 Uhr."
+    },
+    {
+      "id": "moebel-silberweide-1905-10-24",
+      "date": "1905-10-24",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Versorgung",
+      "title": "Silberweide verlangt Möbel",
+      "description": "Silberweide verlangt zum ersten Mal Möbel (110). Am selben Tag misst der Monitor eine Möbelfabrik bei Itzehoe, 5,4 km von Silberweide. Seit dem 9. Oktober fährt in Arenswiel wieder eine Linie vom Busbahnhof zum Tulpenweg, ab dem 10. Oktober mit zwei Omnibussen „L’Obéissante“.",
+      "entities": [
+        "silberweide",
+        "itzehoe",
+        "arenswiel"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-30",
+      "recorded_note": "Aufgenommen um 06:03 und 06:04 Uhr."
+    },
+    {
+      "id": "zuschuss-1905-11-08",
+      "date": "1905-11-08",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Finanzen",
+      "title": "Zuschüsse, das Konto wieder im Plus",
+      "description": "Das Konto steigt von −0,72 auf 8,09 Millionen; seit dem 5. August stand es meist knapp im Minus. Die Finanztabelle verbucht am 11. November 8,54 Millionen Zuschüsse für das vierte Quartal und am 13. Dezember weitere 1,43 Millionen.",
+      "entities": [
+        "ewv"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-30",
+      "recorded_note": "Grundmessung, aufgenommen um 06:06 Uhr."
+    },
+    {
+      "id": "personenzug-walldorf-1905-11-17",
+      "date": "1905-11-17",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Verkehr",
+      "title": "Der Personenzug fährt bis Walldorf",
+      "description": "Der Personenzug fährt zum ersten Mal über Wengenrode hinaus bis zur Walldorf Station Anbau, 2,9 km von der Wengenrode Station und 0,4 km von der Ortsmitte, mit zwei Zügen statt einem. Ab dem 9. November fahren in Wengenrode sieben statt vier Postkutschen zur Station Ost.",
+      "entities": [
+        "walldorf",
+        "wengenrode",
+        "arenswiel",
+        "ewv"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-30",
+      "recorded_note": "Grundmessung, aufgenommen um 06:13 Uhr."
+    },
+    {
+      "id": "pferdebahn-walldorf-1905-12-11",
+      "date": "1905-12-11",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Verkehr",
+      "title": "Pferdebahn in Walldorf",
+      "description": "Die ersten Pferdebahnen Erlentals: zwei Linien in Gegenrichtung von der Walldorf Station Umstieg, 50 m neben dem Bahnhof, über Nord und Nordwest zum Zentrum, je zwei Wagen; Fahrgäste ab dem 15. Dezember. Am 13. Dezember kommen in Ditzingen zwei Omnibusse „L’Obéissante“ von der Breslauer Strasse zur Ölraffinerie dazu, 2,3 km.",
+      "entities": [
+        "walldorf",
+        "ditzingen",
+        "ewv"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-30",
+      "recorded_note": "Aufgenommen um 06:18 Uhr."
+    },
+    {
+      "id": "betriebe-1905",
+      "date": "1905",
+      "precision": "year",
+      "game_time_label": "Januar bis Dezember 1905",
+      "kind": "fakt",
+      "category": "Betrieb",
+      "title": "Zehn neue Betriebe, acht verschwunden",
+      "description": "Erstmals gemessen: Dahlen Ölplattform West (3.1.), Ditzingen Maschinenfabrik (14.1.), Ratzeburg Fischzucht (17.2.), Stendal Bauernhof (5.4.), Blaubeuren Sägewerk (20.5.), Weinheim Toy Factory (5.7.), Ahaus Ölplattform Süd (19.8.), Leuna Ölplattform (4.10., 0,3 km vom Leuna Hafen), Itzehoe Möbelfabrik (24.10.), Zell Bauernhof (18.11.). Zuletzt gemessen: Gemünden Ölplattform (5.2.), Munderkingen Sägewerk (12.2.), Ahaus Ölplattform Süd (2.3.), Wesel Steinbruch (18.3.), Zell Bauernhof (30.6.), Gemünden Fischzucht (31.10.), Hohen Neuendorf Ölraffinerie (12.11.), Riesa Bauernhof (28.11.). Am Jahresende 92 Betriebe.",
+      "entities": [
+        "erlental"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-30",
+      "recorded_note": "Erste Messungen vom 29.10.2026, 16:28 Uhr, bis 30.10.2026, 06:13 Uhr."
+    },
+    {
+      "id": "stand-1905-12-31",
+      "date": "1905-12-31",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Messung",
+      "title": "Jahresende 1905: 46 Linien, 216 Fahrzeuge, 11.420 Einwohner",
+      "description": "Fahrzeuge: 68 Dampfkraftwagen, 65 Pferdefuhrwerke, 41 Postkutschen, 18 Omnibusse „L’Obéissante“, 4 Pferdebahnwagen, 9 Züge, 6 Dampfer „Sydfart“, 3 „Dunara Castle“, 2 „Waimarie“. Linienbilanzen im Wirtschaftsjahr vom 30.9. bis 31.12.1905 zusammen 14.533.200, am höchsten der Güterzug Arenswiel–Wengenrode (2.352.685), die Kesselwagenzüge Leuna–Ditzingen (1.620.438) und die Dampfkraftwagen zur Raffinerie (1.155.374), am tiefsten die Ziegelfuhren zur Station Haltepunkt (−58.111). Versorgung am 31.12.: Arenswiel Fisch 114 von 165, Ziegel 30 von 124; Wengenrode Fisch 117 von 217; Silberweide Ziegel 70 von 223, Gemüse 62 von 170; Itzehoe Treibstoff 44 von 151, Gemüse 35 von 127; Leipheim Treibstoff 48 von 86, Gemüse 56 von 173; Walldorf Treibstoff 42 von 94; Ditzingen Gemüse 25 von 62. Kredit 42,93 Millionen, Kontostand 923.356. Finanztabelle 1905 (Stand 31.12.): Ergebnis +14,50 Millionen, Einnahmen 91,71 Millionen, Unterhalt 73,82 Millionen, Bauten 5,73 Millionen, Fahrzeuge 21,04 Millionen, Zuschüsse 24,99 Millionen, Kreditaufnahme 0.",
+      "entities": [
+        "erlental",
+        "ewv"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-30",
+      "recorded_note": "Letzte Messung des Jahres um 06:27 Uhr; Versorgung und Finanztabelle aus der Messung vom 31.12.1905."
     }
   ]
 }

@@ -2,6 +2,16 @@
 
 Übergaben und Reviews, neueste oben. Kopf: `## JJJJ-MM-TT · Wer · Thema`. Nur ergänzen; Fehler in älteren Einträgen mit einem neuen Eintrag richtigstellen.
 
+## 2026-10-30 · Claude · Erlental: Kapitel VII „Dampf auf der Straße“
+
+- Auftrag des Spielers: 1905 ist abgeschlossen, nach dem Hochladen von V und VI schreiben. Hochladen nach seiner Freigabe.
+- Faktenblatt `werkstatt/erlental/fakten/1905.md` (73 Detailmessungen, keine Rücksprünge).
+- Kapitel VII (1905): Dampfkraftwagen (vom Spiel ab 1905 angeboten) ersetzen ab 5.2. die Pferdefuhrwerke zur Raffinerie, ab 8.2. für Fisch in Wengenrode, Lehm und Ziegel, im Sommer in Arenswiel; Omnibusse „L’Obéissante“ statt Postkutschen ab 14.2. Die Linien zum Anleger Hafen #1 und die Lehmfuhren in Leuna enden im Juni. Der Personenzug fährt ab 17.11. mit zwei Zügen bis Walldorf, dort ab 11.12. die erste Pferdebahn Erlentals. Neue Nachfragen mit passenden Betrieben (Maschinen, Spielzeug, Möbel). Kreditaufnahme 0, Kredit 58,09 → 42,93 Mio.; Zuschüsse 24,99 Mio.; Ergebnis +14,50 Mio.
+- Szenen: Merkblatt für die Fahrer der Dampfkraftwagen, Hofkalender der Familie Kamp, Festfolge „Walldorf fährt Pferdebahn“. Figuren in `erlental/STAND.md`.
+- Geprüft: `validate-data.mjs`, `test-erlental-fakten.py`, Verneinungs- und KI-Wort-grep über alle neuen Zeilen, Browser 1280 und 375 px ohne Überlauf und ohne Konsolenfehler, Register mit 89 Einträgen.
+- Kartenstände für V, VI und VII bleiben offen.
+- An Codex: Bitte Kapitel VII gegen `werkstatt/erlental/fakten/1905.md` prüfen.
+
 ## 2026-10-30 · Claude · Erlental: Kapitel V und VI hochgeladen
 
 - Auf Wunsch des Spielers hochgeladen: Kapitel V und VI mit den Faktenblättern 1903 und 1904 in `f7b6020`, die Erlental-Messdaten in `e7b6121` (Monitorstand Spiel 4.1.1906, +1048 Messungen, fünf neue Abschnitte).
