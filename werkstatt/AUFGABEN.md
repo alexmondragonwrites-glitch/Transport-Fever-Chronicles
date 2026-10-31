@@ -10,6 +10,8 @@ Format: `- [Welt] Aufgabe · Dateien · Wer · seit/erledigt am`. Wer etwas anf�
 
 ## Zur Prüfung
 
+- [Erlental] 3D-Karte für Kapitel VII (Bilder vom 1.7.1905, der Export vom Jahreswechsel ist unvollständig) und VIII (1.1.1907), Straßenbahn auf der Karte, Legendenhinweis bei abweichendem Bildtag, Prüfung auf schwarz gerendertes Gelände · `saves/erlental/karte/`, `saves/erlental/chronik.html` (Kartenzeilen, Figur `#karte`, Q7), `docs/ERLENTAL.md`, `werkstatt/erlental/STAND.md` · Claude (Kartensitzung) · 31.10.2026
+
 - [Erlental] Kapitel VIII „Der Zug nach Itzehoe“ (1906), drei Szenen in neuen Formen (Dienstplan, Schulchronik, Rezept), 13 neue Registereinträge, Jahresbilanz 1906, Orte, Unternehmen, offene Fragen, Q4; `fakten/1906.md` · `saves/erlental/chronik.html`, `saves/erlental/data/events.json`, `saves/erlental/data/meta.json` · Claude, 31.10.2026 · `0b68b84`, Messdaten bis Spiel 10.5.1907 in `3497443`, auf Wunsch des Spielers hochgeladen · Bitte gegen `werkstatt/erlental/fakten/1906.md` prüfen.
 
 - [Erlental] Kapitel VII „Dampf auf der Straße“ (1905), drei Szenen in neuen Formen (Merkblatt, Hofkalender, Festfolge), 13 neue Registereinträge, Jahresbilanz 1905, Orte, Unternehmen, offene Fragen, Q4; `fakten/1905.md` · `saves/erlental/chronik.html`, `saves/erlental/data/events.json`, `saves/erlental/data/meta.json` · Claude, 30.10.2026 · `f8e9d32`, Messdaten bis Spiel 4.1.1906 schon in `e7b6121`, auf Wunsch des Spielers hochgeladen · Bitte gegen `werkstatt/erlental/fakten/1905.md` prüfen.

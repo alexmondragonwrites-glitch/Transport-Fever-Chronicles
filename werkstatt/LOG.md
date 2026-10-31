@@ -2,6 +2,15 @@
 
 Übergaben und Reviews, neueste oben. Kopf: `## JJJJ-MM-TT · Wer · Thema`. Nur ergänzen; Fehler in älteren Einträgen mit einem neuen Eintrag richtigstellen.
 
+## 2026-10-31 · Claude · Erlental: 3D-Karte für Kapitel VII und VIII
+
+- Auftrag des Spielers über die Chronik-Sitzung: Kartenstände für VII und VIII. Dem Export vom Jahreswechsel 1906 (`1793338126-2579.json`) fehlen Kopf, Bauten und Kanten: Ein neu gestarteter Monitor hatte ihn am 30.10. beim Nachlesen überschrieben, und ein Spielstand von damals ist nicht mehr da. VII zeigt deshalb die Bilder vom 1.7.1905, dem letzten vollständigen Export des Jahres (vom Spieler am 31.10. bestätigt), VIII die vom 1.1.1907.
+- VII gegen VI mit 840 Änderungen, VIII gegen VII mit 1 815. Die neuen Bautypen (Maschinenfabrik, Möbelfabrik, Straßenbahndepot, Gewerbehaus, Flüssigfracht-Modul) liefen vorab ohne Platzhalter durch.
+- Ein Grundabschnitt von VIII um Walldorf kam mit schwarzem Gelände heraus, weil der Boden-Shader für Cycles zu groß war. Vor dem Hochladen bemerkt und mit schlankem Boden nachgebacken. `karte_backen.py` fängt das jetzt ab, `karte_backen.py pruefen` sucht dunkle Tagbilder (I bis VIII ohne Befund).
+- Kartenseite: Straßenbahnlinien laufen im Straßennetz, mit eigener Farbe und Eintrag in der Legende; ihre Gleise fehlen im Export (dafür braucht es Mod-Revision 25). Die Legende sagt, wenn Bild- und Messtag mehr als einen Monat auseinanderliegen (Kapitel I und VII).
+- Chronik: Kartenzeilen in VII und VIII, Figur `#karte` (Zeitleiste I bis VIII) und Q7. Kapitel I bis VI bleiben unverändert, neu sind `karte/staende/1905-07-01/` und `1907-01-01/`; die Website hat jetzt rund 237 MB. `docs/ERLENTAL.md`, Punkt 6: Export und Bilder prüfen.
+- Auf Wunsch des Spielers hochgeladen in `4f833a7`.
+
 ## 2026-10-30 · Claude · Erlental: 3D-Karte für Kapitel V und VI
 
 - Auftrag des Spielers: Kartenstände für die neuen Kapitel. V zeigt die Bilder vom 2.1.1904, VI die vom 1.1.1905. Beide sind je ein Jahr Änderungen gegen den vorigen Stand (V gegen IV, VI gegen V), zusammen eine Stunde Backzeit. Die fünf neuen Betriebsarten (Kohlebergwerk, Lebensmittelfabrik, Eisenerzmine, Stahlwerk, Werkzeugfabrik) liefen vorab ohne Platzhalter durch.
