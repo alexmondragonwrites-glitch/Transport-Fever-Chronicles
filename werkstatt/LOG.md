@@ -10,6 +10,11 @@
 - Kapitel VII hat noch keinen Kartenstand: Der Export vom 1.1.1906 ist abgebrochen (`Spielmonitor/history/karte/…/1793338126-2579.teile.jsonl`).
 - Auf Wunsch des Spielers hochgeladen in `4e9e426`.
 
+## 2026-10-31 · Claude · Erlental: Kapitel VIII hochgeladen
+
+- Auf Wunsch des Spielers hochgeladen: Kapitel VIII mit Faktenblatt 1906 in `0b68b84`, die Erlental-Messdaten in `3497443` (Monitorstand Spiel 10.5.1907, +618 Messungen, drei neue Abschnitte).
+- Die Kartensitzung trägt Kartenzeilen, Figur und Q7 für VII und VIII nach ihrem Backen ein; ihr Eintrag unter „In Arbeit“ kommt mit ihrem Upload.
+
 ## 2026-10-31 · Claude · Erlental: Kapitel VIII „Der Zug nach Itzehoe“
 
 - Auftrag des Spielers: wieder ein Jahr fertig, neue Geschichten. Hochladen nach seiner Freigabe.
