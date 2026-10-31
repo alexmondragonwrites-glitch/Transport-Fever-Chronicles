@@ -1432,6 +1432,220 @@
       "source": "Spielmonitor, Welt „Erlental – 1900“",
       "recorded": "2026-10-30",
       "recorded_note": "Letzte Messung des Jahres um 06:27 Uhr; Versorgung und Finanztabelle aus der Messung vom 31.12.1905."
+    },
+    {
+      "id": "waimarie-selters-1906-02-06",
+      "date": "1906-02-06",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Verkehr",
+      "title": "Wieder ein Fahrgastdampfer zur Selters Ölplattform",
+      "description": "Ein Dampfer „Waimarie“ fährt wieder vom Anleger Arenswiel Hafen #1 zur Selters Ölplattform, 1,4 km; die Linie fuhr bis Juni 1905. Fahrgäste ab dem 5. März.",
+      "entities": [
+        "arenswiel",
+        "ewv"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-30",
+      "recorded_note": "Grundmessung, aufgenommen um 08:14 Uhr."
+    },
+    {
+      "id": "personenzug-itzehoe-1906-02-12",
+      "date": "1906-02-12",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Verkehr",
+      "title": "Der Personenzug fährt bis Itzehoe",
+      "description": "Der Personenzug fährt mit vier Zügen statt zwei über Wengenrode und Walldorf bis zur neuen Itzehoe Station West, 2,2 km von der Walldorf Station Anbau und 0,5 km von der Ortsmitte. Ab dem 14. Februar fahren sechs Postkutschen von der Station Umstieg daneben zum Itzehoe Busbahnhof, 0,5 km. Die Finanztabelle verbucht am selben 12. Februar 11,99 Millionen Zuschüsse.",
+      "entities": [
+        "itzehoe",
+        "walldorf",
+        "wengenrode",
+        "arenswiel",
+        "ewv"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-30",
+      "recorded_note": "Aufgenommen um 08:24 Uhr."
+    },
+    {
+      "id": "arenswiel-800-1906-02-25",
+      "date": "1906-02-25",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Ort",
+      "title": "Arenswiel über 800 Einwohner",
+      "description": "Arenswiel zählt zum ersten Mal über 800 Einwohner, ab dem 10. September über 850; am 28. Dezember sind es 869. Wengenrode zählt seit dem 16. Februar über 700 und seit dem 2. Juli über 750 Einwohner.",
+      "entities": [
+        "arenswiel",
+        "wengenrode"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-30",
+      "recorded_note": "Aufgenommen um 08:26 Uhr."
+    },
+    {
+      "id": "pferdebahn-walldorf-1906-03-12",
+      "date": "1906-03-12",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Verkehr",
+      "title": "Mehr Wagen für die Pferdebahn in Walldorf",
+      "description": "Auf der Linie von der Station Umstieg zum Zentrum fahren vier statt zwei Pferdebahnwagen, ab dem 9. August sechs; in der Gegenrichtung ab dem 2. Oktober vier. Walldorf zählt seit dem 31. März über 200 Einwohner.",
+      "entities": [
+        "walldorf",
+        "ewv"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-30",
+      "recorded_note": "Aufgenommen um 08:30 Uhr."
+    },
+    {
+      "id": "omnibus-klotze-1906-07-11",
+      "date": "1906-07-11",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Verkehr",
+      "title": "Omnibusse von Eckartsberga zur Klötze Lehmgrube",
+      "description": "Zwei Omnibusse „L’Obéissante“ fahren von der Königsberger Strasse in Eckartsberga zur Klötze Lehmgrube, 2,2 km; Fahrgäste ab dem 5. August. Leuna zählt am 10. Juli zum ersten Mal mehr als die 101 Einwohner der ersten Messung.",
+      "entities": [
+        "eckartsberga",
+        "kloetze",
+        "leuna",
+        "ewv"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-30",
+      "recorded_note": "Grundmessung, aufgenommen um 14:25 Uhr."
+    },
+    {
+      "id": "seegut-fisch-1906-07",
+      "date": "1906-07",
+      "precision": "month",
+      "game_time_label": "Juli bis Dezember 1906",
+      "kind": "fakt",
+      "category": "Betrieb",
+      "title": "Das Seegut Tiefenborn erzeugt weniger Fisch",
+      "description": "Im Wirtschaftsjahr bis Juni erzeugt das Seegut 207 bis 216 Fisch, im Juli 189, im August 144, im September 108 und ab Oktober 90, bei gleicher Stufe 14. Wengenrode ist am 28. Dezember mit Fisch zu 67 von 233 versorgt, Ende Januar zu 119 von 217.",
+      "entities": [
+        "seegut-tiefenborn",
+        "wengenrode"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-30",
+      "recorded_note": "Detailmessungen vom 30.7. bis 28.12.1906."
+    },
+    {
+      "id": "gemuese-itzehoe-walldorf-1906-09-11",
+      "date": "1906-09-11",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Verkehr",
+      "title": "Dampfkraftwagen für Gemüse um Itzehoe und nach Walldorf",
+      "description": "Acht Dampfkraftwagen fahren von der Itzehoe Station Nord, 0,2 km vom Itzehoe Bauernhof, zur Itzehoe Station Transfer, 1,8 km; ab dem 14. September drei weitere von dort zur Walldorf Station Haltepunkt, 1,8 km. Gemüse laden sie ab dem 2. Oktober und ab dem 24. November. Seit dem 6. September fahren auch auf der Linie zum Bauernhof Dampfkraftwagen.",
+      "entities": [
+        "itzehoe",
+        "walldorf",
+        "ewv"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-30",
+      "recorded_note": "Grundmessung, aufgenommen um 14:40 Uhr."
+    },
+    {
+      "id": "leipheim-fahrgaeste-1906-10-22",
+      "date": "1906-10-22",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Verkehr",
+      "title": "Omnibusse und Fahrgastdampfer in Leipheim",
+      "description": "Zwei Omnibusse „L’Obéissante“ fahren vom Busbahnhof nach Im Winkel, 1,1 km, ab dem 23. Oktober ein Dampfer „Waimarie“ vom Leipheim Hafen zur Leipheim Ölplattform. Ab dem 25. Oktober fahren zwei Dampfer „Sydfart“ mit Rohöl, ab dem 28. Oktober und 4. Dezember Dampfkraftwagen statt der Fuhrwerke für das Rohöl. Leipheim zählt seit dem 29. August über 400 Einwohner und liegt seit dem 22. Oktober vor Ahaus.",
+      "entities": [
+        "leipheim",
+        "ewv"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-30",
+      "recorded_note": "Aufgenommen um 14:49 und 14:50 Uhr."
+    },
+    {
+      "id": "werkzeuge-itzehoe-1906-11-17",
+      "date": "1906-11-17",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Versorgung",
+      "title": "Itzehoe verlangt Werkzeuge",
+      "description": "Itzehoe verlangt zum ersten Mal Werkzeuge (82). Itzehoe zählt seit dem 24. August über 400 Einwohner und liegt seit dem 27. September vor Ahaus.",
+      "entities": [
+        "itzehoe"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-30",
+      "recorded_note": "Aufgenommen um 14:55 Uhr."
+    },
+    {
+      "id": "erlental-12000-1906-12-17",
+      "date": "1906-12-17",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Ort",
+      "title": "Erlental erreicht 12.000 Einwohner",
+      "description": "Erlental zählt zusammen 12.000 Einwohner; am 28. Dezember sind es 12.034. Walldorf wächst 1906 von 163 auf 340 und zählt seit dem 29. November über 300 Einwohner.",
+      "entities": [
+        "erlental",
+        "walldorf"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-31",
+      "recorded_note": "Aufgenommen um 05:55 Uhr."
+    },
+    {
+      "id": "gemuese-walldorf-1906-12-21",
+      "date": "1906-12-21",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Versorgung",
+      "title": "Walldorf zum ersten Mal mit Gemüse versorgt",
+      "description": "Versorgung 7 von 61; am 28. Dezember 12 von 62. Das Gemüse kommt vom Itzehoe Bauernhof, der im letzten Wirtschaftsjahr 201 von 290 verschickt, ein Jahr zuvor 32 von 220.",
+      "entities": [
+        "walldorf",
+        "itzehoe"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-31",
+      "recorded_note": "Aufgenommen um 05:58 Uhr."
+    },
+    {
+      "id": "betriebe-1906",
+      "date": "1906",
+      "precision": "year",
+      "game_time_label": "Januar bis Dezember 1906",
+      "kind": "fakt",
+      "category": "Betrieb",
+      "title": "Neun neue Betriebe, fünf verschwunden",
+      "description": "Erstmals gemessen: Ratzeburg Fischzucht Ost (3.1.), Garding Ölraffinerie (19.2.), Gemünden Ölraffinerie #1 (5.4.), Ratzeburg Fischzucht Süd (21.5.), Eckartsberga Bauernhof (5.7.), Riesa Steinbruch (16.8.), Gemünden Ölplattform (19.8.), Lambrecht Bauernhof (4.10.), Itzehoe Holzfällerlager (20.11.). Zuletzt gemessen: Eckartsberga Bauernhof (26.3.), Schmölln Holzfällerlager (26.6.), Itzehoe Holzfällerlager West (5.9.), Gemünden Ölraffinerie (14.9.), Ahaus Ölraffinerie (21.12.). Am Jahresende 96 Betriebe.",
+      "entities": [
+        "erlental"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-31",
+      "recorded_note": "Erste Messungen vom 30.10.2026, 06:29 Uhr, bis 30.10.2026, 14:55 Uhr."
+    },
+    {
+      "id": "stand-1906-12-31",
+      "date": "1906-12-31",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Messung",
+      "title": "Jahresende 1906: 53 Linien, 255 Fahrzeuge, 12.034 Einwohner",
+      "description": "Fahrzeuge: 110 Dampfkraftwagen, 54 Postkutschen, 34 Pferdefuhrwerke, 22 Omnibusse „L’Obéissante“, 10 Pferdebahnwagen, 11 Züge, 7 Dampfer „Sydfart“, 4 „Waimarie“, 3 „Dunara Castle“. Linienbilanzen im Wirtschaftsjahr vom 28.9. bis 28.12.1906 zusammen 14.672.809, am höchsten der Personenzug bis Itzehoe (4.511.424), der Güterzug Arenswiel–Wengenrode (1.480.151) und die Kesselwagenzüge Leuna–Ditzingen (1.221.873), am tiefsten die Treibstoffzüge nach Itzehoe (−404.596). Versorgung am 28.12.: Arenswiel Fisch 105 von 181, Ziegel 36 von 136; Wengenrode Fisch 67 von 233; Silberweide Ziegel 108 von 231, Gemüse 63 von 184; Itzehoe Gemüse 47 von 135, Treibstoff 34 von 164; Walldorf Gemüse 12 von 62, Treibstoff 26 von 112; Leipheim Gemüse 50 von 187, Treibstoff 49 von 123; Ditzingen Gemüse 27 von 72. Kredit 28,71 Millionen, Kontostand −566.053. Finanztabelle 1906 (Stand 28.12.): Ergebnis +12,38 Millionen, Einnahmen 108,00 Millionen, Unterhalt 88,33 Millionen, Bauten 4,84 Millionen, Fahrzeuge 21,33 Millionen, Zuschüsse 20,39 Millionen, Kreditaufnahme 0.",
+      "entities": [
+        "erlental",
+        "ewv"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-31",
+      "recorded_note": "Letzte Messung des Jahres um 06:00 Uhr; Versorgung und Finanztabelle aus der Messung vom 28.12.1906."
     }
   ]
 }

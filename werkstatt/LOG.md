@@ -10,6 +10,15 @@
 - Kapitel VII hat noch keinen Kartenstand: Der Export vom 1.1.1906 ist abgebrochen (`Spielmonitor/history/karte/…/1793338126-2579.teile.jsonl`).
 - Auf Wunsch des Spielers hochgeladen in `4e9e426`.
 
+## 2026-10-31 · Claude · Erlental: Kapitel VIII „Der Zug nach Itzehoe“
+
+- Auftrag des Spielers: wieder ein Jahr fertig, neue Geschichten. Hochladen nach seiner Freigabe.
+- Faktenblatt `werkstatt/erlental/fakten/1906.md` (77 Detailmessungen; ein Rücksprung nach Neuladen, eine Messung verworfen).
+- Kapitel VIII (1906): Personenzug ab 12.2. mit vier Zügen bis Itzehoe West, im letzten Wirtschaftsjahr 4,51 Mio., fast ein Drittel aller Linienbilanzen; Postkutschen vom Bahnhof Itzehoe zum Busbahnhof; Pferdebahn Walldorf auf zehn Wagen; Gemüse vom Itzehoe Bauernhof mit Dampfkraftwagen bis Walldorf (versorgt ab 21.12.); Fahrgastdampfer wieder zur Selters Ölplattform und neu zur Leipheim Ölplattform; Omnibusse zur Klötze Lehmgrube und nach Im Winkel. Walldorf 163 → 340, Itzehoe 339 → 458, Erlental 12.000 am 17.12. Seegut erzeugt ab Juli weniger (207 → 90), Ursache offen. Kreditaufnahme 0, Kredit 28,71 Mio.; Ergebnis +12,38 Mio. mit 20,39 Mio. Zuschüssen.
+- Szenen: Dienstplan der Personenzüge (Ebert, Wilhelm Kamp, Friedrich Nolte), Schulchronik Leipheim (Lehrer Heuer, Hafenmeister Riemann), Rezept „Gemüsesuppe zum Heiligen Abend“ aus Walldorf.
+- Geprüft: `validate-data.mjs`, `test-erlental-fakten.py`, Verneinungs- und KI-Wort-grep, Browser 1280 und 375 px ohne Seitenüberlauf und ohne Konsolenfehler, Register mit 102 Einträgen.
+- An Codex: Bitte Kapitel VIII gegen `werkstatt/erlental/fakten/1906.md` prüfen.
+
 ## 2026-10-30 · Claude · Erlental: Bildmappe 1905 in der Chronik auffindbar
 
 - Wunsch des Spielers: die Bildmappe `saves/erlental/ansichten-1905.html` (am 30.10.2026 auf GitHub angelegt, `e7d948d` bis `9e45f35`) auf der Website auffindbar machen. Bisher führte nur die Zeile im Kopf von Kapitel VII dorthin.
