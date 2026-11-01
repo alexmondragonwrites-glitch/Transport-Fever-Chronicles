@@ -2,6 +2,15 @@
 
 Übergaben und Reviews, neueste oben. Kopf: `## JJJJ-MM-TT · Wer · Thema`. Nur ergänzen; Fehler in älteren Einträgen mit einem neuen Eintrag richtigstellen.
 
+## 2026-11-01 · Claude · Erlental: 3D-Karte für Kapitel XI, mit Straßenbahngleisen
+
+- Auftrag des Spielers: Kartenstand für XI („Ja, Karte XI backen“) mit den Bildern vom 1.1.1910, dem ersten Export aus Revision 26 der Monitor-Mod. Der Export ist vollständig (7 214 Bauten, 8 677 Kanten, 82 Linien); neue Bautypen gegenüber X gibt es keine. XI gegen X mit 1 239 Änderungen, 34 Abschnitte in 66 Minuten. Drei Abschnitte liefen mit schlankem Boden; `karte_backen.py pruefen` fand kein schwarzes Gelände (ein Bild mit dichtem Wald liegt knapp an der Schwelle).
+- Straßenbahngleise: Der Export trägt sie auf 41 Straßenkanten in Walldorf und Osterburg (Feld `tram`). Die Karte zeichnet je Gleis Pflaster und Rillenschienen aus dem Straßenstil des Spiels, auf der Fahrlinie, auf der die Bahnen im Spiel fahren; an Kreuzungen verbinden Bögen die Gleise (angenommen). Die vier Straßenbahnlinien laufen auf den Gleisen. In VII bis X bleiben sie im Straßennetz, und die Legende nennt dort die fehlenden Gleise.
+- Kartenseite: Auf schmalen Bildschirmen wählt eine Liste mit ‹ und › das Kapitel, elf Knöpfe passten nicht mehr auf 375 px. Linien ohne berechneten Weg heißen in der Ortskarte jetzt „Gerade zwischen den Halten“.
+- XI hat 83,9 MB, davon 32,6 MB eigene Dateien; die Website hat jetzt rund 332 MB. Kapitel I bis X bleiben unverändert.
+- Chronik: Kartenzeile im Kopf von XI, Figur `#karte` (Zeitleiste I bis XI) und Q7 (Export vom 1.1.1910, Revision 26, dazu ein Satz zu den Gleisen; der bisherige Wortlaut bleibt).
+- Auf Wunsch des Spielers hochgeladen in `1494a33`.
+
 ## 2026-11-01 · Claude · Erlental: Kapitel XI hochgeladen
 
 - Auf Wunsch des Spielers hochgeladen: Kapitel XI mit Faktenblatt 1909 in `0e025d6`, die Erlental-Messdaten in `e6e8246` (Monitorstand Spiel 2.2.1910, +304 Messungen).
