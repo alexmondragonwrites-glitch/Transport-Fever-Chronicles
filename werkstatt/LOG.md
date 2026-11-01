@@ -2,6 +2,16 @@
 
 Übergaben und Reviews, neueste oben. Kopf: `## JJJJ-MM-TT · Wer · Thema`. Nur ergänzen; Fehler in älteren Einträgen mit einem neuen Eintrag richtigstellen.
 
+## 2026-11-01 · Claude · Erlental: Kapitel X „Die Brauerei in Osterburg“
+
+- Auftrag des Spielers: „Ja, Kapitel X“ (1908 im Spiel abgeschlossen, Monitor im März 1909). Hochladen nach seiner Freigabe.
+- Faktenblatt `werkstatt/erlental/fakten/1908.md` (79 Detailmessungen, keine Rücksprünge).
+- Kapitel X (1908): drei Züge mit „Atlantic“ (Philippsburg–Ratzeburg für Sand und Lehm, Philippsburg–Silberweide für Getreide und Getränke, Ratzeburg–Silberweide für Lehm und Ziegel); Philippsburg Glashütte (Glas ab 2.4.), Osterburg Brauerei (Getränke ab 6.6.), Mettmann Ziegelei (Ziegel ab 24.9.); Getränke bis in den Güterzug nach Wengenrode (6.12.), dort Versorgung 0 von 121; Ratzeburg mit Ziegeln ab 12.11.; Pferdebahn in Osterburg ab 21.12.; Arenswiel 1.000 Einwohner am 26.10.; Itzehoe +94; Walldorf und Wengenrode stehen. Kredit am 22.2. von 27,37 auf 38,10 Mio., Fahrzeuge 27,50 Mio. (höchste Jahressumme), Ergebnis −6,58 Mio. mit 23,40 Mio. Zuschüssen. Die Linien um Ratzeburg kommen ins Plus.
+- Szenen: Wetterbuch der Philippsburg Station, Inventar der Brauerei Osterburg (Gärbottiche der Böttcherei Lassen), Anmeldung von Hedwig Brandt in Arenswiel (mit ihr 1.000 Einwohner).
+- Geprüft: Zahlen gegen Messungen und Faktenblatt (Entfernungen auf drei Stellen, Werte an den Schwellen), `validate-data.mjs`, `test-erlental-fakten.py`, Verneinungs- und KI-Wort-grep, Browser 1280 und 375 px ohne Konsolenfehler und Seitenüberlauf, Register mit 133 Einträgen, Jahresfilter mit 1908.
+- Kartenstand für X: Export vom 1.1.1909 vollständig (7 092 Bauten); gebacken wird nach Freigabe des Spielers.
+- An Codex: Bitte Kapitel X gegen `werkstatt/erlental/fakten/1908.md` prüfen.
+
 ## 2026-11-01 · Claude · Erlental: Kapitel IX hochgeladen
 
 - Auf Wunsch des Spielers hochgeladen: Kapitel IX mit Faktenblatt 1907 in `13b80b4`, die Erlental-Messdaten in `fae63f3` (Monitorstand Spiel 17.2.1909, +834 Messungen, vier neue Abschnitte).

@@ -10,6 +10,8 @@ Format: `- [Welt] Aufgabe · Dateien · Wer · seit/erledigt am`. Wer etwas anf�
 
 ## Zur Prüfung
 
+- [Erlental] Kapitel X „Die Brauerei in Osterburg“ (1908), drei Szenen in neuen Formen (Wetterbuch, Inventar, Anmeldung), 16 neue Registereinträge, Jahresbilanz 1908, Orte (neu: Osterburg), Unternehmen, offene Fragen, Q4; `fakten/1908.md` · `saves/erlental/chronik.html`, `saves/erlental/data/events.json`, `saves/erlental/data/meta.json` · Claude, 1.11.2026 · Hochladen nach Freigabe des Spielers · Bitte gegen `werkstatt/erlental/fakten/1908.md` prüfen.
+
 - [Erlental] Kapitel IX „Fässer aus Ratzeburg“ (1907), drei Szenen in neuen Formen (Gutachten, Abzählreim, Auftragsbuch), 15 neue Registereinträge, Jahresbilanz 1907, Orte (neu: Ratzeburg, Philippsburg), Unternehmen, offene Fragen (neu: Lehm und Sand ab 1907), Q4; `fakten/1907.md` · `saves/erlental/chronik.html`, `saves/erlental/data/events.json`, `saves/erlental/data/meta.json` · Claude, 1.11.2026 · `13b80b4`, Messdaten bis Spiel 17.2.1909 in `fae63f3`, auf Wunsch des Spielers hochgeladen · Bitte gegen `werkstatt/erlental/fakten/1907.md` prüfen.
 
 - [Erlental] 3D-Karte für Kapitel VII (Bilder vom 1.7.1905, der Export vom Jahreswechsel ist unvollständig) und VIII (1.1.1907), Straßenbahn auf der Karte, Legendenhinweis bei abweichendem Bildtag, Prüfung auf schwarz gerendertes Gelände · `saves/erlental/karte/`, `saves/erlental/chronik.html` (Kartenzeilen, Figur `#karte`, Q7), `docs/ERLENTAL.md`, `werkstatt/erlental/STAND.md` · Claude (Kartensitzung) · 31.10.2026
@@ -36,7 +38,7 @@ Format: `- [Welt] Aufgabe · Dateien · Wer · seit/erledigt am`. Wer etwas anf�
 
 - [Archipel] Prüfen, ob Journal und Auswertungen Werte „pro Jahr“ als Kalenderjahr ausgeben. Das Archipel läuft ebenfalls mit rund 16.000 Spielzeit-Einheiten je Tag.
 - [Spielmonitor] Kalendertempo (Millisekunden je Tag) mit messen. `balance_start_game_date` und `balance_end_game_date` kommen seit Mod-Revision 22 als Datum.
-- [Erlental] Kapitel X (1908) nach dem Jahreswechsel 1908/1909 im Spiel; Kapitel jahresweise (Wunsch vom 28.10.2026). Vorher `py -3 scripts/erlental-fakten.py 1908`. Offen: die Vorlage der Postkarte (Q6) beim Spieler erfragen · Claude
+- [Erlental] Kapitel XI (1909) nach dem Jahreswechsel 1909/1910 im Spiel; Kapitel jahresweise (Wunsch vom 28.10.2026). Vorher `py -3 scripts/erlental-fakten.py 1909`. Offen: die Vorlage der Postkarte (Q6) beim Spieler erfragen · Claude
 - [Erlental] Kartenstände für Kapitel V, VI und VII (Exporte vom 2.1.1904, 1.1.1905 und vom Jahreswechsel 1905/1906) in `Erlental-Karte/zeitleiste.json` eintragen und backen, danach die Kartenzeile in beide Kapitelköpfe und Q7 erweitern; nur nach Freigabe des Spielers und bei geschlossenem TF3 · Claude
 
 ## Erledigt

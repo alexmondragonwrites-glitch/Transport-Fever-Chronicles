@@ -1896,6 +1896,273 @@
       "source": "Spielmonitor, Welt „Erlental – 1900“",
       "recorded": "2026-10-31",
       "recorded_note": "Letzte Messung des Jahres um 14:40 Uhr; Versorgung und Finanztabelle aus der Messung vom 20.12.1907."
+    },
+    {
+      "id": "zug-philippsburg-ratzeburg-1908-01-04",
+      "date": "1908-01-04",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Verkehr",
+      "title": "Ein Zug zwischen Philippsburg und Ratzeburg",
+      "description": "Ein Zug mit der Lokomotive „Amerikanische 4-4-2 Atlantic“ und einem offenen Güterwagen fährt zwischen der neuen Philippsburg Station und einer neuen Ratzeburg Station, 5,5 km; Sand lädt er ab dem 2. Februar, Lehm ab dem 6. März. Am selben Tag beginnt ein Dampfkraftwagen von der Philippsburg Station Nord zur Philippsburg Glashütte, 0,5 km; Sand lädt er ab dem 16. März.",
+      "entities": [
+        "philippsburg",
+        "osterburg",
+        "ratzeburg",
+        "ewv"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-31",
+      "recorded_note": "Grund- und Detailmessung, aufgenommen um 14:41 und 14:44 Uhr."
+    },
+    {
+      "id": "brauerei-linien-1908-01-23",
+      "date": "1908-01-23",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Verkehr",
+      "title": "Dampfkraftwagen zur Osterburg Brauerei und zum Mettmann Bauernhof",
+      "description": "Ein Dampfkraftwagen fährt von der Philippsburg Station Nord zur Osterburg Brauerei, 1,3 km, ab dem 4. März drei, ab dem 22. August fünf. Seit dem 9. Januar fährt ein Dampfkraftwagen vom Mettmann Bauernhof bei Silberweide zur Silberweide Station West, 1,7 km, ab dem 10. März fünf; Getreide lädt er ab dem 24. Februar.",
+      "entities": [
+        "osterburg",
+        "philippsburg",
+        "silberweide",
+        "ewv"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-31",
+      "recorded_note": "Grundmessung, aufgenommen um 14:55 Uhr."
+    },
+    {
+      "id": "zug-philippsburg-silberweide-1908-02-22",
+      "date": "1908-02-22",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Verkehr",
+      "title": "Ein Zug zwischen Philippsburg und Silberweide",
+      "description": "Ein zweiter Zug mit der Lokomotive „Atlantic“ und einem Güterwagen fährt von der Philippsburg Station zur neuen Silberweide Station Haltepunkt, 6,6 km; Getreide lädt er ab dem 31. März, Getränke ab dem 31. Juli. Der Kredit steigt am selben Tag von 27,37 auf 38,10 Millionen.",
+      "entities": [
+        "philippsburg",
+        "silberweide",
+        "ewv"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-31",
+      "recorded_note": "Detailmessung, aufgenommen um 15:05 Uhr."
+    },
+    {
+      "id": "glas-philippsburg-1908-04-02",
+      "date": "1908-04-02",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Betrieb",
+      "title": "Die erste Ladung Glas aus der Philippsburg Glashütte",
+      "description": "Die Dampfkraftwagen an der Philippsburg Glashütte laden zum ersten Mal Glas; ab dem 14. April fährt Glas zur Osterburg Brauerei. Im Wirtschaftsjahr bis 30. Dezember erzeugt die Glashütte 56 Glas und verschickt 54.",
+      "entities": [
+        "philippsburg",
+        "osterburg"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-31",
+      "recorded_note": "Grundmessung, aufgenommen um 15:13 Uhr."
+    },
+    {
+      "id": "getraenke-osterburg-1908-06-06",
+      "date": "1908-06-06",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Betrieb",
+      "title": "Die ersten Getränke aus der Osterburg Brauerei",
+      "description": "Die Dampfkraftwagen der Osterburg Brauerei laden zum ersten Mal Getränke, nach Glas ab dem 14. April und Getreide ab dem 12. Mai. Im Wirtschaftsjahr bis 30. Dezember erzeugt die Brauerei 56 Getränke und verschickt 44.",
+      "entities": [
+        "osterburg",
+        "philippsburg"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-31",
+      "recorded_note": "Grundmessung, aufgenommen um 15:25 Uhr."
+    },
+    {
+      "id": "itzehoe-600-1908-06-16",
+      "date": "1908-06-16",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Ort",
+      "title": "Itzehoe über 600 Einwohner",
+      "description": "Itzehoe zählt 604 Einwohner, am 30. Dezember 654. Silberweide liegt seit demselben Tag über 550, Leipheim seit dem 11. Februar über 500. Walldorf steht seit dem 5. April bei 490, Wengenrode seit dem 16. Juni bei 867.",
+      "entities": [
+        "itzehoe",
+        "silberweide",
+        "leipheim",
+        "walldorf",
+        "wengenrode"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-31",
+      "recorded_note": "Detailmessung, aufgenommen um 15:26 Uhr."
+    },
+    {
+      "id": "zug-ratzeburg-silberweide-1908-08-03",
+      "date": "1908-08-03",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Verkehr",
+      "title": "Lehm und Ziegel zwischen Ratzeburg und Silberweide",
+      "description": "Ein dritter Zug mit der Lokomotive „Atlantic“ fährt von der Ratzeburg Station Transfer zur neuen Silberweide Station Ost, 4,5 km, 0,15 km von der Mettmann Ziegelei; Lehm lädt er ab dem 17. August, Ziegel ab dem 24. September. Ab dem 17. August fahren zwei Dampfkraftwagen von der Ratzeburg Station Abzweigung zum Haltepunkt, ab dem 18. August vier statt zwei Dampfer „Dunara Castle“ in Ratzeburg.",
+      "entities": [
+        "ratzeburg",
+        "silberweide",
+        "ewv"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-31",
+      "recorded_note": "Detailmessung, aufgenommen um 15:32 Uhr."
+    },
+    {
+      "id": "omnibus-osterburg-1908-08-17",
+      "date": "1908-08-17",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Verkehr",
+      "title": "Omnibusse zur Osterburg Lehmgrube",
+      "description": "Zwei Omnibusse „L’Obéissante“ fahren von der Lessingstrasse in Osterburg zur Osterburg Lehmgrube, 1,5 km; Fahrgäste ab dem 10. September. Ratzeburg zählt seit dem 23. August über 100 Einwohner.",
+      "entities": [
+        "osterburg",
+        "ratzeburg",
+        "ewv"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-31",
+      "recorded_note": "Detailmessung, aufgenommen um 15:35 Uhr."
+    },
+    {
+      "id": "getraenke-arenswiel-1908-09-22",
+      "date": "1908-09-22",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Verkehr",
+      "title": "Getränke auf dem Weg nach Wengenrode",
+      "description": "Die Dampfer „Sydfart“ zwischen Silberweide Hafen und Arenswiel Hafen laden zum ersten Mal Getränke, die Dampfkraftwagen von der Arenswiel Station zur Station Zentrum ab dem 29. Oktober, der Güterzug nach Wengenrode ab dem 6. Dezember. Wengenrode verlangt Getränke (121); am 30. Dezember steht die Versorgung bei 0.",
+      "entities": [
+        "arenswiel",
+        "silberweide",
+        "wengenrode",
+        "ewv"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-31",
+      "recorded_note": "Grundmessung, aufgenommen um 15:41 Uhr."
+    },
+    {
+      "id": "ziegel-mettmann-1908-09-24",
+      "date": "1908-09-24",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Betrieb",
+      "title": "Die ersten Ziegel aus der Mettmann Ziegelei",
+      "description": "Der Zug von Silberweide nach Ratzeburg lädt zum ersten Mal Ziegel aus der Mettmann Ziegelei. Im Wirtschaftsjahr bis 30. Dezember erzeugt die Ziegelei 72 Ziegel und verschickt 109.",
+      "entities": [
+        "silberweide",
+        "ratzeburg"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-31",
+      "recorded_note": "Grundmessung, aufgenommen um 15:41 Uhr."
+    },
+    {
+      "id": "arenswiel-1000-1908-10-26",
+      "date": "1908-10-26",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Ort",
+      "title": "Arenswiel erreicht 1.000 Einwohner",
+      "description": "Arenswiel zählt 1.000 Einwohner, am 30. Dezember 1.014.",
+      "entities": [
+        "arenswiel"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-11-01",
+      "recorded_note": "Detailmessung, aufgenommen um 05:34 Uhr."
+    },
+    {
+      "id": "ziegel-ratzeburg-1908-11-12",
+      "date": "1908-11-12",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Versorgung",
+      "title": "Ratzeburg zum ersten Mal mit Ziegeln versorgt",
+      "description": "Versorgung 2 von 40; am 30. Dezember 24 von 40. Die Dampfkraftwagen von der Ratzeburg Station Abzweigung zum Haltepunkt laden Ziegel seit dem 29. Oktober.",
+      "entities": [
+        "ratzeburg"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-11-01",
+      "recorded_note": "Detailmessung, aufgenommen um 05:39 Uhr."
+    },
+    {
+      "id": "erlental-12800-1908-12-08",
+      "date": "1908-12-08",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Ort",
+      "title": "Erlental über 12.800 Einwohner",
+      "description": "Erlental zählt zusammen 12.802 Einwohner; am 30. Dezember sind es 12.819. Itzehoe wächst 1908 von 560 auf 654, Arenswiel von 934 auf 1.014.",
+      "entities": [
+        "erlental",
+        "itzehoe",
+        "arenswiel"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-11-01",
+      "recorded_note": "Detailmessung, aufgenommen um 05:46 Uhr."
+    },
+    {
+      "id": "pferdebahn-osterburg-1908-12-21",
+      "date": "1908-12-21",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Verkehr",
+      "title": "Pferdebahn in Osterburg",
+      "description": "Zwei Pferdebahnlinien mit je zwei Wagen fahren in Osterburg in beiden Richtungen zwischen Busbahnhof, Blumenstrasse, Gartenstrasse und Uhlandstrasse; Fahrgäste ab dem 28. Dezember. Seit dem 15. Dezember fahren Dampfkraftwagen vom Osterburg Bauernhof zur Osterburg Station, 2,1 km; Osterburg verlangt Gemüse (63).",
+      "entities": [
+        "osterburg",
+        "ewv"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-11-01",
+      "recorded_note": "Grundmessung, aufgenommen um 05:50 Uhr."
+    },
+    {
+      "id": "betriebe-1908",
+      "date": "1908",
+      "precision": "year",
+      "game_time_label": "Januar bis Dezember 1908",
+      "kind": "fakt",
+      "category": "Betrieb",
+      "title": "Acht neue Betriebe, acht verschwunden",
+      "description": "Erstmals gemessen: Ulrichstein Eisenerzbergwerk (4.1.), Wolfratshausen Holzfällerlager (18.2.), Bad Herrenalb Bauernhof (5.4.), Drolshagen Baumwollplantage (20.5.), Munderkingen Ölraffinerie (6.7.), Gemünden Ölplattform #1 (19.8.), Walsrode Ölplattform Nord (4.10.), Wesel Bauernhof (18.11.). Zuletzt gemessen: Ahaus Ölplattform (6.1.), Garding Ölraffinerie (11.2.), Wengenrode Ölplattform (16.2.), Blaubeuren Baumwollplantage (29.2.), Sparneck Bauernhof (12.6.), Gütersloh Viehzuchtbetrieb (12.9.), Richtenberg Eisenerzbergwerk (25.10.), Gemünden Ölplattform (25.11.). Am Jahresende 103 Betriebe. Zum ersten Mal erzeugen die Philippsburg Glashütte, die Osterburg Brauerei und die Mettmann Ziegelei.",
+      "entities": [
+        "erlental"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-11-01",
+      "recorded_note": "Erste Messungen vom 31.10.2026, 14:40 Uhr, bis 1.11.2026, 05:43 Uhr."
+    },
+    {
+      "id": "stand-1908-12-31",
+      "date": "1908-12-31",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Messung",
+      "title": "Jahresende 1908: 74 Linien, 333 Fahrzeuge, 12.819 Einwohner",
+      "description": "Fahrzeuge: 148 Dampfkraftwagen, 65 Postkutschen, 34 Pferdefuhrwerke, 30 Omnibusse „L’Obéissante“, 5 Pferdefuhrwerke mit Fässern, 14 Pferdebahnwagen, 16 Züge (vier mit der Lokomotive „Atlantic“), 8 Dampfer „Dunara Castle“, 7 „Sydfart“, 6 „Waimarie“. Linienbilanzen im Wirtschaftsjahr vom 30.9. bis 30.12.1908 zusammen 22.299.516, am höchsten der Personenzug bis Itzehoe (4.930.100), der Güterzug Arenswiel–Wengenrode (1.468.586) und die Treibstoffzüge zwischen Itzehoe und Arenswiel (1.417.879), am tiefsten der Zug Philippsburg–Silberweide (−175.657). Versorgung am 30.12.: Arenswiel Fisch 121 von 208, Ziegel 24 von 151; Wengenrode Fisch 82 von 243, Getränke 0 von 121; Silberweide Ziegel 110 von 261, Gemüse 63 von 202; Itzehoe Gemüse 47 von 151, Treibstoff 51 von 175; Walldorf Gemüse 42 von 83, Treibstoff 27 von 126; Leipheim Gemüse 44 von 202, Treibstoff 42 von 168; Ditzingen Gemüse 27 von 86; Ratzeburg Gemüse 58 von 77, Ziegel 24 von 40; Osterburg Gemüse 0 von 63. Kredit 29,84 Millionen, Kontostand 8,18 Millionen. Finanztabelle 1908 (Stand 30.12.): Ergebnis −6,58 Millionen, Einnahmen 145,64 Millionen, Unterhalt 128,78 Millionen, Bauten 18,22 Millionen, Fahrzeuge 27,50 Millionen, Zuschüsse 23,40 Millionen, Kreditaufnahme 10,64 Millionen.",
+      "entities": [
+        "erlental",
+        "ewv"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-11-01",
+      "recorded_note": "Letzte Messung des Jahres um 05:53 Uhr; Versorgung und Finanztabelle aus der Messung vom 30.12.1908."
     }
   ]
 }
