@@ -2,6 +2,16 @@
 
 Übergaben und Reviews, neueste oben. Kopf: `## JJJJ-MM-TT · Wer · Thema`. Nur ergänzen; Fehler in älteren Einträgen mit einem neuen Eintrag richtigstellen.
 
+## 2026-11-01 · Claude · Erlental: Kapitel IX „Fässer aus Ratzeburg“
+
+- Auftrag des Spielers: wieder ein Jahr rum, neue Geschichten; die Karte schon backen lassen, er spielt noch. Hochladen nach seiner Freigabe.
+- Faktenblatt `werkstatt/erlental/fakten/1907.md`.
+- Kapitel IX (1907): Ölquelle bei Ratzeburg (25.1.), ab 15.2. Pferdefuhrwerke mit Fässern, zwei Dampfer „Dunara Castle“ und ein Zug mit der ersten Lokomotive „Atlantic“ nach Unter-Itzehoe; Rohöl ab 4.8. auf den Treibstoffzügen nach Arenswiel; Gemüse für Ratzeburg (versorgt ab 23.4.), Omnibusse und ein Fahrgastdampfer um Ratzeburg; Sand vom Sandbaggerschiff ab 7.12.; Lehm Itzehoe–Ratzeburg und Osterburg–Philippsburg (Abnehmer offen). Kredit am 15.2. von 27,19 auf 39,72 Mio., Bauten 27,41 Mio. (höchste Jahressumme), Ergebnis −0,44 Mio. mit 27,46 Mio. Zuschüssen. Walldorf 340 → 479 (seit 3.6. vor Ahaus), Itzehoe 458 → 560 (seit 10.8. vor Silberweide), Erlental 12.500 am 30.11. Seegut ab März wieder 207 bis 216.
+- Szenen: Gutachten des Bohrmeisters Claus Petersen, Abzählreim „Die Atlantic“ (Wilhelm Kamp heizt die Atlantic), Auftragsbuch der Böttcherei Lassen.
+- Geprüft: jede Zahl gegen Messungen und Faktenblatt (dabei 4,6 statt 4,7 km für die Bahn Ratzeburg–Unter-Itzehoe und 250 m vom Hafen zur Station Transfer berichtigt, Schwellen mit „erreicht“, wo die Messung genau auf der Schwelle liegt); `validate-data.mjs`, `test-erlental-fakten.py`, Verneinungs- und KI-Wort-grep, Browser 1280 und 375 px ohne Konsolenfehler, Register mit 117 Einträgen, Jahresfilter mit 1907.
+- Kartenstand für IX bei der Kartensitzung beauftragt (Export vom 2.1.1908); gebacken wird bei geschlossenem TF3.
+- An Codex: Bitte Kapitel IX gegen `werkstatt/erlental/fakten/1907.md` prüfen.
+
 ## 2026-10-31 · Claude · Erlental: 3D-Karte für Kapitel VII und VIII
 
 - Auftrag des Spielers über die Chronik-Sitzung: Kartenstände für VII und VIII. Dem Export vom Jahreswechsel 1906 (`1793338126-2579.json`) fehlen Kopf, Bauten und Kanten: Ein neu gestarteter Monitor hatte ihn am 30.10. beim Nachlesen überschrieben, und ein Spielstand von damals ist nicht mehr da. VII zeigt deshalb die Bilder vom 1.7.1905, dem letzten vollständigen Export des Jahres (vom Spieler am 31.10. bestätigt), VIII die vom 1.1.1907.

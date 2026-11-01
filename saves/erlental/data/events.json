@@ -1646,6 +1646,256 @@
       "source": "Spielmonitor, Welt „Erlental – 1900“",
       "recorded": "2026-10-31",
       "recorded_note": "Letzte Messung des Jahres um 06:00 Uhr; Versorgung und Finanztabelle aus der Messung vom 28.12.1906."
+    },
+    {
+      "id": "lehm-itzehoe-ratzeburg-1907-01-08",
+      "date": "1907-01-08",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Verkehr",
+      "title": "Lehm von der Itzehoe Lehmgrube nach Ratzeburg",
+      "description": "Ein Dampfkraftwagen fährt von der Itzehoe Lehmgrube, 2,1 km von Itzehoe, zu einer neuen Station bei Ratzeburg, ab dem 15. Februar zur Ratzeburg Station Abzweigung, 1,5 km. Lehm lädt er ab dem 27. Januar; die Itzehoe Lehmgrube verschickt ab dem 29. Januar. Die Finanztabelle verbucht am selben 8. Januar 10,36 Millionen Zuschüsse.",
+      "entities": [
+        "itzehoe",
+        "ratzeburg",
+        "ewv"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-31",
+      "recorded_note": "Detailmessung, aufgenommen um 06:03 Uhr."
+    },
+    {
+      "id": "oelquelle-ratzeburg-1907-01-25",
+      "date": "1907-01-25",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Betrieb",
+      "title": "Eine Ölquelle bei Ratzeburg",
+      "description": "Der Monitor misst eine Ölquelle 2,7 km von Ratzeburg, Stufe 8. Sie fördert ab dem 29. Januar und verschickt ab dem 5. März; bis Juni steigt sie auf Stufe 10. Im Wirtschaftsjahr bis 20. Dezember fördert sie 304 und verschickt 190.",
+      "entities": [
+        "ratzeburg"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-31",
+      "recorded_note": "Grundmessung, aufgenommen um 06:07 Uhr."
+    },
+    {
+      "id": "oel-ratzeburg-1907-02-15",
+      "date": "1907-02-15",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Verkehr",
+      "title": "Fässer, Dampfer und ein Zug für das Öl aus Ratzeburg",
+      "description": "Fünf Pferdefuhrwerke mit Fässern fahren von der Ratzeburg Ölquelle zur Station Anbau, 0,7 km; zwei Dampfer „Dunara Castle“ vom Hafen Süd daneben zum Ratzeburg Hafen, 2,1 km; ein Zug mit der Lokomotive „Amerikanische 4-4-2 Atlantic“ und einem Güterwagen von der Ratzeburg Station Transfer, 250 m vom Hafen, zur Unter-Itzehoe Station, 4,6 km. Bis dahin fahren alle Züge der Gesellschaft mit Lokomotiven der Russischen Baureihe OB. Rohöl laden die Fässerwagen ab dem 4. März, die Dampfer ab dem 4. Mai, der Zug ab dem 18. Juni; Gemüse lädt der Zug ab dem 11. März. Der Kredit steigt am selben 15. Februar von 27,19 auf 39,72 Millionen.",
+      "entities": [
+        "ratzeburg",
+        "itzehoe",
+        "ewv"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-31",
+      "recorded_note": "Grund- und Detailmessung, aufgenommen um 06:13 und 06:24 Uhr."
+    },
+    {
+      "id": "gemuese-ratzeburg-1907-04-23",
+      "date": "1907-04-23",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Versorgung",
+      "title": "Ratzeburg zum ersten Mal mit Gemüse versorgt",
+      "description": "Versorgung 1 von 34; am 20. Dezember 49 von 56. Seit dem 20. Februar fährt ein Dampfkraftwagen von der Ratzeburg Station Abzweigung zum Haltepunkt nahe der Ortsmitte, 0,6 km, ab dem 21. Mai zwei; Gemüse lädt er ab dem 14. April.",
+      "entities": [
+        "ratzeburg"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-31",
+      "recorded_note": "Detailmessung, aufgenommen um 06:45 Uhr."
+    },
+    {
+      "id": "ratzeburg-fahrgaeste-1907-06-03",
+      "date": "1907-06-03",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Verkehr",
+      "title": "Omnibusse und ein Fahrgastdampfer bei Ratzeburg",
+      "description": "Zwei Omnibusse „L’Obéissante“ fahren von der Uhlandstrasse zum Grünen Weg, 0,8 km, ab dem 4. Juni ein Dampfer „Waimarie“ zwischen Ratzeburg Hafen und Hafen Süd, ab dem 14. Juni zwei Omnibusse von der Berliner Strasse zur Ratzeburg Ölquelle, 0,8 km. Ratzeburg erreicht am 7. Juni 80 Einwohner. Walldorf zählt seit dem 3. Juni mehr Einwohner als Ahaus.",
+      "entities": [
+        "ratzeburg",
+        "walldorf",
+        "ewv"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-31",
+      "recorded_note": "Grundmessung, aufgenommen um 13:53 Uhr."
+    },
+    {
+      "id": "arenswiel-900-1907-06-17",
+      "date": "1907-06-17",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Ort",
+      "title": "Arenswiel erreicht 900 Einwohner",
+      "description": "Am 20. Dezember sind es 934. Silberweide zählt seit dem 29. Januar über 500 Einwohner, Walldorf seit dem 1. Mai über 400 und seit dem 20. September über 450; Leipheim erreicht am 1. Mai 450.",
+      "entities": [
+        "arenswiel",
+        "silberweide",
+        "walldorf",
+        "leipheim"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-31",
+      "recorded_note": "Detailmessung, aufgenommen um 13:58 Uhr."
+    },
+    {
+      "id": "rohoel-itzehoe-arenswiel-1907-08-04",
+      "date": "1907-08-04",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Verkehr",
+      "title": "Rohöl auf den Treibstoffzügen nach Arenswiel",
+      "description": "Die beiden Treibstoffzüge zwischen der Unter-Itzehoe Station und Arenswiel Station West, 6,3 km, tragen seit dem 28. Februar auch Rohöl im Namen und laden es zum ersten Mal. Ab dem 18. Mai fahren vier Dampfer „Dunara Castle“ zwischen Leuna, Arenswiel und der Selters Ölplattform, ab dem 24. August drei Kesselwagenzüge zwischen Leuna und Ditzingen.",
+      "entities": [
+        "itzehoe",
+        "arenswiel",
+        "leuna",
+        "ditzingen",
+        "ewv"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-31",
+      "recorded_note": "Grundmessung, aufgenommen um 14:05 Uhr."
+    },
+    {
+      "id": "itzehoe-silberweide-1907-08-10",
+      "date": "1907-08-10",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Ort",
+      "title": "Itzehoe zieht an Silberweide vorbei",
+      "description": "Itzehoe zählt 522 Einwohner, Silberweide 521. Itzehoe liegt seit dem 29. Mai über 500 und erreicht am 27. November 550; am 20. Dezember sind es 560.",
+      "entities": [
+        "itzehoe",
+        "silberweide"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-31",
+      "recorded_note": "Detailmessung, aufgenommen um 14:06 Uhr."
+    },
+    {
+      "id": "omnibus-itzehoe-lehmgrube-1907-09-20",
+      "date": "1907-09-20",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Verkehr",
+      "title": "Omnibusse zur Itzehoe Lehmgrube",
+      "description": "Zwei Omnibusse „L’Obéissante“ fahren vom Itzehoe Busbahnhof zur Itzehoe Lehmgrube, 2,1 km; Fahrgäste ab dem 3. Oktober. Die Finanztabelle verbucht am selben Tag 14,03 Millionen Zuschüsse für das dritte Quartal.",
+      "entities": [
+        "itzehoe",
+        "ewv"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-31",
+      "recorded_note": "Detailmessung, aufgenommen um 14:10 Uhr."
+    },
+    {
+      "id": "sand-ratzeburg-1907-10-21",
+      "date": "1907-10-21",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Verkehr",
+      "title": "Die Ratzeburger Dampfer halten am Sandbaggerschiff",
+      "description": "Die beiden Dampfer „Dunara Castle“ halten auch am Ratzeburg Sandbaggerschiff, 0,9 km vom Ratzeburg Hafen. Sand laden sie zum ersten Mal am 7. Dezember; das Sandbaggerschiff verschickt ab dem 9. Dezember.",
+      "entities": [
+        "ratzeburg",
+        "ewv"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-31",
+      "recorded_note": "Grundmessung, aufgenommen um 14:23 Uhr."
+    },
+    {
+      "id": "lehm-osterburg-philippsburg-1907-11-16",
+      "date": "1907-11-16",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Verkehr",
+      "title": "Lehm von der Osterburg Lehmgrube nach Philippsburg",
+      "description": "Ein Dampfkraftwagen fährt von der Osterburg Lehmgrube zur Philippsburg Station Nord, 0,7 km, ab dem 17. November zwei. Lehm laden sie ab dem 29. November; die Lehmgrube verschickt ab dem 30. November.",
+      "entities": [
+        "philippsburg",
+        "osterburg",
+        "ewv"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-31",
+      "recorded_note": "Grundmessung, aufgenommen um 14:31 Uhr."
+    },
+    {
+      "id": "erlental-12500-1907-11-30",
+      "date": "1907-11-30",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Ort",
+      "title": "Erlental erreicht 12.500 Einwohner",
+      "description": "Erlental zählt zusammen 12.501 Einwohner; am 20. Dezember sind es 12.529. Walldorf wächst 1907 von 340 auf 479, Itzehoe von 458 auf 560. Wengenrode zählt seit dem 27. November über 850 Einwohner.",
+      "entities": [
+        "erlental",
+        "walldorf",
+        "itzehoe",
+        "wengenrode"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-31",
+      "recorded_note": "Detailmessung, aufgenommen um 14:35 Uhr."
+    },
+    {
+      "id": "seegut-fisch-1907-03",
+      "date": "1907-03",
+      "precision": "month",
+      "game_time_label": "März 1907",
+      "kind": "fakt",
+      "category": "Betrieb",
+      "title": "Das Seegut Tiefenborn erzeugt wieder mehr Fisch",
+      "description": "Im Wirtschaftsjahr erzeugt das Seegut Ende Januar 126 Fisch, Ende Februar 162 und ab März wieder 207 bis 216, bei Stufe 14. Wengenrode ist Ende Juni mit Fisch zu 17 von 237 versorgt, am 20. Dezember zu 85 von 242.",
+      "entities": [
+        "seegut-tiefenborn",
+        "wengenrode"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-31",
+      "recorded_note": "Detailmessungen vom 29.1. bis 20.12.1907."
+    },
+    {
+      "id": "betriebe-1907",
+      "date": "1907",
+      "precision": "year",
+      "game_time_label": "Januar bis Dezember 1907",
+      "kind": "fakt",
+      "category": "Betrieb",
+      "title": "Neun neue Betriebe, zwei verschwunden",
+      "description": "Erstmals gemessen: Leuna Holzfällerlager (4.1.), Ratzeburg Ölquelle (25.1.), Emmelshausen Viehzuchtbetrieb (18.2.), Burladingen Ölraffinerie (5.4.), Teisendorf Ölraffinerie (21.5.), Ratzeburg Fischzucht #1 (5.7.), Blaubeuren Ölplattform (21.8.), Leipheim Fischzucht West (5.10., ein neuer Betrieb unter dem Namen des alten), Walldorf Kohlebergwerk (19.11.). Zuletzt gemessen: Leipheim Fischzucht West (25.2.), Glücksburg Holzfällerlager (14.11.). Am Jahresende 103 Betriebe. Walldorf verlangt seit dem 19. Januar Kleidung, Leipheim seit dem 10. Oktober Maschinen.",
+      "entities": [
+        "erlental"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-31",
+      "recorded_note": "Erste Messungen vom 31.10.2026, 06:01 Uhr, bis 31.10.2026, 14:32 Uhr."
+    },
+    {
+      "id": "stand-1907-12-30",
+      "date": "1907-12-30",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Messung",
+      "title": "Jahresende 1907: 63 Linien, 281 Fahrzeuge, 12.529 Einwohner",
+      "description": "Fahrzeuge: 115 Dampfkraftwagen, 58 Postkutschen, 34 Pferdefuhrwerke, 28 Omnibusse „L’Obéissante“, 5 Pferdefuhrwerke mit Fässern, 10 Pferdebahnwagen, 13 Züge, 7 Dampfer „Sydfart“, 6 „Dunara Castle“, 5 „Waimarie“. Linienbilanzen im Wirtschaftsjahr vom 20.9. bis 20.12.1907 zusammen 16.951.943, am höchsten der Personenzug bis Itzehoe (5.129.989) und der Güterzug Arenswiel–Wengenrode (2.175.799), am tiefsten die Treibstoffzüge zwischen Itzehoe und Arenswiel (−837.034); die acht Linien um Ratzeburg zusammen −555.632. Versorgung am 20.12.: Arenswiel Fisch 129 von 191, Ziegel 18 von 142; Wengenrode Fisch 85 von 242; Silberweide Ziegel 117 von 250, Gemüse 63 von 195; Itzehoe Gemüse 49 von 145, Treibstoff 32 von 169; Walldorf Gemüse 50 von 81, Treibstoff 20 von 126; Leipheim Gemüse 62 von 195, Treibstoff 66 von 155; Ditzingen Gemüse 30 von 78; Ratzeburg Gemüse 49 von 56. Kredit 29,40 Millionen, Kontostand 265.746. Finanztabelle 1907 (Stand 20.12.): Ergebnis −0,44 Millionen, Einnahmen 121,67 Millionen, Unterhalt 104,40 Millionen, Bauten 27,41 Millionen, Fahrzeuge 16,46 Millionen, Zuschüsse 27,46 Millionen, Kreditaufnahme 12,28 Millionen.",
+      "entities": [
+        "erlental",
+        "ewv"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-10-31",
+      "recorded_note": "Letzte Messung des Jahres um 14:40 Uhr; Versorgung und Finanztabelle aus der Messung vom 20.12.1907."
     }
   ]
 }
