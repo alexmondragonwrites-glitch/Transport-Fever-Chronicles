@@ -2,6 +2,16 @@
 
 Übergaben und Reviews, neueste oben. Kopf: `## JJJJ-MM-TT · Wer · Thema`. Nur ergänzen; Fehler in älteren Einträgen mit einem neuen Eintrag richtigstellen.
 
+## 2026-11-01 · Claude · Erlental: Kapitel XI „Zehn Jahre“
+
+- Angabe des Spielers: Zehn Jahre Erlental sind vorbei, zum Jubiläum wird der Personenfernverkehr ausgeweitet und bekommt neue Lokomotiven und Wagen (Q9). Monitor bei Spiel 2.2.1910. Hochladen nach seiner Freigabe.
+- Faktenblatt `werkstatt/erlental/fakten/1909.md` (89 Detailmessungen, keine Rücksprünge).
+- Kapitel XI (1909): Getränke aus Osterburg kommen bis Wengenrode (versorgt ab 14.5., verlangt seit 1902) und Arenswiel (verlangt ab 7.4., versorgt ab 13.6.); Osterburg mit Gemüse vom eigenen Bauernhof (10.2.) und +83 Einwohner; ein neuer Weg über den See ab August (Ziegel aus Eckartsberga für Uffenheim, Lehm aus Leuna und Dünger aus Ditzingen zurück; Dampfer Arenswiel Hafen West–Leuna, zwei neue Züge zwischen Arenswiel und Wengenrode); neun Züge mit „Atlantic“; Erlental 13.000 am 10.7. Zuschüsse 0, zum ersten Mal seit 1900; Fahrzeuge 39,22 Mio. (höchste Jahressumme), Ergebnis −7,37 Mio. Jubiläum: Am 7.1.1910 fährt der Personenzug mit vier „Atlantic“ und 28 Russischen Vorortwagen, 532 statt 192 Plätze; Kredit 77,43 Mio. (Höchststand); Wartende 776 am 1.1., 463 am 30.1.1910.
+- Szenen: Wette vom Rosenweg (Wengenrode 1902, Nachtrag 14.5.1909), Eingabe der Gemeinde Walldorf (22.9.1909), Gästebuch im Haus Weitblick (1. bis 7.1.1910) mit den wiederkehrenden Figuren.
+- Geprüft: Zahlen gegen Messungen und Faktenblatt (Entfernungen auf drei Stellen, Werte an den Schwellen, erste Nachfrage und erste Versorgung über alle Messungen seit 1900), `validate-data.mjs`, `test-erlental-fakten.py`, Verneinungs- und KI-Wort-Prüfung, Browser 1280 und 375 px ohne Konsolenfehler und Seitenüberlauf, Register mit 147 Einträgen, Jahresfilter mit 1909.
+- Kartenstand für XI: Export vom 1.1.1910 vollständig (7 214 Bauten); gebacken wird nach Freigabe des Spielers, vorher braucht die Kapitelleiste der Karte auf dem Handy eine andere Form.
+- An Codex: Bitte Kapitel XI gegen `werkstatt/erlental/fakten/1909.md` prüfen.
+
 ## 2026-11-01 · Claude · Erlental: 3D-Karte für Kapitel IX und X
 
 - Auftrag des Spielers: Kartenstände für IX (Bilder vom 2.1.1908) und X (1.1.1909), gebacken nach dem Schließen von TF3, X direkt nach IX („Ja, X mitbacken“). IX gegen VIII mit 1 792 Änderungen (45 Minuten), X gegen IX mit 1 385 (58 Minuten); die neuen Bautypen (Gewerbehaus, Ölquelle an Land, zwei Stationsmodule) liefen vorab ohne Platzhalter durch.
