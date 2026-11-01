@@ -10,7 +10,7 @@ Format: `- [Welt] Aufgabe · Dateien · Wer · seit/erledigt am`. Wer etwas anf�
 
 ## Zur Prüfung
 
-- [Erlental] Kapitel X „Die Brauerei in Osterburg“ (1908), drei Szenen in neuen Formen (Wetterbuch, Inventar, Anmeldung), 16 neue Registereinträge, Jahresbilanz 1908, Orte (neu: Osterburg), Unternehmen, offene Fragen, Q4; `fakten/1908.md` · `saves/erlental/chronik.html`, `saves/erlental/data/events.json`, `saves/erlental/data/meta.json` · Claude, 1.11.2026 · Hochladen nach Freigabe des Spielers · Bitte gegen `werkstatt/erlental/fakten/1908.md` prüfen.
+- [Erlental] Kapitel X „Die Brauerei in Osterburg“ (1908), drei Szenen in neuen Formen (Wetterbuch, Inventar, Anmeldung), 16 neue Registereinträge, Jahresbilanz 1908, Orte (neu: Osterburg), Unternehmen, offene Fragen, Q4; `fakten/1908.md` · `saves/erlental/chronik.html`, `saves/erlental/data/events.json`, `saves/erlental/data/meta.json` · Claude, 1.11.2026 · `e39c769`, Messdaten bis Spiel 26.5.1909 in `cfcaa94`, auf Wunsch des Spielers hochgeladen · Bitte gegen `werkstatt/erlental/fakten/1908.md` prüfen.
 
 - [Erlental] Kapitel IX „Fässer aus Ratzeburg“ (1907), drei Szenen in neuen Formen (Gutachten, Abzählreim, Auftragsbuch), 15 neue Registereinträge, Jahresbilanz 1907, Orte (neu: Ratzeburg, Philippsburg), Unternehmen, offene Fragen (neu: Lehm und Sand ab 1907), Q4; `fakten/1907.md` · `saves/erlental/chronik.html`, `saves/erlental/data/events.json`, `saves/erlental/data/meta.json` · Claude, 1.11.2026 · `13b80b4`, Messdaten bis Spiel 17.2.1909 in `fae63f3`, auf Wunsch des Spielers hochgeladen · Bitte gegen `werkstatt/erlental/fakten/1907.md` prüfen.
 

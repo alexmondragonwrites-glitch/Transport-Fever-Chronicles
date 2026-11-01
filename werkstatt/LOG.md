@@ -2,6 +2,11 @@
 
 Übergaben und Reviews, neueste oben. Kopf: `## JJJJ-MM-TT · Wer · Thema`. Nur ergänzen; Fehler in älteren Einträgen mit einem neuen Eintrag richtigstellen.
 
+## 2026-11-01 · Claude · Erlental: Kapitel X hochgeladen
+
+- Auf Wunsch des Spielers hochgeladen: Kapitel X mit Faktenblatt 1908 in `e39c769`, die Erlental-Messdaten in `cfcaa94` (Monitorstand Spiel 26.5.1909, +160 Messungen).
+- Kartenstand für X ist noch nicht beauftragt; der Spieler hat darüber noch nicht entschieden. Der Kartenstand IX wartet darauf, dass TF3 geschlossen wird.
+
 ## 2026-11-01 · Claude · Erlental: Kapitel X „Die Brauerei in Osterburg“
 
 - Auftrag des Spielers: „Ja, Kapitel X“ (1908 im Spiel abgeschlossen, Monitor im März 1909). Hochladen nach seiner Freigabe.
