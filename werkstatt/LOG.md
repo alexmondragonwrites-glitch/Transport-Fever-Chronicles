@@ -2,6 +2,13 @@
 
 Übergaben und Reviews, neueste oben. Kopf: `## JJJJ-MM-TT · Wer · Thema`. Nur ergänzen; Fehler in älteren Einträgen mit einem neuen Eintrag richtigstellen.
 
+## 2026-11-01 · Claude · Erlental: Kapitelwahl der Karte nach Staffeln
+
+- Vorgabe des Spielers: Staffeln zu je zehn Spieljahren. Die Kapitelwahl der 3D-Karte zeigt „Staffel 1 · 1900–1909“ über den Kapiteln I bis XI; auf dem Handy gruppiert die Liste nach Staffeln. Ab einer zweiten Staffel erscheint jede andere Staffel als eigener Knopf, und die Legende nennt zum Kapitel die Staffel.
+- Für Staffel 2 (eigene Seite, Kapitel ab I): In `Erlental-Karte/zeitleiste.json` heißen ihre Kapitel `staffel-2-kapitel-1` usw. und verweisen auf `staffel-2.html#kapitel-1`; die Kartenzeile dort zeigt auf `karte/#staffel-2-kapitel-1`. Staffel 1 und ihre Verweise bleiben unverändert.
+- Geändert sind nur Seitenskript, `index.html` und `orte.json` der Karte, keine Kacheln. Offen beim Spieler: ob Staffel 2 einen eigenen Kartenzeitstrahl mit frischem Wald und Gelände bekommt.
+- Auf Wunsch des Spielers hochgeladen in `95580a9`.
+
 ## 2026-11-01 · Claude · Erlental: 3D-Karte für Kapitel XI, mit Straßenbahngleisen
 
 - Auftrag des Spielers: Kartenstand für XI („Ja, Karte XI backen“) mit den Bildern vom 1.1.1910, dem ersten Export aus Revision 26 der Monitor-Mod. Der Export ist vollständig (7 214 Bauten, 8 677 Kanten, 82 Linien); neue Bautypen gegenüber X gibt es keine. XI gegen X mit 1 239 Änderungen, 34 Abschnitte in 66 Minuten. Drei Abschnitte liefen mit schlankem Boden; `karte_backen.py pruefen` fand kein schwarzes Gelände (ein Bild mit dichtem Wald liegt knapp an der Schwelle).
