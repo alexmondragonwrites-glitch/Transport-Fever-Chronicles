@@ -2,6 +2,14 @@
 
 Übergaben und Reviews, neueste oben. Kopf: `## JJJJ-MM-TT · Wer · Thema`. Nur ergänzen; Fehler in älteren Einträgen mit einem neuen Eintrag richtigstellen.
 
+## 2026-11-01 · Claude · Erlental: 3D-Karte für Kapitel IX und X
+
+- Auftrag des Spielers: Kartenstände für IX (Bilder vom 2.1.1908) und X (1.1.1909), gebacken nach dem Schließen von TF3, X direkt nach IX („Ja, X mitbacken“). IX gegen VIII mit 1 792 Änderungen (45 Minuten), X gegen IX mit 1 385 (58 Minuten); die neuen Bautypen (Gewerbehaus, Ölquelle an Land, zwei Stationsmodule) liefen vorab ohne Platzhalter durch.
+- In beiden Ständen waren je zwei Grundabschnitte im Norden zu groß für den Boden-Shader von Cycles; `karte_backen.py` hat sie wie vorgesehen mit schlankem Boden gerendert. `karte_backen.py pruefen`: kein dunkles Tagbild.
+- IX hat 79,7 MB, X 82,2 MB (31,7 MB eigene Dateien) und liegt damit erstmals über dem Ziel von 80 MB je Stand. Neu auf der Website sind nur die eigenen Dateien; sie hat jetzt rund 299 MB.
+- Chronik: Kartenzeilen in IX und X, Figur `#karte` (Zeitleiste I bis X) und Q7 (Exporte von Revision 25). Kapitel I bis VIII bleiben unverändert.
+- Auf Wunsch des Spielers hochgeladen in `bb8f2c8`.
+
 ## 2026-11-01 · Claude · Erlental: Kapitel X hochgeladen
 
 - Auf Wunsch des Spielers hochgeladen: Kapitel X mit Faktenblatt 1908 in `e39c769`, die Erlental-Messdaten in `cfcaa94` (Monitorstand Spiel 26.5.1909, +160 Messungen).
