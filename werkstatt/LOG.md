@@ -2,6 +2,11 @@
 
 Übergaben und Reviews, neueste oben. Kopf: `## JJJJ-MM-TT · Wer · Thema`. Nur ergänzen; Fehler in älteren Einträgen mit einem neuen Eintrag richtigstellen.
 
+## 2026-11-01 · Claude · Erlental: Kapitel XI hochgeladen
+
+- Auf Wunsch des Spielers hochgeladen: Kapitel XI mit Faktenblatt 1909 in `0e025d6`, die Erlental-Messdaten in `e6e8246` (Monitorstand Spiel 2.2.1910, +304 Messungen).
+- Kartenstand für XI: Export vom 1.1.1910 vollständig (7 214 Bauten); die Kartensitzung backt ihn erst nach Freigabe des Spielers, vorher braucht die Kapitelleiste der Karte auf dem Handy eine andere Form.
+
 ## 2026-11-01 · Claude · Erlental: Kapitel XI „Zehn Jahre“
 
 - Angabe des Spielers: Zehn Jahre Erlental sind vorbei, zum Jubiläum wird der Personenfernverkehr ausgeweitet und bekommt neue Lokomotiven und Wagen (Q9). Monitor bei Spiel 2.2.1910. Hochladen nach seiner Freigabe.
