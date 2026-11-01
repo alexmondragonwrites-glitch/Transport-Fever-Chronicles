@@ -2,6 +2,11 @@
 
 Übergaben und Reviews, neueste oben. Kopf: `## JJJJ-MM-TT · Wer · Thema`. Nur ergänzen; Fehler in älteren Einträgen mit einem neuen Eintrag richtigstellen.
 
+## 2026-11-01 · Claude · Erlental: Kapitel IX hochgeladen
+
+- Auf Wunsch des Spielers hochgeladen: Kapitel IX mit Faktenblatt 1907 in `13b80b4`, die Erlental-Messdaten in `fae63f3` (Monitorstand Spiel 17.2.1909, +834 Messungen, vier neue Abschnitte).
+- Die Kartensitzung backt den Kartenstand für IX, sobald TF3 geschlossen ist, und trägt Kartenzeile, Figur und Q7 danach ein.
+
 ## 2026-11-01 · Claude · Erlental: Kapitel IX „Fässer aus Ratzeburg“
 
 - Auftrag des Spielers: wieder ein Jahr rum, neue Geschichten; die Karte schon backen lassen, er spielt noch. Hochladen nach seiner Freigabe.
