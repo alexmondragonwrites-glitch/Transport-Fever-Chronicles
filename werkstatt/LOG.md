@@ -2,6 +2,20 @@
 
 Übergaben und Reviews, neueste oben. Kopf: `## JJJJ-MM-TT · Wer · Thema`. Nur ergänzen; Fehler in älteren Einträgen mit einem neuen Eintrag richtigstellen.
 
+## 2026-11-01 · Claude · Erlental: 3D-Karte entdoppelt, ohne Qualitätsverlust
+
+- Auftrag des Spielers: Website komprimieren ohne Qualitätsverlust (GitHub Pages veröffentlicht höchstens 1 GB). Gemessen: 82 MB der Kartenkacheln waren bytegleiche Kopien der groben Stufen (4 bis 32 m), die jeder Stand für die ganze Karte neu rechnete.
+- Jetzt liegt jede gleiche Kachel nur einmal auf der Website; `kacheln.json` jedes Stands nennt unter `herkunft`, aus welchem Ordner die Seite sie lädt. Die Karte hat danach 13 052 statt 15 328 Dateien und 250,6 statt 332 MB, die Website etwa 413 statt 495 MB. Kein Bild ist neu kodiert: Alle 47 657 Kacheleinträge der elf Stände zeigen Byte für Byte denselben Inhalt wie vorher. Geändert sind nur zehn `kacheln.json`, dazu entfallen 2 276 Kacheldateien.
+- Für neue Kapitel in `Erlental-Karte/karte_backen.py`: Bei Tag werden nur die Kacheln neu abgelegt, die eine Änderung berührt. Die übrigen bleiben die des vorigen Stands, wenn das neue Bild dasselbe zeigt; geändertes Rendern erkennt der Bildvergleich. Bauten, die nur ihre Parameter ändern, werden in beiden Fassungen gebaut und verglichen. Nachgerechnet für XI: rund 20 statt 32 MB je Kapitel, nach zehn weiteren Kapiteln etwa 615 MB (abgeleitet). Renderzeit spart das nicht.
+- Geprüft im Browser: Kapitel I und XI bei Tag und Nacht, alle Kacheln geladen, keine Fehler.
+- Auf Wunsch des Spielers hochgeladen in `d9a9e4e`.
+
+## 2026-11-01 · Claude · Erlental: Ein Kartenzeitstrahl über alle Staffeln
+
+- Entscheidung des Spielers („An Staffel 1 anschließen“), damit erledigt der offene Punkt aus „Kapitelwahl der Karte nach Staffeln“: Staffel 2 bekommt auf der 3D-Karte keinen eigenen Zeitstrahl. Wald (Export vom 1.1.1903) und Geländescan (2.3.1902) bleiben, das erste Kapitel von Staffel 2 wird wie jedes neue Kapitel nur an seinen Änderungen gegen XI gebacken.
+- Ohne Codeänderung; mit einem Probestand vom 1.1.1911 geprüft (Vorlage XI, Verweis auf `staffel-2.html#kapitel-1`). Regel in `docs/ERLENTAL.md` („Staffeln“, Karte) und in `Erlental-Karte/LIESMICH.md`.
+- Auf Wunsch des Spielers hochgeladen in `251653a`.
+
 ## 2026-11-01 · Claude · Erlental: Staffeln zu je zehn Spieljahren
 
 - Wunsch des Spielers: Erlental wird in Staffeln zu je zehn Spieljahren erzählt, für Karte und Chronik. Staffel 1 (1900 bis 1909, Kapitel I bis XI) ist abgeschlossen, 1910 beginnt Staffel 2. Auf Rückfrage gewählt: eigene Seite für Staffel 2 (`staffel-2.html`), Kapitel wieder ab I.
