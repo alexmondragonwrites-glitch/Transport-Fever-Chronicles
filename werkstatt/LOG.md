@@ -2,6 +2,13 @@
 
 Übergaben und Reviews, neueste oben. Kopf: `## JJJJ-MM-TT · Wer · Thema`. Nur ergänzen; Fehler in älteren Einträgen mit einem neuen Eintrag richtigstellen.
 
+## 2026-11-01 · Claude · Erlental: Staffeln zu je zehn Spieljahren
+
+- Wunsch des Spielers: Erlental wird in Staffeln zu je zehn Spieljahren erzählt, für Karte und Chronik. Staffel 1 (1900 bis 1909, Kapitel I bis XI) ist abgeschlossen, 1910 beginnt Staffel 2. Auf Rückfrage gewählt: eigene Seite für Staffel 2 (`staffel-2.html`), Kapitel wieder ab I.
+- Chronik: `chronik.html` trägt Staffel 1 im Seitentitel, in der Kopfleiste und im Titelblatt („Staffel 1 abgeschlossen“, „Staffel 2 ab 1910“), dazu ein Absatz unter IV und ein Hinweis am Schluss von Kapitel XI. Das Register zeigt die Einträge seiner Staffel (`data-season="1"`, neues Feld `season` in `events.json`, ohne Feld Staffel 1); heute sind das alle 147.
+- Regeln in `docs/ERLENTAL.md` („Staffeln“), Stand in `werkstatt/erlental/STAND.md`. Die Karte gruppiert ihre Kapitelwahl nach Staffeln (Kartensitzung, `95580a9`, Eintrag darunter).
+- Auf Wunsch des Spielers hochgeladen in `4856f10`.
+
 ## 2026-11-01 · Claude · Erlental: Kapitelwahl der Karte nach Staffeln
 
 - Vorgabe des Spielers: Staffeln zu je zehn Spieljahren. Die Kapitelwahl der 3D-Karte zeigt „Staffel 1 · 1900–1909“ über den Kapiteln I bis XI; auf dem Handy gruppiert die Liste nach Staffeln. Ab einer zweiten Staffel erscheint jede andere Staffel als eigener Knopf, und die Legende nennt zum Kapitel die Staffel.
