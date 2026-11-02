@@ -334,3 +334,74 @@ a.et-year:hover{border-color:var(--et-siegel)}
   .et-tafeln-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
   .et-foot-inner{display:block}
 }
+
+/* Netzplan (scripts/erlental-netzplan.py): je Kapitel ab Staffel 2 eine Übersichtskarte aller Personenlinien und
+   Stadtpläne der Orte mit Straßenbahn, als eigene Seite netzplan/JAHR.html, die das Kapitel nachlädt. Der Stil folgt
+   der Epoche: np--kaiserzeit bis 1919; jede spätere Staffel bekommt einen eigenen, moderneren Block. */
+.np{--np-papier:#f6eed6;--np-tinte:#2b2118;--np-wasser:#d9e3df;--np-welle:#7d9aab;--np-ufer:#46657a;--np-ort:#e6d6ad;--np-strasse:#cdb98f;--np-gueter:#7a6a54;--np-tram:#a3392a;--np-bus:#87602f;--np-dampfer:#3f6a86}
+@media (prefers-color-scheme:dark){
+  .np{--np-papier:#28211a;--np-tinte:#efe4c8;--np-wasser:#1e2a2f;--np-welle:#55788c;--np-ufer:#8cb5cf;--np-ort:#3a3025;--np-strasse:#54462f;--np-gueter:#a99a7b;--np-tram:#e57d63;--np-bus:#d6a46a;--np-dampfer:#8cb5cf}
+}
+.np svg{display:block;width:100%;height:auto;font-family:var(--et-serif)}
+.np-scroll{overflow-x:auto;background:var(--np-papier);border:1px solid var(--et-line-strong);box-shadow:var(--et-shadow)}
+.np-karte{min-width:640px}
+.np .np-papier{fill:var(--np-papier)}
+.np .np-rahmen{fill:none;stroke:var(--np-tinte);stroke-width:1.4}
+.np .np-rahmen-innen{fill:none;stroke:var(--np-tinte);stroke-width:.5}
+.np .np-rahmen-stadt{fill:none;stroke:var(--np-tinte);stroke-width:1}
+.np .np-wasser{fill:var(--np-wasser)}
+.np .np-welle{fill:none;stroke:var(--np-welle);stroke-linejoin:round}
+.np .np-welle-papier{fill:none;stroke:var(--np-wasser);stroke-linejoin:round}
+.np .np-ufer{fill:none;stroke:var(--np-ufer);stroke-width:.9;stroke-linejoin:round}
+.np .np-ortslage{fill:var(--np-ort)}
+.np .np-strasse{fill:none;stroke:var(--np-strasse);stroke-width:.9;stroke-linecap:round;stroke-linejoin:round}
+.np .np-gueterbahn{fill:none;stroke:var(--np-gueter);stroke-width:.9;stroke-linejoin:round}
+.np .np-bahn{fill:none;stroke:var(--np-tinte);stroke-width:3.6;stroke-linejoin:round}
+.np .np-bahn-weiss{fill:none;stroke:var(--np-papier);stroke-width:1.7;stroke-dasharray:7 7;stroke-linejoin:round}
+.np .np-tram{fill:none;stroke:var(--np-tram);stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+.np .np-pferdebahn{fill:none;stroke:var(--np-tram);stroke-width:2.2;stroke-dasharray:4.5 2.5;stroke-linejoin:round}
+.np .np-omnibus{fill:none;stroke:var(--np-bus);stroke-width:1.7;stroke-dasharray:5 3;stroke-linejoin:round}
+.np .np-postkutsche{fill:none;stroke:var(--np-bus);stroke-width:2.1;stroke-dasharray:.1 3.8;stroke-linecap:round}
+.np .np-dampfer{fill:none;stroke:var(--np-dampfer);stroke-width:1.3;stroke-dasharray:6 3.5}
+.np .np-bahnhof{fill:var(--np-papier);stroke:var(--np-tinte);stroke-width:1.8}
+.np .np-halt{fill:var(--np-papier);stroke:var(--np-tinte);stroke-width:1.2}
+.np .np-ortszeichen{fill:var(--np-papier);stroke:var(--np-tinte);stroke-width:1}
+.np .np-anleger{fill:var(--np-papier);stroke:var(--np-dampfer);stroke-width:1.3}
+.np text{fill:var(--np-tinte);paint-order:stroke;stroke:var(--np-papier);stroke-width:2.8px;stroke-linejoin:round}
+.np .np-ort{font-family:var(--et-titel);font-size:12.5px;font-weight:700;letter-spacing:.05em;font-variant-caps:all-small-caps}
+.np .np-ort--gross{font-size:15px}
+.np .np-ort--klein{font-family:var(--et-serif);font-size:10.5px;font-weight:400;font-style:italic;font-variant-caps:normal;letter-spacing:0}
+.np .np-anleger-name{font-size:10px;font-style:italic;fill:var(--np-dampfer)}
+.np .np-kasten{fill:var(--np-papier);stroke:var(--np-tinte);stroke-width:.9}
+.np .np-kasten-innen{fill:none;stroke:var(--np-tinte);stroke-width:.4}
+.np .np-trenner{fill:none;stroke:var(--np-tinte);stroke-width:.6}
+.np .np-kopf text,.np .np-legende text,.np .np-massstab text,.np .np-stadt-kopf text,.np .np-nr text{stroke:none}
+.np .np-kopf-ober{font-family:var(--et-titel);font-size:12px;font-weight:700;letter-spacing:.16em;font-variant-caps:all-small-caps}
+.np .np-kopf-titel{font-family:var(--et-titel);font-size:25px;font-weight:700;letter-spacing:.22em;text-transform:uppercase}
+.np .np-kopf-stand{font-size:12px;font-style:italic}
+.np .np-legende text{font-size:11px}
+.np .np-legende .np-legende-kopf{font-family:var(--et-titel);font-size:12.5px;font-weight:700;letter-spacing:.16em;font-variant-caps:all-small-caps}
+.np .np-massstab text{font-size:9.5px}
+.np .np-massstab .np-voll{fill:var(--np-tinte)}
+.np .np-massstab .np-leer{fill:var(--np-papier);stroke:var(--np-tinte);stroke-width:.6}
+.np .np-massstab .np-einheit{font-style:italic}
+.np .np-halt-name{font-size:10.5px;font-style:italic}
+.np .np-halt-name--bahn{font-style:normal;font-weight:700}
+.np .np-nr circle{fill:var(--np-tram)}
+.np .np-nr rect{fill:var(--np-bus)}
+.np .np-nr text{fill:var(--np-papier);font-size:9px;font-weight:700;font-variant-numeric:lining-nums}
+.np .np-stadt-name{font-family:var(--et-titel);font-size:16px;font-weight:700;letter-spacing:.14em;text-transform:uppercase}
+.np-staedte{margin:16px 0 0}
+.np-staedte summary{cursor:pointer;font-variant-caps:all-small-caps;font-size:16px;letter-spacing:.12em;color:var(--et-muted)}
+.np-raster{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:10px}
+.np-stadt{margin:0;background:var(--np-papier);box-shadow:var(--et-shadow)}
+.np .np-nachweis{margin:12px 0 0;font-size:14.5px;font-style:italic;line-height:1.45;color:var(--et-muted);hyphens:auto}
+.et-netzplan{margin:26px 0 30px;scroll-margin-top:150px}
+.et-netzplan>figcaption{margin-top:8px;font-size:15px;font-style:italic;color:var(--et-muted)}
+.np-laden{min-height:140px}
+.np-laden>p{margin:0;padding:22px;border:1px dashed var(--et-line-strong);font-style:italic;color:var(--et-muted)}
+.et .np-seite-inhalt{max-width:860px;padding-top:26px;padding-bottom:48px}
+.np-zurueck{margin:0 0 14px;font-size:17px}
+@media (max-width:640px){
+  .np-raster{grid-template-columns:1fr}
+}

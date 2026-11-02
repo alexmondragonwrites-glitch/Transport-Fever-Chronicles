@@ -3,7 +3,7 @@
 <meta name="description" content="Erlental – Chronik ab 1900, Staffel 2: die Jahre 1910 bis 1919. Die Fortsetzung der Regionalgeschichte aus einem Transport-Fever-3-Spielstand um die Erlentaler Wege- und Verkehrsgesellschaft in Arenswiel.">
 <title>Erlental – Chronik ab 1900 · Staffel 2</title>
 <link rel="preload" href="../../assets/fonts/eb-garamond.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="../../assets/fonts/cormorant.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="../../assets/erlental.css?v=20261030-bildtafeln"></head>
+<link rel="stylesheet" href="../../assets/erlental.css?v=20261102-netzplan"></head>
 <body class="et"><a class="skip" href="#main">Zum Inhalt</a>
 <header class="et-bar"><div class="shell et-bar-inner"><a class="et-wordmark" href="#main"><b>Erlental</b><i>Chronik ab 1900 · Staffel 2</i></a><nav class="et-nav" aria-label="Hauptnavigation"><a href="#prolog">Rückblick</a><a href="#kapitel">Kapitel</a><a href="#register">Register</a><a href="#offen">Offene Fragen</a><a href="chronik.html">Staffel 1</a><a class="et-nav-home" href="../../index.html">Alle Welten</a></nav></div></header>
 
@@ -27,7 +27,7 @@
 </div></header>
 
 <div class="shell et-body">
-<nav class="et-toc" aria-label="Abschnitte"><p class="et-toc-titel">Inhalt</p><a href="#prolog">I · Rückblick</a><a href="#steckbrief">II · Steckbrief</a><a href="#register">III · Ereignisregister</a><a href="#kapitel">IV · Kapitel</a><a href="#orte">V · Orte und Landschaft</a><a href="#unternehmen">VI · Unternehmen</a><a href="#auswertungen">VII · Auswertungen</a><a href="#offen">VIII · Offene Fragen</a><a href="#quellen">IX · Quellen</a></nav>
+<nav class="et-toc" aria-label="Abschnitte"><p class="et-toc-titel">Inhalt</p><a href="#prolog">I · Rückblick</a><a href="#steckbrief">II · Steckbrief</a><a href="#register">III · Ereignisregister</a><a href="#kapitel">IV · Kapitel</a><a class="et-toc-sub" href="#netzplan-1910">Netzplan Ende 1910</a><a href="#orte">V · Orte und Landschaft</a><a href="#unternehmen">VI · Unternehmen</a><a href="#auswertungen">VII · Auswertungen</a><a href="#offen">VIII · Offene Fragen</a><a href="#quellen">IX · Quellen</a></nav>
 
 <div class="et-main">
 <nav class="et-years" id="jahre" aria-label="Jahre wählen" hidden></nav>
@@ -110,7 +110,7 @@
     <header class="et-chapter-head">
       <h3 id="kapitel-1-titel"><span class="et-chapter-no">Kapitel I</span> Die Elektrische</h3>
       <p class="et-chapter-period">1910 · Messungen vom 1. Januar bis 31. Dezember 1910</p>
-      <p class="et-chapter-map"><a href="karte/#staffel-2-kapitel-1">Kapitel I auf der 3D-Karte</a> · Bilder vom 1. Januar 1911</p>
+      <p class="et-chapter-map"><a href="karte/#staffel-2-kapitel-1">Kapitel I auf der 3D-Karte</a> · Bilder vom 1. Januar 1911 · <a href="#netzplan-1910">Netzplan Ende 1910</a></p>
     </header>
 
     <div class="et-overview" role="group" aria-label="Kapitel I auf einen Blick">
@@ -170,6 +170,11 @@
         </div>
       </div>
     </div>
+
+    <figure class="et-netzplan" id="netzplan-1910">
+      <div class="np-laden" data-netzplan="netzplan/1910.html"><p><a href="netzplan/1910.html">Netzplan am 31. Dezember 1910</a>: die Übersichtskarte aller Personenlinien und die Stadtpläne der Orte mit Straßenbahn.</p></div>
+      <figcaption>Der Netzplan am 31. Dezember 1910, im Stil der Zeit gezeichnet aus der letzten Messung des Jahres und dem Kartenexport vom 1. Januar 1911 <a class="et-q" href="#q4" data-tip="Spielmonitor, Welt „Erlental – 1900“, Messung vom 31.12.1910 und Kartenexport vom 1.1.1911" aria-label="Quelle Q4: Spielmonitor, Messung vom 31.12.1910 und Kartenexport vom 1.1.1911">Q4</a>.</figcaption>
+    </figure>
 
     <div class="et-block et-block--belegt">
       <p class="et-block-label"><span class="et-label belegt">Belegt</span></p>
@@ -467,6 +472,27 @@ document.dispatchEvent(new CustomEvent("et:register"));
   bar.hidden=false;
   apply();
   fromHash(true);
+})();
+</script>
+<script>
+/* Netzplan: lädt die Seite netzplan/JAHR.html (scripts/erlental-netzplan.py) in den Kasten mit data-netzplan,
+   sobald er in die Nähe kommt. Bis dahin steht im Kasten der Verweis auf die eigene Seite. */
+(()=>{
+  const boxes=[...document.querySelectorAll('[data-netzplan]')];
+  if(!boxes.length)return;
+  const load=async box=>{
+    if(box.dataset.loaded)return;
+    box.dataset.loaded='1';
+    try{
+      const response=await fetch(box.dataset.netzplan);
+      if(!response.ok)throw new Error('HTTP '+response.status);
+      const plan=new DOMParser().parseFromString(await response.text(),'text/html').querySelector('.np');
+      if(plan)box.replaceChildren(document.adoptNode(plan));
+    }catch(error){box.dataset.loaded='';}
+  };
+  if(!('IntersectionObserver' in window)){boxes.forEach(load);return;}
+  const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){io.unobserve(e.target);load(e.target);}}),{rootMargin:'800px 0px'});
+  boxes.forEach(box=>io.observe(box));
 })();
 </script>
 </body></html>
