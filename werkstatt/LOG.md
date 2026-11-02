@@ -2,6 +2,15 @@
 
 Übergaben und Reviews, neueste oben. Kopf: `## JJJJ-MM-TT · Wer · Thema`. Nur ergänzen; Fehler in älteren Einträgen mit einem neuen Eintrag richtigstellen.
 
+## 2026-11-02 · Claude · Erlental: Staffel 2 · Kapitel I „Die Elektrische“ (1910)
+
+- Auftrag des Spielers: „die geschichten für 1910 können wir schreiben“. Faktenblatt `fakten/1910.md` (Messungen bis 31.12.1910, aufgenommen am 1.11.2026 bis 15:06 Uhr), dazu Auswertungen über `rows_of`/`canonical`: früheste Messungen, Entfernungen, Schwellen, Wartende und Fahrzeiten des Personenzuges, Gleise und Oberleitung in den Kartenexporten vom 1.1.1910 und 1.1.1911.
+- Neue Seite `saves/erlental/staffel-2.html` im Aufbau von `chronik.html`: Rückblick auf Staffel 1 mit allen elf Kapiteln, Steckbrief, Register (`data-season="2"`), Kapitel I, Orte, Unternehmen, Auswertungen, offene Fragen, Quellen. Kapitel I erzählt die Straßenbahn in fünf Orten (Walldorf statt Pferdebahn, Itzehoe, Wengenrode und Arenswiel statt Postkutschen, Ratzeburg neu), den Personenzug bis Ratzeburg und das Jahr in Zahlen; drei Szenen in neuen Formen: Prüfungsbogen für Wagenführer, Versteigerung der Postkutschen, Rückseite einer Photographie.
+- 16 Registereinträge mit `"season": 2`; `chronik.html` zeigt weiter 147. `manifest.latestReport` auf `staffel-2.html`, `meta.json` mit Spieltag 31.12.1910 und einem Satz zu 1910; in `chronik.html` sind „Staffel 2 ab 1910“, der Hinweis am Schluss von XI und der Absatz unter IV jetzt Links, im Wortlaut gleich.
+- Auffällig und als offene Frage notiert: Seit der Verlängerung nach Ratzeburg warten am Personenzug immer mehr Fahrgäste (98 am 12.9., 1.217 am 24.12.), ab 5.11. fehlen gemessene Fahrzeiten für alle Abschnitte; die Linienbilanz fällt auf −5,48 Mio.
+- Geprüft: `validate-data.mjs`, Sprachprüfung, Browser bei 1280 und 375 px (Register 16, Jahresleiste 1910er, keine Überbreite, Anker vollständig). Kartenstand für `staffel-2-kapitel-1` offen.
+- Auf Wunsch des Spielers („Ja, hochladen“) hochgeladen in `fc98422`, Messdaten bis Spiel 7.3.1911 in `5bcc957` (+431 Messungen).
+
 ## 2026-11-01 · Claude · Erlental: 3D-Karte entdoppelt, ohne Qualitätsverlust
 
 - Auftrag des Spielers: Website komprimieren ohne Qualitätsverlust (GitHub Pages veröffentlicht höchstens 1 GB). Gemessen: 82 MB der Kartenkacheln waren bytegleiche Kopien der groben Stufen (4 bis 32 m), die jeder Stand für die ganze Karte neu rechnete.

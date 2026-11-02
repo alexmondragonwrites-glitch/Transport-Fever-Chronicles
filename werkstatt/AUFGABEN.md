@@ -10,6 +10,7 @@ Format: `- [Welt] Aufgabe · Dateien · Wer · seit/erledigt am`. Wer etwas anf�
 
 ## Zur Prüfung
 
+- [Erlental] Staffel 2 · Kapitel I „Die Elektrische“ (1910) auf der neuen Seite `staffel-2.html`: Rückblick auf Staffel 1, Steckbrief, Register mit `season: 2`, Kapitel, Orte, Unternehmen, Auswertungen, offene Fragen, Quellen; drei Szenen in neuen Formen (Prüfungsbogen, Versteigerung, Rückseite einer Photographie), 16 neue Registereinträge, Jahresbilanz 1910; `manifest.latestReport` auf `staffel-2.html`, in `chronik.html` die Verweise auf Staffel 2 als Links; `fakten/1910.md` · `saves/erlental/staffel-2.html`, `saves/erlental/chronik.html`, `saves/erlental/data/events.json`, `saves/erlental/data/meta.json`, `saves/erlental/data/manifest.json`, `docs/ERLENTAL.md` · Claude, 2.11.2026 · `fc98422`, Messdaten bis Spiel 7.3.1911 in `5bcc957`, auf Wunsch des Spielers hochgeladen · Bitte gegen `werkstatt/erlental/fakten/1910.md` prüfen.
 - [Erlental] 3D-Karte entdoppelt (Auftrag des Spielers: komprimieren ohne Qualitätsverlust): jede bytegleiche Kachel nur einmal, 13 052 statt 15 328 Dateien, 250,6 statt 332 MB; kein Bild neu kodiert, Inhalt aller 47 657 Kacheleinträge gleich; hochgeladen in `d9a9e4e` · `saves/erlental/karte/` · Claude (Kartensitzung) · 1.11.2026
 - [Erlental] Karte: ein Kartenzeitstrahl über alle Staffeln (Entscheidung des Spielers vom 1.11.2026), Regel unter „Staffeln“; hochgeladen in `251653a` · `docs/ERLENTAL.md` · Claude (Kartensitzung) · 1.11.2026
 
@@ -46,7 +47,8 @@ Format: `- [Welt] Aufgabe · Dateien · Wer · seit/erledigt am`. Wer etwas anf�
 
 - [Archipel] Prüfen, ob Journal und Auswertungen Werte „pro Jahr“ als Kalenderjahr ausgeben. Das Archipel läuft ebenfalls mit rund 16.000 Spielzeit-Einheiten je Tag.
 - [Spielmonitor] Kalendertempo (Millisekunden je Tag) mit messen. `balance_start_game_date` und `balance_end_game_date` kommen seit Mod-Revision 22 als Datum.
-- [Erlental] Staffel 2 · Kapitel I (1910) auf der neuen Seite `saves/erlental/staffel-2.html` nach dem Jahreswechsel 1910/1911 im Spiel; Kapitel jahresweise (Wunsch vom 28.10.2026), Staffeln zu je zehn Spieljahren (Wunsch vom 1.11.2026). Aufbau der neuen Seite und was mit ihr umzustellen ist: `docs/ERLENTAL.md`, „Staffeln“. Vorher `py -3 scripts/erlental-fakten.py 1910`. Kapitel XI erzählt das Jubiläum bis 30.1.1910 schon mit. Offen: die Vorlage der Postkarte (Q6) beim Spieler erfragen · Claude
+- [Erlental] Staffel 2 · Kapitel II (1911) nach dem Jahreswechsel 1911/1912 im Spiel, auf `staffel-2.html`; Kapitel jahresweise. Vorher `py -3 scripts/erlental-fakten.py 1911`. Offen: die Vorlage der Postkarte (Q6) beim Spieler erfragen · Claude
+- [Erlental] Kartenstand für Staffel 2 · Kapitel I (`staffel-2-kapitel-1`, Export vom 1.1.1911, `1793541980-4815.json`), danach Kartenzeile im Kapitelkopf und Q7 in `staffel-2.html`; nur nach Freigabe des Spielers und bei geschlossenem TF3 · Claude (Kartensitzung)
 - [Erlental] Kartenstände für Kapitel V, VI und VII (Exporte vom 2.1.1904, 1.1.1905 und vom Jahreswechsel 1905/1906) in `Erlental-Karte/zeitleiste.json` eintragen und backen, danach die Kartenzeile in beide Kapitelköpfe und Q7 erweitern; nur nach Freigabe des Spielers und bei geschlossenem TF3 · Claude
 
 ## Erledigt
