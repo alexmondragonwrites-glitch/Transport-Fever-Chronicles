@@ -2406,6 +2406,295 @@
       "source": "Spielmonitor, Welt „Erlental – 1900“; Angabe des Spielers",
       "recorded": "2026-11-01",
       "recorded_note": "Detailmessung, aufgenommen um 09:29 Uhr; Angabe des Spielers vom 1.11.2026."
+    },
+    {
+      "id": "ziegel-uffenheim-1910-01-11",
+      "date": "1910-01-11",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Versorgung",
+      "title": "Uffenheim zum ersten Mal mit Ziegeln versorgt",
+      "description": "Versorgung 1 von 57; am 24. Dezember 38 von 97. Ziegel verlangt Uffenheim seit der ersten Messung; sie kommen seit Dezember 1909 mit Dampfkraftwagen von der Leuna Station Ost, ab dem 24. September mit sechs statt drei.",
+      "entities": [
+        "uffenheim",
+        "leuna",
+        "ewv"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-11-01",
+      "recorded_note": "Grund- und Detailmessung, aufgenommen um 09:30 Uhr.",
+      "season": 2
+    },
+    {
+      "id": "kredit-1910-03-29",
+      "date": "1910-03-29",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Finanzen",
+      "title": "Kredit minus 12,21 Millionen",
+      "description": "Der Kredit sinkt in der Detailmessung vom 29. März von 73,05 auf 60,84 Millionen; am 7. Januar hatte er mit 77,43 Millionen seinen höchsten Stand erreicht. Am 31. Dezember steht er bei 50,62 Millionen.",
+      "entities": [
+        "ewv"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-11-01",
+      "recorded_note": "Detailmessung, aufgenommen um 13:59 Uhr.",
+      "season": 2
+    },
+    {
+      "id": "strassenbahn-walldorf-1910-03-31",
+      "date": "1910-03-31",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Verkehr",
+      "title": "Walldorf: Triebwagen statt Pferdebahn",
+      "description": "Die Pferdebahn zwischen der Station Umstieg und dem Zentrum, seit dem 11. Dezember 1905 die erste in Erlental, wird am 29. März mit zehn Wagen zum letzten Mal gemessen. Auf denselben vier Halten fahren ab dem 31. März sieben Triebwagen „AEG Triebwagen“, ab dem 1. April zwölf, auf zwei Linien in Gegenrichtung.",
+      "entities": [
+        "walldorf",
+        "ewv"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-11-01",
+      "recorded_note": "Detailmessung, aufgenommen um 14:02 Uhr; letzte Messung der Pferdebahn am 29.3. um 13:58 Uhr.",
+      "season": 2
+    },
+    {
+      "id": "strassenbahn-itzehoe-1910-04-04",
+      "date": "1910-04-04",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Verkehr",
+      "title": "Itzehoe: Straßenbahn statt Postkutschen",
+      "description": "Drei Straßenbahnlinien mit je vier Triebwagen fahren vom Busbahnhof zur Station Umstieg am Personenzug und in Gegenrichtung über Itzehoe West, Drosselweg und Blumenstrasse. Die Postkutschenlinien über Nord, West, Busbahnhof und Ost werden am 3. April zum letzten Mal gemessen, mit ihnen der Halt Itzehoe Nord. Die Linie vom Busbahnhof zur Station Umstieg fährt ab dem 5. April als Straßenbahn, ab dem 8. April mit sechs Triebwagen statt acht Postkutschen.",
+      "entities": [
+        "itzehoe",
+        "ewv"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-11-01",
+      "recorded_note": "Grund- und Detailmessung, aufgenommen um 14:04 Uhr.",
+      "season": 2
+    },
+    {
+      "id": "treibstoff-itzehoe-1910-04-30",
+      "date": "1910-04-30",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Verkehr",
+      "title": "Treibstoff in Itzehoe mit Dampfkraftwagen",
+      "description": "Die sieben Pferdefuhrwerke mit Treibstoff von der Itzehoe Station Transfer zur Ober-Itzehoe Station fahren als Dampfkraftwagen. Fuhrwerke fuhren dort seit dem 3. Oktober 1902.",
+      "entities": [
+        "itzehoe",
+        "ewv"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-11-01",
+      "recorded_note": "Detailmessung, aufgenommen um 14:10 Uhr.",
+      "season": 2
+    },
+    {
+      "id": "strassenbahn-wengenrode-1910-05-14",
+      "date": "1910-05-14",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Verkehr",
+      "title": "Wengenrode: Straßenbahn statt Postkutschen",
+      "description": "Zwei Straßenbahnlinien mit je vier Triebwagen fahren in Gegenrichtung zwischen Ost, Busbahnhof und Nord, vier Omnibusse „L’Obéissante“ vom Busbahnhof zur Wengenrode Station Ost am Personenzug, dort ab dem 3. Juli vier Triebwagen. Die drei Postkutschenlinien des Ortes mit zusammen 15 Kutschen werden am selben Tag zum letzten Mal gemessen.",
+      "entities": [
+        "wengenrode",
+        "ewv"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-11-01",
+      "recorded_note": "Grund- und Detailmessung, aufgenommen um 14:14 und 14:15 Uhr.",
+      "season": 2
+    },
+    {
+      "id": "strassenbahn-arenswiel-1910-05-22",
+      "date": "1910-05-22",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Verkehr",
+      "title": "Arenswiel: Straßenbahn statt Postkutschen",
+      "description": "Zwei Straßenbahnlinien mit je vier Triebwagen fahren in Gegenrichtung im Ring von der Station Umstieg über Nordwest, Meisenweg, Busbahnhof, Süd, Ost und Gartenstrasse, 1,9 km über alle Halte. Die beiden Ringlinien mit zehn und neun Postkutschen werden am selben Tag zum letzten Mal gemessen. Vier Omnibusse „L’Obéissante“ fahren von der Station Umstieg zum neuen Halt Arenswiel Hafen #1 (Bus), 0,8 km.",
+      "entities": [
+        "arenswiel",
+        "ewv"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-11-01",
+      "recorded_note": "Grund- und Detailmessung, aufgenommen um 14:17 und 14:19 Uhr.",
+      "season": 2
+    },
+    {
+      "id": "einwohner-1910-06-28",
+      "date": "1910-06-28",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Ort",
+      "title": "Arenswiel über 1.100, Wengenrode über 900 Einwohner",
+      "description": "Arenswiel zählt seit dem 28. Juni über 1.100 Einwohner (1.101), Wengenrode seit dem 2. Juli über 900 (903). Wengenrode wächst seit dem 20. März wieder, zum ersten Mal seit Juni 1908, Walldorf seit dem 14. April, zum ersten Mal seit April 1908.",
+      "entities": [
+        "arenswiel",
+        "wengenrode",
+        "walldorf"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-11-01",
+      "recorded_note": "Detailmessungen vom 28.6. und 2.7., aufgenommen um 14:25 und 14:26 Uhr.",
+      "season": 2
+    },
+    {
+      "id": "duenger-silberweide-1910-08-23",
+      "date": "1910-08-23",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Verkehr",
+      "title": "Dünger über den See bis zum Mettmann Bauernhof",
+      "description": "Am 3. August lädt der Dampfer „Sydfart“ vom Arenswiel Hafen nach Silberweide zum ersten Mal Dünger, am 23. August die Dampfkraftwagen von der Silberweide Station West zum Mettmann Bauernhof. Ab dem 22. September fahren drei „Sydfart“ statt zwei.",
+      "entities": [
+        "silberweide",
+        "arenswiel",
+        "ewv"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-11-01",
+      "recorded_note": "Grundmessungen vom 3.8. um 14:32 Uhr und vom 23.8. um 14:37 Uhr.",
+      "season": 2
+    },
+    {
+      "id": "personenzug-ratzeburg-1910-09-04",
+      "date": "1910-09-04",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Verkehr",
+      "title": "Der Personenzug fährt bis Ratzeburg",
+      "description": "Der Personenzug fährt von der Itzehoe Station West weiter zur Ratzeburg Station Transfer, 3,7 km, und heißt seitdem „TP Passagiere-Are-Rat-RE-1“. Am selben Tag beginnen in Ratzeburg zwei Straßenbahnlinien mit je vier Triebwagen vom neuen Busbahnhof über Mühlweg, Fliederweg und Industriestrasse zur Uhlandstrasse und vier Omnibusse „L’Obéissante“ vom Busbahnhof zur Ratzeburg Station Abstellgleis, 0,1 km von der Station Transfer.",
+      "entities": [
+        "ratzeburg",
+        "itzehoe",
+        "walldorf",
+        "wengenrode",
+        "arenswiel",
+        "ewv"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-11-01",
+      "recorded_note": "Grund- und Detailmessung, aufgenommen um 14:44 und 14:46 Uhr.",
+      "season": 2
+    },
+    {
+      "id": "personenzug-fuenf-1910-09-11",
+      "date": "1910-09-11",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Verkehr",
+      "title": "Ein fünfter Personenzug",
+      "description": "Der Personenzug fährt mit fünf Zügen aus je einer Lokomotive „Atlantic“ und Russischen Vorortwagen, zusammen 665 Plätze statt 532.",
+      "entities": [
+        "arenswiel",
+        "ratzeburg",
+        "ewv"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-11-01",
+      "recorded_note": "Grundmessung, aufgenommen um 14:48 Uhr; die Modelle in der Detailmessung vom 12.9.",
+      "season": 2
+    },
+    {
+      "id": "erlental-13500-1910-10-30",
+      "date": "1910-10-30",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Ort",
+      "title": "Erlental über 13.500 Einwohner",
+      "description": "Erlental zählt zusammen 13.501 Einwohner, am 24. Dezember 13.550. Silberweide zählt seit dem 5. November über 600, Itzehoe seit dem 20. November über 800.",
+      "entities": [
+        "erlental",
+        "silberweide",
+        "itzehoe"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-11-01",
+      "recorded_note": "Detailmessung, aufgenommen um 14:59 Uhr.",
+      "season": 2
+    },
+    {
+      "id": "personenzug-wartende-1910-12-24",
+      "date": "1910-12-24",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Verkehr",
+      "title": "1.217 Fahrgäste warten am Personenzug",
+      "description": "An den Halten des Personenzuges warten 1.217 Fahrgäste, am 12. September 98: 369 an der Wengenrode Station, 296 in Ober-Arenswiel, 282 in Itzehoe West, 270 an der Walldorf Station Anbau, 0 in Ratzeburg. Besetzt sind 296 der 665 Plätze. Gemessene Fahrzeiten fehlen seit dem 5. November für alle acht Abschnitte. Linienbilanz im Wirtschaftsjahr bis 24. Dezember −5.483.835, Ende 1909 4.692.917.",
+      "entities": [
+        "arenswiel",
+        "wengenrode",
+        "walldorf",
+        "itzehoe",
+        "ratzeburg",
+        "ewv"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-11-01",
+      "recorded_note": "Detailmessung, aufgenommen um 15:05 Uhr.",
+      "season": 2
+    },
+    {
+      "id": "strassenbahn-1910",
+      "date": "1910",
+      "precision": "year",
+      "game_time_label": "März bis Dezember 1910",
+      "kind": "rekonstruktion",
+      "category": "Verkehr",
+      "title": "Fünf Orte mit Straßenbahn, die Pferde gehen",
+      "description": "In gut fünf Monaten bekommen Walldorf, Itzehoe, Wengenrode, Arenswiel und Ratzeburg Straßenbahnen mit zusammen 58 Triebwagen; in jedem dieser Orte führt eine Linie zur Station des Personenzuges, in Ratzeburg ein Omnibus. Im Kartenexport werden aus 41 Straßenkanten mit Gleis 169, 168 davon mit Oberleitung. Von 119 Fahrzeugen mit Pferden Ende 1909 fahren Ende 1910 noch 48.",
+      "entities": [
+        "walldorf",
+        "itzehoe",
+        "wengenrode",
+        "arenswiel",
+        "ratzeburg",
+        "ewv"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“; Kartenexporte vom 1.1.1910 und 1.1.1911",
+      "recorded": "2026-11-01",
+      "recorded_note": "Messungen vom 1.11.2026, 13:58 bis 15:06 Uhr.",
+      "season": 2
+    },
+    {
+      "id": "betriebe-1910",
+      "date": "1910",
+      "precision": "year",
+      "game_time_label": "Januar bis Dezember 1910",
+      "kind": "fakt",
+      "category": "Betrieb",
+      "title": "Acht neue Betriebe, sieben verschwunden",
+      "description": "Erstmals gemessen: Ahaus Lehmgrube (7.1.), Gemünden Ölraffinerie (20.2.), Ulrichstein Ölplattform (8.4.), Ahaus Lehmgrube Ost (21.5.), eine neue Emmelshausen Fischzucht West (10.7.), eine neue Ahaus Ölplattform (20.8.), Karlsfeld Bauernhof (4.10.), Zell Werkzeugfabrik (20.11.). Zuletzt gemessen: Eschborn Bauernhof #1 (27.6.), Aalen Fischzucht (12.8.), Ramstein-Miesenbach Werkzeugfabrik (22.8.), Kappeln Fischzucht (1.9.), Leipheim Fischzucht (5.9.), Hohen Neuendorf Ziegelei (8.10.), Ditzingen Maschinenfabrik (1.12.). Am Jahresende 103 Betriebe.",
+      "entities": [
+        "erlental"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-11-01",
+      "recorded_note": "Messungen vom 1.11.2026, 09:28 bis 15:06 Uhr.",
+      "season": 2
+    },
+    {
+      "id": "stand-1910-12-31",
+      "date": "1910-12-31",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Messung",
+      "title": "Jahresende 1910: 88 Linien, 380 Fahrzeuge, 13.550 Einwohner",
+      "description": "Fahrzeuge: 186 Dampfkraftwagen, 58 Triebwagen der Straßenbahn, 40 Omnibusse „L’Obéissante“, 27 Pferdefuhrwerke, 12 Postkutschen, 5 Pferdefuhrwerke mit Fässern, 4 Pferdebahnwagen, 23 Züge (14 mit der „Atlantic“), 24 Dampfer. Linienbilanzen zusammen 18.349.705 (Wirtschaftsjahr bis 24.12.). Ergebnis 1910 −21,86 Millionen, Zuschüsse 15,29 Millionen; am 31. Dezember Konto −1,10 Millionen, Kredit 50,62 Millionen. Einwohner am 24. Dezember: Arenswiel 1.117, Wengenrode 937, Itzehoe 807, Leipheim 641, Silberweide 602, Walldorf 546, Osterburg 356; zusammen 13.550.",
+      "entities": [
+        "erlental",
+        "ewv"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-11-01",
+      "recorded_note": "Letzte Messung des Jahres um 15:06 Uhr; Versorgung und Finanztabelle aus der Messung vom 24.12. um 15:05 Uhr.",
+      "season": 2
     }
   ]
 }
