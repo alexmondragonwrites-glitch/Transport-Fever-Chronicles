@@ -2,6 +2,16 @@
 
 Übergaben und Reviews, neueste oben. Kopf: `## JJJJ-MM-TT · Wer · Thema`. Nur ergänzen; Fehler in älteren Einträgen mit einem neuen Eintrag richtigstellen.
 
+## 2026-11-02 · Claude · Erlental: 3D-Karte für Staffel 2 · Kapitel I
+
+- Frage des Spielers: „die 1910 er karte jetzt?“. Kartenstand `staffel-2-kapitel-1` aus dem Export vom 1.1.1911 (vollständig, Revision 26, 7 388 Bauten, 8 769 Kanten, 89 Linien; Straßenbahngleise auf 169 Straßenkanten statt 41). Neu ist ein Baustein, das Empfangsgebäude der Straßenbahnhaltestellen, ohne Befund.
+- Gebacken nur an den Änderungen gegen XI (51 Grund- und 198 feine Blöcke), erstmals mit dem Ablegen je Kachel: 47 Minuten, kein dunkles Bild, 17,3 MB neue Dateien. Die Karte hat jetzt 13 949 Dateien und 269,4 MB.
+- Die Kapitelwahl zeigt Staffel 1 als Knopf und darüber „Staffel 2 · 1910–1919“ mit Kapitel I; die Legende nennt „Staffel 2 · Kapitel I“. 15 Straßenbahnlinien folgen ihren Gleisen.
+- Fehler behoben: Eine Buslinie, die zweimal hintereinander am selben Halt hält (Ratzeburg), wurde als Gerade gezeichnet; jetzt folgt sie den Straßen. Ältere Kapitel sind davon unberührt. Die Linie zum Halt „Itzehoe Bauernhof“ bleibt eine Gerade: Im Export fehlt dem Halt die Straßenverbindung zum übrigen Netz.
+- `staffel-2.html`: Kartenzeile im Kopf von Kapitel I, im Absatz unter „Orte“ der neue Kartenstand statt „sobald er gebacken ist“, Q7 mit dem neuen Stand. `werkstatt/erlental/STAND.md`: Kartenstände.
+- Nachttest auf Wunsch des Spielers: 64 statt 128 Samples sind gleich gut, sparen aber nur 2 bis 4 Sekunden je Nachtbild. Mit 1 024 Samples werden Laternen und Fenster sichtbar schärfer, bei etwa vierfacher Nachtzeit. Die Einstellung bleibt, wie sie ist.
+- Auf Wunsch des Spielers hochgeladen in `271662a7`.
+
 ## 2026-11-02 · Claude · Erlental: Staffel 2 · Kapitel I „Die Elektrische“ (1910)
 
 - Auftrag des Spielers: „die geschichten für 1910 können wir schreiben“. Faktenblatt `fakten/1910.md` (Messungen bis 31.12.1910, aufgenommen am 1.11.2026 bis 15:06 Uhr), dazu Auswertungen über `rows_of`/`canonical`: früheste Messungen, Entfernungen, Schwellen, Wartende und Fahrzeiten des Personenzuges, Gleise und Oberleitung in den Kartenexporten vom 1.1.1910 und 1.1.1911.
