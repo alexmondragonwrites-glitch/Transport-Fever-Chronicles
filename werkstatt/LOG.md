@@ -2,6 +2,16 @@
 
 Übergaben und Reviews, neueste oben. Kopf: `## JJJJ-MM-TT · Wer · Thema`. Nur ergänzen; Fehler in älteren Einträgen mit einem neuen Eintrag richtigstellen.
 
+## 2026-11-02 · Claude · Erlental: Netzplan im Stil der Zeit, zuerst für Staffel 2 · Kapitel I
+
+- Wunsch des Spielers: „ab jetzt praktisch weil das netz immer größer wird zu staffel 2 das sich die menschen auch dort orientieren, können … vllt auch erst mal in passenden design von 1910 rum“, dazu „der soll dann natürlich auch moderner werden je mehr die zeit vorranschreitet“.
+- Neu: `scripts/erlental-netzplan.py JJJJ` schreibt `saves/erlental/netzplan/JJJJ.html` aus der letzten Messung des Jahres, den geo-Lagen, dem Kartenexport des Kapitels (Kanten jeder Linie, Straßen, Gleise, Gebäude) und dem Geländescan der 3D-Karte. Nur Standardbibliothek, 82 KB für 1910.
+- 1910: 39 Personenlinien (Personenzug, 13 Straßenbahn-, 2 Pferdebahn-, 15 Omnibus-, 4 Postkutschen- und 4 Dampferlinien); die Fahrzeugzahlen passen zu Kapitel I (58 Triebwagen, 12 Postkutschen, 4 Pferdebahnwagen). Stadtpläne von Arenswiel, Wengenrode, Itzehoe, Walldorf, Osterburg und Ratzeburg.
+- Stil „Kaiserzeit“ im Abschnitt Netzplan von `assets/erlental.css`, hell und dunkel; Kopf, Maßstab und Zeichen-Erklärung im Band unter der Karte, Beschriftungen weichen den Linien aus.
+- `staffel-2.html`: `figure.et-netzplan#netzplan-1910` nach der Übersicht von Kapitel I, nachgeladen per Skript; Verweis in der Kartenzeile und als „Netzplan Ende 1910“ im Inhaltsverzeichnis; Stylesheet-Version `20261102-netzplan`. Der Wortlaut des Kapitels bleibt, wie er ist.
+- Doku: `docs/ERLENTAL.md` (Abschnitt Netzplan, Kapitel anlegen Punkt 7, Dateiliste), `werkstatt/erlental/STAND.md`. Geprüft: `validate-data.mjs` OK, Sprachprüfung der neuen Texte, Bildschirmfotos für Desktop, Handy und Dunkelmodus.
+- Auf Wunsch des Spielers („Ja, hochladen“) hochgeladen in `55f529d7`.
+
 ## 2026-11-02 · Claude · Erlental: 3D-Karte für Staffel 2 · Kapitel I
 
 - Frage des Spielers: „die 1910 er karte jetzt?“. Kartenstand `staffel-2-kapitel-1` aus dem Export vom 1.1.1911 (vollständig, Revision 26, 7 388 Bauten, 8 769 Kanten, 89 Linien; Straßenbahngleise auf 169 Straßenkanten statt 41). Neu ist ein Baustein, das Empfangsgebäude der Straßenbahnhaltestellen, ohne Befund.
