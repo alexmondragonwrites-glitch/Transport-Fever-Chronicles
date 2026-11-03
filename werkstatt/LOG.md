@@ -2,6 +2,14 @@
 
 Übergaben und Reviews, neueste oben. Kopf: `## JJJJ-MM-TT · Wer · Thema`. Nur ergänzen; Fehler in älteren Einträgen mit einem neuen Eintrag richtigstellen.
 
+## 2026-11-03 · Claude · Erlental: Sprünge kommen an, auch wenn Register und Netzplan später laden
+
+- Gefunden beim Prüfen des Netzplans: Direktlinks wie `staffel-2.html#netzplan-1910` oder `#kapitel` landeten im Register, wenn `data/events.json` während des Sprungs eintraf (rund 4.700 px zu früh). Seit dem Netzplan landeten auch Klicks im Inhaltsverzeichnis auf Abschnitte unterhalb von Kapitel I (Orte, Quellen) rund 1.540 px zu früh, weil der Plan während des Sprungs nachlädt.
+- Spieler: „Ja, nachbessern“.
+- `staffel-2.html` und `chronik.html`: Die Jahresauswahl merkt sich nach jedem Sprung das Ziel und fasst nach, sobald das Register (`et:register`) oder ein Netzplan (`et:netzplan`, neu im Lader) eingesetzt ist, höchstens acht Sekunden lang und bis jemand selbst scrollt, tippt oder klickt. Bisher galt das nur für `#jahr-…`. Doku: `docs/ERLENTAL.md`, Jahresauswahl.
+- Geprüft in kopflosem Chrome mit zurückgehaltenen Anfragen (Register +150, 350, 600 ms und +2 s; Netzplan +0, 120, 300 ms): die bisherige Fassung jeweils daneben, die neue jedes Mal am Ziel; Jahreswahl und `#jahr-1910` am ersten Kapitel; nach einer Mausraddrehung bleibt die Seite, wo der Leser ist. `validate-data.mjs` OK, Konsole ohne Fehler.
+- Auf Wunsch des Spielers hochgeladen in `d25f3928`.
+
 ## 2026-11-02 · Claude · Erlental: Netzplan im Stil der Zeit, zuerst für Staffel 2 · Kapitel I
 
 - Wunsch des Spielers: „ab jetzt praktisch weil das netz immer größer wird zu staffel 2 das sich die menschen auch dort orientieren, können … vllt auch erst mal in passenden design von 1910 rum“, dazu „der soll dann natürlich auch moderner werden je mehr die zeit vorranschreitet“.
