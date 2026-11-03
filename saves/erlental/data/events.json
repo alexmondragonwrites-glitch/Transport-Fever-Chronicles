@@ -2695,6 +2695,257 @@
       "recorded": "2026-11-01",
       "recorded_note": "Letzte Messung des Jahres um 15:06 Uhr; Versorgung und Finanztabelle aus der Messung vom 24.12. um 15:05 Uhr.",
       "season": 2
+    },
+    {
+      "id": "omnibus-osterburg-1911-01-22",
+      "date": "1911-01-22",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Verkehr",
+      "title": "Omnibusse zum Osterburg Bauernhof",
+      "description": "Zwei Omnibusse „L’Obéissante“ fahren vom Osterburg Busbahnhof zum Osterburg Bauernhof, 2,2 km. Am selben Tag steigt der Kredit von 49,85 auf 53,57 Millionen.",
+      "entities": [
+        "osterburg",
+        "ewv"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-11-01",
+      "recorded_note": "Detailmessung, aufgenommen um 15:08 Uhr.",
+      "season": 2
+    },
+    {
+      "id": "messpause-1911-03-07",
+      "date": "1911-03-07",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Messung",
+      "title": "Die Messungen pausieren bis zum 17. Juni",
+      "description": "Nach der Messung vom 7. März folgt die nächste am 17. Juni 1911; für 102 Spieltage fehlen Messungen. Was dazwischen entsteht, zeigt die Messung vom 17. Juni, bei neuen Fahrzeugen auch das Kaufdatum.",
+      "entities": [
+        "erlental"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-11-01",
+      "recorded_note": "Letzte Messung vor der Pause am 1.11.2026 um 15:17 Uhr, erste danach am 2.11.2026 um 10:31 Uhr.",
+      "season": 2
+    },
+    {
+      "id": "strassenbahn-ratzeburg-1911-06-17",
+      "date": "1911-06-17",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Verkehr",
+      "title": "Ratzeburg: Triebwagen zur Station",
+      "description": "Auf der Linie vom Busbahnhof über Fasanenweg und Lindenstrasse zur Ratzeburg Station Abstellgleis fahren vier Triebwagen, am 7. März waren es vier Omnibusse „L’Obéissante“; die Linie heißt seitdem „Tram Passagiere-Rat-LO-3“. Erste Messung nach der Pause.",
+      "entities": [
+        "ratzeburg",
+        "ewv"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-11-02",
+      "recorded_note": "Detailmessung, aufgenommen um 10:31 Uhr.",
+      "season": 2
+    },
+    {
+      "id": "personenzug-plus-1911-06-17",
+      "date": "1911-06-17",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Verkehr",
+      "title": "Der Personenzug wieder im Plus",
+      "description": "Die Linienbilanz des Personenzuges nach Ratzeburg steht bei 11,15 Millionen (Wirtschaftsjahr ab 18. März), am 7. März bei −1,31 und am 31. Januar bei −6,77 Millionen. Am 31. Dezember 1910 warteten an seinen Halten 1.217 Fahrgäste, am 7. März 657, am 30. Juni 504. Gemessene Fahrzeiten für alle acht Abschnitte.",
+      "entities": [
+        "arenswiel",
+        "wengenrode",
+        "walldorf",
+        "itzehoe",
+        "ratzeburg",
+        "ewv"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-11-02",
+      "recorded_note": "Detailmessung, aufgenommen um 10:31 Uhr.",
+      "season": 2
+    },
+    {
+      "id": "gemuese-wolfratshausen-1911-06-23",
+      "date": "1911-06-23",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Versorgung",
+      "title": "Wolfratshausen zum ersten Mal mit Gemüse versorgt",
+      "description": "Versorgung 2 von 34; am 31. Dezember 43 von 50. Seit der Messung vom 17. Juni fahren drei Dampfkraftwagen mit Gemüse zwischen der Silberweide Station Süd und der Ober-Wolfratshausen Station, 1,6 km, gekauft am 7. Mai.",
+      "entities": [
+        "wolfratshausen",
+        "silberweide",
+        "ewv"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-11-02",
+      "recorded_note": "Grundmessung, aufgenommen um 10:33 Uhr.",
+      "season": 2
+    },
+    {
+      "id": "strassenbahn-silberweide-1911-07-16",
+      "date": "1911-07-16",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Verkehr",
+      "title": "Silberweide: Straßenbahn auf vier Linien",
+      "description": "Vier Linien mit je vier Triebwagen: zwei in Gegenrichtung im Ring vom Busbahnhof über Südwest, West und Nordost, eine über den Kastanienweg nach Im Winkel und zur Hauptstrasse, eine über den Kastanienweg zum Kapellenweg und zum Wiesenweg. Am ersten Tag heißen sie „Bus Passagiere-Sil-LO-4“ bis „-7“, ab dem 17. Juli „Tram Passagiere-Sil-LO-1“ bis „-4“. Am selben Tag vier Omnibusse „L’Obéissante“ vom Busbahnhof zur Silberweide Station Anbau, 0,4 km.",
+      "entities": [
+        "silberweide",
+        "ewv"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-11-02",
+      "recorded_note": "Detailmessung, aufgenommen um 10:39 Uhr.",
+      "season": 2
+    },
+    {
+      "id": "personenzug-silberweide-1911-08-24",
+      "date": "1911-08-24",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Verkehr",
+      "title": "Der zweite Personenzug: Ober-Arenswiel–Silberweide",
+      "description": "Auf der Linie „TP Passagiere-Are-Sil-IC-1“, gemessen seit dem 18. Juli, fährt ein Zug mit der Lokomotive „Atlantic“ und Russischen Vorortwagen, 133 Plätze, von der Ober-Arenswiel Station zur neuen Silberweide Station Transfer, 4,3 km. Die Station liegt 0,5 km von Silberweide, 0,05 km daneben die Station Anbau mit Omnibussen zum Busbahnhof.",
+      "entities": [
+        "arenswiel",
+        "silberweide",
+        "ewv"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-11-02",
+      "recorded_note": "Detailmessung, aufgenommen um 10:45 Uhr.",
+      "season": 2
+    },
+    {
+      "id": "wengenrode-1000-1911-10-13",
+      "date": "1911-10-13",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Ort",
+      "title": "Wengenrode über 1.000 Einwohner",
+      "description": "Wengenrode zählt 1.001 Einwohner, als zweite Stadt nach Arenswiel über 1.000; am 31. Dezember 1.020. Walldorf zählt seit dem 23. September über 600, Osterburg seit dem 27. Oktober über 400.",
+      "entities": [
+        "wengenrode",
+        "walldorf",
+        "osterburg"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-11-02",
+      "recorded_note": "Grundmessung, aufgenommen um 10:59 Uhr.",
+      "season": 2
+    },
+    {
+      "id": "wolfratshausen-1911-11-27",
+      "date": "1911-11-27",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Verkehr",
+      "title": "Der zweite Personenzug bis Wolfratshausen, dort Straßenbahn",
+      "description": "Die Linie fährt weiter zur Wolfratshausen Station West, 2,6 km, mit zwei Zügen, zusammen 266 Plätze, und heißt seitdem „TP Passagiere-Are-Wol-RE-1“. Am selben Tag in Wolfratshausen drei Straßenbahnlinien mit je vier Triebwagen: zwei in Gegenrichtung im Ring vom Busbahnhof über Kapellenweg, Poststrasse und Birkenstrasse, eine zum Haltepunkt 0,06 km von der Station West. Wolfratshausen hat am 31. Dezember 80 Einwohner.",
+      "entities": [
+        "wolfratshausen",
+        "silberweide",
+        "arenswiel",
+        "ewv"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-11-03",
+      "recorded_note": "Detailmessung, aufgenommen um 05:55 Uhr.",
+      "season": 2
+    },
+    {
+      "id": "erlental-14000-1911-11-27",
+      "date": "1911-11-27",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Ort",
+      "title": "Erlental über 14.000 Einwohner",
+      "description": "Erlental zählt zusammen 14.007 Einwohner, am 31. Dezember 14.061. Itzehoe zählt seit dem 12. Dezember über 850, Arenswiel seit dem 30. Dezember über 1.150.",
+      "entities": [
+        "erlental",
+        "itzehoe",
+        "arenswiel"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-11-03",
+      "recorded_note": "Detailmessung, aufgenommen um 05:55 Uhr.",
+      "season": 2
+    },
+    {
+      "id": "omnibus-silberweide-1911-12-10",
+      "date": "1911-12-10",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Verkehr",
+      "title": "Acht Omnibusse zur Silberweide Station Anbau",
+      "description": "Statt vier fahren acht Omnibusse „L’Obéissante“ vom Silberweide Busbahnhof zur Station Anbau am zweiten Personenzug, 0,4 km. Am 31. Dezember sind 43 der 48 Plätze besetzt.",
+      "entities": [
+        "silberweide",
+        "ewv"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-11-03",
+      "recorded_note": "Grundmessung, aufgenommen um 05:58 Uhr.",
+      "season": 2
+    },
+    {
+      "id": "personenzuege-1911",
+      "date": "1911",
+      "precision": "year",
+      "game_time_label": "Januar bis Dezember 1911",
+      "kind": "rekonstruktion",
+      "category": "Verkehr",
+      "title": "Zwei Personenzüge, Straßenbahn in sieben Orten",
+      "description": "Der zweite Personenzug beginnt an derselben Ober-Arenswiel Station wie der erste und führt über Silberweide nach Wolfratshausen; an beiden neuen Stationen bringen Omnibusse oder eine Straßenbahn die Fahrgäste vom Busbahnhof an den Zug. Der erste erholt sich: weniger Wartende, ab Juni Bilanz im Plus, am Jahresende die höchste aller Linien. Die Straßenbahn fährt in sieben Orten, die Gleise im Kartenexport wachsen von 169 auf 263 Straßenkanten.",
+      "entities": [
+        "arenswiel",
+        "silberweide",
+        "wolfratshausen",
+        "ratzeburg",
+        "ewv"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“; Kartenexporte vom 1.1.1911 und 1.1.1912",
+      "recorded": "2026-11-03",
+      "recorded_note": "Messungen vom 1.11.2026, 15:06 Uhr, bis 3.11.2026, 06:06 Uhr.",
+      "season": 2
+    },
+    {
+      "id": "betriebe-1911",
+      "date": "1911",
+      "precision": "year",
+      "game_time_label": "Januar bis Dezember 1911",
+      "kind": "fakt",
+      "category": "Betrieb",
+      "title": "Acht neue Betriebe, sechs verschwunden",
+      "description": "Erstmals gemessen: Woldegk Ziegelei (5.1.), Garding Maschinenfabrik (19.2.), Eckartsberga Kohlebergwerk und Drolshagen Textilfabrik (17.6.), Riesa Bauernhof (5.7.), eine neue Leipheim Fischzucht (21.8.), Sankt Ingbert Bauernhof (5.10.), ein neuer Kappeln Bauernhof (19.11.). Zuletzt gemessen: Emmelshausen Textilfabrik (1.1.), Walldorf Kohlebergwerk (3.1.), der alte Kappeln Bauernhof (22.2.), Wesel Bauernhof und Eckartsberga Bauernhof (7.3., vor der Messpause), Hohen Neuendorf Fischzucht Nord (22.12.). Am Jahresende 105 Betriebe.",
+      "entities": [
+        "erlental"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-11-03",
+      "recorded_note": "Messungen vom 1.11.2026, 15:06 Uhr, bis 3.11.2026, 06:06 Uhr.",
+      "season": 2
+    },
+    {
+      "id": "stand-1911-12-31",
+      "date": "1911-12-31",
+      "precision": "day",
+      "kind": "fakt",
+      "category": "Messung",
+      "title": "Jahresende 1911: 100 Linien, 430 Fahrzeuge, 14.061 Einwohner",
+      "description": "Fahrzeuge: 194 Dampfkraftwagen, 90 Triebwagen der Straßenbahn, 49 Omnibusse „L’Obéissante“, 27 Pferdefuhrwerke, 12 Postkutschen, 5 Pferdefuhrwerke mit Fässern, 4 Pferdebahnwagen, 25 Züge (16 mit der „Atlantic“, sieben davon Personenzüge), 24 Dampfer. Linienbilanzen zusammen 34.440.913 (Wirtschaftsjahr 30.9. bis 31.12.). Ergebnis 1911 29,46 Millionen, das höchste seit der Gründung, Zuschüsse 31,95 Millionen; am 31. Dezember Konto 16,68 Millionen, Kredit 36,65 Millionen. Einwohner: Arenswiel 1.151, Wengenrode 1.020, Itzehoe 851, Leipheim 675, Silberweide 639, Walldorf 631, Osterburg 411, Ratzeburg 199, Wolfratshausen 80; zusammen 14.061.",
+      "entities": [
+        "erlental",
+        "ewv"
+      ],
+      "source": "Spielmonitor, Welt „Erlental – 1900“",
+      "recorded": "2026-11-03",
+      "recorded_note": "Letzte Messung des Jahres, aufgenommen um 06:06 Uhr.",
+      "season": 2
     }
   ]
 }

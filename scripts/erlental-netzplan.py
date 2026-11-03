@@ -10,7 +10,8 @@ Quellen, alle auf dem Rechner des Spielers (Q4 der Chronik):
 - Linien, Halte und Fahrzeuge aus der letzten Messung des Jahres (Spielmonitor, sessions),
 - die Lage der Haltestellen und Orte aus den geo-Angaben der Messungen,
 - der Verlauf jeder Linie über Straßen und Gleise, Straßen und Gebäude aus dem Kartenexport des Kapitels
-  (Erlental-Karte/zeitleiste.json nennt ihn),
+  (Erlental-Karte/zeitleiste.json nennt ihn; steht das Kapitel dort noch nicht, der erste vollständige Export
+  vom Januar des Folgejahres aus der Kartenhistorie des Monitors),
 - Wasserflächen aus dem Geländescan, mit dem auch die 3D-Karte gebacken ist (zeitleiste.json, Feld gelaende).
 Gezeichnet werden nur gemessene Personenlinien; Gleise ohne Personenzug erscheinen als Güterbahn ohne Namen.
 Dampfer fahren im Spiel frei über das Wasser; gezeichnet ist der kürzeste Kurs zwischen den Anlegern.
@@ -84,17 +85,52 @@ def zahl(v):
 # ---------------------------------------------------------------- Daten
 
 def kapitel_export(jahr, monitor):
-    """Kartenexport und Chronikseite des Kapitels, das mit diesem Jahr endet (Erlental-Karte/zeitleiste.json)."""
+    """Kartenexport und Chronikseite des Kapitels, das mit diesem Jahr endet (Erlental-Karte/zeitleiste.json).
+    Ab Staffel 2 hat jedes Jahr ein Kapitel. Ist dessen Kartenstand noch nicht eingetragen, gilt der erste vollständige
+    Export vom Januar des Folgejahres aus der Kartenhistorie des Monitors; so entsteht der Plan vor dem Backen der Karte."""
     z = json.loads(ZEITLEISTE.read_text(encoding='utf-8'))
+    ordner = Path(monitor)/'history/karte'/WORLD_ID
     kap = [k for k in z['kapitel'] if k.get('stichtag', '').startswith(f'{jahr}-')]
-    if not kap:
-        sys.exit(f'Kein Kapitel mit Stichtag im Jahr {jahr} in {ZEITLEISTE}. Erst den Kartenstand eintragen.')
-    k = max(kap, key=lambda k: k['stichtag'])
-    staffel = next((s for s in z.get('staffeln', []) if k['id'] in s.get('kapitel', [])), {})
+    if kap:
+        k = max(kap, key=lambda k: k['stichtag'])
+        staffel = next((s for s in z.get('staffeln', []) if k['id'] in s.get('kapitel', [])), {})
+        export = json.loads((ordner/k['export']).read_text(encoding='utf-8'))
+    else:
+        staffel = next((s for s in z.get('staffeln', []) if s.get('chronik')
+                        and int(s['zeitraum'][:4]) <= jahr <= int(s['zeitraum'][-4:])), None)
+        export = staffel and jahreswechsel(ordner, jahr + 1)
+        if not export:
+            sys.exit(f'Kein Kapitel mit Stichtag im Jahr {jahr} in {ZEITLEISTE} und kein vollständiger Kartenexport '
+                     f'vom Januar {jahr + 1} in {ordner}.')
+        k = {'titel': f'Kapitel {roemisch(jahr - int(staffel["zeitraum"][:4]) + 1)}'}
+        print(f'Kartenstand für {jahr} noch nicht in der Zeitleiste: Export {export["scan_id"]} '
+              f'vom {datum(tuple(export["game_date"][x] for x in ("year", "month", "day")))}.')
     seite = (staffel.get('chronik') or z.get('chronik') or '../chronik.html').removeprefix('../')
-    pfad = Path(monitor)/'history/karte'/WORLD_ID/k['export']
     gelaende = ZEITLEISTE.parent/z['gelaende']
-    return k, seite, staffel.get('titel', ''), json.loads(pfad.read_text(encoding='utf-8')), gelaende
+    return k, seite, staffel.get('titel', ''), export, gelaende
+
+
+def jahreswechsel(ordner, jahr):
+    """Erster vollständiger Kartenexport vom Januar dieses Jahres. Spieldatum und Vollständigkeit stehen im Kopf der Datei."""
+    for pfad in sorted(ordner.glob('*.json')):
+        with pfad.open(encoding='utf-8') as f:
+            kopf = f.read(2000)
+        m = re.search(r'"game_date":(\{[^}]*\})', kopf)
+        tag = m and json.loads(m.group(1))
+        if tag and tag['year'] == jahr and tag['month'] == 1:
+            export = json.loads(pfad.read_text(encoding='utf-8'))
+            if export.get('complete'):
+                return export
+    return None
+
+
+def roemisch(n):
+    zeichen = ''
+    for wert, z in ((10, 'X'), (9, 'IX'), (5, 'V'), (4, 'IV'), (1, 'I')):
+        while n >= wert:
+            zeichen += z
+            n -= wert
+    return zeichen
 
 
 def messungen(monitor, jahr):
@@ -781,8 +817,10 @@ class Plan:
         ort = self.orte[oid]
         mx, my = ort['lage']
         nah = lambda p, r: math.hypot(p[0] - mx, p[1] - my) < r  # noqa: E731
+        # Halte der Ortslinien bis 1 km um die Ortsmitte; weiter draußen (Silberweide 1911: Kirchgasse, Mettmann Bauernhof)
+        # liefe die Straßenbahn klein in einer Ecke. Solche Linien laufen über den Rand hinaus.
         pts = [p for l in self.linien if l['ort'] == oid and l['typ'] == 'LO' and l['art'] != 'dampfer'
-               for _, _, p in l['halte'] if nah(p, 1600)]
+               for _, _, p in l['halte'] if nah(p, 1000)]
         pts += [p for l in self.linien if l['art'] == 'bahn' for _, _, p in l['halte'] if nah(p, 1500)]
         x0, x1 = min(p[0] for p in pts) - 170, max(p[0] for p in pts) + 170
         y0, y1 = min(p[1] for p in pts) - 150, max(p[1] for p in pts) + 150
@@ -914,7 +952,8 @@ def main():
     ziel = out/f'{a.jahr}.html'
     text = plan.html()
     ziel.write_text(text, encoding='utf-8', newline='\n')
-    print(f'{ziel.relative_to(ROOT)}: {len(text.encode()) // 1024} KB, Stil {plan.stilname}, Messung {datum(plan.tag)}, '
+    print(f'{ziel.relative_to(ROOT) if ziel.is_relative_to(ROOT) else ziel}: {len(text.encode()) // 1024} KB, '
+          f'Stil {plan.stilname}, Messung {datum(plan.tag)}, '
           f'Export {datum(plan.export_tag)}')
     for l in sorted(plan.linien, key=lambda l: (list(ARTEN).index(l['art']), l['name'])):
         ort = plan.orte.get(l['ort'], {}).get('name')
