@@ -1801,7 +1801,7 @@ document.dispatchEvent(new CustomEvent("et:register"));
   const yearsOf=el=>el.dataset.year.trim().split(/\s+/);
   const content=new Set([...chapters,...blocks].flatMap(yearsOf));
   const decades=[...new Set([...content].sort().map(y=>y.slice(0,3)))];
-  let selected=null,decade=decades.at(-1),rescroll=false;
+  let selected=null,decade=decades.at(-1),jump=null,jumpUntil=0;
   // Jahresmarken zwischen den Kapiteln, sichtbar in der Gesamtansicht
   let previous=null;
   for(const chapter of chapters){
@@ -1851,16 +1851,22 @@ document.dispatchEvent(new CustomEvent("et:register"));
       selected=m[1]!=='alle'&&content.has(m[1])?m[1]:null;
       if(selected)decade=selected.slice(0,3);
       apply();
-      if(scroll){scrollToYear();rescroll=true;}
+      if(scroll){scrollToYear();remember(scrollToYear);}
       return;
     }
     // Sprung zu einem Kapitel eines ausgeblendeten Jahres: dieses Jahr wählen
     const target=hash&&document.getElementById(hash),chapter=target&&target.closest('.et-chapter[data-year]');
     if(chapter&&chapter.hidden){selected=yearsOf(chapter)[0];decade=selected.slice(0,3);apply();target.scrollIntoView();}
+    if(target&&scroll)remember(()=>target.scrollIntoView());
   }
+  // Register und Netzplan laden später und schieben den Inhalt nach unten: nach einem Sprung dann nachfassen,
+  // höchstens acht Sekunden lang und nur, bis jemand selbst scrollt, tippt oder klickt.
+  function remember(fn){jump=fn;jumpUntil=performance.now()+8000;}
+  const rejump=()=>{if(jump&&performance.now()<jumpUntil)jump();};
+  ['wheel','touchstart','keydown','pointerdown'].forEach(type=>addEventListener(type,()=>{jump=null;},{passive:true}));
   addEventListener('hashchange',()=>fromHash(true));
-  // Das Register lädt später und schiebt die Kapitel nach unten: dann einmal nachfassen.
-  document.addEventListener('et:register',()=>{apply();if(rescroll){rescroll=false;scrollToYear();}});
+  document.addEventListener('et:register',()=>{apply();rejump();});
+  document.addEventListener('et:netzplan',rejump);
   bar.hidden=false;
   apply();
   fromHash(true);

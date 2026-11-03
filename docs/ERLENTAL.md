@@ -72,7 +72,7 @@ Wunsch des Spielers vom 2.11.2026: Weil das Netz wächst, bekommt ab Staffel 2 j
 
 Jedes Kapitel ist ein `<article class="et-chapter" id="kapitel-N" data-year="JJJJ">` in `#kapitel` auf der Seite seiner Staffel und bekommt einen Eintrag in der Kapitelnavigation (`.et-chapnav`). Reicht ein Kapitel über einen Jahreswechsel, stehen beide Jahre im Attribut (`data-year="1901 1902"`). Jede Jahresbilanz unter VII steht in `<div class="et-yearblock" data-year="JJJJ">`.
 
-**Jahresauswahl:** Die Leiste `#jahre` erscheint von selbst, sobald es ein Kapitel gibt, und baut sich aus den `data-year`-Attributen (Jahrzehnt wählen, dann das Jahr). Adresse `#jahr-1901`, alles: `#jahr-alle`.
+**Jahresauswahl:** Die Leiste `#jahre` erscheint von selbst, sobald es ein Kapitel gibt, und baut sich aus den `data-year`-Attributen (Jahrzehnt wählen, dann das Jahr). Adresse `#jahr-1901`, alles: `#jahr-alle`. Register und Netzplan laden nach dem ersten Sprung; damit Adressen wie `#kapitel` oder `#netzplan-1910` trotzdem ankommen, fasst die Seite danach noch einmal nach (`et:register`, `et:netzplan`), höchstens acht Sekunden lang und bis jemand selbst scrollt, tippt oder klickt.
 
 Aufbau eines Kapitels (Muster: Kapitel I):
 
