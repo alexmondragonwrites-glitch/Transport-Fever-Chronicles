@@ -2,6 +2,16 @@
 
 Übergaben und Reviews, neueste oben. Kopf: `## JJJJ-MM-TT · Wer · Thema`. Nur ergänzen; Fehler in älteren Einträgen mit einem neuen Eintrag richtigstellen.
 
+## 2026-11-03 · Claude · Erlental: Staffel 2 · Kapitel II „Der zweite Personenzug“ (1911)
+
+- Spieler: „und ein weiteres jahr ist geschafft :)“. Faktenblatt `fakten/1911.md` (Messungen bis 31.12.1911, aufgenommen bis 3.11.2026 06:06 Uhr), dazu Auswertungen über `rows_of`/`canonical`: früheste Messungen der neuen Linien, Entfernungen, Schwellen, Wartende, Fahrzeiten und Bilanzen beider Personenzüge, Kredit und Konto, Gleise im Kartenexport vom 1.1.1912.
+- Messpause: Vom 8.3. bis 16.6.1911 fehlen Messungen (Sitzung vom 1.11. endet 15:17 Uhr, die nächste beginnt am 2.11. um 10:31 Uhr). Das Kapitel nennt sie im Zeitraum, im Text, im Register und unter den offenen Fragen.
+- Kapitel II in `staffel-2.html`: Übersicht (Linienschemata „Der zweite Personenzug“ und „Die Straßenbahn in Wolfratshausen“), Belegt, Abgeleitet (der Schluss aus Kapitel I zu den fehlenden Fahrzeiten verliert an Gewicht: 1911 fehlen sie vom 5.10. bis 23.11. wieder, während die Linie die höchste Bilanz hat), drei Szenen in neuen Formen: Wanderbuch eines Böttchergesellen, Hochzeitszeitung von Wilhelm Kamp und Hedwig Brandt, Wunschzettel aus Wolfratshausen. Dazu Steckbrief, Orte (neu: Wolfratshausen), Unternehmen, Jahresbilanz 1911, offene Fragen und Q4. Wortlaut von Kapitel I unverändert.
+- 14 Registereinträge mit `"season": 2`, `meta.json` bis 31.12.1911.
+- Netzplan Ende 1911 (`netzplan/1911.html`, 105 KB, acht Stadtpläne). `scripts/erlental-netzplan.py` nimmt ohne Kartenstand in der Zeitleiste den ersten vollständigen Export vom Januar des Folgejahres, und der Stadtplan-Ausschnitt reicht 1 statt 1,6 km um die Ortsmitte (Silberweide lief sonst klein in einer Ecke); der Plan 1910 kommt damit byte-gleich heraus.
+- Geprüft: `validate-data.mjs` OK, Sprachprüfung der neuen Texte, Bildschirmfotos (Kapitel II, Netzplan im Kapitel, Szenen).
+- Auf Wunsch des Spielers („Ja, hochladen“) hochgeladen in `ced94752`, Messdaten bis Spiel 3.2.1912 in `b3d22c35` (+330 Messungen). Kartenstand `staffel-2-kapitel-2` offen.
+
 ## 2026-11-03 · Claude · Erlental: Sprünge kommen an, auch wenn Register und Netzplan später laden
 
 - Gefunden beim Prüfen des Netzplans: Direktlinks wie `staffel-2.html#netzplan-1910` oder `#kapitel` landeten im Register, wenn `data/events.json` während des Sprungs eintraf (rund 4.700 px zu früh). Seit dem Netzplan landeten auch Klicks im Inhaltsverzeichnis auf Abschnitte unterhalb von Kapitel I (Orte, Quellen) rund 1.540 px zu früh, weil der Plan während des Sprungs nachlädt.
