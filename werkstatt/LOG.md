@@ -2,6 +2,16 @@
 
 Übergaben und Reviews, neueste oben. Kopf: `## JJJJ-MM-TT · Wer · Thema`. Nur ergänzen; Fehler in älteren Einträgen mit einem neuen Eintrag richtigstellen.
 
+## 2026-11-03 · Claude · Erlental: 3D-Karte für Staffel 2 · Kapitel II
+
+- Wunsch des Spielers („kannst du die karte anstoßen noch?“, über die Chronik-Sitzung). Kartenstand `staffel-2-kapitel-2` aus dem Export vom 1.1.1912: vollständig, Revision 26, 7 568 Bauten, 9 336 Kanten, 100 Linien, Straßenbahngleise auf 263 Straßenkanten. Neu sind Maschinenfabrik, Textilfabrik und ein Bahnhofs-Seitengebäude; Haus Weitblick hat ein großes Modul dazubekommen, der neue Flügel steht auf der Karte.
+- Gebacken nur an den Änderungen gegen Kapitel I (43 Grund- und 221 feine Blöcke, 442 Bauten gleich gebaut): 46 Minuten, kein dunkles Bild, 18,0 MB neue Dateien. Die Karte hat jetzt 14 928 Dateien und 289,0 MB.
+- Richtigstellung zum Eintrag „3D-Karte für Staffel 2 · Kapitel I“: Dort steht, die Einstellung der Nacht bleibe. Auf Entscheidung des Spielers vom 2.11.2026 rendert die Nacht seit diesem Kapitel mit 64 statt 128 Samples, bei gleicher Qualität; die Nachtbilder brauchten im Mittel 12 statt 17,5 Sekunden.
+- Linien: Die Straßenbahnen in Silberweide (vier) und Wolfratshausen (drei) und die Ratzeburger Linie mit Triebwagen folgen ihren Gleisen, der zweite Personenzug (Ober-Arenswiel – Silberweide – Wolfratshausen) den Schienen. Die Buslinie zum Halt „Itzehoe Bauernhof“ bleibt eine Gerade (im Export ohne Straßenverbindung).
+- `staffel-2.html`: Kartenzeile im Kopf von Kapitel II vor dem Netzplan-Verweis, Absatz unter „Orte“ und Q7 fortgeschrieben. `netzplan/1911.html` kommt mit dem Zeitleisten-Eintrag byte-gleich heraus. `werkstatt/erlental/STAND.md`: Kartenstände.
+- Geprüft: `validate-data.mjs`; lokal im Browser `karte/#staffel-2-kapitel-2` (alle Kacheln, keine Fehler, Legende „Staffel 2 · Kapitel II“) und die Kartenzeile auf `staffel-2.html`.
+- Auf Wunsch des Spielers („Ja, hochladen“) hochgeladen in `f9028c2c`.
+
 ## 2026-11-03 · Claude · Erlental: Staffel 2 · Kapitel II „Der zweite Personenzug“ (1911)
 
 - Spieler: „und ein weiteres jahr ist geschafft :)“. Faktenblatt `fakten/1911.md` (Messungen bis 31.12.1911, aufgenommen bis 3.11.2026 06:06 Uhr), dazu Auswertungen über `rows_of`/`canonical`: früheste Messungen der neuen Linien, Entfernungen, Schwellen, Wartende, Fahrzeiten und Bilanzen beider Personenzüge, Kredit und Konto, Gleise im Kartenexport vom 1.1.1912.
